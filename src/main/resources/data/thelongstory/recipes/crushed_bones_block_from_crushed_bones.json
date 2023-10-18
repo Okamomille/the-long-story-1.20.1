@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "thelongstory:crushed_bones"
+    }
+  },
+  "result": {
+    "item": "thelongstory:crushed_bones_block",
+    "count": 1
+  }
+}
