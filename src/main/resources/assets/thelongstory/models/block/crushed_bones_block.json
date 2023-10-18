@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "thelongstory:block/crushed_bones_block"
+  }
+}

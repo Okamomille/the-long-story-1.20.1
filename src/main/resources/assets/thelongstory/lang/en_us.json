@@ -2,5 +2,7 @@
   "item.thelongstory.bone_fragments" : "Bone Fragments",
   "item.thelongstory.crushed_bones" : "Crushed Bones",
 
+  "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
+
   "itemgroup.modgroup" : "Mod Tab"
 }

@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup MOD_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -17,6 +18,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.BONE_FRAGMENTS);
                         entries.add(ModItems.CRUSHED_BONES);
+
+                        entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
 
 
                     }).build());
