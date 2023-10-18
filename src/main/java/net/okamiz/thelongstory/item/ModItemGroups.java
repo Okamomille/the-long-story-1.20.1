@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CRUSHED_BONES);
 
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
+                        entries.add(ModBlocks.MOLD_BLOCK);
 
 
                     }).build());
