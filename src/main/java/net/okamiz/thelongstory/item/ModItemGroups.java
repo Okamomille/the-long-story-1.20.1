@@ -16,8 +16,10 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.modgroup"))
                     .icon(() -> new ItemStack(ModItems.BONE_FRAGMENTS)).entries((displayContext, entries) -> {
 
+                        entries.add(ModItems.INFESTED_FLESH);
                         entries.add(ModItems.BONE_FRAGMENTS);
                         entries.add(ModItems.CRUSHED_BONES);
+
 
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
                         entries.add(ModBlocks.MOLD_BLOCK);

@@ -14,13 +14,13 @@ public class ModItems {
 
     public static final Item BONE_FRAGMENTS = registerItem("bone_fragments", new Item(new FabricItemSettings()));
     public static final Item CRUSHED_BONES = registerItem("crushed_bones", new Item(new FabricItemSettings()));
+    public static final Item INFESTED_FLESH = registerItem("infested_flesh", new Item(new FabricItemSettings()));
 
 
 
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
-        entries.add(BONE_FRAGMENTS);
-        entries.add(CRUSHED_BONES);
+
     }
 
 
