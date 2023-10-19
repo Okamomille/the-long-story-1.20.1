@@ -9,12 +9,16 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.item.custom.RadarItem;
 
 public class ModItems {
 
     public static final Item BONE_FRAGMENTS = registerItem("bone_fragments", new Item(new FabricItemSettings()));
     public static final Item CRUSHED_BONES = registerItem("crushed_bones", new Item(new FabricItemSettings()));
     public static final Item INFESTED_FLESH = registerItem("infested_flesh", new Item(new FabricItemSettings()));
+
+    public static final Item RADAR = registerItem("radar",
+            new RadarItem(new FabricItemSettings().maxCount(1).maxDamage(50)));
 
 
 
