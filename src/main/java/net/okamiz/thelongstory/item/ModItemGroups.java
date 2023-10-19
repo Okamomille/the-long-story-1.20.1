@@ -32,9 +32,14 @@ public class ModItemGroups {
     public static final ItemGroup FOOD_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TheLongStory.MOD_ID, "foodgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.foodgroup"))
-                    .icon(() -> new ItemStack(ModItems.EMERALD_APPLE)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.REDSTONE_APPLE)).entries((displayContext, entries) -> {
 
                         entries.add(ModItems.EMERALD_APPLE);
+                        entries.add(ModItems.IRON_APPLE);
+                        entries.add(ModItems.DIAMOND_APPLE);
+                        entries.add(ModItems.LAPIS_APPLE);
+                        entries.add(ModItems.REDSTONE_APPLE);
+                        entries.add(ModItems.AMETHYST_APPLE);
 
 
                     }).build());

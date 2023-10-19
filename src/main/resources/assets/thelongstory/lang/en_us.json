@@ -6,6 +6,11 @@
   "item.thelongstory.radar" : "Radar",
 
   "item.thelongstory.emerald_apple" : "Emerald Apple",
+  "item.thelongstory.iron_apple" : "Iron Apple",
+  "item.thelongstory.diamond_apple" : "Diamond Apple",
+  "item.thelongstory.lapis_apple" : "Lapis Lazuli Apple",
+  "item.thelongstory.redstone_apple" : "Redstone Apple",
+  "item.thelongstory.amethyst_apple" : "Amethyst Apple",
 
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
   "block.thelongstory.mold_block" : "Mold Block",
