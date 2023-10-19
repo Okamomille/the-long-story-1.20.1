@@ -20,9 +20,12 @@ public class ModItemGroups {
                         entries.add(ModItems.BONE_FRAGMENTS);
                         entries.add(ModItems.CRUSHED_BONES);
 
+                        entries.add(ModItems.RADAR);
+
 
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
                         entries.add(ModBlocks.MOLD_BLOCK);
+                        entries.add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
 
 
                     }).build());
