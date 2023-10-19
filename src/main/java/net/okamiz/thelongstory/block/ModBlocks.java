@@ -10,6 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.block.custom.PinkGreffedCommandSystemBlock;
 
 public class ModBlocks {
 
@@ -19,6 +20,9 @@ public class ModBlocks {
 
     public static final Block MOLD_BLOCK = registerBlock("mold_block",
             new Block(FabricBlockSettings.copyOf(Blocks.MUD)));
+
+    public static final Block PINK_GREFFED_COMMAND_SYSTEM = registerBlock("pink_greffed_command_system",
+            new PinkGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.PINK_CONCRETE)));
 
 
     private static Block registerBlock(String name, Block block){
