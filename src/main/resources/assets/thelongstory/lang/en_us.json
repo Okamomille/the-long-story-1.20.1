@@ -5,9 +5,12 @@
 
   "item.thelongstory.radar" : "Radar",
 
+  "item.thelongstory.emerald_apple" : "Emerald Apple",
+
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
   "block.thelongstory.mold_block" : "Mold Block",
   "block.thelongstory.pink_greffed_command_system" : "Pink Greffed Command System",
 
-  "itemgroup.modgroup" : "Mod Tab"
+  "itemgroup.modgroup" : "TLS Tab",
+  "itemgroup.foodgroup" : "TLS Food Tab"
 }

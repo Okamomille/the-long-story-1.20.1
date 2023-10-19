@@ -17,8 +17,14 @@ public class ModItems {
     public static final Item CRUSHED_BONES = registerItem("crushed_bones", new Item(new FabricItemSettings()));
     public static final Item INFESTED_FLESH = registerItem("infested_flesh", new Item(new FabricItemSettings()));
 
+    //ADVANCED ITEMS -----------------
+
     public static final Item RADAR = registerItem("radar",
             new RadarItem(new FabricItemSettings().maxCount(1).maxDamage(50)));
+
+    //FOOD ITEMS -----------------
+
+    public static final Item EMERALD_APPLE = registerItem("emerald_apple", new Item(new FabricItemSettings().food(ModFoodComponents.EMERALD_APPLE)));
 
 
 

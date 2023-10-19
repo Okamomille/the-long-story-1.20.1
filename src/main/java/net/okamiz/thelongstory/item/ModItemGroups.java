@@ -27,8 +27,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOLD_BLOCK);
                         entries.add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
 
+                    }).build());
+
+    public static final ItemGroup FOOD_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TheLongStory.MOD_ID, "foodgroup"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.foodgroup"))
+                    .icon(() -> new ItemStack(ModItems.EMERALD_APPLE)).entries((displayContext, entries) -> {
+
+                        entries.add(ModItems.EMERALD_APPLE);
+
 
                     }).build());
+
     public static void registerItemGroups(){
         TheLongStory.LOGGER.info("Registering Item Groups for " + TheLongStory.MOD_ID);
     }
