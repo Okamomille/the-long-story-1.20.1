@@ -21,6 +21,15 @@ public class ModBlocks {
     public static final Block MOLD_BLOCK = registerBlock("mold_block",
             new Block(FabricBlockSettings.copyOf(Blocks.MUD)));
 
+
+    // FUEL BLOCKS ------------------
+
+    public static final Block RED_COAL_BLOCK = registerBlock("red_coal_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK)));
+
+
+    // ADVANCED BLOCKS ------------------
+
     public static final Block PINK_GREFFED_COMMAND_SYSTEM = registerBlock("pink_greffed_command_system",
             new PinkGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.PINK_CONCRETE)));
 

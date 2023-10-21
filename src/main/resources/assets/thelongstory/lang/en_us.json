@@ -3,7 +3,10 @@
   "item.thelongstory.crushed_bones" : "Crushed Bones",
   "item.thelongstory.infested_flesh" : "Infested Flesh",
 
+
   "item.thelongstory.radar" : "Radar",
+  "item.thelongstory.red_coal" : "Red Coal",
+
 
   "item.thelongstory.emerald_apple" : "Emerald Apple",
   "item.thelongstory.iron_apple" : "Iron Apple",
@@ -12,9 +15,12 @@
   "item.thelongstory.redstone_apple" : "Redstone Apple",
   "item.thelongstory.amethyst_apple" : "Amethyst Apple",
 
+
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
   "block.thelongstory.mold_block" : "Mold Block",
   "block.thelongstory.pink_greffed_command_system" : "Pink Greffed Command System",
+  "block.thelongstory.red_coal_block" : "Block of Red Coal",
+
 
   "itemgroup.modgroup" : "TLS Tab",
   "itemgroup.foodgroup" : "TLS Food Tab"

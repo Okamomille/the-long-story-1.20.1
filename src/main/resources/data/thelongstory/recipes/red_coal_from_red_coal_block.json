@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thelongstory:red_coal_block"
+    }
+  ],
+  "result": {
+    "item": "thelongstory:red_coal",
+    "count": 9
+  }
+}

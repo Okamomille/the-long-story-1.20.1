@@ -17,6 +17,10 @@ public class ModItems {
     public static final Item CRUSHED_BONES = registerItem("crushed_bones", new Item(new FabricItemSettings()));
     public static final Item INFESTED_FLESH = registerItem("infested_flesh", new Item(new FabricItemSettings()));
 
+    //FUEL ITEMS -----------------
+
+    public static final Item RED_COAL = registerItem("red_coal", new Item(new FabricItemSettings()));
+
     //ADVANCED ITEMS -----------------
 
     public static final Item RADAR = registerItem("radar",
