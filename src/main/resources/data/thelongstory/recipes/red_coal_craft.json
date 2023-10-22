@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " X ",
+    "XOX",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "thelongstory:blood_bottle"
+    },
+    "O": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "thelongstory:red_coal",
+    "count": 1
+  }
+}
