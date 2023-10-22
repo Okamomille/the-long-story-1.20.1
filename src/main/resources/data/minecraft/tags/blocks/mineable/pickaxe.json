@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thelongstory:red_coal_block"
+    "thelongstory:red_coal_block",
+    "thelongstory:pink_greffed_command_system"
   ]
 }
