@@ -3,6 +3,7 @@
   "item.thelongstory.crushed_bones" : "Crushed Bones",
   "item.thelongstory.infested_flesh" : "Infested Flesh",
   "item.thelongstory.blood_bottle" : "Blood Bottle",
+  "item.thelongstory.spider_silk" : "Spider Silk",
 
 
   "item.thelongstory.radar" : "Radar",
@@ -19,6 +20,7 @@
 
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
   "block.thelongstory.mold_block" : "Mold Block",
+  "block.thelongstory.spider_silk_block" : "Spider Silk Block",
   "block.thelongstory.pink_greffed_command_system" : "Pink Greffed Command System",
   "block.thelongstory.red_coal_block" : "Block of Red Coal",
 

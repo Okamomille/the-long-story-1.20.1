@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BONE_FRAGMENTS);
                         entries.add(ModItems.CRUSHED_BONES);
                         entries.add(ModItems.BLOOD_BOTTLE);
+                        entries.add(ModItems.SPIDER_SILK);
 
                         entries.add(ModItems.RADAR);
                         entries.add(ModItems.RED_COAL);
@@ -27,6 +28,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
                         entries.add(ModBlocks.MOLD_BLOCK);
+                        entries.add(ModBlocks.SPIDER_SILK_BLOCK);
                         entries.add(ModBlocks.RED_COAL_BLOCK);
                         entries.add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
 
