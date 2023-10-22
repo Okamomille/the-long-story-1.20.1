@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.INFESTED_FLESH);
                         entries.add(ModItems.BONE_FRAGMENTS);
                         entries.add(ModItems.CRUSHED_BONES);
+                        entries.add(ModItems.BLOOD_BOTTLE);
 
                         entries.add(ModItems.RADAR);
                         entries.add(ModItems.RED_COAL);
