@@ -20,6 +20,8 @@ public class ModItems {
     public static final Item BLOOD_BOTTLE = registerItem("blood_bottle", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item SPIDER_SILK = registerItem("spider_silk", new Item(new FabricItemSettings()));
 
+    public static final Item THESTONE_DUST = registerItem("thestone_dust", new Item(new FabricItemSettings()));
+
 
     //FUEL ITEMS -----------------
 

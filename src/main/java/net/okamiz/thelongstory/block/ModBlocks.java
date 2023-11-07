@@ -4,11 +4,13 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.custom.PinkGreffedCommandSystemBlock;
 
@@ -21,6 +23,12 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.MUD)));
     public static final Block SPIDER_SILK_BLOCK = registerBlock("spider_silk_block",
             new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
+
+    public static final Block THESTONE_ORE = registerBlock("thestone_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(1, 5)));
+
+    public static final Block DEEPSLATE_THESTONE_ORE = registerBlock("deepslate_thestone_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(2, 6)));
 
 
     // FUEL BLOCKS ------------------

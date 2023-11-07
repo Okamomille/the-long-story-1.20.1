@@ -22,6 +22,8 @@ public class ModItemGroups {
                         entries.add(ModItems.BLOOD_BOTTLE);
                         entries.add(ModItems.SPIDER_SILK);
 
+                        entries.add(ModItems.THESTONE_DUST);
+
                         entries.add(ModItems.RADAR);
                         entries.add(ModItems.RED_COAL);
 
@@ -31,6 +33,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SPIDER_SILK_BLOCK);
                         entries.add(ModBlocks.RED_COAL_BLOCK);
                         entries.add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
+
+                        entries.add(ModBlocks.THESTONE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
 
                     }).build());
 
