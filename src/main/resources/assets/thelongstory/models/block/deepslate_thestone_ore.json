@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "thelongstory:block/deepslate_thestone_ore"
-  }
-}

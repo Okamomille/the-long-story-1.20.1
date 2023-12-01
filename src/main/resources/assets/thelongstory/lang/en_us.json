@@ -6,6 +6,8 @@
   "item.thelongstory.spider_silk" : "Spider Silk",
 
   "item.thelongstory.thestone_dust" : "Thestone Dust",
+  "item.thelongstory.thestone_ingot" : "Thestone Ingot",
+  "item.thelongstory.thestone_nugget" : "Thestone Nugget",
 
 
   "item.thelongstory.radar" : "Radar",
@@ -30,6 +32,23 @@
   "block.thelongstory.deepslate_thestone_ore" : "Deepslate Thestone Ore",
 
 
+  "block.thelongstory.egroric_planks" : "Egroric Planks",
+  "block.thelongstory.egroric_stairs" : "Egroric Stairs",
+  "block.thelongstory.egroric_slab" : "Egroric Slab",
+  "block.thelongstory.egroric_fence" : "Egroric Fence",
+  "block.thelongstory.egroric_fence_gate" : "Egroric Fence Gate",
+  "block.thelongstory.egroric_door" : "Egroric Door",
+  "block.thelongstory.egroric_trapdoor" : "Egroric Trapdoor",
+  "block.thelongstory.egroric_button" : "Egroric Button",
+  "block.thelongstory.egroric_pressure_plate" : "Egroric Pressure Plate",
+
+
   "itemgroup.modgroup" : "TLS Tab",
-  "itemgroup.foodgroup" : "TLS Food Tab"
+  "itemgroup.foodgroup" : "TLS Food Tab",
+
+
+
+  "tooltip.thelongstory.radar" : "A radar for searching ores underground!",
+  "tooltip.thelongstory.pink_greffed_command_system" : "A homemade command block wich is used to heal yourself."
+
 }

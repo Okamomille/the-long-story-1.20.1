@@ -23,6 +23,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SPIDER_SILK);
 
                         entries.add(ModItems.THESTONE_DUST);
+                        entries.add(ModItems.THESTONE_INGOT);
+                        entries.add(ModItems.THESTONE_NUGGET);
 
                         entries.add(ModItems.RADAR);
                         entries.add(ModItems.RED_COAL);
@@ -36,6 +38,17 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
+
+
+                        entries.add(ModBlocks.EGRORIC_PLANKS);
+                        entries.add(ModBlocks.EGRORIC_STAIRS);
+                        entries.add(ModBlocks.EGRORIC_SLAB);
+                        entries.add(ModBlocks.EGRORIC_BUTTON);
+                        entries.add(ModBlocks.EGRORIC_PRESSURE_PLATE);
+                        entries.add(ModBlocks.EGRORIC_DOOR);
+                        entries.add(ModBlocks.EGRORIC_TRAPDOOR);
+                        entries.add(ModBlocks.EGRORIC_FENCE);
+                        entries.add(ModBlocks.EGRORIC_FENCE_GATE);
 
                     }).build());
 

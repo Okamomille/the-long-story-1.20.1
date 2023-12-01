@@ -3,15 +3,20 @@ package net.okamiz.thelongstory.item.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.okamiz.thelongstory.util.ModTags;
+import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
+import java.util.List;
 
 public class RadarItem extends Item {
     public RadarItem(Settings settings){
@@ -39,7 +44,7 @@ public class RadarItem extends Item {
             }
 
             if (!foundBlock){
-                player.sendMessage(Text.literal("No Blocks Found"));
+                player.sendMessage(Text.literal("No Thestone Ore Found"));
             }
         }
 
@@ -54,6 +59,13 @@ public class RadarItem extends Item {
     }
 
     private boolean isVualuableBlock(BlockState state) {
-        return state.isOf(Blocks.GOLD_ORE) || state.isOf(Blocks.DIAMOND_ORE);
+        return state.isIn(ModTags.Blocks.RADAR_DETECTABLE_BLOCKS);
+    }
+
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.thelongstory.radar"));
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }

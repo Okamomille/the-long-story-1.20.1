@@ -21,6 +21,8 @@ public class ModItems {
     public static final Item SPIDER_SILK = registerItem("spider_silk", new Item(new FabricItemSettings()));
 
     public static final Item THESTONE_DUST = registerItem("thestone_dust", new Item(new FabricItemSettings()));
+    public static final Item THESTONE_INGOT = registerItem("thestone_ingot", new Item(new FabricItemSettings()));
+    public static final Item THESTONE_NUGGET = registerItem("thestone_nugget", new Item(new FabricItemSettings()));
 
 
     //FUEL ITEMS -----------------
