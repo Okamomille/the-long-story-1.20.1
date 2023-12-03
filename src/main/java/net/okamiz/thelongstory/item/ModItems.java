@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.item.custom.ModArmorItem;
 import net.okamiz.thelongstory.item.custom.RadarItem;
 
 public class ModItems {
@@ -62,13 +63,13 @@ public class ModItems {
     //ARMOR ITEMS -----------------
 
     public static final Item THESTONE_HELMET = registerItem("thestone_helmet",
-            new ArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item THESTONE_CHESTPLATE = registerItem("thestone_chestplate",
-            new ArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item THESTONE_LEGGINGS = registerItem("thestone_leggings",
-            new ArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item THESTONE_BOOTS = registerItem("thestone_boots",
-            new ArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 
