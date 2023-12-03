@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "thelongstory:thestone_dust"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DII",
+    "II "
+  ],
+  "result": {
+    "item": "thelongstory:thestone_ingot"
+  },
+  "show_notification": true
+}

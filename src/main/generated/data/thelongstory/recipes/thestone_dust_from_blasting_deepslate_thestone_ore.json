@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "thestone_dust",
+  "ingredient": {
+    "item": "thelongstory:deepslate_thestone_ore"
+  },
+  "result": "thelongstory:thestone_dust"
+}

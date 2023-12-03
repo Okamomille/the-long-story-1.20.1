@@ -3,8 +3,7 @@ package net.okamiz.thelongstory.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -42,6 +41,36 @@ public class ModItems {
     public static final Item LAPIS_APPLE = registerItem("lapis_apple", new Item(new FabricItemSettings().food(ModFoodComponents.LAPIS_APPLE)));
     public static final Item AMETHYST_APPLE = registerItem("amethyst_apple", new Item(new FabricItemSettings().food(ModFoodComponents.AMETHYST_APPLE)));
     public static final Item REDSTONE_APPLE = registerItem("redstone_apple", new Item(new FabricItemSettings().food(ModFoodComponents.REDSTONE_APPLE)));
+
+
+
+
+    //TOOLS ITEMS -----------------
+
+    public static final Item THESTONE_PICKAXE = registerItem("thestone_pickaxe",
+            new PickaxeItem(ModToolMaterial.THESTONE, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item THESTONE_AXE = registerItem("thestone_axe",
+            new AxeItem(ModToolMaterial.THESTONE, 6.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item THESTONE_SHOVEL = registerItem("thestone_shovel",
+            new ShovelItem(ModToolMaterial.THESTONE, 1.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item THESTONE_HOE = registerItem("thestone_hoe",
+            new HoeItem(ModToolMaterial.THESTONE, -2, -1.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item THESTONE_SWORD = registerItem("thestone_sword",
+            new SwordItem(ModToolMaterial.THESTONE, 3, -2.0f, new FabricItemSettings().maxCount(1)));
+
+
+    //ARMOR ITEMS -----------------
+
+    public static final Item THESTONE_HELMET = registerItem("thestone_helmet",
+            new ArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item THESTONE_CHESTPLATE = registerItem("thestone_chestplate",
+            new ArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item THESTONE_LEGGINGS = registerItem("thestone_leggings",
+            new ArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item THESTONE_BOOTS = registerItem("thestone_boots",
+            new ArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+
 
 
 

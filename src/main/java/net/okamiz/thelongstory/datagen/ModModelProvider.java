@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.item.ModItems;
 
@@ -60,6 +61,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.INFESTED_FLESH, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RADAR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.THESTONE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THESTONE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THESTONE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THESTONE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.THESTONE_HOE, Models.HANDHELD);
+        
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_BOOTS));
 
 
     }

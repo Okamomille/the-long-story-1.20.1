@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "X": {
+      "item": "thelongstory:egroric_planks"
+    }
+  },
+  "pattern": [
+    "XX"
+  ],
+  "result": {
+    "item": "thelongstory:egroric_pressure_plate"
+  },
+  "show_notification": true
+}

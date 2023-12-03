@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelongstory:block/egroric_slab"
+    },
+    "type=double": {
+      "model": "thelongstory:block/egroric_planks"
+    },
+    "type=top": {
+      "model": "thelongstory:block/egroric_slab_top"
+    }
+  }
+}

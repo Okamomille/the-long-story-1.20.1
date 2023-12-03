@@ -14,6 +14,19 @@
   "item.thelongstory.red_coal" : "Red Coal",
 
 
+  "item.thelongstory.thestone_helmet" : "Thestone Helmet",
+  "item.thelongstory.thestone_chestplate" : "Thestone Chestplate",
+  "item.thelongstory.thestone_leggings" : "Thestone Leggings",
+  "item.thelongstory.thestone_boots" : "Thestone Boots",
+
+
+  "item.thelongstory.thestone_sword" : "Thestone Sword",
+  "item.thelongstory.thestone_pickaxe" : "Thestone Pickaxe",
+  "item.thelongstory.thestone_axe" : "Thestone Axe",
+  "item.thelongstory.thestone_shovel" : "Thestone Shovel",
+  "item.thelongstory.thestone_hoe" : "Thestone Hoe",
+
+
   "item.thelongstory.emerald_apple" : "Emerald Apple",
   "item.thelongstory.iron_apple" : "Iron Apple",
   "item.thelongstory.diamond_apple" : "Diamond Apple",

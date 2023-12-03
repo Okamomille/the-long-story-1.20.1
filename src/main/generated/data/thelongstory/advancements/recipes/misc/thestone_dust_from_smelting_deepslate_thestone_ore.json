@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_thestone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:deepslate_thestone_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:thestone_dust_from_smelting_deepslate_thestone_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_thestone_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:thestone_dust_from_smelting_deepslate_thestone_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

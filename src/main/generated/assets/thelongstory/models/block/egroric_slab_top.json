@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "thelongstory:block/egroric_planks",
+    "side": "thelongstory:block/egroric_planks",
+    "top": "thelongstory:block/egroric_planks"
+  }
+}

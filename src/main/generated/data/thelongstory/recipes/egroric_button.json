@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "thelongstory:egroric_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "thelongstory:egroric_button"
+  }
+}
