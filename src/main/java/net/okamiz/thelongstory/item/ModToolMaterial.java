@@ -7,7 +7,8 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    THESTONE(2, 1631, 7.5f, 3.1f, 17, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT));
+    THESTONE(2, 1631, 7.5f, 3.1f, 17, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT)),
+    GREEN_SHARD(2, 131, 10f, 3.7f, 22, () -> Ingredient.ofItems(ModItems.GREEN_SHARD));
 
 
     private final int miningLevel;

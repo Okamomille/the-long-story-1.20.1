@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "X": {
+      "item": "thelongstory:thestone_dust"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XOX",
+    " X "
+  ],
+  "result": {
+    "item": "thelongstory:green_shard"
+  },
+  "show_notification": true
+}

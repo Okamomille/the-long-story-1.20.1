@@ -11,7 +11,9 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     THESTONE("thestone", 25, new int[]{3,6,8,3}, 12,
-            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0f,0.0f, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT))
+            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0f,0.0f, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT)),
+    GREEN_SHARD("green_shard", 7, new int[]{2,5,6,4}, 22,
+    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.0f,0.0f, () -> Ingredient.ofItems(ModItems.GREEN_SHARD))
     ;
 
     private final String name;

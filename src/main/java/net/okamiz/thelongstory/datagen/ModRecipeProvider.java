@@ -66,6 +66,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.THESTONE_DUST),conditionsFromItem(ModItems.THESTONE_DUST))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_DUST)));
 
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.RED_COAL, 1)
                 .pattern(" X ")
                 .pattern("XOX")
@@ -74,6 +75,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', Items.COAL)
                 .criterion(hasItem(ModItems.BLOOD_BOTTLE),conditionsFromItem(ModItems.BLOOD_BOTTLE))
                 .offerTo(exporter, new Identifier("red_coal_craft"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.GREEN_SHARD, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('X', ModItems.THESTONE_DUST)
+                .input('O', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModItems.THESTONE_DUST),conditionsFromItem(ModItems.THESTONE_DUST))
+                .criterion(hasItem(Items.AMETHYST_SHARD),conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("green_shard_craft"));
+
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CRUSHED_BONES_BLOCK, 1)
                 .pattern("XX")
@@ -87,6 +101,216 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModBlocks.EGRORIC_PLANKS)
                 .criterion(hasItem(ModBlocks.EGRORIC_PLANKS),conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.EGRORIC_PRESSURE_PLATE)));
+
+
+
+        // ARMORS
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.THESTONE_BOOTS, 1)
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.THESTONE_INGOT)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.THESTONE_LEGGINGS, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.THESTONE_INGOT)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.THESTONE_CHESTPLATE, 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.THESTONE_INGOT)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.THESTONE_HELMET, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .input('X', ModItems.THESTONE_INGOT)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_HELMET)));
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.GREEN_SHARD_BOOTS, 1)
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.GREEN_SHARD)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.GREEN_SHARD_LEGGINGS, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.GREEN_SHARD)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.GREEN_SHARD_CHESTPLATE, 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.GREEN_SHARD)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.GREEN_SHARD_HELMET, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .input('X', ModItems.GREEN_SHARD)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_HELMET)));
+
+
+        //-------------------
+
+        // TOOLS
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.THESTONE_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.THESTONE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.THESTONE_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModItems.THESTONE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.THESTONE_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModItems.THESTONE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier("thestone_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.THESTONE_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.THESTONE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.THESTONE_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.THESTONE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier("thestone_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.THESTONE_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.THESTONE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.THESTONE_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModItems.THESTONE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.THESTONE_INGOT),conditionsFromItem(ModItems.THESTONE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.THESTONE_SWORD)));
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.GREEN_SHARD_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.GREEN_SHARD)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.GREEN_SHARD_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModItems.GREEN_SHARD)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.GREEN_SHARD_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModItems.GREEN_SHARD)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier("green_shard_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.GREEN_SHARD_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.GREEN_SHARD)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.GREEN_SHARD_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.GREEN_SHARD)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier("green_shard_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.GREEN_SHARD_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.GREEN_SHARD)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.GREEN_SHARD_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModItems.GREEN_SHARD)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_SWORD)));
+
+
+
+
+        // -------------------
+
+
+
+
+
 
 
         createStairsRecipe(ModBlocks.EGRORIC_STAIRS, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))

@@ -5,9 +5,14 @@
   "item.thelongstory.blood_bottle" : "Blood Bottle",
   "item.thelongstory.spider_silk" : "Spider Silk",
 
+
+
   "item.thelongstory.thestone_dust" : "Thestone Dust",
   "item.thelongstory.thestone_ingot" : "Thestone Ingot",
   "item.thelongstory.thestone_nugget" : "Thestone Nugget",
+
+  "item.thelongstory.green_shard" : "Green Shard",
+
 
 
   "item.thelongstory.radar" : "Radar",
@@ -19,12 +24,25 @@
   "item.thelongstory.thestone_leggings" : "Thestone Leggings",
   "item.thelongstory.thestone_boots" : "Thestone Boots",
 
+  "item.thelongstory.green_shard_helmet" : "Green Shard Helmet",
+  "item.thelongstory.green_shard_chestplate" : "Green Shard Chestplate",
+  "item.thelongstory.green_shard_leggings" : "Green Shard Leggings",
+  "item.thelongstory.green_shard_boots" : "Green Shard Boots",
+
+
 
   "item.thelongstory.thestone_sword" : "Thestone Sword",
   "item.thelongstory.thestone_pickaxe" : "Thestone Pickaxe",
   "item.thelongstory.thestone_axe" : "Thestone Axe",
   "item.thelongstory.thestone_shovel" : "Thestone Shovel",
   "item.thelongstory.thestone_hoe" : "Thestone Hoe",
+
+  "item.thelongstory.green_shard_sword" : "Green Shard Sword",
+  "item.thelongstory.green_shard_pickaxe" : "Green Shard Pickaxe",
+  "item.thelongstory.green_shard_axe" : "Green Shard Axe",
+  "item.thelongstory.green_shard_shovel" : "Green Shard Shovel",
+  "item.thelongstory.green_shard_hoe" : "Green Shard Hoe",
+
 
 
   "item.thelongstory.emerald_apple" : "Emerald Apple",

@@ -45,6 +45,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.THESTONE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.THESTONE_NUGGET, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.GREEN_SHARD, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.EMERALD_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_APPLE, Models.GENERATED);
@@ -62,16 +64,31 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RADAR, Models.GENERATED);
 
+
+
         itemModelGenerator.register(ModItems.THESTONE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THESTONE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THESTONE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THESTONE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.THESTONE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.GREEN_SHARD_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GREEN_SHARD_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GREEN_SHARD_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GREEN_SHARD_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GREEN_SHARD_HOE, Models.HANDHELD);
+
+
         
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_BOOTS));
 
 
     }

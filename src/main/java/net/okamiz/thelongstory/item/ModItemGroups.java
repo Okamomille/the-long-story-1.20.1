@@ -26,11 +26,20 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_INGOT);
                         entries.add(ModItems.THESTONE_NUGGET);
 
+                        entries.add(ModItems.GREEN_SHARD);
+
+
 
                         entries.add(ModItems.THESTONE_HELMET);
                         entries.add(ModItems.THESTONE_CHESTPLATE);
                         entries.add(ModItems.THESTONE_LEGGINGS);
                         entries.add(ModItems.THESTONE_BOOTS);
+
+                        entries.add(ModItems.GREEN_SHARD_HELMET);
+                        entries.add(ModItems.GREEN_SHARD_CHESTPLATE);
+                        entries.add(ModItems.GREEN_SHARD_LEGGINGS);
+                        entries.add(ModItems.GREEN_SHARD_BOOTS);
+
 
 
                         entries.add(ModItems.THESTONE_SWORD);
@@ -38,6 +47,14 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_AXE);
                         entries.add(ModItems.THESTONE_SHOVEL);
                         entries.add(ModItems.THESTONE_HOE);
+
+                        entries.add(ModItems.GREEN_SHARD_SWORD);
+                        entries.add(ModItems.GREEN_SHARD_PICKAXE);
+                        entries.add(ModItems.GREEN_SHARD_AXE);
+                        entries.add(ModItems.GREEN_SHARD_SHOVEL);
+                        entries.add(ModItems.GREEN_SHARD_HOE);
+
+
 
                         entries.add(ModItems.RADAR);
                         entries.add(ModItems.RED_COAL);

@@ -20,9 +20,15 @@ public class ModItems {
     public static final Item BLOOD_BOTTLE = registerItem("blood_bottle", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item SPIDER_SILK = registerItem("spider_silk", new Item(new FabricItemSettings()));
 
+
+    //ORE/MATERIAL ITEMS -------------------
+
     public static final Item THESTONE_DUST = registerItem("thestone_dust", new Item(new FabricItemSettings()));
     public static final Item THESTONE_INGOT = registerItem("thestone_ingot", new Item(new FabricItemSettings()));
     public static final Item THESTONE_NUGGET = registerItem("thestone_nugget", new Item(new FabricItemSettings()));
+
+
+    public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
 
 
     //FUEL ITEMS -----------------
@@ -60,6 +66,18 @@ public class ModItems {
             new SwordItem(ModToolMaterial.THESTONE, 3, -2.0f, new FabricItemSettings().maxCount(1)));
 
 
+    public static final Item GREEN_SHARD_PICKAXE = registerItem("green_shard_pickaxe",
+            new PickaxeItem(ModToolMaterial.GREEN_SHARD, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SHARD_AXE = registerItem("green_shard_axe",
+            new AxeItem(ModToolMaterial.GREEN_SHARD, 6.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SHARD_SHOVEL = registerItem("green_shard_shovel",
+            new ShovelItem(ModToolMaterial.GREEN_SHARD, 1.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SHARD_HOE = registerItem("green_shard_hoe",
+            new HoeItem(ModToolMaterial.GREEN_SHARD, -2, -1.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SHARD_SWORD = registerItem("green_shard_sword",
+            new SwordItem(ModToolMaterial.GREEN_SHARD, 3, -2.0f, new FabricItemSettings().maxCount(1)));
+
+
     //ARMOR ITEMS -----------------
 
     public static final Item THESTONE_HELMET = registerItem("thestone_helmet",
@@ -70,6 +88,16 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item THESTONE_BOOTS = registerItem("thestone_boots",
             new ModArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+
+    public static final Item GREEN_SHARD_HELMET = registerItem("green_shard_helmet",
+            new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item GREEN_SHARD_CHESTPLATE = registerItem("green_shard_chestplate",
+            new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item GREEN_SHARD_LEGGINGS = registerItem("green_shard_leggings",
+            new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item GREEN_SHARD_BOOTS = registerItem("green_shard_boots",
+            new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 

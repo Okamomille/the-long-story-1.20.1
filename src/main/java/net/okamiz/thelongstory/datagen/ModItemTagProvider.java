@@ -20,6 +20,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     public void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.THESTONE_HELMET,ModItems.THESTONE_CHESTPLATE,ModItems.THESTONE_LEGGINGS,ModItems.THESTONE_BOOTS);
+                .add(ModItems.THESTONE_HELMET,ModItems.THESTONE_CHESTPLATE,ModItems.THESTONE_LEGGINGS,ModItems.THESTONE_BOOTS)
+                .add(ModItems.GREEN_SHARD_HELMET,ModItems.GREEN_SHARD_CHESTPLATE,ModItems.GREEN_SHARD_LEGGINGS,ModItems.GREEN_SHARD_BOOTS)
+        ;
     }
 }

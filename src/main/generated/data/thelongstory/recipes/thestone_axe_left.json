@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "thelongstory:thestone_ingot"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "XO ",
+    " O "
+  ],
+  "result": {
+    "item": "thelongstory:thestone_axe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "thelongstory:green_shard"
+    }
+  },
+  "pattern": [
+    " X ",
+    " O ",
+    " O "
+  ],
+  "result": {
+    "item": "thelongstory:green_shard_shovel"
+  },
+  "show_notification": true
+}
