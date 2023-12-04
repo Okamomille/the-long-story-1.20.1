@@ -22,7 +22,7 @@ public class ModArmorItem extends ArmorItem {
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.THESTONE, new StatusEffectInstance(StatusEffects.LUCK, 400, 1,
+                    .put(ModArmorMaterials.THESTONE, new StatusEffectInstance(StatusEffects.LUCK, 60, 1,
                             false, false, true)).build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Item.Settings settings) {
