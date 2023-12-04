@@ -74,6 +74,14 @@
   "block.thelongstory.egroric_pressure_plate" : "Egroric Pressure Plate",
 
 
+
+  "block.thelongstory.red_ospet" : "Red Ospet",
+  "block.thelongstory.blue_ospet" : "Blue Ospet",
+  "block.thelongstory.green_ospet" : "Green Ospet",
+  "block.thelongstory.yellow_ospet" : "Yellow Ospet",
+
+
+
   "itemgroup.modgroup" : "TLS Tab",
   "itemgroup.foodgroup" : "TLS Food Tab",
 

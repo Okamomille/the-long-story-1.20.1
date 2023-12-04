@@ -80,6 +80,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.EGRORIC_FENCE);
                         entries.add(ModBlocks.EGRORIC_FENCE_GATE);
 
+
+                        entries.add(ModBlocks.RED_OSPET);
+                        entries.add(ModBlocks.BLUE_OSPET);
+                        entries.add(ModBlocks.GREEN_OSPET);
+                        entries.add(ModBlocks.YELLOW_OSPET);
+
+
                     }).build());
 
     public static final ItemGroup FOOD_GROUP = Registry.register(Registries.ITEM_GROUP,

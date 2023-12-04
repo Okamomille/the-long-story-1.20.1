@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-04T14:04:46.8640148	The Long Story/Recipes
+// 1.20.2	2023-12-04T14:39:55.5401928	The Long Story/Recipes
 1e5094b528d2d94380ccdda25f7f45c27100e264 data\thelongstory\advancements\recipes\misc\red_coal_block.json
 04d3adfd72da3a768ccae4e61d27ae200a83fea7 data\thelongstory\recipes\egroric_stairs.json
 1f419957b6ccc207ba28f30c8aa1a3d27d627514 data\thelongstory\advancements\recipes\misc\crushed_bones.json
@@ -50,8 +50,8 @@ d76117e4f79b85c1549ea522530418286075bcd2 data\thelongstory\advancements\recipes\
 87939eb6b19ddb6ed637247c17ebb00d09d99d5d data\thelongstory\advancements\recipes\decorations\egroric_fence.json
 ec483b00e1e1c3150938b799a47aa5711812e55e data\thelongstory\advancements\recipes\combat\green_shard_leggings.json
 a4c985ee3541dcbef322e2bba586a29809b7b53c data\thelongstory\advancements\recipes\misc\spider_silk.json
-8543f5f7ab9a7df465fe0ee185d45c18254533f3 data\thelongstory\recipes\crushed_bones_block.json
 24a10c0ee15f96b63bfa87b532fdb2ade472c743 data\thelongstory\advancements\recipes\misc\crushed_bones_block.json
+8543f5f7ab9a7df465fe0ee185d45c18254533f3 data\thelongstory\recipes\crushed_bones_block.json
 a36c1288ecd570f1f9b37bfefca307859191d41c data\thelongstory\advancements\recipes\tools\thestone_pickaxe.json
 b5ba15db30fbf68e5ed1f6fe03b21c4c8e7db240 data\thelongstory\advancements\recipes\building_blocks\egroric_slab.json
 e79ffab80523dc46174321bf070dcf72f42542e1 data\thelongstory\recipes\green_shard_axe_left.json
@@ -80,8 +80,8 @@ bd0b78fe41c04d2d24fc5e941d20f954e453d42e data\thelongstory\recipes\crushed_bones
 78bd74188d4d6313cf1966e87eb2b4d2132d39aa data\thelongstory\advancements\recipes\tools\thestone_hoe_left.json
 4266b7d384401ecd3dfb15003c763dd542884c36 data\thelongstory\recipes\thestone_dust_from_blasting_thestone_ore.json
 43b7456b5a5e14fac58b26b2733c5935ddeed563 data\thelongstory\recipes\egroric_fence.json
-84c1eab8d49bc2a2d11b24fe48edacb24e470620 data\thelongstory\advancements\recipes\combat\thestone_helmet.json
-d422f2b661f829c20016c1f57f2c451abfa957bb data\thelongstory\recipes\thestone_helmet.json
+80d4688378ce3f34d9a4fc80dc6da11fd351b99c data\thelongstory\advancements\recipes\combat\thestone_helmet.json
+b56567743cb71ee2233b286ec3d7da507b242d43 data\thelongstory\recipes\thestone_helmet.json
 8df54f374a0ff487a0bdcdb38aa870e8b5ce3477 data\thelongstory\recipes\green_shard_shovel.json
 c07e940784748028f7271feb2cf15d80e64a0d83 data\thelongstory\recipes\thestone_sword.json
 7a7e398b462ac73e3d3f54aa59f580a8be13652a data\thelongstory\recipes\egroric_door.json

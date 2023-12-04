@@ -1,29 +1,29 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_green_shard": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "thelongstory:green_shard"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "minecraft:thestone_helmet"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_thestone_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_green_shard"
+      "has_thestone_ingot"
     ]
   ],
   "rewards": {

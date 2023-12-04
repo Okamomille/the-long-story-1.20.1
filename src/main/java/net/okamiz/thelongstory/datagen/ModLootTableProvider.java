@@ -42,6 +42,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.EGRORIC_SLAB, slabDrops(ModBlocks.EGRORIC_SLAB));
 
 
+        addDrop(ModBlocks.RED_OSPET);
+        addDrop(ModBlocks.BLUE_OSPET);
+        addDrop(ModBlocks.GREEN_OSPET);
+        addDrop(ModBlocks.YELLOW_OSPET);
+
+        addPottedPlantDrops(ModBlocks.POTTED_RED_OSPET);
+        addPottedPlantDrops(ModBlocks.POTTED_BLUE_OSPET);
+        addPottedPlantDrops(ModBlocks.POTTED_GREEN_OSPET);
+        addPottedPlantDrops(ModBlocks.POTTED_YELLOW_OSPET);
+
         addDrop(ModBlocks.THESTONE_ORE, copperLikeOreDrops(ModBlocks.THESTONE_ORE, ModItems.THESTONE_DUST));
         addDrop(ModBlocks.DEEPSLATE_THESTONE_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_THESTONE_ORE, ModItems.THESTONE_DUST));
     }
