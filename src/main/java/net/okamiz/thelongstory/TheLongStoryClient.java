@@ -2,7 +2,14 @@ package net.okamiz.thelongstory;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.model.EntityModel;
+import net.okamiz.entity.ModEntities;
+import net.okamiz.entity.client.ModModelLayers;
+import net.okamiz.entity.client.TrepasseurModel;
+import net.okamiz.entity.client.TrepasseurRenderer;
 import net.okamiz.thelongstory.block.ModBlocks;
 
 public class TheLongStoryClient implements ClientModInitializer {
@@ -20,5 +27,8 @@ public class TheLongStoryClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_GREEN_OSPET, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YELLOW_OSPET, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_YELLOW_OSPET, RenderLayer.getCutout());
+
+        EntityRendererRegistry.register(ModEntities.TREPASSEUR, TrepasseurRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.TREPASSEUR, TrepasseurModel::getTexturedModelData);
     }
 }

@@ -7,6 +7,7 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.okamiz.entity.ModEntities;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.item.custom.ModArmorItem;
 import net.okamiz.thelongstory.item.custom.RadarItem;
@@ -48,6 +49,18 @@ public class ModItems {
     public static final Item LAPIS_APPLE = registerItem("lapis_apple", new Item(new FabricItemSettings().food(ModFoodComponents.LAPIS_APPLE)));
     public static final Item AMETHYST_APPLE = registerItem("amethyst_apple", new Item(new FabricItemSettings().food(ModFoodComponents.AMETHYST_APPLE)));
     public static final Item REDSTONE_APPLE = registerItem("redstone_apple", new Item(new FabricItemSettings().food(ModFoodComponents.REDSTONE_APPLE)));
+
+
+
+
+    //SPAWN EGGS ITEMS -----------------
+
+
+    public static final Item TREPASSEUR_SPAWN_EGG = registerItem("trepasseur_spawn_egg",
+            new SpawnEggItem(ModEntities.TREPASSEUR, 0xa86518,0x3b260f, new FabricItemSettings()));
+
+
+
 
 
 
