@@ -1,6 +1,7 @@
 package net.okamiz.thelongstory.util;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -17,6 +18,12 @@ public class ModLootTableModifiers {
 
     private static final Identifier SPIDER_ID =
             new Identifier("minecraft", "entities/spider");
+
+    private static final Identifier TREPASSEUR_ID =
+            new Identifier("thelongstory", "entities/trepasseur");
+
+    private static final Identifier TICKELER_ID =
+            new Identifier("thelongstory", "entities/tickeler");
 
     public static void modifyLootTables(){
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -51,11 +58,22 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
-            if(CAVE_SPIDER_ID.equals(id)) {
+            if(TREPASSEUR_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.33f)) // 1f = 100% of the time
-                        .with(ItemEntry.builder(ModItems.BLOOD_BOTTLE))
+                        .conditionally(RandomChanceLootCondition.builder(0.89f)) // 1f = 100% of the time
+                        .with(ItemEntry.builder(ModItems.INFESTED_FLESH))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build()); // Number of Items
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+
+            if(TICKELER_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.87f)) // 1f = 100% of the time
+                        .with(ItemEntry.builder(Items.ROTTEN_FLESH))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build()); // Number of Items
 
                 tableBuilder.pool(poolBuilder.build());
