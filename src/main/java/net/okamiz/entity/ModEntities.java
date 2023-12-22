@@ -18,6 +18,6 @@ public class ModEntities {
     public static final EntityType<TrepasseurEntity> TREPASSEUR = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(TheLongStory.MOD_ID, "trepasseur"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER,TrepasseurEntity::new)
-                    .dimensions(EntityDimensions.fixed(1f,1f)).build());
+                    .dimensions(EntityDimensions.fixed(0.65f,2f)).build());
 
 }

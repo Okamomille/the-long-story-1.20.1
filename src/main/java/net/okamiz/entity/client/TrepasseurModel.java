@@ -6,6 +6,7 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.MathHelper;
 import net.okamiz.entity.animation.ModAnimations;
 import net.okamiz.entity.custom.TrepasseurEntity;
@@ -13,6 +14,7 @@ import net.okamiz.entity.custom.TrepasseurEntity;
 public class TrepasseurModel<T extends TrepasseurEntity> extends SinglePartEntityModel<T> {
 	private final ModelPart base;
 	private final ModelPart head;
+	private PlayerEntity player;
 
 	public TrepasseurModel(ModelPart root) {
 		this.base = root.getChild("base");
@@ -54,8 +56,11 @@ public class TrepasseurModel<T extends TrepasseurEntity> extends SinglePartEntit
 		this.getPart().traverse().forEach(ModelPart::resetTransform);
 		this.setHeadAngles(headYaw,headPitch);
 
-		this.animateMovement(ModAnimations.TREPASSEUR_WALK,limbAngle, limbDistance, 2f, 2.5f);
-		this.updateAnimation(entity.idleAnimationState, ModAnimations.TREPASSEUR_IDLE, 1f);
+				this.animateMovement(ModAnimations.TREPASSEUR_WALK,limbAngle, limbDistance, 2f, 2.5f);
+
+		this.updateAnimation(entity.idleAnimationState, ModAnimations.TREPASSEUR_IDLE, animationProgress, 1f);
+		this.updateAnimation(entity.chaseAnimationState, ModAnimations.TREPASSEUR_CHASE, animationProgress,1f);
+		this.updateAnimation(entity.attackAnimationState, ModAnimations.TREPASSEUR_ATTACK, animationProgress,2f);
 	}
 
 	private void setHeadAngles(float headYaw, float headPitch){
