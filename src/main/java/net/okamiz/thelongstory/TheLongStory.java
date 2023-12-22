@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.okamiz.entity.ModEntities;
+import net.okamiz.entity.custom.TickelerEntity;
 import net.okamiz.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.item.ModItemGroups;
@@ -33,5 +34,6 @@ public class TheLongStory implements ModInitializer {
 		FuelRegistry.INSTANCE.add(ModBlocks.RED_COAL_BLOCK, 32000);
 
 		FabricDefaultAttributeRegistry.register(ModEntities.TREPASSEUR, TrepasseurEntity.createTrepasseurAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.TICKELER, TickelerEntity.createTickelerAttributes());
 	}
 }

@@ -7,9 +7,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.okamiz.entity.ModEntities;
-import net.okamiz.entity.client.ModModelLayers;
-import net.okamiz.entity.client.TrepasseurModel;
-import net.okamiz.entity.client.TrepasseurRenderer;
+import net.okamiz.entity.client.*;
 import net.okamiz.thelongstory.block.ModBlocks;
 
 public class TheLongStoryClient implements ClientModInitializer {
@@ -30,5 +28,8 @@ public class TheLongStoryClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.TREPASSEUR, TrepasseurRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.TREPASSEUR, TrepasseurModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.TICKELER, TickelerRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.TICKELER, TickelerModel::getTexturedModelData);
     }
 }
