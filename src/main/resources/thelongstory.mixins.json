@@ -3,7 +3,9 @@
 	"package": "net.okamiz.thelongstory.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"FixToolTipMixin",
+		"OrderedTextToolTipAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1
