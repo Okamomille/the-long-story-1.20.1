@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    "B": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "C": {
+      "item": "minecraft:ghast_tear"
+    },
+    "D": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "E": {
+      "item": "minecraft:golden_carrot"
+    },
+    "F": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "G": {
+      "item": "minecraft:magma_cream"
+    },
+    "H": {
+      "item": "minecraft:nether_wart"
+    },
+    "O": {
+      "item": "thelongstory:potion_receptacle"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "HOD",
+    "GFE"
+  ],
+  "result": {
+    "item": "thelongstory:potion_core"
+  },
+  "show_notification": true
+}

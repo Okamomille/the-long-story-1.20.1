@@ -3,8 +3,10 @@ package net.okamiz.thelongstory.item;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
+import net.minecraft.item.FoodComponents;
+import net.okamiz.thelongstory.effect.ModEffects;
 
-public class ModFoodComponents {
+public class ModFoodComponents extends FoodComponents {
     public static final FoodComponent EMERALD_APPLE = new FoodComponent.Builder().alwaysEdible().hunger(8).saturationModifier(1.2f)
             .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 3600),100)
             .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 2400,1),100).build();
@@ -27,6 +29,10 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 3600),100).build();
 
     public static final FoodComponent AMETHYST_APPLE = new FoodComponent.Builder().alwaysEdible().hunger(5).saturationModifier(1.2f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 3600, 1, false, false, true),100)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 3600, 0, false, false, true),100)
             .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 2400,1, false, false, true),100).build();
+
+    public static final FoodComponent INFESTED_FLESH = new FoodComponent.Builder().alwaysEdible().hunger(1).saturationModifier(1f).meat()
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 200, 0),0.8F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 300,1),100).build();
 }

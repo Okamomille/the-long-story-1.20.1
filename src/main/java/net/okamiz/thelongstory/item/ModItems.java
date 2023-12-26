@@ -18,7 +18,7 @@ public class ModItems {
 
     public static final Item BONE_FRAGMENTS = registerItem("bone_fragments", new Item(new FabricItemSettings()));
     public static final Item CRUSHED_BONES = registerItem("crushed_bones", new Item(new FabricItemSettings()));
-    public static final Item INFESTED_FLESH = registerItem("infested_flesh", new Item(new FabricItemSettings()));
+    public static final Item INFESTED_FLESH = registerItem("infested_flesh", new Item(new FabricItemSettings().food(ModFoodComponents.INFESTED_FLESH)));
 
     public static final Item BLOOD_BOTTLE = registerItem("blood_bottle", new Item(new FabricItemSettings().maxCount(16)));
     public static final Item SPIDER_SILK = registerItem("spider_silk", new Item(new FabricItemSettings()));

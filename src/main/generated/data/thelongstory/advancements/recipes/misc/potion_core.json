@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_potion_receptacle": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:potion_receptacle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:potion_core"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_potion_receptacle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:potion_core"
+    ]
+  },
+  "sends_telemetry_event": false
+}

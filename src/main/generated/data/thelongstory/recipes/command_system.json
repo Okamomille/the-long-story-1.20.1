@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:power_star"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "thelongstory:iron_plate"
+    }
+  },
+  "pattern": [
+    "RXR",
+    "XOX",
+    "RXR"
+  ],
+  "result": {
+    "item": "thelongstory:command_system"
+  },
+  "show_notification": true
+}

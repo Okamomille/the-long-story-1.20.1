@@ -15,6 +15,7 @@ import net.okamiz.thelongstory.damage.ModDamageTypes;
 public class InfectedEffect extends StatusEffect {
 
     private float storedHealth;
+    private int heartsLost;
 
     public InfectedEffect(StatusEffectCategory category, int color) {
         super(category, color);
@@ -24,19 +25,6 @@ public class InfectedEffect extends StatusEffect {
     public void onApplied(LivingEntity entity, int amplifier) {
         super.onApplied(entity, amplifier);
         storedHealth = entity.getHealth();
-    }
-
-    @Override
-    public void onRemoved(AttributeContainer attributeContainer) {
-        super.onRemoved(attributeContainer);
-        storedHealth = 0;
-    }
-
-    @Override
-    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        super.applyUpdateEffect(entity, amplifier);
-
-        int heartsLost;
 
         if(amplifier == 0)
         {
@@ -49,16 +37,32 @@ public class InfectedEffect extends StatusEffect {
         {
             heartsLost = (amplifier + 1) * 2;
         }
+    }
 
-        if(entity.getHealth() < storedHealth)
+    @Override
+    public void onRemoved(AttributeContainer attributeContainer) {
+        super.onRemoved(attributeContainer);
+        storedHealth = 0;
+    }
+
+    @Override
+    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        super.applyUpdateEffect(entity, amplifier);
+
+
+
+
+
+        /*if(entity.getHealth() < storedHealth)
         {
             entity.damage(ModDamageTypes.of(entity.getWorld(), ModDamageTypes.INFECTED), heartsLost);
+
             storedHealth = entity.getHealth();
         }
         if(entity.getHealth() > storedHealth)
         {
             storedHealth = entity.getHealth();
-        }
+        }*/
 
 
 

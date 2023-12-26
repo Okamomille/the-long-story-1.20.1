@@ -72,7 +72,7 @@ public class TrepasseurAttackGoal extends MeleeAttackGoal {
         this.resetAttackCooldown();
         this.mob.swingHand(Hand.MAIN_HAND);
         this.mob.tryAttack(pEnemy);
-        pEnemy.addStatusEffect(new StatusEffectInstance(ModEffects.INFECTED, 600, 2));
+        pEnemy.addStatusEffect(new StatusEffectInstance(ModEffects.INFECTED, 400, 1));
     }
 
 

@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-26T15:31:19.6076675	The Long Story/Recipes
+// 1.20.2	2023-12-26T16:01:43.3705772	The Long Story/Recipes
 88d93431cb89013a9743d7703164c7f642a345ae data\thelongstory\advancements\recipes\misc\thestone_dust.json
 c3adef2e0bfb93bb8ee421f309cbb912adcab7ce data\thelongstory\recipes\thestone_dust.json
 02f3227985a5b3eee67032c807a6166dace2aac6 data\thelongstory\advancements\recipes\combat\thestone_chestplate.json
@@ -78,13 +78,13 @@ a36c1288ecd570f1f9b37bfefca307859191d41c data\thelongstory\advancements\recipes\
 919543e447cff877082be251b077ccbca66acfdf data\thelongstory\advancements\recipes\tools\thestone_sword.json
 ddc848387d2bbe265188550de3cd73e9d92e3bd1 data\thelongstory\advancements\recipes\redstone\egroric_door.json
 7984decba5c9f0029e02ceab46e6913626279111 data\thelongstory\recipes\egroric_pressure_plate.json
-caaeb70fb1a5ede073531c32a67692971addc0cf data\thelongstory\recipes\thestone_chestplate.json
 799748c137c3ab394c89504568c11dd87ffe7804 data\thelongstory\advancements\recipes\redstone\egroric_button.json
+caaeb70fb1a5ede073531c32a67692971addc0cf data\thelongstory\recipes\thestone_chestplate.json
 18bda0bac1f474cc019b9bf1c80c629a9a347445 data\thelongstory\advancements\recipes\misc\potion_core.json
 e7b2abbd606cecee859daefcf82c1823317703b5 data\thelongstory\recipes\egroric_slab.json
 d8c77dafc8d49b23825f242913992f88da921998 data\thelongstory\recipes\thestone_ingot.json
-0d83cc1e29b11e4de8b8dfd532b0cbc00904eafb data\thelongstory\advancements\recipes\misc\red_coal.json
 c07e940784748028f7271feb2cf15d80e64a0d83 data\thelongstory\recipes\thestone_sword.json
+0d83cc1e29b11e4de8b8dfd532b0cbc00904eafb data\thelongstory\advancements\recipes\misc\red_coal.json
 4575da93ad6a542dce1e8056a32170893d0712b8 data\thelongstory\advancements\recipes\tools\green_shard_axe_left.json
 4266b7d384401ecd3dfb15003c763dd542884c36 data\thelongstory\recipes\thestone_dust_from_blasting_thestone_ore.json
 e8c6df0524ff5097a4e6884b0d76abc55bb490da data\thelongstory\recipes\egroric_trapdoor.json

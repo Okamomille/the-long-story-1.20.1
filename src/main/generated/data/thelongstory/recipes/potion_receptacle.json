@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:experience_bottle"
+    },
+    "X": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XOX",
+    " X "
+  ],
+  "result": {
+    "item": "thelongstory:potion_receptacle"
+  },
+  "show_notification": true
+}

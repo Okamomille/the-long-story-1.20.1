@@ -19,7 +19,12 @@ public class ModEffects {
                 new InfectedEffect(StatusEffectCategory.HARMFUL, 5959114)
                         .addAttributeModifier(
                                 EntityAttributes.GENERIC_MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.05F,
-                                EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+                                EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
+                        .addAttributeModifier(
+                                EntityAttributes.GENERIC_MAX_HEALTH, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.10F,
+                                EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
+
+                                        );
     }
 
     public static void registerEffects(){

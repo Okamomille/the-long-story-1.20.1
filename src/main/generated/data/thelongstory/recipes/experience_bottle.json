@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:glass_bottle"
+    },
+    "X": {
+      "item": "thelongstory:thestone_dust"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XOX",
+    " X "
+  ],
+  "result": {
+    "item": "minecraft:experience_bottle"
+  },
+  "show_notification": true
+}

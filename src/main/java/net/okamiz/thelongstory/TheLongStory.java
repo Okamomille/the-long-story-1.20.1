@@ -9,6 +9,7 @@ import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.entity.custom.TickelerEntity;
 import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.item.ModFoodComponents;
 import net.okamiz.thelongstory.item.ModItemGroups;
 import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.util.ModCustomTrades;
