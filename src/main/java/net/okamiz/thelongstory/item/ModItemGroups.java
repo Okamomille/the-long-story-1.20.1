@@ -87,6 +87,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.YELLOW_OSPET);
 
                         entries.add(ModItems.TREPASSEUR_SPAWN_EGG);
+                        entries.add(ModItems.TICKELER_SPAWN_EGG);
 
 
                     }).build());

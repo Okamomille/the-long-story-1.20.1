@@ -53,6 +53,10 @@
   "item.thelongstory.amethyst_apple" : "Amethyst Apple",
 
 
+  "item.thelongstory.trepasseur_spawn_egg" : "Trepasseur Spawn Egg",
+  "item.thelongstory.tickeler_spawn_egg" : "Tickeler Spawn Egg",
+
+
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
   "block.thelongstory.mold_block" : "Mold Block",
   "block.thelongstory.spider_silk_block" : "Spider Silk Block",
@@ -89,6 +93,11 @@
 
   "tooltip.thelongstory.radar" : "A radar for searching ores underground!",
   "tooltip.thelongstory.effect_armor" : "Have a special effect when you equip the full armor.",
-  "tooltip.thelongstory.pink_greffed_command_system" : "A homemade command block wich is used to heal yourself."
+  "tooltip.thelongstory.pink_greffed_command_system" : "A homemade command block wich is used to heal yourself.",
+
+  "death.attack.infected": "%1$s died from the infection",
+  "death.attack.infected.player": "%1$s has been deadly infected by %2$s",
+
+  "effect.thelongstory.infected": "Infected"
 
 }

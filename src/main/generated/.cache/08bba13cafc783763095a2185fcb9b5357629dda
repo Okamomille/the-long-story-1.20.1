@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-21T17:02:29.3428154	The Long Story/Recipes
+// 1.20.2	2023-12-26T02:29:33.3446416	The Long Story/Recipes
 88d93431cb89013a9743d7703164c7f642a345ae data\thelongstory\advancements\recipes\misc\thestone_dust.json
 e79ffab80523dc46174321bf070dcf72f42542e1 data\thelongstory\recipes\green_shard_axe_left.json
 c3adef2e0bfb93bb8ee421f309cbb912adcab7ce data\thelongstory\recipes\thestone_dust.json
@@ -22,8 +22,8 @@ ab2cf8797f29f50dfc88e9c58e2c29854362a6a0 data\thelongstory\advancements\recipes\
 1702283c7624e6df4ed8a8000d60b45cf54b57e1 data\thelongstory\recipes\spider_silk_block.json
 bcd05f4e060f61498a9fd2a7b61ab2e1364113f3 data\thelongstory\advancements\recipes\tools\thestone_axe.json
 642151bc748b3546f7c8179ae961b4eb2cd188c8 data\thelongstory\advancements\recipes\tools\thestone_hoe.json
-cb777218a0405b0abda6f0e3746a7e93ef507680 data\thelongstory\advancements\recipes\combat\thestone_boots.json
 80d4688378ce3f34d9a4fc80dc6da11fd351b99c data\thelongstory\advancements\recipes\combat\thestone_helmet.json
+cb777218a0405b0abda6f0e3746a7e93ef507680 data\thelongstory\advancements\recipes\combat\thestone_boots.json
 2f3742cedb66a29ad65173693a3da7ba46c2601c data\thelongstory\recipes\green_shard_hoe_left.json
 1f419957b6ccc207ba28f30c8aa1a3d27d627514 data\thelongstory\advancements\recipes\misc\crushed_bones.json
 36793f62bb9ad16a442305d9d4de562452df0dca data\thelongstory\recipes\thestone_pickaxe.json

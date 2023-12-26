@@ -1,26 +1,23 @@
-package net.okamiz.entity.ai;
+package net.okamiz.thelongstory.entity.ai;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.PathAwareEntity;
-import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
-import net.okamiz.entity.custom.TrepasseurEntity;
+import net.okamiz.thelongstory.entity.custom.TickelerEntity;
 
-public class TrepasseurAttackGoal extends MeleeAttackGoal {
-    private final TrepasseurEntity entity;
+public class TickelerAttackGoal extends MeleeAttackGoal {
+    private final TickelerEntity entity;
     private int attackDelay;
     private int ticksUntilNextAttack = 15;
     private boolean shouldCountTillNextAttack = false;
 
     private PlayerEntity player;
 
-    public TrepasseurAttackGoal(PathAwareEntity mob, double speed, boolean pauseWhenMobIdle) {
+    public TickelerAttackGoal(PathAwareEntity mob, double speed, boolean pauseWhenMobIdle) {
         super(mob, speed, pauseWhenMobIdle);
-        entity = ((TrepasseurEntity) mob);
+        entity = ((TickelerEntity) mob);
     }
 
     @Override
@@ -72,12 +69,7 @@ public class TrepasseurAttackGoal extends MeleeAttackGoal {
         this.resetAttackCooldown();
         this.mob.swingHand(Hand.MAIN_HAND);
         this.mob.tryAttack(pEnemy);
-        pEnemy.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 120));
     }
-
-
-
-
 
     @Override
     public void tick() {

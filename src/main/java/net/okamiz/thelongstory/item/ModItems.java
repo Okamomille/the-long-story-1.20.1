@@ -7,7 +7,7 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.okamiz.entity.ModEntities;
+import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.item.custom.ModArmorItem;
 import net.okamiz.thelongstory.item.custom.RadarItem;
@@ -57,9 +57,10 @@ public class ModItems {
 
 
     public static final Item TREPASSEUR_SPAWN_EGG = registerItem("trepasseur_spawn_egg",
-            new SpawnEggItem(ModEntities.TREPASSEUR, 0xa86518,0x3b260f, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.TREPASSEUR, 5944735,5477236, new FabricItemSettings()));
 
-
+    public static final Item TICKELER_SPAWN_EGG = registerItem("tickeler_spawn_egg",
+            new SpawnEggItem(ModEntities.TICKELER, 3304518,9103214, new FabricItemSettings()));
 
 
 

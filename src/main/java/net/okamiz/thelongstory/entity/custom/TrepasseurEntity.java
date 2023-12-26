@@ -1,4 +1,4 @@
-package net.okamiz.entity.custom;
+package net.okamiz.thelongstory.entity.custom;
 
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
@@ -10,14 +10,10 @@ import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.*;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
-import net.okamiz.entity.ai.TrepasseurAttackGoal;
-import org.jetbrains.annotations.Nullable;
+import net.okamiz.thelongstory.entity.ai.TrepasseurAttackGoal;
 
 public class TrepasseurEntity extends ZombieEntity {
 

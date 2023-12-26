@@ -1,4 +1,4 @@
-package net.okamiz.entity;
+package net.okamiz.thelongstory.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
@@ -7,9 +7,8 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.tick.Tick;
-import net.okamiz.entity.custom.TickelerEntity;
-import net.okamiz.entity.custom.TrepasseurEntity;
+import net.okamiz.thelongstory.entity.custom.TickelerEntity;
+import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.TheLongStory;
 
 public class ModEntities {

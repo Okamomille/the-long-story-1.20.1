@@ -1,4 +1,4 @@
-package net.okamiz.entity.client;
+package net.okamiz.thelongstory.entity.client;
 
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.util.Identifier;

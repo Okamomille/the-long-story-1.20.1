@@ -1,11 +1,11 @@
-package net.okamiz.entity.client;
+package net.okamiz.thelongstory.entity.client;
 
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
-import net.okamiz.entity.custom.TrepasseurEntity;
+import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.TheLongStory;
 
 public class TrepasseurRenderer extends MobEntityRenderer<TrepasseurEntity, TrepasseurModel<TrepasseurEntity>> {

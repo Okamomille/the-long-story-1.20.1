@@ -5,9 +5,8 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.entity.model.EntityModel;
-import net.okamiz.entity.ModEntities;
-import net.okamiz.entity.client.*;
+import net.okamiz.thelongstory.entity.ModEntities;
+import net.okamiz.thelongstory.entity.client.*;
 import net.okamiz.thelongstory.block.ModBlocks;
 
 public class TheLongStoryClient implements ClientModInitializer {

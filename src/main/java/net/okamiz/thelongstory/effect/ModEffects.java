@@ -1,0 +1,23 @@
+package net.okamiz.thelongstory.effect;
+
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import net.okamiz.thelongstory.TheLongStory;
+
+
+public class ModEffects {
+
+    public static StatusEffect INFECTED;
+
+    public static StatusEffect registerStatusEffect(String name){
+        return Registry.register(Registries.STATUS_EFFECT, new Identifier(TheLongStory.MOD_ID, name),
+                new InfectedEffect(StatusEffectCategory.HARMFUL, 5959114));
+    }
+
+    public static void registerEffects(){
+        INFECTED = registerStatusEffect("infected");
+    }
+}

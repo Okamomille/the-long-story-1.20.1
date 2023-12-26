@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-21T17:02:29.3363044	The Long Story/Model Definitions
+// 1.20.2	2023-12-26T02:29:33.340119	The Long Story/Model Definitions
 f482aa3f8bddbe50d89e5aa7a0164ab99eeb6f52 assets\thelongstory\blockstates\egroric_trapdoor.json
 c2eb1d8dcdac142ad6ce4ee254add987e2e76f6d assets\thelongstory\models\item\green_shard_sword.json
 d7a1da975d6c81097e09aa1816da88756ef4c488 assets\thelongstory\models\item\infested_flesh.json
@@ -146,6 +146,7 @@ a175eef3f73a2240fbce9617e9f851de5de65937 assets\thelongstory\models\item\theston
 db63af44d878505bf5892564faa3eb046f975b79 assets\thelongstory\models\item\green_shard_chestplate_netherite_trim.json
 d0e74174cad8519dcf0d21f1073ef71b91261a1c assets\thelongstory\models\item\green_shard_helmet_amethyst_trim.json
 49e5e15acba9836ad31b0325d811457a2882fbb7 assets\thelongstory\models\item\green_shard_chestplate_diamond_trim.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\thelongstory\models\item\tickeler_spawn_egg.json
 e39ddc10c50799f132af42619d9b64647aa6969d assets\thelongstory\models\block\egroric_fence_gate_open.json
 f9be186373bacc5db24e6ce504e3cc9f931768ef assets\thelongstory\blockstates\potted_red_ospet.json
 df36f7b63c181226c59d6e75ec19efd1e4192249 assets\thelongstory\models\item\green_shard_helmet_diamond_trim.json
