@@ -326,6 +326,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.WOODEN_PLATE),conditionsFromItem(ModItems.WOODEN_PLATE))
                 .offerTo(exporter, new Identifier("iron_plate_craft"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.POWER_STAR, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('O', Items.NETHER_STAR)
+                .input('X', Items.END_CRYSTAL)
+                .criterion(hasItem(Items.NETHER_STAR),conditionsFromItem(Items.NETHER_STAR))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.POWER_STAR)));
+
 
         // ----------------
 

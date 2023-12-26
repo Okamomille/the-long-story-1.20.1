@@ -73,6 +73,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RADAR, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.POWER_STAR, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.WOODEN_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_PLATE, Models.GENERATED);
 

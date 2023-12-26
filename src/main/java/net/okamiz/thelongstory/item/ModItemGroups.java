@@ -25,6 +25,8 @@ public class ModItemGroups {
                         entries.add(ModItems.WOODEN_PLATE);
                         entries.add(ModItems.IRON_PLATE);
 
+                        entries.add(ModItems.POWER_STAR);
+
                         entries.add(ModItems.THESTONE_DUST);
                         entries.add(ModItems.THESTONE_INGOT);
                         entries.add(ModItems.THESTONE_NUGGET);

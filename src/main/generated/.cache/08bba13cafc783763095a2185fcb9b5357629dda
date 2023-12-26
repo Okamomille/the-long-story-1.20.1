@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-26T14:10:35.6770767	The Long Story/Recipes
+// 1.20.2	2023-12-26T14:34:14.6739129	The Long Story/Recipes
 88d93431cb89013a9743d7703164c7f642a345ae data\thelongstory\advancements\recipes\misc\thestone_dust.json
 c3adef2e0bfb93bb8ee421f309cbb912adcab7ce data\thelongstory\recipes\thestone_dust.json
 02f3227985a5b3eee67032c807a6166dace2aac6 data\thelongstory\advancements\recipes\combat\thestone_chestplate.json
@@ -21,6 +21,7 @@ bd0b78fe41c04d2d24fc5e941d20f954e453d42e data\thelongstory\recipes\crushed_bones
 95a5bb68ef53c2fbe6caf4dc96dcc7b0d8074cfb data\thelongstory\recipes\egroric_fence_gate.json
 c0b9ef0b6ec616f862c847161c4988ce74f27ef4 data\thelongstory\advancements\recipes\misc\red_coal_craft.json
 bd0aa437318929e4bfdbe8081ce789aaaa72729c data\thelongstory\recipes\thestone_leggings.json
+541599d51de43e7cce79ae347f764f98dabf7406 data\thelongstory\advancements\recipes\misc\power_star.json
 8df54f374a0ff487a0bdcdb38aa870e8b5ce3477 data\thelongstory\recipes\green_shard_shovel.json
 e5eafb40f64655fe9dfadb05b0bd071fa8d9f11f data\thelongstory\advancements\recipes\redstone\egroric_fence_gate.json
 7a7e398b462ac73e3d3f54aa59f580a8be13652a data\thelongstory\recipes\egroric_door.json
@@ -48,6 +49,7 @@ d147e01326d2bc6666b25e1831f346439013246e data\thelongstory\advancements\recipes\
 e79ffab80523dc46174321bf070dcf72f42542e1 data\thelongstory\recipes\green_shard_axe_left.json
 a7f5784c2bb4a88d06647063d854a17b10e544c1 data\thelongstory\advancements\recipes\tools\green_shard_hoe_left.json
 ed67cc36f1d5fbefde359db658228f92ad89a84a data\thelongstory\recipes\iron_plate_craft.json
+00604429e929f19d6c875d1a0aa35dd62597e9af data\thelongstory\recipes\power_star.json
 44303b54bb747096c78c59d8facf9cce4edd9df9 data\thelongstory\recipes\red_coal_block.json
 8543f5f7ab9a7df465fe0ee185d45c18254533f3 data\thelongstory\recipes\crushed_bones_block.json
 f8a895eb3f0941e8b5c2d4e0216df16241eb922b data\thelongstory\advancements\recipes\combat\green_shard_boots.json

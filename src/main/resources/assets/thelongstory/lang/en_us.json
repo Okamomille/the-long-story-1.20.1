@@ -15,6 +15,7 @@
 
 
   "item.thelongstory.radar" : "Radar",
+  "item.thelongstory.power_star" : "Power Star",
   "item.thelongstory.red_coal" : "Red Coal",
 
 
@@ -98,6 +99,7 @@
   "tooltip.thelongstory.radar" : "A radar for searching ores underground!",
   "tooltip.thelongstory.effect_armor" : "Have a special effect when you equip the full armor.",
   "tooltip.thelongstory.pink_greffed_command_system" : "A homemade command block wich is used to heal yourself.",
+  "tooltip.thelongstory.power_star" : "This is the star of Power, needed to go deeper in the science of life.",
 
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",

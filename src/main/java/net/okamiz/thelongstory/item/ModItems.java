@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.item.custom.ModArmorItem;
+import net.okamiz.thelongstory.item.custom.PowerStarItem;
 import net.okamiz.thelongstory.item.custom.RadarItem;
 
 public class ModItems {
@@ -44,6 +45,9 @@ public class ModItems {
 
     public static final Item RADAR = registerItem("radar",
             new RadarItem(new FabricItemSettings().maxCount(1).maxDamage(50)));
+
+    public static final Item POWER_STAR = registerItem("power_star",
+            new PowerStarItem(new FabricItemSettings()));
 
     //FOOD ITEMS -----------------
 

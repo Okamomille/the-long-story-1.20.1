@@ -1,9 +1,9 @@
-// 1.20.2	2023-12-26T14:10:35.6730775	The Long Story/Model Definitions
+// 1.20.2	2023-12-26T14:34:14.6687714	The Long Story/Model Definitions
 f482aa3f8bddbe50d89e5aa7a0164ab99eeb6f52 assets\thelongstory\blockstates\egroric_trapdoor.json
 c2eb1d8dcdac142ad6ce4ee254add987e2e76f6d assets\thelongstory\models\item\green_shard_sword.json
 d7a1da975d6c81097e09aa1816da88756ef4c488 assets\thelongstory\models\item\infested_flesh.json
-8af787c18d26cc01194a6f08904d027d628e7294 assets\thelongstory\blockstates\potted_blue_ospet.json
 fe3bb17601dec23740987927acaaa01007328f41 assets\thelongstory\blockstates\thestone_ore.json
+8af787c18d26cc01194a6f08904d027d628e7294 assets\thelongstory\blockstates\potted_blue_ospet.json
 46a66d13c294b811657bfed581049156d52c467e assets\thelongstory\models\block\egroric_door_bottom_right.json
 dcd6702983d65cc144166a2df3add371e8e72166 assets\thelongstory\models\block\egroric_door_top_right_open.json
 d262ff1df5924fa2695aa8324ba06f2846174cd3 assets\thelongstory\models\block\egroric_button_inventory.json
@@ -91,6 +91,7 @@ b6f7fcbd6f8643808f43204d021cc91468c6dacb assets\thelongstory\models\block\egrori
 6432fa3e878094bcf924ac0b0d45108dda785ad7 assets\thelongstory\models\block\pink_greffed_command_system.json
 4db160080ec77c96a610947ba5f2778f8f77730c assets\thelongstory\models\item\blood_bottle.json
 5bf19b8833f92b3c00d376ccb31d17721eebf56f assets\thelongstory\models\item\thestone_leggings_emerald_trim.json
+4990cf3ec612efc423dc80788b09c12c8b155f6d assets\thelongstory\models\item\power_star.json
 987fc1fe7da272d53511b54b387ec49ba9105313 assets\thelongstory\models\item\egroric_slab.json
 dd4da7796e074ff23994b89a57274792c66a7ae8 assets\thelongstory\models\block\egroric_slab.json
 ab4b9a4cb29579c9a1b5edd94e00ae52d6475d6c assets\thelongstory\models\item\thestone_shovel.json
