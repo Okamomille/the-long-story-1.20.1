@@ -7,12 +7,10 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.TheLongStory;
-import net.okamiz.thelongstory.item.custom.ModArmorItem;
-import net.okamiz.thelongstory.item.custom.ModGlintItem;
-import net.okamiz.thelongstory.item.custom.PowerStarItem;
-import net.okamiz.thelongstory.item.custom.RadarItem;
+import net.okamiz.thelongstory.item.custom.*;
 
 public class ModItems {
 
@@ -40,7 +38,8 @@ public class ModItems {
 
 
     public static final Item POTION_RECEPTACLE = registerItem("potion_receptacle", new Item(new FabricItemSettings()));
-    public static final Item POTION_CORE = registerItem("potion_core", new ModGlintItem(new FabricItemSettings()));
+    public static final Item POTION_CORE = registerItem("potion_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static final Item HEART_CONTAINER_FULL = registerItem("heart_container_full", new ModGlintItem(new FabricItemSettings().rarity(Rarity.RARE)));
 
 
     //FUEL ITEMS -----------------
@@ -54,6 +53,9 @@ public class ModItems {
 
     public static final Item POWER_STAR = registerItem("power_star",
             new PowerStarItem(new FabricItemSettings().fireproof()));
+
+    public static final Item HEART_CONTAINER = registerItem("heart_container",
+            new HeartContainerItem(new FabricItemSettings()));
 
     //FOOD ITEMS -----------------
 

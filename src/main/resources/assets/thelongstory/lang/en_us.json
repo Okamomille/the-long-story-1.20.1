@@ -23,6 +23,8 @@
 
   "item.thelongstory.potion_receptacle" : "Potion Receptacle",
   "item.thelongstory.potion_core" : "Potion Core",
+  "item.thelongstory.heart_container" : "Heart Container",
+  "item.thelongstory.heart_container_full" : "Soul Container",
 
 
   "item.thelongstory.wooden_plate" : "Wooden Plate",
@@ -101,10 +103,11 @@
 
 
 
-  "tooltip.thelongstory.radar" : "A radar for searching ores underground!",
-  "tooltip.thelongstory.effect_armor" : "Have a special effect when you equip the full armor.",
-  "tooltip.thelongstory.pink_greffed_command_system" : "A homemade command block wich is used to heal yourself.",
-  "tooltip.thelongstory.power_star" : "This is the star of Power, needed to go deeper in the science of life.",
+  "tooltip.thelongstory.radar" : "§7A radar for searching ores underground!",
+  "tooltip.thelongstory.effect_armor" : "§7Have a special effect when you equip the full armor.",
+  "tooltip.thelongstory.pink_greffed_command_system" : "§7A homemade command block wich is used to heal yourself.",
+  "tooltip.thelongstory.power_star" : "§7This is the star of Power, needed to go deeper in the science of life.",
+  "tooltip.thelongstory.heart_container" : "§7This container can capture a living soul. \nRight click on a living being who's \u00a7\u00a7under 15HP to kill it.",
 
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",

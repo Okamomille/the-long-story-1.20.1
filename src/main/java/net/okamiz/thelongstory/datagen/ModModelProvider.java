@@ -72,6 +72,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.INFESTED_FLESH, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RADAR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HEART_CONTAINER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HEART_CONTAINER_FULL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.POWER_STAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.COMMAND_SYSTEM, Models.GENERATED);
