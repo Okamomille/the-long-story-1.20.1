@@ -100,6 +100,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.TREPASSEUR_SPAWN_EGG);
                         entries.add(ModItems.TICKELER_SPAWN_EGG);
+                        entries.add(ModItems.CRAWLER_SPAWN_EGG);
 
 
                     }).build());

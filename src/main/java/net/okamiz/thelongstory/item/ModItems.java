@@ -78,6 +78,9 @@ public class ModItems {
     public static final Item TICKELER_SPAWN_EGG = registerItem("tickeler_spawn_egg",
             new SpawnEggItem(ModEntities.TICKELER, 3304518,9103214, new FabricItemSettings()));
 
+    public static final Item CRAWLER_SPAWN_EGG = registerItem("crawler_spawn_egg",
+            new SpawnEggItem(ModEntities.CRAWLER, 5339992,1078563, new FabricItemSettings()));
+
 
 
 
