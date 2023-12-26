@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.item.custom.ModArmorItem;
+import net.okamiz.thelongstory.item.custom.ModGlintItem;
 import net.okamiz.thelongstory.item.custom.PowerStarItem;
 import net.okamiz.thelongstory.item.custom.RadarItem;
 
@@ -35,6 +36,11 @@ public class ModItems {
 
     public static final Item WOODEN_PLATE = registerItem("wooden_plate", new Item(new FabricItemSettings()));
     public static final Item IRON_PLATE = registerItem("iron_plate", new Item(new FabricItemSettings()));
+    public static final Item COMMAND_SYSTEM = registerItem("command_system", new Item(new FabricItemSettings()));
+
+
+    public static final Item POTION_RECEPTACLE = registerItem("potion_receptacle", new Item(new FabricItemSettings()));
+    public static final Item POTION_CORE = registerItem("potion_core", new ModGlintItem(new FabricItemSettings()));
 
 
     //FUEL ITEMS -----------------
@@ -47,7 +53,7 @@ public class ModItems {
             new RadarItem(new FabricItemSettings().maxCount(1).maxDamage(50)));
 
     public static final Item POWER_STAR = registerItem("power_star",
-            new PowerStarItem(new FabricItemSettings()));
+            new PowerStarItem(new FabricItemSettings().fireproof()));
 
     //FOOD ITEMS -----------------
 

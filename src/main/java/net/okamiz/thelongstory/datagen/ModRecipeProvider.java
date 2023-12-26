@@ -335,6 +335,50 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.NETHER_STAR),conditionsFromItem(Items.NETHER_STAR))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POWER_STAR)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.COMMAND_SYSTEM, 1)
+                .pattern("RXR")
+                .pattern("XOX")
+                .pattern("RXR")
+                .input('O', ModItems.POWER_STAR)
+                .input('X', ModItems.IRON_PLATE)
+                .input('R', Items.REDSTONE)
+                .criterion(hasItem(ModItems.POWER_STAR),conditionsFromItem(ModItems.POWER_STAR))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.COMMAND_SYSTEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,Items.EXPERIENCE_BOTTLE, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('O', Items.GLASS_BOTTLE)
+                .input('X', ModItems.THESTONE_DUST)
+                .criterion(hasItem(ModItems.THESTONE_DUST),conditionsFromItem(ModItems.THESTONE_DUST))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.EXPERIENCE_BOTTLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.POTION_RECEPTACLE, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('O', Items.EXPERIENCE_BOTTLE)
+                .input('X', Items.GLASS)
+                .criterion(hasItem(Items.EXPERIENCE_BOTTLE),conditionsFromItem(Items.EXPERIENCE_BOTTLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.POTION_RECEPTACLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.POTION_CORE, 1)
+                .pattern("ABC")
+                .pattern("HOD")
+                .pattern("GFE")
+                .input('O', ModItems.POTION_RECEPTACLE)
+                .input('A', Items.GLISTERING_MELON_SLICE)
+                .input('B', Items.FERMENTED_SPIDER_EYE)
+                .input('C', Items.GHAST_TEAR)
+                .input('D', Items.RABBIT_FOOT)
+                .input('E', Items.GOLDEN_CARROT)
+                .input('F', Items.PHANTOM_MEMBRANE)
+                .input('G', Items.MAGMA_CREAM)
+                .input('H', Items.NETHER_WART)
+                .criterion(hasItem(ModItems.POTION_RECEPTACLE),conditionsFromItem(ModItems.POTION_RECEPTACLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.POTION_CORE)));
+
 
         // ----------------
 

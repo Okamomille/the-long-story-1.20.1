@@ -1,9 +1,9 @@
-// 1.20.2	2023-12-26T14:34:14.6769201	The Long Story/Tags for minecraft:block
+// 1.20.2	2023-12-26T15:31:19.6096674	The Long Story/Tags for minecraft:block
 0aab1fe3165fad4128500b1150cb8cb00d4dc73f data\minecraft\tags\blocks\wooden_trapdoors.json
 c67ffa11e6cb0891e1a28883a42a190cccd2ccba data\minecraft\tags\blocks\wooden_stairs.json
 2096a510f671634eea78db6661926cc157d0ed21 data\minecraft\tags\blocks\wooden_fences.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
 7e0e6ec7f1cec92282849bee727ca85a5dd1cb4d data\minecraft\tags\blocks\mineable\axe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
 b05c8f58955ccd4940930aae37a1161ab1634ec5 data\minecraft\tags\blocks\mineable\pickaxe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 a165a49fe17c84825856a46c7899ce554c18b7e6 data\minecraft\tags\blocks\needs_iron_tool.json
