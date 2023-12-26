@@ -6,7 +6,6 @@
   "item.thelongstory.spider_silk" : "Spider Silk",
 
 
-
   "item.thelongstory.thestone_dust" : "Thestone Dust",
   "item.thelongstory.thestone_ingot" : "Thestone Ingot",
   "item.thelongstory.thestone_nugget" : "Thestone Nugget",
@@ -17,6 +16,11 @@
 
   "item.thelongstory.radar" : "Radar",
   "item.thelongstory.red_coal" : "Red Coal",
+
+
+
+  "item.thelongstory.wooden_plate" : "Wooden Plate",
+  "item.thelongstory.iron_plate" : "Iron Plate",
 
 
   "item.thelongstory.thestone_helmet" : "Thestone Helmet",

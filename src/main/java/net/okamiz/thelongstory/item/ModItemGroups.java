@@ -22,6 +22,9 @@ public class ModItemGroups {
                         entries.add(ModItems.BLOOD_BOTTLE);
                         entries.add(ModItems.SPIDER_SILK);
 
+                        entries.add(ModItems.WOODEN_PLATE);
+                        entries.add(ModItems.IRON_PLATE);
+
                         entries.add(ModItems.THESTONE_DUST);
                         entries.add(ModItems.THESTONE_INGOT);
                         entries.add(ModItems.THESTONE_NUGGET);

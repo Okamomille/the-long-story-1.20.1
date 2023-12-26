@@ -32,6 +32,10 @@ public class ModItems {
     public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
 
 
+    public static final Item WOODEN_PLATE = registerItem("wooden_plate", new Item(new FabricItemSettings()));
+    public static final Item IRON_PLATE = registerItem("iron_plate", new Item(new FabricItemSettings()));
+
+
     //FUEL ITEMS -----------------
 
     public static final Item RED_COAL = registerItem("red_coal", new Item(new FabricItemSettings()));

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:wooden_plate"
+    },
+    "X": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "result": {
+    "item": "thelongstory:iron_plate"
+  },
+  "show_notification": true
+}

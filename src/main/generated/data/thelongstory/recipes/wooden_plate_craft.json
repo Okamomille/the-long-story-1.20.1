@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "tag": "minecraft:planks"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "result": {
+    "item": "thelongstory:wooden_plate"
+  },
+  "show_notification": true
+}

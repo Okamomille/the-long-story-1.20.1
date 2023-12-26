@@ -308,9 +308,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         // -------------------
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.WOODEN_PLATE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('X', Items.STICK)
+                .input('O', Items.OAK_PLANKS)
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("wooden_plate_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.IRON_PLATE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('X', Items.IRON_NUGGET)
+                .input('O', ModItems.WOODEN_PLATE)
+                .criterion(hasItem(ModItems.WOODEN_PLATE),conditionsFromItem(ModItems.WOODEN_PLATE))
+                .offerTo(exporter, new Identifier("iron_plate_craft"));
 
 
-
+        // ----------------
 
 
         createStairsRecipe(ModBlocks.EGRORIC_STAIRS, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
