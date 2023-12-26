@@ -51,11 +51,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.CRUSHED_BONES))
                             .offerTo(exporter, new Identifier("crushed_bones_from_block"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.EGRORIC_BUTTON, 4).input(ModBlocks.EGRORIC_PLANKS)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.EGRORIC_BUTTON, 1).input(ModBlocks.EGRORIC_PLANKS)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_BUTTON),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_BUTTON))
                 .offerTo(exporter, new Identifier("egroric_button"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.EGRORIC_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
+                .offerTo(exporter, new Identifier("egroric_planks_from_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.EGRORIC_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
+                .offerTo(exporter, new Identifier("egroric_planks_from_wood"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.STRIPPED_EGRORIC_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_EGRORIC_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_EGRORIC_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
+                .offerTo(exporter, new Identifier("egroric_planks_from_stripped_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.STRIPPED_EGRORIC_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_EGRORIC_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_EGRORIC_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
+                .offerTo(exporter, new Identifier("egroric_planks_from_stripped_wood"));
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.THESTONE_INGOT, 1)

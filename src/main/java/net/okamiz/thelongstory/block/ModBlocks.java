@@ -41,6 +41,18 @@ public class ModBlocks {
 
     // >> EGRORIC ---------------------
 
+    public static final Block EGRORIC_LEAVES = registerBlock("egroric_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+
+    public static final Block EGRORIC_LOG = registerBlock("egroric_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(3f)));
+    public static final Block EGRORIC_WOOD = registerBlock("egroric_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block STRIPPED_EGRORIC_LOG = registerBlock("stripped_egroric_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(3f)));
+    public static final Block STRIPPED_EGRORIC_WOOD = registerBlock("stripped_egroric_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
     public static final Block EGRORIC_PLANKS = registerBlock("egroric_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block EGRORIC_STAIRS = registerBlock("egroric_stairs",

@@ -30,6 +30,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RED_COAL_BLOCK);
         addDrop(ModBlocks.SPIDER_SILK_BLOCK);
 
+
+        addDrop(ModBlocks.EGRORIC_LEAVES, leavesDrops(ModBlocks.EGRORIC_LEAVES, ModBlocks.EGRORIC_LOG, 0.025f));
+        addDrop(ModBlocks.EGRORIC_LOG);
+        addDrop(ModBlocks.STRIPPED_EGRORIC_LOG);
+        addDrop(ModBlocks.EGRORIC_WOOD);
+        addDrop(ModBlocks.STRIPPED_EGRORIC_WOOD);
         addDrop(ModBlocks.EGRORIC_PLANKS);
         addDrop(ModBlocks.EGRORIC_STAIRS);
         addDrop(ModBlocks.EGRORIC_TRAPDOOR);

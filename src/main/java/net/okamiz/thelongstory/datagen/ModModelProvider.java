@@ -28,8 +28,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
 
-        BlockStateModelGenerator.BlockTexturePool egroricPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EGRORIC_PLANKS);
 
+
+        blockStateModelGenerator.registerLog(ModBlocks.EGRORIC_LOG).log(ModBlocks.EGRORIC_LOG).wood(ModBlocks.EGRORIC_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_EGRORIC_LOG).log(ModBlocks.STRIPPED_EGRORIC_LOG).wood(ModBlocks.STRIPPED_EGRORIC_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EGRORIC_LEAVES);
+
+
+        BlockStateModelGenerator.BlockTexturePool egroricPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EGRORIC_PLANKS);
         egroricPool.stairs(ModBlocks.EGRORIC_STAIRS);
         egroricPool.slab(ModBlocks.EGRORIC_SLAB);
         egroricPool.button(ModBlocks.EGRORIC_BUTTON);

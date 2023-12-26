@@ -3,7 +3,9 @@ package net.okamiz.thelongstory;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.okamiz.thelongstory.effect.ModEffects;
 import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.entity.custom.TickelerEntity;
@@ -40,5 +42,15 @@ public class TheLongStory implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.TREPASSEUR, TrepasseurEntity.createTrepasseurAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.TICKELER, TickelerEntity.createTickelerAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.CRAWLER, TickelerEntity.createTickelerAttributes());
+
+		StrippableBlockRegistry.register(ModBlocks.EGRORIC_LOG, ModBlocks.STRIPPED_EGRORIC_LOG);
+		StrippableBlockRegistry.register(ModBlocks.EGRORIC_WOOD, ModBlocks.STRIPPED_EGRORIC_WOOD);
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.EGRORIC_PLANKS,5,20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.EGRORIC_LEAVES,30,60);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.EGRORIC_LOG,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.EGRORIC_WOOD,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_EGRORIC_WOOD,5,5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_EGRORIC_LOG,5,5);
 	}
 }
