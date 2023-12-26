@@ -39,5 +39,6 @@ public class TheLongStory implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.TREPASSEUR, TrepasseurEntity.createTrepasseurAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.TICKELER, TickelerEntity.createTickelerAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.CRAWLER, TickelerEntity.createTickelerAttributes());
 	}
 }

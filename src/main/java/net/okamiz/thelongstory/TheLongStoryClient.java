@@ -30,5 +30,8 @@ public class TheLongStoryClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.TICKELER, TickelerRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.TICKELER, TickelerModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.CRAWLER, CrawlerRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.CRAWLER, CrawlerModel::getTexturedModelData);
     }
 }

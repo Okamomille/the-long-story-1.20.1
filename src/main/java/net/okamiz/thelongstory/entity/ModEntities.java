@@ -7,6 +7,7 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.okamiz.thelongstory.entity.custom.CrawlerEntity;
 import net.okamiz.thelongstory.entity.custom.TickelerEntity;
 import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.TheLongStory;
@@ -25,5 +26,10 @@ public class ModEntities {
             new Identifier(TheLongStory.MOD_ID, "tickeler"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, TickelerEntity::new)
                     .dimensions(EntityDimensions.fixed(0.7f,2f)).build());
+
+    public static final EntityType<CrawlerEntity> CRAWLER = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheLongStory.MOD_ID, "crawler"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, CrawlerEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.8f,0.8f)).build());
 
 }
