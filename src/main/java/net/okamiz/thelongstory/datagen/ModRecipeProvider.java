@@ -2,6 +2,7 @@ package net.okamiz.thelongstory.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -363,6 +364,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.EXPERIENCE_BOTTLE),conditionsFromItem(Items.EXPERIENCE_BOTTLE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POTION_RECEPTACLE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.HEART_CONTAINER, 1)
+                .pattern("BXB")
+                .pattern("XOX")
+                .pattern("BXB")
+                .input('O', Items.TOTEM_OF_UNDYING)
+                .input('X', ModItems.IRON_PLATE)
+                .input('B', ModItems.THESTONE_DUST)
+                .criterion(hasItem(ModItems.THESTONE_DUST),conditionsFromItem(ModItems.THESTONE_DUST))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEART_CONTAINER)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.POTION_CORE, 1)
                 .pattern("ABC")
                 .pattern("HOD")
@@ -378,6 +389,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('H', Items.NETHER_WART)
                 .criterion(hasItem(ModItems.POTION_RECEPTACLE),conditionsFromItem(ModItems.POTION_RECEPTACLE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POTION_CORE)));
+
+
+        // -------- GREFFED SYSTEMS
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.PINK_GREFFED_COMMAND_SYSTEM, 1)
+                .pattern("BXB")
+                .pattern("XOX")
+                .pattern("BAB")
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .input('X', Items.WHITE_CONCRETE)
+                .input('A', ModItems.POTION_CORE)
+                .input('B', ModItems.HEART_CONTAINER_FULL)
+                .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM)));
+
 
 
         // ----------------
