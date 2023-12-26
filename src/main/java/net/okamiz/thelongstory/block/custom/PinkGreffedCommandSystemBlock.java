@@ -33,7 +33,7 @@ public class PinkGreffedCommandSystemBlock extends Block{
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit){
 
         world.playSound(player, pos, SoundEvents.ENTITY_ALLAY_AMBIENT_WITH_ITEM, SoundCategory.BLOCKS, 1f, 1.2f);
-        world.playSound(player, pos, SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS, 1f, 1f);
+        world.playSound(player, pos, SoundEvents.ITEM_LODESTONE_COMPASS_LOCK, SoundCategory.BLOCKS, 1f, 1f);
 
         if(!world.isClient()){
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 2));
