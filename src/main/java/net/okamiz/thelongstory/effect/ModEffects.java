@@ -1,5 +1,7 @@
 package net.okamiz.thelongstory.effect;
 
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
@@ -14,7 +16,10 @@ public class ModEffects {
 
     public static StatusEffect registerStatusEffect(String name){
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(TheLongStory.MOD_ID, name),
-                new InfectedEffect(StatusEffectCategory.HARMFUL, 5959114));
+                new InfectedEffect(StatusEffectCategory.HARMFUL, 5959114)
+                        .addAttributeModifier(
+                                EntityAttributes.GENERIC_MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.05F,
+                                EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
     }
 
     public static void registerEffects(){

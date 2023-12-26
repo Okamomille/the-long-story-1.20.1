@@ -2,6 +2,8 @@ package net.okamiz.thelongstory.effect;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.damage.DamageTypes;
@@ -51,12 +53,16 @@ public class InfectedEffect extends StatusEffect {
         if(entity.getHealth() < storedHealth)
         {
             entity.damage(ModDamageTypes.of(entity.getWorld(), ModDamageTypes.INFECTED), heartsLost);
-            entity.removeStatusEffect(ModEffects.INFECTED);
+            storedHealth = entity.getHealth();
         }
         if(entity.getHealth() > storedHealth)
         {
             storedHealth = entity.getHealth();
         }
+
+
+
+
 
     }
 
