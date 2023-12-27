@@ -31,7 +31,7 @@ public class ModConfiguredFeatures {
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_THESTONE_ORE.getDefaultState()));
 
 
-        register(context, THESTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldThestoneOres, 7));
+        register(context, THESTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldThestoneOres, 4));
     }
 
 
