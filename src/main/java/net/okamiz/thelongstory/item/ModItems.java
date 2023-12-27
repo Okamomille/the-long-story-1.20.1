@@ -39,7 +39,12 @@ public class ModItems {
 
     public static final Item POTION_RECEPTACLE = registerItem("potion_receptacle", new Item(new FabricItemSettings()));
     public static final Item POTION_CORE = registerItem("potion_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
-    public static final Item HEART_CONTAINER_FULL = registerItem("heart_container_full", new HeartContainerFullItem(new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item SOUL_CONTAINER_REGENERATION = registerItem("soul_container_regeneration", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
+    public static final Item SOUL_CONTAINER_FIRE_RESISTANCE = registerItem("soul_container_fire_resistance", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
+    public static final Item SOUL_CONTAINER_JUMP_BOOST = registerItem("soul_container_jump_boost", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
 
 
     //FUEL ITEMS -----------------
@@ -54,8 +59,8 @@ public class ModItems {
     public static final Item POWER_STAR = registerItem("power_star",
             new PowerStarItem(new FabricItemSettings().fireproof()));
 
-    public static final Item HEART_CONTAINER = registerItem("heart_container",
-            new HeartContainerItem(new FabricItemSettings()));
+    public static final Item SOUL_CONTAINER = registerItem("soul_container",
+            new SoulContainerItem(new FabricItemSettings()));
 
     //FOOD ITEMS -----------------
 

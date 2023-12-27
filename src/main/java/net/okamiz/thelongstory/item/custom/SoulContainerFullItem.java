@@ -9,9 +9,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class HeartContainerFullItem extends Item {
+public class SoulContainerFullItem extends Item {
 
-    public HeartContainerFullItem(Settings settings) {
+    public SoulContainerFullItem(Settings settings) {
         super(settings);
     }
 
@@ -24,7 +24,7 @@ public class HeartContainerFullItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
 
-            tooltip.add(Text.translatable("tooltip.thelongstory.heart_container_full"));
+            tooltip.add(Text.translatable("tooltip.thelongstory.soul_container_full"));
 
         super.appendTooltip(stack, world, tooltip, context);
     }

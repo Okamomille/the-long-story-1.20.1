@@ -23,8 +23,10 @@
 
   "item.thelongstory.potion_receptacle" : "Potion Receptacle",
   "item.thelongstory.potion_core" : "Potion Core",
-  "item.thelongstory.heart_container" : "Heart Container",
-  "item.thelongstory.heart_container_full" : "Soul Container",
+  "item.thelongstory.soul_container" : "Soul Container",
+  "item.thelongstory.soul_container_regeneration" : "Regeneration Essence Container",
+  "item.thelongstory.soul_container_fire_resistance" : "Fire Essence Container",
+  "item.thelongstory.soul_container_jump_boost" : "Leaping Essence Container",
 
 
   "item.thelongstory.wooden_plate" : "Wooden Plate",
@@ -113,8 +115,8 @@
   "tooltip.thelongstory.effect_armor" : "§7Have a special effect when you equip the full armor.",
   "tooltip.thelongstory.pink_greffed_command_system" : "§7A homemade command block wich is used to heal yourself.",
   "tooltip.thelongstory.power_star" : "§7This is the star of Power, needed to go deeper in the science of life.",
-  "tooltip.thelongstory.heart_container" : "§7This container can capture a witch soul. \nRight click on a witch who's §n§l§cunder 15HP §r§7to capture it.",
-  "tooltip.thelongstory.heart_container_full" : "§o§7Is obtained by using the Heart container.",
+  "tooltip.thelongstory.soul_container" : "§7This container can capture a soul and use it's essence. \nRight click on a mob who's §n§l§cunder 15HP §r§7to capture it.",
+  "tooltip.thelongstory.soul_container_full" : "§o§7Is obtained by using the Soul container.",
 
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",

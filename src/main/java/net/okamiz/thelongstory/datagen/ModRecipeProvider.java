@@ -2,14 +2,12 @@ package net.okamiz.thelongstory.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.block.ModBlocks;
@@ -388,7 +386,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.EXPERIENCE_BOTTLE),conditionsFromItem(Items.EXPERIENCE_BOTTLE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POTION_RECEPTACLE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.HEART_CONTAINER, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.SOUL_CONTAINER, 1)
                 .pattern("BXB")
                 .pattern("XOX")
                 .pattern("BXB")
@@ -396,7 +394,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModItems.IRON_PLATE)
                 .input('B', ModItems.THESTONE_DUST)
                 .criterion(hasItem(ModItems.THESTONE_DUST),conditionsFromItem(ModItems.THESTONE_DUST))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEART_CONTAINER)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SOUL_CONTAINER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.POTION_CORE, 1)
                 .pattern("ABC")
@@ -425,7 +423,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', ModItems.COMMAND_SYSTEM)
                 .input('X', Items.WHITE_CONCRETE)
                 .input('A', ModItems.POTION_CORE)
-                .input('B', ModItems.HEART_CONTAINER_FULL)
+                .input('B', ModItems.SOUL_CONTAINER_REGENERATION)
                 .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM)));
 

@@ -28,8 +28,10 @@ public class ModItemGroups {
                         entries.add(ModItems.COMMAND_SYSTEM);
 
                         entries.add(ModItems.POWER_STAR);
-                        entries.add(ModItems.HEART_CONTAINER);
-                        entries.add(ModItems.HEART_CONTAINER_FULL);
+                        entries.add(ModItems.SOUL_CONTAINER);
+                        entries.add(ModItems.SOUL_CONTAINER_REGENERATION);
+                        entries.add(ModItems.SOUL_CONTAINER_FIRE_RESISTANCE);
+                        entries.add(ModItems.SOUL_CONTAINER_JUMP_BOOST);
 
                         entries.add(ModItems.POTION_RECEPTACLE);
                         entries.add(ModItems.POTION_CORE);

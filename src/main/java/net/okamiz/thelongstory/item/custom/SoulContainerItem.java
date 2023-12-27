@@ -17,8 +17,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class HeartContainerItem extends Item {
-    public HeartContainerItem(Settings settings) {
+public class SoulContainerItem extends Item {
+    public SoulContainerItem(Settings settings) {
         super(settings);
     }
 
@@ -35,7 +35,7 @@ public class HeartContainerItem extends Item {
                 user.playSound(SoundEvents.ENTITY_DONKEY_DEATH, SoundCategory.MASTER, 0.5f, 0.3f);
                 user.playSound(SoundEvents.ITEM_TRIDENT_RIPTIDE_2, SoundCategory.MASTER, 0.5f, 0.2f);
 
-                user.setStackInHand(hand, new ItemStack(ModItems.HEART_CONTAINER_FULL));
+                user.setStackInHand(hand, new ItemStack(ModItems.SOUL_CONTAINER_REGENERATION));
 
                 return ActionResult.SUCCESS;
             }
@@ -49,7 +49,7 @@ public class HeartContainerItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.thelongstory.heart_container"));
+        tooltip.add(Text.translatable("tooltip.thelongstory.soul_container"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
