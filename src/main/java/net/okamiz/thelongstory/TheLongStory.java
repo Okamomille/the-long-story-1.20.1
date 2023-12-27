@@ -8,10 +8,10 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.okamiz.thelongstory.effect.ModEffects;
 import net.okamiz.thelongstory.entity.ModEntities;
+import net.okamiz.thelongstory.entity.custom.CrawlerEntity;
 import net.okamiz.thelongstory.entity.custom.TickelerEntity;
 import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.block.ModBlocks;
-import net.okamiz.thelongstory.item.ModFoodComponents;
 import net.okamiz.thelongstory.item.ModItemGroups;
 import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.util.ModCustomTrades;
@@ -41,7 +41,7 @@ public class TheLongStory implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.TREPASSEUR, TrepasseurEntity.createTrepasseurAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.TICKELER, TickelerEntity.createTickelerAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.CRAWLER, TickelerEntity.createTickelerAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.CRAWLER, CrawlerEntity.createCrawlerAttributes());
 
 		StrippableBlockRegistry.register(ModBlocks.EGRORIC_LOG, ModBlocks.STRIPPED_EGRORIC_LOG);
 		StrippableBlockRegistry.register(ModBlocks.EGRORIC_WOOD, ModBlocks.STRIPPED_EGRORIC_WOOD);

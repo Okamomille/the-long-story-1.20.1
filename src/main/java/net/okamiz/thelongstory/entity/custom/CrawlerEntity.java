@@ -12,7 +12,6 @@ import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.HostileEntity;
-import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundEvent;
@@ -22,7 +21,6 @@ import net.okamiz.thelongstory.entity.ai.CrawlerAttackGoal;
 
 public class CrawlerEntity extends ZombieEntity {
 
-    private PlayerEntity player;
 
     private static final TrackedData<Boolean> ATTACKING =
             DataTracker.registerData(CrawlerEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
@@ -90,7 +88,7 @@ public class CrawlerEntity extends ZombieEntity {
         this.goalSelector.add(6, new MoveThroughVillageGoal(this, 1.0, true, 4, this::canBreakDoors));
 
         this.targetSelector.add(1, new RevengeGoal(this));
-        this.targetSelector.add(2, new ActiveTargetGoal<PlayerEntity>((MobEntity)this, PlayerEntity.class, true));
+        this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
 
 

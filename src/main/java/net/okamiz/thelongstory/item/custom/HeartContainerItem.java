@@ -3,19 +3,14 @@ package net.okamiz.thelongstory.item.custom;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.WitchEntity;
-import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.HoverEvent;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.item.ModItems;
 import org.jetbrains.annotations.Nullable;
@@ -27,8 +22,6 @@ public class HeartContainerItem extends Item {
         super(settings);
     }
 
-    private PassiveEntity passive;
-    private World world;
 
 
     @Override
