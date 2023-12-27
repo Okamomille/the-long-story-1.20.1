@@ -1,4 +1,4 @@
-package net.okamiz.thelongstory.world.gen;
+package net.okamiz.thelongstory.world;
 
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;

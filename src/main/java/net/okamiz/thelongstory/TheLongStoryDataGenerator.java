@@ -5,8 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import net.okamiz.thelongstory.datagen.*;
-import net.okamiz.thelongstory.world.gen.ModConfiguredFeatures;
-import net.okamiz.thelongstory.world.gen.ModPlacedFeatures;
+import net.okamiz.thelongstory.world.ModConfiguredFeatures;
+import net.okamiz.thelongstory.world.ModPlacedFeatures;
 
 public class TheLongStoryDataGenerator implements DataGeneratorEntrypoint {
 	@Override
