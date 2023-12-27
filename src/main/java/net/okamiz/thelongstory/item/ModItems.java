@@ -39,7 +39,7 @@ public class ModItems {
 
     public static final Item POTION_RECEPTACLE = registerItem("potion_receptacle", new Item(new FabricItemSettings()));
     public static final Item POTION_CORE = registerItem("potion_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
-    public static final Item HEART_CONTAINER_FULL = registerItem("heart_container_full", new ModGlintItem(new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item HEART_CONTAINER_FULL = registerItem("heart_container_full", new HeartContainerFullItem(new FabricItemSettings().rarity(Rarity.RARE)));
 
 
     //FUEL ITEMS -----------------
