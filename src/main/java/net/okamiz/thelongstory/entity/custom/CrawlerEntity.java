@@ -1,6 +1,7 @@
 package net.okamiz.thelongstory.entity.custom;
 
 import net.minecraft.entity.AnimationState;
+import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
@@ -122,7 +123,10 @@ public class CrawlerEntity extends ZombieEntity {
         this.dataTracker.startTracking(ATTACKING, false);
     }
 
-
+    @Override
+    protected float getActiveEyeHeight(EntityPose pose, EntityDimensions dimensions) {
+        return 1F;
+    }
 
     @Override
     protected SoundEvent getAmbientSound() {
