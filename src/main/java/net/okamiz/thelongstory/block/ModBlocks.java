@@ -14,6 +14,7 @@ import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.custom.LimeGreffedCommandSystemBlock;
 import net.okamiz.thelongstory.block.custom.OrangeGreffedCommandSystemBlock;
 import net.okamiz.thelongstory.block.custom.PinkGreffedCommandSystemBlock;
+import net.okamiz.thelongstory.world.tree.EgroricSaplingGenerator;
 
 public class ModBlocks {
 
@@ -43,6 +44,9 @@ public class ModBlocks {
 
     // >> EGRORIC ---------------------
 
+
+    public static final Block EGRORIC_SAPLING = registerBlock("egroric_sapling",
+            new SaplingBlock(new EgroricSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block EGRORIC_LEAVES = registerBlock("egroric_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
 

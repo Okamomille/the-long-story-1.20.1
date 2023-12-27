@@ -86,11 +86,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
 
 
+                        entries.add(ModBlocks.EGRORIC_SAPLING);
+                        entries.add(ModBlocks.EGRORIC_LEAVES);
                         entries.add(ModBlocks.EGRORIC_LOG);
                         entries.add(ModBlocks.EGRORIC_WOOD);
                         entries.add(ModBlocks.STRIPPED_EGRORIC_LOG);
                         entries.add(ModBlocks.STRIPPED_EGRORIC_WOOD);
-                        entries.add(ModBlocks.EGRORIC_LEAVES);
                         entries.add(ModBlocks.EGRORIC_PLANKS);
                         entries.add(ModBlocks.EGRORIC_STAIRS);
                         entries.add(ModBlocks.EGRORIC_SLAB);

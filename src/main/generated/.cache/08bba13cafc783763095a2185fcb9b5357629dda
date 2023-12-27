@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-27T22:47:50.0611713	The Long Story/Recipes
+// 1.20.2	2023-12-27T23:25:02.3102707	The Long Story/Recipes
 88d93431cb89013a9743d7703164c7f642a345ae data\thelongstory\advancements\recipes\misc\thestone_dust.json
 c3adef2e0bfb93bb8ee421f309cbb912adcab7ce data\thelongstory\recipes\thestone_dust.json
 02f3227985a5b3eee67032c807a6166dace2aac6 data\thelongstory\advancements\recipes\combat\thestone_chestplate.json
@@ -19,8 +19,8 @@ fff0c0ba22f17a6dc5baaae3392e6ea208a04b5c data\thelongstory\advancements\recipes\
 7220ac942d1d170b96116eb137e045d9ef74a59e data\thelongstory\recipes\green_shard_sword.json
 e54ec4b39d407c5d865d6e5ea0df0478555ee0ba data\thelongstory\recipes\egroric_planks_from_stripped_wood.json
 bd0b78fe41c04d2d24fc5e941d20f954e453d42e data\thelongstory\recipes\crushed_bones_from_block.json
-95a5bb68ef53c2fbe6caf4dc96dcc7b0d8074cfb data\thelongstory\recipes\egroric_fence_gate.json
 d168bbc4edd77e790fb8a69102cc19692cf2d9f3 data\thelongstory\recipes\lime_greffed_command_system.json
+95a5bb68ef53c2fbe6caf4dc96dcc7b0d8074cfb data\thelongstory\recipes\egroric_fence_gate.json
 c0b9ef0b6ec616f862c847161c4988ce74f27ef4 data\thelongstory\advancements\recipes\misc\red_coal_craft.json
 bd0aa437318929e4bfdbe8081ce789aaaa72729c data\thelongstory\recipes\thestone_leggings.json
 541599d51de43e7cce79ae347f764f98dabf7406 data\thelongstory\advancements\recipes\misc\power_star.json
