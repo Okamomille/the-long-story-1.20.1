@@ -2,6 +2,7 @@ package net.okamiz.thelongstory.item.custom;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.WitchEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -29,12 +30,13 @@ public class HeartContainerItem extends Item {
     private PassiveEntity passive;
     private World world;
 
+
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
 
         if(!user.getWorld().isClient()) {
 
-            if(entity.getType() != user.getType() && entity.getHealth() <= 15){
+            if(entity instanceof WitchEntity && entity.getHealth() <= 15){
                 entity.kill();
                 user.playSound(SoundEvents.ENTITY_ALLAY_DEATH, SoundCategory.MASTER, 1f, 0.5f);
                 user.playSound(SoundEvents.ENTITY_DONKEY_DEATH, SoundCategory.MASTER, 0.5f, 0.3f);
@@ -44,6 +46,8 @@ public class HeartContainerItem extends Item {
 
                 return ActionResult.SUCCESS;
             }
+
+
 
         }
 
