@@ -79,6 +79,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SPIDER_SILK_BLOCK);
                         entries.add(ModBlocks.RED_COAL_BLOCK);
                         entries.add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.LIME_GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.ORANGE_GREFFED_COMMAND_SYSTEM);
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);

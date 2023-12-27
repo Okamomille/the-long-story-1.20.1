@@ -427,6 +427,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ORANGE_GREFFED_COMMAND_SYSTEM, 1)
+                .pattern("BXB")
+                .pattern("XOX")
+                .pattern("BAB")
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .input('X', Items.WHITE_CONCRETE)
+                .input('A', ModItems.POTION_CORE)
+                .input('B', ModItems.SOUL_CONTAINER_FIRE_RESISTANCE)
+                .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORANGE_GREFFED_COMMAND_SYSTEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.LIME_GREFFED_COMMAND_SYSTEM, 1)
+                .pattern("BXB")
+                .pattern("XOX")
+                .pattern("BAB")
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .input('X', Items.WHITE_CONCRETE)
+                .input('A', ModItems.POTION_CORE)
+                .input('B', ModItems.SOUL_CONTAINER_JUMP_BOOST)
+                .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIME_GREFFED_COMMAND_SYSTEM)));
+
 
 
         // ----------------

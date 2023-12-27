@@ -11,6 +11,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.block.custom.LimeGreffedCommandSystemBlock;
+import net.okamiz.thelongstory.block.custom.OrangeGreffedCommandSystemBlock;
 import net.okamiz.thelongstory.block.custom.PinkGreffedCommandSystemBlock;
 
 public class ModBlocks {
@@ -118,6 +120,10 @@ public class ModBlocks {
 
     public static final Block PINK_GREFFED_COMMAND_SYSTEM = registerBlock("pink_greffed_command_system",
             new PinkGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.PINK_CONCRETE)));
+    public static final Block LIME_GREFFED_COMMAND_SYSTEM = registerBlock("lime_greffed_command_system",
+            new LimeGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.LIME_CONCRETE)));
+    public static final Block ORANGE_GREFFED_COMMAND_SYSTEM = registerBlock("orange_greffed_command_system",
+            new OrangeGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_CONCRETE)));
 
 
     private static Block registerBlock(String name, Block block){

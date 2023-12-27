@@ -26,6 +26,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
+        addDrop(ModBlocks.LIME_GREFFED_COMMAND_SYSTEM);
+        addDrop(ModBlocks.ORANGE_GREFFED_COMMAND_SYSTEM);
         addDrop(ModBlocks.MOLD_BLOCK);
         addDrop(ModBlocks.RED_COAL_BLOCK);
         addDrop(ModBlocks.SPIDER_SILK_BLOCK);

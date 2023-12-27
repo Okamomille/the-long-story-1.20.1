@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "thelongstory:thestone_dust"
+    },
+    "O": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "X": {
+      "item": "thelongstory:iron_plate"
+    }
+  },
+  "pattern": [
+    "BXB",
+    "XOX",
+    "BXB"
+  ],
+  "result": {
+    "item": "thelongstory:soul_container"
+  },
+  "show_notification": true
+}

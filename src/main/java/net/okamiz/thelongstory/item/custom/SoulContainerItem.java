@@ -2,7 +2,9 @@ package net.okamiz.thelongstory.item.custom;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.entity.mob.WitchEntity;
+import net.minecraft.entity.passive.RabbitEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -36,6 +38,28 @@ public class SoulContainerItem extends Item {
                 user.playSound(SoundEvents.ITEM_TRIDENT_RIPTIDE_2, SoundCategory.MASTER, 0.5f, 0.2f);
 
                 user.setStackInHand(hand, new ItemStack(ModItems.SOUL_CONTAINER_REGENERATION));
+
+                return ActionResult.SUCCESS;
+            }
+
+            if(entity instanceof BlazeEntity && entity.getHealth() <= 15){
+                entity.kill();
+                user.playSound(SoundEvents.ENTITY_ALLAY_DEATH, SoundCategory.MASTER, 1f, 0.5f);
+                user.playSound(SoundEvents.ENTITY_DONKEY_DEATH, SoundCategory.MASTER, 0.5f, 0.3f);
+                user.playSound(SoundEvents.ITEM_TRIDENT_RIPTIDE_2, SoundCategory.MASTER, 0.5f, 0.2f);
+
+                user.setStackInHand(hand, new ItemStack(ModItems.SOUL_CONTAINER_FIRE_RESISTANCE));
+
+                return ActionResult.SUCCESS;
+            }
+
+            if(entity instanceof RabbitEntity && entity.getHealth() <= 15){
+                entity.kill();
+                user.playSound(SoundEvents.ENTITY_ALLAY_DEATH, SoundCategory.MASTER, 1f, 0.5f);
+                user.playSound(SoundEvents.ENTITY_DONKEY_DEATH, SoundCategory.MASTER, 0.5f, 0.3f);
+                user.playSound(SoundEvents.ITEM_TRIDENT_RIPTIDE_2, SoundCategory.MASTER, 0.5f, 0.2f);
+
+                user.setStackInHand(hand, new ItemStack(ModItems.SOUL_CONTAINER_JUMP_BOOST));
 
                 return ActionResult.SUCCESS;
             }
