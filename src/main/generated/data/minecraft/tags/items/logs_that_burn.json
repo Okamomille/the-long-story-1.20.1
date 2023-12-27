@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thelongstory:egroric_log",
+    "thelongstory:egroric_wood",
+    "thelongstory:stripped_egroric_log",
+    "thelongstory:stripped_egroric_wood"
+  ]
+}
