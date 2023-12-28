@@ -15,6 +15,7 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.world.tree.custom.EgroricTrunkPlacer;
 
 import java.util.List;
 
@@ -41,7 +42,7 @@ public class ModConfiguredFeatures {
 
         register(context, EGRORIC_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.EGRORIC_LOG),
-                new StraightTrunkPlacer(5,4,3),
+                new EgroricTrunkPlacer(5,4,3),
 
                 BlockStateProvider.of(ModBlocks.EGRORIC_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), 3),

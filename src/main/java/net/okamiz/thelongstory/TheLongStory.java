@@ -21,6 +21,7 @@ import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.util.ModCustomTrades;
 import net.okamiz.thelongstory.util.ModLootTableModifiers;
 import net.okamiz.thelongstory.world.gen.ModWorldGeneration;
+import net.okamiz.thelongstory.world.tree.ModTrunkPlacerTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,6 +43,7 @@ public class TheLongStory implements ModInitializer {
 		ModCustomTrades.registerCustomTrades();
 
 		ModFuelRegistry.registerModFuels();
+		ModTrunkPlacerTypes.register();
 
 		ModEntitiesAttributes.registerEntitiesAttributes();
 
