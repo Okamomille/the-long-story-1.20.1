@@ -25,12 +25,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.RADAR_DETECTABLE_BLOCKS)
                 .add(ModBlocks.THESTONE_ORE)
-                .add(ModBlocks.DEEPSLATE_THESTONE_ORE);
+                .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
+        .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
+                .add(ModBlocks.IMPURE_ZAROSITE_ORE);
 
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
                 .add(ModBlocks.THESTONE_ORE)
+
+                .add(ModBlocks.IMPURE_ZAROSITE_BLOCK)
+                .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
+                .add(ModBlocks.IMPURE_ZAROSITE_ORE)
+
                 .add(ModBlocks.RED_COAL_BLOCK)
                 .add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
 
@@ -42,6 +49,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.IMPURE_ZAROSITE_BLOCK)
+                .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
+                .add(ModBlocks.IMPURE_ZAROSITE_ORE)
+
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
                 .add(ModBlocks.THESTONE_ORE);
 

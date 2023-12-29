@@ -10,6 +10,9 @@
   "item.thelongstory.thestone_ingot" : "Thestone Ingot",
   "item.thelongstory.thestone_nugget" : "Thestone Nugget",
 
+  "item.thelongstory.raw_impure_zarosite" : "Raw Impure Zarosite",
+  "item.thelongstory.impure_zarosite_ingot" : "Impure Zarosite Ingot",
+
   "item.thelongstory.green_shard" : "Green Shard",
 
 
@@ -89,9 +92,13 @@
 
 
   "block.thelongstory.red_coal_block" : "Block of Red Coal",
+  "block.thelongstory.impure_zarosite_block" : "Block of Impure Zarosite",
 
   "block.thelongstory.thestone_ore" : "Thestone Ore",
   "block.thelongstory.deepslate_thestone_ore" : "Deepslate Thestone Ore",
+
+  "block.thelongstory.impure_zarosite_ore" : "Impure Zarosite Ore",
+  "block.thelongstory.deepslate_impure_zarosite_ore" : "Deepslate Impure Zarosite Ore",
 
 
   "block.thelongstory.egroric_sapling" : "Egroric Sapling",

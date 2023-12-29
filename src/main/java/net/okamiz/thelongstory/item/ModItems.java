@@ -29,6 +29,10 @@ public class ModItems {
     public static final Item THESTONE_NUGGET = registerItem("thestone_nugget", new Item(new FabricItemSettings()));
 
 
+    public static final Item RAW_IMPURE_ZAROSITE = registerItem("raw_impure_zarosite", new Item(new FabricItemSettings()));
+    public static final Item IMPURE_ZAROSITE_INGOT = registerItem("impure_zarosite_ingot", new Item(new FabricItemSettings()));
+
+
     public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
 
 

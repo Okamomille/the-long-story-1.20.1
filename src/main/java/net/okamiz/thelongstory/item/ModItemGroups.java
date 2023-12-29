@@ -43,6 +43,9 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_INGOT);
                         entries.add(ModItems.THESTONE_NUGGET);
 
+                        entries.add(ModItems.RAW_IMPURE_ZAROSITE);
+                        entries.add(ModItems.IMPURE_ZAROSITE_INGOT);
+
                         entries.add(ModItems.GREEN_SHARD);
 
 
@@ -90,6 +93,10 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
+
+                        entries.add(ModBlocks.IMPURE_ZAROSITE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
+                        entries.add(ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
 
                         entries.add(ModBlocks.EGRORIC_SAPLING);

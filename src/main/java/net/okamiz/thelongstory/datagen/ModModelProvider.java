@@ -22,6 +22,11 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.THESTONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_THESTONE_ORE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPURE_ZAROSITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPURE_ZAROSITE_BLOCK);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPIDER_SILK_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOLD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_COAL_BLOCK);
@@ -68,6 +73,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.THESTONE_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.THESTONE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.THESTONE_NUGGET, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.RAW_IMPURE_ZAROSITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GREEN_SHARD, Models.GENERATED);
 

@@ -30,6 +30,15 @@ public class ModBlocks {
     public static final Block DEEPSLATE_THESTONE_ORE = registerBlock("deepslate_thestone_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(2, 6)));
 
+    public static final Block IMPURE_ZAROSITE_ORE = registerBlock("impure_zarosite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
+
+    public static final Block DEEPSLATE_IMPURE_ZAROSITE_ORE = registerBlock("deepslate_impure_zarosite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));
+
+    public static final Block IMPURE_ZAROSITE_BLOCK = registerBlock("impure_zarosite_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
 
     // FUEL BLOCKS ------------------
 

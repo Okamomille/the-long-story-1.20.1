@@ -17,6 +17,7 @@ import java.util.List;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> THESTONE_SMELTABLES = List.of(ModBlocks.THESTONE_ORE,ModBlocks.DEEPSLATE_THESTONE_ORE);
+    private static final List<ItemConvertible> IMPURE_ZAROSITE_SMELTABLES = List.of(ModBlocks.IMPURE_ZAROSITE_ORE,ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -29,6 +30,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, THESTONE_SMELTABLES, RecipeCategory.MISC, ModItems.THESTONE_DUST,
                 0.7f,200,"thestone_dust");
 
+        offerSmelting(exporter, IMPURE_ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT,
+                0.7f,200,"impure_zarosite_ingot");
+        offerBlasting(exporter, IMPURE_ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT,
+                0.7f,200,"impure_zarosite_ingot");
+
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT, RecipeCategory.MISC,
+                ModBlocks.IMPURE_ZAROSITE_BLOCK);
+
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RED_COAL, RecipeCategory.MISC,
                 ModBlocks.RED_COAL_BLOCK);
 
@@ -37,6 +47,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.THESTONE_NUGGET, RecipeCategory.MISC,
                 ModItems.THESTONE_INGOT);
+
+
+
+
+
+
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CRUSHED_BONES).input(ModItems.BONE_FRAGMENTS)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.BONE_FRAGMENTS),
