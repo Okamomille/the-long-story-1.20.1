@@ -70,6 +70,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EGRORIC_STAIRS);
 
 
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .add(ModBlocks.EGRORIC_LOG)
+                .add(ModBlocks.EGRORIC_WOOD)
+                .add(ModBlocks.STRIPPED_EGRORIC_LOG)
+                .add(ModBlocks.STRIPPED_EGRORIC_WOOD);
 
     }
 }
