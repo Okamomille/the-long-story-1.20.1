@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thelongstory:impure_zarosite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "thelongstory:impure_zarosite_ingot"
+  }
+}

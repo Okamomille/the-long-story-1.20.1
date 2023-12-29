@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "impure_zarosite_ingot",
+  "ingredient": {
+    "item": "thelongstory:deepslate_impure_zarosite_ore"
+  },
+  "result": "thelongstory:impure_zarosite_ingot"
+}

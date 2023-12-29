@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_impure_zarosite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:deepslate_impure_zarosite_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:impure_zarosite_ingot_from_blasting_deepslate_impure_zarosite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_impure_zarosite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:impure_zarosite_ingot_from_blasting_deepslate_impure_zarosite_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}
