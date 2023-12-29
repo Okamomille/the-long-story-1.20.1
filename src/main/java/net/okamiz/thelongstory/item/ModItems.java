@@ -45,6 +45,12 @@ public class ModItems {
             .rarity(Rarity.RARE)));
     public static final Item SOUL_CONTAINER_JUMP_BOOST = registerItem("soul_container_jump_boost", new SoulContainerFullItem(new FabricItemSettings()
             .rarity(Rarity.RARE)));
+    public static final Item SOUL_CONTAINER_DOLPHIN_GRACE = registerItem("soul_container_dolphin_grace", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
+    public static final Item SOUL_CONTAINER_NIGHT_VISION = registerItem("soul_container_night_vision", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
+    public static final Item SOUL_CONTAINER_RESISTANCE = registerItem("soul_container_resistance", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
 
 
     //FUEL ITEMS -----------------
@@ -60,7 +66,7 @@ public class ModItems {
             new PowerStarItem(new FabricItemSettings().fireproof()));
 
     public static final Item SOUL_CONTAINER = registerItem("soul_container",
-            new SoulContainerItem(new FabricItemSettings()));
+            new SoulContainerItem(new FabricItemSettings().maxCount(1)));
 
     //FOOD ITEMS -----------------
 

@@ -27,6 +27,9 @@
   "item.thelongstory.soul_container_regeneration" : "Regeneration Essence Container",
   "item.thelongstory.soul_container_fire_resistance" : "Fire Essence Container",
   "item.thelongstory.soul_container_jump_boost" : "Leaping Essence Container",
+  "item.thelongstory.soul_container_dolphin_grace" : "Swimming Essence Container",
+  "item.thelongstory.soul_container_night_vision" : "Vision Essence Container",
+  "item.thelongstory.soul_container_resistance" : "Resistance Essence Container",
 
 
   "item.thelongstory.wooden_plate" : "Wooden Plate",
@@ -77,9 +80,12 @@
   "block.thelongstory.spider_silk_block" : "Spider Silk Block",
 
 
-  "block.thelongstory.pink_greffed_command_system" : "Pink Greffed Command System",
-  "block.thelongstory.lime_greffed_command_system" : "Lime Greffed Command System",
-  "block.thelongstory.orange_greffed_command_system" : "Orange Greffed Command System",
+  "block.thelongstory.pink_greffed_command_system" : "Regeneration Greffed Command System",
+  "block.thelongstory.lime_greffed_command_system" : "Leaping Greffed Command System",
+  "block.thelongstory.orange_greffed_command_system" : "Fire Greffed Command System",
+  "block.thelongstory.cyan_greffed_command_system" : "Swimming Greffed Command System",
+  "block.thelongstory.gray_greffed_command_system" : "Resistance Greffed Command System",
+  "block.thelongstory.blue_greffed_command_system" : "Vision Greffed Command System",
 
 
   "block.thelongstory.red_coal_block" : "Block of Red Coal",
@@ -121,9 +127,15 @@
   "tooltip.thelongstory.radar" : "§7A radar for searching ores underground!",
   "tooltip.thelongstory.effect_armor" : "§7Have a special effect when you equip the full armor.",
 
-  "tooltip.thelongstory.pink_greffed_command_system" : "§7A homemade command block wich is used to heal yourself.",
-  "tooltip.thelongstory.lime_greffed_command_system" : "§7A homemade command block wich is used to jump higher.",
-  "tooltip.thelongstory.orange_greffed_command_system" : "§7A homemade command block wich is used to resist fire.",
+
+  "tooltip.thelongstory.pink_greffed_command_system" : "§7A homemade command block which is used to heal yourself.",
+  "tooltip.thelongstory.lime_greffed_command_system" : "§7A homemade command block which is used to jump higher.",
+  "tooltip.thelongstory.orange_greffed_command_system" : "§7A homemade command block which is used to resist fire.",
+  "tooltip.thelongstory.cyan_greffed_command_system" : "§7A homemade command block which is used to swim faster.",
+  "tooltip.thelongstory.blue_greffed_command_system" : "§7A homemade command block which is used to see in the dark.",
+  "tooltip.thelongstory.gray_greffed_command_system" : "§7A homemade command block which is used to increase resistance.",
+
+
 
   "tooltip.thelongstory.power_star" : "§7This is the star of Power, needed to go deeper in the science of life.",
   "tooltip.thelongstory.soul_container" : "§7This container can capture a soul and use it's essence. \nRight click on a mob who's §n§l§cunder 15HP §r§7to capture it.",

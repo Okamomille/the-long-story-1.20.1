@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "thelongstory:potion_core"
+    },
+    "B": {
+      "item": "thelongstory:soul_container_dolphin_grace"
+    },
+    "O": {
+      "item": "thelongstory:command_system"
+    },
+    "X": {
+      "item": "minecraft:white_concrete"
+    }
+  },
+  "pattern": [
+    "BXB",
+    "XOX",
+    "BAB"
+  ],
+  "result": {
+    "item": "thelongstory:cyan_greffed_command_system"
+  },
+  "show_notification": true
+}

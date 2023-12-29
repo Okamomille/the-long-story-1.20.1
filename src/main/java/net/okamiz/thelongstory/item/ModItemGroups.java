@@ -32,6 +32,9 @@ public class ModItemGroups {
                         entries.add(ModItems.SOUL_CONTAINER_REGENERATION);
                         entries.add(ModItems.SOUL_CONTAINER_FIRE_RESISTANCE);
                         entries.add(ModItems.SOUL_CONTAINER_JUMP_BOOST);
+                        entries.add(ModItems.SOUL_CONTAINER_DOLPHIN_GRACE);
+                        entries.add(ModItems.SOUL_CONTAINER_NIGHT_VISION);
+                        entries.add(ModItems.SOUL_CONTAINER_RESISTANCE);
 
                         entries.add(ModItems.POTION_RECEPTACLE);
                         entries.add(ModItems.POTION_CORE);
@@ -81,6 +84,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.LIME_GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.ORANGE_GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.CYAN_GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.BLUE_GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.GRAY_GREFFED_COMMAND_SYSTEM);
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);

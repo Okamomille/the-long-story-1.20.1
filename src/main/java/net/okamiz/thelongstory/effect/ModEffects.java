@@ -28,6 +28,9 @@ public class ModEffects {
     }
 
     public static void registerEffects(){
+
+        TheLongStory.LOGGER.info("Registering Effects for " + TheLongStory.MOD_ID);
+
         INFECTED = registerStatusEffect("infected");
     }
 }

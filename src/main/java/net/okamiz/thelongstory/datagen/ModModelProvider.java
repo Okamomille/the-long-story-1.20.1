@@ -29,6 +29,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIME_GREFFED_COMMAND_SYSTEM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_GREFFED_COMMAND_SYSTEM);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CYAN_GREFFED_COMMAND_SYSTEM);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_GREFFED_COMMAND_SYSTEM);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GRAY_GREFFED_COMMAND_SYSTEM);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
 
@@ -88,6 +91,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_REGENERATION, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_FIRE_RESISTANCE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_JUMP_BOOST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_CONTAINER_DOLPHIN_GRACE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_CONTAINER_NIGHT_VISION, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_CONTAINER_RESISTANCE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.POWER_STAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.COMMAND_SYSTEM, Models.GENERATED);

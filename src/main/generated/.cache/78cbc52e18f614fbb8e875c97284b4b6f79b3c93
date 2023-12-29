@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-29T03:07:34.0698785	The Long Story/Block Loot Tables
+// 1.20.2	2023-12-29T14:21:21.226442	The Long Story/Block Loot Tables
 3c1e5398d28a02aa67b2aa655b498e41ee9070ab data\thelongstory\loot_tables\blocks\thestone_ore.json
 b73d272d0d2827de5e57338cce4d9262871130b3 data\thelongstory\loot_tables\blocks\egroric_leaves.json
 b3965dda894af5a21c6cd95a5d3099c5d9c42131 data\thelongstory\loot_tables\blocks\egroric_trapdoor.json
@@ -7,6 +7,7 @@ de330b58006ff1956e2496f32efa04e25cd7146e data\thelongstory\loot_tables\blocks\eg
 52d0c60f3668b42ccfd152c4c21dff488a99cf87 data\thelongstory\loot_tables\blocks\egroric_fence.json
 ebd1fbe00f711defc55a65ff4fb3923632598588 data\thelongstory\loot_tables\blocks\egroric_stairs.json
 bbf37f7953e0b74dd86a9fb52ec70bc2bd4cf54c data\thelongstory\loot_tables\blocks\potted_yellow_ospet.json
+9b17fa96f7d91053b06f0c8efc1571ef45d4528e data\thelongstory\loot_tables\blocks\gray_greffed_command_system.json
 1222136bd75c999a8c411ac3674f5c4956f705da data\thelongstory\loot_tables\blocks\yellow_ospet.json
 ddaad955999d422f0e4db89215a0da9ba404f65f data\thelongstory\loot_tables\blocks\egroric_slab.json
 012085cd1b1f94c40a8dade05a776ac3289b9ea5 data\thelongstory\loot_tables\blocks\red_coal_block.json
@@ -15,6 +16,7 @@ ddaad955999d422f0e4db89215a0da9ba404f65f data\thelongstory\loot_tables\blocks\eg
 0346655a8dcc26e7dac1423d0245101a4d1af205 data\thelongstory\loot_tables\blocks\egroric_sapling.json
 bba41ebdb097791d1e078c2c5b1febbaf671c683 data\thelongstory\loot_tables\blocks\egroric_fence_gate.json
 3ac19e902a55cfcfe386df454cc522727ea2d89f data\thelongstory\loot_tables\blocks\stripped_egroric_wood.json
+7b776f4ee7c14efa00fa029a33c27be1073ec1f1 data\thelongstory\loot_tables\blocks\blue_greffed_command_system.json
 7b8a08804672587a5d012bb2da609f8fc0c1f0f0 data\thelongstory\loot_tables\blocks\lime_greffed_command_system.json
 cee35419d370e6be1b2354b9cd76a68ea8300b7f data\thelongstory\loot_tables\blocks\orange_greffed_command_system.json
 e4aaa8d4c9c5944ef07a07c4f39586f3a748fb1d data\thelongstory\loot_tables\blocks\blue_ospet.json
@@ -28,5 +30,6 @@ e5930098e7c7de30d60a44772d9dbc9eeca90798 data\thelongstory\loot_tables\blocks\po
 3d0b381732b4ba57e1a8f1bd9e590418fc142ebf data\thelongstory\loot_tables\blocks\green_ospet.json
 b08ec201178d9108d1bfecfcec1a95bfab764965 data\thelongstory\loot_tables\blocks\potted_red_ospet.json
 ff4912f9cc2be5de3ed6d5d1c847d019ca2da817 data\thelongstory\loot_tables\blocks\egroric_log.json
+29b9b42521858ddc69488223f4564223263cc400 data\thelongstory\loot_tables\blocks\cyan_greffed_command_system.json
 a0d90115be7a88d989722bb908dc803b2bf7c5fe data\thelongstory\loot_tables\blocks\egroric_wood.json
 d5adb6c745cfa3a76763ce7c17fe6c2230c88d84 data\thelongstory\loot_tables\blocks\stripped_egroric_log.json

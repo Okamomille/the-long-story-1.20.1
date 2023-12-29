@@ -11,9 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
-import net.okamiz.thelongstory.block.custom.LimeGreffedCommandSystemBlock;
-import net.okamiz.thelongstory.block.custom.OrangeGreffedCommandSystemBlock;
-import net.okamiz.thelongstory.block.custom.PinkGreffedCommandSystemBlock;
+import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
 import net.okamiz.thelongstory.world.tree.EgroricSaplingGenerator;
 
 public class ModBlocks {
@@ -123,11 +121,21 @@ public class ModBlocks {
     // ADVANCED BLOCKS ------------------
 
     public static final Block PINK_GREFFED_COMMAND_SYSTEM = registerBlock("pink_greffed_command_system",
-            new PinkGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.PINK_CONCRETE)));
+            new PinkGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
     public static final Block LIME_GREFFED_COMMAND_SYSTEM = registerBlock("lime_greffed_command_system",
-            new LimeGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.LIME_CONCRETE)));
+            new LimeGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
     public static final Block ORANGE_GREFFED_COMMAND_SYSTEM = registerBlock("orange_greffed_command_system",
-            new OrangeGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.ORANGE_CONCRETE)));
+            new OrangeGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
+    public static final Block CYAN_GREFFED_COMMAND_SYSTEM = registerBlock("cyan_greffed_command_system",
+            new CyanGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
+    public static final Block BLUE_GREFFED_COMMAND_SYSTEM = registerBlock("blue_greffed_command_system",
+            new BlueGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
+    public static final Block GRAY_GREFFED_COMMAND_SYSTEM = registerBlock("gray_greffed_command_system",
+            new GrayGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
+
+
+
+
 
 
     private static Block registerBlock(String name, Block block){

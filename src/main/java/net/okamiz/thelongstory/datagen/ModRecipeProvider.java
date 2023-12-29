@@ -449,6 +449,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.LIME_GREFFED_COMMAND_SYSTEM)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CYAN_GREFFED_COMMAND_SYSTEM, 1)
+                .pattern("BXB")
+                .pattern("XOX")
+                .pattern("BAB")
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .input('X', Items.WHITE_CONCRETE)
+                .input('A', ModItems.POTION_CORE)
+                .input('B', ModItems.SOUL_CONTAINER_DOLPHIN_GRACE)
+                .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CYAN_GREFFED_COMMAND_SYSTEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.BLUE_GREFFED_COMMAND_SYSTEM, 1)
+                .pattern("BXB")
+                .pattern("XOX")
+                .pattern("BAB")
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .input('X', Items.WHITE_CONCRETE)
+                .input('A', ModItems.POTION_CORE)
+                .input('B', ModItems.SOUL_CONTAINER_NIGHT_VISION)
+                .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BLUE_GREFFED_COMMAND_SYSTEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.GRAY_GREFFED_COMMAND_SYSTEM, 1)
+                .pattern("BXB")
+                .pattern("XOX")
+                .pattern("BAB")
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .input('X', Items.WHITE_CONCRETE)
+                .input('A', ModItems.POTION_CORE)
+                .input('B', ModItems.SOUL_CONTAINER_RESISTANCE)
+                .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GRAY_GREFFED_COMMAND_SYSTEM)));
+
 
 
         // ----------------
