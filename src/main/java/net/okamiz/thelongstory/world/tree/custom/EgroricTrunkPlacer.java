@@ -43,72 +43,66 @@ public class EgroricTrunkPlacer extends TrunkPlacer {
             getAndSetState(world, replacer, random, startPos.up(i), config);
 
 
-            for(int x = 1; x <= 2; x++){
-                int distance = 4;
-                replacer.accept(startPos.up(distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-            }
-
-            for(int x = 1; x <= 3; x++){
-                int distance = 7;
-                replacer.accept(startPos.up(distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-            }
-
-            for(int x = 1; x <= 3; x++){
-                int distance = 10;
-                replacer.accept(startPos.up(distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+            for(int x = 1; x <= 1; x++){
+                int distance = 14;
+                replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
             }
 
             for(int x = 1; x <= 2; x++){
-                int distance = 13;
-                replacer.accept(startPos.up(distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(distance).offset(Direction.UP, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.UP, x)).with(PillarBlock.AXIS, Direction.Axis.Y)));
+                int distance = 11;
+                replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+            }
+
+            for(int x = 1; x <= 2; x++){
+                int distance = 8;
+                replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
             }
 
             for(int x = 1; x <= 1; x++){
-                int distance = 16;
-                replacer.accept(startPos.up(distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+                int distance = 5;
+                replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.UP, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.UP, x)).with(PillarBlock.AXIS, Direction.Axis.Y)));
             }
 
-            for(int x = 1; x <= 2; x++){
-                int distance = 16;
-                replacer.accept(startPos.up(distance).offset(Direction.UP, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(distance).offset(Direction.UP, x)).with(PillarBlock.AXIS, Direction.Axis.Y)));
+            for(int x = 1; x <= 1; x++){
+                int distance = 3;
+                replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
+                replacer.accept(startPos.up(height_-distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
+                        .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
             }
 
 
