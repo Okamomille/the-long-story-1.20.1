@@ -209,6 +209,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_HELMET)));
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.IMPURE_ZAROSITE_BOOTS, 1)
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.IMPURE_ZAROSITE_HELMET, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.IMPURE_ZAROSITE_LEGGINGS, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.IMPURE_ZAROSITE_CHESTPLATE, 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_CHESTPLATE)));
+
         //-------------------
 
         // TOOLS
@@ -340,6 +370,71 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', Items.STICK)
                 .criterion(hasItem(ModItems.GREEN_SHARD),conditionsFromItem(ModItems.GREEN_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GREEN_SHARD_SWORD)));
+
+        // IMPURE_ZAROSITE
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier("impure_zarosite_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier("impure_zarosite_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_SWORD)));
 
 
 

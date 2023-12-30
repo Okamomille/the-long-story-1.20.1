@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "thelongstory:impure_zarosite_ingot"
+    }
+  },
+  "pattern": [
+    " X ",
+    " X ",
+    " O "
+  ],
+  "result": {
+    "item": "thelongstory:impure_zarosite_sword"
+  },
+  "show_notification": true
+}
