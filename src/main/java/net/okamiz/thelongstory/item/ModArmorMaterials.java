@@ -13,7 +13,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
     THESTONE("thestone", 25, new int[]{3,6,8,3}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0f,0.0f, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT)),
     GREEN_SHARD("green_shard", 7, new int[]{2,5,6,4}, 22,
-    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.0f,0.0f, () -> Ingredient.ofItems(ModItems.GREEN_SHARD))
+    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.0f,0.0f, () -> Ingredient.ofItems(ModItems.GREEN_SHARD)),
+
+    IMPURE_ZAROSITE("impure_zarosite", 32, new int[]{3,6,8,3}, 11,
+            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.2f,0.1f, () -> Ingredient.ofItems(ModItems.IMPURE_ZAROSITE_INGOT))
     ;
 
     private final String name;

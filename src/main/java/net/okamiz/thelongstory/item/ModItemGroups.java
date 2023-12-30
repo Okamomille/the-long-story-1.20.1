@@ -49,19 +49,6 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_SHARD);
 
 
-
-                        entries.add(ModItems.THESTONE_HELMET);
-                        entries.add(ModItems.THESTONE_CHESTPLATE);
-                        entries.add(ModItems.THESTONE_LEGGINGS);
-                        entries.add(ModItems.THESTONE_BOOTS);
-
-                        entries.add(ModItems.GREEN_SHARD_HELMET);
-                        entries.add(ModItems.GREEN_SHARD_CHESTPLATE);
-                        entries.add(ModItems.GREEN_SHARD_LEGGINGS);
-                        entries.add(ModItems.GREEN_SHARD_BOOTS);
-
-
-
                         entries.add(ModItems.THESTONE_SWORD);
                         entries.add(ModItems.THESTONE_PICKAXE);
                         entries.add(ModItems.THESTONE_AXE);
@@ -73,6 +60,28 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_SHARD_AXE);
                         entries.add(ModItems.GREEN_SHARD_SHOVEL);
                         entries.add(ModItems.GREEN_SHARD_HOE);
+
+                        entries.add(ModItems.IMPURE_ZAROSITE_SWORD);
+                        entries.add(ModItems.IMPURE_ZAROSITE_PICKAXE);
+                        entries.add(ModItems.IMPURE_ZAROSITE_AXE);
+                        entries.add(ModItems.IMPURE_ZAROSITE_SHOVEL);
+                        entries.add(ModItems.IMPURE_ZAROSITE_HOE);
+
+
+                        entries.add(ModItems.THESTONE_HELMET);
+                        entries.add(ModItems.THESTONE_CHESTPLATE);
+                        entries.add(ModItems.THESTONE_LEGGINGS);
+                        entries.add(ModItems.THESTONE_BOOTS);
+
+                        entries.add(ModItems.GREEN_SHARD_HELMET);
+                        entries.add(ModItems.GREEN_SHARD_CHESTPLATE);
+                        entries.add(ModItems.GREEN_SHARD_LEGGINGS);
+                        entries.add(ModItems.GREEN_SHARD_BOOTS);
+
+                        entries.add(ModItems.IMPURE_ZAROSITE_HELMET);
+                        entries.add(ModItems.IMPURE_ZAROSITE_CHESTPLATE);
+                        entries.add(ModItems.IMPURE_ZAROSITE_LEGGINGS);
+                        entries.add(ModItems.IMPURE_ZAROSITE_BOOTS);
 
 
 

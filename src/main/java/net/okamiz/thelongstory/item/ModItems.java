@@ -126,6 +126,18 @@ public class ModItems {
             new SwordItem(ModToolMaterial.GREEN_SHARD, 3, -2.0f, new FabricItemSettings().maxCount(1)));
 
 
+    public static final Item IMPURE_ZAROSITE_PICKAXE = registerItem("impure_zarosite_pickaxe",
+            new PickaxeItem(ModToolMaterial.IMPURE_ZAROSITE, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item IMPURE_ZAROSITE_AXE = registerItem("impure_zarosite_axe",
+            new AxeItem(ModToolMaterial.IMPURE_ZAROSITE, 6.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item IMPURE_ZAROSITE_SHOVEL = registerItem("impure_zarosite_shovel",
+            new ShovelItem(ModToolMaterial.IMPURE_ZAROSITE, 1.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item IMPURE_ZAROSITE_HOE = registerItem("impure_zarosite_hoe",
+            new HoeItem(ModToolMaterial.IMPURE_ZAROSITE, -3, -1.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item IMPURE_ZAROSITE_SWORD = registerItem("impure_zarosite_sword",
+            new SwordItem(ModToolMaterial.IMPURE_ZAROSITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+
+
     //ARMOR ITEMS -----------------
 
     public static final Item THESTONE_HELMET = registerItem("thestone_helmet",
@@ -146,6 +158,16 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item GREEN_SHARD_BOOTS = registerItem("green_shard_boots",
             new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+
+    public static final Item IMPURE_ZAROSITE_HELMET = registerItem("impure_zarosite_helmet",
+            new ModArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item IMPURE_ZAROSITE_CHESTPLATE = registerItem("impure_zarosite_chestplate",
+            new ModArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item IMPURE_ZAROSITE_LEGGINGS = registerItem("impure_zarosite_leggings",
+            new ModArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item IMPURE_ZAROSITE_BOOTS = registerItem("impure_zarosite_boots",
+            new ModArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 

@@ -49,6 +49,11 @@
   "item.thelongstory.green_shard_leggings" : "Green Shard Leggings",
   "item.thelongstory.green_shard_boots" : "Green Shard Boots",
 
+  "item.thelongstory.impure_zarosite_helmet" : "Impure Zarosite Helmet",
+  "item.thelongstory.impure_zarosite_chestplate" : "Impure Zarosite Chestplate",
+  "item.thelongstory.impure_zarosite_leggings" : "Impure Zarosite Leggings",
+  "item.thelongstory.impure_zarosite_boots" : "Impure Zarosite Boots",
+
 
 
   "item.thelongstory.thestone_sword" : "Thestone Sword",
@@ -62,6 +67,12 @@
   "item.thelongstory.green_shard_axe" : "Green Shard Axe",
   "item.thelongstory.green_shard_shovel" : "Green Shard Shovel",
   "item.thelongstory.green_shard_hoe" : "Green Shard Hoe",
+
+  "item.thelongstory.impure_zarosite_sword" : "Impure Zarosite Sword",
+  "item.thelongstory.impure_zarosite_pickaxe" : "Impure Zarosite Pickaxe",
+  "item.thelongstory.impure_zarosite_axe" : "Impure Zarosite Axe",
+  "item.thelongstory.impure_zarosite_shovel" : "Impure Zarosite Shovel",
+  "item.thelongstory.impure_zarosite_hoe" : "Impure Zarosite Hoe",
 
 
 

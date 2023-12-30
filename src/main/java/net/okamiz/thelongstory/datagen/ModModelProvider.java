@@ -126,6 +126,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GREEN_SHARD_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GREEN_SHARD_HOE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_HOE, Models.HANDHELD);
+
 
         
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_HELMET));
@@ -137,6 +143,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPURE_ZAROSITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPURE_ZAROSITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPURE_ZAROSITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPURE_ZAROSITE_BOOTS));
+
+
 
         itemModelGenerator.register(ModItems.TREPASSEUR_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));

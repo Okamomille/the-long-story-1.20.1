@@ -1,5 +1,6 @@
 package net.okamiz.thelongstory.item;
 
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -7,8 +8,9 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    THESTONE(2, 1631, 7.5f, 3.1f, 17, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT)),
-    GREEN_SHARD(2, 131, 10f, 3.7f, 22, () -> Ingredient.ofItems(ModItems.GREEN_SHARD));
+    THESTONE(2, 1631, 7.5f, 3.0f, 17, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT)),
+    GREEN_SHARD(2, 131, 10f, 3.7f, 22, () -> Ingredient.ofItems(ModItems.GREEN_SHARD)),
+    IMPURE_ZAROSITE(MiningLevels.DIAMOND, 1461, 8.5F, 3.2F, 11, () -> Ingredient.ofItems(ModItems.IMPURE_ZAROSITE_INGOT));
 
 
     private final int miningLevel;
