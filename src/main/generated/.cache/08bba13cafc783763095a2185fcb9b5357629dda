@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-30T16:30:52.3757803	The Long Story/Recipes
+// 1.20.2	2024-01-02T02:08:14.2249134	The Long Story/Recipes
 aee6673e7f62f37a93796729bc6a019eceabde82 data\thelongstory\advancements\recipes\misc\impure_zarosite_ingot.json
 88d93431cb89013a9743d7703164c7f642a345ae data\thelongstory\advancements\recipes\misc\thestone_dust.json
 c3adef2e0bfb93bb8ee421f309cbb912adcab7ce data\thelongstory\recipes\thestone_dust.json
@@ -57,8 +57,8 @@ d76117e4f79b85c1549ea522530418286075bcd2 data\thelongstory\advancements\recipes\
 e7fe53541139fa40d8dae3486a8c9689c742c8a3 data\thelongstory\recipes\potion_receptacle.json
 2c4814fe85d0b7825c20c43e591555b9b336a488 data\thelongstory\recipes\experience_bottle.json
 63096567ecfa02e6bb04001fe2dfabffa4b99506 data\thelongstory\advancements\recipes\misc\impure_zarosite_block.json
-874b4496bc6662cf152f1d306b9278d527f5c4f4 data\thelongstory\advancements\recipes\misc\wooden_plate_craft.json
 3a52d2f9300d0cdbe0012eb3212d53987d5544d6 data\thelongstory\recipes\impure_zarosite_leggings.json
+874b4496bc6662cf152f1d306b9278d527f5c4f4 data\thelongstory\advancements\recipes\misc\wooden_plate_craft.json
 542528f857d122b36e4ba8e12e86a4babd351745 data\thelongstory\recipes\spider_silk.json
 9c053be766b5949487b2648281219f75411fabe9 data\thelongstory\recipes\green_shard_chestplate.json
 f335acce8b26d0b7b9cda64f5c0c65149afbddee data\thelongstory\recipes\command_system.json
@@ -122,8 +122,8 @@ d7c3d664516eaaa8aa5ee9dfac094ea31d49c326 data\thelongstory\recipes\impure_zarosi
 ddc848387d2bbe265188550de3cd73e9d92e3bd1 data\thelongstory\advancements\recipes\redstone\egroric_door.json
 1dc06b2536e074a973f7c6fab1335138cb9ed545 data\thelongstory\recipes\impure_zarosite_axe_left.json
 7984decba5c9f0029e02ceab46e6913626279111 data\thelongstory\recipes\egroric_pressure_plate.json
-3e7775b4aa8362c05601046294f4a118b6123813 data\thelongstory\advancements\recipes\misc\orange_greffed_command_system.json
 c611ac353a1546377f023987aa3f6a662faf48a0 data\thelongstory\recipes\impure_zarosite_helmet.json
+3e7775b4aa8362c05601046294f4a118b6123813 data\thelongstory\advancements\recipes\misc\orange_greffed_command_system.json
 799748c137c3ab394c89504568c11dd87ffe7804 data\thelongstory\advancements\recipes\redstone\egroric_button.json
 caaeb70fb1a5ede073531c32a67692971addc0cf data\thelongstory\recipes\thestone_chestplate.json
 18bda0bac1f474cc019b9bf1c80c629a9a347445 data\thelongstory\advancements\recipes\misc\potion_core.json

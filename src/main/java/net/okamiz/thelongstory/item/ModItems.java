@@ -161,13 +161,13 @@ public class ModItems {
 
 
     public static final Item IMPURE_ZAROSITE_HELMET = registerItem("impure_zarosite_helmet",
-            new ModArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item IMPURE_ZAROSITE_CHESTPLATE = registerItem("impure_zarosite_chestplate",
-            new ModArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item IMPURE_ZAROSITE_LEGGINGS = registerItem("impure_zarosite_leggings",
-            new ModArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item IMPURE_ZAROSITE_BOOTS = registerItem("impure_zarosite_boots",
-            new ModArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 
