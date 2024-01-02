@@ -18,7 +18,7 @@ public class ModBlocks {
 
 
     public static final Block CRUSHED_BONES_BLOCK = registerBlock("crushed_bones_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.SAND)));
+            new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND)));
     public static final Block MOLD_BLOCK = registerBlock("mold_block",
             new Block(FabricBlockSettings.copyOf(Blocks.MUD)));
     public static final Block SPIDER_SILK_BLOCK = registerBlock("spider_silk_block",
