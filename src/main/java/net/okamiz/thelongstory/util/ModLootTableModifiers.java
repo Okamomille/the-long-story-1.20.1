@@ -15,13 +15,13 @@ public class ModLootTableModifiers {
 
     private static final Identifier CAVE_SPIDER_ID =
             new Identifier("minecraft", "entities/cave_spider");
-
     private static final Identifier SPIDER_ID =
             new Identifier("minecraft", "entities/spider");
+    private static final Identifier SKELETON_ID =
+            new Identifier("minecraft", "entities/skeleton");
 
     private static final Identifier TREPASSEUR_ID =
             new Identifier("thelongstory", "entities/trepasseur");
-
     private static final Identifier TICKELER_ID =
             new Identifier("thelongstory", "entities/tickeler");
 
@@ -33,6 +33,16 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.5f)) // 1f = 100% of the time
                         .with(ItemEntry.builder(ModItems.SPIDER_SILK))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,2.0f)).build()); // Number of Items
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(SKELETON_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.8f)) // 1f = 100% of the time
+                        .with(ItemEntry.builder(ModItems.BONE_FRAGMENTS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build()); // Number of Items
 
                 tableBuilder.pool(poolBuilder.build());
@@ -53,7 +63,7 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.4f)) // 1f = 100% of the time
                         .with(ItemEntry.builder(ModItems.SPIDER_SILK))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build()); // Number of Items
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,3.0f)).build()); // Number of Items
 
                 tableBuilder.pool(poolBuilder.build());
             }
