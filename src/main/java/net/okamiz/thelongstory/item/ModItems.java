@@ -151,13 +151,13 @@ public class ModItems {
 
 
     public static final Item GREEN_SHARD_HELMET = registerItem("green_shard_helmet",
-            new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item GREEN_SHARD_CHESTPLATE = registerItem("green_shard_chestplate",
-            new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item GREEN_SHARD_LEGGINGS = registerItem("green_shard_leggings",
-            new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item GREEN_SHARD_BOOTS = registerItem("green_shard_boots",
-            new ModArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
     public static final Item IMPURE_ZAROSITE_HELMET = registerItem("impure_zarosite_helmet",
