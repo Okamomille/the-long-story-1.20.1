@@ -4,6 +4,10 @@
     "thelongstory:egroric_log",
     "thelongstory:egroric_wood",
     "thelongstory:stripped_egroric_log",
-    "thelongstory:stripped_egroric_wood"
+    "thelongstory:stripped_egroric_wood",
+    "thelongstory:oast_log",
+    "thelongstory:oast_wood",
+    "thelongstory:stripped_oast_log",
+    "thelongstory:stripped_oast_wood"
   ]
 }

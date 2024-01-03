@@ -95,6 +95,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
                 .offerTo(exporter, new Identifier("egroric_planks_from_stripped_wood"));
 
+// ----------------------------------------------------------------------------------
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.OAST_BUTTON, 1).input(ModBlocks.OAST_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_BUTTON),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_BUTTON))
+                .offerTo(exporter, new Identifier("oast_button"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.OAST_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier("oast_planks_from_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.OAST_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier("oast_planks_from_wood"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.STRIPPED_OAST_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_OAST_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_OAST_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier("oast_planks_from_stripped_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.STRIPPED_OAST_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_OAST_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_OAST_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier("oast_planks_from_stripped_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,ModBlocks.OAST_PRESSURE_PLATE, 1)
+                .pattern("XX")
+                .input('X', ModBlocks.OAST_PLANKS)
+                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_PRESSURE_PLATE)));
+
+
+
+
+
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.THESTONE_INGOT, 1)
                 .pattern("DDD")
@@ -602,15 +645,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.EGRORIC_PLANKS),conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.EGRORIC_STAIRS)));
 
-        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.EGRORIC_STAIRS, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.EGRORIC_SLAB, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
                 .criterion(hasItem(ModBlocks.EGRORIC_PLANKS),conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.EGRORIC_SLAB)));
 
-        createFenceGateRecipe(ModBlocks.EGRORIC_STAIRS, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
+        createFenceGateRecipe(ModBlocks.EGRORIC_FENCE_GATE, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
                 .criterion(hasItem(ModBlocks.EGRORIC_PLANKS),conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.EGRORIC_FENCE_GATE)));
 
-        createFenceRecipe(ModBlocks.EGRORIC_STAIRS, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
+        createFenceRecipe(ModBlocks.EGRORIC_FENCE, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
                 .criterion(hasItem(ModBlocks.EGRORIC_PLANKS),conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.EGRORIC_FENCE)));
 
@@ -621,6 +664,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createTrapdoorRecipe(ModBlocks.EGRORIC_TRAPDOOR, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
                 .criterion(hasItem(ModBlocks.EGRORIC_PLANKS),conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.EGRORIC_TRAPDOOR)));
+
+
+
+        createStairsRecipe(ModBlocks.OAST_STAIRS, Ingredient.ofItems(ModBlocks.OAST_PLANKS))
+                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.OAST_SLAB, Ingredient.ofItems(ModBlocks.OAST_PLANKS))
+                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_SLAB)));
+
+        createFenceGateRecipe(ModBlocks.OAST_FENCE_GATE, Ingredient.ofItems(ModBlocks.OAST_PLANKS))
+                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_FENCE_GATE)));
+
+        createFenceRecipe(ModBlocks.OAST_FENCE, Ingredient.ofItems(ModBlocks.OAST_PLANKS))
+                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_FENCE)));
+
 
     }
 }

@@ -28,13 +28,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
-                .add(ModBlocks.EGRORIC_PLANKS.asItem());
+                .add(ModBlocks.EGRORIC_PLANKS.asItem())
+                .add(ModBlocks.OAST_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.EGRORIC_LOG.asItem())
                 .add(ModBlocks.EGRORIC_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_EGRORIC_LOG.asItem())
-                .add(ModBlocks.STRIPPED_EGRORIC_WOOD.asItem());
+                .add(ModBlocks.STRIPPED_EGRORIC_WOOD.asItem())
+
+                .add(ModBlocks.OAST_LOG.asItem())
+                .add(ModBlocks.OAST_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_OAST_LOG.asItem())
+                .add(ModBlocks.STRIPPED_OAST_WOOD.asItem());
     }
 
 

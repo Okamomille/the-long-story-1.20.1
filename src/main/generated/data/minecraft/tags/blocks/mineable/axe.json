@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
-    "thelongstory:egroric_planks"
+    "thelongstory:egroric_log",
+    "thelongstory:egroric_wood",
+    "thelongstory:stripped_egroric_log",
+    "thelongstory:stripped_egroric_wood",
+    "thelongstory:egroric_planks",
+    "thelongstory:oast_log",
+    "thelongstory:oast_wood",
+    "thelongstory:stripped_oast_log",
+    "thelongstory:stripped_oast_wood",
+    "thelongstory:oast_planks"
   ]
 }

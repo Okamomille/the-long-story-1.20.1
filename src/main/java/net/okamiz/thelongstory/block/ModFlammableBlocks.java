@@ -16,5 +16,13 @@ public class ModFlammableBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_EGRORIC_WOOD,5,5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_EGRORIC_LOG,5,5);
 
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAST_PLANKS,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAST_LEAVES,30,60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAST_LOG,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAST_WOOD,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_OAST_WOOD,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_OAST_LOG,5,5);
+
     }
 }

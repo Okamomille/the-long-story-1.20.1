@@ -11,5 +11,8 @@ public class ModStrippableBlocks {
 
         StrippableBlockRegistry.register(ModBlocks.EGRORIC_LOG, ModBlocks.STRIPPED_EGRORIC_LOG);
         StrippableBlockRegistry.register(ModBlocks.EGRORIC_WOOD, ModBlocks.STRIPPED_EGRORIC_WOOD);
+
+        StrippableBlockRegistry.register(ModBlocks.OAST_LOG, ModBlocks.STRIPPED_OAST_LOG);
+        StrippableBlockRegistry.register(ModBlocks.OAST_WOOD, ModBlocks.STRIPPED_OAST_WOOD);
     }
 }

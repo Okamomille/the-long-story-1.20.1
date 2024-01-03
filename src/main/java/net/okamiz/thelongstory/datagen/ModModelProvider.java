@@ -59,6 +59,25 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.EGRORIC_TRAPDOOR);
 
 
+        blockStateModelGenerator.registerLog(ModBlocks.OAST_LOG).log(ModBlocks.OAST_LOG).wood(ModBlocks.OAST_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_OAST_LOG).log(ModBlocks.STRIPPED_OAST_LOG).wood(ModBlocks.STRIPPED_OAST_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OAST_LEAVES);
+
+
+        BlockStateModelGenerator.BlockTexturePool oastPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.OAST_PLANKS);
+
+        oastPool.stairs(ModBlocks.OAST_STAIRS);
+        oastPool.slab(ModBlocks.OAST_SLAB);
+        oastPool.button(ModBlocks.OAST_BUTTON);
+        oastPool.pressurePlate(ModBlocks.OAST_PRESSURE_PLATE);
+        oastPool.fence(ModBlocks.OAST_FENCE);
+        oastPool.fenceGate(ModBlocks.OAST_FENCE_GATE);
+
+
+
+
+
+
         blockStateModelGenerator.registerTintableCross(ModBlocks.EGRORIC_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_OSPET, ModBlocks.POTTED_RED_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_OSPET, ModBlocks.POTTED_BLUE_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);

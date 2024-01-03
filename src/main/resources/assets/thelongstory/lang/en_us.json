@@ -130,6 +130,22 @@
 
 
 
+  "block.thelongstory.oast_sapling" : "Oast Sapling",
+  "block.thelongstory.oast_log" : "Oast Log",
+  "block.thelongstory.oast_wood" : "Oast Wood",
+  "block.thelongstory.stripped_oast_log" : "Stripped Oast Log",
+  "block.thelongstory.stripped_oast_wood" : "Stripped Oast Wood",
+  "block.thelongstory.oast_leaves" : "Oast Leaves",
+  "block.thelongstory.oast_planks" : "Oast Planks",
+  "block.thelongstory.oast_stairs" : "Oast Stairs",
+  "block.thelongstory.oast_slab" : "Oast Slab",
+  "block.thelongstory.oast_fence" : "Oast Fence",
+  "block.thelongstory.oast_fence_gate" : "Oast Fence Gate",
+  "block.thelongstory.oast_button" : "Oast Button",
+  "block.thelongstory.oast_pressure_plate" : "Oast Pressure Plate",
+
+
+
   "block.thelongstory.red_ospet" : "Red Ospet",
   "block.thelongstory.blue_ospet" : "Blue Ospet",
   "block.thelongstory.green_ospet" : "Green Ospet",

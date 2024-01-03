@@ -92,6 +92,46 @@ public class ModBlocks {
 
 
 
+
+    // >>> OAST
+
+    //public static final Block OAST_SAPLING = registerBlock("oast_sapling",
+    //        new SaplingBlock(new EgroricSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block OAST_LEAVES = registerBlock("oast_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+
+    public static final Block OAST_LOG = registerBlock("oast_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(3f)));
+    public static final Block OAST_WOOD = registerBlock("oast_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block STRIPPED_OAST_LOG = registerBlock("stripped_oast_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(3f)));
+    public static final Block STRIPPED_OAST_WOOD = registerBlock("stripped_oast_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
+    public static final Block OAST_PLANKS = registerBlock("oast_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block OAST_STAIRS = registerBlock("oast_stairs",
+            new StairsBlock(ModBlocks.OAST_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block OAST_SLAB = registerBlock("oast_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block OAST_BUTTON = registerBlock("oast_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 20, true));
+    public static final Block OAST_PRESSURE_PLATE = registerBlock("oast_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS),BlockSetType.OAK));
+
+    public static final Block OAST_FENCE = registerBlock("oast_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block OAST_FENCE_GATE = registerBlock("oast_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
+
+
+
+
+
     // -------------------------------------
 
 

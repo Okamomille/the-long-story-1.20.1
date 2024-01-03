@@ -125,6 +125,21 @@ public class ModItemGroups {
                         entries.add(ModBlocks.EGRORIC_FENCE_GATE);
 
 
+                        entries.add(ModBlocks.OAST_LEAVES);
+                        entries.add(ModBlocks.OAST_LOG);
+                        entries.add(ModBlocks.OAST_WOOD);
+                        entries.add(ModBlocks.STRIPPED_OAST_LOG);
+                        entries.add(ModBlocks.STRIPPED_OAST_WOOD);
+                        entries.add(ModBlocks.OAST_PLANKS);
+                        entries.add(ModBlocks.OAST_STAIRS);
+                        entries.add(ModBlocks.OAST_SLAB);
+                        entries.add(ModBlocks.OAST_BUTTON);
+                        entries.add(ModBlocks.OAST_PRESSURE_PLATE);
+                        entries.add(ModBlocks.OAST_FENCE);
+                        entries.add(ModBlocks.OAST_FENCE_GATE);
+
+
+
                         entries.add(ModBlocks.RED_OSPET);
                         entries.add(ModBlocks.BLUE_OSPET);
                         entries.add(ModBlocks.GREEN_OSPET);

@@ -42,7 +42,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(ModBlocks.EGRORIC_PLANKS);
+                .add(ModBlocks.EGRORIC_LOG)
+                .add(ModBlocks.EGRORIC_WOOD)
+                .add(ModBlocks.STRIPPED_EGRORIC_LOG)
+                .add(ModBlocks.STRIPPED_EGRORIC_WOOD)
+                .add(ModBlocks.EGRORIC_PLANKS)
+
+                .add(ModBlocks.OAST_LOG)
+                .add(ModBlocks.OAST_WOOD)
+                .add(ModBlocks.STRIPPED_OAST_LOG)
+                .add(ModBlocks.STRIPPED_OAST_WOOD)
+                .add(ModBlocks.OAST_PLANKS);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -85,7 +95,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EGRORIC_LOG)
                 .add(ModBlocks.EGRORIC_WOOD)
                 .add(ModBlocks.STRIPPED_EGRORIC_LOG)
-                .add(ModBlocks.STRIPPED_EGRORIC_WOOD);
+                .add(ModBlocks.STRIPPED_EGRORIC_WOOD)
 
+                .add(ModBlocks.OAST_LOG)
+                .add(ModBlocks.OAST_WOOD)
+                .add(ModBlocks.STRIPPED_OAST_LOG)
+                .add(ModBlocks.STRIPPED_OAST_WOOD);
     }
+
 }
