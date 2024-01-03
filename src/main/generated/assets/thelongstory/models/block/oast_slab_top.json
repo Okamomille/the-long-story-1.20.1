@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "thelongstory:block/oast_planks",
+    "side": "thelongstory:block/oast_planks",
+    "top": "thelongstory:block/oast_planks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thelongstory:block/oast_log_top",
+    "side": "thelongstory:block/oast_log"
+  }
+}

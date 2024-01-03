@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thelongstory:block/stripped_oast_log_top",
+    "side": "thelongstory:block/stripped_oast_log"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "thelongstory:oast_planks"
+    }
+  ],
+  "result": {
+    "item": "thelongstory:oast_button"
+  }
+}

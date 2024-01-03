@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelongstory:block/oast_slab"
+    },
+    "type=double": {
+      "model": "thelongstory:block/oast_planks"
+    },
+    "type=top": {
+      "model": "thelongstory:block/oast_slab_top"
+    }
+  }
+}
