@@ -81,10 +81,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EGRORIC_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
-                .add(ModBlocks.EGRORIC_DOOR);
+                .add(ModBlocks.EGRORIC_DOOR)
+                .add(ModBlocks.OAST_DOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
-                .add(ModBlocks.EGRORIC_TRAPDOOR);
+                .add(ModBlocks.EGRORIC_TRAPDOOR)
+                .add(ModBlocks.OAST_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(ModBlocks.EGRORIC_SLAB)

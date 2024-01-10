@@ -61,7 +61,6 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
-
         blockStateModelGenerator.registerLog(ModBlocks.OAST_LOG).log(ModBlocks.OAST_LOG).wood(ModBlocks.OAST_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_OAST_LOG).log(ModBlocks.STRIPPED_OAST_LOG).wood(ModBlocks.STRIPPED_OAST_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OAST_LEAVES);
@@ -75,6 +74,8 @@ public class ModModelProvider extends FabricModelProvider {
         oastPool.fence(ModBlocks.OAST_FENCE);
         oastPool.fenceGate(ModBlocks.OAST_FENCE_GATE);
 
+        blockStateModelGenerator.registerDoor(ModBlocks.OAST_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.OAST_TRAPDOOR);
 
 
 

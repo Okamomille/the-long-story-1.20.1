@@ -683,6 +683,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_FENCE)));
 
+        createDoorRecipe(ModBlocks.OAST_DOOR, Ingredient.ofItems(ModBlocks.OAST_PLANKS))
+                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_DOOR)));
+
+        createTrapdoorRecipe(ModBlocks.OAST_TRAPDOOR, Ingredient.ofItems(ModBlocks.OAST_PLANKS))
+                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_TRAPDOOR)));
+
 
     }
 }

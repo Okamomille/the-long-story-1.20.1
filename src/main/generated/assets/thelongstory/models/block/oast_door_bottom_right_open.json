@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "thelongstory:block/oast_door_bottom",
+    "top": "thelongstory:block/oast_door_top"
+  }
+}

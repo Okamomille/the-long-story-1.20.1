@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thelongstory:egroric_trapdoor"
+    "thelongstory:egroric_trapdoor",
+    "thelongstory:oast_trapdoor"
   ]
 }

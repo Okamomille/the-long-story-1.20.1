@@ -136,6 +136,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.OAST_SLAB);
                         entries.add(ModBlocks.OAST_BUTTON);
                         entries.add(ModBlocks.OAST_PRESSURE_PLATE);
+                        entries.add(ModBlocks.OAST_DOOR);
+                        entries.add(ModBlocks.OAST_TRAPDOOR);
                         entries.add(ModBlocks.OAST_FENCE);
                         entries.add(ModBlocks.OAST_FENCE_GATE);
 

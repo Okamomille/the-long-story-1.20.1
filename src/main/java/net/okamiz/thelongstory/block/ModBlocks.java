@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.block.custom.OastLeavesBlock;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastSaplingGenerator;
@@ -99,7 +100,7 @@ public class ModBlocks {
     public static final Block OAST_SAPLING = registerBlock("oast_sapling",
             new SaplingBlock(new OastSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block OAST_LEAVES = registerBlock("oast_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+            new OastLeavesBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).nonOpaque()));
 
     public static final Block OAST_LOG = registerBlock("oast_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(3f)));
@@ -129,7 +130,10 @@ public class ModBlocks {
     public static final Block OAST_FENCE_GATE = registerBlock("oast_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
 
-
+    public static final Block OAST_DOOR = registerBlock("oast_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
+    public static final Block OAST_TRAPDOOR = registerBlock("oast_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
 
 
 

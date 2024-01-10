@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oast_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:oast_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:oast_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oast_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:oast_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}
