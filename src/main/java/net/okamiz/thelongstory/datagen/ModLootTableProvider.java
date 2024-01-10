@@ -49,11 +49,24 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.EGRORIC_BUTTON);
         addDrop(ModBlocks.EGRORIC_FENCE_GATE);
         addDrop(ModBlocks.EGRORIC_FENCE);
-
         addDrop(ModBlocks.EGRORIC_DOOR, doorDrops(ModBlocks.EGRORIC_DOOR));
         addDrop(ModBlocks.EGRORIC_SLAB, slabDrops(ModBlocks.EGRORIC_SLAB));
 
 
+
+        addDrop(ModBlocks.OAST_LEAVES, leavesDrops(ModBlocks.OAST_LEAVES, ModBlocks.OAST_SAPLING, 0.025f));
+        addDrop(ModBlocks.OAST_SAPLING);
+        addDrop(ModBlocks.OAST_LOG);
+        addDrop(ModBlocks.STRIPPED_OAST_LOG);
+        addDrop(ModBlocks.OAST_WOOD);
+        addDrop(ModBlocks.STRIPPED_OAST_WOOD);
+        addDrop(ModBlocks.OAST_PLANKS);
+        addDrop(ModBlocks.OAST_STAIRS);
+        addDrop(ModBlocks.OAST_PRESSURE_PLATE);
+        addDrop(ModBlocks.OAST_BUTTON);
+        addDrop(ModBlocks.OAST_FENCE_GATE);
+        addDrop(ModBlocks.OAST_FENCE);
+        addDrop(ModBlocks.OAST_SLAB, slabDrops(ModBlocks.OAST_SLAB));
 
 
 

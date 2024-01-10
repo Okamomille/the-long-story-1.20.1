@@ -73,9 +73,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.OAST_FENCE)
                 .add(ModBlocks.EGRORIC_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.OAST_FENCE_GATE)
                 .add(ModBlocks.EGRORIC_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
@@ -85,10 +87,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EGRORIC_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
-                .add(ModBlocks.EGRORIC_SLAB);
+                .add(ModBlocks.EGRORIC_SLAB)
+                .add(ModBlocks.OAST_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
-                .add(ModBlocks.EGRORIC_STAIRS);
+                .add(ModBlocks.EGRORIC_STAIRS)
+                .add(ModBlocks.OAST_STAIRS);
 
 
         getOrCreateTagBuilder(BlockTags.LOGS)

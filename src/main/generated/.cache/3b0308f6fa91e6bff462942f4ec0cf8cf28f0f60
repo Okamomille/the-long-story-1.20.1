@@ -1,7 +1,8 @@
-// 1.20.2	2024-01-03T19:23:37.6459038	The Long Story/World Gen
+// 1.20.2	2024-01-10T17:00:17.2022632	The Long Story/World Gen
 cefc23cd7c9cd46d1c21a486c33350c6a920953d data\thelongstory\worldgen\placed_feature\impure_zarosite_ore_placed.json
 b77d2e1ec89c2c0e8c1e34d6d5fecfa7ce3304d3 data\thelongstory\worldgen\configured_feature\impure_zarosite_ore.json
 e980c38768325fe9bbecf8cc7d5ccb41f88ab0af data\thelongstory\worldgen\configured_feature\thestone_ore.json
+b907a59d0470c16507df5ebd6bbb1759d1bde94f data\thelongstory\worldgen\configured_feature\oast.json
 76fe42b01d88e162de32ba0ca694602122429ef2 data\thelongstory\worldgen\configured_feature\egroric.json
 5dd7682145701962ebe76aea045828075c000b64 data\thelongstory\worldgen\placed_feature\egroric_placed.json
 0ef3570c4480fbe520ceb11fe4d0599c4b8061ac data\thelongstory\worldgen\placed_feature\thestone_ore_placed.json

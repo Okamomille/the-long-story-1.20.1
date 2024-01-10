@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "thelongstory:oast_fence",
     "thelongstory:egroric_fence"
   ]
 }

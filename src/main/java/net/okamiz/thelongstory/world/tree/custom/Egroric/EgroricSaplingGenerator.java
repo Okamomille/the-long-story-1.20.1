@@ -1,4 +1,4 @@
-package net.okamiz.thelongstory.world.tree;
+package net.okamiz.thelongstory.world.tree.custom.Egroric;
 
 import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.registry.RegistryKey;

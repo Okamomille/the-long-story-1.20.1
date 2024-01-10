@@ -45,6 +45,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.EGRORIC_LOG).log(ModBlocks.EGRORIC_LOG).wood(ModBlocks.EGRORIC_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_EGRORIC_LOG).log(ModBlocks.STRIPPED_EGRORIC_LOG).wood(ModBlocks.STRIPPED_EGRORIC_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EGRORIC_LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.EGRORIC_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
         BlockStateModelGenerator.BlockTexturePool egroricPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EGRORIC_PLANKS);
@@ -59,13 +60,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.EGRORIC_TRAPDOOR);
 
 
+
+
         blockStateModelGenerator.registerLog(ModBlocks.OAST_LOG).log(ModBlocks.OAST_LOG).wood(ModBlocks.OAST_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_OAST_LOG).log(ModBlocks.STRIPPED_OAST_LOG).wood(ModBlocks.STRIPPED_OAST_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OAST_LEAVES);
-
+        blockStateModelGenerator.registerTintableCross(ModBlocks.OAST_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         BlockStateModelGenerator.BlockTexturePool oastPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.OAST_PLANKS);
-
         oastPool.stairs(ModBlocks.OAST_STAIRS);
         oastPool.slab(ModBlocks.OAST_SLAB);
         oastPool.button(ModBlocks.OAST_BUTTON);
@@ -77,8 +79,6 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
-
-        blockStateModelGenerator.registerTintableCross(ModBlocks.EGRORIC_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_OSPET, ModBlocks.POTTED_RED_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_OSPET, ModBlocks.POTTED_BLUE_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GREEN_OSPET, ModBlocks.POTTED_GREEN_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);

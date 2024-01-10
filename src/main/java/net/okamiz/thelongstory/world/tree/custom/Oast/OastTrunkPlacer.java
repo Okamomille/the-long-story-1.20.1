@@ -1,4 +1,4 @@
-package net.okamiz.thelongstory.world.tree.custom;
+package net.okamiz.thelongstory.world.tree.custom.Oast;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
@@ -19,17 +19,17 @@ import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
-public class EgroricTrunkPlacer extends TrunkPlacer {
-    public static final Codec<EgroricTrunkPlacer> CODEC = RecordCodecBuilder.create(objectInstance ->
-            fillTrunkPlacerFields(objectInstance).apply(objectInstance, EgroricTrunkPlacer::new));
+public class OastTrunkPlacer extends TrunkPlacer {
+    public static final Codec<OastTrunkPlacer> CODEC = RecordCodecBuilder.create(objectInstance ->
+            fillTrunkPlacerFields(objectInstance).apply(objectInstance, OastTrunkPlacer::new));
 
-    public EgroricTrunkPlacer(int baseHeight, int firstRandomHeight, int secondRandomHeight) {
+    public OastTrunkPlacer(int baseHeight, int firstRandomHeight, int secondRandomHeight) {
         super(baseHeight, firstRandomHeight, secondRandomHeight);
     }
 
     @Override
     protected TrunkPlacerType<?> getType() {
-        return ModTrunkPlacerTypes.EGRORIC_TRUNK_PLACER;
+        return ModTrunkPlacerTypes.OAST_TRUNK_PLACER;
     }
 
     @Override
@@ -43,8 +43,8 @@ public class EgroricTrunkPlacer extends TrunkPlacer {
             getAndSetState(world, replacer, random, startPos.up(i), config);
 
 
-            for(int x = 1; x <= 1; x++){
-                int distance = 14;
+            for(int x = 1; x <= 2; x++){
+                int distance = 3;
                 replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
                         .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
                 replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
@@ -55,8 +55,8 @@ public class EgroricTrunkPlacer extends TrunkPlacer {
                         .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
             }
 
-            for(int x = 1; x <= 2; x++){
-                int distance = 11;
+            for(int x = 1; x <= 4; x++){
+                int distance = 6;
                 replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
                         .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
                 replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
@@ -79,31 +79,6 @@ public class EgroricTrunkPlacer extends TrunkPlacer {
                         .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
             }
 
-            for(int x = 1; x <= 1; x++){
-                int distance = 5;
-                replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(height_-distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(height_-distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(height_-distance).offset(Direction.UP, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.UP, x)).with(PillarBlock.AXIS, Direction.Axis.Y)));
-            }
-
-            for(int x = 1; x <= 1; x++){
-                int distance = 3;
-                replacer.accept(startPos.up(height_-distance).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(height_-distance).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                replacer.accept(startPos.up(height_-distance).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                replacer.accept(startPos.up(height_-distance).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                        .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-            }
 
 
 

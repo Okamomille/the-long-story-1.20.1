@@ -12,7 +12,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
-import net.okamiz.thelongstory.world.tree.EgroricSaplingGenerator;
+import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
+import net.okamiz.thelongstory.world.tree.custom.Oast.OastSaplingGenerator;
 
 public class ModBlocks {
 
@@ -95,8 +96,8 @@ public class ModBlocks {
 
     // >>> OAST
 
-    //public static final Block OAST_SAPLING = registerBlock("oast_sapling",
-    //        new SaplingBlock(new EgroricSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block OAST_SAPLING = registerBlock("oast_sapling",
+            new SaplingBlock(new OastSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block OAST_LEAVES = registerBlock("oast_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
 

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thelongstory:egroric_stairs"
+    "thelongstory:egroric_stairs",
+    "thelongstory:oast_stairs"
   ]
 }
