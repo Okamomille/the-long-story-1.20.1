@@ -125,6 +125,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.EGRORIC_FENCE_GATE);
 
 
+                        entries.add(ModBlocks.OAST_SAPLING);
                         entries.add(ModBlocks.OAST_LEAVES);
                         entries.add(ModBlocks.OAST_LOG);
                         entries.add(ModBlocks.OAST_WOOD);
