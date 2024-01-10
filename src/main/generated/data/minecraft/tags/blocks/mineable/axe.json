@@ -10,6 +10,11 @@
     "thelongstory:oast_wood",
     "thelongstory:stripped_oast_log",
     "thelongstory:stripped_oast_wood",
-    "thelongstory:oast_planks"
+    "thelongstory:oast_planks",
+    "thelongstory:sephin_log",
+    "thelongstory:sephin_wood",
+    "thelongstory:stripped_sephin_log",
+    "thelongstory:stripped_sephin_wood",
+    "thelongstory:sephin_planks"
   ]
 }

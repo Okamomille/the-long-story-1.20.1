@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "thelongstory:block/sephin_planks",
+    "side": "thelongstory:block/sephin_planks",
+    "top": "thelongstory:block/sephin_planks"
+  }
+}

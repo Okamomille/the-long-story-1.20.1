@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "thelongstory:block/stripped_sephin_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "thelongstory:block/stripped_sephin_log"
+    },
+    "axis=z": {
+      "model": "thelongstory:block/stripped_sephin_log_horizontal",
+      "x": 90
+    }
+  }
+}

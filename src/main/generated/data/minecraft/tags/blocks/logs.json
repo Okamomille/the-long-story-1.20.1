@@ -8,6 +8,10 @@
     "thelongstory:oast_log",
     "thelongstory:oast_wood",
     "thelongstory:stripped_oast_log",
-    "thelongstory:stripped_oast_wood"
+    "thelongstory:stripped_oast_wood",
+    "thelongstory:sephin_log",
+    "thelongstory:sephin_wood",
+    "thelongstory:stripped_sephin_log",
+    "thelongstory:stripped_sephin_wood"
   ]
 }

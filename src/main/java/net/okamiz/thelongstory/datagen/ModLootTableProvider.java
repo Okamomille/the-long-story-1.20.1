@@ -35,7 +35,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RED_COAL_BLOCK);
         addDrop(ModBlocks.SPIDER_SILK_BLOCK);
 
-
+        //EGRORIC LOOTS ------------------------------------
         addDrop(ModBlocks.EGRORIC_LEAVES, leavesDrops(ModBlocks.EGRORIC_LEAVES, ModBlocks.EGRORIC_SAPLING, 0.025f));
         addDrop(ModBlocks.EGRORIC_SAPLING);
         addDrop(ModBlocks.EGRORIC_LOG);
@@ -52,8 +52,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.EGRORIC_DOOR, doorDrops(ModBlocks.EGRORIC_DOOR));
         addDrop(ModBlocks.EGRORIC_SLAB, slabDrops(ModBlocks.EGRORIC_SLAB));
 
-
-
+        //OAST LOOTS ------------------------------------
         addDrop(ModBlocks.OAST_LEAVES, leavesDrops(ModBlocks.OAST_LEAVES, ModBlocks.OAST_SAPLING, 0.025f));
         addDrop(ModBlocks.OAST_SAPLING);
         addDrop(ModBlocks.OAST_LOG);
@@ -69,6 +68,25 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.OAST_SLAB, slabDrops(ModBlocks.OAST_SLAB));
         addDrop(ModBlocks.OAST_DOOR, doorDrops(ModBlocks.OAST_DOOR));
         addDrop(ModBlocks.OAST_TRAPDOOR);
+
+        //SEPHIN LOOTS ------------------------------------
+        addDrop(ModBlocks.SEPHIN_LEAVES, leavesDrops(ModBlocks.SEPHIN_LEAVES, ModBlocks.SEPHIN_SAPLING, 0.025f));
+        addDrop(ModBlocks.SEPHIN_SAPLING);
+        addDrop(ModBlocks.SEPHIN_LOG);
+        addDrop(ModBlocks.STRIPPED_SEPHIN_LOG);
+        addDrop(ModBlocks.SEPHIN_WOOD);
+        addDrop(ModBlocks.STRIPPED_SEPHIN_WOOD);
+        addDrop(ModBlocks.SEPHIN_PLANKS);
+        addDrop(ModBlocks.SEPHIN_STAIRS);
+        addDrop(ModBlocks.SEPHIN_PRESSURE_PLATE);
+        addDrop(ModBlocks.SEPHIN_BUTTON);
+        addDrop(ModBlocks.SEPHIN_FENCE_GATE);
+        addDrop(ModBlocks.SEPHIN_FENCE);
+        addDrop(ModBlocks.SEPHIN_SLAB, slabDrops(ModBlocks.SEPHIN_SLAB));
+        addDrop(ModBlocks.SEPHIN_DOOR, doorDrops(ModBlocks.SEPHIN_DOOR));
+        addDrop(ModBlocks.SEPHIN_TRAPDOOR);
+
+
 
 
 

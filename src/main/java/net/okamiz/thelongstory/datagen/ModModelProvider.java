@@ -40,8 +40,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
 
+//--------------------------------------------------------------------------------------
 
-
+        //EGRORIC MODELS ------------------------------------
         blockStateModelGenerator.registerLog(ModBlocks.EGRORIC_LOG).log(ModBlocks.EGRORIC_LOG).wood(ModBlocks.EGRORIC_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_EGRORIC_LOG).log(ModBlocks.STRIPPED_EGRORIC_LOG).wood(ModBlocks.STRIPPED_EGRORIC_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EGRORIC_LEAVES);
@@ -60,7 +61,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.EGRORIC_TRAPDOOR);
 
 
-
+        //OAST MODELS ------------------------------------
         blockStateModelGenerator.registerLog(ModBlocks.OAST_LOG).log(ModBlocks.OAST_LOG).wood(ModBlocks.OAST_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_OAST_LOG).log(ModBlocks.STRIPPED_OAST_LOG).wood(ModBlocks.STRIPPED_OAST_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OAST_LEAVES);
@@ -77,7 +78,24 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.OAST_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.OAST_TRAPDOOR);
 
+        //SEPHIN MODELS ------------------------------------
+        blockStateModelGenerator.registerLog(ModBlocks.SEPHIN_LOG).log(ModBlocks.SEPHIN_LOG).wood(ModBlocks.SEPHIN_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SEPHIN_LOG).log(ModBlocks.STRIPPED_SEPHIN_LOG).wood(ModBlocks.STRIPPED_SEPHIN_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SEPHIN_LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.SEPHIN_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        BlockStateModelGenerator.BlockTexturePool sephinPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SEPHIN_PLANKS);
+        sephinPool.stairs(ModBlocks.SEPHIN_STAIRS);
+        sephinPool.slab(ModBlocks.SEPHIN_SLAB);
+        sephinPool.button(ModBlocks.SEPHIN_BUTTON);
+        sephinPool.pressurePlate(ModBlocks.SEPHIN_PRESSURE_PLATE);
+        sephinPool.fence(ModBlocks.SEPHIN_FENCE);
+        sephinPool.fenceGate(ModBlocks.SEPHIN_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.SEPHIN_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.SEPHIN_TRAPDOOR);
+
+//--------------------------------------------------------------------------------------
 
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_OSPET, ModBlocks.POTTED_RED_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);

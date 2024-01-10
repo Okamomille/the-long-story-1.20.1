@@ -10,7 +10,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricFoliagePlacer;
@@ -28,6 +30,7 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> EGRORIC_KEY = registryKey("egroric");
     public static final RegistryKey<ConfiguredFeature<?,?>> OAST_KEY = registryKey("oast");
+    public static final RegistryKey<ConfiguredFeature<?,?>> SEPHIN_KEY = registryKey("sephin");
 
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -63,6 +66,15 @@ public class ModConfiguredFeatures {
 
                 BlockStateProvider.of(ModBlocks.OAST_LEAVES),
                 new OastFoliagePlacer(5, ConstantIntProvider.create(-4), ConstantIntProvider.create(6)),
+
+                new TwoLayersFeatureSize(1,0,2)).build());
+
+        register(context, SEPHIN_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.SEPHIN_LOG),
+                new StraightTrunkPlacer(4,2,1),
+
+                BlockStateProvider.of(ModBlocks.SEPHIN_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(0), 4),
 
                 new TwoLayersFeatureSize(1,0,2)).build());
     }

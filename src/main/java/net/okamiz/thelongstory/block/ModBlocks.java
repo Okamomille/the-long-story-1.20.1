@@ -12,9 +12,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.custom.OastLeavesBlock;
+import net.okamiz.thelongstory.block.custom.SephinLeavesBlock;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastSaplingGenerator;
+import net.okamiz.thelongstory.world.tree.custom.Sephin.SephinSaplingGenerator;
 
 public class ModBlocks {
 
@@ -136,6 +138,46 @@ public class ModBlocks {
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
 
 
+
+    // >>> SEPHIN
+
+    public static final Block SEPHIN_SAPLING = registerBlock("sephin_sapling",
+            new SaplingBlock(new SephinSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block SEPHIN_LEAVES = registerBlock("sephin_leaves",
+            new SephinLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+
+    public static final Block SEPHIN_LOG = registerBlock("sephin_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(3f)));
+    public static final Block SEPHIN_WOOD = registerBlock("sephin_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block STRIPPED_SEPHIN_LOG = registerBlock("stripped_sephin_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(3f)));
+    public static final Block STRIPPED_SEPHIN_WOOD = registerBlock("stripped_sephin_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
+    public static final Block SEPHIN_PLANKS = registerBlock("sephin_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block SEPHIN_STAIRS = registerBlock("sephin_stairs",
+            new StairsBlock(ModBlocks.SEPHIN_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SEPHIN_SLAB = registerBlock("sephin_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block SEPHIN_BUTTON = registerBlock("sephin_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 20, true));
+    public static final Block SEPHIN_PRESSURE_PLATE = registerBlock("sephin_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS),BlockSetType.OAK));
+
+    public static final Block SEPHIN_FENCE = registerBlock("sephin_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SEPHIN_FENCE_GATE = registerBlock("sephin_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
+
+    public static final Block SEPHIN_DOOR = registerBlock("sephin_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
+    public static final Block SEPHIN_TRAPDOOR = registerBlock("sephin_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
 
     // -------------------------------------
 

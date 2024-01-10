@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "thelongstory:block/stripped_sephin_log_top",
+    "side": "thelongstory:block/stripped_sephin_log"
+  }
+}

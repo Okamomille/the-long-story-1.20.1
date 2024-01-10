@@ -65,75 +65,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.CRUSHED_BONES))
                             .offerTo(exporter, new Identifier("crushed_bones_from_block"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.EGRORIC_BUTTON, 1).input(ModBlocks.EGRORIC_PLANKS)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_BUTTON),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_BUTTON))
-                .offerTo(exporter, new Identifier("egroric_button"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.EGRORIC_LOG)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
-                .offerTo(exporter, new Identifier("egroric_planks_from_log"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.EGRORIC_WOOD)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_WOOD),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
-                .offerTo(exporter, new Identifier("egroric_planks_from_wood"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.STRIPPED_EGRORIC_LOG)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_EGRORIC_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_EGRORIC_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
-                .offerTo(exporter, new Identifier("egroric_planks_from_stripped_log"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.STRIPPED_EGRORIC_WOOD)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_EGRORIC_WOOD),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_EGRORIC_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
-                .offerTo(exporter, new Identifier("egroric_planks_from_stripped_wood"));
-
-// ----------------------------------------------------------------------------------
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.OAST_BUTTON, 1).input(ModBlocks.OAST_PLANKS)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_BUTTON),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_BUTTON))
-                .offerTo(exporter, new Identifier("oast_button"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.OAST_LOG)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
-                .offerTo(exporter, new Identifier("oast_planks_from_log"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.OAST_WOOD)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_WOOD),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
-                .offerTo(exporter, new Identifier("oast_planks_from_wood"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.STRIPPED_OAST_LOG)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_OAST_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_OAST_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
-                .offerTo(exporter, new Identifier("oast_planks_from_stripped_log"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.STRIPPED_OAST_WOOD)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_OAST_WOOD),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_OAST_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
-                .offerTo(exporter, new Identifier("oast_planks_from_stripped_wood"));
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,ModBlocks.OAST_PRESSURE_PLATE, 1)
-                .pattern("XX")
-                .input('X', ModBlocks.OAST_PLANKS)
-                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_PRESSURE_PLATE)));
-
-
 
 
 
@@ -640,6 +571,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // ----------------
 
+        //EGRORIC RECIPES --------------------------
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.EGRORIC_BUTTON, 1).input(ModBlocks.EGRORIC_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_BUTTON),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_BUTTON))
+                .offerTo(exporter, new Identifier("egroric_button"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.EGRORIC_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
+                .offerTo(exporter, new Identifier("egroric_planks_from_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.EGRORIC_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
+                .offerTo(exporter, new Identifier("egroric_planks_from_wood"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.STRIPPED_EGRORIC_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_EGRORIC_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_EGRORIC_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
+                .offerTo(exporter, new Identifier("egroric_planks_from_stripped_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGRORIC_PLANKS, 4).input(ModBlocks.STRIPPED_EGRORIC_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_EGRORIC_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_EGRORIC_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.EGRORIC_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
+                .offerTo(exporter, new Identifier("egroric_planks_from_stripped_wood"));
+
 
         createStairsRecipe(ModBlocks.EGRORIC_STAIRS, Ingredient.ofItems(ModBlocks.EGRORIC_PLANKS))
                 .criterion(hasItem(ModBlocks.EGRORIC_PLANKS),conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
@@ -666,6 +629,44 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.EGRORIC_TRAPDOOR)));
 
 
+        //OAST RECIPES --------------------------
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.OAST_BUTTON, 1).input(ModBlocks.OAST_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_BUTTON),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_BUTTON))
+                .offerTo(exporter, new Identifier("oast_button"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.OAST_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier("oast_planks_from_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.OAST_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier("oast_planks_from_wood"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.STRIPPED_OAST_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_OAST_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_OAST_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier("oast_planks_from_stripped_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAST_PLANKS, 4).input(ModBlocks.STRIPPED_OAST_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_OAST_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_OAST_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.OAST_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier("oast_planks_from_stripped_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,ModBlocks.OAST_PRESSURE_PLATE, 1)
+                .pattern("XX")
+                .input('X', ModBlocks.OAST_PLANKS)
+                .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_PRESSURE_PLATE)));
+
 
         createStairsRecipe(ModBlocks.OAST_STAIRS, Ingredient.ofItems(ModBlocks.OAST_PLANKS))
                 .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
@@ -690,6 +691,70 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createTrapdoorRecipe(ModBlocks.OAST_TRAPDOOR, Ingredient.ofItems(ModBlocks.OAST_PLANKS))
                 .criterion(hasItem(ModBlocks.OAST_PLANKS),conditionsFromItem(ModBlocks.OAST_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.OAST_TRAPDOOR)));
+
+
+        //SEPHIN RECIPES -------------------------
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.SEPHIN_BUTTON, 1).input(ModBlocks.SEPHIN_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SEPHIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SEPHIN_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SEPHIN_BUTTON),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SEPHIN_BUTTON))
+                .offerTo(exporter, new Identifier("sephin_button"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SEPHIN_PLANKS, 4).input(ModBlocks.SEPHIN_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SEPHIN_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SEPHIN_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SEPHIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier("sephin_planks_from_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SEPHIN_PLANKS, 4).input(ModBlocks.SEPHIN_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.SEPHIN_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SEPHIN_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SEPHIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier("sephin_planks_from_wood"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SEPHIN_PLANKS, 4).input(ModBlocks.STRIPPED_SEPHIN_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_SEPHIN_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_SEPHIN_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SEPHIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier("sephin_planks_from_stripped_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SEPHIN_PLANKS, 4).input(ModBlocks.STRIPPED_SEPHIN_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_SEPHIN_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_SEPHIN_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.SEPHIN_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier("sephin_planks_from_stripped_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,ModBlocks.SEPHIN_PRESSURE_PLATE, 1)
+                .pattern("XX")
+                .input('X', ModBlocks.SEPHIN_PLANKS)
+                .criterion(hasItem(ModBlocks.SEPHIN_PLANKS),conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SEPHIN_PRESSURE_PLATE)));
+
+
+        createStairsRecipe(ModBlocks.SEPHIN_STAIRS, Ingredient.ofItems(ModBlocks.SEPHIN_PLANKS))
+                .criterion(hasItem(ModBlocks.SEPHIN_PLANKS),conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SEPHIN_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.SEPHIN_SLAB, Ingredient.ofItems(ModBlocks.SEPHIN_PLANKS))
+                .criterion(hasItem(ModBlocks.SEPHIN_PLANKS),conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SEPHIN_SLAB)));
+
+        createFenceGateRecipe(ModBlocks.SEPHIN_FENCE_GATE, Ingredient.ofItems(ModBlocks.SEPHIN_PLANKS))
+                .criterion(hasItem(ModBlocks.SEPHIN_PLANKS),conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SEPHIN_FENCE_GATE)));
+
+        createFenceRecipe(ModBlocks.SEPHIN_FENCE, Ingredient.ofItems(ModBlocks.SEPHIN_PLANKS))
+                .criterion(hasItem(ModBlocks.SEPHIN_PLANKS),conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SEPHIN_FENCE)));
+
+        createDoorRecipe(ModBlocks.SEPHIN_DOOR, Ingredient.ofItems(ModBlocks.SEPHIN_PLANKS))
+                .criterion(hasItem(ModBlocks.SEPHIN_PLANKS),conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SEPHIN_DOOR)));
+
+        createTrapdoorRecipe(ModBlocks.SEPHIN_TRAPDOOR, Ingredient.ofItems(ModBlocks.SEPHIN_PLANKS))
+                .criterion(hasItem(ModBlocks.SEPHIN_PLANKS),conditionsFromItem(ModBlocks.SEPHIN_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SEPHIN_TRAPDOOR)));
 
 
     }

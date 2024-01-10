@@ -1,15 +1,15 @@
-// 1.20.2	2024-01-10T17:38:58.4858154	The Long Story/Tags for minecraft:block
-9c05bbbaca9b74a4f0e87336ed7638439763f6d7 data\minecraft\tags\blocks\logs.json
-d49ed9c942e10c807fa8d285dbb438f3492bf2a4 data\minecraft\tags\blocks\wooden_trapdoors.json
-694eec9861a626bb9915cd6f10dcbdd9be39841d data\minecraft\tags\blocks\wooden_stairs.json
-5ee7576b69f4bce543b7523df2857bba5e9beecb data\minecraft\tags\blocks\wooden_fences.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
-ea23bbfb837f5c0f8b5f8add52a6f269c2f06de6 data\minecraft\tags\blocks\mineable\axe.json
+// 1.20.2	2024-01-10T18:36:07.662001	The Long Story/Tags for minecraft:block
+f2a9e6e8c2d20515c0ba650588c226ce3e24fe9b data\minecraft\tags\blocks\logs.json
+00fa939d004ed43c564a50839394f5e205775b2e data\minecraft\tags\blocks\wooden_trapdoors.json
+1c05177dd059c5b711ef637fb2b41cb7207e0eb0 data\minecraft\tags\blocks\wooden_stairs.json
+55bdcbbfb11a6744e88aff28adbeabe0859f45e1 data\minecraft\tags\blocks\wooden_fences.json
 fb81e0f49d738e90efed32846c51ce67ab352cd4 data\minecraft\tags\blocks\mineable\pickaxe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
+e1dc1dc2127c2806e082b2b0d93b4dee1c3497ef data\minecraft\tags\blocks\mineable\axe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 adcd420b284230c6e3dafa14f48c360c4b221ab8 data\minecraft\tags\blocks\needs_iron_tool.json
-0d7130c73170cf3d8476ddb757f54d5b4c98b25d data\minecraft\tags\blocks\wooden_doors.json
-5660ea97135dd514addecf705370c86e8dd3312d data\minecraft\tags\blocks\wooden_slabs.json
+1b3005338aeec76255b4c39d85c3adfdd1db9ddc data\minecraft\tags\blocks\wooden_doors.json
+868a2a0ca50ea6b496ffd468220500e32d291d42 data\minecraft\tags\blocks\wooden_slabs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
 fec5d93e9367d7476291395fdf6ed25c9e3f325d data\thelongstory\tags\blocks\radar_detectable_blocks.json
-4326cd69aeff29f6388c20e49b7f2efe983dfdb4 data\minecraft\tags\blocks\fence_gates.json
+48eb4047a54304ea6c6948b18240254827ae9002 data\minecraft\tags\blocks\fence_gates.json

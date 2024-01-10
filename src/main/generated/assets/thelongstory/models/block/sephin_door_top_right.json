@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "thelongstory:block/sephin_door_bottom",
+    "top": "thelongstory:block/sephin_door_top"
+  }
+}

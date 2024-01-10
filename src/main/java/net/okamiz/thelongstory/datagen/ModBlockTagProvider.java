@@ -52,7 +52,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_WOOD)
                 .add(ModBlocks.STRIPPED_OAST_LOG)
                 .add(ModBlocks.STRIPPED_OAST_WOOD)
-                .add(ModBlocks.OAST_PLANKS);
+                .add(ModBlocks.OAST_PLANKS)
+
+
+                .add(ModBlocks.SEPHIN_LOG)
+                .add(ModBlocks.SEPHIN_WOOD)
+                .add(ModBlocks.STRIPPED_SEPHIN_LOG)
+                .add(ModBlocks.STRIPPED_SEPHIN_WOOD)
+                .add(ModBlocks.SEPHIN_PLANKS);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -74,27 +81,33 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.OAST_FENCE)
+                .add(ModBlocks.SEPHIN_FENCE)
                 .add(ModBlocks.EGRORIC_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.OAST_FENCE_GATE)
+                .add(ModBlocks.SEPHIN_FENCE_GATE)
                 .add(ModBlocks.EGRORIC_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(ModBlocks.EGRORIC_DOOR)
+                .add(ModBlocks.OAST_DOOR)
                 .add(ModBlocks.OAST_DOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.EGRORIC_TRAPDOOR)
-                .add(ModBlocks.OAST_TRAPDOOR);
+                .add(ModBlocks.OAST_TRAPDOOR)
+                .add(ModBlocks.SEPHIN_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(ModBlocks.EGRORIC_SLAB)
-                .add(ModBlocks.OAST_SLAB);
+                .add(ModBlocks.OAST_SLAB)
+                .add(ModBlocks.SEPHIN_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(ModBlocks.EGRORIC_STAIRS)
-                .add(ModBlocks.OAST_STAIRS);
+                .add(ModBlocks.OAST_STAIRS)
+                .add(ModBlocks.SEPHIN_STAIRS);
 
 
         getOrCreateTagBuilder(BlockTags.LOGS)
@@ -106,7 +119,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_LOG)
                 .add(ModBlocks.OAST_WOOD)
                 .add(ModBlocks.STRIPPED_OAST_LOG)
-                .add(ModBlocks.STRIPPED_OAST_WOOD);
+                .add(ModBlocks.STRIPPED_OAST_WOOD)
+
+                .add(ModBlocks.SEPHIN_LOG)
+                .add(ModBlocks.SEPHIN_WOOD)
+                .add(ModBlocks.STRIPPED_SEPHIN_LOG)
+                .add(ModBlocks.STRIPPED_SEPHIN_WOOD);
     }
 
 }

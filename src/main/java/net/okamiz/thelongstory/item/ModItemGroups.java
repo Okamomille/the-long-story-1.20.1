@@ -107,7 +107,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
                         entries.add(ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
-
+                        //EGRORIC
                         entries.add(ModBlocks.EGRORIC_SAPLING);
                         entries.add(ModBlocks.EGRORIC_LEAVES);
                         entries.add(ModBlocks.EGRORIC_LOG);
@@ -124,7 +124,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.EGRORIC_FENCE);
                         entries.add(ModBlocks.EGRORIC_FENCE_GATE);
 
-
+                        //OAST
                         entries.add(ModBlocks.OAST_SAPLING);
                         entries.add(ModBlocks.OAST_LEAVES);
                         entries.add(ModBlocks.OAST_LOG);
@@ -141,7 +141,22 @@ public class ModItemGroups {
                         entries.add(ModBlocks.OAST_FENCE);
                         entries.add(ModBlocks.OAST_FENCE_GATE);
 
-
+                        //SEPHIN
+                        entries.add(ModBlocks.SEPHIN_SAPLING);
+                        entries.add(ModBlocks.SEPHIN_LEAVES);
+                        entries.add(ModBlocks.SEPHIN_LOG);
+                        entries.add(ModBlocks.SEPHIN_WOOD);
+                        entries.add(ModBlocks.STRIPPED_SEPHIN_LOG);
+                        entries.add(ModBlocks.STRIPPED_SEPHIN_WOOD);
+                        entries.add(ModBlocks.SEPHIN_PLANKS);
+                        entries.add(ModBlocks.SEPHIN_STAIRS);
+                        entries.add(ModBlocks.SEPHIN_SLAB);
+                        entries.add(ModBlocks.SEPHIN_BUTTON);
+                        entries.add(ModBlocks.SEPHIN_PRESSURE_PLATE);
+                        entries.add(ModBlocks.SEPHIN_DOOR);
+                        entries.add(ModBlocks.SEPHIN_TRAPDOOR);
+                        entries.add(ModBlocks.SEPHIN_FENCE);
+                        entries.add(ModBlocks.SEPHIN_FENCE_GATE);
 
                         entries.add(ModBlocks.RED_OSPET);
                         entries.add(ModBlocks.BLUE_OSPET);
