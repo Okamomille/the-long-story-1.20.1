@@ -196,6 +196,10 @@
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",
 
-  "effect.thelongstory.infected": "Infected"
+  "effect.thelongstory.infected": "Infected",
+
+  "entity.thelongstory.trepasseur": "%1$s was eaten by a Trepasseur",
+  "entity.thelongstory.tickeler": "%1$s was devoured by a Tickeler",
+  "entity.thelongstory.crawler": "%1$s was murdered by a Crawler"
 
 }
