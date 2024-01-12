@@ -51,6 +51,7 @@ public class ModConfiguredFeatures {
 
 
 
+
         register(context, EGRORIC_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.EGRORIC_LOG),
                 new EgroricTrunkPlacer(5,6,4),

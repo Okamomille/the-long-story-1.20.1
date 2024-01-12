@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "thelongstory:snow_forest",
+          "parameters": {
+            "temperature": -0.7,
+            "humidity": -0.1,
+            "continentalness": 1,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "thelongstory:golden_lands",
+          "parameters": {
+            "temperature": 0.7,
+            "humidity": 0.1,
+            "continentalness": -0.5,
+            "erosion": 0.1,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}
