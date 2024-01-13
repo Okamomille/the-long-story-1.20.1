@@ -21,6 +21,9 @@ public class ModBiomes {
     public static final RegistryKey<Biome> GOLDEN_LANDS = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(TheLongStory.MOD_ID, "golden_lands"));
 
+    public static final RegistryKey<Biome> TEARS_VALLEY = RegistryKey.of(RegistryKeys.BIOME,
+            new Identifier(TheLongStory.MOD_ID, "tears_valley"));
+
 
 
 
@@ -28,6 +31,7 @@ public class ModBiomes {
     public static void boostrap(Registerable<Biome> context) {
         context.register(SNOW_FOREST, snowForest(context));
         context.register(GOLDEN_LANDS, goldenLands(context));
+        context.register(TEARS_VALLEY, tearsValley(context));
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
@@ -41,7 +45,7 @@ public class ModBiomes {
 
     public static Biome snowForest(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.TREPASSEUR, 80, 1, 4));
+       // spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.TREPASSEUR, 80, 1, 4));
 
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.FOX, 5, 4, 4));
 
@@ -50,7 +54,7 @@ public class ModBiomes {
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-        globalOverworldGeneration(biomeBuilder);
+        //globalOverworldGeneration(biomeBuilder);
         //DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
@@ -58,7 +62,7 @@ public class ModBiomes {
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SEPHIN_PLACED_KEY);
         //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
         //DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
-        //DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
+        DefaultBiomeFeatures.addFrozenTopLayer(biomeBuilder);
 
 
         //DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
@@ -83,7 +87,7 @@ public class ModBiomes {
 
     public static Biome goldenLands(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.TICKELER, 80, 1, 4));
+        //spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.TICKELER, 80, 1, 4));
 
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.ALLAY, 5, 1, 4));
 
@@ -91,13 +95,14 @@ public class ModBiomes {
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-        globalOverworldGeneration(biomeBuilder);
+        //globalOverworldGeneration(biomeBuilder);
         //DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.OAST_PLACED_KEY);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.FLOWER_CHERRY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.FOREST_FLOWERS);
         //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
         DefaultBiomeFeatures.addForestGrass(biomeBuilder);
         //DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
@@ -119,6 +124,46 @@ public class ModBiomes {
                         .grassColor(11983713)
                         .foliageColor(11983713)
                         .fogColor(12638463)
+                        .build())
+                .build();
+    }
+
+    public static Biome tearsValley(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+        //spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.CRAWLER, 80, 1, 4));
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+        //globalOverworldGeneration(biomeBuilder);
+        //DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
+
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.EGRORIC_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.FLOWER_PLAIN);
+        //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
+        DefaultBiomeFeatures.addForestGrass(biomeBuilder);
+        //DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
+
+
+        //DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
+        //DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(true)
+                .downfall(0.5f)
+                .temperature(0.6f)
+                .generationSettings(biomeBuilder.build())
+                .spawnSettings(spawnBuilder.build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(4159204)
+                        .waterFogColor(329011)
+                        .skyColor(7444166)
+                        .grassColor(11826687)
+                        .foliageColor(11826687)
+                        .fogColor(4940970)
                         .build())
                 .build();
     }

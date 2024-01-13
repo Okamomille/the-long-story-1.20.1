@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:overworld",
+  "type": "thelongstory:simulation_type",
   "generator": {
     "type": "minecraft:noise",
     "settings": "minecraft:overworld",
@@ -7,11 +7,11 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "thelongstory:snow_forest",
+          "biome": "thelongstory:tears_valley",
           "parameters": {
-            "temperature": -0.7,
-            "humidity": -0.1,
-            "continentalness": 1,
+            "temperature": 0.6,
+            "humidity": 0.2,
+            "continentalness": 0,
             "erosion": 0,
             "weirdness": 0,
             "depth": 0,
@@ -23,8 +23,20 @@
           "parameters": {
             "temperature": 0.7,
             "humidity": 0.1,
-            "continentalness": -0.5,
-            "erosion": 0.1,
+            "continentalness": 0.1,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "thelongstory:snow_forest",
+          "parameters": {
+            "temperature": -0.7,
+            "humidity": 0.3,
+            "continentalness": 0,
+            "erosion": 0,
             "weirdness": 0,
             "depth": 0,
             "offset": 0

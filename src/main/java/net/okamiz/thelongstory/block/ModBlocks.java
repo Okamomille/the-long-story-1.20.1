@@ -13,6 +13,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.custom.OastLeavesBlock;
 import net.okamiz.thelongstory.block.custom.SephinLeavesBlock;
+import net.okamiz.thelongstory.block.custom.SephinSaplingBlock;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastSaplingGenerator;
@@ -142,7 +143,7 @@ public class ModBlocks {
     // >>> SEPHIN
 
     public static final Block SEPHIN_SAPLING = registerBlock("sephin_sapling",
-            new SaplingBlock(new SephinSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            new SephinSaplingBlock(new SephinSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block SEPHIN_LEAVES = registerBlock("sephin_leaves",
             new SephinLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
 
