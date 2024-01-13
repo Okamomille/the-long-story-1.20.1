@@ -1,11 +1,9 @@
 package net.okamiz.thelongstory.world.biome.surface;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
-import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.world.biome.ModBiomes;
 
