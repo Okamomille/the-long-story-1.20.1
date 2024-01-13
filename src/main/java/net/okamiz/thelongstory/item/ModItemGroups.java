@@ -87,7 +87,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.RADAR);
                         entries.add(ModItems.RED_COAL);
-
+                        entries.add(ModBlocks.DEEP_ICE);
 
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
                         entries.add(ModBlocks.MOLD_BLOCK);

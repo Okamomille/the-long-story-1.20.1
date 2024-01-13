@@ -8,6 +8,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
@@ -28,6 +29,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.MUD)));
     public static final Block SPIDER_SILK_BLOCK = registerBlock("spider_silk_block",
             new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
+
+    public static final Block DEEP_ICE = registerBlock("deep_ice",
+            new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.GLASS)));
 
     public static final Block THESTONE_ORE = registerBlock("thestone_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(1, 5)));

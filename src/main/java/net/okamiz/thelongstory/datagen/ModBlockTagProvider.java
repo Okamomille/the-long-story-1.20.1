@@ -33,6 +33,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
                 .add(ModBlocks.THESTONE_ORE)
+                .add(ModBlocks.DEEP_ICE)
 
                 .add(ModBlocks.IMPURE_ZAROSITE_BLOCK)
                 .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
@@ -63,6 +64,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.DEEP_ICE)
                 ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)

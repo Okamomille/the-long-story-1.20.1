@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-13T16:40:28.4239231	The Long Story/Block Loot Tables
+// 1.20.2	2024-01-13T17:30:21.9323129	The Long Story/Block Loot Tables
 3c1e5398d28a02aa67b2aa655b498e41ee9070ab data\thelongstory\loot_tables\blocks\thestone_ore.json
 ccac9d34e2343df719232041a82e2f0f8f3a9ac1 data\thelongstory\loot_tables\blocks\egroric_button.json
 4020cc537c6d3f9a1693a173068f183beb97feea data\thelongstory\loot_tables\blocks\oast_pressure_plate.json
@@ -33,12 +33,13 @@ e5930098e7c7de30d60a44772d9dbc9eeca90798 data\thelongstory\loot_tables\blocks\po
 658a7430836653f0511dd6454a9a43d1f8215004 data\thelongstory\loot_tables\blocks\oast_trapdoor.json
 b08ec201178d9108d1bfecfcec1a95bfab764965 data\thelongstory\loot_tables\blocks\potted_red_ospet.json
 9df7f07c4b84f529f44dd9dc7c33e9976a303e3a data\thelongstory\loot_tables\blocks\sephin_door.json
-2d7e3e35d059613dd24aa47092ce082a04b8c488 data\thelongstory\loot_tables\blocks\sephin_wood.json
 730672fef4eaaaa9f362e4ca673643d6431f229a data\thelongstory\loot_tables\blocks\oast_planks.json
+2d7e3e35d059613dd24aa47092ce082a04b8c488 data\thelongstory\loot_tables\blocks\sephin_wood.json
 931d151e4acdd304ddb6ed3602b4f87a6e40974b data\thelongstory\loot_tables\blocks\oast_wood.json
 ff4912f9cc2be5de3ed6d5d1c847d019ca2da817 data\thelongstory\loot_tables\blocks\egroric_log.json
 3aba5741356af6ac2dd400766ee32d264f249b4c data\thelongstory\loot_tables\blocks\stripped_oast_log.json
 29b9b42521858ddc69488223f4564223263cc400 data\thelongstory\loot_tables\blocks\cyan_greffed_command_system.json
+8217ea3ef942fbb63dd7b4d2e091cc5c10ccbdf2 data\thelongstory\loot_tables\blocks\deep_ice.json
 a0d90115be7a88d989722bb908dc803b2bf7c5fe data\thelongstory\loot_tables\blocks\egroric_wood.json
 7d413d78af3b1d16181051b77afe9b4d831a45b3 data\thelongstory\loot_tables\blocks\stripped_sephin_log.json
 b73d272d0d2827de5e57338cce4d9262871130b3 data\thelongstory\loot_tables\blocks\egroric_leaves.json
