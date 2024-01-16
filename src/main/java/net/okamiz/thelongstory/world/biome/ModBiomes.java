@@ -22,9 +22,6 @@ public class ModBiomes {
     public static final RegistryKey<Biome> TEARS_VALLEY = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(TheLongStory.MOD_ID, "tears_valley"));
 
-    public static final RegistryKey<Biome> COLD_SEA = RegistryKey.of(RegistryKeys.BIOME,
-            new Identifier(TheLongStory.MOD_ID, "cold_sea"));
-
 
 
 
@@ -33,7 +30,6 @@ public class ModBiomes {
         context.register(SNOW_FOREST, snowForest(context));
         context.register(GOLDEN_LANDS, goldenLands(context));
         context.register(TEARS_VALLEY, tearsValley(context));
-        context.register(COLD_SEA, coldSea(context));
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
@@ -72,8 +68,8 @@ public class ModBiomes {
 
         return new Biome.Builder()
                 .precipitation(true)
-                .downfall(1f)
-                .temperature(-0.7f)
+                .downfall(0.5f)
+                .temperature(0f)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
@@ -115,8 +111,8 @@ public class ModBiomes {
 
         return new Biome.Builder()
                 .precipitation(true)
-                .downfall(0.3f)
-                .temperature(0.7f)
+                .downfall(0.6f)
+                .temperature(0.6f)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
@@ -144,6 +140,7 @@ public class ModBiomes {
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.EGRORIC_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TORN_BUSH_PLACED_KEY);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.FLOWER_PLAIN);
         //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
         DefaultBiomeFeatures.addForestGrass(biomeBuilder);
@@ -155,8 +152,8 @@ public class ModBiomes {
 
         return new Biome.Builder()
                 .precipitation(true)
-                .downfall(0.5f)
-                .temperature(0.6f)
+                .downfall(0.8f)
+                .temperature(0.7f)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
@@ -170,38 +167,5 @@ public class ModBiomes {
                 .build();
     }
 
-    public static Biome coldSea(Registerable<Biome> context) {
-        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        //spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.CRAWLER, 80, 1, 4));
 
-        GenerationSettings.LookupBackedBuilder biomeBuilder =
-                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
-                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
-
-        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
-
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, OceanPlacedFeatures.SEAGRASS_COLD);
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, OceanPlacedFeatures.SEA_PICKLE);
-
-        DefaultBiomeFeatures.addKelp(biomeBuilder);
-        DefaultBiomeFeatures.addSeagrassOnStone(biomeBuilder);
-        DefaultBiomeFeatures.addIcebergs(biomeBuilder);
-
-        DefaultBiomeFeatures.addOceanMobs(spawnBuilder, 3, 4, 17);
-
-        return new Biome.Builder()
-                .precipitation(true)
-                .downfall(0.7f)
-                .temperature(0.1f)
-                .generationSettings(biomeBuilder.build())
-                .spawnSettings(spawnBuilder.build())
-                .effects((new BiomeEffects.Builder())
-                        .waterColor(4020182)
-                        .waterFogColor(329011)
-                        .skyColor(OverworldBiomeCreator.getSkyColor(0.1f))
-                        .fogColor(12638463)
-                        .build())
-                .build();
-    }
 }

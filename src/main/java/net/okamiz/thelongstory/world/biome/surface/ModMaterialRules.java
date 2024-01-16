@@ -10,6 +10,7 @@ import net.okamiz.thelongstory.world.biome.ModBiomes;
 public class ModMaterialRules {
     private static final MaterialRules.MaterialRule PACKED_ICE = makeStateRule(Blocks.PACKED_ICE);
     private static final MaterialRules.MaterialRule SNOW_BLOCK = makeStateRule(Blocks.SNOW_BLOCK);
+    private static final MaterialRules.MaterialRule WHITE_SAND = makeStateRule(Blocks.WHITE_CONCRETE_POWDER);
 
     private static final MaterialRules.MaterialRule BEDROCK = makeStateRule(Blocks.BEDROCK);
     private static final MaterialRules.MaterialRule MAGMA_BLOCK = makeStateRule(Blocks.MAGMA_BLOCK);
@@ -30,7 +31,10 @@ public class ModMaterialRules {
                 MaterialRules.condition(MaterialRules.biome(ModBiomes.SNOW_FOREST),(MaterialRules.condition(MaterialRules.verticalGradient
                         ("snow_forest_bedrock", YOffset.aboveBottom(10),YOffset.aboveBottom(64)), DEEP_ICE))),
                 MaterialRules.condition(MaterialRules.biome(ModBiomes.SNOW_FOREST), MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, SNOW_BLOCK)),
-                MaterialRules.condition(MaterialRules.biome(ModBiomes.SNOW_FOREST), PACKED_ICE)
+                MaterialRules.condition(MaterialRules.biome(ModBiomes.SNOW_FOREST), PACKED_ICE),
+
+
+                MaterialRules.condition(MaterialRules.biome(ModBiomes.WHITE_BEACH), MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, WHITE_SAND))
 
         );
 

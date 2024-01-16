@@ -1,5 +1,6 @@
 package net.okamiz.thelongstory.world;
 
+import com.mojang.serialization.Codec;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -15,6 +16,7 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.block.custom.TornBrushBlock;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricTrunkPlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastFoliagePlacer;
@@ -32,6 +34,10 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> OAST_KEY = registryKey("oast");
     public static final RegistryKey<ConfiguredFeature<?,?>> SEPHIN_KEY = registryKey("sephin");
 
+
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> TORN_BUSH_KEY = registryKey("torn_bush_key");
+
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -48,6 +54,10 @@ public class ModConfiguredFeatures {
 
         register(context, THESTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldThestoneOres, 4));
         register(context, IMPURE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldImpureZarositeOres, 4));
+
+
+        register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(64,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.TORN_BUSH)))));
 
 
 

@@ -1,12 +1,10 @@
 {
   "carvers": {},
-  "downfall": 0.8,
+  "downfall": 0.5,
   "effects": {
-    "fog_color": 4940970,
-    "foliage_color": 11826687,
-    "grass_color": 11826687,
-    "sky_color": 7444166,
-    "water_color": 4159204,
+    "fog_color": 12638463,
+    "sky_color": 8299263,
+    "water_color": 4020182,
     "water_fog_color": 329011
   },
   "features": [
@@ -39,10 +37,7 @@
     [],
     [],
     [
-      "thelongstory:egroric_placed",
-      "thelongstory:torn_bush_placed",
-      "minecraft:flower_plains",
-      "minecraft:patch_grass_forest"
+      "minecraft:seagrass_cold"
     ]
   ],
   "has_precipitation": true,
@@ -57,5 +52,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.7
+  "temperature": 0.5
 }

@@ -10,8 +10,7 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
 
@@ -28,6 +27,10 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> SEPHIN_PLACED_KEY = registerKey("sephin_placed");
 
 
+
+    public static final RegistryKey<PlacedFeature> TORN_BUSH_PLACED_KEY = registerKey("torn_bush_placed");
+
+
     public static void boostrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
@@ -38,6 +41,10 @@ public class ModPlacedFeatures {
         register(context, IMPURE_ZAROSITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.IMPURE_ZAROSITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(3, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(8))));
+
+
+        register(context, TORN_BUSH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TORN_BUSH_KEY),
+                ModPlantsPlacement.modifiersWithRarity(4));
 
 
 
