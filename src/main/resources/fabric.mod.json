@@ -23,9 +23,6 @@
 		],
 		"fabric-datagen": [
 			"net.okamiz.thelongstory.TheLongStoryDataGenerator"
-		],
-		"terrablender": [
-			"net.okamiz.thelongstory.world.biome.ModTerrablenderAPI"
 		]
 	},
 	"mixins": [
