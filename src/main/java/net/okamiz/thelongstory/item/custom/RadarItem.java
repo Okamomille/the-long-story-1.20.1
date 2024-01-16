@@ -3,6 +3,7 @@ package net.okamiz.thelongstory.item.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -65,7 +66,12 @@ public class RadarItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.thelongstory.radar"));
+
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.thelongstory.radar"));
+        }else{
+            tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

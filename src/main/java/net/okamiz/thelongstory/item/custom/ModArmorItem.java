@@ -1,6 +1,7 @@
 package net.okamiz.thelongstory.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -87,7 +88,12 @@ public class ModArmorItem extends ArmorItem {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.thelongstory.effect_armor"));
+
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.thelongstory.effect_armor"));
+        }else{
+            tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

@@ -1,5 +1,6 @@
 package net.okamiz.thelongstory.item.custom;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.BlazeEntity;
@@ -19,6 +20,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.item.ModItems;
 import org.jetbrains.annotations.Nullable;
+import org.spongepowered.asm.mixin.injection.At;
 
 import java.util.List;
 
@@ -109,7 +111,12 @@ public class SoulContainerItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.thelongstory.soul_container"));
+
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.thelongstory.soul_container"));
+        }else{
+            tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

@@ -180,7 +180,7 @@
 
 
 
-  "tooltip.thelongstory.radar" : "§7A radar for searching ores underground!",
+  "tooltip.thelongstory.radar" : "§7A radar for searching ores underground! (Just a test item)",
   "tooltip.thelongstory.effect_armor" : "§7Have a special effect when you equip the full armor.",
 
 
@@ -196,6 +196,8 @@
   "tooltip.thelongstory.power_star" : "§7This is the star of Power, needed to go deeper in the science of life.",
   "tooltip.thelongstory.soul_container" : "§7This container can capture a soul and use it's essence. \nRight click on a mob who's §n§l§cunder 15HP §r§7to capture it.",
   "tooltip.thelongstory.soul_container_full" : "§o§7Is obtained by using the Soul container.",
+
+  "tooltip.thelongstory.press_shift_info" : "§7Press §n§l§c[SHIFT]§r§7 to see more informations.",
 
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",
