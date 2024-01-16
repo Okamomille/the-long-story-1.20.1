@@ -141,7 +141,7 @@ public class ModBiomes {
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.EGRORIC_PLACED_KEY);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TORN_BUSH_PLACED_KEY);
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.FLOWER_PLAIN);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_OSPET_PLACED_KEY);
         //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
         DefaultBiomeFeatures.addForestGrass(biomeBuilder);
         //DefaultBiomeFeatures.addLargeFerns(biomeBuilder);

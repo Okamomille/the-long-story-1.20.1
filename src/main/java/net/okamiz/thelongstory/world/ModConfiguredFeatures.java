@@ -39,6 +39,9 @@ public class ModConfiguredFeatures {
 
 
     public static final RegistryKey<ConfiguredFeature<?,?>> TORN_BUSH_KEY = registryKey("torn_bush_key");
+    public static final RegistryKey<ConfiguredFeature<?,?>> BLUE_OSPET_KEY = registryKey("blue_ospet_key");
+
+
 
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -60,6 +63,9 @@ public class ModConfiguredFeatures {
 
         register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(64,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.TORN_BUSH)))));
+
+        register(context, BLUE_OSPET_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(64,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_OSPET)))));
 
 
 
