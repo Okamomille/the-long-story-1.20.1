@@ -1,6 +1,7 @@
 package net.okamiz.thelongstory.world;
 
 import com.mojang.serialization.Codec;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -17,6 +18,7 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.block.custom.TornBrushBlock;
+import net.okamiz.thelongstory.util.ModTags;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricTrunkPlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastFoliagePlacer;
@@ -87,7 +89,8 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.SEPHIN_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(0), 4),
 
-                new TwoLayersFeatureSize(1,0,2)).build());
+                new TwoLayersFeatureSize(1,0,2))
+                .dirtProvider(BlockStateProvider.of(Blocks.SNOW_BLOCK)).build());
     }
 
 
