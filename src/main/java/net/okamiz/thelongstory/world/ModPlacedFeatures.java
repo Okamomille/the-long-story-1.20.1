@@ -29,6 +29,7 @@ public class ModPlacedFeatures {
 
 
     public static final RegistryKey<PlacedFeature> TORN_BUSH_PLACED_KEY = registerKey("torn_bush_placed");
+    public static final RegistryKey<PlacedFeature> TORN_LOW_GRASS_PLACED_KEY = registerKey("torn_low_grass_placed");
     public static final RegistryKey<PlacedFeature> BLUE_OSPET_PLACED_KEY = registerKey("blue_ospet_placed");
 
 
