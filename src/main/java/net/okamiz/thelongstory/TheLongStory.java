@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.okamiz.thelongstory.block.ModFlammableBlocks;
 import net.okamiz.thelongstory.block.ModStrippableBlocks;
+import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.effect.ModEffects;
 import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.entity.ModEntitiesAttributes;
@@ -18,6 +19,7 @@ import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.item.ModFuelRegistry;
 import net.okamiz.thelongstory.item.ModItemGroups;
 import net.okamiz.thelongstory.item.ModItems;
+import net.okamiz.thelongstory.screen.ModScreenHandlers;
 import net.okamiz.thelongstory.util.ModCustomTrades;
 import net.okamiz.thelongstory.util.ModLootTableModifiers;
 import net.okamiz.thelongstory.world.gen.ModWorldGeneration;
@@ -36,9 +38,11 @@ public class TheLongStory implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntities();
 		ModEntities.registerModEntities();
 
 		ModEffects.registerEffects();
+		ModScreenHandlers.registerScreenHandlers();
 
 		ModLootTableModifiers.modifyLootTables();
 		ModCustomTrades.registerCustomTrades();

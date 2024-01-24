@@ -99,6 +99,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CYAN_GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.BLUE_GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.GRAY_GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);

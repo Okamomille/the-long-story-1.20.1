@@ -247,6 +247,9 @@ public class ModBlocks {
     public static final Block GRAY_GREFFED_COMMAND_SYSTEM = registerBlock("gray_greffed_command_system",
             new GrayGreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
 
+    public static final Block GREFFED_COMMAND_SYSTEM = registerBlock("greffed_command_system",
+            new GreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+
 
 
     // ----------------

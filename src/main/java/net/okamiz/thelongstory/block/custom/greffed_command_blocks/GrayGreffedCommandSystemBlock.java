@@ -16,12 +16,12 @@ public class GrayGreffedCommandSystemBlock extends GreffedCommandSystemBlock{
         super(settings);
         }
     public final StatusEffectInstance effectInstance = new StatusEffectInstance(StatusEffects.RESISTANCE, 3600, 1);
-
+/*
     @Override
     public void applyEffect(PlayerEntity player, StatusEffectInstance instance) {
         super.applyEffect(player, effectInstance);
     }
-
+*/
     @Override
     public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
             tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));

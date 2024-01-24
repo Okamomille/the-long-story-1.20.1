@@ -1,72 +1,89 @@
 package net.okamiz.thelongstory.block.custom.greffed_command_blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
+import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityTicker;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.okamiz.thelongstory.block.entity.ModBlockEntities;
+import net.okamiz.thelongstory.block.entity.custom.GreffedCommandSystemBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class GreffedCommandSystemBlock extends Block{
+public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockEntityProvider {
 
-    private float timer = 0;
-    private final float timerdelay = 3600;
-    public final StatusEffectInstance effectInstance = new StatusEffectInstance(StatusEffects.REGENERATION, 3600, 1);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(0,0,0,16,16, 16);
+
 
     public GreffedCommandSystemBlock(Settings settings) {
         super(settings);
-        }
-
+    }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit){
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return SHAPE;
+    }
 
-        if(this.timer <= 0){
-            if(!world.isClient()){
-                applyEffect(player, effectInstance);
-                this.timer = timerdelay;
-            }
-            world.playSound(player, pos, SoundEvents.ENTITY_ALLAY_AMBIENT_WITH_ITEM, SoundCategory.BLOCKS, 1f, 1.2f);
-            world.playSound(player, pos, SoundEvents.ITEM_LODESTONE_COMPASS_LOCK, SoundCategory.BLOCKS, 1f, 1f);
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
+    }
 
-        }else if (this.timer > 0){
-            //WRONG
-            if(!world.isClient()){
-            player.sendMessage(Text.literal("§o§7The Command System is cooling, you have to wait. " + this.timer));
+    @Nullable
+    @Override
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new GreffedCommandSystemBlockEntity(pos, state);
+    }
+
+    @Override
+    public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
+        if (state.getBlock() != newState.getBlock()) {
+            BlockEntity blockEntity = world.getBlockEntity(pos);
+            if (blockEntity instanceof GreffedCommandSystemBlockEntity) {
+                ItemScatterer.spawn(world, pos, (GreffedCommandSystemBlockEntity)blockEntity);
+                world.updateComparators(pos,this);
             }
-            world.playSound(player, pos, SoundEvents.BLOCK_CHEST_LOCKED, SoundCategory.BLOCKS, 1f, 2f);
+            super.onStateReplaced(state, world, pos, newState, moved);
         }
+    }
+
+    @Override
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        if (!world.isClient) {
+            NamedScreenHandlerFactory screenHandlerFactory = ((GreffedCommandSystemBlockEntity) world.getBlockEntity(pos));
+
+            if (screenHandlerFactory != null) {
+                player.openHandledScreen(screenHandlerFactory);
+            }
+
+
+        }
+
         return ActionResult.SUCCESS;
     }
 
-
-    public void applyEffect(PlayerEntity player, StatusEffectInstance instance){
-
-        player.addStatusEffect(instance);
-
-    }
-
-
+    @Nullable
     @Override
-    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        if(this.timer > 0){
-            this.timer --;
-        }
-        super.randomDisplayTick(state, world, pos, random);
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+        return validateTicker(type, ModBlockEntities.GREFFED_COMMAND_SYSTEM_BLOCK_ENTITY_BLOCK_ENTITY,
+                (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
-
 }

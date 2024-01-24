@@ -17,10 +17,12 @@ public class LimeGreffedCommandSystemBlock extends GreffedCommandSystemBlock{
         }
     public final StatusEffectInstance effectInstance = new StatusEffectInstance(StatusEffects.JUMP_BOOST, 3600, 1);
 
+/*
     @Override
     public void applyEffect(PlayerEntity player, StatusEffectInstance instance) {
         super.applyEffect(player, effectInstance);
     }
+*/
 
 
     @Override

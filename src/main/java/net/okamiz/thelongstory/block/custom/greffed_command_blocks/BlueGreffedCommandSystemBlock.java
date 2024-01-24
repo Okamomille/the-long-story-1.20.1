@@ -17,11 +17,11 @@ public class BlueGreffedCommandSystemBlock extends GreffedCommandSystemBlock{
         }
     public final StatusEffectInstance effectInstance = new StatusEffectInstance(StatusEffects.NIGHT_VISION, 3600, 1);
 
-    @Override
+    /*@Override
     public void applyEffect(PlayerEntity player, StatusEffectInstance instance) {
         super.applyEffect(player, effectInstance);
     }
-
+*/
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
