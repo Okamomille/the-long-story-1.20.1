@@ -40,7 +40,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.IMPURE_ZAROSITE_ORE)
 
                 .add(ModBlocks.RED_COAL_BLOCK)
-                .add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
+                .add(ModBlocks.GREFFED_COMMAND_SYSTEM);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.EGRORIC_LOG)

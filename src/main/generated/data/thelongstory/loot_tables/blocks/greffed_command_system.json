@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thelongstory:gray_greffed_command_system"
+          "name": "thelongstory:greffed_command_system"
         }
       ],
       "rolls": 1.0

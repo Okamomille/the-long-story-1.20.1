@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "thelongstory:block/blue_greffed_command_system"
-  }
-}

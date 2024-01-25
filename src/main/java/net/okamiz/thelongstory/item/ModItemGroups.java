@@ -93,12 +93,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOLD_BLOCK);
                         entries.add(ModBlocks.SPIDER_SILK_BLOCK);
                         entries.add(ModBlocks.RED_COAL_BLOCK);
-                        entries.add(ModBlocks.PINK_GREFFED_COMMAND_SYSTEM);
-                        entries.add(ModBlocks.LIME_GREFFED_COMMAND_SYSTEM);
-                        entries.add(ModBlocks.ORANGE_GREFFED_COMMAND_SYSTEM);
-                        entries.add(ModBlocks.CYAN_GREFFED_COMMAND_SYSTEM);
-                        entries.add(ModBlocks.BLUE_GREFFED_COMMAND_SYSTEM);
-                        entries.add(ModBlocks.GRAY_GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
 
                         entries.add(ModBlocks.THESTONE_ORE);
