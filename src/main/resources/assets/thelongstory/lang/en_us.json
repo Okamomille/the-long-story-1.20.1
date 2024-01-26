@@ -207,8 +207,8 @@
 
   "effect.thelongstory.infected": "Infected",
 
-  "entity.thelongstory.trepasseur": "%1$s was eaten by a Trepasseur",
-  "entity.thelongstory.tickeler": "%1$s was devoured by a Tickeler",
-  "entity.thelongstory.crawler": "%1$s was murdered by a Crawler"
+  "entity.thelongstory.trepasseur": "a Trepasseur",
+  "entity.thelongstory.tickeler": "a Tickeler",
+  "entity.thelongstory.crawler": "a Crawler"
 
 }

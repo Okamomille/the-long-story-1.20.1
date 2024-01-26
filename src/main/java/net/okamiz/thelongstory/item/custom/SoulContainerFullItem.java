@@ -24,13 +24,7 @@ public class SoulContainerFullItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-
-
-        if(Screen.hasShiftDown()){
             tooltip.add(Text.translatable("tooltip.thelongstory.soul_container_full"));
-        }else{
-            tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));
-        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
