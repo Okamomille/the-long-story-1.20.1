@@ -10,9 +10,11 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
@@ -91,12 +93,10 @@ public class ModConfiguredFeatures {
 
         register(context, SEPHIN_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.SEPHIN_LOG),
-                new StraightTrunkPlacer(4,2,1),
-
+                new StraightTrunkPlacer(5, 2, 1),
                 BlockStateProvider.of(ModBlocks.SEPHIN_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2),ConstantIntProvider.create(0), 4),
-
-                new TwoLayersFeatureSize(1,0,2))
+                new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2), UniformIntProvider.create(1, 2)),
+                new TwoLayersFeatureSize(2, 0, 2))
                 .dirtProvider(BlockStateProvider.of(Blocks.SNOW_BLOCK)).build());
     }
 
