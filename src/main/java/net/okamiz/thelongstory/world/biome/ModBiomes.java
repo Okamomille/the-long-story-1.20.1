@@ -32,6 +32,7 @@ public class ModBiomes {
         context.register(TEARS_VALLEY, tearsValley(context));
     }
 
+    /*
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
         DefaultBiomeFeatures.addLandCarvers(builder);
         DefaultBiomeFeatures.addAmethystGeodes(builder);
@@ -40,6 +41,8 @@ public class ModBiomes {
         DefaultBiomeFeatures.addSprings(builder);
         DefaultBiomeFeatures.addFrozenTopLayer(builder);
     }
+    */
+
 
     public static Biome snowForest(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
@@ -143,8 +146,9 @@ public class ModBiomes {
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TORN_BUSH_PLACED_KEY);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_OSPET_PLACED_KEY);
         //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
-        DefaultBiomeFeatures.addForestGrass(biomeBuilder);
-        //DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
+        DefaultBiomeFeatures.addPlainsTallGrass(biomeBuilder);
+        DefaultBiomeFeatures.addJungleGrass(biomeBuilder);
+        DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
 
 
         //DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);

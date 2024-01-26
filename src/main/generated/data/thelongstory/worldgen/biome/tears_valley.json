@@ -42,7 +42,9 @@
       "thelongstory:egroric_placed",
       "thelongstory:torn_bush_placed",
       "thelongstory:blue_ospet_placed",
-      "minecraft:patch_grass_forest"
+      "minecraft:patch_tall_grass_2",
+      "minecraft:patch_grass_jungle",
+      "minecraft:patch_large_fern"
     ]
   ],
   "has_precipitation": true,
