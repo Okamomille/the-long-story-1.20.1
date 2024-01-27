@@ -12,10 +12,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
-import net.okamiz.thelongstory.block.custom.OastLeavesBlock;
-import net.okamiz.thelongstory.block.custom.SephinLeavesBlock;
-import net.okamiz.thelongstory.block.custom.CustomSaplingBlock;
-import net.okamiz.thelongstory.block.custom.TornBrushBlock;
+import net.okamiz.thelongstory.block.custom.*;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastSaplingGenerator;
@@ -65,7 +62,7 @@ public class ModBlocks {
     public static final Block EGRORIC_SAPLING = registerBlock("egroric_sapling",
             new SaplingBlock(new EgroricSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block EGRORIC_LEAVES = registerBlock("egroric_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+            new EgroricLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
 
     public static final Block EGRORIC_LOG = registerBlock("egroric_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(3f)));

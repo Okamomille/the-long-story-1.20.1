@@ -19,6 +19,7 @@ import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.item.ModFuelRegistry;
 import net.okamiz.thelongstory.item.ModItemGroups;
 import net.okamiz.thelongstory.item.ModItems;
+import net.okamiz.thelongstory.particles.ModParticles;
 import net.okamiz.thelongstory.screen.ModScreenHandlers;
 import net.okamiz.thelongstory.util.ModCustomTrades;
 import net.okamiz.thelongstory.util.ModLootTableModifiers;
@@ -52,6 +53,7 @@ public class TheLongStory implements ModInitializer {
 		ModFoliagePlacerTypes.register();
 
 		ModEntitiesAttributes.registerEntitiesAttributes();
+		ModParticles.registerParticles();
 
 		ModStrippableBlocks.registerStrippableBlocks();
 		ModFlammableBlocks.registerModFlammableBlocks();
