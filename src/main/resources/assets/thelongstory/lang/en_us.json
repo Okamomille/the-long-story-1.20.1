@@ -96,14 +96,8 @@
   "block.thelongstory.spider_silk_block" : "Spider Silk Block",
   "block.thelongstory.deep_ice" : "Deep Ice",
 
-
-  "block.thelongstory.pink_greffed_command_system" : "Regeneration Greffed Command System",
-  "block.thelongstory.lime_greffed_command_system" : "Leaping Greffed Command System",
-  "block.thelongstory.orange_greffed_command_system" : "Fire Greffed Command System",
-  "block.thelongstory.cyan_greffed_command_system" : "Swimming Greffed Command System",
-  "block.thelongstory.gray_greffed_command_system" : "Resistance Greffed Command System",
-  "block.thelongstory.blue_greffed_command_system" : "Vision Greffed Command System",
   "block.thelongstory.greffed_command_system" : "Greffed Command System",
+  "block.thelongstory.simulation_teleporter" : "Simulation Teleporter",
 
 
   "block.thelongstory.red_coal_block" : "Block of Red Coal",

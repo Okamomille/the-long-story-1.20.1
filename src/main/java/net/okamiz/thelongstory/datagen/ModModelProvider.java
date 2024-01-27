@@ -30,7 +30,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPIDER_SILK_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOLD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_COAL_BLOCK);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GREFFED_COMMAND_SYSTEM);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIMULATION_TELEPORTER);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE);
