@@ -62,7 +62,7 @@ public class ModConfiguredFeatures {
         register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(128,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.TORN_BUSH)))));
 
-        register(context, BLUE_OSPET_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(100,
+        register(context, BLUE_OSPET_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(75,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_OSPET)))));
 
 
