@@ -24,6 +24,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.WOODEN_PLATE);
                         entries.add(ModItems.IRON_PLATE);
+                        entries.add(ModItems.DIAMOND_PLATE);
+                        entries.add(ModItems.NETHERITE_PLATE);
 
                         entries.add(ModItems.COMMAND_SYSTEM);
 

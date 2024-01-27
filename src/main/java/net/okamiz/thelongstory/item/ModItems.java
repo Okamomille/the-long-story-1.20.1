@@ -38,6 +38,10 @@ public class ModItems {
 
     public static final Item WOODEN_PLATE = registerItem("wooden_plate", new Item(new FabricItemSettings()));
     public static final Item IRON_PLATE = registerItem("iron_plate", new Item(new FabricItemSettings()));
+    public static final Item DIAMOND_PLATE = registerItem("diamond_plate", new Item(new FabricItemSettings()));
+    public static final Item NETHERITE_PLATE = registerItem("netherite_plate", new Item(new FabricItemSettings()));
+
+
     public static final Item COMMAND_SYSTEM = registerItem("command_system", new Item(new FabricItemSettings()));
 
 
