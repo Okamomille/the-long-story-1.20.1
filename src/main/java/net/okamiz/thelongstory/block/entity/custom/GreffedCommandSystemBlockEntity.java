@@ -88,7 +88,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
             }else if (this.timer > 0){
                 //WRONG
                 if(!world.isClient()){
-                    player.sendMessage(Text.literal("§o§7The Command System is cooling, you have to wait. " + this.timer));
+                    player.sendMessage(Text.literal("§o§7The Command System is cooling, you have to wait. " + this.timer), true);
                     world.playSound(null, pos, SoundEvents.BLOCK_CHEST_LOCKED, SoundCategory.BLOCKS, 1f, 2f);
                 }
 
@@ -101,26 +101,27 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
                 if (mainHand == ModItems.SOUL_CONTAINER_REGENERATION){
                     activate(1, player);
                     player.getStackInHand(hand).decrement(1);
-                }
-                if (mainHand == ModItems.SOUL_CONTAINER_FIRE_RESISTANCE){
+                } else if (mainHand == ModItems.SOUL_CONTAINER_FIRE_RESISTANCE) {
                     activate(2, player);
                     player.getStackInHand(hand).decrement(1);
                 }
-                if (mainHand == ModItems.SOUL_CONTAINER_JUMP_BOOST){
+                else if (mainHand == ModItems.SOUL_CONTAINER_JUMP_BOOST){
                     activate(3, player);
                     player.getStackInHand(hand).decrement(1);
                 }
-                if (mainHand == ModItems.SOUL_CONTAINER_RESISTANCE){
+                else if (mainHand == ModItems.SOUL_CONTAINER_RESISTANCE){
                     activate(4, player);
                     player.getStackInHand(hand).decrement(1);
                 }
-                if (mainHand == ModItems.SOUL_CONTAINER_DOLPHIN_GRACE){
+                else if (mainHand == ModItems.SOUL_CONTAINER_DOLPHIN_GRACE){
                     activate(5, player);
                     player.getStackInHand(hand).decrement(1);
                 }
-                if (mainHand == ModItems.SOUL_CONTAINER_NIGHT_VISION){
+                else if (mainHand == ModItems.SOUL_CONTAINER_NIGHT_VISION){
                     activate(6, player);
                     player.getStackInHand(hand).decrement(1);
+                }else{
+                    player.sendMessage(Text.literal("§o§7The Command System need to be activated with an Essence Container. "),true);
                 }
 
 
@@ -134,7 +135,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
 
         effectID = id;
         world.playSound(null, pos, SoundEvents.BLOCK_BEACON_ACTIVATE, SoundCategory.BLOCKS, 1f, 2f);
-        player.sendMessage(Text.literal("§o§7Command System Activated. "));
+        player.sendMessage(Text.literal("§o§7Command System Activated. "),true);
         isActive = true;
 
     }

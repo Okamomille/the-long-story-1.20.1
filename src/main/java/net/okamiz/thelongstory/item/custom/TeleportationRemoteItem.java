@@ -18,9 +18,9 @@ import net.minecraft.world.World;
 
 import java.util.Objects;
 
-public class RadarItem extends Item {
+public class TeleportationRemoteItem extends Item {
 
-    public RadarItem(FabricItemSettings fabricItemSettings) {
+    public TeleportationRemoteItem(FabricItemSettings fabricItemSettings) {
         super(fabricItemSettings);
     }
 
