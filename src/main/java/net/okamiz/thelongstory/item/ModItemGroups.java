@@ -28,9 +28,15 @@ public class ModItemGroups {
                         entries.add(ModItems.EMERALD_PLATE);
                         entries.add(ModItems.NETHERITE_PLATE);
 
+                        entries.add(ModItems.DIMENSION_PATTERN);
                         entries.add(ModItems.COMMAND_SYSTEM);
                         entries.add(ModItems.POWER_MODULE);
                         entries.add(ModItems.TELEPORTATION_MODULE);
+
+                        entries.add(ModItems.POTION_RECEPTACLE);
+                        entries.add(ModItems.POTION_CORE);
+
+                        entries.add(ModItems.TELEPORTATION_REMOTE);
 
                         entries.add(ModItems.POWER_STAR);
                         entries.add(ModItems.SOUL_CONTAINER);
@@ -41,9 +47,6 @@ public class ModItemGroups {
                         entries.add(ModItems.SOUL_CONTAINER_NIGHT_VISION);
                         entries.add(ModItems.SOUL_CONTAINER_RESISTANCE);
 
-                        entries.add(ModItems.POTION_RECEPTACLE);
-                        entries.add(ModItems.POTION_CORE);
-
                         entries.add(ModItems.THESTONE_DUST);
                         entries.add(ModItems.THESTONE_INGOT);
                         entries.add(ModItems.THESTONE_NUGGET);
@@ -52,7 +55,6 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPURE_ZAROSITE_INGOT);
 
                         entries.add(ModItems.GREEN_SHARD);
-
 
                         entries.add(ModItems.THESTONE_SWORD);
                         entries.add(ModItems.THESTONE_PICKAXE);
@@ -88,9 +90,6 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPURE_ZAROSITE_LEGGINGS);
                         entries.add(ModItems.IMPURE_ZAROSITE_BOOTS);
 
-
-
-                        entries.add(ModItems.TELEPORTATION_REMOTE);
                         entries.add(ModItems.RED_COAL);
                         entries.add(ModBlocks.DEEP_ICE);
 

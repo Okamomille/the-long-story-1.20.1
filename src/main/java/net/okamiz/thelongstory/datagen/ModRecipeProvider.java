@@ -531,11 +531,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("XOX")
                 .pattern("BAB")
                 .input('O', ModItems.COMMAND_SYSTEM)
-                .input('X', Items.IRON_BLOCK)
+                .input('X', ModItems.IRON_PLATE)
                 .input('A', ModItems.POTION_CORE)
                 .input('B', ModItems.EMERALD_PLATE)
                 .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GREFFED_COMMAND_SYSTEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.SIMULATION_TELEPORTER, 1)
+                .pattern("BCB")
+                .pattern("XOX")
+                .pattern("BAB")
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .input('X', ModItems.POWER_MODULE)
+                .input('A', ModItems.TELEPORTATION_MODULE)
+                .input('B', ModItems.NETHERITE_PLATE)
+                .input('C', ModItems.DIMENSION_PATTERN)
+                .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SIMULATION_TELEPORTER)));
 
         // MATERIALS
 
@@ -571,6 +583,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('A', ModItems.TELEPORTATION_MODULE)
                 .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.NETHERITE_PLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TELEPORTATION_REMOTE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIMENSION_PATTERN, 1)
+                .pattern(" C ")
+                .pattern("BXA")
+                .input('X', Items.PAPER)
+                .input('A', Items.GRASS_BLOCK)
+                .input('B', Items.END_STONE)
+                .input('C', Items.NETHERRACK)
+                .criterion(hasItem(Items.GRASS_BLOCK),conditionsFromItem(ModItems.DIMENSION_PATTERN))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DIMENSION_PATTERN)));
 
 
         // ----------------

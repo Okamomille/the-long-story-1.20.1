@@ -3,25 +3,28 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "thelongstory:potion_core"
+      "item": "thelongstory:teleportation_module"
     },
     "B": {
-      "item": "thelongstory:emerald_plate"
+      "item": "thelongstory:netherite_plate"
+    },
+    "C": {
+      "item": "thelongstory:dimension_pattern"
     },
     "O": {
       "item": "thelongstory:command_system"
     },
     "X": {
-      "item": "thelongstory:iron_plate"
+      "item": "thelongstory:power_module"
     }
   },
   "pattern": [
-    "BXB",
+    "BCB",
     "XOX",
     "BAB"
   ],
   "result": {
-    "item": "thelongstory:greffed_command_system"
+    "item": "thelongstory:simulation_teleporter"
   },
   "show_notification": true
 }

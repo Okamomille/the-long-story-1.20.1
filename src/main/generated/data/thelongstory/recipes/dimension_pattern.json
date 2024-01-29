@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:grass_block"
+    },
+    "B": {
+      "item": "minecraft:end_stone"
+    },
+    "C": {
+      "item": "minecraft:netherrack"
+    },
+    "X": {
+      "item": "minecraft:paper"
+    }
+  },
+  "pattern": [
+    " C ",
+    "BXA"
+  ],
+  "result": {
+    "item": "thelongstory:dimension_pattern"
+  },
+  "show_notification": true
+}

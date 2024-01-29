@@ -49,6 +49,7 @@ public class ModItems {
     public static final Item COMMAND_SYSTEM = registerItem("command_system", new Item(new FabricItemSettings()));
     public static final Item TELEPORTATION_MODULE = registerItem("teleportation_module", new Item(new FabricItemSettings()));
     public static final Item POWER_MODULE = registerItem("power_module", new Item(new FabricItemSettings()));
+    public static final Item DIMENSION_PATTERN = registerItem("dimension_pattern", new Item(new FabricItemSettings()));
 
 
 
