@@ -1,9 +1,11 @@
-// 1.20.2	2024-01-29T19:42:58.1959997	The Long Story/World Gen
+// 1.20.2	2024-01-29T19:58:06.774301	The Long Story/World Gen
 30efc73ec1a94ea10f6a98bc08b6d56d5195266c data\thelongstory\dimension_type\simulation_type.json
-abd20b1c0deda441b2467fb36d070a5adef2f29c data\thelongstory\worldgen\biome\golden_lands.json
+ce0e7ad8435685a03b4e7eb829de1350cff34901 data\thelongstory\worldgen\biome\golden_lands.json
+80fcd6b26be4baa7c12d7dfeedfbfd49b2964ad5 data\thelongstory\worldgen\configured_feature\pink_phygelus_key.json
 103c3b79caf6fad9f7f6ec3b1d3d3c2096f3f975 data\thelongstory\worldgen\configured_feature\sephin.json
 08020ab9af37114e5071b7e27181f5b921188dac data\thelongstory\worldgen\placed_feature\torn_bush_placed.json
 76fe42b01d88e162de32ba0ca694602122429ef2 data\thelongstory\worldgen\configured_feature\egroric.json
+1c03735c4fc8a26054ec65335cb2d175e1cb319a data\thelongstory\worldgen\placed_feature\pink_phygelus_placed.json
 9ec803998ebb60c55e57c59559fced722bd2ae27 data\thelongstory\worldgen\configured_feature\blue_ospet_key.json
 bc58c78a9e8bb6338c362ece64421f6af02316be data\thelongstory\worldgen\placed_feature\oast_placed.json
 6f83f3e115a230d68bac0216c08f16418233e117 data\thelongstory\worldgen\biome\snow_forest.json

@@ -29,6 +29,7 @@ public class ModPlacedFeatures {
 
 
     public static final RegistryKey<PlacedFeature> TORN_BUSH_PLACED_KEY = registerKey("torn_bush_placed");
+    public static final RegistryKey<PlacedFeature> PINK_PHYGELUS_PLACED_KEY = registerKey("pink_phygelus_placed");
     public static final RegistryKey<PlacedFeature> BLUE_OSPET_PLACED_KEY = registerKey("blue_ospet_placed");
 
 
@@ -46,6 +47,9 @@ public class ModPlacedFeatures {
 
         register(context, TORN_BUSH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TORN_BUSH_KEY),
                 ModPlantsPlacement.modifiersWithRarity(6));
+
+        register(context, PINK_PHYGELUS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PINK_PHYGELUS_KEY),
+                ModPlantsPlacement.modifiersWithCount(32));
 
         register(context, BLUE_OSPET_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_OSPET_KEY),
                 ModPlantsPlacement.modifiersWithRarity(9));

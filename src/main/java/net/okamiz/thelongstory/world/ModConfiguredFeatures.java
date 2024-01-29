@@ -37,6 +37,7 @@ public class ModConfiguredFeatures {
 
 
     public static final RegistryKey<ConfiguredFeature<?,?>> TORN_BUSH_KEY = registryKey("torn_bush_key");
+    public static final RegistryKey<ConfiguredFeature<?,?>> PINK_PHYGELUS_KEY = registryKey("pink_phygelus_key");
     public static final RegistryKey<ConfiguredFeature<?,?>> BLUE_OSPET_KEY = registryKey("blue_ospet_key");
 
 
@@ -61,6 +62,9 @@ public class ModConfiguredFeatures {
 
         register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(128,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.TORN_BUSH)))));
+
+        register(context, PINK_PHYGELUS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(20,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PINK_PHYGELUS)))));
 
         register(context, BLUE_OSPET_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(75,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_OSPET)))));
