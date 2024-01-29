@@ -23,6 +23,8 @@
 
 
   "item.thelongstory.command_system" : "Command System",
+  "item.thelongstory.power_module" : "Power Module",
+  "item.thelongstory.teleportation_module" : "Teleportation Module",
 
   "item.thelongstory.potion_receptacle" : "Potion Receptacle",
   "item.thelongstory.potion_core" : "Potion Core",
@@ -38,6 +40,7 @@
   "item.thelongstory.wooden_plate" : "Wooden Plate",
   "item.thelongstory.iron_plate" : "Iron Plate",
   "item.thelongstory.diamond_plate" : "Diamond Plate",
+  "item.thelongstory.emerald_plate" : "Emerald Plate",
   "item.thelongstory.netherite_plate" : "Netherite Plate",
 
 

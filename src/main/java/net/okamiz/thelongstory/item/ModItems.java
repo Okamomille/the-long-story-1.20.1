@@ -36,15 +36,24 @@ public class ModItems {
     public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
 
 
+
+    // SYSTEMS MATERIALS
+
     public static final Item WOODEN_PLATE = registerItem("wooden_plate", new Item(new FabricItemSettings()));
     public static final Item IRON_PLATE = registerItem("iron_plate", new Item(new FabricItemSettings()));
     public static final Item DIAMOND_PLATE = registerItem("diamond_plate", new Item(new FabricItemSettings()));
+    public static final Item EMERALD_PLATE = registerItem("emerald_plate", new Item(new FabricItemSettings()));
     public static final Item NETHERITE_PLATE = registerItem("netherite_plate", new Item(new FabricItemSettings()));
 
 
     public static final Item COMMAND_SYSTEM = registerItem("command_system", new Item(new FabricItemSettings()));
+    public static final Item TELEPORTATION_MODULE = registerItem("teleportation_module", new Item(new FabricItemSettings()));
+    public static final Item POWER_MODULE = registerItem("power_module", new Item(new FabricItemSettings()));
 
 
+
+
+    // EFFECT ITEMS
     public static final Item POTION_RECEPTACLE = registerItem("potion_receptacle", new Item(new FabricItemSettings()));
     public static final Item POTION_CORE = registerItem("potion_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item SOUL_CONTAINER_REGENERATION = registerItem("soul_container_regeneration", new SoulContainerFullItem(new FabricItemSettings()

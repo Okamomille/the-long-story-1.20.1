@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:emerald_plate"
+    },
+    "X": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "OX"
+  ],
+  "result": {
+    "item": "thelongstory:netherite_plate"
+  },
+  "show_notification": true
+}

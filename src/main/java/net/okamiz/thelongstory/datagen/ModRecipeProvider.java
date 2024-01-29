@@ -434,6 +434,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.WOODEN_PLATE),conditionsFromItem(ModItems.WOODEN_PLATE))
                 .offerTo(exporter, new Identifier("iron_plate_craft"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIAMOND_PLATE, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('X', Items.DIAMOND)
+                .input('O', ModItems.IRON_PLATE)
+                .criterion(hasItem(ModItems.IRON_PLATE),conditionsFromItem(ModItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier("diamond_plate_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.EMERALD_PLATE, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('X', Items.EMERALD)
+                .input('O', ModItems.DIAMOND_PLATE)
+                .criterion(hasItem(ModItems.DIAMOND_PLATE),conditionsFromItem(ModItems.DIAMOND_PLATE))
+                .offerTo(exporter, new Identifier("emerald_plate_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.NETHERITE_PLATE, 1)
+                .pattern("OX")
+                .input('X', Items.NETHERITE_INGOT)
+                .input('O', ModItems.EMERALD_PLATE)
+                .criterion(hasItem(ModItems.EMERALD_PLATE),conditionsFromItem(ModItems.EMERALD_PLATE))
+                .offerTo(exporter, new Identifier("netherite_plate_craft"));
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.POWER_STAR, 1)
                 .pattern(" X ")
                 .pattern("XOX")
@@ -500,18 +526,51 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // -------- GREFFED SYSTEMS
 
-        /*
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.GRAY_GREFFED_COMMAND_SYSTEM, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.GREFFED_COMMAND_SYSTEM, 1)
                 .pattern("BXB")
                 .pattern("XOX")
                 .pattern("BAB")
                 .input('O', ModItems.COMMAND_SYSTEM)
-                .input('X', Items.WHITE_CONCRETE)
+                .input('X', Items.IRON_BLOCK)
                 .input('A', ModItems.POTION_CORE)
-                .input('B', ModItems.SOUL_CONTAINER_RESISTANCE)
+                .input('B', ModItems.EMERALD_PLATE)
                 .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GRAY_GREFFED_COMMAND_SYSTEM)));
-*/
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GREFFED_COMMAND_SYSTEM)));
+
+        // MATERIALS
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.POWER_MODULE, 1)
+                .pattern("XAX")
+                .pattern("XBX")
+                .pattern("XAX")
+                .input('X', ModItems.IRON_PLATE)
+                .input('A', Items.REDSTONE_TORCH)
+                .input('B', Items.REPEATER)
+                .criterion(hasItem(Items.REDSTONE),conditionsFromItem(ModItems.IRON_PLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.POWER_MODULE)));
+
+        // MATERIALS
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.TELEPORTATION_MODULE, 1)
+                .pattern("XAX")
+                .pattern("CBC")
+                .pattern("XAX")
+                .input('X', ModItems.NETHERITE_PLATE)
+                .input('C', ModItems.POWER_MODULE)
+                .input('B', ModItems.THESTONE_INGOT)
+                .input('A', Items.ENDER_EYE)
+                .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.NETHERITE_PLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TELEPORTATION_MODULE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.RADAR, 1)
+                .pattern("XAX")
+                .pattern("XBX")
+                .pattern("XAX")
+                .input('X', ModItems.IRON_PLATE)
+                .input('B', ModItems.THESTONE_INGOT)
+                .input('A', ModItems.TELEPORTATION_MODULE)
+                .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.NETHERITE_PLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RADAR)));
 
 
         // ----------------

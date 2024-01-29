@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:diamond_plate"
+    },
+    "X": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XOX",
+    " X "
+  ],
+  "result": {
+    "item": "thelongstory:emerald_plate"
+  },
+  "show_notification": true
+}

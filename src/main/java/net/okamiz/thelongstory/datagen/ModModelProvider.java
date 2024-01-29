@@ -142,6 +142,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.POWER_STAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.COMMAND_SYSTEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POWER_MODULE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TELEPORTATION_MODULE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.POTION_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.POTION_RECEPTACLE, Models.GENERATED);
@@ -149,6 +151,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.WOODEN_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERALD_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHERITE_PLATE, Models.GENERATED);
 
 

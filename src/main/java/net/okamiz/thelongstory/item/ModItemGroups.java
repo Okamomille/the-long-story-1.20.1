@@ -25,9 +25,12 @@ public class ModItemGroups {
                         entries.add(ModItems.WOODEN_PLATE);
                         entries.add(ModItems.IRON_PLATE);
                         entries.add(ModItems.DIAMOND_PLATE);
+                        entries.add(ModItems.EMERALD_PLATE);
                         entries.add(ModItems.NETHERITE_PLATE);
 
                         entries.add(ModItems.COMMAND_SYSTEM);
+                        entries.add(ModItems.POWER_MODULE);
+                        entries.add(ModItems.TELEPORTATION_MODULE);
 
                         entries.add(ModItems.POWER_STAR);
                         entries.add(ModItems.SOUL_CONTAINER);
