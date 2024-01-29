@@ -199,29 +199,33 @@ public class ModBlocks {
 
     // FLOWERS ----
 
+    public static final Block PINK_PHYGELUS = registerBlock("pink_phygelus",
+            new FlowerBlock(StatusEffects.REGENERATION, 30,
+                    FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+
     public static final Block RED_OSPET = registerBlock("red_ospet",
-            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 10,
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 40,
                     FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
 
     public static final Block POTTED_RED_OSPET = Registry.register(Registries.BLOCK, new Identifier(TheLongStory.MOD_ID, "potted_red_ospet"),
             new FlowerPotBlock(RED_OSPET, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block BLUE_OSPET = registerBlock("blue_ospet",
-            new FlowerBlock(StatusEffects.NIGHT_VISION, 10,
+            new FlowerBlock(StatusEffects.NIGHT_VISION, 30,
                     FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
 
     public static final Block POTTED_BLUE_OSPET = Registry.register(Registries.BLOCK, new Identifier(TheLongStory.MOD_ID, "potted_blue_ospet"),
             new FlowerPotBlock(BLUE_OSPET, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block GREEN_OSPET = registerBlock("green_ospet",
-            new FlowerBlock(StatusEffects.JUMP_BOOST, 10,
+            new FlowerBlock(StatusEffects.JUMP_BOOST, 30,
                     FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
 
     public static final Block POTTED_GREEN_OSPET = Registry.register(Registries.BLOCK, new Identifier(TheLongStory.MOD_ID, "potted_green_ospet"),
             new FlowerPotBlock(GREEN_OSPET, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block YELLOW_OSPET = registerBlock("yellow_ospet",
-            new FlowerBlock(StatusEffects.GLOWING, 10,
+            new FlowerBlock(StatusEffects.GLOWING, 30,
                     FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
 
     public static final Block POTTED_YELLOW_OSPET = Registry.register(Registries.BLOCK, new Identifier(TheLongStory.MOD_ID, "potted_yellow_ospet"),

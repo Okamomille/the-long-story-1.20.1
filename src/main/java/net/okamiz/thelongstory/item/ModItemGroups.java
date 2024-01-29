@@ -160,6 +160,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SEPHIN_FENCE_GATE);
 
                         entries.add(ModBlocks.TORN_BUSH);
+                        entries.add(ModBlocks.PINK_PHYGELUS);
                         entries.add(ModBlocks.RED_OSPET);
                         entries.add(ModBlocks.BLUE_OSPET);
                         entries.add(ModBlocks.GREEN_OSPET);
