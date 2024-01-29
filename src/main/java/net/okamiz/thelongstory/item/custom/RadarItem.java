@@ -1,77 +1,69 @@
 package net.okamiz.thelongstory.item.custom;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.item.TooltipContext;
+
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
+import net.minecraft.network.packet.s2c.play.PositionFlag;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import net.okamiz.thelongstory.util.ModTags;
-import org.jetbrains.annotations.Nullable;
 
-import javax.swing.*;
-import java.util.List;
+import java.util.Objects;
 
 public class RadarItem extends Item {
-    public RadarItem(Settings settings){
-        super(settings);
+
+    public RadarItem(FabricItemSettings fabricItemSettings) {
+        super(fabricItemSettings);
+    }
+
+    private static void giveEntityEffect(PlayerEntity pe) {
+        pe.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 60, 1, false, false));
+        pe.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 60, 1, false, false));
     }
 
     @Override
-    public ActionResult useOnBlock(ItemUsageContext context) {
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
 
-        if(!context.getWorld().isClient()){
-            BlockPos positionClicked = context.getBlockPos();
-            PlayerEntity player = context.getPlayer();
-            boolean foundBlock = false;
-
-            for(int i = 0; i <= positionClicked.getY() + 64; i++){
-                BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
-                
-                if(isVualuableBlock(state)){
-                    
-                    outputValuableCoordinates(positionClicked.down(i), player, state.getBlock());
-                    foundBlock = true;
-
-                    break;
-                }
+        if (world instanceof ServerWorld && player.canUsePortals()) {
+            RegistryKey<World> registryKey = World.OVERWORLD;
+            ServerWorld serverWorld = ((ServerWorld)world).getServer().getWorld(registryKey);
+            if (serverWorld == null) {
+                player.sendMessage(Text.translatable("message.thelongstory.overworldteleporter.fail"), true);
             }
 
-            if (!foundBlock){
-                player.sendMessage(Text.literal("No Thestone Ore Found"));
+            if(player instanceof ServerPlayerEntity){
+
+                player.sendMessage(Text.translatable("message.thelongstory.overworldteleporter.success"), true);
+                player.getItemCooldownManager().set(this, 1200);
+                player.swingHand(hand);
+
+
+
+                double x = Objects.requireNonNull(((ServerPlayerEntity) player).getSpawnPointPosition()).getX();
+                double y = ((ServerPlayerEntity) player).getSpawnPointPosition().getY();
+                double z = ((ServerPlayerEntity) player).getSpawnPointPosition().getZ();
+
+                player.teleport(serverWorld, x, y, z, PositionFlag.getFlags(1), player.getYaw(), player.getPitch());
+                giveEntityEffect(player);
+
+            }else{
+                player.sendMessage(Text.translatable("message.thelongstory.overworldteleporter.fail"), true);
             }
+
+
+
         }
 
-        context.getStack().damage(1,context.getPlayer(),
-                playerEntity -> playerEntity.sendToolBreakStatus(playerEntity.getActiveHand()));
-
-        return ActionResult.SUCCESS;
-    }
-
-    private void outputValuableCoordinates(BlockPos down, PlayerEntity player, Block block) {
-        player.sendMessage(Text.literal("Found " + block.asItem().getName().getString() + " below !"), false);
-    }
-
-    private boolean isVualuableBlock(BlockState state) {
-        return state.isIn(ModTags.Blocks.RADAR_DETECTABLE_BLOCKS);
-    }
 
 
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-
-        if(Screen.hasShiftDown()){
-            tooltip.add(Text.translatable("tooltip.thelongstory.radar"));
-        }else{
-            tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));
-        }
-        super.appendTooltip(stack, world, tooltip, context);
+        return super.use(world, player, hand);
     }
 }

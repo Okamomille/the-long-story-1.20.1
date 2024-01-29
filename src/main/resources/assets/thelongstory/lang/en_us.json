@@ -198,6 +198,15 @@
 
   "display.thelongstory.greffed_command_system" : "",
 
+
+  "message.thelongstory.simulationteleporter.success" : "§6Teleporting to The Simulation...",
+  "message.thelongstory.simulationteleporter.fail" : "§cTeleportation Failed.",
+
+  "message.thelongstory.overworldteleporter.success" : "§6Teleporting to The Overworld...",
+  "message.thelongstory.overworldteleporter.fail" : "§cTeleportation Failed.",
+
+
+
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",
 

@@ -235,7 +235,7 @@ public class ModBlocks {
             new GreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
 
     public static final Block SIMULATION_TELEPORTER = registerBlock("simulation_teleporter",
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+            new SimulationTeleporterBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
 
 
 
