@@ -131,7 +131,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SPIDER_SILK, Models.GENERATED);
         itemModelGenerator.register(ModItems.INFESTED_FLESH, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.RADAR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TELEPORTATION_REMOTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_REGENERATION, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_FIRE_RESISTANCE, Models.GENERATED);

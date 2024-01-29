@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ender_eye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:netherite_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:teleportation_remote"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ender_eye"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:teleportation_remote"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -562,7 +562,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.NETHERITE_PLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TELEPORTATION_MODULE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.RADAR, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.TELEPORTATION_REMOTE, 1)
                 .pattern("XAX")
                 .pattern("XBX")
                 .pattern("XAX")
@@ -570,7 +570,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', ModItems.THESTONE_INGOT)
                 .input('A', ModItems.TELEPORTATION_MODULE)
                 .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.NETHERITE_PLATE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.RADAR)));
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TELEPORTATION_REMOTE)));
 
 
         // ----------------

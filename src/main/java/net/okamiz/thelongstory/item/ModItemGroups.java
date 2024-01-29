@@ -90,7 +90,7 @@ public class ModItemGroups {
 
 
 
-                        entries.add(ModItems.RADAR);
+                        entries.add(ModItems.TELEPORTATION_REMOTE);
                         entries.add(ModItems.RED_COAL);
                         entries.add(ModBlocks.DEEP_ICE);
 

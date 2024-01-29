@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_redstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:iron_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:power_module"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_redstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:power_module"
+    ]
+  },
+  "sends_telemetry_event": false
+}

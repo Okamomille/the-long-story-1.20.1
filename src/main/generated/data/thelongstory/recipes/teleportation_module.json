@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "thelongstory:thestone_ingot"
+    },
+    "C": {
+      "item": "thelongstory:power_module"
+    },
+    "X": {
+      "item": "thelongstory:netherite_plate"
+    }
+  },
+  "pattern": [
+    "XAX",
+    "CBC",
+    "XAX"
+  ],
+  "result": {
+    "item": "thelongstory:teleportation_module"
+  },
+  "show_notification": true
+}

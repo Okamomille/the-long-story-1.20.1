@@ -76,7 +76,7 @@ public class ModItems {
 
     //ADVANCED ITEMS -----------------
 
-    public static final Item RADAR = registerItem("radar",
+    public static final Item TELEPORTATION_REMOTE = registerItem("teleportation_remote",
             new RadarItem(new FabricItemSettings().maxCount(1).maxDamage(50)));
 
     public static final Item POWER_STAR = registerItem("power_star",

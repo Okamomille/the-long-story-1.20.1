@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "thelongstory:teleportation_module"
+    },
+    "B": {
+      "item": "thelongstory:thestone_ingot"
+    },
+    "X": {
+      "item": "thelongstory:iron_plate"
+    }
+  },
+  "pattern": [
+    "XAX",
+    "XBX",
+    "XAX"
+  ],
+  "result": {
+    "item": "thelongstory:teleportation_remote"
+  },
+  "show_notification": true
+}
