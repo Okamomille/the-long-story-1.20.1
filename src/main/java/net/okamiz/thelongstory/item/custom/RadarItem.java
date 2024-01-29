@@ -42,7 +42,6 @@ public class RadarItem extends Item {
             if(player instanceof ServerPlayerEntity){
 
                 player.sendMessage(Text.translatable("message.thelongstory.overworldteleporter.success"), true);
-                player.getItemCooldownManager().set(this, 1200);
                 player.swingHand(hand);
 
 
@@ -53,6 +52,7 @@ public class RadarItem extends Item {
 
                 player.teleport(serverWorld, x, y, z, PositionFlag.getFlags(1), player.getYaw(), player.getPitch());
                 giveEntityEffect(player);
+                player.getItemCooldownManager().set(this, 1200);
 
             }else{
                 player.sendMessage(Text.translatable("message.thelongstory.overworldteleporter.fail"), true);
