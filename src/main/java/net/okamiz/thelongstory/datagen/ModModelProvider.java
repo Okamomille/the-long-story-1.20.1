@@ -92,6 +92,23 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.SEPHIN_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.SEPHIN_TRAPDOOR);
 
+        //KIWI MODELS ------------------------------------
+        blockStateModelGenerator.registerLog(ModBlocks.KIWI_LOG).log(ModBlocks.KIWI_LOG).wood(ModBlocks.KIWI_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_KIWI_LOG).log(ModBlocks.STRIPPED_KIWI_LOG).wood(ModBlocks.STRIPPED_KIWI_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KIWI_LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.KIWI_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool kiwiPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.KIWI_PLANKS);
+        kiwiPool.stairs(ModBlocks.KIWI_STAIRS);
+        kiwiPool.slab(ModBlocks.KIWI_SLAB);
+        kiwiPool.button(ModBlocks.KIWI_BUTTON);
+        kiwiPool.pressurePlate(ModBlocks.KIWI_PRESSURE_PLATE);
+        kiwiPool.fence(ModBlocks.KIWI_FENCE);
+        kiwiPool.fenceGate(ModBlocks.KIWI_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.KIWI_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.KIWI_TRAPDOOR);
+
 //--------------------------------------------------------------------------------------
 
 

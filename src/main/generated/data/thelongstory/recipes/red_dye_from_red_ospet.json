@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thelongstory:red_ospet"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_dye"
+  }
+}

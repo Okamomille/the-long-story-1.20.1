@@ -30,5 +30,12 @@ public class ModFlammableBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SEPHIN_WOOD,5,5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SEPHIN_WOOD,5,5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SEPHIN_LOG,5,5);
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.KIWI_PLANKS,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.KIWI_LEAVES,30,60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.KIWI_LOG,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.KIWI_WOOD,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_KIWI_WOOD,5,5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_KIWI_LOG,5,5);
     }
 }

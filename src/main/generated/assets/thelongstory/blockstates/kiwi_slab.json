@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelongstory:block/kiwi_slab"
+    },
+    "type=double": {
+      "model": "thelongstory:block/kiwi_planks"
+    },
+    "type=top": {
+      "model": "thelongstory:block/kiwi_slab_top"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thelongstory:block/stripped_kiwi_log",
+    "side": "thelongstory:block/stripped_kiwi_log"
+  }
+}

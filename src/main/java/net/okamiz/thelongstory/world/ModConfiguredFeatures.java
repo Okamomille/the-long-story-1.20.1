@@ -12,8 +12,11 @@ import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.LargeOakFoliagePlacer;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
@@ -23,6 +26,7 @@ import net.okamiz.thelongstory.world.tree.custom.Oast.OastFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastTrunkPlacer;
 
 import java.util.List;
+import java.util.OptionalInt;
 
 public class ModConfiguredFeatures {
 
@@ -33,6 +37,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> EGRORIC_KEY = registryKey("egroric");
     public static final RegistryKey<ConfiguredFeature<?,?>> OAST_KEY = registryKey("oast");
     public static final RegistryKey<ConfiguredFeature<?,?>> SEPHIN_KEY = registryKey("sephin");
+    public static final RegistryKey<ConfiguredFeature<?,?>> KIWI_KEY = registryKey("kiwi");
 
 
 
@@ -97,6 +102,14 @@ public class ModConfiguredFeatures {
                 new SpruceFoliagePlacer(UniformIntProvider.create(2, 3), UniformIntProvider.create(0, 2), UniformIntProvider.create(1, 2)),
                 new TwoLayersFeatureSize(2, 0, 2))
                 .dirtProvider(BlockStateProvider.of(Blocks.SNOW_BLOCK)).build());
+
+        register(context, KIWI_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.KIWI_LOG),
+                new StraightTrunkPlacer(5, 2, 0),
+                BlockStateProvider.of(ModBlocks.KIWI_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).build());
+
     }
 
 

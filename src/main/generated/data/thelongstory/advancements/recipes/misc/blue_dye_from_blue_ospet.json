@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:blue_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_blue_ospet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:blue_ospet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:blue_dye_from_blue_ospet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blue_ospet",
+      "has_blue_dye"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:blue_dye_from_blue_ospet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

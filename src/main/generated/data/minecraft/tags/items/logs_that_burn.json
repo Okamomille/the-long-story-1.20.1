@@ -12,6 +12,10 @@
     "thelongstory:sephin_log",
     "thelongstory:sephin_wood",
     "thelongstory:stripped_sephin_log",
-    "thelongstory:stripped_sephin_wood"
+    "thelongstory:stripped_sephin_wood",
+    "thelongstory:kiwi_log",
+    "thelongstory:kiwi_wood",
+    "thelongstory:stripped_kiwi_log",
+    "thelongstory:stripped_kiwi_wood"
   ]
 }

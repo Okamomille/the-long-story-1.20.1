@@ -25,6 +25,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> EGRORIC_PLACED_KEY = registerKey("egroric_placed");
     public static final RegistryKey<PlacedFeature> OAST_PLACED_KEY = registerKey("oast_placed");
     public static final RegistryKey<PlacedFeature> SEPHIN_PLACED_KEY = registerKey("sephin_placed");
+    public static final RegistryKey<PlacedFeature> KIWI_PLACED_KEY = registerKey("kiwi_placed");
 
 
 
@@ -57,7 +58,7 @@ public class ModPlacedFeatures {
 
 
         register(context, EGRORIC_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.EGRORIC_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(3,0.1f, 2),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(5,0.1f, 2),
                         ModBlocks.EGRORIC_SAPLING));
 
         register(context, OAST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.OAST_KEY),
@@ -67,6 +68,10 @@ public class ModPlacedFeatures {
         register(context, SEPHIN_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SEPHIN_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(6,0.1f, 2),
                         ModBlocks.SEPHIN_SAPLING));
+
+        register(context, KIWI_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.KIWI_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(5,0.1f, 2),
+                        ModBlocks.KIWI_SAPLING));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

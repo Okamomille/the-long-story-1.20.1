@@ -7,6 +7,7 @@ import net.okamiz.thelongstory.datagen.EntityRendererGen;
 import net.okamiz.thelongstory.datagen.RenderCutout;
 import net.okamiz.thelongstory.particles.ModParticles;
 import net.okamiz.thelongstory.particles.TSLParticles.EgroricLeavesParticle;
+import net.okamiz.thelongstory.particles.TSLParticles.KiwiLeavesParticle;
 import net.okamiz.thelongstory.screen.ModScreenHandlers;
 
 public class TheLongStoryClient implements ClientModInitializer {
@@ -20,6 +21,7 @@ public class TheLongStoryClient implements ClientModInitializer {
 
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.EGRORIC_LEAVES_PARTICLE, EgroricLeavesParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.EGRORIC_LEAVES_PARTICLE, KiwiLeavesParticle.Factory::new);
 
 
 

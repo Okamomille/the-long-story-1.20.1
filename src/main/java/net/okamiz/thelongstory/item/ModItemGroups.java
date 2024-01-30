@@ -159,6 +159,24 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SEPHIN_FENCE);
                         entries.add(ModBlocks.SEPHIN_FENCE_GATE);
 
+                        //KIWI
+                        entries.add(ModBlocks.KIWI_SAPLING);
+                        entries.add(ModBlocks.KIWI_LEAVES);
+                        entries.add(ModBlocks.KIWI_LOG);
+                        entries.add(ModBlocks.KIWI_WOOD);
+                        entries.add(ModBlocks.STRIPPED_KIWI_LOG);
+                        entries.add(ModBlocks.STRIPPED_KIWI_WOOD);
+                        entries.add(ModBlocks.KIWI_PLANKS);
+                        entries.add(ModBlocks.KIWI_STAIRS);
+                        entries.add(ModBlocks.KIWI_SLAB);
+                        entries.add(ModBlocks.KIWI_BUTTON);
+                        entries.add(ModBlocks.KIWI_PRESSURE_PLATE);
+                        entries.add(ModBlocks.KIWI_DOOR);
+                        entries.add(ModBlocks.KIWI_TRAPDOOR);
+                        entries.add(ModBlocks.KIWI_FENCE);
+                        entries.add(ModBlocks.KIWI_FENCE_GATE);
+
+
                         entries.add(ModBlocks.TORN_BUSH);
                         entries.add(ModBlocks.PINK_PHYGELUS);
                         entries.add(ModBlocks.RED_OSPET);

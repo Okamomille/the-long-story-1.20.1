@@ -164,6 +164,22 @@
   "block.thelongstory.sephin_button" : "Sephin Button",
   "block.thelongstory.sephin_pressure_plate" : "Sephin Pressure Plate",
 
+  "block.thelongstory.kiwi_sapling" : "Kiwi Sapling",
+  "block.thelongstory.kiwi_log" : "Kiwi Log",
+  "block.thelongstory.kiwi_wood" : "Kiwi Wood",
+  "block.thelongstory.stripped_kiwi_log" : "Stripped Kiwi Log",
+  "block.thelongstory.stripped_kiwi_wood" : "Stripped Kiwi Wood",
+  "block.thelongstory.kiwi_leaves" : "Kiwi Leaves",
+  "block.thelongstory.kiwi_planks" : "Kiwi Planks",
+  "block.thelongstory.kiwi_stairs" : "Kiwi Stairs",
+  "block.thelongstory.kiwi_slab" : "Kiwi Slab",
+  "block.thelongstory.kiwi_fence" : "Kiwi Fence",
+  "block.thelongstory.kiwi_door" : "Kiwi Door",
+  "block.thelongstory.kiwi_trapdoor" : "Kiwi Trapdoor",
+  "block.thelongstory.kiwi_fence_gate" : "Kiwi Fence Gate",
+  "block.thelongstory.kiwi_button" : "Kiwi Button",
+  "block.thelongstory.kiwi_pressure_plate" : "Kiwi Pressure Plate",
+
 
 
   "block.thelongstory.torn_bush" : "Torn Bush",

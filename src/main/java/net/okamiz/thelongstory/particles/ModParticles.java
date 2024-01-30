@@ -9,6 +9,7 @@ import net.okamiz.thelongstory.TheLongStory;
 
 public class ModParticles {
     public static final DefaultParticleType EGRORIC_LEAVES_PARTICLE = registerParticle("egroric_leaves_particle", FabricParticleTypes.simple());
+    public static final DefaultParticleType KIWI_LEAVES_PARTICLE = registerParticle("kiwi_leaves_particle", FabricParticleTypes.simple());
 
 
     private static DefaultParticleType registerParticle(String name, DefaultParticleType particleType) {

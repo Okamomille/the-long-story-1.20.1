@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:red_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_red_ospet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:red_ospet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:red_dye_from_red_ospet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_red_ospet",
+      "has_red_dye"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:red_dye_from_red_ospet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

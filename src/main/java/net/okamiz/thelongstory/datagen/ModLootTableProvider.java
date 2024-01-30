@@ -83,6 +83,23 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SEPHIN_DOOR, doorDrops(ModBlocks.SEPHIN_DOOR));
         addDrop(ModBlocks.SEPHIN_TRAPDOOR);
 
+        //SEPHIN LOOTS ------------------------------------
+        addDrop(ModBlocks.KIWI_LEAVES, leavesDrops(ModBlocks.KIWI_LEAVES, ModBlocks.KIWI_SAPLING, 0.025f));
+        addDrop(ModBlocks.KIWI_SAPLING);
+        addDrop(ModBlocks.KIWI_LOG);
+        addDrop(ModBlocks.STRIPPED_KIWI_LOG);
+        addDrop(ModBlocks.KIWI_WOOD);
+        addDrop(ModBlocks.STRIPPED_KIWI_WOOD);
+        addDrop(ModBlocks.KIWI_PLANKS);
+        addDrop(ModBlocks.KIWI_STAIRS);
+        addDrop(ModBlocks.KIWI_PRESSURE_PLATE);
+        addDrop(ModBlocks.KIWI_BUTTON);
+        addDrop(ModBlocks.KIWI_FENCE_GATE);
+        addDrop(ModBlocks.KIWI_FENCE);
+        addDrop(ModBlocks.KIWI_SLAB, slabDrops(ModBlocks.KIWI_SLAB));
+        addDrop(ModBlocks.KIWI_DOOR, doorDrops(ModBlocks.KIWI_DOOR));
+        addDrop(ModBlocks.KIWI_TRAPDOOR);
+
 
 
 

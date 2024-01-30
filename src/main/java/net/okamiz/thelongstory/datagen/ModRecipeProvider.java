@@ -783,5 +783,108 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SEPHIN_TRAPDOOR)));
 
 
+        //KIWI RECIPES -------------------------
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.KIWI_BUTTON, 1).input(ModBlocks.KIWI_PLANKS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.KIWI_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.KIWI_PLANKS)).criterion(FabricRecipeProvider.hasItem(ModBlocks.KIWI_BUTTON),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.KIWI_BUTTON))
+                .offerTo(exporter, new Identifier("kiwi_button"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.KIWI_PLANKS, 4).input(ModBlocks.KIWI_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.KIWI_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.KIWI_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.KIWI_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier("kiwi_planks_from_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.KIWI_PLANKS, 4).input(ModBlocks.KIWI_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.KIWI_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.KIWI_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.KIWI_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier("kiwi_planks_from_wood"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.KIWI_PLANKS, 4).input(ModBlocks.STRIPPED_KIWI_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_KIWI_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_KIWI_LOG)).criterion(FabricRecipeProvider.hasItem(ModBlocks.KIWI_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier("kiwi_planks_from_stripped_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.KIWI_PLANKS, 4).input(ModBlocks.STRIPPED_KIWI_WOOD)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_KIWI_WOOD),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_KIWI_WOOD)).criterion(FabricRecipeProvider.hasItem(ModBlocks.KIWI_PLANKS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier("kiwi_planks_from_stripped_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE,ModBlocks.KIWI_PRESSURE_PLATE, 1)
+                .pattern("XX")
+                .input('X', ModBlocks.KIWI_PLANKS)
+                .criterion(hasItem(ModBlocks.KIWI_PLANKS),conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KIWI_PRESSURE_PLATE)));
+
+
+        createStairsRecipe(ModBlocks.KIWI_STAIRS, Ingredient.ofItems(ModBlocks.KIWI_PLANKS))
+                .criterion(hasItem(ModBlocks.KIWI_PLANKS),conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KIWI_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.KIWI_SLAB, Ingredient.ofItems(ModBlocks.KIWI_PLANKS))
+                .criterion(hasItem(ModBlocks.KIWI_PLANKS),conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KIWI_SLAB)));
+
+        createFenceGateRecipe(ModBlocks.KIWI_FENCE_GATE, Ingredient.ofItems(ModBlocks.KIWI_PLANKS))
+                .criterion(hasItem(ModBlocks.KIWI_PLANKS),conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KIWI_FENCE_GATE)));
+
+        createFenceRecipe(ModBlocks.KIWI_FENCE, Ingredient.ofItems(ModBlocks.KIWI_PLANKS))
+                .criterion(hasItem(ModBlocks.KIWI_PLANKS),conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KIWI_FENCE)));
+
+        createDoorRecipe(ModBlocks.KIWI_DOOR, Ingredient.ofItems(ModBlocks.KIWI_PLANKS))
+                .criterion(hasItem(ModBlocks.KIWI_PLANKS),conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KIWI_DOOR)));
+
+        createTrapdoorRecipe(ModBlocks.KIWI_TRAPDOOR, Ingredient.ofItems(ModBlocks.KIWI_PLANKS))
+                .criterion(hasItem(ModBlocks.KIWI_PLANKS),conditionsFromItem(ModBlocks.KIWI_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.KIWI_TRAPDOOR)));
+
+
+
+
+
+
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.RED_DYE, 1).input(ModBlocks.RED_OSPET)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.RED_OSPET),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.RED_OSPET)).criterion(FabricRecipeProvider.hasItem(Items.RED_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.RED_DYE))
+                .offerTo(exporter, new Identifier("red_dye_from_red_ospet"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BLUE_DYE, 1).input(ModBlocks.BLUE_OSPET)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.BLUE_OSPET),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BLUE_OSPET)).criterion(FabricRecipeProvider.hasItem(Items.BLUE_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.BLUE_DYE))
+                .offerTo(exporter, new Identifier("blue_dye_from_blue_ospet"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.GREEN_DYE, 1).input(ModBlocks.GREEN_OSPET)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.GREEN_OSPET),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.GREEN_OSPET)).criterion(FabricRecipeProvider.hasItem(Items.GREEN_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.GREEN_DYE))
+                .offerTo(exporter, new Identifier("green_dye_from_green_ospet"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE, 1).input(ModBlocks.YELLOW_OSPET)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.YELLOW_OSPET),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.YELLOW_OSPET)).criterion(FabricRecipeProvider.hasItem(Items.YELLOW_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
+                .offerTo(exporter, new Identifier("yellow_dye_from_yellow_ospet"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.PINK_DYE, 1).input(ModBlocks.PINK_PHYGELUS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PINK_PHYGELUS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PINK_PHYGELUS)).criterion(FabricRecipeProvider.hasItem(Items.PINK_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.PINK_DYE))
+                .offerTo(exporter, new Identifier("yellow_dye_from_pink_phygelus"));
+
+
+
+
     }
 }

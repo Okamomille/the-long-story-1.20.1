@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pink_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pink_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pink_phygelus": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:pink_phygelus"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:yellow_dye_from_pink_phygelus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pink_phygelus",
+      "has_pink_dye"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:yellow_dye_from_pink_phygelus"
+    ]
+  },
+  "sends_telemetry_event": false
+}

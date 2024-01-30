@@ -15,6 +15,7 @@ import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.custom.*;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
+import net.okamiz.thelongstory.world.tree.custom.Kiwi.KiwiSaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastSaplingGenerator;
 import net.okamiz.thelongstory.world.tree.custom.Sephin.SephinSaplingGenerator;
 
@@ -180,6 +181,48 @@ public class ModBlocks {
     public static final Block SEPHIN_DOOR = registerBlock("sephin_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
     public static final Block SEPHIN_TRAPDOOR = registerBlock("sephin_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
+
+    // -------------------------------------
+
+    // >>> KIWI
+
+    public static final Block KIWI_SAPLING = registerBlock("kiwi_sapling",
+            new SaplingBlock(new KiwiSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block KIWI_LEAVES = registerBlock("kiwi_leaves",
+            new KiwiLeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+
+    public static final Block KIWI_LOG = registerBlock("kiwi_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(3f)));
+    public static final Block KIWI_WOOD = registerBlock("kiwi_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(3f)));
+    public static final Block STRIPPED_KIWI_LOG = registerBlock("stripped_kiwi_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(3f)));
+    public static final Block STRIPPED_KIWI_WOOD = registerBlock("stripped_kiwi_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
+    public static final Block KIWI_PLANKS = registerBlock("kiwi_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block KIWI_STAIRS = registerBlock("kiwi_stairs",
+            new StairsBlock(ModBlocks.KIWI_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block KIWI_SLAB = registerBlock("kiwi_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block KIWI_BUTTON = registerBlock("kiwi_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 20, true));
+    public static final Block KIWI_PRESSURE_PLATE = registerBlock("kiwi_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS),BlockSetType.OAK));
+
+    public static final Block KIWI_FENCE = registerBlock("kiwi_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block KIWI_FENCE_GATE = registerBlock("kiwi_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
+
+    public static final Block KIWI_DOOR = registerBlock("kiwi_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
+    public static final Block KIWI_TRAPDOOR = registerBlock("kiwi_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
 
     // -------------------------------------

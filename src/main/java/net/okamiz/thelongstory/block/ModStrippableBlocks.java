@@ -17,5 +17,8 @@ public class ModStrippableBlocks {
 
         StrippableBlockRegistry.register(ModBlocks.SEPHIN_LOG, ModBlocks.STRIPPED_SEPHIN_LOG);
         StrippableBlockRegistry.register(ModBlocks.SEPHIN_WOOD, ModBlocks.STRIPPED_SEPHIN_WOOD);
+
+        StrippableBlockRegistry.register(ModBlocks.KIWI_LOG, ModBlocks.STRIPPED_KIWI_LOG);
+        StrippableBlockRegistry.register(ModBlocks.KIWI_WOOD, ModBlocks.STRIPPED_KIWI_WOOD);
     }
 }

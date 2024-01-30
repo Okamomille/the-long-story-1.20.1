@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "thelongstory:block/kiwi_planks",
+    "side": "thelongstory:block/kiwi_planks",
+    "top": "thelongstory:block/kiwi_planks"
+  }
+}
