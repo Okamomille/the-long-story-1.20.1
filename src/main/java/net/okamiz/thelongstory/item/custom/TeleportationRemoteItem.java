@@ -11,10 +11,12 @@ import net.minecraft.network.packet.s2c.play.PositionFlag;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
+import net.okamiz.thelongstory.sound.ModSounds;
 
 import java.util.Objects;
 
@@ -45,12 +47,12 @@ public class TeleportationRemoteItem extends Item {
                 player.swingHand(hand);
 
 
-
                 double x = Objects.requireNonNull(((ServerPlayerEntity) player).getSpawnPointPosition()).getX();
                 double y = ((ServerPlayerEntity) player).getSpawnPointPosition().getY();
                 double z = ((ServerPlayerEntity) player).getSpawnPointPosition().getZ();
-
+                world.playSound(null, player.getBlockPos(), ModSounds.TELEPORTATION, SoundCategory.PLAYERS, 1f, 1f);
                 player.teleport(serverWorld, x, y, z, PositionFlag.getFlags(1), player.getYaw(), player.getPitch());
+                world.playSound(null, player.getBlockPos(), ModSounds.TELEPORTATION, SoundCategory.PLAYERS, 1f, 1f);
                 giveEntityEffect(player);
                 player.getItemCooldownManager().set(this, 1200);
 

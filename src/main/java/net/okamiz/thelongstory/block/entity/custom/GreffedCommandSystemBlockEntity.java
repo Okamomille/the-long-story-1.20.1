@@ -36,6 +36,7 @@ import net.okamiz.thelongstory.block.entity.ImplementedInventory;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.item.custom.SoulContainerItem;
+import net.okamiz.thelongstory.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Arrays;
@@ -58,8 +59,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
 
 
     public static void playSound(World world, BlockPos pos) {
-        world.playSound(null, pos, SoundEvents.ENTITY_ALLAY_AMBIENT_WITH_ITEM, SoundCategory.BLOCKS, 1.0F, 1.2F);
-        world.playSound(null, pos, SoundEvents.ITEM_LODESTONE_COMPASS_LOCK, SoundCategory.BLOCKS, 1.0F, 1.0F);
+        world.playSound(null, pos, ModSounds.GREFFED_COMMAND_SYSTEM_GIVE_EFFECT, SoundCategory.BLOCKS, 1f, 1f);
     }
 
 
@@ -89,7 +89,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
                 //WRONG
                 if(!world.isClient()){
                     player.sendMessage(Text.literal("§o§7The Command System is cooling, you have to wait. " + this.timer), true);
-                    world.playSound(null, pos, SoundEvents.BLOCK_CHEST_LOCKED, SoundCategory.BLOCKS, 1f, 2f);
+                    world.playSound(null, pos, ModSounds.GREFFED_COMMAND_SYSTEM_FAIL, SoundCategory.BLOCKS, 1f, 1f);
                 }
 
             }
@@ -122,6 +122,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
                     player.getStackInHand(hand).decrement(1);
                 }else{
                     player.sendMessage(Text.literal("§o§7The Command System need to be activated with an Essence Container. "),true);
+                    world.playSound(null, pos, ModSounds.GREFFED_COMMAND_SYSTEM_FAIL, SoundCategory.BLOCKS, 1f, 1f);
                 }
 
 
@@ -134,7 +135,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
     public void activate(int id, PlayerEntity player){
 
         effectID = id;
-        world.playSound(null, pos, SoundEvents.BLOCK_BEACON_ACTIVATE, SoundCategory.BLOCKS, 1f, 2f);
+        world.playSound(null, pos, ModSounds.GREFFED_COMMAND_SYSTEM_ACTIVATE, SoundCategory.BLOCKS, 1f, 2f);
         player.sendMessage(Text.literal("§o§7Command System Activated. "),true);
         isActive = true;
 

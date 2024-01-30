@@ -1,0 +1,26 @@
+{
+  "teleportation": {
+    "subtitle": "sounds.thelongstory.teleportation",
+    "sounds": [
+      "thelongstory:teleportation"
+    ]
+  },
+  "greffed_command_system_give_effect": {
+    "subtitle": "sounds.thelongstory.greffed_command_system_give_effect",
+    "sounds": [
+      "thelongstory:greffed_command_system_give_effect"
+    ]
+  },
+  "greffed_command_system_fail": {
+    "subtitle": "sounds.thelongstory.greffed_command_system_fail",
+    "sounds": [
+      "thelongstory:greffed_command_system_fail"
+    ]
+  },
+  "greffed_command_system_activate": {
+    "subtitle": "sounds.thelongstory.greffed_command_system_activate",
+    "sounds": [
+      "thelongstory:greffed_command_system_activate"
+    ]
+  }
+}

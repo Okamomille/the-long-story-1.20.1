@@ -219,6 +219,14 @@
 
   "entity.thelongstory.trepasseur": "a Trepasseur",
   "entity.thelongstory.tickeler": "a Tickeler",
-  "entity.thelongstory.crawler": "a Crawler"
+  "entity.thelongstory.crawler": "a Crawler",
+
+
+
+
+  "sounds.thelongstory.greffed_command_system_activate": "Greffed Command System Activation",
+  "sounds.thelongstory.greffed_command_system_fail": "Greffed Command System Waiting",
+  "sounds.thelongstory.greffed_command_system_give_effect": "Greffed Command System Gives Effect",
+  "sounds.thelongstory.teleportation": "Player Teleportation"
 
 }
