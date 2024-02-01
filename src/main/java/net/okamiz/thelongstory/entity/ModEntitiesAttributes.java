@@ -2,10 +2,7 @@ package net.okamiz.thelongstory.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.okamiz.thelongstory.TheLongStory;
-import net.okamiz.thelongstory.entity.custom.CrawlerEntity;
-import net.okamiz.thelongstory.entity.custom.TickelerEntity;
-import net.okamiz.thelongstory.entity.custom.TookiEntity;
-import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
+import net.okamiz.thelongstory.entity.custom.*;
 
 public class ModEntitiesAttributes {
 
@@ -16,5 +13,6 @@ public class ModEntitiesAttributes {
         FabricDefaultAttributeRegistry.register(ModEntities.TICKELER, TickelerEntity.createTickelerAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.CRAWLER, CrawlerEntity.createCrawlerAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.TOOKI, TookiEntity.createTookiAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.COWSMIC, CowsmicEntity.createCowsmicAttributes());
     }
 }

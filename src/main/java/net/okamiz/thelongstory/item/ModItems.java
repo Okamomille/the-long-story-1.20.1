@@ -114,7 +114,10 @@ public class ModItems {
             new SpawnEggItem(ModEntities.CRAWLER, 5339992,1078563, new FabricItemSettings()));
 
     public static final Item TOOKI_SPAWN_EGG = registerItem("tooki_spawn_egg",
-            new SpawnEggItem(ModEntities.CRAWLER, 12424932,7356576, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.TOOKI, 12424932,7356576, new FabricItemSettings()));
+
+    public static final Item COWSMIC_SPAWN_EGG = registerItem("cowsmic_spawn_egg",
+            new SpawnEggItem(ModEntities.COWSMIC, 12424932,7356576, new FabricItemSettings()));
 
 
 

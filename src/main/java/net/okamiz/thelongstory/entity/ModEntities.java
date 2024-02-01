@@ -7,10 +7,7 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.okamiz.thelongstory.entity.custom.CrawlerEntity;
-import net.okamiz.thelongstory.entity.custom.TickelerEntity;
-import net.okamiz.thelongstory.entity.custom.TookiEntity;
-import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
+import net.okamiz.thelongstory.entity.custom.*;
 import net.okamiz.thelongstory.TheLongStory;
 
 public class ModEntities {
@@ -37,5 +34,10 @@ public class ModEntities {
             new Identifier(TheLongStory.MOD_ID, "tooki"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE,TookiEntity::new)
                     .dimensions(EntityDimensions.fixed(0.55f,0.5f)).build());
+
+    public static final EntityType<CowsmicEntity> COWSMIC = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheLongStory.MOD_ID, "cowsmic"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CowsmicEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.9f,1.4f)).build());
 
 }

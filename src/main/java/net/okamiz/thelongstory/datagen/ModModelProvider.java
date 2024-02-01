@@ -242,6 +242,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TOOKI_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
 
+        itemModelGenerator.register(ModItems.COWSMIC_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
 
     }
 }

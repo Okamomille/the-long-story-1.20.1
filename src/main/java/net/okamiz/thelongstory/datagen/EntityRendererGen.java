@@ -22,5 +22,8 @@ public class EntityRendererGen {
 
         EntityRendererRegistry.register(ModEntities.TOOKI, TookiRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.TOOKI, TookiModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.COWSMIC, CowsmicRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.COWSMIC, CowsmicModel::getTexturedModelData);
     }
 }

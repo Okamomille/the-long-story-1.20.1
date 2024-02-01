@@ -56,7 +56,13 @@
         "type": "minecraft:allay",
         "maxCount": 4,
         "minCount": 1,
-        "weight": 5
+        "weight": 6
+      },
+      {
+        "type": "thelongstory:cowsmic",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 8
       }
     ],
     "misc": [],

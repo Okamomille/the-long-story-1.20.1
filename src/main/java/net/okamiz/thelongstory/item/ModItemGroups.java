@@ -206,6 +206,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TICKELER_SPAWN_EGG);
                         entries.add(ModItems.CRAWLER_SPAWN_EGG);
                         entries.add(ModItems.TOOKI_SPAWN_EGG);
+                        entries.add(ModItems.COWSMIC_SPAWN_EGG);
 
 
                     }).build());

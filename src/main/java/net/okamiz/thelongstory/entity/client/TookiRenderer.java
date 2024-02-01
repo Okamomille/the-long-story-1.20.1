@@ -14,6 +14,7 @@ public class TookiRenderer extends MobEntityRenderer<TookiEntity, TookiModel<Too
 
     public TookiRenderer(EntityRendererFactory.Context context) {
         super(context, new TookiModel<>(context.getPart(ModModelLayers.TOOKI)), 0.6f);
+        this.shadowRadius = 0.25f;
     }
 
     @Override
