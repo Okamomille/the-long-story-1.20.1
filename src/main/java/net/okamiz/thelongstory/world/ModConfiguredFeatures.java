@@ -67,7 +67,7 @@ public class ModConfiguredFeatures {
         register(context, IMPURE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldImpureZarositeOres, 4));
 
 
-        register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(128,
+        register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(64,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.TORN_BUSH)))));
 
         register(context, PINK_PHYGELUS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(20,

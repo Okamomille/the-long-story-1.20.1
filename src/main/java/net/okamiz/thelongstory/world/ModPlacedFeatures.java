@@ -48,7 +48,7 @@ public class ModPlacedFeatures {
 
 
         register(context, TORN_BUSH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TORN_BUSH_KEY),
-                ModPlantsPlacement.modifiersWithCount(2));
+                ModPlantsPlacement.modifiersWithCount(1));
 
         register(context, PINK_PHYGELUS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PINK_PHYGELUS_KEY),
                 ModPlantsPlacement.modifiersWithCount(32));
