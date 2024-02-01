@@ -10,6 +10,7 @@ import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.world.ModPlacedFeatures;
 
 public class ModBiomes {
@@ -136,7 +137,7 @@ public class ModBiomes {
 
     public static Biome tearsValley(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        //spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.CRAWLER, 80, 1, 4));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.TOOKI, 10, 1, 3));
 
         GenerationSettings.LookupBackedBuilder biomeBuilder =
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),

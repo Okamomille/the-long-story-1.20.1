@@ -52,7 +52,14 @@
   "spawners": {
     "ambient": [],
     "axolotls": [],
-    "creature": [],
+    "creature": [
+      {
+        "type": "thelongstory:tooki",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 5
+      }
+    ],
     "misc": [],
     "monster": [],
     "underground_water_creature": [],
