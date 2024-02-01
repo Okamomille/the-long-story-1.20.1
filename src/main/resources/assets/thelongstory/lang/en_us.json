@@ -13,6 +13,9 @@
   "item.thelongstory.raw_impure_zarosite" : "Raw Impure Zarosite",
   "item.thelongstory.impure_zarosite_ingot" : "Impure Zarosite Ingot",
 
+  "item.thelongstory.zarosite_gemstone" : "Zarosite Gemstone",
+  "item.thelongstory.zarosite_shard" : "Zarosite Shard",
+
   "item.thelongstory.green_shard" : "Green Shard",
 
 
@@ -60,6 +63,11 @@
   "item.thelongstory.impure_zarosite_leggings" : "Impure Zarosite Leggings",
   "item.thelongstory.impure_zarosite_boots" : "Impure Zarosite Boots",
 
+  "item.thelongstory.zarosite_helmet" : "Zarosite Helmet",
+  "item.thelongstory.zarosite_chestplate" : "Zarosite Chestplate",
+  "item.thelongstory.zarosite_leggings" : "Zarosite Leggings",
+  "item.thelongstory.zarosite_boots" : "Zarosite Boots",
+
 
 
   "item.thelongstory.thestone_sword" : "Thestone Sword",
@@ -80,6 +88,12 @@
   "item.thelongstory.impure_zarosite_shovel" : "Impure Zarosite Shovel",
   "item.thelongstory.impure_zarosite_hoe" : "Impure Zarosite Hoe",
 
+  "item.thelongstory.zarosite_sword" : "Zarosite Sword",
+  "item.thelongstory.zarosite_pickaxe" : "Zarosite Pickaxe",
+  "item.thelongstory.zarosite_axe" : "Zarosite Axe",
+  "item.thelongstory.zarosite_shovel" : "Zarosite Shovel",
+  "item.thelongstory.zarosite_hoe" : "Zarosite Hoe",
+
 
 
   "item.thelongstory.emerald_apple" : "Emerald Apple",
@@ -93,6 +107,7 @@
   "item.thelongstory.trepasseur_spawn_egg" : "Trepasseur Spawn Egg",
   "item.thelongstory.tickeler_spawn_egg" : "Tickeler Spawn Egg",
   "item.thelongstory.crawler_spawn_egg" : "Crawler Spawn Egg",
+  "item.thelongstory.tooki_spawn_egg" : "Tooki Spawn Egg",
 
 
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
@@ -106,12 +121,15 @@
 
   "block.thelongstory.red_coal_block" : "Block of Red Coal",
   "block.thelongstory.impure_zarosite_block" : "Block of Impure Zarosite",
+  "block.thelongstory.zarosite_block" : "Block of Zarosite",
 
   "block.thelongstory.thestone_ore" : "Thestone Ore",
   "block.thelongstory.deepslate_thestone_ore" : "Deepslate Thestone Ore",
 
   "block.thelongstory.impure_zarosite_ore" : "Impure Zarosite Ore",
   "block.thelongstory.deepslate_impure_zarosite_ore" : "Deepslate Impure Zarosite Ore",
+
+  "block.thelongstory.deep Ice_zarosite_ore" : "Deep Ice Zarosite Ore",
 
 
   "block.thelongstory.egroric_sapling" : "Egroric Sapling",
@@ -185,6 +203,7 @@
   "block.thelongstory.torn_bush" : "Torn Bush",
 
   "block.thelongstory.pink_phygelus" : "Pink Phygelus",
+  "block.thelongstory.yellow_phygelus" : "Yellow Phygelus",
 
   "block.thelongstory.red_ospet" : "Red Ospet",
   "block.thelongstory.blue_ospet" : "Blue Ospet",
@@ -236,6 +255,7 @@
   "entity.thelongstory.trepasseur": "a Trepasseur",
   "entity.thelongstory.tickeler": "a Tickeler",
   "entity.thelongstory.crawler": "a Crawler",
+  "entity.thelongstory.tooki": "a Tooki",
 
 
 

@@ -34,10 +34,22 @@
           "biome": "thelongstory:golden_lands",
           "parameters": {
             "temperature": 0.7,
-            "humidity": -0.1,
-            "continentalness": 0.02,
+            "humidity": 0.3,
+            "continentalness": 0.2,
             "erosion": 0.031,
             "weirdness": 0.37,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "thelongstory:forest_of_melody",
+          "parameters": {
+            "temperature": 0.5,
+            "humidity": 0.1,
+            "continentalness": 0.8,
+            "erosion": 0,
+            "weirdness": 0.5,
             "depth": 0,
             "offset": 0
           }

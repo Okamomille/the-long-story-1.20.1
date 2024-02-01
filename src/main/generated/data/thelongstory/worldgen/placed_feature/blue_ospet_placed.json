@@ -2,8 +2,8 @@
   "feature": "thelongstory:blue_ospet_key",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 9
+      "type": "minecraft:count",
+      "count": 3
     },
     {
       "type": "minecraft:in_square"

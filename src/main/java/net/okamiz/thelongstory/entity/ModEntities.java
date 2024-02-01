@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.entity.custom.CrawlerEntity;
 import net.okamiz.thelongstory.entity.custom.TickelerEntity;
+import net.okamiz.thelongstory.entity.custom.TookiEntity;
 import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.TheLongStory;
 
@@ -31,5 +32,10 @@ public class ModEntities {
             new Identifier(TheLongStory.MOD_ID, "crawler"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, CrawlerEntity::new)
                     .dimensions(EntityDimensions.fixed(0.8f,0.8f)).build());
+
+    public static final EntityType<TookiEntity> TOOKI = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheLongStory.MOD_ID, "tooki"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE,TookiEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.55f,0.5f)).build());
 
 }

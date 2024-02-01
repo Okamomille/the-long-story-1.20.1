@@ -24,6 +24,7 @@ import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricTrunkPlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastTrunkPlacer;
+import org.apache.logging.log4j.core.pattern.AbstractStyleNameConverter;
 
 import java.util.List;
 import java.util.OptionalInt;
@@ -43,6 +44,7 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?,?>> TORN_BUSH_KEY = registryKey("torn_bush_key");
     public static final RegistryKey<ConfiguredFeature<?,?>> PINK_PHYGELUS_KEY = registryKey("pink_phygelus_key");
+    public static final RegistryKey<ConfiguredFeature<?,?>> YELLOW_PHYGELUS_KEY = registryKey("yellow_phygelus_key");
     public static final RegistryKey<ConfiguredFeature<?,?>> BLUE_OSPET_KEY = registryKey("blue_ospet_key");
 
 
@@ -70,6 +72,9 @@ public class ModConfiguredFeatures {
 
         register(context, PINK_PHYGELUS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(20,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PINK_PHYGELUS)))));
+
+        register(context, YELLOW_PHYGELUS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(20,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.YELLOW_PHYGELUS)))));
 
         register(context, BLUE_OSPET_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(75,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_OSPET)))));

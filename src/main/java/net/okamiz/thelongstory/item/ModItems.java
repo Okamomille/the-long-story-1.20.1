@@ -32,6 +32,9 @@ public class ModItems {
     public static final Item RAW_IMPURE_ZAROSITE = registerItem("raw_impure_zarosite", new Item(new FabricItemSettings()));
     public static final Item IMPURE_ZAROSITE_INGOT = registerItem("impure_zarosite_ingot", new Item(new FabricItemSettings()));
 
+    public static final Item ZAROSITE_GEMSTONE = registerItem("zarosite_gemstone", new Item(new FabricItemSettings()));
+    public static final Item ZAROSITE_SHARD = registerItem("zarosite_shard", new Item(new FabricItemSettings()));
+
 
     public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
 
@@ -110,6 +113,9 @@ public class ModItems {
     public static final Item CRAWLER_SPAWN_EGG = registerItem("crawler_spawn_egg",
             new SpawnEggItem(ModEntities.CRAWLER, 5339992,1078563, new FabricItemSettings()));
 
+    public static final Item TOOKI_SPAWN_EGG = registerItem("tooki_spawn_egg",
+            new SpawnEggItem(ModEntities.CRAWLER, 12424932,7356576, new FabricItemSettings()));
+
 
 
 
@@ -152,6 +158,19 @@ public class ModItems {
             new SwordItem(ModToolMaterial.IMPURE_ZAROSITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
 
 
+
+    public static final Item ZAROSITE_PICKAXE = registerItem("zarosite_pickaxe",
+            new PickaxeItem(ModToolMaterial.ZAROSITE, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item ZAROSITE_AXE = registerItem("zarosite_axe",
+            new AxeItem(ModToolMaterial.ZAROSITE, 6.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item ZAROSITE_SHOVEL = registerItem("zarosite_shovel",
+            new ShovelItem(ModToolMaterial.ZAROSITE, 1.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item ZAROSITE_HOE = registerItem("zarosite_hoe",
+            new HoeItem(ModToolMaterial.ZAROSITE, -3, -1.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item ZAROSITE_SWORD = registerItem("zarosite_sword",
+            new SwordItem(ModToolMaterial.ZAROSITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+
+
     //ARMOR ITEMS -----------------
 
     public static final Item THESTONE_HELMET = registerItem("thestone_helmet",
@@ -182,6 +201,15 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item IMPURE_ZAROSITE_BOOTS = registerItem("impure_zarosite_boots",
             new ArmorItem(ModArmorMaterials.IMPURE_ZAROSITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item ZAROSITE_HELMET = registerItem("zarosite_helmet",
+            new ArmorItem(ModArmorMaterials.ZAROSITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ZAROSITE_CHESTPLATE = registerItem("zarosite_chestplate",
+            new ArmorItem(ModArmorMaterials.ZAROSITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ZAROSITE_LEGGINGS = registerItem("zarosite_leggings",
+            new ArmorItem(ModArmorMaterials.ZAROSITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ZAROSITE_BOOTS = registerItem("zarosite_boots",
+            new ArmorItem(ModArmorMaterials.ZAROSITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 

@@ -19,5 +19,8 @@ public class EntityRendererGen {
 
         EntityRendererRegistry.register(ModEntities.CRAWLER, CrawlerRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.CRAWLER, CrawlerModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.TOOKI, TookiRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.TOOKI, TookiModel::getTexturedModelData);
     }
 }

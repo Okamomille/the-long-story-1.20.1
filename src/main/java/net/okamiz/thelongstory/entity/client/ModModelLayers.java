@@ -13,4 +13,7 @@ public class ModModelLayers {
 
     public static final EntityModelLayer CRAWLER =
             new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "crawler"), "main");
+
+    public static final EntityModelLayer TOOKI =
+            new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "tooki"), "main");
 }

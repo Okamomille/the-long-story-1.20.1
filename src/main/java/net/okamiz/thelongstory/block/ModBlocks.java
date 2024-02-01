@@ -30,7 +30,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
 
     public static final Block DEEP_ICE = registerBlock("deep_ice",
-            new Block(FabricBlockSettings.copyOf(Blocks.PACKED_ICE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.GLASS)));
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.GLASS)));
 
     public static final Block THESTONE_ORE = registerBlock("thestone_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(1, 5)));
@@ -40,12 +40,16 @@ public class ModBlocks {
 
     public static final Block IMPURE_ZAROSITE_ORE = registerBlock("impure_zarosite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
-
     public static final Block DEEPSLATE_IMPURE_ZAROSITE_ORE = registerBlock("deepslate_impure_zarosite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));
-
     public static final Block IMPURE_ZAROSITE_BLOCK = registerBlock("impure_zarosite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
+
+    public static final Block DEEP_ICE_ZAROSITE_ORE = registerBlock("deep_ice_zarosite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.DEEP_ICE), UniformIntProvider.create(2, 4)));
+    public static final Block ZAROSITE_BLOCK = registerBlock("zarosite_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
 
 
     // FUEL BLOCKS ------------------
@@ -244,6 +248,10 @@ public class ModBlocks {
 
     public static final Block PINK_PHYGELUS = registerBlock("pink_phygelus",
             new FlowerBlock(StatusEffects.REGENERATION, 30,
+                    FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+
+    public static final Block YELLOW_PHYGELUS = registerBlock("yellow_phygelus",
+            new FlowerBlock(StatusEffects.POISON, 30,
                     FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
 
     public static final Block RED_OSPET = registerBlock("red_ospet",

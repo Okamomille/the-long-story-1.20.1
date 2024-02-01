@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.entity.custom.CrawlerEntity;
 import net.okamiz.thelongstory.entity.custom.TickelerEntity;
+import net.okamiz.thelongstory.entity.custom.TookiEntity;
 import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 
 public class ModEntitiesAttributes {
@@ -14,5 +15,6 @@ public class ModEntitiesAttributes {
         FabricDefaultAttributeRegistry.register(ModEntities.TREPASSEUR, TrepasseurEntity.createTrepasseurAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.TICKELER, TickelerEntity.createTickelerAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.CRAWLER, CrawlerEntity.createCrawlerAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.TOOKI, TookiEntity.createTookiAttributes());
     }
 }

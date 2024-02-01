@@ -54,6 +54,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_IMPURE_ZAROSITE);
                         entries.add(ModItems.IMPURE_ZAROSITE_INGOT);
 
+                        entries.add(ModItems.ZAROSITE_SHARD);
+                        entries.add(ModItems.ZAROSITE_GEMSTONE);
+
                         entries.add(ModItems.GREEN_SHARD);
 
                         entries.add(ModItems.THESTONE_SWORD);
@@ -74,6 +77,12 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPURE_ZAROSITE_SHOVEL);
                         entries.add(ModItems.IMPURE_ZAROSITE_HOE);
 
+                        entries.add(ModItems.ZAROSITE_SWORD);
+                        entries.add(ModItems.ZAROSITE_PICKAXE);
+                        entries.add(ModItems.ZAROSITE_AXE);
+                        entries.add(ModItems.ZAROSITE_SHOVEL);
+                        entries.add(ModItems.ZAROSITE_HOE);
+
 
                         entries.add(ModItems.THESTONE_HELMET);
                         entries.add(ModItems.THESTONE_CHESTPLATE);
@@ -89,6 +98,11 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPURE_ZAROSITE_CHESTPLATE);
                         entries.add(ModItems.IMPURE_ZAROSITE_LEGGINGS);
                         entries.add(ModItems.IMPURE_ZAROSITE_BOOTS);
+
+                        entries.add(ModItems.ZAROSITE_HELMET);
+                        entries.add(ModItems.ZAROSITE_CHESTPLATE);
+                        entries.add(ModItems.ZAROSITE_LEGGINGS);
+                        entries.add(ModItems.ZAROSITE_BOOTS);
 
                         entries.add(ModItems.RED_COAL);
                         entries.add(ModBlocks.DEEP_ICE);
@@ -107,6 +121,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.IMPURE_ZAROSITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
                         entries.add(ModBlocks.IMPURE_ZAROSITE_BLOCK);
+
+                        entries.add(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
+                        entries.add(ModBlocks.ZAROSITE_BLOCK);
 
                         //EGRORIC
                         entries.add(ModBlocks.EGRORIC_SAPLING);
@@ -179,6 +196,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.TORN_BUSH);
                         entries.add(ModBlocks.PINK_PHYGELUS);
+                        entries.add(ModBlocks.YELLOW_PHYGELUS);
                         entries.add(ModBlocks.RED_OSPET);
                         entries.add(ModBlocks.BLUE_OSPET);
                         entries.add(ModBlocks.GREEN_OSPET);
@@ -187,6 +205,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TREPASSEUR_SPAWN_EGG);
                         entries.add(ModItems.TICKELER_SPAWN_EGG);
                         entries.add(ModItems.CRAWLER_SPAWN_EGG);
+                        entries.add(ModItems.TOOKI_SPAWN_EGG);
 
 
                     }).build());

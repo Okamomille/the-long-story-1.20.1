@@ -27,6 +27,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZAROSITE_BLOCK);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPIDER_SILK_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOLD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_COAL_BLOCK);
@@ -115,6 +118,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCross(ModBlocks.TORN_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.PINK_PHYGELUS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.YELLOW_PHYGELUS, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_OSPET, ModBlocks.POTTED_RED_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_OSPET, ModBlocks.POTTED_BLUE_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -132,6 +136,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RAW_IMPURE_ZAROSITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ZAROSITE_GEMSTONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ZAROSITE_SHARD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GREEN_SHARD, Models.GENERATED);
 
@@ -194,6 +200,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_HOE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.ZAROSITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ZAROSITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ZAROSITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ZAROSITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ZAROSITE_HOE, Models.HANDHELD);
+
 
         
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_HELMET));
@@ -211,6 +223,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPURE_ZAROSITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.IMPURE_ZAROSITE_BOOTS));
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZAROSITE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZAROSITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZAROSITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZAROSITE_BOOTS));
+
 
 
         itemModelGenerator.register(ModItems.TREPASSEUR_SPAWN_EGG,
@@ -220,6 +237,9 @@ public class ModModelProvider extends FabricModelProvider {
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
 
         itemModelGenerator.register(ModItems.CRAWLER_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
+        itemModelGenerator.register(ModItems.TOOKI_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
 
 

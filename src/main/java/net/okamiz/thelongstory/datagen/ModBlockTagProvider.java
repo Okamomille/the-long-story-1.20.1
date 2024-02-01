@@ -75,6 +75,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.IMPURE_ZAROSITE_BLOCK)
+                .add(ModBlocks.ZAROSITE_BLOCK)
                 .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
                 .add(ModBlocks.IMPURE_ZAROSITE_ORE)
 
@@ -82,6 +83,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.THESTONE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.DEEP_ICE_ZAROSITE_ORE)
+
                 ;
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")))

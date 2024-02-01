@@ -31,6 +31,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> TORN_BUSH_PLACED_KEY = registerKey("torn_bush_placed");
     public static final RegistryKey<PlacedFeature> PINK_PHYGELUS_PLACED_KEY = registerKey("pink_phygelus_placed");
+    public static final RegistryKey<PlacedFeature> YELLOW_PHYGELUS_PLACED_KEY = registerKey("yellow_phygelus_placed");
     public static final RegistryKey<PlacedFeature> BLUE_OSPET_PLACED_KEY = registerKey("blue_ospet_placed");
 
 
@@ -47,14 +48,17 @@ public class ModPlacedFeatures {
 
 
         register(context, TORN_BUSH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TORN_BUSH_KEY),
-                ModPlantsPlacement.modifiersWithRarity(6));
+                ModPlantsPlacement.modifiersWithCount(2));
 
         register(context, PINK_PHYGELUS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PINK_PHYGELUS_KEY),
                 ModPlantsPlacement.modifiersWithCount(32));
 
-        register(context, BLUE_OSPET_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_OSPET_KEY),
-                ModPlantsPlacement.modifiersWithRarity(9));
+        register(context, YELLOW_PHYGELUS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.YELLOW_PHYGELUS_KEY),
+                ModPlantsPlacement.modifiersWithCount(24));
 
+        register(context, BLUE_OSPET_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_OSPET_KEY),
+                ModPlantsPlacement.modifiersWithCount(3));
+ 
 
 
         register(context, EGRORIC_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.EGRORIC_KEY),
@@ -70,7 +74,7 @@ public class ModPlacedFeatures {
                         ModBlocks.SEPHIN_SAPLING));
 
         register(context, KIWI_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.KIWI_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(5,0.1f, 2),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(8,0.1f, 2),
                         ModBlocks.KIWI_SAPLING));
     }
 

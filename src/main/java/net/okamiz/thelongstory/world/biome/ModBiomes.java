@@ -22,6 +22,9 @@ public class ModBiomes {
     public static final RegistryKey<Biome> TEARS_VALLEY = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(TheLongStory.MOD_ID, "tears_valley"));
 
+    public static final RegistryKey<Biome> FOREST_OF_MELODY = RegistryKey.of(RegistryKeys.BIOME,
+            new Identifier(TheLongStory.MOD_ID, "forest_of_melody"));
+
 
 
 
@@ -30,6 +33,7 @@ public class ModBiomes {
         context.register(SNOW_FOREST, snowForest(context));
         context.register(GOLDEN_LANDS, goldenLands(context));
         context.register(TEARS_VALLEY, tearsValley(context));
+        context.register(FOREST_OF_MELODY, forestOfMelody(context));
     }
 
     /*
@@ -171,6 +175,50 @@ public class ModBiomes {
                         .build())
                 .build();
     }
+
+    public static Biome forestOfMelody(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+        //spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.TICKELER, 80, 1, 4));
+
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.PARROT, 5, 1, 4));
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+        //globalOverworldGeneration(biomeBuilder);
+        //DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
+
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.KIWI_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.YELLOW_PHYGELUS_PLACED_KEY);
+        //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
+        DefaultBiomeFeatures.addForestGrass(biomeBuilder);
+        //DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
+
+
+        //DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
+        //DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(true)
+                .downfall(0.6f)
+                .temperature(0.5f)
+                .generationSettings(biomeBuilder.build())
+                .spawnSettings(spawnBuilder.build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(4159204)
+                        .waterFogColor(329011)
+                        .skyColor(OverworldBiomeCreator.getSkyColor(0.7f))
+                        .grassColor(11983713)
+                        .foliageColor(11983713)
+                        .fogColor(12638463)
+                        .build())
+                .build();
+    }
+
+
 
 
 }

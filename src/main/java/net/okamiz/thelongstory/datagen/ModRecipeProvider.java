@@ -18,6 +18,7 @@ import java.util.List;
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> THESTONE_SMELTABLES = List.of(ModBlocks.THESTONE_ORE,ModBlocks.DEEPSLATE_THESTONE_ORE);
     private static final List<ItemConvertible> IMPURE_ZAROSITE_SMELTABLES = List.of(ModBlocks.IMPURE_ZAROSITE_ORE,ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
+    private static final List<ItemConvertible> ZAROSITE_SMELTABLES = List.of(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -35,9 +36,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, IMPURE_ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT,
                 0.7f,200,"impure_zarosite_ingot");
 
+        offerSmelting(exporter, ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE,
+                0.7f,200,"zarosite_gemstone");
+        offerBlasting(exporter, ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE,
+                0.7f,200,"zarosite_gemstone");
+
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT, RecipeCategory.MISC,
                 ModBlocks.IMPURE_ZAROSITE_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE, RecipeCategory.MISC,
+                ModBlocks.ZAROSITE_BLOCK);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RED_COAL, RecipeCategory.MISC,
                 ModBlocks.RED_COAL_BLOCK);
@@ -213,6 +222,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_CHESTPLATE)));
 
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.ZAROSITE_BOOTS, 1)
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.ZAROSITE_HELMET, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.ZAROSITE_LEGGINGS, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.ZAROSITE_CHESTPLATE, 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_CHESTPLATE)));
         //-------------------
 
         // TOOLS
@@ -410,6 +450,71 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_SWORD)));
 
+
+        // ZAROSITE
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier("zarosite_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier("zarosite_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModItems.ZAROSITE_GEMSTONE)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_SWORD)));
 
 
 
@@ -876,6 +981,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.YELLOW_OSPET)).criterion(FabricRecipeProvider.hasItem(Items.YELLOW_DYE),
                         FabricRecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
                 .offerTo(exporter, new Identifier("yellow_dye_from_yellow_ospet"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE, 1).input(ModBlocks.YELLOW_PHYGELUS)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.YELLOW_PHYGELUS),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.YELLOW_PHYGELUS)).criterion(FabricRecipeProvider.hasItem(Items.YELLOW_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
+                .offerTo(exporter, new Identifier("yellow_dye_from_yellow_phygelus"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.PINK_DYE, 1).input(ModBlocks.PINK_PHYGELUS)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.PINK_PHYGELUS),

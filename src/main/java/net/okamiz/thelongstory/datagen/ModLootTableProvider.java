@@ -26,11 +26,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
 
+        addDrop(ModBlocks.SIMULATION_TELEPORTER);
         addDrop(ModBlocks.GREFFED_COMMAND_SYSTEM);
         addDrop(ModBlocks.MOLD_BLOCK);
         addDrop(ModBlocks.RED_COAL_BLOCK);
         addDrop(ModBlocks.SPIDER_SILK_BLOCK);
         addDrop(ModBlocks.DEEP_ICE);
+        addDrop(ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
         //EGRORIC LOOTS ------------------------------------
         addDrop(ModBlocks.EGRORIC_LEAVES, leavesDrops(ModBlocks.EGRORIC_LEAVES, ModBlocks.EGRORIC_SAPLING, 0.025f));
@@ -106,6 +108,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.TORN_BUSH);
 
 
+        addDrop(ModBlocks.PINK_PHYGELUS);
+        addDrop(ModBlocks.YELLOW_PHYGELUS);
         addDrop(ModBlocks.RED_OSPET);
         addDrop(ModBlocks.BLUE_OSPET);
         addDrop(ModBlocks.GREEN_OSPET);
@@ -121,6 +125,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         oreDrops(ModBlocks.IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE);
         oreDrops(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE);
+
+        oreDrops(ModBlocks.DEEP_ICE_ZAROSITE_ORE, ModItems.ZAROSITE_GEMSTONE);
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item){
