@@ -83,7 +83,8 @@ public class ModBlocks {
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_CRACKED_STONE_BRICKS)));
 
 
-
+    public static final Block FROSTED_ICE = registerBlock("frosted_ice",
+            new FrostedIceModBlock(FabricBlockSettings.copyOf(Blocks.FROSTED_ICE)));
 
 
     public static final Block THESTONE_ORE = registerBlock("thestone_ore",
@@ -153,7 +154,7 @@ public class ModBlocks {
     public static final Block EGRORIC_DOOR = registerBlock("egroric_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
     public static final Block EGRORIC_TRAPDOOR = registerBlock("egroric_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
+            new ModTrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
 
 
 
@@ -196,7 +197,7 @@ public class ModBlocks {
     public static final Block OAST_DOOR = registerBlock("oast_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
     public static final Block OAST_TRAPDOOR = registerBlock("oast_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
+            new ModTrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
 
 
 
@@ -238,7 +239,7 @@ public class ModBlocks {
     public static final Block SEPHIN_DOOR = registerBlock("sephin_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
     public static final Block SEPHIN_TRAPDOOR = registerBlock("sephin_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
+            new ModTrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
 
     // -------------------------------------
 
@@ -280,7 +281,7 @@ public class ModBlocks {
     public static final Block KIWI_DOOR = registerBlock("kiwi_door",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR),BlockSetType.OAK));
     public static final Block KIWI_TRAPDOOR = registerBlock("kiwi_trapdoor",
-            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
+            new ModTrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR),BlockSetType.OAK));
 
     // -------------------------------------
 

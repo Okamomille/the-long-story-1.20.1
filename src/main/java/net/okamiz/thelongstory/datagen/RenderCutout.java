@@ -10,6 +10,9 @@ public class RenderCutout {
     public static void registerBlockRenders(){
         TheLongStory.LOGGER.info("Registering BlockRenderer for " + TheLongStory.MOD_ID);
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FROSTED_ICE, RenderLayer.getCutout());
+
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EGRORIC_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EGRORIC_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EGRORIC_LEAVES, RenderLayer.getCutout());

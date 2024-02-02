@@ -6,8 +6,12 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.block.ModFlammableBlocks;
 import net.okamiz.thelongstory.block.ModStrippableBlocks;
+import net.okamiz.thelongstory.block.custom.FrostedIceModBlock;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.effect.ModEffects;
 import net.okamiz.thelongstory.entity.ModEntities;
@@ -63,6 +67,7 @@ public class TheLongStory implements ModInitializer {
 		ModFlammableBlocks.registerModFlammableBlocks();
 
 		ModWorldGeneration.generateModWorldGen();
+
 
 	}
 }

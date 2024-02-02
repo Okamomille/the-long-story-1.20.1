@@ -39,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROSTED_ICE);
 
         BlockStateModelGenerator.BlockTexturePool icedStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICED_STONE);
         icedStonePool.stairs(ModBlocks.ICED_STONE_STAIRS);
@@ -64,16 +65,6 @@ public class ModModelProvider extends FabricModelProvider {
         icedCobblestonePool.stairs(ModBlocks.ICED_COBBLESTONE_STAIRS);
         icedCobblestonePool.slab(ModBlocks.ICED_COBBLESTONE_SLAB);
         icedCobblestonePool.wall(ModBlocks.ICED_COBBLESTONE_WALL);
-
-
-
-
-
-
-
-
-
-
 
 
 //--------------------------------------------------------------------------------------
