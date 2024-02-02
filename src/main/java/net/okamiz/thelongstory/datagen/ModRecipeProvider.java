@@ -2,6 +2,7 @@ package net.okamiz.thelongstory.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -19,6 +20,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> THESTONE_SMELTABLES = List.of(ModBlocks.THESTONE_ORE,ModBlocks.DEEPSLATE_THESTONE_ORE);
     private static final List<ItemConvertible> IMPURE_ZAROSITE_SMELTABLES = List.of(ModBlocks.IMPURE_ZAROSITE_ORE,ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
     private static final List<ItemConvertible> ZAROSITE_SMELTABLES = List.of(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
+    private static final List<ItemConvertible> ICED_STONE = List.of(ModBlocks.ICED_STONE);
+    private static final List<ItemConvertible> ICED_COBBLESTONE = List.of(ModBlocks.ICED_COBBLESTONE);
+    private static final List<ItemConvertible> ICED_CRACKED_STONE_BRICKS = List.of(ModBlocks.ICED_CRACKED_STONE_BRICKS);
+    private static final List<ItemConvertible> ICED_CHISELED_STONE_BRICKS = List.of(ModBlocks.ICED_CHISELED_STONE_BRICKS);
+    private static final List<ItemConvertible> ICED_STONE_BRICKS = List.of(ModBlocks.ICED_STONE_BRICKS);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -40,6 +46,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f,200,"zarosite_gemstone");
         offerBlasting(exporter, ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE,
                 0.7f,200,"zarosite_gemstone");
+
+
+        offerSmelting(exporter, ICED_STONE, RecipeCategory.MISC, Blocks.STONE,
+                0.7f,200,"zarosite_gemstone");
+        offerSmelting(exporter, ICED_STONE_BRICKS, RecipeCategory.MISC, Blocks.STONE_BRICKS,
+                0.7f,200,"zarosite_gemstone");
+        offerSmelting(exporter, ICED_CHISELED_STONE_BRICKS, RecipeCategory.MISC, Blocks.CHISELED_STONE_BRICKS,
+                0.7f,200,"zarosite_gemstone");
+        offerSmelting(exporter, ICED_CRACKED_STONE_BRICKS, RecipeCategory.MISC, Blocks.CRACKED_STONE_BRICKS,
+                0.7f,200,"zarosite_gemstone");
+        offerSmelting(exporter, ICED_COBBLESTONE, RecipeCategory.MISC, Blocks.COBBLESTONE,
+                0.7f,200,"zarosite_gemstone");
+
+
+
+
 
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT, RecipeCategory.MISC,

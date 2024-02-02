@@ -113,7 +113,35 @@
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
   "block.thelongstory.mold_block" : "Mold Block",
   "block.thelongstory.spider_silk_block" : "Spider Silk Block",
+
   "block.thelongstory.deep_ice" : "Deep Ice",
+
+
+  "block.thelongstory.iced_stone" : "Iced Stone",
+  "block.thelongstory.iced_stone_slab" : "Iced Stone Slab",
+  "block.thelongstory.iced_stone_stairs" : "Iced Stone Stairs",
+  "block.thelongstory.iced_stone_wall" : "Iced Stone Wall",
+
+  "block.thelongstory.iced_cobblestone" : "Iced Cobblestone",
+  "block.thelongstory.iced_cobblestone_slab" : "Iced Cobblestone Slab",
+  "block.thelongstory.iced_cobblestone_stairs" : "Iced Cobblestone Stairs",
+  "block.thelongstory.iced_cobblestone_wall" : "Iced Cobblestone Wall",
+
+  "block.thelongstory.iced_cracked_stone_bricks" : "Iced Cracked Stone Bricks",
+  "block.thelongstory.iced_cracked_stone_bricks_slab" : "Iced Cracked Stone Bricks Slab",
+  "block.thelongstory.iced_cracked_stone_bricks_stairs" : "Iced Cracked Stone Bricks Stairs",
+  "block.thelongstory.iced_cracked_stone_bricks_wall" : "Iced Cracked Stone Wall",
+
+  "block.thelongstory.iced_chiseled_stone_bricks" : "Iced Chiseled Stone Bricks",
+  "block.thelongstory.iced_chiseled_stone_bricks_slab" : "Iced Chiseled Stone Bricks Slab",
+  "block.thelongstory.iced_chiseled_stone_bricks_stairs" : "Iced Chiseled Stone Bricks Stairs",
+  "block.thelongstory.iced_chiseled_stone_bricks_wall" : "Iced Chiseled Stone Bricks Wall",
+
+  "block.thelongstory.iced_stone_bricks" : "Iced Stone Bricks",
+  "block.thelongstory.iced_stone_bricks_slab" : "Iced Stone Bricks Slab",
+  "block.thelongstory.iced_stone_bricks_stairs" : "Iced Stone Bricks Stairs",
+  "block.thelongstory.iced_stone_bricks_wall" : "Iced Stone Bricks Wall",
+
 
   "block.thelongstory.greffed_command_system" : "Greffed Command System",
   "block.thelongstory.simulation_teleporter" : "Simulation Teleporter",

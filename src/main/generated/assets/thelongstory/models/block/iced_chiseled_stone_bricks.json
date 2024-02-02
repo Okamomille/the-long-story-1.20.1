@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "thelongstory:block/iced_chiseled_stone_bricks"
+  }
+}

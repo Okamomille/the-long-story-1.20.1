@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "thelongstory:block/iced_chiseled_stone_bricks"
+  }
+}

@@ -34,6 +34,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
                 .add(ModBlocks.THESTONE_ORE)
                 .add(ModBlocks.DEEP_ICE)
+                .add(ModBlocks.ICED_COBBLESTONE)
+                .add(ModBlocks.ICED_STONE)
+                .add(ModBlocks.ICED_CHISELED_STONE_BRICKS)
+                .add(ModBlocks.ICED_CRACKED_STONE_BRICKS)
+                .add(ModBlocks.ICED_STONE_BRICKS)
 
                 .add(ModBlocks.IMPURE_ZAROSITE_BLOCK)
                 .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
@@ -118,6 +123,30 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_SLAB)
                 .add(ModBlocks.SEPHIN_SLAB)
                 .add(ModBlocks.KIWI_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(ModBlocks.ICED_STONE_SLAB)
+                .add(ModBlocks.ICED_COBBLESTONE_SLAB)
+                .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB)
+                .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB)
+                .add(ModBlocks.ICED_STONE_BRICKS_SLAB)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(ModBlocks.ICED_STONE_STAIRS)
+                .add(ModBlocks.ICED_COBBLESTONE_STAIRS)
+                .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS)
+                .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS)
+                .add(ModBlocks.ICED_STONE_BRICKS_STAIRS)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ICED_STONE_WALL)
+                .add(ModBlocks.ICED_COBBLESTONE_WALL)
+                .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_WALL)
+                .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL)
+                .add(ModBlocks.ICED_STONE_BRICKS_WALL)
+        ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(ModBlocks.EGRORIC_STAIRS)

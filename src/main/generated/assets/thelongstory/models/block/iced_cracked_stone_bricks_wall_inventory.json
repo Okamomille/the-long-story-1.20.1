@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "thelongstory:block/iced_cracked_stone_bricks"
+  }
+}

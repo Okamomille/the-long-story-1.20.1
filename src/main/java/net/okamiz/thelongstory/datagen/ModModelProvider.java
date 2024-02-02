@@ -40,6 +40,42 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE);
 
+        BlockStateModelGenerator.BlockTexturePool icedStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICED_STONE);
+        icedStonePool.stairs(ModBlocks.ICED_STONE_STAIRS);
+        icedStonePool.slab(ModBlocks.ICED_STONE_SLAB);
+        icedStonePool.wall(ModBlocks.ICED_STONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool icedStoneBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICED_STONE_BRICKS);
+        icedStoneBricksPool.stairs(ModBlocks.ICED_STONE_BRICKS_STAIRS);
+        icedStoneBricksPool.slab(ModBlocks.ICED_STONE_BRICKS_SLAB);
+        icedStoneBricksPool.wall(ModBlocks.ICED_STONE_BRICKS_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool icedCrackedStoneBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICED_CRACKED_STONE_BRICKS);
+        icedCrackedStoneBricksPool.stairs(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS);
+        icedCrackedStoneBricksPool.slab(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB);
+        icedCrackedStoneBricksPool.wall(ModBlocks.ICED_CRACKED_STONE_BRICKS_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool icedChiseledStoneBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICED_CHISELED_STONE_BRICKS);
+        icedChiseledStoneBricksPool.stairs(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS);
+        icedChiseledStoneBricksPool.slab(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB);
+        icedChiseledStoneBricksPool.wall(ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool icedCobblestonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICED_COBBLESTONE);
+        icedCobblestonePool.stairs(ModBlocks.ICED_COBBLESTONE_STAIRS);
+        icedCobblestonePool.slab(ModBlocks.ICED_COBBLESTONE_SLAB);
+        icedCobblestonePool.wall(ModBlocks.ICED_COBBLESTONE_WALL);
+
+
+
+
+
+
+
+
+
+
+
+
 //--------------------------------------------------------------------------------------
 
         //EGRORIC MODELS ------------------------------------

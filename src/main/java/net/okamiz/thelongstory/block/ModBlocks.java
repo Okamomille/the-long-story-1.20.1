@@ -29,8 +29,62 @@ public class ModBlocks {
     public static final Block SPIDER_SILK_BLOCK = registerBlock("spider_silk_block",
             new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
 
+
+
     public static final Block DEEP_ICE = registerBlock("deep_ice",
-            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(3.0F, 6.0F).sounds(BlockSoundGroup.GLASS)));
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).sounds(BlockSoundGroup.GLASS)));
+    public static final Block ICED_STONE = registerBlock("iced_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.GLASS)));
+    public static final Block ICED_STONE_STAIRS = registerBlock("iced_stone_stairs",
+            new StairsBlock(ModBlocks.ICED_STONE.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.ICED_STONE)));
+    public static final Block ICED_STONE_SLAB = registerBlock("iced_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_STONE)));
+    public static final Block ICED_STONE_WALL = registerBlock("iced_stone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_STONE)));
+
+
+    public static final Block ICED_COBBLESTONE = registerBlock("iced_cobblestone",
+            new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).sounds(BlockSoundGroup.GLASS)));
+    public static final Block ICED_COBBLESTONE_STAIRS = registerBlock("iced_cobblestone_stairs",
+            new StairsBlock(ModBlocks.ICED_COBBLESTONE.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.ICED_COBBLESTONE)));
+    public static final Block ICED_COBBLESTONE_SLAB = registerBlock("iced_cobblestone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_COBBLESTONE)));
+    public static final Block ICED_COBBLESTONE_WALL = registerBlock("iced_cobblestone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_COBBLESTONE)));
+
+
+    public static final Block ICED_STONE_BRICKS = registerBlock("iced_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).sounds(BlockSoundGroup.GLASS)));
+    public static final Block ICED_STONE_BRICKS_STAIRS = registerBlock("iced_stone_bricks_stairs",
+            new StairsBlock(ModBlocks.ICED_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.ICED_STONE_BRICKS)));
+    public static final Block ICED_STONE_BRICKS_SLAB = registerBlock("iced_stone_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_STONE_BRICKS)));
+    public static final Block ICED_STONE_BRICKS_WALL = registerBlock("iced_stone_bricks_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_STONE_BRICKS)));
+
+
+    public static final Block ICED_CHISELED_STONE_BRICKS = registerBlock("iced_chiseled_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).sounds(BlockSoundGroup.GLASS)));
+    public static final Block ICED_CHISELED_STONE_BRICKS_STAIRS = registerBlock("iced_chiseled_stone_bricks_stairs",
+            new StairsBlock(ModBlocks.ICED_CHISELED_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.ICED_CHISELED_STONE_BRICKS)));
+    public static final Block ICED_CHISELED_STONE_BRICKS_SLAB = registerBlock("iced_chiseled_stone_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_CHISELED_STONE_BRICKS)));
+    public static final Block ICED_CHISELED_STONE_BRICKS_WALL = registerBlock("iced_chiseled_stone_bricks_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_CHISELED_STONE_BRICKS)));
+
+
+    public static final Block ICED_CRACKED_STONE_BRICKS = registerBlock("iced_cracked_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CRACKED_STONE_BRICKS).sounds(BlockSoundGroup.GLASS)));
+    public static final Block ICED_CRACKED_STONE_BRICKS_STAIRS = registerBlock("iced_cracked_stone_bricks_stairs",
+            new StairsBlock(ModBlocks.ICED_CRACKED_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.ICED_CRACKED_STONE_BRICKS)));
+    public static final Block ICED_CRACKED_STONE_BRICKS_SLAB = registerBlock("iced_cracked_stone_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_CRACKED_STONE_BRICKS)));
+    public static final Block ICED_CRACKED_STONE_BRICKS_WALL = registerBlock("iced_cracked_stone_bricks_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_CRACKED_STONE_BRICKS)));
+
+
+
+
 
     public static final Block THESTONE_ORE = registerBlock("thestone_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(1, 5)));
@@ -44,10 +98,9 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));
     public static final Block IMPURE_ZAROSITE_BLOCK = registerBlock("impure_zarosite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
-
-
     public static final Block DEEP_ICE_ZAROSITE_ORE = registerBlock("deep_ice_zarosite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.DEEP_ICE), UniformIntProvider.create(2, 4)));
+
     public static final Block ZAROSITE_BLOCK = registerBlock("zarosite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
 

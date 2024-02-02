@@ -32,6 +32,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RED_COAL_BLOCK);
         addDrop(ModBlocks.SPIDER_SILK_BLOCK);
         addDrop(ModBlocks.DEEP_ICE);
+        addDrop(ModBlocks.ICED_COBBLESTONE);
+        addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS);
+        addDrop(ModBlocks.ICED_STONE);
+        addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS);
+        addDrop(ModBlocks.ICED_STONE_BRICKS);
         addDrop(ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
         //EGRORIC LOOTS ------------------------------------

@@ -105,12 +105,33 @@ public class ModItemGroups {
                         entries.add(ModItems.ZAROSITE_BOOTS);
 
                         entries.add(ModItems.RED_COAL);
+                        entries.add(ModBlocks.RED_COAL_BLOCK);
                         entries.add(ModBlocks.DEEP_ICE);
+
+                        entries.add(ModBlocks.ICED_STONE);
+                        entries.add(ModBlocks.ICED_STONE_SLAB);
+                        entries.add(ModBlocks.ICED_STONE_STAIRS);
+                        entries.add(ModBlocks.ICED_STONE_WALL);
+                        entries.add(ModBlocks.ICED_COBBLESTONE);
+                        entries.add(ModBlocks.ICED_COBBLESTONE_SLAB);
+                        entries.add(ModBlocks.ICED_COBBLESTONE_STAIRS);
+                        entries.add(ModBlocks.ICED_COBBLESTONE_WALL);
+                        entries.add(ModBlocks.ICED_STONE_BRICKS);
+                        entries.add(ModBlocks.ICED_STONE_BRICKS_SLAB);
+                        entries.add(ModBlocks.ICED_STONE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.ICED_STONE_BRICKS_WALL);
+                        entries.add(ModBlocks.ICED_CRACKED_STONE_BRICKS);
+                        entries.add(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB);
+                        entries.add(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.ICED_CRACKED_STONE_BRICKS_WALL);
+                        entries.add(ModBlocks.ICED_CHISELED_STONE_BRICKS);
+                        entries.add(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB);
+                        entries.add(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL);
 
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
                         entries.add(ModBlocks.MOLD_BLOCK);
                         entries.add(ModBlocks.SPIDER_SILK_BLOCK);
-                        entries.add(ModBlocks.RED_COAL_BLOCK);
 
                         entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.SIMULATION_TELEPORTER);

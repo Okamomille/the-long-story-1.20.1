@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "thelongstory:iced_stone_wall",
+    "thelongstory:iced_cobblestone_wall",
+    "thelongstory:iced_cracked_stone_bricks_wall",
+    "thelongstory:iced_chiseled_stone_bricks_wall",
+    "thelongstory:iced_stone_bricks_wall"
+  ]
+}

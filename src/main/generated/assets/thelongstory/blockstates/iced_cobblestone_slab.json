@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelongstory:block/iced_cobblestone_slab"
+    },
+    "type=double": {
+      "model": "thelongstory:block/iced_cobblestone"
+    },
+    "type=top": {
+      "model": "thelongstory:block/iced_cobblestone_slab_top"
+    }
+  }
+}
