@@ -247,15 +247,18 @@
 
 
 
+  "death.attack.crystalized": "%1$s has been crystalized",
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",
 
   "effect.thelongstory.infected": "Infected",
+  "effect.thelongstory.crystalized": "Crystalized",
 
   "entity.thelongstory.trepasseur": "a Trepasseur",
   "entity.thelongstory.tickeler": "a Tickeler",
   "entity.thelongstory.crawler": "a Crawler",
   "entity.thelongstory.tooki": "a Tooki",
+  "entity.thelongstory.cowsmic": "a Cowsmic",
 
 
 

@@ -13,24 +13,31 @@ import net.okamiz.thelongstory.TheLongStory;
 public class ModEffects {
 
     public static StatusEffect INFECTED;
+    public static StatusEffect CRYSTALIZED;
 
-    public static StatusEffect registerStatusEffect(String name){
+    public static StatusEffect registerInfectedEffect(String name){
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(TheLongStory.MOD_ID, name),
+
                 new InfectedEffect(StatusEffectCategory.HARMFUL, 5959114)
                         .addAttributeModifier(
                                 EntityAttributes.GENERIC_MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.05F,
                                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
                         .addAttributeModifier(
                                 EntityAttributes.GENERIC_MAX_HEALTH, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.10F,
-                                EntityAttributeModifier.Operation.MULTIPLY_TOTAL)
+                                EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+    }
 
-                                        );
+    public static StatusEffect registerCrystalizedEffect(String name){
+        return Registry.register(Registries.STATUS_EFFECT, new Identifier(TheLongStory.MOD_ID, name),
+
+                new CrystalizedEffect(StatusEffectCategory.HARMFUL, 5959114));
     }
 
     public static void registerEffects(){
 
         TheLongStory.LOGGER.info("Registering Effects for " + TheLongStory.MOD_ID);
 
-        INFECTED = registerStatusEffect("infected");
+        INFECTED = registerInfectedEffect("infected");
+        CRYSTALIZED = registerCrystalizedEffect("crystalized");
     }
 }

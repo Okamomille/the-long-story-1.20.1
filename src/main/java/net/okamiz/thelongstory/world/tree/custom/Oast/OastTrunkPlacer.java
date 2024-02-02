@@ -79,45 +79,6 @@ public class OastTrunkPlacer extends TrunkPlacer {
                         .get(random, startPos.up(height_-distance).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
             }
 
-
-
-
-
-
-
-
-            /*
-            if(i % 2 == 0 && random.nextBoolean()){
-                if(random.nextFloat() > 0.25f){
-                    for(int x = 1; x <= 3; x++){
-                        replacer.accept(startPos.up(i).offset(Direction.NORTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                                .get(random, startPos.up(i).offset(Direction.NORTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                    }
-                }
-
-                if(random.nextFloat() > 0.25f){
-                    for(int x = 1; x <= 3; x++){
-                        replacer.accept(startPos.up(i).offset(Direction.SOUTH, x), (BlockState) Function.identity().apply(config.trunkProvider
-                                .get(random, startPos.up(i).offset(Direction.SOUTH, x)).with(PillarBlock.AXIS, Direction.Axis.Z)));
-                    }
-                }
-
-                if(random.nextFloat() > 0.25f){
-                    for(int x = 1; x <= 3; x++){
-                        replacer.accept(startPos.up(i).offset(Direction.EAST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                                .get(random, startPos.up(i).offset(Direction.EAST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                    }
-                }
-
-                if(random.nextFloat() > 0.25f){
-                    for(int x = 1; x <= 3; x++){
-                        replacer.accept(startPos.up(i).offset(Direction.WEST, x), (BlockState) Function.identity().apply(config.trunkProvider
-                                .get(random, startPos.up(i).offset(Direction.WEST, x)).with(PillarBlock.AXIS, Direction.Axis.X)));
-                    }
-                }
-            }
-            */
-
         }
 
 

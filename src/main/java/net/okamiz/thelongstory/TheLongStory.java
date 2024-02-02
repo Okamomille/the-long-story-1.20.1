@@ -16,6 +16,7 @@ import net.okamiz.thelongstory.entity.custom.CrawlerEntity;
 import net.okamiz.thelongstory.entity.custom.TickelerEntity;
 import net.okamiz.thelongstory.entity.custom.TrepasseurEntity;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.event.EventRegister;
 import net.okamiz.thelongstory.item.ModFuelRegistry;
 import net.okamiz.thelongstory.item.ModItemGroups;
 import net.okamiz.thelongstory.item.ModItems;
@@ -56,6 +57,7 @@ public class TheLongStory implements ModInitializer {
 		ModEntitiesAttributes.registerEntitiesAttributes();
 		ModParticles.registerParticles();
 		ModSounds.registerSounds();
+		EventRegister.registerEvents();
 
 		ModStrippableBlocks.registerStrippableBlocks();
 		ModFlammableBlocks.registerModFlammableBlocks();
