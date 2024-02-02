@@ -117,7 +117,7 @@ public class ModItems {
             new SpawnEggItem(ModEntities.TOOKI, 12424932,7356576, new FabricItemSettings()));
 
     public static final Item COWSMIC_SPAWN_EGG = registerItem("cowsmic_spawn_egg",
-            new SpawnEggItem(ModEntities.COWSMIC, 12424932,7356576, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.COWSMIC, 15500214,16777215, new FabricItemSettings()));
 
 
 

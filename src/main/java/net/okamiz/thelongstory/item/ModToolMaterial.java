@@ -12,7 +12,7 @@ public enum ModToolMaterial implements ToolMaterial {
     THESTONE(2, 1631, 7.5f, 3.0f, 17, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT)),
     GREEN_SHARD(2, 131, 10f, 3.7f, 22, () -> Ingredient.ofItems(ModItems.GREEN_SHARD)),
     IMPURE_ZAROSITE(MiningLevels.DIAMOND, 1461, 8.5F, 3.2F, 11, () -> Ingredient.ofItems(ModItems.IMPURE_ZAROSITE_INGOT)),
-    ZAROSITE(MiningLevels.DIAMOND, 2130, 9.5F, 3.7F, 13, () -> Ingredient.ofItems(ModItems.ZAROSITE_GEMSTONE));
+    ZAROSITE(MiningLevels.NETHERITE, 2130, 9.5F, 3.7F, 13, () -> Ingredient.ofItems(ModItems.ZAROSITE_GEMSTONE));
 
 
     private final int miningLevel;
