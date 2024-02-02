@@ -26,15 +26,6 @@ public class AttackEntityHandler implements AttackEntityCallback {
     public ActionResult interact(PlayerEntity player, World world, Hand hand, Entity entity, @Nullable EntityHitResult hitResult) {
 
 
-
-        if(player.getMainHandStack().isOf(ModItems.ZAROSITE_SWORD) && !world.isClient()){
-            if (entity instanceof LivingEntity livingEntity){
-                livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.CRYSTALIZED), player);
-            }
-        }
-
-
-
         return ActionResult.PASS;
     }
 }

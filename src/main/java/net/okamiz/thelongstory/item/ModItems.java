@@ -171,7 +171,7 @@ public class ModItems {
     public static final Item ZAROSITE_HOE = registerItem("zarosite_hoe",
             new HoeItem(ModToolMaterial.ZAROSITE, -3, -1.0f, new FabricItemSettings().maxCount(1)));
     public static final Item ZAROSITE_SWORD = registerItem("zarosite_sword",
-            new SwordItem(ModToolMaterial.ZAROSITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+            new ZarositeSwordItem(ModToolMaterial.ZAROSITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
 
 
     //ARMOR ITEMS -----------------

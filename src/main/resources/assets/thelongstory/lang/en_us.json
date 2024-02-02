@@ -230,6 +230,7 @@
 
 
 
+  "tooltip.thelongstory.zarosite_sword" : "§7This sword has been created from toxic crystals. When you attack a mod, it will have the crystallized effect and take damages.",
   "tooltip.thelongstory.power_star" : "§7This is the star of Power, needed to go deeper in the science of life.",
   "tooltip.thelongstory.soul_container" : "§7This container can capture a soul and use it's essence. \nRight click on a mob who's §n§l§cunder 15HP §r§7to capture it.",
   "tooltip.thelongstory.soul_container_full" : "§o§7Is obtained by using the Soul container.",
@@ -247,12 +248,12 @@
 
 
 
-  "death.attack.crystalized": "%1$s has been crystalized",
+  "death.attack.crystallized": "%1$s has been crystallized",
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",
 
   "effect.thelongstory.infected": "Infected",
-  "effect.thelongstory.crystalized": "Crystalized",
+  "effect.thelongstory.crystallized": "Crystallized",
 
   "entity.thelongstory.trepasseur": "a Trepasseur",
   "entity.thelongstory.tickeler": "a Tickeler",

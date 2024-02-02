@@ -27,10 +27,10 @@ public class ModEffects {
                                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
     }
 
-    public static StatusEffect registerCrystalizedEffect(String name){
+    public static StatusEffect registerCrystallizedEffect(String name){
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(TheLongStory.MOD_ID, name),
 
-                new CrystalizedEffect(StatusEffectCategory.HARMFUL, 5959114));
+                new CrystallizedEffect(StatusEffectCategory.HARMFUL, 7356576));
     }
 
     public static void registerEffects(){
@@ -38,6 +38,6 @@ public class ModEffects {
         TheLongStory.LOGGER.info("Registering Effects for " + TheLongStory.MOD_ID);
 
         INFECTED = registerInfectedEffect("infected");
-        CRYSTALIZED = registerCrystalizedEffect("crystalized");
+        CRYSTALIZED = registerCrystallizedEffect("crystallized");
     }
 }

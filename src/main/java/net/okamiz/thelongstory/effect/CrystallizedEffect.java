@@ -1,16 +1,13 @@
 package net.okamiz.thelongstory.effect;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.AttributeContainer;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.okamiz.thelongstory.util.ModDamageTypes;
 
-public class CrystalizedEffect extends StatusEffect {
+public class CrystallizedEffect extends StatusEffect {
 
-    public CrystalizedEffect(StatusEffectCategory category, int color) {
+    public CrystallizedEffect(StatusEffectCategory category, int color) {
         super(category, color);
     }
 
@@ -18,7 +15,7 @@ public class CrystalizedEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        entity.damage(ModDamageTypes.of(entity.getWorld(), ModDamageTypes.CRYSTALIZED), 1.0F);
+        entity.damage(ModDamageTypes.of(entity.getWorld(), ModDamageTypes.CRYSTALLIZED), 1.0F);
         super.applyUpdateEffect(entity, amplifier);
     }
 
