@@ -29,6 +29,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
                 .add(ModBlocks.IMPURE_ZAROSITE_ORE);
 
+        getOrCreateTagBuilder(ModTags.Blocks.DEEP_ICE_REPLACABLES)
+                .add(ModBlocks.DEEP_ICE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)

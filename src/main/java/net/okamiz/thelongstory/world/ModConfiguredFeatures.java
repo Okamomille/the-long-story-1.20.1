@@ -20,6 +20,7 @@ import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.util.ModTags;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricFoliagePlacer;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricTrunkPlacer;
 import net.okamiz.thelongstory.world.tree.custom.Oast.OastFoliagePlacer;
@@ -33,6 +34,7 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> THESTONE_ORE_KEY = registryKey("thestone_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> IMPURE_ZAROSITE_ORE_KEY = registryKey("impure_zarosite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEEP_ICE_ZAROSITE_ORE_KEY = registryKey("deep_ice_zarosite_ore");
 
 
     public static final RegistryKey<ConfiguredFeature<?,?>> EGRORIC_KEY = registryKey("egroric");
@@ -52,6 +54,7 @@ public class ModConfiguredFeatures {
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        RuleTest deepIceReplacables = new TagMatchRuleTest(ModTags.Blocks.DEEP_ICE_REPLACABLES);
 
 
         List<OreFeatureConfig.Target> overworldThestoneOres =
@@ -62,9 +65,14 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.IMPURE_ZAROSITE_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> simulationZarositeOre =
+                List.of(OreFeatureConfig.createTarget(deepIceReplacables, ModBlocks.DEEP_ICE_ZAROSITE_ORE.getDefaultState()));
+
 
         register(context, THESTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldThestoneOres, 4));
         register(context, IMPURE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldImpureZarositeOres, 4));
+
+        register(context, DEEP_ICE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationZarositeOre, 4));
 
 
         register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(64,
