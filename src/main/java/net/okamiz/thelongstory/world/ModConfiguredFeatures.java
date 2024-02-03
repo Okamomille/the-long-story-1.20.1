@@ -80,8 +80,6 @@ public class ModConfiguredFeatures {
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_OSPET)))));
 
 
-
-
         register(context, EGRORIC_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.EGRORIC_LOG),
                 new EgroricTrunkPlacer(5,6,4),

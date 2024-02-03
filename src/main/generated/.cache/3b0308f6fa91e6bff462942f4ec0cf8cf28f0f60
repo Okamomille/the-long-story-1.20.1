@@ -1,4 +1,4 @@
-// 1.20.2	2024-02-02T14:11:54.8046596	The Long Story/World Gen
+// 1.20.2	2024-02-02T18:44:42.293441	The Long Story/World Gen
 41e041796472bd0261fe217285b8e1718935e376 data\thelongstory\worldgen\biome\golden_lands.json
 1c41b102da1e97a4466acae9996ba32ca8d96f2b data\thelongstory\worldgen\biome\forest_of_melody.json
 103c3b79caf6fad9f7f6ec3b1d3d3c2096f3f975 data\thelongstory\worldgen\configured_feature\sephin.json
@@ -22,5 +22,5 @@ bc45c7faf138e6a9f099f1753b2c24e0f540b28e data\thelongstory\worldgen\placed_featu
 6f83f3e115a230d68bac0216c08f16418233e117 data\thelongstory\worldgen\biome\snow_forest.json
 cefc23cd7c9cd46d1c21a486c33350c6a920953d data\thelongstory\worldgen\placed_feature\impure_zarosite_ore_placed.json
 b7faacb80f6c42999ef710abb98d7595c1997e23 data\thelongstory\worldgen\configured_feature\torn_bush_key.json
-0ef3570c4480fbe520ceb11fe4d0599c4b8061ac data\thelongstory\worldgen\placed_feature\thestone_ore_placed.json
 97fdfab0d3d36ad74764cdc00a4936781e5cc12d data\thelongstory\worldgen\placed_feature\blue_ospet_placed.json
+0ef3570c4480fbe520ceb11fe4d0599c4b8061ac data\thelongstory\worldgen\placed_feature\thestone_ore_placed.json

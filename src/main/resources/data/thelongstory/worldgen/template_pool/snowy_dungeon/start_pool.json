@@ -1,0 +1,31 @@
+{
+
+
+  "name": "thelongstory:snowy_dungeon/start_pool",
+
+
+  "fallback": "minecraft:empty",
+
+
+  "elements": [
+    {
+
+
+      "weight": 2,
+      "element": {
+
+
+        "location": "thelongstory:snowy_dungeon/snowy_dungeon_treasure",
+
+
+        "processors": "minecraft:empty",
+
+
+        "projection": "rigid",
+
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

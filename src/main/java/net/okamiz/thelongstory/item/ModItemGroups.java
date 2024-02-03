@@ -107,6 +107,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RED_COAL);
                         entries.add(ModBlocks.RED_COAL_BLOCK);
                         entries.add(ModBlocks.DEEP_ICE);
+                        entries.add(ModBlocks.FROSTED_ICE);
 
                         entries.add(ModBlocks.ICED_STONE);
                         entries.add(ModBlocks.ICED_STONE_SLAB);
