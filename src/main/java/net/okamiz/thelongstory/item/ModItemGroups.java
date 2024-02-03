@@ -16,95 +16,36 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.modgroup"))
                     .icon(() -> new ItemStack(ModItems.BONE_FRAGMENTS)).entries((displayContext, entries) -> {
 
-                        entries.add(ModItems.INFESTED_FLESH);
-                        entries.add(ModItems.BONE_FRAGMENTS);
-                        entries.add(ModItems.CRUSHED_BONES);
-                        entries.add(ModItems.BLOOD_BOTTLE);
-                        entries.add(ModItems.SPIDER_SILK);
 
-                        entries.add(ModItems.WOODEN_PLATE);
-                        entries.add(ModItems.IRON_PLATE);
-                        entries.add(ModItems.DIAMOND_PLATE);
-                        entries.add(ModItems.EMERALD_PLATE);
-                        entries.add(ModItems.NETHERITE_PLATE);
-
-                        entries.add(ModItems.DIMENSION_PATTERN);
-                        entries.add(ModItems.COMMAND_SYSTEM);
-                        entries.add(ModItems.POWER_MODULE);
-                        entries.add(ModItems.TELEPORTATION_MODULE);
-
-                        entries.add(ModItems.POTION_RECEPTACLE);
-                        entries.add(ModItems.POTION_CORE);
-
-                        entries.add(ModItems.TELEPORTATION_REMOTE);
-
-                        entries.add(ModItems.POWER_STAR);
-                        entries.add(ModItems.SOUL_CONTAINER);
-                        entries.add(ModItems.SOUL_CONTAINER_REGENERATION);
-                        entries.add(ModItems.SOUL_CONTAINER_FIRE_RESISTANCE);
-                        entries.add(ModItems.SOUL_CONTAINER_JUMP_BOOST);
-                        entries.add(ModItems.SOUL_CONTAINER_DOLPHIN_GRACE);
-                        entries.add(ModItems.SOUL_CONTAINER_NIGHT_VISION);
-                        entries.add(ModItems.SOUL_CONTAINER_RESISTANCE);
-
-                        entries.add(ModItems.THESTONE_DUST);
+                        entries.add(ModItems.RED_COAL);
                         entries.add(ModItems.THESTONE_INGOT);
+                        entries.add(ModItems.THESTONE_DUST);
                         entries.add(ModItems.THESTONE_NUGGET);
 
                         entries.add(ModItems.RAW_IMPURE_ZAROSITE);
                         entries.add(ModItems.IMPURE_ZAROSITE_INGOT);
 
-                        entries.add(ModItems.ZAROSITE_SHARD);
                         entries.add(ModItems.ZAROSITE_GEMSTONE);
+                        entries.add(ModItems.ZAROSITE_SHARD);
 
                         entries.add(ModItems.GREEN_SHARD);
 
-                        entries.add(ModItems.THESTONE_SWORD);
-                        entries.add(ModItems.THESTONE_PICKAXE);
-                        entries.add(ModItems.THESTONE_AXE);
-                        entries.add(ModItems.THESTONE_SHOVEL);
-                        entries.add(ModItems.THESTONE_HOE);
+                        entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.SIMULATION_TELEPORTER);
 
-                        entries.add(ModItems.GREEN_SHARD_SWORD);
-                        entries.add(ModItems.GREEN_SHARD_PICKAXE);
-                        entries.add(ModItems.GREEN_SHARD_AXE);
-                        entries.add(ModItems.GREEN_SHARD_SHOVEL);
-                        entries.add(ModItems.GREEN_SHARD_HOE);
+                        entries.add(ModBlocks.THESTONE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
 
-                        entries.add(ModItems.IMPURE_ZAROSITE_SWORD);
-                        entries.add(ModItems.IMPURE_ZAROSITE_PICKAXE);
-                        entries.add(ModItems.IMPURE_ZAROSITE_AXE);
-                        entries.add(ModItems.IMPURE_ZAROSITE_SHOVEL);
-                        entries.add(ModItems.IMPURE_ZAROSITE_HOE);
+                        entries.add(ModBlocks.IMPURE_ZAROSITE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
+                        entries.add(ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
-                        entries.add(ModItems.ZAROSITE_SWORD);
-                        entries.add(ModItems.ZAROSITE_PICKAXE);
-                        entries.add(ModItems.ZAROSITE_AXE);
-                        entries.add(ModItems.ZAROSITE_SHOVEL);
-                        entries.add(ModItems.ZAROSITE_HOE);
+                        entries.add(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
+                        entries.add(ModBlocks.ZAROSITE_BLOCK);
 
-
-                        entries.add(ModItems.THESTONE_HELMET);
-                        entries.add(ModItems.THESTONE_CHESTPLATE);
-                        entries.add(ModItems.THESTONE_LEGGINGS);
-                        entries.add(ModItems.THESTONE_BOOTS);
-
-                        entries.add(ModItems.GREEN_SHARD_HELMET);
-                        entries.add(ModItems.GREEN_SHARD_CHESTPLATE);
-                        entries.add(ModItems.GREEN_SHARD_LEGGINGS);
-                        entries.add(ModItems.GREEN_SHARD_BOOTS);
-
-                        entries.add(ModItems.IMPURE_ZAROSITE_HELMET);
-                        entries.add(ModItems.IMPURE_ZAROSITE_CHESTPLATE);
-                        entries.add(ModItems.IMPURE_ZAROSITE_LEGGINGS);
-                        entries.add(ModItems.IMPURE_ZAROSITE_BOOTS);
-
-                        entries.add(ModItems.ZAROSITE_HELMET);
-                        entries.add(ModItems.ZAROSITE_CHESTPLATE);
-                        entries.add(ModItems.ZAROSITE_LEGGINGS);
-                        entries.add(ModItems.ZAROSITE_BOOTS);
-
-                        entries.add(ModItems.RED_COAL);
+                        entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
+                        entries.add(ModBlocks.MOLD_BLOCK);
+                        entries.add(ModBlocks.SPIDER_SILK_BLOCK);
                         entries.add(ModBlocks.RED_COAL_BLOCK);
                         entries.add(ModBlocks.DEEP_ICE);
                         entries.add(ModBlocks.FROSTED_ICE);
@@ -133,23 +74,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB);
                         entries.add(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS);
                         entries.add(ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL);
-
-                        entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
-                        entries.add(ModBlocks.MOLD_BLOCK);
-                        entries.add(ModBlocks.SPIDER_SILK_BLOCK);
-
-                        entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
-                        entries.add(ModBlocks.SIMULATION_TELEPORTER);
-
-                        entries.add(ModBlocks.THESTONE_ORE);
-                        entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
-
-                        entries.add(ModBlocks.IMPURE_ZAROSITE_ORE);
-                        entries.add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
-                        entries.add(ModBlocks.IMPURE_ZAROSITE_BLOCK);
-
-                        entries.add(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
-                        entries.add(ModBlocks.ZAROSITE_BLOCK);
 
                         //EGRORIC
                         entries.add(ModBlocks.EGRORIC_SAPLING);
@@ -228,6 +152,110 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GREEN_OSPET);
                         entries.add(ModBlocks.YELLOW_OSPET);
 
+
+                    }).build());
+
+
+    public static final ItemGroup TOOLS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TheLongStory.MOD_ID, "toolsgroup"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.toolsgroup"))
+                    .icon(() -> new ItemStack(ModItems.ZAROSITE_SWORD)).entries((displayContext, entries) -> {
+
+
+                        //SWORDS
+                        entries.add(ModItems.THESTONE_SWORD);
+                        entries.add(ModItems.GREEN_SHARD_SWORD);
+                        entries.add(ModItems.IMPURE_ZAROSITE_SWORD);
+                        entries.add(ModItems.ZAROSITE_SWORD);
+
+
+                        //PICKAXES
+                        entries.add(ModItems.THESTONE_PICKAXE);
+                        entries.add(ModItems.GREEN_SHARD_PICKAXE);
+                        entries.add(ModItems.IMPURE_ZAROSITE_PICKAXE);
+                        entries.add(ModItems.ZAROSITE_PICKAXE);
+
+                        //AXES
+                        entries.add(ModItems.THESTONE_AXE);
+                        entries.add(ModItems.GREEN_SHARD_AXE);
+                        entries.add(ModItems.IMPURE_ZAROSITE_AXE);
+                        entries.add(ModItems.ZAROSITE_AXE);
+
+                        //SHOVELS
+                        entries.add(ModItems.THESTONE_SHOVEL);
+                        entries.add(ModItems.GREEN_SHARD_SHOVEL);
+                        entries.add(ModItems.IMPURE_ZAROSITE_SHOVEL);
+                        entries.add(ModItems.ZAROSITE_SHOVEL);
+
+                        //HOES
+                        entries.add(ModItems.THESTONE_HOE);
+                        entries.add(ModItems.GREEN_SHARD_HOE);
+                        entries.add(ModItems.IMPURE_ZAROSITE_HOE);
+                        entries.add(ModItems.ZAROSITE_HOE);
+
+                        //ARMORS
+                        entries.add(ModItems.THESTONE_HELMET);
+                        entries.add(ModItems.THESTONE_CHESTPLATE);
+                        entries.add(ModItems.THESTONE_LEGGINGS);
+                        entries.add(ModItems.THESTONE_BOOTS);
+
+                        entries.add(ModItems.GREEN_SHARD_HELMET);
+                        entries.add(ModItems.GREEN_SHARD_CHESTPLATE);
+                        entries.add(ModItems.GREEN_SHARD_LEGGINGS);
+                        entries.add(ModItems.GREEN_SHARD_BOOTS);
+
+                        entries.add(ModItems.IMPURE_ZAROSITE_HELMET);
+                        entries.add(ModItems.IMPURE_ZAROSITE_CHESTPLATE);
+                        entries.add(ModItems.IMPURE_ZAROSITE_LEGGINGS);
+                        entries.add(ModItems.IMPURE_ZAROSITE_BOOTS);
+
+                        entries.add(ModItems.ZAROSITE_HELMET);
+                        entries.add(ModItems.ZAROSITE_CHESTPLATE);
+                        entries.add(ModItems.ZAROSITE_LEGGINGS);
+                        entries.add(ModItems.ZAROSITE_BOOTS);
+
+
+
+                    }).build());
+
+
+
+    public static final ItemGroup MISC_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TheLongStory.MOD_ID, "miscgroup"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.miscgroup"))
+                    .icon(() -> new ItemStack(ModItems.TELEPORTATION_REMOTE)).entries((displayContext, entries) -> {
+
+                        entries.add(ModItems.INFESTED_FLESH);
+                        entries.add(ModItems.BONE_FRAGMENTS);
+                        entries.add(ModItems.CRUSHED_BONES);
+                        entries.add(ModItems.BLOOD_BOTTLE);
+                        entries.add(ModItems.SPIDER_SILK);
+
+                        entries.add(ModItems.WOODEN_PLATE);
+                        entries.add(ModItems.IRON_PLATE);
+                        entries.add(ModItems.DIAMOND_PLATE);
+                        entries.add(ModItems.EMERALD_PLATE);
+                        entries.add(ModItems.NETHERITE_PLATE);
+
+                        entries.add(ModItems.DIMENSION_PATTERN);
+                        entries.add(ModItems.COMMAND_SYSTEM);
+                        entries.add(ModItems.POWER_MODULE);
+                        entries.add(ModItems.TELEPORTATION_MODULE);
+
+                        entries.add(ModItems.POTION_RECEPTACLE);
+                        entries.add(ModItems.POTION_CORE);
+
+                        entries.add(ModItems.TELEPORTATION_REMOTE);
+
+                        entries.add(ModItems.POWER_STAR);
+                        entries.add(ModItems.SOUL_CONTAINER);
+                        entries.add(ModItems.SOUL_CONTAINER_REGENERATION);
+                        entries.add(ModItems.SOUL_CONTAINER_FIRE_RESISTANCE);
+                        entries.add(ModItems.SOUL_CONTAINER_JUMP_BOOST);
+                        entries.add(ModItems.SOUL_CONTAINER_DOLPHIN_GRACE);
+                        entries.add(ModItems.SOUL_CONTAINER_NIGHT_VISION);
+                        entries.add(ModItems.SOUL_CONTAINER_RESISTANCE);
+
                         entries.add(ModItems.TREPASSEUR_SPAWN_EGG);
                         entries.add(ModItems.TICKELER_SPAWN_EGG);
                         entries.add(ModItems.CRAWLER_SPAWN_EGG);
@@ -237,7 +265,9 @@ public class ModItemGroups {
 
                     }).build());
 
-    public static final ItemGroup FOOD_GROUP = Registry.register(Registries.ITEM_GROUP,
+
+
+                        public static final ItemGroup FOOD_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TheLongStory.MOD_ID, "foodgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.foodgroup"))
                     .icon(() -> new ItemStack(ModItems.REDSTONE_APPLE)).entries((displayContext, entries) -> {

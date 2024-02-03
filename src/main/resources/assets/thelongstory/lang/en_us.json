@@ -243,8 +243,10 @@
 
 
 
-  "itemgroup.modgroup" : "TLS Tab",
-  "itemgroup.foodgroup" : "TLS Food Tab",
+  "itemgroup.modgroup" : "TLS Main",
+  "itemgroup.foodgroup" : "TLS Food",
+  "itemgroup.toolsgroup" : "TLS Tools & Combat",
+  "itemgroup.miscgroup" : "TLS Misc",
 
 
 
