@@ -1,4 +1,4 @@
-// 1.20.2	2024-02-03T13:24:55.819881	The Long Story/Recipes
+// 1.20.2	2024-02-04T21:22:38.2833582	The Long Story/Recipes
 aee6673e7f62f37a93796729bc6a019eceabde82 data\thelongstory\advancements\recipes\misc\impure_zarosite_ingot.json
 88d93431cb89013a9743d7703164c7f642a345ae data\thelongstory\advancements\recipes\misc\thestone_dust.json
 a50fd2ce53c142644a5be00aea2be824f9bd4d04 data\thelongstory\recipes\oast_planks_from_stripped_wood.json
@@ -289,5 +289,5 @@ a07d087d7fb7a12e88c3ee38ab0fd41f023529ea data\thelongstory\recipes\thestone_hoe_
 a35ce296d3ca2e953a279b958018597570d6518d data\thelongstory\recipes\oast_fence.json
 ac1997068cfa20b4f4ed26631aa078c9bb240b82 data\thelongstory\recipes\thestone_boots.json
 be2b8db945b91af2f56dedf8ab58a6a31d500c7d data\thelongstory\advancements\recipes\combat\zarosite_leggings.json
-5ff283b296e7cb13a1c5d5d011ef948a9c49a466 data\thelongstory\advancements\recipes\misc\thestone_dust_from_blasting_thestone_ore.json
 409aafbe51278e4adda56c9216e58eefcd183b3c data\thelongstory\recipes\thestone_dust_from_smelting_deepslate_thestone_ore.json
+5ff283b296e7cb13a1c5d5d011ef948a9c49a466 data\thelongstory\advancements\recipes\misc\thestone_dust_from_blasting_thestone_ore.json

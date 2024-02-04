@@ -1,0 +1,6 @@
+{
+    "parent": "thelongstory:item/impure_zarosite_bow",
+    "textures": {
+        "layer0": "thelongstory:item/impure_zarosite_bow_pulling_2"
+    }
+}

@@ -160,6 +160,9 @@ public class ModItems {
     public static final Item IMPURE_ZAROSITE_SWORD = registerItem("impure_zarosite_sword",
             new SwordItem(ModToolMaterial.IMPURE_ZAROSITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
 
+    public static final Item IMPURE_ZAROSITE_BOW = registerItem("impure_zarosite_bow",
+            new BowItem(new FabricItemSettings().maxCount(1).maxDamage(521)));
+
 
 
     public static final Item ZAROSITE_PICKAXE = registerItem("zarosite_pickaxe",

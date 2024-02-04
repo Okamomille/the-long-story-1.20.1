@@ -472,6 +472,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_SWORD)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_BOW, 1)
+                .pattern(" OS")
+                .pattern("X S")
+                .pattern(" OS")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .input('S', Items.STRING)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IMPURE_ZAROSITE_BOW)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.IMPURE_ZAROSITE_BOW, 1)
+                .pattern("SO ")
+                .pattern("S X")
+                .pattern("SO ")
+                .input('X', ModItems.IMPURE_ZAROSITE_INGOT)
+                .input('O', Items.STICK)
+                .input('S', Items.STRING)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT),conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter, new Identifier("impure_zarosite_bow_reverse"));
+
 
         // ZAROSITE
 

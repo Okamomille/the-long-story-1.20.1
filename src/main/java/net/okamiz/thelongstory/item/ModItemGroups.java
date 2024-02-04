@@ -193,6 +193,9 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPURE_ZAROSITE_HOE);
                         entries.add(ModItems.ZAROSITE_HOE);
 
+                        //HOES
+                        entries.add(ModItems.IMPURE_ZAROSITE_BOW);
+
                         //ARMORS
                         entries.add(ModItems.THESTONE_HELMET);
                         entries.add(ModItems.THESTONE_CHESTPLATE);

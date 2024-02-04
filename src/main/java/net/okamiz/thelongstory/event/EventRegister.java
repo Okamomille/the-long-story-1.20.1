@@ -11,7 +11,7 @@ public class EventRegister {
 
 
 
-        AttackEntityHandler.EVENT.register(new AttackEntityHandler())
+        ModEvent.EVENT.register(new ModEvent())
         ;
     }
 }
