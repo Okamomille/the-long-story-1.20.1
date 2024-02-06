@@ -85,7 +85,7 @@ public class ModModelProvider extends FabricModelProvider {
         egroricPool.fenceGate(ModBlocks.EGRORIC_FENCE_GATE);
 
         blockStateModelGenerator.registerDoor(ModBlocks.EGRORIC_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.EGRORIC_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.EGRORIC_TRAPDOOR);
 
 
         //OAST MODELS ------------------------------------
@@ -103,7 +103,7 @@ public class ModModelProvider extends FabricModelProvider {
         oastPool.fenceGate(ModBlocks.OAST_FENCE_GATE);
 
         blockStateModelGenerator.registerDoor(ModBlocks.OAST_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.OAST_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.OAST_TRAPDOOR);
 
         //SEPHIN MODELS ------------------------------------
         blockStateModelGenerator.registerLog(ModBlocks.SEPHIN_LOG).log(ModBlocks.SEPHIN_LOG).wood(ModBlocks.SEPHIN_WOOD);
@@ -120,7 +120,7 @@ public class ModModelProvider extends FabricModelProvider {
         sephinPool.fenceGate(ModBlocks.SEPHIN_FENCE_GATE);
 
         blockStateModelGenerator.registerDoor(ModBlocks.SEPHIN_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.SEPHIN_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.SEPHIN_TRAPDOOR);
 
         //KIWI MODELS ------------------------------------
         blockStateModelGenerator.registerLog(ModBlocks.KIWI_LOG).log(ModBlocks.KIWI_LOG).wood(ModBlocks.KIWI_WOOD);
@@ -137,7 +137,7 @@ public class ModModelProvider extends FabricModelProvider {
         kiwiPool.fenceGate(ModBlocks.KIWI_FENCE_GATE);
 
         blockStateModelGenerator.registerDoor(ModBlocks.KIWI_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.KIWI_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.KIWI_TRAPDOOR);
 
 //--------------------------------------------------------------------------------------
 

@@ -9,6 +9,7 @@ import net.okamiz.thelongstory.particles.ModParticles;
 import net.okamiz.thelongstory.particles.TSLParticles.EgroricLeavesParticle;
 import net.okamiz.thelongstory.particles.TSLParticles.KiwiLeavesParticle;
 import net.okamiz.thelongstory.screen.ModScreenHandlers;
+import net.okamiz.thelongstory.screen.MaterialProcessorScreen;
 import net.okamiz.thelongstory.util.ModModelPredicateProvider;
 
 public class TheLongStoryClient implements ClientModInitializer {
@@ -27,6 +28,6 @@ public class TheLongStoryClient implements ClientModInitializer {
 
 
 
-        //HandledScreens.register(ModScreenHandlers.GREFFED_COMMAND_SYSTEM_SCREEN_HANDLER, GreffedCommandSystemScreen::new);
+        HandledScreens.register(ModScreenHandlers.MATERIAL_PROCESSOR_SCREEN_HANDLER, MaterialProcessorScreen::new);
     }
 }

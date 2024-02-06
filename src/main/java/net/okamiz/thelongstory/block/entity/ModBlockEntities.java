@@ -15,6 +15,11 @@ public class ModBlockEntities {
                     FabricBlockEntityTypeBuilder.create(GreffedCommandSystemBlockEntity::new,
                             ModBlocks.GREFFED_COMMAND_SYSTEM).build());
 
+    public static final BlockEntityType<MaterialProcessorBlockEntity> MATERIAL_PROCESSOR_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(TheLongStory.MOD_ID, "material_processor_be"),
+                    FabricBlockEntityTypeBuilder.create(MaterialProcessorBlockEntity::new,
+                            ModBlocks.MATERIAL_PROCESSOR).build());
+
     public static void registerBlockEntities(){
         TheLongStory.LOGGER.info("Registering BlockEntities for " + TheLongStory.MOD_ID);
     }

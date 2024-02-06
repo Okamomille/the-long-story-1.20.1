@@ -341,10 +341,13 @@ public class ModBlocks {
     // ADVANCED BLOCKS ------------------
 
     public static final Block GREFFED_COMMAND_SYSTEM = registerBlock("greffed_command_system",
-            new GreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+            new GreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
 
     public static final Block SIMULATION_TELEPORTER = registerBlock("simulation_teleporter",
             new SimulationTeleporterBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+
+    public static final Block MATERIAL_PROCESSOR = registerBlock("material_processor",
+            new MaterialProcessorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
 
 
