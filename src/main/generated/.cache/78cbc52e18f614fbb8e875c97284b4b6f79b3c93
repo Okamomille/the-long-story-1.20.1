@@ -1,4 +1,4 @@
-// 1.20.2	2024-02-07T12:30:12.4662986	The Long Story/Block Loot Tables
+// 1.20.2	2024-02-07T17:54:36.7848385	The Long Story/Block Loot Tables
 3c1e5398d28a02aa67b2aa655b498e41ee9070ab data\thelongstory\loot_tables\blocks\thestone_ore.json
 120b6c5be0b49f98da3a788132db3f0a4ac352cb data\thelongstory\loot_tables\blocks\kiwi_wood.json
 ccac9d34e2343df719232041a82e2f0f8f3a9ac1 data\thelongstory\loot_tables\blocks\egroric_button.json
@@ -43,8 +43,8 @@ b08ec201178d9108d1bfecfcec1a95bfab764965 data\thelongstory\loot_tables\blocks\po
 9df7f07c4b84f529f44dd9dc7c33e9976a303e3a data\thelongstory\loot_tables\blocks\sephin_door.json
 5871b69bd96a6b8ec7f49251145bad26476ad244 data\thelongstory\loot_tables\blocks\kiwi_stairs.json
 bcad02ba01379daadf35620c8f34d4250556bd1d data\thelongstory\loot_tables\blocks\kiwi_trapdoor.json
-730672fef4eaaaa9f362e4ca673643d6431f229a data\thelongstory\loot_tables\blocks\oast_planks.json
 2d7e3e35d059613dd24aa47092ce082a04b8c488 data\thelongstory\loot_tables\blocks\sephin_wood.json
+730672fef4eaaaa9f362e4ca673643d6431f229a data\thelongstory\loot_tables\blocks\oast_planks.json
 931d151e4acdd304ddb6ed3602b4f87a6e40974b data\thelongstory\loot_tables\blocks\oast_wood.json
 ff4912f9cc2be5de3ed6d5d1c847d019ca2da817 data\thelongstory\loot_tables\blocks\egroric_log.json
 a71482c0c25431625b8c5a5b722d711b85d5b9ff data\thelongstory\loot_tables\blocks\stripped_kiwi_log.json

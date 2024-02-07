@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "thelongstory:block/deepslate_pillar_all",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "thelongstory:block/deepslate_pillar_all"
+    },
+    "axis=z": {
+      "model": "thelongstory:block/deepslate_pillar_all",
+      "x": 90
+    }
+  }
+}
