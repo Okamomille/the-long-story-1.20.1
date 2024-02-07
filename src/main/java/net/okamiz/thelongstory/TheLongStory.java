@@ -25,6 +25,7 @@ import net.okamiz.thelongstory.item.ModFuelRegistry;
 import net.okamiz.thelongstory.item.ModItemGroups;
 import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.particles.ModParticles;
+import net.okamiz.thelongstory.recipe.ModRecipes;
 import net.okamiz.thelongstory.screen.ModScreenHandlers;
 import net.okamiz.thelongstory.sound.ModSounds;
 import net.okamiz.thelongstory.util.ModCustomTrades;
@@ -67,7 +68,7 @@ public class TheLongStory implements ModInitializer {
 		ModFlammableBlocks.registerModFlammableBlocks();
 
 		ModWorldGeneration.generateModWorldGen();
-
+		ModRecipes.registerRecipes();
 
 	}
 }

@@ -12,6 +12,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.datagen.recipe.MaterialProcessingRecipeBuilder;
 import net.okamiz.thelongstory.item.ModItems;
 
 import java.util.List;
@@ -1035,6 +1036,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.PINK_PHYGELUS)).criterion(FabricRecipeProvider.hasItem(Items.PINK_DYE),
                         FabricRecipeProvider.conditionsFromItem(Items.PINK_DYE))
                 .offerTo(exporter, new Identifier("yellow_dye_from_pink_phygelus"));
+
+
+            new MaterialProcessingRecipeBuilder(Items.COAL, ModItems.RED_COAL, 1)
+                    .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))
+                    .offerTo(exporter);
 
 
 

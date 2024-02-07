@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "has_coal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:coal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_coal"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

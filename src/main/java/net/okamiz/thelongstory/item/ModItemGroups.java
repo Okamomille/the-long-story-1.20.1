@@ -32,6 +32,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.SIMULATION_TELEPORTER);
+                        entries.add(ModBlocks.MATERIAL_PROCESSOR);
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
@@ -46,7 +47,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
                         entries.add(ModBlocks.MOLD_BLOCK);
                         entries.add(ModBlocks.SPIDER_SILK_BLOCK);
+                        entries.add(ModBlocks.DEEPSLATE_PILLAR);
                         entries.add(ModBlocks.RED_COAL_BLOCK);
+
+
                         entries.add(ModBlocks.DEEP_ICE);
                         entries.add(ModBlocks.FROSTED_ICE);
 

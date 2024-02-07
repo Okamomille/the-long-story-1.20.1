@@ -29,7 +29,10 @@ public class ModBlocks {
     public static final Block SPIDER_SILK_BLOCK = registerBlock("spider_silk_block",
             new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
 
-
+    public static final Block DEEPSLATE_PILLAR = registerBlock("deepslate_pillar",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_TILES)));
+    public static final Block DEEPSLATE_PILLAR_ALL = registerBlock("deepslate_pillar_all",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_TILES)));
 
     public static final Block DEEP_ICE = registerBlock("deep_ice",
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).sounds(BlockSoundGroup.GLASS)));

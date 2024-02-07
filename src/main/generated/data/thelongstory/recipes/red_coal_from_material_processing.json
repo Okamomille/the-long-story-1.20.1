@@ -1,0 +1,11 @@
+{
+  "type": "thelongstory:material_processing",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "output": {
+    "item": "thelongstory:red_coal"
+  }
+}

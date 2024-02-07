@@ -6,10 +6,12 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -18,8 +20,11 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.item.ModItems;
+import net.okamiz.thelongstory.recipe.MaterialProcessingRecipe;
 import net.okamiz.thelongstory.screen.MaterialProcessorScreenHandler;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class MaterialProcessorBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
 
@@ -86,13 +91,13 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
     protected void writeNbt(NbtCompound nbt) {
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, inventory);
-        nbt.putInt("material_processor.progress", progress);
+        nbt.putInt("gem_empowering_station.progress", progress);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         Inventories.readNbt(nbt, inventory);
-        progress = nbt.getInt("material_processor.progress");
+        progress = nbt.getInt("gem_empowering_station.progress");
         super.readNbt(nbt);
     }
 
@@ -111,9 +116,12 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
     }
 
     private void craftItem() {
+        Optional<RecipeEntry<MaterialProcessingRecipe>> recipe = getCurrentRecipe();
+
         this.removeStack(INPUT_SLOT, 1);
-        this.setStack(OUTPUT_SLOT, new ItemStack(ModItems.RED_COAL,
-                this.getStack(OUTPUT_SLOT).getCount() + 1));
+
+        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getResult(null).getItem(),
+                this.getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getResult(null).getCount()));
     }
 
     private void resetProgress() {
@@ -129,7 +137,32 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
     }
 
     private boolean hasRecipe() {
-        return this.getStack(INPUT_SLOT).getItem() == Items.COAL;
+        Optional<RecipeEntry<MaterialProcessingRecipe>> recipe = getCurrentRecipe();
+
+        if (recipe.isEmpty()) {
+            return false;
+        }
+        ItemStack output = recipe.get().value().getResult(null);
+
+        return canInsertAmountIntoOutputSlot(output.getCount())
+                && canInsertItemIntoOutputSlot(output);
+    }
+
+    private boolean canInsertItemIntoOutputSlot(ItemStack output) {
+        return this.getStack(OUTPUT_SLOT).isEmpty() || this.getStack(OUTPUT_SLOT).getItem() == output.getItem();
+    }
+
+    private boolean canInsertAmountIntoOutputSlot(int count) {
+        return this.getStack(OUTPUT_SLOT).getMaxCount() >= this.getStack(OUTPUT_SLOT).getCount() + count;
+    }
+
+    private Optional<RecipeEntry<MaterialProcessingRecipe>> getCurrentRecipe() {
+        SimpleInventory inventory = new SimpleInventory((this.size()));
+        for(int i = 0; i < this.size(); i++) {
+            inventory.setStack(i, this.getStack(i));
+        }
+
+        return this.getWorld().getRecipeManager().getFirstMatch(MaterialProcessingRecipe.Type.INSTANCE, inventory, this.getWorld());
     }
 
     private boolean canInsertIntoOutputSlot() {
