@@ -30,10 +30,6 @@ public class ModItemGroups {
 
                         entries.add(ModItems.GREEN_SHARD);
 
-                        entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
-                        entries.add(ModBlocks.SIMULATION_TELEPORTER);
-                        entries.add(ModBlocks.MATERIAL_PROCESSOR);
-
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
 
@@ -232,6 +228,15 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.miscgroup"))
                     .icon(() -> new ItemStack(ModItems.TELEPORTATION_REMOTE)).entries((displayContext, entries) -> {
 
+                        entries.add(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.BROKEN_SIMULATION_TELEPORTER);
+
+                        entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
+                        entries.add(ModBlocks.SIMULATION_TELEPORTER);
+                        entries.add(ModBlocks.MATERIAL_PROCESSOR);
+
+
+                        //ITEMS
                         entries.add(ModItems.INFESTED_FLESH);
                         entries.add(ModItems.BONE_FRAGMENTS);
                         entries.add(ModItems.CRUSHED_BONES);
@@ -252,6 +257,7 @@ public class ModItemGroups {
                         entries.add(ModItems.POTION_RECEPTACLE);
                         entries.add(ModItems.POTION_CORE);
 
+                        entries.add(ModItems.BROKEN_TELEPORTATION_REMOTE);
                         entries.add(ModItems.TELEPORTATION_REMOTE);
 
                         entries.add(ModItems.POWER_STAR);

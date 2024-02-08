@@ -15,6 +15,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.IntProperty;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -28,22 +29,28 @@ import net.minecraft.world.World;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.block.entity.custom.GreffedCommandSystemBlockEntity;
 import net.okamiz.thelongstory.item.ModItems;
+import net.okamiz.thelongstory.item.custom.SoulContainerFullItem;
+import net.okamiz.thelongstory.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Objects;
 
 public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockEntityProvider {
+    public static final IntProperty ON = IntProperty.of("power", 0, 6);
+
+
+
     private static final VoxelShape SHAPE = Block.createCuboidShape(0,0,0,16,16, 16);
-
-
-
     public GreffedCommandSystemBlock(Settings settings) {
         super(settings);
+        this.setDefaultState(this.getDefaultState().with(ON, 0));
     }
 
-
-
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(ON);
+    }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
@@ -77,8 +84,31 @@ public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockE
         if (!world.isClient) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
             if (blockEntity instanceof GreffedCommandSystemBlockEntity) {
+
                 GreffedCommandSystemBlockEntity greffedCommandSystemBlockEntity = (GreffedCommandSystemBlockEntity) blockEntity;
+
+                if(!((GreffedCommandSystemBlockEntity) blockEntity).isActive){
+
+
+                    Item mainHand = player.getMainHandStack().getItem();
+
+                    if (mainHand == ModItems.SOUL_CONTAINER_NIGHT_VISION){world.setBlockState(pos, state.with(ON, 6));}
+                    else if (mainHand == ModItems.SOUL_CONTAINER_RESISTANCE){world.setBlockState(pos, state.with(ON, 1));}
+                    else if (mainHand == ModItems.SOUL_CONTAINER_FIRE_RESISTANCE){world.setBlockState(pos, state.with(ON, 5));}
+                    else if (mainHand == ModItems.SOUL_CONTAINER_JUMP_BOOST){world.setBlockState(pos, state.with(ON, 3));}
+                    else if (mainHand == ModItems.SOUL_CONTAINER_DOLPHIN_GRACE){world.setBlockState(pos, state.with(ON, 4));}
+                    else if (mainHand == ModItems.SOUL_CONTAINER_REGENERATION){world.setBlockState(pos, state.with(ON, 2));}
+                        else{
+                            world.setBlockState(pos, state.with(ON, 0));
+                        }
+                }
+
+
                 greffedCommandSystemBlockEntity.useBlock(world, pos, state, player, hand); // Calling the useBlock method
+
+
+
+
 
 
             }
@@ -94,4 +124,7 @@ public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockE
         return validateTicker(type, ModBlockEntities.GREFFED_COMMAND_SYSTEM_BLOCK_ENTITY_BLOCK_ENTITY,
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
+
+
+
 }

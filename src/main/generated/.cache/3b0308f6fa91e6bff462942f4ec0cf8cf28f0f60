@@ -1,12 +1,12 @@
-// 1.20.2	2024-02-07T17:54:36.7732754	The Long Story/World Gen
+// 1.20.2	2024-02-08T01:34:23.5500588	The Long Story/World Gen
 41e041796472bd0261fe217285b8e1718935e376 data\thelongstory\worldgen\biome\golden_lands.json
 1c41b102da1e97a4466acae9996ba32ca8d96f2b data\thelongstory\worldgen\biome\forest_of_melody.json
 dcd66dea30047a7fe84be13700b2ad20a388796f data\thelongstory\worldgen\placed_feature\deep_ice_zarosite_ore_placed.json
 103c3b79caf6fad9f7f6ec3b1d3d3c2096f3f975 data\thelongstory\worldgen\configured_feature\sephin.json
 76fe42b01d88e162de32ba0ca694602122429ef2 data\thelongstory\worldgen\configured_feature\egroric.json
 cf9e328414ed6bdbbe03e27819a0a5f616118788 data\thelongstory\worldgen\configured_feature\yellow_phygelus_key.json
-bc58c78a9e8bb6338c362ece64421f6af02316be data\thelongstory\worldgen\placed_feature\oast_placed.json
 ee01dbe34982900170570090d0dd2eca67790502 data\thelongstory\worldgen\configured_feature\deep_ice_zarosite_ore.json
+bc58c78a9e8bb6338c362ece64421f6af02316be data\thelongstory\worldgen\placed_feature\oast_placed.json
 e660e409f6a9b78406c43348b4ae57b0da9fc483 data\thelongstory\worldgen\biome\tears_valley.json
 b77d2e1ec89c2c0e8c1e34d6d5fecfa7ce3304d3 data\thelongstory\worldgen\configured_feature\impure_zarosite_ore.json
 e980c38768325fe9bbecf8cc7d5ccb41f88ab0af data\thelongstory\worldgen\configured_feature\thestone_ore.json

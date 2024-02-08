@@ -343,6 +343,14 @@ public class ModBlocks {
 
     // ADVANCED BLOCKS ------------------
 
+
+    public static final Block BROKEN_GREFFED_COMMAND_SYSTEM = registerBlock("broken_greffed_command_system",
+            new BrokenBlock(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
+
+    public static final Block BROKEN_SIMULATION_TELEPORTER = registerBlock("broken_simulation_teleporter",
+            new BrokenBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+
+
     public static final Block GREFFED_COMMAND_SYSTEM = registerBlock("greffed_command_system",
             new GreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
 

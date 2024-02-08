@@ -80,6 +80,9 @@ public class ModItems {
 
     //ADVANCED ITEMS -----------------
 
+    public static final Item BROKEN_TELEPORTATION_REMOTE = registerItem("broken_teleportation_remote",
+            new BrokenItem(new FabricItemSettings().maxCount(1).maxDamage(50)));
+
     public static final Item TELEPORTATION_REMOTE = registerItem("teleportation_remote",
             new TeleportationRemoteItem(new FabricItemSettings().maxCount(1).maxDamage(50)));
 

@@ -2,13 +2,11 @@ package net.okamiz.thelongstory.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Model;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.block.custom.greffed_command_blocks.GreffedCommandSystemBlock;
 import net.okamiz.thelongstory.item.ModItems;
 
 import java.util.Optional;
@@ -35,7 +33,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_COAL_BLOCK);
         blockStateModelGenerator.registerLog(ModBlocks.DEEPSLATE_PILLAR).log(ModBlocks.DEEPSLATE_PILLAR).wood(ModBlocks.DEEPSLATE_PILLAR_ALL);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GREFFED_COMMAND_SYSTEM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIMULATION_TELEPORTER);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
@@ -66,6 +63,16 @@ public class ModModelProvider extends FabricModelProvider {
         icedCobblestonePool.stairs(ModBlocks.ICED_COBBLESTONE_STAIRS);
         icedCobblestonePool.slab(ModBlocks.ICED_COBBLESTONE_SLAB);
         icedCobblestonePool.wall(ModBlocks.ICED_COBBLESTONE_WALL);
+
+//--------------------------------------------------------------------------------------
+
+
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROKEN_SIMULATION_TELEPORTER);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM);
+
+
+
 
 
 //--------------------------------------------------------------------------------------
@@ -153,8 +160,20 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GREEN_OSPET, ModBlocks.POTTED_GREEN_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.YELLOW_OSPET, ModBlocks.POTTED_YELLOW_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-
+        //registerGreffedCommandSystem(blockStateModelGenerator);
     }
+
+/*
+    private void registerGreffedCommandSystem(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier identifier = TexturedModel.CUBE_ALL.upload(ModBlocks.GREFFED_COMMAND_SYSTEM, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.GREFFED_COMMAND_SYSTEM, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.GREFFED_COMMAND_SYSTEM)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(GreffedCommandSystemBlock.ON, identifier2, identifier)));
+    }
+
+*/
+
+
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
@@ -184,6 +203,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SPIDER_SILK, Models.GENERATED);
         itemModelGenerator.register(ModItems.INFESTED_FLESH, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.BROKEN_TELEPORTATION_REMOTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TELEPORTATION_REMOTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_REGENERATION, Models.GENERATED);

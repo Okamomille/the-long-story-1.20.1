@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "thelongstory:block/greffed_command_system_resistance"
+  }
+}

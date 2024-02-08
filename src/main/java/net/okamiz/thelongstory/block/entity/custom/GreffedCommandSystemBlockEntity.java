@@ -49,7 +49,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
     private int maxTimer = 3600;
     private int effectID;
 
-    private boolean isActive = false;
+    public boolean isActive = false;
 
     private StatusEffectInstance effect = new StatusEffectInstance(StatusEffects.REGENERATION, 3600, 1);
 

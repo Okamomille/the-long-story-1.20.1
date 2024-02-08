@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "thelongstory:block/broken_simulation_teleporter"
+    }
+  }
+}

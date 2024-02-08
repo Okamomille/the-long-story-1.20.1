@@ -21,6 +21,7 @@
 
 
   "item.thelongstory.teleportation_remote" : "Teleportation Remote",
+  "item.thelongstory.broken_teleportation_remote" : "Broken Teleportation Remote",
   "item.thelongstory.power_star" : "Power Star",
   "item.thelongstory.red_coal" : "Red Coal",
 
@@ -148,6 +149,8 @@
   "block.thelongstory.iced_stone_bricks_wall" : "Iced Stone Bricks Wall",
 
 
+  "block.thelongstory.broken_greffed_command_system" : "Broken Greffed Command System",
+  "block.thelongstory.broken_simulation_teleporter" : "Broken Simulation Teleporter",
   "block.thelongstory.greffed_command_system" : "Greffed Command System",
   "block.thelongstory.simulation_teleporter" : "Simulation Teleporter",
   "block.thelongstory.material_processor" : "Material Processor",
@@ -270,6 +273,11 @@
   "tooltip.thelongstory.power_star" : "§7This is the star of Power, needed to go deeper in the science of life.",
   "tooltip.thelongstory.soul_container" : "§7This container can capture a soul and use it's essence. \nRight click on a mob who's §n§l§cunder 15HP §r§7to capture it.",
   "tooltip.thelongstory.soul_container_full" : "§o§7Is obtained by using the Soul container.",
+
+  "tooltip.thelongstory.broken" : "§7It's broken! You'll need to fix it if you want to use it.",
+
+
+
 
   "tooltip.thelongstory.press_shift_info" : "§7Press §n§l§c[SHIFT]§r§7 to see more informations.",
 
