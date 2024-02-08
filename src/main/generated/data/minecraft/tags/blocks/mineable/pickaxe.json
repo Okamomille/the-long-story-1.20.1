@@ -38,6 +38,10 @@
     "thelongstory:zarosite_block",
     "thelongstory:deep_ice_zarosite_ore",
     "thelongstory:red_coal_block",
-    "thelongstory:greffed_command_system"
+    "thelongstory:greffed_command_system",
+    "thelongstory:broken_greffed_command_system",
+    "thelongstory:broken_simulation_teleporter",
+    "thelongstory:simulation_teleporter",
+    "thelongstory:material_processor"
   ]
 }

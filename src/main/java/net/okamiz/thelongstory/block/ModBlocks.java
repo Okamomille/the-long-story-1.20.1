@@ -369,14 +369,14 @@ public class ModBlocks {
             new BrokenBlock(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
 
     public static final Block BROKEN_SIMULATION_TELEPORTER = registerBlock("broken_simulation_teleporter",
-            new BrokenBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+            new BrokenBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).strength(1.5F, 6.0F)));
 
 
     public static final Block GREFFED_COMMAND_SYSTEM = registerBlock("greffed_command_system",
             new GreffedCommandSystemBlock(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
 
     public static final Block SIMULATION_TELEPORTER = registerBlock("simulation_teleporter",
-            new SimulationTeleporterBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+            new SimulationTeleporterBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).strength(1.5F, 6.0F)));
 
     public static final Block MATERIAL_PROCESSOR = registerBlock("material_processor",
             new MaterialProcessorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));

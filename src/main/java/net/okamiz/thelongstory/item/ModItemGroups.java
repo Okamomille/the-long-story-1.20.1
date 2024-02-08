@@ -244,7 +244,6 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.SIMULATION_TELEPORTER);
-                        entries.add(ModBlocks.MATERIAL_PROCESSOR);
 
 
                         //ITEMS
