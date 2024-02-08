@@ -143,10 +143,15 @@
   "block.thelongstory.iced_chiseled_stone_bricks_stairs" : "Iced Chiseled Stone Bricks Stairs",
   "block.thelongstory.iced_chiseled_stone_bricks_wall" : "Iced Chiseled Stone Bricks Wall",
 
-  "block.thelongstory.iced_stone_bricks" : "Iced Stone Bricks",
-  "block.thelongstory.iced_stone_bricks_slab" : "Iced Stone Bricks Slab",
-  "block.thelongstory.iced_stone_bricks_stairs" : "Iced Stone Bricks Stairs",
-  "block.thelongstory.iced_stone_bricks_wall" : "Iced Stone Bricks Wall",
+  "block.thelongstory.corrupted_lab_tiles" : "Corrupted Lab Tiles",
+  "block.thelongstory.corrupted_lab_tiles_slab" : "Corrupted Lab Tiles Slab",
+  "block.thelongstory.corrupted_lab_tiles_stairs" : "Corrupted Lab Tiles Stairs",
+  "block.thelongstory.corrupted_lab_tiles_wall" : "Corrupted Lab Tiles Wall",
+
+  "block.thelongstory.lab_tiles" : "Lab Tiles",
+  "block.thelongstory.lab_tiles_slab" : "Lab Tiles Slab",
+  "block.thelongstory.lab_tiles_stairs" : "Lab Tiles Stairs",
+  "block.thelongstory.lab_tiles_wall" : "Lab Tiles Wall",
 
 
   "block.thelongstory.broken_greffed_command_system" : "Broken Greffed Command System",

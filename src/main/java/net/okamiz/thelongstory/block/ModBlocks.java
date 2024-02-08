@@ -36,6 +36,8 @@ public class ModBlocks {
 
     public static final Block DEEP_ICE = registerBlock("deep_ice",
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).sounds(BlockSoundGroup.GLASS)));
+    public static final Block FROSTED_ICE = registerBlock("frosted_ice",
+            new FrostedIceModBlock(FabricBlockSettings.copyOf(Blocks.FROSTED_ICE)));
     public static final Block ICED_STONE = registerBlock("iced_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.GLASS)));
     public static final Block ICED_STONE_STAIRS = registerBlock("iced_stone_stairs",
@@ -86,8 +88,27 @@ public class ModBlocks {
             new WallBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_CRACKED_STONE_BRICKS)));
 
 
-    public static final Block FROSTED_ICE = registerBlock("frosted_ice",
-            new FrostedIceModBlock(FabricBlockSettings.copyOf(Blocks.FROSTED_ICE)));
+    public static final Block LAB_TILES = registerBlock("lab_tiles",
+            new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
+    public static final Block LAB_TILES_STAIRS = registerBlock("lab_tiles_stairs",
+            new StairsBlock(ModBlocks.LAB_TILES.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.LAB_TILES)));
+    public static final Block LAB_TILES_SLAB = registerBlock("lab_tiles_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.LAB_TILES)));
+    public static final Block LAB_TILES_WALL = registerBlock("lab_tiles_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.LAB_TILES)));
+
+    public static final Block CORRUPTED_LAB_TILES = registerBlock("corrupted_lab_tiles",
+            new Block(FabricBlockSettings.copyOf(Blocks.MOSSY_COBBLESTONE)));
+    public static final Block CORRUPTED_LAB_TILES_STAIRS = registerBlock("corrupted_lab_tiles_stairs",
+            new StairsBlock(ModBlocks.CORRUPTED_LAB_TILES.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_LAB_TILES)));
+    public static final Block CORRUPTED_LAB_TILES_SLAB = registerBlock("corrupted_lab_tiles_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_LAB_TILES)));
+    public static final Block CORRUPTED_LAB_TILES_WALL = registerBlock("corrupted_lab_tiles_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.CORRUPTED_LAB_TILES)));
+
+
+
+
 
 
     public static final Block THESTONE_ORE = registerBlock("thestone_ore",

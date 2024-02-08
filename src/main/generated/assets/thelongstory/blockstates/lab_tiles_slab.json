@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelongstory:block/lab_tiles_slab"
+    },
+    "type=double": {
+      "model": "thelongstory:block/lab_tiles"
+    },
+    "type=top": {
+      "model": "thelongstory:block/lab_tiles_slab_top"
+    }
+  }
+}

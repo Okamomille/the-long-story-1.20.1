@@ -6,7 +6,6 @@ import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.block.ModBlocks;
-import net.okamiz.thelongstory.block.custom.greffed_command_blocks.GreffedCommandSystemBlock;
 import net.okamiz.thelongstory.item.ModItems;
 
 import java.util.Optional;
@@ -34,6 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.DEEPSLATE_PILLAR).log(ModBlocks.DEEPSLATE_PILLAR).wood(ModBlocks.DEEPSLATE_PILLAR_ALL);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIMULATION_TELEPORTER);
+
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE);
@@ -63,6 +63,17 @@ public class ModModelProvider extends FabricModelProvider {
         icedCobblestonePool.stairs(ModBlocks.ICED_COBBLESTONE_STAIRS);
         icedCobblestonePool.slab(ModBlocks.ICED_COBBLESTONE_SLAB);
         icedCobblestonePool.wall(ModBlocks.ICED_COBBLESTONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool labTilesPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LAB_TILES);
+        labTilesPool.stairs(ModBlocks.LAB_TILES_STAIRS);
+        labTilesPool.slab(ModBlocks.LAB_TILES_SLAB);
+        labTilesPool.wall(ModBlocks.LAB_TILES_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool mossyLabTilesPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CORRUPTED_LAB_TILES);
+        mossyLabTilesPool.stairs(ModBlocks.CORRUPTED_LAB_TILES_STAIRS);
+        mossyLabTilesPool.slab(ModBlocks.CORRUPTED_LAB_TILES_SLAB);
+        mossyLabTilesPool.wall(ModBlocks.CORRUPTED_LAB_TILES_WALL);
+
 
 //--------------------------------------------------------------------------------------
 

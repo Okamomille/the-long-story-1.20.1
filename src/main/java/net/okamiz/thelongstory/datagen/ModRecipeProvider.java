@@ -63,8 +63,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-
-
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT, RecipeCategory.MISC,
                 ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
@@ -146,6 +144,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModBlocks.EGRORIC_PLANKS)
                 .criterion(hasItem(ModBlocks.EGRORIC_PLANKS),conditionsFromItem(ModBlocks.EGRORIC_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.EGRORIC_PRESSURE_PLATE)));
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.ZAROSITE_GEMSTONE, 1)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', ModItems.ZAROSITE_SHARD)
+                .criterion(hasItem(ModItems.ZAROSITE_SHARD),conditionsFromItem(ModItems.ZAROSITE_SHARD))
+                .offerTo(exporter, new Identifier("zarosite_gemstone_from_shards"));
+
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.SIMULATION_TELEPORTER, 1)
+                .pattern("XO")
+                .input('X', ModBlocks.BROKEN_SIMULATION_TELEPORTER)
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .criterion(hasItem(ModBlocks.BROKEN_SIMULATION_TELEPORTER),conditionsFromItem(ModBlocks.BROKEN_SIMULATION_TELEPORTER))
+                .offerTo(exporter, new Identifier("simulation_teleporter_repair_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.GREFFED_COMMAND_SYSTEM, 1)
+                .pattern("XO")
+                .input('X', ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM)
+                .input('O', ModItems.COMMAND_SYSTEM)
+                .criterion(hasItem(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM),conditionsFromItem(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM))
+                .offerTo(exporter, new Identifier("greffed_command_system_repair_craft"));
 
 
 

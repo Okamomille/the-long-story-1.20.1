@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:zarosite_gemstone_from_shards"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zarosite_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:zarosite_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zarosite_shard"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:zarosite_gemstone_from_shards"
+    ]
+  },
+  "sends_telemetry_event": false
+}

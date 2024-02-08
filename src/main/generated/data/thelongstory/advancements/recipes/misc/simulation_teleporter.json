@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_command_system": {
+    "has_broken_simulation_teleporter": {
       "conditions": {
         "items": [
           {
             "items": [
-              "thelongstory:command_system"
+              "thelongstory:broken_simulation_teleporter"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_command_system"
+      "has_broken_simulation_teleporter"
     ]
   ],
   "rewards": {

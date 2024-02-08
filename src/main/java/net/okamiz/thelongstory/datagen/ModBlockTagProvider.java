@@ -32,19 +32,55 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
                 .add(ModBlocks.THESTONE_ORE)
+
+
+
                 .add(ModBlocks.DEEP_ICE)
                 .add(ModBlocks.ICED_COBBLESTONE)
+                .add(ModBlocks.ICED_COBBLESTONE_SLAB)
+                .add(ModBlocks.ICED_COBBLESTONE_STAIRS)
+                .add(ModBlocks.ICED_COBBLESTONE_WALL)
                 .add(ModBlocks.ICED_STONE)
+                .add(ModBlocks.ICED_STONE_SLAB)
+                .add(ModBlocks.ICED_STONE_STAIRS)
+                .add(ModBlocks.ICED_STONE_WALL)
                 .add(ModBlocks.ICED_CHISELED_STONE_BRICKS)
+                .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB)
+                .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL)
+                .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS)
                 .add(ModBlocks.ICED_CRACKED_STONE_BRICKS)
+                .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB)
+                .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS)
+                .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_WALL)
+                .add(ModBlocks.ICED_STONE_BRICKS_SLAB)
+                .add(ModBlocks.ICED_STONE_BRICKS_STAIRS)
+                .add(ModBlocks.ICED_STONE_BRICKS_WALL)
                 .add(ModBlocks.ICED_STONE_BRICKS)
+                .add(ModBlocks.LAB_TILES)
+                .add(ModBlocks.LAB_TILES_SLAB)
+                .add(ModBlocks.LAB_TILES_STAIRS)
+                .add(ModBlocks.LAB_TILES_WALL)
+                .add(ModBlocks.CORRUPTED_LAB_TILES)
+                .add(ModBlocks.CORRUPTED_LAB_TILES_SLAB)
+                .add(ModBlocks.CORRUPTED_LAB_TILES_STAIRS)
+                .add(ModBlocks.CORRUPTED_LAB_TILES_WALL)
 
                 .add(ModBlocks.IMPURE_ZAROSITE_BLOCK)
                 .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
                 .add(ModBlocks.IMPURE_ZAROSITE_ORE)
 
+                .add(ModBlocks.ZAROSITE_BLOCK)
+                .add(ModBlocks.DEEP_ICE_ZAROSITE_ORE)
+
                 .add(ModBlocks.RED_COAL_BLOCK)
-                .add(ModBlocks.GREFFED_COMMAND_SYSTEM);
+                .add(ModBlocks.GREFFED_COMMAND_SYSTEM)
+                .add(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM)
+                .add(ModBlocks.BROKEN_SIMULATION_TELEPORTER)
+                .add(ModBlocks.SIMULATION_TELEPORTER);
+
+
+
+
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.EGRORIC_LOG)

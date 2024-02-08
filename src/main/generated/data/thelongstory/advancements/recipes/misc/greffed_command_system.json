@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_command_system": {
+    "has_broken_greffed_command_system": {
       "conditions": {
         "items": [
           {
             "items": [
-              "thelongstory:command_system"
+              "thelongstory:broken_greffed_command_system"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_command_system"
+      "has_broken_greffed_command_system"
     ]
   ],
   "rewards": {

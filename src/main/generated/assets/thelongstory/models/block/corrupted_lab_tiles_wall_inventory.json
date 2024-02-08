@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "thelongstory:block/corrupted_lab_tiles"
+  }
+}

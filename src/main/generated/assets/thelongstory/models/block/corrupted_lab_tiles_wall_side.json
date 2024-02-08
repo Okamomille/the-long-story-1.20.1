@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "thelongstory:block/corrupted_lab_tiles"
+  }
+}

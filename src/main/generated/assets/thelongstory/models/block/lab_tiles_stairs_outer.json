@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "thelongstory:block/lab_tiles",
+    "side": "thelongstory:block/lab_tiles",
+    "top": "thelongstory:block/lab_tiles"
+  }
+}

@@ -49,6 +49,8 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
     private int maxTimer = 3600;
     private int effectID;
 
+    public int state;
+
     public boolean isActive = false;
 
     private StatusEffectInstance effect = new StatusEffectInstance(StatusEffects.REGENERATION, 3600, 1);
@@ -142,6 +144,12 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
     }
 
 
+    public Integer getCustomState(){
+        return state;
+    }
+
+
+
     private void resetTimer() {
         timer = maxTimer;
     }
@@ -187,6 +195,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
         nbt.putInt("timer",timer);
         nbt.putInt("effectID",effectID);
         nbt.putBoolean("isActive", isActive);
+        nbt.putInt("state", state);
     }
 
     @Override
@@ -195,6 +204,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
         timer = nbt.getInt("timer");
         effectID = nbt.getInt("effectID");
         isActive = nbt.getBoolean("isActive");
+        state = nbt.getInt("state");
 
     }
 }

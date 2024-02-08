@@ -39,8 +39,6 @@ import java.util.Objects;
 public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final IntProperty ON = IntProperty.of("power", 0, 6);
 
-
-
     private static final VoxelShape SHAPE = Block.createCuboidShape(0,0,0,16,16, 16);
     public GreffedCommandSystemBlock(Settings settings) {
         super(settings);
@@ -99,22 +97,14 @@ public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockE
                     else if (mainHand == ModItems.SOUL_CONTAINER_DOLPHIN_GRACE){world.setBlockState(pos, state.with(ON, 4));}
                     else if (mainHand == ModItems.SOUL_CONTAINER_REGENERATION){world.setBlockState(pos, state.with(ON, 2));}
                         else{
-                            world.setBlockState(pos, state.with(ON, 0));
+                        this.setDefaultState(this.getDefaultState().with(ON, ((GreffedCommandSystemBlockEntity) blockEntity).getCustomState()));
                         }
                 }
-
-
+                greffedCommandSystemBlockEntity.state = this.getDefaultState().get(ON);
                 greffedCommandSystemBlockEntity.useBlock(world, pos, state, player, hand); // Calling the useBlock method
-
-
-
-
-
 
             }
         }
-
-
         return ActionResult.SUCCESS;
     }
 

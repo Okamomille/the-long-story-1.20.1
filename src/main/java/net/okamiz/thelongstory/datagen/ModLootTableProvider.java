@@ -28,16 +28,49 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.SIMULATION_TELEPORTER);
         addDrop(ModBlocks.GREFFED_COMMAND_SYSTEM);
+        addDrop(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM);
+        addDrop(ModBlocks.BROKEN_SIMULATION_TELEPORTER);
+        addDrop(ModBlocks.MATERIAL_PROCESSOR);
+
+
         addDrop(ModBlocks.MOLD_BLOCK);
         addDrop(ModBlocks.RED_COAL_BLOCK);
         addDrop(ModBlocks.SPIDER_SILK_BLOCK);
         addDrop(ModBlocks.DEEP_ICE);
+
         addDrop(ModBlocks.ICED_COBBLESTONE);
         addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS);
+        addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS);
+        addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB);
+        addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL);
+
         addDrop(ModBlocks.ICED_STONE);
+        addDrop(ModBlocks.ICED_STONE_STAIRS);
+        addDrop(ModBlocks.ICED_STONE_SLAB);
+        addDrop(ModBlocks.ICED_STONE_WALL);
+
         addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS);
+        addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS);
+        addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB);
+        addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS_WALL);
+
         addDrop(ModBlocks.ICED_STONE_BRICKS);
+        addDrop(ModBlocks.ICED_STONE_BRICKS_STAIRS);
+        addDrop(ModBlocks.ICED_STONE_BRICKS_SLAB);
+        addDrop(ModBlocks.ICED_STONE_BRICKS_WALL);
         addDrop(ModBlocks.IMPURE_ZAROSITE_BLOCK);
+        addDrop(ModBlocks.ZAROSITE_BLOCK);
+
+        addDrop(ModBlocks.LAB_TILES);
+        addDrop(ModBlocks.LAB_TILES_STAIRS);
+        addDrop(ModBlocks.LAB_TILES_SLAB);
+        addDrop(ModBlocks.LAB_TILES_WALL);
+
+        addDrop(ModBlocks.CORRUPTED_LAB_TILES);
+        addDrop(ModBlocks.CORRUPTED_LAB_TILES_STAIRS);
+        addDrop(ModBlocks.CORRUPTED_LAB_TILES_SLAB);
+        addDrop(ModBlocks.CORRUPTED_LAB_TILES_WALL);
+
 
         //EGRORIC LOOTS ------------------------------------
         addDrop(ModBlocks.EGRORIC_LEAVES, leavesDrops(ModBlocks.EGRORIC_LEAVES, ModBlocks.EGRORIC_SAPLING, 0.025f));
@@ -131,7 +164,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         oreDrops(ModBlocks.IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE);
         oreDrops(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE);
 
-        oreDrops(ModBlocks.DEEP_ICE_ZAROSITE_ORE, ModItems.ZAROSITE_GEMSTONE);
+        addDrop(ModBlocks.DEEP_ICE_ZAROSITE_ORE, copperLikeOreDrops(ModBlocks.DEEP_ICE_ZAROSITE_ORE, ModItems.ZAROSITE_SHARD));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item){

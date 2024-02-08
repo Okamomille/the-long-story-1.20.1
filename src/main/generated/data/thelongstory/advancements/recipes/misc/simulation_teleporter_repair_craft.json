@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_broken_simulation_teleporter": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:broken_simulation_teleporter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:simulation_teleporter_repair_craft"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_broken_simulation_teleporter"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:simulation_teleporter_repair_craft"
+    ]
+  },
+  "sends_telemetry_event": false
+}
