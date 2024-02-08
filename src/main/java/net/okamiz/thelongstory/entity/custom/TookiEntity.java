@@ -16,10 +16,9 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.entity.ModEntities;
+import net.okamiz.thelongstory.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 public class TookiEntity extends AnimalEntity {
@@ -97,19 +96,19 @@ public class TookiEntity extends AnimalEntity {
     @Nullable
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.ENTITY_FOX_AMBIENT;
+        return ModSounds.TOOKI_IDLE;
     }
 
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {
-        return SoundEvents.ENTITY_FOX_HURT;
+        return ModSounds.TOOKI_HURT;
     }
 
     @Nullable
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_FOX_DEATH;
+        return ModSounds.TOOKI_DEATH;
     }
 
 }

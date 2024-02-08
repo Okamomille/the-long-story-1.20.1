@@ -22,5 +22,23 @@
     "sounds": [
       "thelongstory:greffed_command_system_activate"
     ]
+  },
+  "tooki_idle": {
+    "subtitle": "sounds.thelongstory.tooki_idle",
+    "sounds": [
+      "thelongstory:tooki_idle"
+    ]
+  },
+  "tooki_hurt": {
+    "subtitle": "sounds.thelongstory.tooki_hurt",
+    "sounds": [
+      "thelongstory:tooki_hurt"
+    ]
+  },
+  "tooki_death": {
+    "subtitle": "sounds.thelongstory.tooki_death",
+    "sounds": [
+      "thelongstory:tooki_death"
+    ]
   }
 }

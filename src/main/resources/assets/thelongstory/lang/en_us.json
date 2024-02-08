@@ -311,6 +311,9 @@
   "sounds.thelongstory.greffed_command_system_activate": "Greffed Command System Activation",
   "sounds.thelongstory.greffed_command_system_fail": "Greffed Command System Waiting",
   "sounds.thelongstory.greffed_command_system_give_effect": "Greffed Command System Gives Effect",
-  "sounds.thelongstory.teleportation": "Player Teleportation"
+  "sounds.thelongstory.teleportation": "Player Teleportation",
+  "sounds.thelongstory.tooki_idle": "Tooki",
+  "sounds.thelongstory.tooki_hurt": "Tooki Hurt",
+  "sounds.thelongstory.tooki_death": "Tooki Death"
 
 }

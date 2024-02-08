@@ -12,6 +12,9 @@ public class ModSounds {
     public static final SoundEvent GREFFED_COMMAND_SYSTEM_GIVE_EFFECT = registerSoundEvent("greffed_command_system_give_effect");
     public static final SoundEvent GREFFED_COMMAND_SYSTEM_FAIL = registerSoundEvent("greffed_command_system_fail");
     public static final SoundEvent GREFFED_COMMAND_SYSTEM_ACTIVATE = registerSoundEvent("greffed_command_system_activate");
+    public static final SoundEvent TOOKI_IDLE = registerSoundEvent("tooki_idle");
+    public static final SoundEvent TOOKI_HURT = registerSoundEvent("tooki_hurt");
+    public static final SoundEvent TOOKI_DEATH = registerSoundEvent("tooki_death");
 
 
 
