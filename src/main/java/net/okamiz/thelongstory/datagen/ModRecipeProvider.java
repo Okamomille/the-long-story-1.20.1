@@ -171,6 +171,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM),conditionsFromItem(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM))
                 .offerTo(exporter, new Identifier("greffed_command_system_repair_craft"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.TELEPORTATION_REMOTE, 1)
+                .pattern("XO")
+                .input('X', ModItems.BROKEN_TELEPORTATION_REMOTE)
+                .input('O', ModItems.TELEPORTATION_MODULE)
+                .criterion(hasItem(ModItems.BROKEN_TELEPORTATION_REMOTE),conditionsFromItem(ModItems.BROKEN_TELEPORTATION_REMOTE))
+                .offerTo(exporter, new Identifier("teleportation_remote_repair_craft"));
+
 
 
         // ARMORS
@@ -586,6 +593,118 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
         // -------------------
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_STONE, 4)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('X', Items.ICE)
+                .input('O', Items.STONE)
+                .criterion(hasItem(Items.STONE),conditionsFromItem(Items.STONE))
+                .offerTo(exporter, new Identifier("iced_stone_recipe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_COBBLESTONE, 4)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('X', Items.ICE)
+                .input('O', Items.COBBLESTONE)
+                .criterion(hasItem(Items.COBBLESTONE),conditionsFromItem(Items.COBBLESTONE))
+                .offerTo(exporter, new Identifier("iced_cobblestone_recipe"));
+        createStairsRecipe(ModBlocks.ICED_COBBLESTONE_STAIRS, Ingredient.ofItems(ModBlocks.ICED_COBBLESTONE))
+                .criterion(hasItem(ModBlocks.ICED_COBBLESTONE),conditionsFromItem(ModBlocks.ICED_COBBLESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_COBBLESTONE_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.ICED_COBBLESTONE_SLAB, Ingredient.ofItems(ModBlocks.ICED_COBBLESTONE))
+                .criterion(hasItem(ModBlocks.ICED_COBBLESTONE),conditionsFromItem(ModBlocks.ICED_COBBLESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_COBBLESTONE_SLAB)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_COBBLESTONE_WALL, 4)
+
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.ICED_COBBLESTONE)
+                .criterion(hasItem(ModBlocks.ICED_COBBLESTONE),conditionsFromItem(ModBlocks.ICED_COBBLESTONE))
+                .offerTo(exporter, new Identifier("iced_cobblestone_wall_recipe"));
+
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_STONE_BRICKS, 4)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('X', Items.ICE)
+                .input('O', Items.STONE_BRICKS)
+                .criterion(hasItem(Items.STONE_BRICKS),conditionsFromItem(Items.STONE_BRICKS))
+                .offerTo(exporter, new Identifier("iced_stone_bricks_recipe"));
+
+        createStairsRecipe(ModBlocks.ICED_STONE_BRICKS_STAIRS, Ingredient.ofItems(ModBlocks.ICED_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.ICED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_STONE_BRICKS_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.ICED_STONE_BRICKS_SLAB, Ingredient.ofItems(ModBlocks.ICED_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.ICED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_STONE_BRICKS_SLAB)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_STONE_BRICKS_WALL, 4)
+
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.ICED_STONE_BRICKS)
+                .criterion(hasItem(ModBlocks.ICED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier("iced_stone_bricks_wall_recipe"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_CRACKED_STONE_BRICKS, 4)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('X', Items.ICE)
+                .input('O', Items.CRACKED_STONE_BRICKS)
+                .criterion(hasItem(Items.CRACKED_STONE_BRICKS),conditionsFromItem(Items.CRACKED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier("iced_cracked_stone_bricks_recipe"));
+
+        createStairsRecipe(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS, Ingredient.ofItems(ModBlocks.ICED_CRACKED_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.ICED_CRACKED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_CRACKED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB, Ingredient.ofItems(ModBlocks.ICED_CRACKED_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.ICED_CRACKED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_CRACKED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_CRACKED_STONE_BRICKS_WALL, 4)
+
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.ICED_CRACKED_STONE_BRICKS)
+                .criterion(hasItem(ModBlocks.ICED_CRACKED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_CRACKED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier("iced_cracked_stone_bricks_wall_recipe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_CHISELED_STONE_BRICKS, 4)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('X', Items.ICE)
+                .input('O', Items.CHISELED_STONE_BRICKS)
+                .criterion(hasItem(Items.CHISELED_STONE_BRICKS),conditionsFromItem(Items.CHISELED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier("iced_chiseled_stone_bricks_recipe"));
+
+        createStairsRecipe(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS, Ingredient.ofItems(ModBlocks.ICED_CHISELED_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.ICED_CHISELED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_CHISELED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB, Ingredient.ofItems(ModBlocks.ICED_CHISELED_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.ICED_CHISELED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_CHISELED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL, 4)
+
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.ICED_CHISELED_STONE_BRICKS)
+                .criterion(hasItem(ModBlocks.ICED_CHISELED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_CHISELED_STONE_BRICKS))
+                .offerTo(exporter, new Identifier("iced_chiseled_stone_bricks_wall_recipe"));
+
+
+
+
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.WOODEN_PLATE, 1)

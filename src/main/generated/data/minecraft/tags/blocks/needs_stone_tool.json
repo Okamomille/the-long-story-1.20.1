@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thelongstory:deep_ice"
+    "thelongstory:deep_ice",
+    "thelongstory:material_processor"
   ]
 }

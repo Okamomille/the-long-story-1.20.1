@@ -76,7 +76,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GREFFED_COMMAND_SYSTEM)
                 .add(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM)
                 .add(ModBlocks.BROKEN_SIMULATION_TELEPORTER)
-                .add(ModBlocks.SIMULATION_TELEPORTER);
+                .add(ModBlocks.SIMULATION_TELEPORTER)
+                .add(ModBlocks.MATERIAL_PROCESSOR);
 
 
 
@@ -111,6 +112,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.DEEP_ICE)
+                .add(ModBlocks.MATERIAL_PROCESSOR)
                 ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
