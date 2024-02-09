@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_bone_fragments",
-      "has_crushed_bones"
+      "has_crushed_bones",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

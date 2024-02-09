@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_thestone_dust",
-      "has_amethyst_shard"
+      "has_amethyst_shard",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

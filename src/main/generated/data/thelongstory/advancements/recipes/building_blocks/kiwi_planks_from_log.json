@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_kiwi_log",
-      "has_kiwi_planks"
+      "has_kiwi_planks",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

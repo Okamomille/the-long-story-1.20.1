@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_crushed_bones"
+      "has_crushed_bones",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

@@ -1,4 +1,5 @@
 {
+  "parent": "minecraft:recipes/root",
   "criteria": {
     "has_coal": {
       "conditions": {
@@ -11,12 +12,26 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thelongstory:red_coal"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_coal"
+    ],
+    [
+      "has_the_recipe"
     ]
   ],
+  "rewards": {
+    "recipes": [
+      "thelongstory:red_coal"
+    ]
+  },
   "sends_telemetry_event": true
 }

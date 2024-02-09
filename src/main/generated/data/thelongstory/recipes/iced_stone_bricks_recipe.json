@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:stone_bricks"
+    },
+    "X": {
+      "item": "minecraft:ice"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "result": {
+    "count": 4,
+    "item": "thelongstory:iced_stone_bricks"
+  },
+  "show_notification": true
+}

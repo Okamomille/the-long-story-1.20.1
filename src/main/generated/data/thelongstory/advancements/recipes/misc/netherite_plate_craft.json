@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_emerald_plate"
+      "has_emerald_plate",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

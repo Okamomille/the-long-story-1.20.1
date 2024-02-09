@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:teleportation_module"
+    },
+    "X": {
+      "item": "thelongstory:broken_teleportation_remote"
+    }
+  },
+  "pattern": [
+    "XO"
+  ],
+  "result": {
+    "item": "thelongstory:teleportation_remote"
+  },
+  "show_notification": true
+}

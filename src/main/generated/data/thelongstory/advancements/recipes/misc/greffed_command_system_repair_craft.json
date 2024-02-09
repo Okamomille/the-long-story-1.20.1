@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_broken_greffed_command_system"
+      "has_broken_greffed_command_system",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

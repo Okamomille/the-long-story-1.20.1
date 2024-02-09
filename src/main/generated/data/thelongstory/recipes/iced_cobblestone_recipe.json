@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:cobblestone"
+    },
+    "X": {
+      "item": "minecraft:ice"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "result": {
+    "count": 4,
+    "item": "thelongstory:iced_cobblestone"
+  },
+  "show_notification": true
+}
