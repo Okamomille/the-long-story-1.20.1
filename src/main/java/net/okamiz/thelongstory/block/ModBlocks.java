@@ -71,7 +71,7 @@ public class ModBlocks {
     public static final Block ICED_CHISELED_STONE_BRICKS = registerBlock("iced_chiseled_stone_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).sounds(BlockSoundGroup.GLASS)));
     public static final Block ICED_CHISELED_STONE_BRICKS_STAIRS = registerBlock("iced_chiseled_stone_bricks_stairs",
-            new StairsBlock(ModBlocks.ICED_CHISELED_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.ICED_CHISELED_STONE_BRICKS)));
+            new StairsBlock(ModBlocks.ICED_CHISELED_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ICED_CHISELED_STONE_BRICKS)));
     public static final Block ICED_CHISELED_STONE_BRICKS_SLAB = registerBlock("iced_chiseled_stone_bricks_slab",
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.ICED_CHISELED_STONE_BRICKS)));
     public static final Block ICED_CHISELED_STONE_BRICKS_WALL = registerBlock("iced_chiseled_stone_bricks_wall",

@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_egroric_planks"
+      "has_egroric_planks",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

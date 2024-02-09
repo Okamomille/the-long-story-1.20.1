@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_broken_simulation_teleporter"
+      "has_broken_simulation_teleporter",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

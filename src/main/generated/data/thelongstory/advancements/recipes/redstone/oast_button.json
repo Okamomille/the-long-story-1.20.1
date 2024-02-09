@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_oast_planks",
-      "has_oast_button"
+      "has_oast_button",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

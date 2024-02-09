@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_broken_teleportation_remote": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:broken_teleportation_remote"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:teleportation_remote_repair_craft"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_broken_teleportation_remote",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:teleportation_remote_repair_craft"
+    ]
+  },
+  "sends_telemetry_event": false
+}

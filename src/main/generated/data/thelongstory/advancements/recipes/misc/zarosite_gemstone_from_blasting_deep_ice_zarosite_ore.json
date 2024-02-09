@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_deep_ice_zarosite_ore"
+      "has_deep_ice_zarosite_ore",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

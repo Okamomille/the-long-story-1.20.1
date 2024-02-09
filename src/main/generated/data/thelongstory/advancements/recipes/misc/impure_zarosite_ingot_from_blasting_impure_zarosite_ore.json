@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_impure_zarosite_ore"
+      "has_impure_zarosite_ore",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

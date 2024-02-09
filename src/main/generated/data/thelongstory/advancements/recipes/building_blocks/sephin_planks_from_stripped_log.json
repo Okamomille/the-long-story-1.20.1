@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_stripped_sephin_log",
-      "has_sephin_planks"
+      "has_sephin_planks",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

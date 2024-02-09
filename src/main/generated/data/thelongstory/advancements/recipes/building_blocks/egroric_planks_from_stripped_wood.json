@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
       "has_stripped_egroric_wood",
-      "has_egroric_planks"
+      "has_egroric_planks",
+      "has_the_recipe"
     ]
   ],
   "rewards": {
