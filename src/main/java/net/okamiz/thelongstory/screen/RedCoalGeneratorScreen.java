@@ -14,12 +14,12 @@ import net.okamiz.thelongstory.util.MouseUtil;
 
 import java.util.Optional;
 
-public class MaterialProcessorScreen extends HandledScreen<MaterialProcessorScreenHandler> {
+public class RedCoalGeneratorScreen extends HandledScreen<RedCoalGeneratorScreenHandler> {
     private static final Identifier TEXTURE =
-            new Identifier(TheLongStory.MOD_ID, "textures/gui/material_processor_gui.png");
+            new Identifier(TheLongStory.MOD_ID, "textures/gui/red_coal_generator_gui.png");
     private EnergyInfoArea energyInfoArea;
 
-    public MaterialProcessorScreen(MaterialProcessorScreenHandler handler, PlayerInventory inventory, Text title) {
+    public RedCoalGeneratorScreen(RedCoalGeneratorScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 
@@ -28,16 +28,17 @@ public class MaterialProcessorScreen extends HandledScreen<MaterialProcessorScre
         super.init();
         titleY = 1000;
         playerInventoryTitleY = 1000;
+
         assignEnergyInfoArea();
     }
 
     private void assignEnergyInfoArea() {
-        energyInfoArea = new EnergyInfoArea(((width - backgroundWidth) / 2) + 153,
+        energyInfoArea = new EnergyInfoArea(((width - backgroundWidth) / 2) + 84,
                 ((height - backgroundHeight) / 2 ) + 11, handler.blockEntity.energyStorage);
     }
 
     private void renderEnergyAreaTooltips(DrawContext context, int pMouseX, int pMouseY, int x, int y) {
-        if(isMouseAboveArea(pMouseX, pMouseY, x, y, 153, 11, 8, 55)) {
+        if(isMouseAboveArea(pMouseX, pMouseY, x, y, 84, 11, 8, 55)) {
             context.drawTooltip(Screens.getTextRenderer(this), energyInfoArea.getTooltips(),
                     Optional.empty(), pMouseX - x, pMouseY - y);
         }
@@ -62,6 +63,7 @@ public class MaterialProcessorScreen extends HandledScreen<MaterialProcessorScre
         context.drawTexture(TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
 
         renderProgressArrow(context, x, y);
+
         energyInfoArea.draw(context);
     }
 

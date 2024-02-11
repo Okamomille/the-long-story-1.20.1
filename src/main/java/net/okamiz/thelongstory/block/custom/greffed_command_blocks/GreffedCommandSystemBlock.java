@@ -4,37 +4,21 @@ import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.screen.NamedScreenHandlerFactory;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.IntProperty;
-import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.block.entity.custom.GreffedCommandSystemBlockEntity;
 import net.okamiz.thelongstory.item.ModItems;
-import net.okamiz.thelongstory.item.custom.SoulContainerFullItem;
-import net.okamiz.thelongstory.util.ModTags;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
-import java.util.Objects;
 
 public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final IntProperty ON = IntProperty.of("power", 0, 6);
@@ -111,7 +95,7 @@ public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockE
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, ModBlockEntities.GREFFED_COMMAND_SYSTEM_BLOCK_ENTITY_BLOCK_ENTITY,
+        return checkType(type, ModBlockEntities.GREFFED_COMMAND_SYSTEM_BLOCK_ENTITY,
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "thelongstory:block/red_coal_generator_front_on",
+    "side": "thelongstory:block/red_coal_generator_side",
+    "top": "thelongstory:block/red_coal_generator_top"
+  }
+}

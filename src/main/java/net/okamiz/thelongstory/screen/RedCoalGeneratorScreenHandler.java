@@ -10,28 +10,27 @@ import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
-import net.okamiz.thelongstory.block.entity.custom.MaterialProcessorBlockEntity;
+import net.okamiz.thelongstory.block.entity.custom.RedCoalGeneratorBlockEntity;
 
-public class MaterialProcessorScreenHandler extends ScreenHandler {
+public class RedCoalGeneratorScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
-    public final MaterialProcessorBlockEntity blockEntity;
+    public final RedCoalGeneratorBlockEntity blockEntity;
 
-    public MaterialProcessorScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
+    public RedCoalGeneratorScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
-                new ArrayPropertyDelegate(2));
+                new ArrayPropertyDelegate(1));
     }
 
-    public MaterialProcessorScreenHandler(int syncId, PlayerInventory playerInventory,
-                                          BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
-        super(ModScreenHandlers.MATERIAL_PROCESSOR_SCREEN_HANDLER, syncId);
-        checkSize(((Inventory) blockEntity), 2);
+    public RedCoalGeneratorScreenHandler(int syncId, PlayerInventory playerInventory,
+                                         BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
+        super(ModScreenHandlers.RED_COAL_GENERATOR_SCREEN_HANDLER, syncId);
+        checkSize(((Inventory) blockEntity), 1);
         this.inventory = (Inventory)blockEntity;
         this.propertyDelegate = arrayPropertyDelegate;
-        this.blockEntity = ((MaterialProcessorBlockEntity) blockEntity);
+        this.blockEntity = ((RedCoalGeneratorBlockEntity) blockEntity);
 
-        this.addSlot(new Slot(inventory, 1, 80, 50));
-        this.addSlot(new Slot(inventory, 0, 80, 11));
+        this.addSlot(new Slot(inventory, 0, 54, 50));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);

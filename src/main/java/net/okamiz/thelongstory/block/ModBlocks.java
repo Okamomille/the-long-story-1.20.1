@@ -381,6 +381,9 @@ public class ModBlocks {
     public static final Block MATERIAL_PROCESSOR = registerBlock("material_processor",
             new MaterialProcessorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
+    public static final Block RED_COAL_GENERATOR = registerBlock("red_coal_generator",
+            new RedCoalGeneratorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
 
 
     // ----------------

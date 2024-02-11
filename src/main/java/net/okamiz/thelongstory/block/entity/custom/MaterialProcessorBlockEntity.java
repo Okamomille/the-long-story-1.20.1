@@ -1,6 +1,7 @@
-package net.okamiz.thelongstory.block.entity;
+package net.okamiz.thelongstory.block.entity.custom;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.fabricmc.fabric.api.transfer.v1.transaction.Transaction;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,10 +17,16 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.okamiz.thelongstory.block.custom.MaterialProcessorBlock;
+import net.okamiz.thelongstory.block.entity.ImplementedInventory;
+import net.okamiz.thelongstory.block.entity.ModBlockEntities;
+import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.recipe.MaterialProcessingRecipe;
 import net.okamiz.thelongstory.screen.MaterialProcessorScreenHandler;
 import org.jetbrains.annotations.Nullable;
+import team.reborn.energy.api.base.SimpleEnergyStorage;
 
 import java.util.Optional;
 
@@ -61,6 +68,73 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
         };
     }
 
+    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(64000, 200, 200){
+        @Override
+        protected void onFinalCommit() {
+            markDirty();
+            getWorld().updateListeners(pos, getCachedState(), getCachedState(), 3);
+        }
+    };
+
+    @Override
+    public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
+        Direction localDir = this.getWorld().getBlockState(pos).get(MaterialProcessorBlock.FACING);
+
+        if(side == Direction.DOWN){
+            return false;
+        }
+
+        if(side == Direction.UP){
+            return slot == INPUT_SLOT;
+        }
+
+        return switch(localDir){
+            default -> //NORTH
+                        side.getOpposite() == Direction.NORTH && slot == INPUT_SLOT ||
+                        side.getOpposite() == Direction.WEST && slot == INPUT_SLOT;
+            case EAST ->
+                        side.rotateYClockwise() == Direction.NORTH && slot == INPUT_SLOT ||
+                                side.rotateYClockwise() == Direction.WEST && slot == INPUT_SLOT;
+            case SOUTH ->
+                        side == Direction.NORTH && slot == INPUT_SLOT ||
+                            side == Direction.WEST && slot == INPUT_SLOT;
+            case WEST ->
+                        side.rotateYCounterclockwise() == Direction.NORTH && slot == INPUT_SLOT ||
+                            side.rotateYCounterclockwise() == Direction.WEST && slot == INPUT_SLOT;
+
+        };
+    }
+
+    @Override
+    public boolean canExtract(int slot, ItemStack stack, Direction side) {
+        Direction localDir = this.getWorld().getBlockState(this.pos).get(MaterialProcessorBlock.FACING);
+
+        if(side == Direction.UP) {
+            return false;
+        }
+
+        // Down extract 2
+        if(side == Direction.DOWN) {
+            return slot == OUTPUT_SLOT;
+        }
+
+        // bottom extract 2
+        // right extract 2
+        return switch (localDir) {
+            default ->  side.getOpposite() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+                    side.getOpposite() == Direction.EAST && slot == OUTPUT_SLOT;
+
+            case EAST -> side.rotateYClockwise() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+                    side.rotateYClockwise() == Direction.EAST && slot == OUTPUT_SLOT;
+
+            case SOUTH ->   side == Direction.SOUTH && slot == OUTPUT_SLOT ||
+                    side == Direction.EAST && slot == OUTPUT_SLOT;
+
+            case WEST -> side.rotateYCounterclockwise() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+                    side.rotateYCounterclockwise() == Direction.EAST && slot == OUTPUT_SLOT;
+        };
+    }
+
     @Override
     public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
         buf.writeBlockPos(this.pos);
@@ -86,19 +160,24 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
     protected void writeNbt(NbtCompound nbt) {
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, inventory);
-        nbt.putInt("gem_empowering_station.progress", progress);
+        nbt.putInt("material_processor.progress", progress);
+        nbt.putLong("red_coal_generator.energy", energyStorage.amount);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         Inventories.readNbt(nbt, inventory);
-        progress = nbt.getInt("gem_empowering_station.progress");
+        progress = nbt.getInt("material_processor.progress");
+        energyStorage.amount = nbt.getLong("red_coal_generator.energy");
         super.readNbt(nbt);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
+        fillUpOnEnergy(); // until we have othermods / machines that give us energy
+        
         if(canInsertIntoOutputSlot() && hasRecipe()) {
             increaseCraftingProgress();
+            extractEnergy();
             markDirty(world, pos, state);
 
             if(hasCraftingFinished()) {
@@ -109,6 +188,19 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
             resetProgress();
         }
     }
+
+    private void extractEnergy() {
+        try(Transaction transaction = Transaction.openOuter()){
+            this.energyStorage.extract(32L, transaction);
+            transaction.commit();
+        }
+    }
+
+    private void fillUpOnEnergy() {
+        
+    }
+
+    
 
     private void craftItem() {
         Optional<MaterialProcessingRecipe> recipe = getCurrentRecipe();
@@ -140,7 +232,11 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
         ItemStack output = recipe.get().getOutput(null);
 
         return canInsertAmountIntoOutputSlot(output.getCount())
-                && canInsertItemIntoOutputSlot(output);
+                && canInsertItemIntoOutputSlot(output) && hasEnoughEnergyToCraft();
+    }
+
+    private boolean hasEnoughEnergyToCraft() {
+        return this.energyStorage.amount >= 32 * this.maxProgress;
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

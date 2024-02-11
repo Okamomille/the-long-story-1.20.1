@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "thelongstory:block/red_coal_generator",
+      "y": 90
+    },
+
+    "facing=north": {
+      "model": "thelongstory:block/red_coal_generator"
+    },
+    "facing=south": {
+      "model": "thelongstory:block/red_coal_generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thelongstory:block/red_coal_generator",
+      "y": 270
+    }
+  }
+}

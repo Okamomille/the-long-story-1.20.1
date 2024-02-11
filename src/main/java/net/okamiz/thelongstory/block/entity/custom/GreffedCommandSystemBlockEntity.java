@@ -1,48 +1,20 @@
 package net.okamiz.thelongstory.block.entity.custom;
 
-import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BeaconBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.ContainerLock;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.nbt.NbtElement;
-import net.minecraft.network.PacketByteBuf;
-import net.minecraft.registry.Registries;
-import net.minecraft.screen.BeaconScreenHandler;
-import net.minecraft.screen.PropertyDelegate;
-import net.minecraft.screen.ScreenHandler;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.okamiz.thelongstory.block.ModBlocks;
-import net.okamiz.thelongstory.block.custom.greffed_command_blocks.GreffedCommandSystemBlock;
-import net.okamiz.thelongstory.block.entity.ImplementedInventory;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.item.ModItems;
-import net.okamiz.thelongstory.item.custom.SoulContainerItem;
 import net.okamiz.thelongstory.sound.ModSounds;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class GreffedCommandSystemBlockEntity extends BlockEntity {
     private int timer;
@@ -56,7 +28,7 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
     private StatusEffectInstance effect = new StatusEffectInstance(StatusEffects.REGENERATION, 3600, 1);
 
     public GreffedCommandSystemBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.GREFFED_COMMAND_SYSTEM_BLOCK_ENTITY_BLOCK_ENTITY, pos, state);
+        super(ModBlockEntities.GREFFED_COMMAND_SYSTEM_BLOCK_ENTITY, pos, state);
     }
 
 
@@ -147,6 +119,9 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
     public Integer getCustomState(){
         return state;
     }
+
+
+
 
 
 
