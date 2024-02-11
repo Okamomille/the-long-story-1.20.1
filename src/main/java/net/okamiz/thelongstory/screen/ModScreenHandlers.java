@@ -11,6 +11,10 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<MaterialProcessorScreenHandler> MATERIAL_PROCESSOR_SCREEN_HANDLER =
           Registry.register(Registries.SCREEN_HANDLER, new Identifier(TheLongStory.MOD_ID, "material_processor_screen_handler"),
                    new ExtendedScreenHandlerType<>(MaterialProcessorScreenHandler::new));
+    public static final ScreenHandlerType<RedCoalGeneratorScreenHandler> RED_COAL_GENERATOR_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, new Identifier(TheLongStory.MOD_ID, "red_coal_generator_screen_handler"),
+                    new ExtendedScreenHandlerType<>(RedCoalGeneratorScreenHandler::new));
+
 
     public static void registerScreenHandlers() {
         TheLongStory.LOGGER.info("Registering Screen Handlers for " + TheLongStory.MOD_ID);

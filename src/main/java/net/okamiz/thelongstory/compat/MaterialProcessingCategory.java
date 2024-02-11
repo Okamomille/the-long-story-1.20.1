@@ -9,6 +9,7 @@ import me.shedaniel.rei.api.client.registry.display.DisplayCategory;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.util.EntryStacks;
+import net.minecraft.client.util.math.Rect2i;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
@@ -53,6 +54,18 @@ public class MaterialProcessingCategory implements DisplayCategory<BasicDisplay>
 
         widgets.add(Widgets.createSlot(new Point(startPoint.x + 80, startPoint.y + 50))
                 .markOutput().entries(display.getOutputEntries().get(0)));
+
+        // ENERGY
+        widgets.add(Widgets.createDrawableWidget((graphics, mouseX, mouseY, delta) -> {
+            Rect2i area = new Rect2i(startPoint.x + 153, startPoint.y + 11, 8, 55);
+            final int height = area.getHeight();
+            int stored = (int)Math.ceil(height * (2300f / 64000f));
+
+            graphics.fillGradient(area.getX(), area.getY() + (height - stored),
+                    area.getX() + area.getWidth(), area.getY() +area.getHeight(),
+                    0xffb51500, 0xff600b00);
+        }));
+        widgets.add(Widgets.createTooltip(new Rectangle(startPoint.x + 153, startPoint.y + 11, 8, 55), Text.literal("Needs 2304 E")));
 
         return widgets;
     }

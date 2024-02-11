@@ -8,7 +8,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -19,7 +21,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
-import net.okamiz.thelongstory.block.entity.MaterialProcessorBlockEntity;
+import net.okamiz.thelongstory.block.entity.custom.MaterialProcessorBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 public class MaterialProcessorBlock extends BlockWithEntity {
