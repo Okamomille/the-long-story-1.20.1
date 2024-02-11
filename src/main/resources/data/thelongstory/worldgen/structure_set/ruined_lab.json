@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "thelongstory:ruined_lab",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 454017611,
+    "frequency": 0.02,
+    "spread_type": "triangular",
+    "spacing": 15,
+    "separation": 10
+  }
+}
