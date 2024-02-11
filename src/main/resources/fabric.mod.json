@@ -23,7 +23,11 @@
 		],
 		"fabric-datagen": [
 			"net.okamiz.thelongstory.TheLongStoryDataGenerator"
+		],
+		"rei_client": [
+			"net.okamiz.thelongstory.compat.TheLongStoryREIClientPlugin"
 		]
+
 	},
 	"mixins": [
 		"thelongstory.mixins.json"
