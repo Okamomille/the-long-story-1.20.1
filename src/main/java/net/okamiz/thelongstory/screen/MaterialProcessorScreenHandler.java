@@ -30,8 +30,6 @@ public class MaterialProcessorScreenHandler extends ScreenHandler {
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = ((MaterialProcessorBlockEntity) blockEntity);
 
-        this.addSlot(new Slot(inventory, 3, 35, 50));
-        this.addSlot(new Slot(inventory, 2, 126, 50));
         this.addSlot(new Slot(inventory, 1, 80, 50));
         this.addSlot(new Slot(inventory, 0, 80, 11));
 
