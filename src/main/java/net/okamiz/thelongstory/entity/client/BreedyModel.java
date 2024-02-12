@@ -17,10 +17,12 @@ import net.okamiz.thelongstory.entity.custom.CrawlerEntity;
 public class BreedyModel<T extends BreedyEntity> extends SinglePartEntityModel<T> {
 	private final ModelPart base;
 	private final ModelPart head;
+	private final ModelPart wings;
 
 	public BreedyModel(ModelPart root) {
 		this.base = root.getChild("base");
 		this.head = base.getChild("body").getChild("head");
+		this.wings = base.getChild("body").getChild("head").getChild("wings");
 	}
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
@@ -41,8 +43,9 @@ public class BreedyModel<T extends BreedyEntity> extends SinglePartEntityModel<T
 		this.getPart().traverse().forEach(ModelPart::resetTransform);
 		this.setHeadAngles(headYaw, headPitch);
 
-		this.animateMovement(ModAnimations.BREEDY_FLY, limbAngle, limbDistance, 2f, 2.5f);
-		this.updateAnimation(entity.idleAnimationState, ModAnimations.BREEDY_IDLE, animationProgress, 1f);
+		//this.animateMovement(ModAnimations.BREEDY_FLY, limbAngle, limbDistance, 2f, 2.5f);
+		//this.updateAnimation(entity.idleAnimationState, ModAnimations.BREEDY_IDLE, animationProgress, 1f);
+		this.wings.yaw = animationProgress;  // or use .yaw instead of .roll on the model part, depending on what you need
 	}
 
 	private void setHeadAngles(float headYaw, float headPitch) {

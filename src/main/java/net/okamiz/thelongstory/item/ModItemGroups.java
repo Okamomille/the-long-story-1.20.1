@@ -244,8 +244,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.SIMULATION_TELEPORTER);
-                        entries.add(ModBlocks.MATERIAL_PROCESSOR);
-                        entries.add(ModBlocks.RED_COAL_GENERATOR);
+                        //entries.add(ModBlocks.MATERIAL_PROCESSOR);
+                        //entries.add(ModBlocks.RED_COAL_GENERATOR);
 
 
                         //ITEMS

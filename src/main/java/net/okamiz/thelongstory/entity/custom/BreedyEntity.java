@@ -1,42 +1,59 @@
 package net.okamiz.thelongstory.entity.custom;
 
-import net.minecraft.entity.AnimationState;
-import net.minecraft.entity.EntityPose;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.*;
+import net.minecraft.entity.ai.control.FlightMoveControl;
 import net.minecraft.entity.ai.control.MoveControl;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
+import net.minecraft.entity.mob.GhastEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.passive.BeeEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Util;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.world.LocalDifficulty;
+import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.entity.ModEntities;
+import net.okamiz.thelongstory.entity.variant.BreedyVariant;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumSet;
 
 public class BreedyEntity extends AnimalEntity  {
 
+    private static final TrackedData<Integer> DATA_ID_TYPE_VARIANT =
+            DataTracker.registerData(BreedyEntity.class, TrackedDataHandlerRegistry.INTEGER);
+
+
+
+
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
     public BreedyEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
+        this.moveControl = new FlightMoveControl(this, 20, true);
     }
+
+
 
     private void setupAnimationStates() {
         if (this.idleAnimationTimeout <= 0) {
@@ -64,8 +81,8 @@ public class BreedyEntity extends AnimalEntity  {
 
     @Override
     protected void initGoals() {
-            this.goalSelector.add(5, new BreedyEntity.BreedyMoveControl.FlyRandomlyGoal(this));
-            this.goalSelector.add(7, new BreedyEntity.BreedyMoveControl.LookAtTargetGoal(this));
+            this.goalSelector.add(5, new BreedyMoveControl.FlyRandomlyGoal(this));
+            this.goalSelector.add(7, new BreedyMoveControl.LookAtTargetGoal(this));
             this.goalSelector.add(1, new EscapeDangerGoal(this, 1.25));
             this.goalSelector.add(3, new AnimalMateGoal(this, 1.0));
             this.goalSelector.add(4, new TemptGoal(this, 1.2, Ingredient.ofItems(Items.GLOW_BERRIES), false));
@@ -77,6 +94,26 @@ public class BreedyEntity extends AnimalEntity  {
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
         return ModEntities.BREEDY.create(world);
     }
+
+
+    @Override
+    public boolean handleFallDamage(float fallDistance, float damageMultiplier, DamageSource damageSource) {
+        return false;
+    }
+
+    public static DefaultAttributeContainer.Builder createBreedyAttributes() {
+        return MobEntity.createMobAttributes()
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0)
+                .add(EntityAttributes.GENERIC_FLYING_SPEED, 0.6)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2.0)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 48.0);
+    }
+
+
+
+
+
 
 
     static class BreedyMoveControl extends MoveControl {
@@ -188,28 +225,20 @@ public class BreedyEntity extends AnimalEntity  {
         }
 
 
-        public static DefaultAttributeContainer.Builder createBreedyAttributes() {
-            return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0)
-                    .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 100.0);
-        }
+    }
 
 
 
-
-        public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-            return ModEntities.BREEDY.create(world);
-        }
-
+    public boolean isBreedingItem(ItemStack stack) {
+        return stack.isOf(Items.POTATO);
+    }
 
 
-        public boolean isBreedingItem(ItemStack stack) {
-            return stack.isOf(Items.POTATO);
-        }
+    public SoundCategory getSoundCategory() {
+        return SoundCategory.NEUTRAL;
+    }
 
 
-        public SoundCategory getSoundCategory() {
-            return SoundCategory.HOSTILE;
-        }
 /*
         protected SoundEvent getAmbientSound() {
             return SoundEvents.ENTITY_BREEDY_AMBIENT;
@@ -222,6 +251,56 @@ public class BreedyEntity extends AnimalEntity  {
         protected SoundEvent getDeathSound() {
             return SoundEvents.ENTITY_BREEDY_DEATH;
         }
-*/
+
+
+    */
+
+
+    //Variant
+    @Override
+    protected void initDataTracker() {
+        super.initDataTracker();
+        this.dataTracker.startTracking(DATA_ID_TYPE_VARIANT, 0);
+    }
+
+
+
+    public BreedyVariant getVariant(){
+        return BreedyVariant.byId(this.getTypeVariant() & 255);
+    }
+
+
+
+    private int getTypeVariant(){
+        return this.dataTracker.get(DATA_ID_TYPE_VARIANT);
+    }
+
+
+
+    private void setVariant(BreedyVariant variant){
+        this.dataTracker.set(DATA_ID_TYPE_VARIANT, variant.getId() & 255);
+    }
+
+
+    @Override
+    public EntityData initialize(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason, @Nullable EntityData entityData, @Nullable NbtCompound entityNbt) {
+
+       BreedyVariant variant = Util.getRandom(BreedyVariant.values(), this.random);
+       setVariant(variant);
+
+        return super.initialize(world, difficulty, spawnReason, entityData, entityNbt);
+    }
+
+
+    @Override
+    public void readCustomDataFromNbt(NbtCompound nbt) {
+        super.readCustomDataFromNbt(nbt);
+        this.dataTracker.set(DATA_ID_TYPE_VARIANT, nbt.getInt("variant"));
+    }
+
+    @Override
+    public void writeCustomDataToNbt(NbtCompound nbt) {
+        super.writeCustomDataToNbt(nbt);
+        nbt.putInt("variant", this.getTypeVariant());
     }
 }
