@@ -4,6 +4,7 @@ package net.okamiz.thelongstory.block.entity.custom;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.fabricmc.fabric.api.transfer.v1.transaction.Transaction;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.FacingBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -164,6 +165,7 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
     public void tick(World world, BlockPos pos, BlockState state) {
 
 
+
         fillUpOnEnergy(); // until we have othermods / machines that give us energy
 
         if(hasRecipe()) {
@@ -243,5 +245,9 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
     public NbtCompound toInitialChunkDataNbt() {
         return createNbt();
     }
+
+
+
+
 }
 

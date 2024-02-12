@@ -40,4 +40,9 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CowsmicEntity::new)
                     .dimensions(EntityDimensions.fixed(0.9f,1.4f)).build());
 
+    public static final EntityType<BreedyEntity> BREEDY = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheLongStory.MOD_ID, "breedy"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, BreedyEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.6f,0.9f)).build());
+
 }
