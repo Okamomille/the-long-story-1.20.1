@@ -292,7 +292,7 @@ public class ModItemGroups {
 
 
 
-                        public static final ItemGroup FOOD_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup FOOD_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TheLongStory.MOD_ID, "foodgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.foodgroup"))
                     .icon(() -> new ItemStack(ModItems.REDSTONE_APPLE)).entries((displayContext, entries) -> {

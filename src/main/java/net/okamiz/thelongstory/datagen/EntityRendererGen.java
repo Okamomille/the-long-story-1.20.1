@@ -25,5 +25,8 @@ public class EntityRendererGen {
 
         EntityRendererRegistry.register(ModEntities.COWSMIC, CowsmicRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.COWSMIC, CowsmicModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.BREEDY, BreedyRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.BREEDY, BreedyModel::getTexturedModelData);
     }
 }

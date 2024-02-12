@@ -19,4 +19,7 @@ public class ModModelLayers {
 
     public static final EntityModelLayer COWSMIC =
             new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "cowsmic"), "main");
+
+    public static final EntityModelLayer BREEDY =
+            new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "breedy"), "main");
 }
