@@ -158,8 +158,8 @@
   "block.thelongstory.broken_simulation_teleporter" : "Broken Simulation Teleporter",
   "block.thelongstory.greffed_command_system" : "Greffed Command System",
   "block.thelongstory.simulation_teleporter" : "Simulation Teleporter",
-  "block.thelongstory.material_processor" : "Material Processor",
-  "block.thelongstory.red_coal_generator" : "Red Coal Generator",
+  "block.thelongstory.material_processor" : "Material Processor [WIP]",
+  "block.thelongstory.red_coal_generator" : "Red Coal Generator [WIP]",
 
 
   "block.thelongstory.red_coal_block" : "Block of Red Coal",
