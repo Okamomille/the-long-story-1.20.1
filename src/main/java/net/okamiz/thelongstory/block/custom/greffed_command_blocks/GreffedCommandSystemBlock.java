@@ -4,10 +4,14 @@ import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -19,6 +23,8 @@ import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import net.okamiz.thelongstory.block.entity.custom.GreffedCommandSystemBlockEntity;
 import net.okamiz.thelongstory.item.ModItems;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final IntProperty ON = IntProperty.of("power", 0, 6);
@@ -99,6 +105,13 @@ public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockE
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 
-
-
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+        super.appendTooltip(stack, world, tooltip, options);
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.thelongstory.greffed_command_system"));
+        }else{
+            tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));
+        }
+    }
 }

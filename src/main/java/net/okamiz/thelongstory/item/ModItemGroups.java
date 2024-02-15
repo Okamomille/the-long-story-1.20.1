@@ -45,6 +45,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SPIDER_SILK_BLOCK);
                         entries.add(ModBlocks.DEEPSLATE_PILLAR);
                         entries.add(ModBlocks.RED_COAL_BLOCK);
+                        entries.add(ModBlocks.IMPURE_GLITCHED_BLOCK);
+                        entries.add(ModBlocks.PURE_GLITCHED_BLOCK);
 
                         entries.add(ModBlocks.DEEP_ICE);
                         entries.add(ModBlocks.FROSTED_ICE);
@@ -286,6 +288,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CRAWLER_SPAWN_EGG);
                         entries.add(ModItems.TOOKI_SPAWN_EGG);
                         entries.add(ModItems.COWSMIC_SPAWN_EGG);
+                        entries.add(ModItems.BREEDY_SPAWN_EGG);
 
 
                     }).build());

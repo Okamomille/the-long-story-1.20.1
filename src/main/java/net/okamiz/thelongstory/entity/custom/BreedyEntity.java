@@ -33,6 +33,7 @@ import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.entity.variant.BreedyVariant;
+import net.okamiz.thelongstory.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumSet;
@@ -239,21 +240,17 @@ public class BreedyEntity extends AnimalEntity  {
     }
 
 
-/*
         protected SoundEvent getAmbientSound() {
-            return SoundEvents.ENTITY_BREEDY_AMBIENT;
+            return ModSounds.BREEDY_AMBIENT;
         }
 
         protected SoundEvent getHurtSound(DamageSource source) {
-            return SoundEvents.ENTITY_BREEDY_HURT;
+            return ModSounds.BREEDY_HURT;
         }
 
         protected SoundEvent getDeathSound() {
-            return SoundEvents.ENTITY_BREEDY_DEATH;
+            return ModSounds.BREEDY_DEATH;
         }
-
-
-    */
 
 
     //Variant

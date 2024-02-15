@@ -15,9 +15,13 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
+import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.block.entity.custom.GreffedCommandSystemBlockEntity;
 import net.okamiz.thelongstory.block.entity.custom.RedCoalGeneratorBlockEntity;
 import net.okamiz.thelongstory.block.entity.ModBlockEntities;
 import org.jetbrains.annotations.Nullable;
@@ -83,6 +87,24 @@ public class RedCoalGeneratorBlock extends BlockWithEntity{
 
         return ActionResult.SUCCESS;
     }
+
+
+    @Override
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        if(!world.isClient()){
+            if(sourceBlock == ModBlocks.MATERIAL_PROCESSOR){
+
+                BlockEntity blockEntity = world.getBlockEntity(pos);
+                if (blockEntity instanceof RedCoalGeneratorBlockEntity) {
+                    RedCoalGeneratorBlockEntity redCoalGeneratorBE = (RedCoalGeneratorBlockEntity) blockEntity;
+
+                    redCoalGeneratorBE.transferEnergy(sourceBlock, sourcePos);
+                }
+            }
+        }
+        super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
+    }
+
 
     @Nullable
     @Override

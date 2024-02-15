@@ -31,12 +31,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM);
         addDrop(ModBlocks.BROKEN_SIMULATION_TELEPORTER);
         addDrop(ModBlocks.MATERIAL_PROCESSOR);
+        addDrop(ModBlocks.RED_COAL_GENERATOR);
 
 
         addDrop(ModBlocks.MOLD_BLOCK);
         addDrop(ModBlocks.RED_COAL_BLOCK);
         addDrop(ModBlocks.SPIDER_SILK_BLOCK);
         addDrop(ModBlocks.DEEP_ICE);
+        addDrop(ModBlocks.IMPURE_GLITCHED_BLOCK);
+        addDrop(ModBlocks.PURE_GLITCHED_BLOCK);
 
         addDrop(ModBlocks.ICED_COBBLESTONE);
         addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS);

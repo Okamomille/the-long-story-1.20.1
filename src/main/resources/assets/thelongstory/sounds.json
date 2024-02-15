@@ -40,5 +40,23 @@
     "sounds": [
       "thelongstory:tooki_death"
     ]
+  },
+  "breedy_ambient": {
+    "subtitle": "sounds.thelongstory.breedy_ambient",
+    "sounds": [
+      "thelongstory:breedy_ambient"
+    ]
+  },
+  "breedy_hurt": {
+    "subtitle": "sounds.thelongstory.breedy_hurt",
+    "sounds": [
+      "thelongstory:breedy_hurt"
+    ]
+  },
+  "breedy_death": {
+    "subtitle": "sounds.thelongstory.breedy_death",
+    "sounds": [
+      "thelongstory:breedy_death"
+    ]
   }
 }

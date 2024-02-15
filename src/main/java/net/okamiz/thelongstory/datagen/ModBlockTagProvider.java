@@ -73,11 +73,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEP_ICE_ZAROSITE_ORE)
 
                 .add(ModBlocks.RED_COAL_BLOCK)
+                .add(ModBlocks.IMPURE_GLITCHED_BLOCK)
+                .add(ModBlocks.PURE_GLITCHED_BLOCK)
                 .add(ModBlocks.GREFFED_COMMAND_SYSTEM)
                 .add(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM)
                 .add(ModBlocks.BROKEN_SIMULATION_TELEPORTER)
                 .add(ModBlocks.SIMULATION_TELEPORTER)
-                .add(ModBlocks.MATERIAL_PROCESSOR);
+                .add(ModBlocks.MATERIAL_PROCESSOR)
+                .add(ModBlocks.RED_COAL_GENERATOR)
+        ;
 
 
 
@@ -107,12 +111,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.KIWI_WOOD)
                 .add(ModBlocks.STRIPPED_KIWI_LOG)
                 .add(ModBlocks.STRIPPED_KIWI_WOOD)
-                .add(ModBlocks.KIWI_PLANKS);
+                .add(ModBlocks.KIWI_PLANKS)
+        ;
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.DEEP_ICE)
                 .add(ModBlocks.MATERIAL_PROCESSOR)
+                .add(ModBlocks.RED_COAL_GENERATOR)
+                .add(ModBlocks.IMPURE_GLITCHED_BLOCK)
+                .add(ModBlocks.PURE_GLITCHED_BLOCK)
                 ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -136,30 +144,35 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_FENCE)
                 .add(ModBlocks.KIWI_FENCE)
                 .add(ModBlocks.SEPHIN_FENCE)
-                .add(ModBlocks.EGRORIC_FENCE);
+                .add(ModBlocks.EGRORIC_FENCE)
+        ;
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.OAST_FENCE_GATE)
                 .add(ModBlocks.KIWI_FENCE_GATE)
                 .add(ModBlocks.SEPHIN_FENCE_GATE)
-                .add(ModBlocks.EGRORIC_FENCE_GATE);
+                .add(ModBlocks.EGRORIC_FENCE_GATE)
+        ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(ModBlocks.EGRORIC_DOOR)
                 .add(ModBlocks.OAST_DOOR)
-                .add(ModBlocks.OAST_DOOR);
+                .add(ModBlocks.OAST_DOOR)
+        ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.EGRORIC_TRAPDOOR)
                 .add(ModBlocks.OAST_TRAPDOOR)
                 .add(ModBlocks.SEPHIN_TRAPDOOR)
-                .add(ModBlocks.KIWI_TRAPDOOR);
+                .add(ModBlocks.KIWI_TRAPDOOR)
+        ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(ModBlocks.EGRORIC_SLAB)
                 .add(ModBlocks.OAST_SLAB)
                 .add(ModBlocks.SEPHIN_SLAB)
-                .add(ModBlocks.KIWI_SLAB);
+                .add(ModBlocks.KIWI_SLAB)
+        ;
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.ICED_STONE_SLAB)
@@ -189,7 +202,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EGRORIC_STAIRS)
                 .add(ModBlocks.OAST_STAIRS)
                 .add(ModBlocks.SEPHIN_STAIRS)
-                .add(ModBlocks.KIWI_STAIRS);
+                .add(ModBlocks.KIWI_STAIRS)
+        ;
 
 
         getOrCreateTagBuilder(BlockTags.LOGS)
@@ -211,7 +225,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.KIWI_LOG)
                 .add(ModBlocks.KIWI_WOOD)
                 .add(ModBlocks.STRIPPED_KIWI_LOG)
-                .add(ModBlocks.STRIPPED_KIWI_WOOD);
+                .add(ModBlocks.STRIPPED_KIWI_WOOD)
+        ;
     }
 
 }

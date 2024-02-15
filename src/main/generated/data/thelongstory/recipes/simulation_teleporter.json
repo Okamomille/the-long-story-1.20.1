@@ -2,15 +2,26 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "A": {
+      "item": "thelongstory:teleportation_module"
+    },
+    "B": {
+      "item": "thelongstory:netherite_plate"
+    },
+    "C": {
+      "item": "thelongstory:dimension_pattern"
+    },
     "O": {
       "item": "thelongstory:command_system"
     },
     "X": {
-      "item": "thelongstory:broken_simulation_teleporter"
+      "item": "thelongstory:power_module"
     }
   },
   "pattern": [
-    "XO"
+    "BCB",
+    "XOX",
+    "BAB"
   ],
   "result": {
     "item": "thelongstory:simulation_teleporter"

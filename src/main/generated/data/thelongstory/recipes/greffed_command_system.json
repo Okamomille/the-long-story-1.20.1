@@ -2,15 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "A": {
+      "item": "thelongstory:potion_core"
+    },
+    "B": {
+      "item": "thelongstory:emerald_plate"
+    },
     "O": {
       "item": "thelongstory:command_system"
     },
     "X": {
-      "item": "thelongstory:broken_greffed_command_system"
+      "item": "thelongstory:iron_plate"
     }
   },
   "pattern": [
-    "XO"
+    "BXB",
+    "XOX",
+    "BAB"
   ],
   "result": {
     "item": "thelongstory:greffed_command_system"

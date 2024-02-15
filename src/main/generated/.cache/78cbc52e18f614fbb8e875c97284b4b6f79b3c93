@@ -1,4 +1,4 @@
-// 1.20.1	2024-02-12T17:29:14.6812404	The Long Story/Block Loot Tables
+// 1.20.1	2024-02-14T10:40:19.2643497	The Long Story/Block Loot Tables
 bcad02ba01379daadf35620c8f34d4250556bd1d data\thelongstory\loot_tables\blocks\kiwi_trapdoor.json
 8481962a43a31e7c40a4ad2281fd35ffbdcbbd99 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_stairs.json
 6a1038022fdf78ab471eacb57e891d1fa8314e13 data\thelongstory\loot_tables\blocks\stripped_kiwi_wood.json
@@ -11,6 +11,7 @@ d1a5169e92925fdba4318e2f9dd62c2169e0fa65 data\thelongstory\loot_tables\blocks\ye
 8c141f0260c3a61b99a07bdd0ca606382d1b5fc2 data\thelongstory\loot_tables\blocks\iced_cracked_stone_bricks_stairs.json
 67f9963960ef11a206412630c2613e8b97183ea8 data\thelongstory\loot_tables\blocks\torn_bush.json
 90b2628c2d4ac4473705ca8e140564518c41accd data\thelongstory\loot_tables\blocks\sephin_log.json
+f4b48e85a8b01c5da2bbb20cea6defcc23d5b365 data\thelongstory\loot_tables\blocks\pure_glitched_block.json
 1dbb05c59e8f8cd55104139c046e5638903cd3fc data\thelongstory\loot_tables\blocks\stripped_oast_wood.json
 606149dfdcba4f96931ebeb7ff332b5bd02b3819 data\thelongstory\loot_tables\blocks\kiwi_planks.json
 0936219f7efae4c0a73382cabb9a4806225d2ea2 data\thelongstory\loot_tables\blocks\lab_tiles.json
@@ -72,6 +73,7 @@ f8adba1803328dbaaf4584a73a97d77333a027f0 data\thelongstory\loot_tables\blocks\ic
 9ac4bf79effa45d9ba92ba0b6cfbc237aefeb822 data\thelongstory\loot_tables\blocks\kiwi_fence.json
 a0d90115be7a88d989722bb908dc803b2bf7c5fe data\thelongstory\loot_tables\blocks\egroric_wood.json
 658a7430836653f0511dd6454a9a43d1f8215004 data\thelongstory\loot_tables\blocks\oast_trapdoor.json
+650666033b9cbbb0dd82ebe95f900b9c5095deab data\thelongstory\loot_tables\blocks\red_coal_generator.json
 ebd1fbe00f711defc55a65ff4fb3923632598588 data\thelongstory\loot_tables\blocks\egroric_stairs.json
 aca6aeafa09f359488ec91c996cd112fe9bb3733 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_wall.json
 3854627b711df38f0588f10c9f680e9ef789a7dd data\thelongstory\loot_tables\blocks\sephin_stairs.json
@@ -82,6 +84,7 @@ d5adb6c745cfa3a76763ce7c17fe6c2230c88d84 data\thelongstory\loot_tables\blocks\st
 bba41ebdb097791d1e078c2c5b1febbaf671c683 data\thelongstory\loot_tables\blocks\egroric_fence_gate.json
 a71482c0c25431625b8c5a5b722d711b85d5b9ff data\thelongstory\loot_tables\blocks\stripped_kiwi_log.json
 93aaa9487f84d8d26f1b69dd9be042bd681f159f data\thelongstory\loot_tables\blocks\iced_chiseled_stone_bricks_wall.json
+000389d8b894990e6cc35324016c48ed031cf39e data\thelongstory\loot_tables\blocks\impure_glitched_block.json
 99ba7132320e08b1ceb3584d288987e58bd6d6f0 data\thelongstory\loot_tables\blocks\sephin_pressure_plate.json
 1c38ba2919ef9b9408c9dc71dd6ac0c38f8edab7 data\thelongstory\loot_tables\blocks\material_processor.json
 9afc00dbdd839f038ef63270dc27b20dba72d892 data\thelongstory\loot_tables\blocks\zarosite_block.json

@@ -604,6 +604,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STONE),conditionsFromItem(Items.STONE))
                 .offerTo(exporter, new Identifier("iced_stone_recipe"));
 
+        createStairsRecipe(ModBlocks.ICED_STONE_STAIRS, Ingredient.ofItems(ModBlocks.ICED_STONE))
+                .criterion(hasItem(ModBlocks.ICED_STONE),conditionsFromItem(ModBlocks.ICED_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_STONE_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.ICED_STONE_SLAB, Ingredient.ofItems(ModBlocks.ICED_STONE))
+                .criterion(hasItem(ModBlocks.ICED_STONE),conditionsFromItem(ModBlocks.ICED_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ICED_STONE_SLAB)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_STONE_WALL, 4)
+
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.ICED_STONE)
+                .criterion(hasItem(ModBlocks.ICED_STONE),conditionsFromItem(ModBlocks.ICED_STONE))
+                .offerTo(exporter, new Identifier("iced_stone_wall_recipe"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_COBBLESTONE, 4)
                 .pattern("XXX")
                 .pattern("XOX")
@@ -702,6 +717,78 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', ModBlocks.ICED_CHISELED_STONE_BRICKS)
                 .criterion(hasItem(ModBlocks.ICED_CHISELED_STONE_BRICKS),conditionsFromItem(ModBlocks.ICED_CHISELED_STONE_BRICKS))
                 .offerTo(exporter, new Identifier("iced_chiseled_stone_bricks_wall_recipe"));
+
+
+        // APPLES
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.EMERALD_APPLE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('O', Items.APPLE)
+                .input('X', Items.EMERALD)
+                .criterion(hasItem(Items.APPLE),conditionsFromItem(Items.APPLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.EMERALD_APPLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.IRON_APPLE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('O', Items.APPLE)
+                .input('X', Items.IRON_INGOT)
+                .criterion(hasItem(Items.APPLE),conditionsFromItem(Items.APPLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.IRON_APPLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIAMOND_APPLE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('O', Items.APPLE)
+                .input('X', Items.DIAMOND)
+                .criterion(hasItem(Items.APPLE),conditionsFromItem(Items.APPLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DIAMOND_APPLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.LAPIS_APPLE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('O', Items.APPLE)
+                .input('X', Items.LAPIS_LAZULI)
+                .criterion(hasItem(Items.APPLE),conditionsFromItem(Items.APPLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.LAPIS_APPLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.REDSTONE_APPLE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('O', Items.APPLE)
+                .input('X', Items.REDSTONE)
+                .criterion(hasItem(Items.APPLE),conditionsFromItem(Items.APPLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.REDSTONE_APPLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.AMETHYST_APPLE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('O', Items.APPLE)
+                .input('X', Items.AMETHYST_SHARD)
+                .criterion(hasItem(Items.APPLE),conditionsFromItem(Items.APPLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.AMETHYST_APPLE)));
+
+
+
+        // -------------------------
+
+
+
+
+
+
+
+
+
 
 
 
