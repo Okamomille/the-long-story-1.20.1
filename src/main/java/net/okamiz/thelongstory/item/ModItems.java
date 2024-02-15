@@ -109,18 +109,17 @@ public class ModItems {
 
     public static final Item TREPASSEUR_SPAWN_EGG = registerItem("trepasseur_spawn_egg",
             new SpawnEggItem(ModEntities.TREPASSEUR, 5944735,5477236, new FabricItemSettings()));
-
     public static final Item TICKELER_SPAWN_EGG = registerItem("tickeler_spawn_egg",
             new SpawnEggItem(ModEntities.TICKELER, 3304518,9103214, new FabricItemSettings()));
-
     public static final Item CRAWLER_SPAWN_EGG = registerItem("crawler_spawn_egg",
             new SpawnEggItem(ModEntities.CRAWLER, 5339992,1078563, new FabricItemSettings()));
-
     public static final Item TOOKI_SPAWN_EGG = registerItem("tooki_spawn_egg",
             new SpawnEggItem(ModEntities.TOOKI, 12424932,7356576, new FabricItemSettings()));
-
     public static final Item COWSMIC_SPAWN_EGG = registerItem("cowsmic_spawn_egg",
             new SpawnEggItem(ModEntities.COWSMIC, 15500214,16777215, new FabricItemSettings()));
+    public static final Item BREEDY_SPAWN_EGG = registerItem("breedy_spawn_egg",
+            new SpawnEggItem(ModEntities.BREEDY, 16768071,16491304, new FabricItemSettings()));
+
 
 
 

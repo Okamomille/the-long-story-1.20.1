@@ -17,6 +17,11 @@ public class ModSounds {
     public static final SoundEvent TOOKI_DEATH = registerSoundEvent("tooki_death");
 
 
+    public static final SoundEvent BREEDY_AMBIENT = registerSoundEvent("breedy_ambient");
+    public static final SoundEvent BREEDY_HURT = registerSoundEvent("breedy_hurt");
+    public static final SoundEvent BREEDY_DEATH = registerSoundEvent("breedy_death");
+
+
 
 
 

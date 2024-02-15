@@ -111,6 +111,7 @@
   "item.thelongstory.crawler_spawn_egg" : "Crawler Spawn Egg",
   "item.thelongstory.tooki_spawn_egg" : "Tooki Spawn Egg",
   "item.thelongstory.cowsmic_spawn_egg" : "Cowsmic Spawn Egg",
+  "item.thelongstory.breedy_spawn_egg" : "Breedy Spawn Egg",
 
 
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
@@ -132,6 +133,11 @@
   "block.thelongstory.iced_cobblestone_slab" : "Iced Cobblestone Slab",
   "block.thelongstory.iced_cobblestone_stairs" : "Iced Cobblestone Stairs",
   "block.thelongstory.iced_cobblestone_wall" : "Iced Cobblestone Wall",
+
+  "block.thelongstory.iced_stone_bricks" : "Iced Stone Bricks",
+  "block.thelongstory.iced_stone_bricks_slab" : "Iced Stone Bricks Slab",
+  "block.thelongstory.iced_stone_bricks_stairs" : "Iced Stone Bricks Stairs",
+  "block.thelongstory.iced_stone_bricks_wall" : "Iced Stone Bricks Wall",
 
   "block.thelongstory.iced_cracked_stone_bricks" : "Iced Cracked Stone Bricks",
   "block.thelongstory.iced_cracked_stone_bricks_slab" : "Iced Cracked Stone Bricks Slab",
@@ -241,6 +247,9 @@
   "block.thelongstory.kiwi_button" : "Kiwi Button",
   "block.thelongstory.kiwi_pressure_plate" : "Kiwi Pressure Plate",
 
+  "block.thelongstory.impure_glitched_block" : "Impure Glitched Block",
+  "block.thelongstory.pure_glitched_block" : "Pure Glitched Block",
+
 
 
   "block.thelongstory.torn_bush" : "Torn Bush",
@@ -279,6 +288,10 @@
   "tooltip.thelongstory.power_star" : "§7This is the star of Power, needed to go deeper in the science of life.",
   "tooltip.thelongstory.soul_container" : "§7This container can capture a soul and use it's essence. \nRight click on a mob who's §n§l§cunder 15HP §r§7to capture it.",
   "tooltip.thelongstory.soul_container_full" : "§o§7Is obtained by using the Soul container.",
+  "tooltip.thelongstory.teleportation_remote" : "§7Right click to teleport yourself to your respawn point. You'll need to sleep in a bed in the overworld. Won't work with the respawn anchor\n\n§e> 1min cooldown",
+  "tooltip.thelongstory.greffed_command_system" : "§7Used to stock essences containers and to apply the linked effect to the player.\n Right click on the block with an essence container to activate it, then right click again to use it.\n\n§e> 3min cooldown",
+  "tooltip.thelongstory.simulation_teleporter": "§7Right click on the teleporter to go in the Simulation dimension. You'll need a Teleportation remote to teleport back to the overworld.",
+
 
   "tooltip.thelongstory.broken" : "§7It's broken! You'll need to fix it if you want to use it.",
 
@@ -318,8 +331,12 @@
   "sounds.thelongstory.greffed_command_system_fail": "Greffed Command System Waiting",
   "sounds.thelongstory.greffed_command_system_give_effect": "Greffed Command System Gives Effect",
   "sounds.thelongstory.teleportation": "Player Teleportation",
-  "sounds.thelongstory.tooki_idle": "Tooki",
+  "sounds.thelongstory.tooki_idle": "Tooki Ambient",
   "sounds.thelongstory.tooki_hurt": "Tooki Hurt",
-  "sounds.thelongstory.tooki_death": "Tooki Death"
+  "sounds.thelongstory.tooki_death": "Tooki Death",
+
+  "sounds.thelongstory.breedy_ambient": "Breedy Singing",
+  "sounds.thelongstory.breedy_hurt": "Breedy Hurt",
+  "sounds.thelongstory.breedy_death": "Breedy Death"
 
 }

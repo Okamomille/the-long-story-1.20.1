@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:apple"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "result": {
+    "item": "thelongstory:diamond_apple"
+  },
+  "show_notification": true
+}

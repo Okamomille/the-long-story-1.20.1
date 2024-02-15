@@ -29,6 +29,13 @@ public class ModBlocks {
     public static final Block SPIDER_SILK_BLOCK = registerBlock("spider_silk_block",
             new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
 
+    public static final Block IMPURE_GLITCHED_BLOCK = registerBlock("impure_glitched_block",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE)));
+
+    public static final Block PURE_GLITCHED_BLOCK = registerBlock("pure_glitched_block",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+
     public static final Block DEEPSLATE_PILLAR = registerBlock("deepslate_pillar",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_TILES)));
     public static final Block DEEPSLATE_PILLAR_ALL = registerBlock("deepslate_pillar_all",

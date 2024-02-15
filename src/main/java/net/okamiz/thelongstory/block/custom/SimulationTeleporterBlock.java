@@ -2,9 +2,12 @@ package net.okamiz.thelongstory.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.network.packet.s2c.play.PositionFlag;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -15,9 +18,13 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.sound.ModSounds;
 import net.okamiz.thelongstory.world.dimension.ModDimensions;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class SimulationTeleporterBlock extends Block {
     public SimulationTeleporterBlock(Settings settings) {
@@ -59,6 +66,13 @@ public class SimulationTeleporterBlock extends Block {
         return ActionResult.FAIL;
     }
 
-
-
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+        super.appendTooltip(stack, world, tooltip, options);
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.thelongstory.simulation_teleporter"));
+        }else{
+            tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));
+        }
+    }
 }

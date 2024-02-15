@@ -2,6 +2,8 @@ package net.okamiz.thelongstory.item.custom;
 
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -17,7 +19,9 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.sound.ModSounds;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Objects;
 
 public class TeleportationRemoteItem extends Item {
@@ -67,5 +71,16 @@ public class TeleportationRemoteItem extends Item {
 
 
         return super.use(world, player, hand);
+    }
+
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        super.appendTooltip(stack, world, tooltip, context);
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.thelongstory.teleportation_remote"));
+        }else{
+            tooltip.add(Text.translatable("tooltip.thelongstory.press_shift_info"));
+        }
     }
 }

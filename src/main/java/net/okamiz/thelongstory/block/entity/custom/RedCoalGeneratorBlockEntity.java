@@ -3,6 +3,7 @@ package net.okamiz.thelongstory.block.entity.custom;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.fabricmc.fabric.api.transfer.v1.transaction.Transaction;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FacingBlock;
 import net.minecraft.block.entity.BlockEntity;
@@ -183,12 +184,40 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
 
     private void fillUpOnEnergy() {
         if(hasEnergyItemInEnergySlot(INPUT_SLOT)){
-            try(Transaction transaction = Transaction.openOuter()){
-                this.energyStorage.insert(64,transaction);
-                transaction.commit();
-            }
+            this.removeStack(INPUT_SLOT, 1);
+            addEnergy();
         }
     }
+
+    private void addEnergy() {
+        try(Transaction transaction = Transaction.openOuter()){
+            this.energyStorage.insert(1200,transaction);
+            transaction.commit();
+        }
+    }
+
+
+    public void transferEnergy(Block block, BlockPos pos){
+
+        BlockEntity blockEntity = world.getBlockEntity(pos);
+
+        if (blockEntity instanceof MaterialProcessorBlockEntity) {
+
+            MaterialProcessorBlockEntity materialProcessorBlockEntity = (MaterialProcessorBlockEntity) blockEntity;
+
+                if(this.energyStorage.amount >= 64){
+                    try(Transaction transaction = Transaction.openOuter()){
+                    this.energyStorage.extract(64,transaction);
+                    materialProcessorBlockEntity.energyStorage.insert(64, transaction);
+                    transaction.commit();}
+                }
+
+        }
+
+
+    }
+
+
 
     private boolean hasEnergyItemInEnergySlot(int inputSlot) {
         return this.getStack(inputSlot).getItem() == ModItems.RED_COAL;
@@ -222,7 +251,6 @@ public class RedCoalGeneratorBlockEntity extends BlockEntity implements Extended
         }
 
     }
-
 
     private Optional<MaterialProcessingRecipe> getCurrentRecipe() {
         SimpleInventory inventory = new SimpleInventory((this.size()));
