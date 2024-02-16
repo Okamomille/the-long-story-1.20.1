@@ -4,7 +4,6 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.FoodComponents;
-import net.okamiz.thelongstory.effect.ModEffects;
 
 public class ModFoodComponents extends FoodComponents {
     public static final FoodComponent EMERALD_APPLE = new FoodComponent.Builder().alwaysEdible().hunger(8).saturationModifier(1.2f)
@@ -15,8 +14,8 @@ public class ModFoodComponents extends FoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 60,0),100).build();
 
     public static final FoodComponent DIAMOND_APPLE = new FoodComponent.Builder().alwaysEdible().hunger(10).saturationModifier(1.2f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 2400),100)
-            .statusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 2400, 0),100).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 2400, 0),100)
+            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 2400,0),75).build();
 
     public static final FoodComponent REDSTONE_APPLE = new FoodComponent.Builder().alwaysEdible().hunger(6).saturationModifier(1.2f)
             .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 2400),100)
@@ -33,4 +32,6 @@ public class ModFoodComponents extends FoodComponents {
     public static final FoodComponent INFESTED_FLESH = new FoodComponent.Builder().alwaysEdible().hunger(1).saturationModifier(1f).meat()
             .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 200, 0),0.8F)
             .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 300,1),100).build();
+
+    public static final FoodComponent BREEDY_FLESH = new FoodComponent.Builder().hunger(4).saturationModifier(1f).build();
 }
