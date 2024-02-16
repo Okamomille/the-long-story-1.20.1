@@ -208,6 +208,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LAPIS_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.REDSTONE_APPLE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.BREEDY_FLESH, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.RED_COAL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BONE_FRAGMENTS, Models.GENERATED);

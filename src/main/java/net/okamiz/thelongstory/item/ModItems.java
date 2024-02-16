@@ -8,8 +8,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.item.custom.*;
 
 public class ModItems {
@@ -100,6 +100,7 @@ public class ModItems {
     public static final Item LAPIS_APPLE = registerItem("lapis_apple", new Item(new FabricItemSettings().food(ModFoodComponents.LAPIS_APPLE)));
     public static final Item AMETHYST_APPLE = registerItem("amethyst_apple", new Item(new FabricItemSettings().food(ModFoodComponents.AMETHYST_APPLE)));
     public static final Item REDSTONE_APPLE = registerItem("redstone_apple", new Item(new FabricItemSettings().food(ModFoodComponents.REDSTONE_APPLE)));
+    public static final Item BREEDY_FLESH = registerItem("breedy_flesh", new Item(new FabricItemSettings().food(ModFoodComponents.BREEDY_FLESH)));
 
 
 

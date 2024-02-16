@@ -104,6 +104,7 @@
   "item.thelongstory.lapis_apple" : "Lapis Lazuli Apple",
   "item.thelongstory.redstone_apple" : "Redstone Apple",
   "item.thelongstory.amethyst_apple" : "Amethyst Apple",
+  "item.thelongstory.breedy_flesh" : "Breedy Flesh",
 
 
   "item.thelongstory.trepasseur_spawn_egg" : "Trepasseur Spawn Egg",
@@ -317,6 +318,7 @@
 
   "effect.thelongstory.infected": "Infected",
   "effect.thelongstory.crystallized": "Crystallized",
+  "effect.thelongstory.sea_charm": "Ocean Agility",
 
   "entity.thelongstory.trepasseur": "a Trepasseur",
   "entity.thelongstory.tickeler": "a Tickeler",

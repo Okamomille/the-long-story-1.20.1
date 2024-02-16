@@ -306,6 +306,7 @@ public class ModItemGroups {
                         entries.add(ModItems.LAPIS_APPLE);
                         entries.add(ModItems.REDSTONE_APPLE);
                         entries.add(ModItems.AMETHYST_APPLE);
+                        entries.add(ModItems.BREEDY_FLESH);
 
 
                     }).build());
