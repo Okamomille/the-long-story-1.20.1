@@ -29,6 +29,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ZAROSITE_SHARD);
 
                         entries.add(ModItems.GREEN_SHARD);
+                        entries.add(ModItems.DRONIUM_INGOT);
+                        entries.add(ModItems.DROWNIUM_POWDER);
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
@@ -246,7 +248,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.SIMULATION_TELEPORTER);
-                        //entries.add(ModBlocks.MATERIAL_PROCESSOR);
+                        entries.add(ModBlocks.MATERIAL_PROCESSOR);
                         //entries.add(ModBlocks.RED_COAL_GENERATOR);
 
 
@@ -307,6 +309,8 @@ public class ModItemGroups {
                         entries.add(ModItems.REDSTONE_APPLE);
                         entries.add(ModItems.AMETHYST_APPLE);
                         entries.add(ModItems.BREEDY_FLESH);
+                        entries.add(ModItems.TOOKI_MEAT);
+                        entries.add(ModItems.COOKED_TOOKI_MEAT);
 
 
                     }).build());

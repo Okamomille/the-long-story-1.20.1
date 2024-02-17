@@ -209,8 +209,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REDSTONE_APPLE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BREEDY_FLESH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOOKI_MEAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_TOOKI_MEAT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RED_COAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DRONIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DROWNIUM_POWDER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BONE_FRAGMENTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRUSHED_BONES, Models.GENERATED);
