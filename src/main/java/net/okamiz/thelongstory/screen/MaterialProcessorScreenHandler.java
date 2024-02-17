@@ -32,6 +32,7 @@ public class MaterialProcessorScreenHandler extends ScreenHandler {
 
         this.addSlot(new Slot(inventory, 1, 80, 50));
         this.addSlot(new Slot(inventory, 0, 80, 11));
+        this.addSlot(new Slot(inventory, 2, 129, 50));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);

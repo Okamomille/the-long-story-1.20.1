@@ -8,9 +8,14 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.network.listener.ClientPlayPacketListener;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -36,6 +41,7 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
 
     private static final int INPUT_SLOT = 0;
     private static final int OUTPUT_SLOT = 1;
+    private static final int ENERGY_ITEM_SLOT = 2;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -68,7 +74,7 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
         };
     }
 
-    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(64000, 200, 200){
+    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(32000, 200, 200) {
         @Override
         protected void onFinalCommit() {
             markDirty();
@@ -80,28 +86,27 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
         Direction localDir = this.getWorld().getBlockState(pos).get(MaterialProcessorBlock.FACING);
 
-        if(side == Direction.DOWN){
+        if(side == Direction.DOWN) {
             return false;
         }
 
-        if(side == Direction.UP){
+        if(side == Direction.UP) {
             return slot == INPUT_SLOT;
         }
 
-        return switch(localDir){
+        return switch (localDir) {
             default -> //NORTH
-                        side.getOpposite() == Direction.NORTH && slot == INPUT_SLOT ||
-                        side.getOpposite() == Direction.WEST && slot == INPUT_SLOT;
+                    side.getOpposite() == Direction.NORTH && slot == INPUT_SLOT ||
+                            side.getOpposite() == Direction.WEST && slot == INPUT_SLOT;
             case EAST ->
-                        side.rotateYClockwise() == Direction.NORTH && slot == INPUT_SLOT ||
-                                side.rotateYClockwise() == Direction.WEST && slot == INPUT_SLOT;
+                    side.rotateYClockwise() == Direction.NORTH && slot == INPUT_SLOT ||
+                            side.rotateYClockwise() == Direction.WEST && slot == INPUT_SLOT;
             case SOUTH ->
-                        side == Direction.NORTH && slot == INPUT_SLOT ||
+                    side == Direction.NORTH && slot == INPUT_SLOT ||
                             side == Direction.WEST && slot == INPUT_SLOT;
             case WEST ->
-                        side.rotateYCounterclockwise() == Direction.NORTH && slot == INPUT_SLOT ||
+                    side.rotateYCounterclockwise() == Direction.NORTH && slot == INPUT_SLOT ||
                             side.rotateYCounterclockwise() == Direction.WEST && slot == INPUT_SLOT;
-
         };
     }
 
@@ -161,23 +166,23 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, inventory);
         nbt.putInt("material_processor.progress", progress);
-        nbt.putLong("red_coal_generator.energy", energyStorage.amount);
+        nbt.putLong(("material_processor.energy"), energyStorage.amount);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         Inventories.readNbt(nbt, inventory);
         progress = nbt.getInt("material_processor.progress");
-        energyStorage.amount = nbt.getLong("red_coal_generator.energy");
+        energyStorage.amount = nbt.getLong("material_processor.energy");
         super.readNbt(nbt);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
-        fillUpOnEnergy(); // until we have othermods / machines that give us energy
-        
+        fillUpOnEnergy(); // until we have machines/other mods that give us Energy
+
         if(canInsertIntoOutputSlot() && hasRecipe()) {
-            increaseCraftingProgress();
             extractEnergy();
+            increaseCraftingProgress();
             markDirty(world, pos, state);
 
             if(hasCraftingFinished()) {
@@ -185,22 +190,68 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
                 resetProgress();
             }
         } else {
-            resetProgress();
+            if(this.getStack(INPUT_SLOT).getItem() == Items.COAL){
+
+            }else if(this.getStack(INPUT_SLOT).getItem() == ModItems.IMPURE_ZAROSITE_INGOT){
+
+            }else{
+                resetProgress();
+            }
+
         }
     }
 
     private void extractEnergy() {
-        try(Transaction transaction = Transaction.openOuter()){
-            this.energyStorage.extract(32L, transaction);
+
+        if(isRecipe(INPUT_SLOT, Items.COAL)){
+            maxProgress = 72;
+            try(Transaction transaction = Transaction.openOuter()) {
+                this.energyStorage.extract(20L, transaction);
+                transaction.commit();
+            }
+        }
+        if(isRecipe(INPUT_SLOT, ModItems.IMPURE_ZAROSITE_INGOT)){
+            maxProgress = 140;
+            try(Transaction transaction = Transaction.openOuter()) {
+                this.energyStorage.extract(20L, transaction);
+                transaction.commit();
+            }
+        }
+        if(isRecipe(INPUT_SLOT, ModItems.THESTONE_DUST)){
+            maxProgress = 72;
+            try(Transaction transaction = Transaction.openOuter()) {
+                this.energyStorage.extract(20L, transaction);
+                transaction.commit();
+            }
+        }
+
+
+
+
+
+    }
+
+    private boolean isRecipe(int inputSlot, Item item) {
+        return this.getStack(inputSlot).getItem() == item;
+    }
+
+    private void fillUpOnEnergy() {
+        if(hasEnergyItemInEnergySlot(ENERGY_ITEM_SLOT)) {
+            this.removeStack(ENERGY_ITEM_SLOT, 1);
+            addEnergy();
+        }
+    }
+
+    private void addEnergy() {
+        try(Transaction transaction = Transaction.openOuter()) {
+            this.energyStorage.insert(64, transaction);
             transaction.commit();
         }
     }
 
-    private void fillUpOnEnergy() {
-        
+    private boolean hasEnergyItemInEnergySlot(int energyItemSlot) {
+        return this.getStack(energyItemSlot).getItem() == Items.REDSTONE;
     }
-
-    
 
     private void craftItem() {
         Optional<MaterialProcessingRecipe> recipe = getCurrentRecipe();
@@ -231,12 +282,15 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
         }
         ItemStack output = recipe.get().getOutput(null);
 
-        return canInsertAmountIntoOutputSlot(output.getCount())
+
+            return canInsertAmountIntoOutputSlot(output.getCount())
                 && canInsertItemIntoOutputSlot(output) && hasEnoughEnergyToCraft();
+
     }
 
+
     private boolean hasEnoughEnergyToCraft() {
-        return this.energyStorage.amount >= 32 * this.maxProgress;
+        return this.energyStorage.amount >= 1L;
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {
@@ -259,5 +313,16 @@ public class MaterialProcessorBlockEntity extends BlockEntity implements Extende
     private boolean canInsertIntoOutputSlot() {
         return this.getStack(OUTPUT_SLOT).isEmpty() ||
                 this.getStack(OUTPUT_SLOT).getCount() < this.getStack(OUTPUT_SLOT).getMaxCount();
+    }
+
+    @Nullable
+    @Override
+    public Packet<ClientPlayPacketListener> toUpdatePacket() {
+        return BlockEntityUpdateS2CPacket.create(this);
+    }
+
+    @Override
+    public NbtCompound toInitialChunkDataNbt() {
+        return createNbt();
     }
 }

@@ -75,7 +75,7 @@ public class ModConfiguredFeatures {
         register(context, DEEP_ICE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationZarositeOre, 4));
 
 
-        register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(64,
+        register(context, TORN_BUSH_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(34,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.TORN_BUSH)))));
 
         register(context, PINK_PHYGELUS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(20,
@@ -84,7 +84,7 @@ public class ModConfiguredFeatures {
         register(context, YELLOW_PHYGELUS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(20,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.YELLOW_PHYGELUS)))));
 
-        register(context, BLUE_OSPET_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(75,
+        register(context, BLUE_OSPET_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(30,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_OSPET)))));
 
 
