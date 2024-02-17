@@ -63,12 +63,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT, RecipeCategory.MISC,
                 ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE, RecipeCategory.MISC,
                 ModBlocks.ZAROSITE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.DRONIUM_INGOT, RecipeCategory.MISC,
+                ModBlocks.DRONIUM_BLOCK);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RED_COAL, RecipeCategory.MISC,
                 ModBlocks.RED_COAL_BLOCK);
@@ -96,7 +97,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.CRUSHED_BONES))
                             .offerTo(exporter, new Identifier("crushed_bones_from_block"));
 
-
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DRONIUM_POWDER, 4).input(ModItems.DRONIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CRUSHED_BONES_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DRONIUM_INGOT)).criterion(FabricRecipeProvider.hasItem(ModItems.DRONIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.DRONIUM_POWDER))
+                .offerTo(exporter, new Identifier("dronium_powder_from_ingot"));
 
 
 
@@ -132,6 +137,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("green_shard_craft"));
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DRONIUM_INGOT, 1)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', ModItems.DRONIUM_POWDER)
+                .criterion(hasItem(ModItems.DRONIUM_POWDER),conditionsFromItem(ModItems.DRONIUM_POWDER))
+                .offerTo(exporter, new Identifier("dronium_ingot_from_powder"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CRUSHED_BONES_BLOCK, 1)
                 .pattern("XX")
@@ -308,6 +319,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModItems.ZAROSITE_GEMSTONE)
                 .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_CHESTPLATE)));
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.DRONIUM_BOOTS, 1)
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.DRONIUM_HELMET, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.DRONIUM_LEGGINGS, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.DRONIUM_CHESTPLATE, 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_CHESTPLATE)));
         //-------------------
 
         // TOOLS
@@ -591,6 +634,71 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ZAROSITE_GEMSTONE),conditionsFromItem(ModItems.ZAROSITE_GEMSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ZAROSITE_SWORD)));
 
+
+        // DRONIUM
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.DRONIUM_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.DRONIUM_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.DRONIUM_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier("dronium_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.DRONIUM_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.DRONIUM_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier("dronium_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.DRONIUM_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.DRONIUM_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModItems.DRONIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_SWORD)));
 
 
         // -------------------
@@ -1268,6 +1376,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(Items.PINK_DYE))
                 .offerTo(exporter, new Identifier("pink_dye_from_pink_phygelus"));
 
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE, 1).input(ModBlocks.TORN_FLOWER)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.TORN_FLOWER),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.TORN_FLOWER)).criterion(FabricRecipeProvider.hasItem(Items.YELLOW_DYE),
@@ -1283,7 +1392,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT), conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
                 .offerTo(exporter);
 
-        new MaterialProcessingRecipeBuilder(ModItems.THESTONE_DUST, ModItems.DROWNIUM_POWDER, 1)
+        new MaterialProcessingRecipeBuilder(ModItems.THESTONE_DUST, ModItems.DRONIUM_POWDER, 1)
                 .criterion(hasItem(ModItems.THESTONE_DUST), conditionsFromItem(ModItems.THESTONE_DUST))
                 .offerTo(exporter);
 

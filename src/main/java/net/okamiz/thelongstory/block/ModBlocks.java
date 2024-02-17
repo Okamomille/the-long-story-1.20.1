@@ -136,6 +136,9 @@ public class ModBlocks {
     public static final Block ZAROSITE_BLOCK = registerBlock("zarosite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
 
+    public static final Block DRONIUM_BLOCK = registerBlock("dronium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+
 
     // FUEL BLOCKS ------------------
 

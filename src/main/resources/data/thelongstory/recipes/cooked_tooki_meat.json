@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "thelongstory:tooki_meat"
+  },
+  "result": "thelongstory:cooked_tooki_meat"
+}

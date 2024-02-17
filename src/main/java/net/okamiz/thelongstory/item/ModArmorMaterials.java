@@ -19,7 +19,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.2f,0.1f, () -> Ingredient.ofItems(ModItems.IMPURE_ZAROSITE_INGOT)),
 
     ZAROSITE("zarosite", 39, new int[]{3,6,8,3}, 13,
-            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.5f,0.2f, () -> Ingredient.ofItems(ModItems.ZAROSITE_GEMSTONE))
+            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.5f,0.2f, () -> Ingredient.ofItems(ModItems.ZAROSITE_GEMSTONE)),
+
+    DRONIUM("dronium", 40, new int[]{3,6,8,3}, 13,
+    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.5f,0.2f, () -> Ingredient.ofItems(ModItems.DRONIUM_INGOT))
     ;
 
     private final String name;

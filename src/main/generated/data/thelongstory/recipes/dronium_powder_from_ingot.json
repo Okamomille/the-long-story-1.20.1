@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "thelongstory:dronium_ingot"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "thelongstory:dronium_powder"
+  }
+}

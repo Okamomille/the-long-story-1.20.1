@@ -26,6 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZAROSITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DRONIUM_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPIDER_SILK_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOLD_BLOCK);
@@ -215,7 +216,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RED_COAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.DRONIUM_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DROWNIUM_POWDER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DRONIUM_POWDER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BONE_FRAGMENTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRUSHED_BONES, Models.GENERATED);
@@ -274,6 +275,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ZAROSITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZAROSITE_HOE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.DRONIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DRONIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DRONIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DRONIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DRONIUM_HOE, Models.HANDHELD);
+
 
         
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_HELMET));
@@ -295,6 +302,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZAROSITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZAROSITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ZAROSITE_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.DRONIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.DRONIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.DRONIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.DRONIUM_BOOTS));
 
 
 

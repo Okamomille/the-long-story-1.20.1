@@ -30,7 +30,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.GREEN_SHARD);
                         entries.add(ModItems.DRONIUM_INGOT);
-                        entries.add(ModItems.DROWNIUM_POWDER);
+                        entries.add(ModItems.DRONIUM_POWDER);
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
@@ -41,6 +41,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
                         entries.add(ModBlocks.ZAROSITE_BLOCK);
+                        entries.add(ModBlocks.DRONIUM_BLOCK);
 
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
                         entries.add(ModBlocks.MOLD_BLOCK);
@@ -183,6 +184,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_SHARD_SWORD);
                         entries.add(ModItems.IMPURE_ZAROSITE_SWORD);
                         entries.add(ModItems.ZAROSITE_SWORD);
+                        entries.add(ModItems.DRONIUM_SWORD);
 
 
                         //PICKAXES
@@ -190,26 +192,30 @@ public class ModItemGroups {
                         entries.add(ModItems.GREEN_SHARD_PICKAXE);
                         entries.add(ModItems.IMPURE_ZAROSITE_PICKAXE);
                         entries.add(ModItems.ZAROSITE_PICKAXE);
+                        entries.add(ModItems.DRONIUM_PICKAXE);
 
                         //AXES
                         entries.add(ModItems.THESTONE_AXE);
                         entries.add(ModItems.GREEN_SHARD_AXE);
                         entries.add(ModItems.IMPURE_ZAROSITE_AXE);
                         entries.add(ModItems.ZAROSITE_AXE);
+                        entries.add(ModItems.DRONIUM_AXE);
 
                         //SHOVELS
                         entries.add(ModItems.THESTONE_SHOVEL);
                         entries.add(ModItems.GREEN_SHARD_SHOVEL);
                         entries.add(ModItems.IMPURE_ZAROSITE_SHOVEL);
                         entries.add(ModItems.ZAROSITE_SHOVEL);
+                        entries.add(ModItems.DRONIUM_SHOVEL);
 
                         //HOES
                         entries.add(ModItems.THESTONE_HOE);
                         entries.add(ModItems.GREEN_SHARD_HOE);
                         entries.add(ModItems.IMPURE_ZAROSITE_HOE);
                         entries.add(ModItems.ZAROSITE_HOE);
+                        entries.add(ModItems.DRONIUM_HOE);
 
-                        //HOES
+                        //BOWS
                         entries.add(ModItems.IMPURE_ZAROSITE_BOW);
 
                         //ARMORS
@@ -232,6 +238,11 @@ public class ModItemGroups {
                         entries.add(ModItems.ZAROSITE_CHESTPLATE);
                         entries.add(ModItems.ZAROSITE_LEGGINGS);
                         entries.add(ModItems.ZAROSITE_BOOTS);
+
+                        entries.add(ModItems.DRONIUM_HELMET);
+                        entries.add(ModItems.DRONIUM_CHESTPLATE);
+                        entries.add(ModItems.DRONIUM_LEGGINGS);
+                        entries.add(ModItems.DRONIUM_BOOTS);
 
 
 
