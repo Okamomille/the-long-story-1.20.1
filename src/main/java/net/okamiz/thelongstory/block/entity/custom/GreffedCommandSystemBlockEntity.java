@@ -94,6 +94,18 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
                 else if (mainHand == ModItems.SOUL_CONTAINER_NIGHT_VISION){
                     activate(6, player);
                     player.getStackInHand(hand).decrement(1);
+                }
+                else if (mainHand == ModItems.SOUL_CONTAINER_SATURATION){
+                    activate(9, player);
+                    player.getStackInHand(hand).decrement(1);
+                }
+                else if (mainHand == ModItems.SOUL_CONTAINER_HASTE){
+                    activate(7, player);
+                    player.getStackInHand(hand).decrement(1);
+                }
+                else if (mainHand == ModItems.SOUL_CONTAINER_SLOW_FALLING){
+                    activate(8, player);
+                    player.getStackInHand(hand).decrement(1);
                 }else{
                     player.sendMessage(Text.literal("§o§7The Command System need to be activated with an Essence Container. "),true);
                     world.playSound(null, pos, ModSounds.GREFFED_COMMAND_SYSTEM_FAIL, SoundCategory.BLOCKS, 1f, 1f);
@@ -132,23 +144,33 @@ public class GreffedCommandSystemBlockEntity extends BlockEntity {
     private void applyEffect(PlayerEntity player) {
 
         if(effectID == 1){
-            effect = new StatusEffectInstance(StatusEffects.REGENERATION, 3600, 1);
+            effect = new StatusEffectInstance(StatusEffects.REGENERATION, 3600, 0);
         }
         if(effectID == 2){
-            effect = new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 3600, 1);
+            effect = new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 3600, 0);
         }
         if(effectID == 3){
-            effect = new StatusEffectInstance(StatusEffects.JUMP_BOOST, 3600, 1);
+            effect = new StatusEffectInstance(StatusEffects.JUMP_BOOST, 3600, 0);
         }
         if(effectID == 4){
-            effect = new StatusEffectInstance(StatusEffects.RESISTANCE, 3600, 1);
+            effect = new StatusEffectInstance(StatusEffects.RESISTANCE, 3600, 0);
         }
         if(effectID == 5){
-            effect = new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 3600, 1);
+            effect = new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 3600, 0);
         }
         if(effectID == 6){
-            effect = new StatusEffectInstance(StatusEffects.NIGHT_VISION, 3600, 1);
+            effect = new StatusEffectInstance(StatusEffects.NIGHT_VISION, 3600, 0);
         }
+        if(effectID == 7){
+            effect = new StatusEffectInstance(StatusEffects.HASTE, 3600, 0);
+        }
+        if(effectID == 8){
+            effect = new StatusEffectInstance(StatusEffects.SLOW_FALLING, 3600, 0);
+        }
+        if(effectID == 9){
+            effect = new StatusEffectInstance(StatusEffects.SATURATION, 3600, 0);
+        }
+
 
 
 

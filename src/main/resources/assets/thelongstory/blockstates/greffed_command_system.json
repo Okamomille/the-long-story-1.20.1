@@ -6,6 +6,9 @@
     "power=3": {"model":  "thelongstory:block/greffed_command_system_jump_boost"},
     "power=4": {"model":  "thelongstory:block/greffed_command_system_dolphin_grace"},
     "power=5": {"model":  "thelongstory:block/greffed_command_system_fire_resistance"},
-    "power=6": {"model":  "thelongstory:block/greffed_command_system_night_vision"}
+    "power=6": {"model":  "thelongstory:block/greffed_command_system_night_vision"},
+    "power=7": {"model":  "thelongstory:block/greffed_command_system_haste"},
+    "power=8": {"model":  "thelongstory:block/greffed_command_system_slow_falling"},
+    "power=9": {"model":  "thelongstory:block/greffed_command_system_saturation"}
   }
 }

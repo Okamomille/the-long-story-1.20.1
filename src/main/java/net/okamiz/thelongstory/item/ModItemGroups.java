@@ -296,6 +296,9 @@ public class ModItemGroups {
                         entries.add(ModItems.SOUL_CONTAINER_DOLPHIN_GRACE);
                         entries.add(ModItems.SOUL_CONTAINER_NIGHT_VISION);
                         entries.add(ModItems.SOUL_CONTAINER_RESISTANCE);
+                        entries.add(ModItems.SOUL_CONTAINER_HASTE);
+                        entries.add(ModItems.SOUL_CONTAINER_SLOW_FALLING);
+                        entries.add(ModItems.SOUL_CONTAINER_SATURATION);
 
                         entries.add(ModItems.TREPASSEUR_SPAWN_EGG);
                         entries.add(ModItems.TICKELER_SPAWN_EGG);

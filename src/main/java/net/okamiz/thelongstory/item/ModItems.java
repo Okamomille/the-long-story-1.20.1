@@ -75,7 +75,12 @@ public class ModItems {
             .rarity(Rarity.RARE)));
     public static final Item SOUL_CONTAINER_RESISTANCE = registerItem("soul_container_resistance", new SoulContainerFullItem(new FabricItemSettings()
             .rarity(Rarity.RARE)));
-
+    public static final Item SOUL_CONTAINER_SATURATION = registerItem("soul_container_saturation", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
+    public static final Item SOUL_CONTAINER_HASTE = registerItem("soul_container_haste", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
+    public static final Item SOUL_CONTAINER_SLOW_FALLING = registerItem("soul_container_slow_falling", new SoulContainerFullItem(new FabricItemSettings()
+            .rarity(Rarity.RARE)));
 
     //FUEL ITEMS -----------------
 

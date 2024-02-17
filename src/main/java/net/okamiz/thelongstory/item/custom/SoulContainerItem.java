@@ -5,10 +5,8 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.BlazeEntity;
 import net.minecraft.entity.mob.WitchEntity;
-import net.minecraft.entity.passive.BatEntity;
-import net.minecraft.entity.passive.DolphinEntity;
-import net.minecraft.entity.passive.IronGolemEntity;
-import net.minecraft.entity.passive.RabbitEntity;
+import net.minecraft.entity.mob.WitherSkeletonEntity;
+import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -98,6 +96,39 @@ public class SoulContainerItem extends Item {
                 user.playSound(SoundEvents.ITEM_TRIDENT_RIPTIDE_2, SoundCategory.MASTER, 0.5f, 0.2f);
 
                 user.setStackInHand(hand, new ItemStack(ModItems.SOUL_CONTAINER_RESISTANCE));
+
+                return ActionResult.SUCCESS;
+            }
+
+            if(entity instanceof WitherSkeletonEntity && entity.getHealth() <= 15){
+                entity.kill();
+                user.playSound(SoundEvents.ENTITY_ALLAY_DEATH, SoundCategory.MASTER, 1f, 0.5f);
+                user.playSound(SoundEvents.ENTITY_DONKEY_DEATH, SoundCategory.MASTER, 0.5f, 0.3f);
+                user.playSound(SoundEvents.ITEM_TRIDENT_RIPTIDE_2, SoundCategory.MASTER, 0.5f, 0.2f);
+
+                user.setStackInHand(hand, new ItemStack(ModItems.SOUL_CONTAINER_HASTE));
+
+                return ActionResult.SUCCESS;
+            }
+
+            if(entity instanceof VillagerEntity && entity.getHealth() <= 15){
+                entity.kill();
+                user.playSound(SoundEvents.ENTITY_ALLAY_DEATH, SoundCategory.MASTER, 1f, 0.5f);
+                user.playSound(SoundEvents.ENTITY_DONKEY_DEATH, SoundCategory.MASTER, 0.5f, 0.3f);
+                user.playSound(SoundEvents.ITEM_TRIDENT_RIPTIDE_2, SoundCategory.MASTER, 0.5f, 0.2f);
+
+                user.setStackInHand(hand, new ItemStack(ModItems.SOUL_CONTAINER_SATURATION));
+
+                return ActionResult.SUCCESS;
+            }
+
+            if(entity instanceof ChickenEntity && entity.getHealth() <= 15){
+                entity.kill();
+                user.playSound(SoundEvents.ENTITY_ALLAY_DEATH, SoundCategory.MASTER, 1f, 0.5f);
+                user.playSound(SoundEvents.ENTITY_DONKEY_DEATH, SoundCategory.MASTER, 0.5f, 0.3f);
+                user.playSound(SoundEvents.ITEM_TRIDENT_RIPTIDE_2, SoundCategory.MASTER, 0.5f, 0.2f);
+
+                user.setStackInHand(hand, new ItemStack(ModItems.SOUL_CONTAINER_SLOW_FALLING));
 
                 return ActionResult.SUCCESS;
             }

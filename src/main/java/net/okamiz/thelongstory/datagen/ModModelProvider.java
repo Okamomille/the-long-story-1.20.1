@@ -233,6 +233,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_DOLPHIN_GRACE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_NIGHT_VISION, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_RESISTANCE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_CONTAINER_SLOW_FALLING, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_CONTAINER_HASTE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_CONTAINER_SATURATION, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.POWER_STAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIMENSION_PATTERN, Models.GENERATED);
