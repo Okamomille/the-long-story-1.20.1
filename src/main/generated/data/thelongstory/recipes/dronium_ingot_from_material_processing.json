@@ -1,0 +1,11 @@
+{
+  "type": "thelongstory:material_processing",
+  "ingredients": [
+    {
+      "item": "thelongstory:impure_zarosite_ingot"
+    }
+  ],
+  "output": {
+    "item": "thelongstory:dronium_ingot"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "thelongstory:material_processing",
+  "ingredients": [
+    {
+      "item": "thelongstory:thestone_dust"
+    }
+  ],
+  "output": {
+    "item": "thelongstory:dronium_powder"
+  }
+}
