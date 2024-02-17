@@ -71,6 +71,11 @@
   "item.thelongstory.zarosite_leggings" : "Zarosite Leggings",
   "item.thelongstory.zarosite_boots" : "Zarosite Boots",
 
+  "item.thelongstory.dronium_helmet" : "Dronium Helmet",
+  "item.thelongstory.dronium_chestplate" : "Dronium Chestplate",
+  "item.thelongstory.dronium_leggings" : "Dronium Leggings",
+  "item.thelongstory.dronium_boots" : "Dronium Boots",
+
 
 
   "item.thelongstory.thestone_sword" : "Thestone Sword",
@@ -97,6 +102,12 @@
   "item.thelongstory.zarosite_axe" : "Zarosite Axe",
   "item.thelongstory.zarosite_shovel" : "Zarosite Shovel",
   "item.thelongstory.zarosite_hoe" : "Zarosite Hoe",
+
+  "item.thelongstory.dronium_sword" : "Dronium Sword",
+  "item.thelongstory.dronium_pickaxe" : "Dronium Pickaxe",
+  "item.thelongstory.dronium_axe" : "Dronium Axe",
+  "item.thelongstory.dronium_shovel" : "Dronium Shovel",
+  "item.thelongstory.dronium_hoe" : "Dronium Hoe",
 
 
 
@@ -176,6 +187,7 @@
   "block.thelongstory.red_coal_block" : "Block of Red Coal",
   "block.thelongstory.impure_zarosite_block" : "Block of Impure Zarosite",
   "block.thelongstory.zarosite_block" : "Block of Zarosite",
+  "block.thelongstory.dronium_block" : "Block of Dronium",
 
   "block.thelongstory.thestone_ore" : "Thestone Ore",
   "block.thelongstory.deepslate_thestone_ore" : "Deepslate Thestone Ore",

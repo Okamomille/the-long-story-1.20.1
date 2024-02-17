@@ -39,7 +39,7 @@ public class ModItems {
     public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
 
     public static final Item DRONIUM_INGOT = registerItem("dronium_ingot", new Item(new FabricItemSettings()));
-    public static final Item DROWNIUM_POWDER = registerItem("dronium_powder", new Item(new FabricItemSettings()));
+    public static final Item DRONIUM_POWDER = registerItem("dronium_powder", new Item(new FabricItemSettings()));
 
 
 
@@ -185,6 +185,18 @@ public class ModItems {
             new ZarositeSwordItem(ModToolMaterial.ZAROSITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
 
 
+    public static final Item DRONIUM_PICKAXE = registerItem("dronium_pickaxe",
+            new PickaxeItem(ModToolMaterial.DRONIUM, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item DRONIUM_AXE = registerItem("dronium_axe",
+            new AxeItem(ModToolMaterial.DRONIUM, 6.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item DRONIUM_SHOVEL = registerItem("dronium_shovel",
+            new ShovelItem(ModToolMaterial.DRONIUM, 1.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item DRONIUM_HOE = registerItem("dronium_hoe",
+            new HoeItem(ModToolMaterial.DRONIUM, -3, -1.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item DRONIUM_SWORD = registerItem("dronium_sword",
+            new SwordItem(ModToolMaterial.DRONIUM, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+
+
     //ARMOR ITEMS -----------------
 
     public static final Item THESTONE_HELMET = registerItem("thestone_helmet",
@@ -224,6 +236,15 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.ZAROSITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item ZAROSITE_BOOTS = registerItem("zarosite_boots",
             new ArmorItem(ModArmorMaterials.ZAROSITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item DRONIUM_HELMET = registerItem("dronium_helmet",
+            new ArmorItem(ModArmorMaterials.DRONIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item DRONIUM_CHESTPLATE = registerItem("dronium_chestplate",
+            new ArmorItem(ModArmorMaterials.DRONIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item DRONIUM_LEGGINGS = registerItem("dronium_leggings",
+            new ArmorItem(ModArmorMaterials.DRONIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item DRONIUM_BOOTS = registerItem("dronium_boots",
+            new ArmorItem(ModArmorMaterials.DRONIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
 

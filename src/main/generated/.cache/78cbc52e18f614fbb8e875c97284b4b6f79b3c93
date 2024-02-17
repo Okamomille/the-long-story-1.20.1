@@ -1,4 +1,4 @@
-// 1.20.1	2024-02-17T11:01:53.8702549	The Long Story/Block Loot Tables
+// 1.20.1	2024-02-17T14:16:56.8238737	The Long Story/Block Loot Tables
 bcad02ba01379daadf35620c8f34d4250556bd1d data\thelongstory\loot_tables\blocks\kiwi_trapdoor.json
 8481962a43a31e7c40a4ad2281fd35ffbdcbbd99 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_stairs.json
 03790f38d5f18a2268e44381b3c43ef08f38bf8b data\thelongstory\loot_tables\blocks\torn_flower.json
@@ -18,6 +18,7 @@ f4b48e85a8b01c5da2bbb20cea6defcc23d5b365 data\thelongstory\loot_tables\blocks\pu
 0936219f7efae4c0a73382cabb9a4806225d2ea2 data\thelongstory\loot_tables\blocks\lab_tiles.json
 8217ea3ef942fbb63dd7b4d2e091cc5c10ccbdf2 data\thelongstory\loot_tables\blocks\deep_ice.json
 ac34ac7bd52732f787e7262e18853ef34015ba25 data\thelongstory\loot_tables\blocks\sephin_slab.json
+89314b8d4f6fc12ad28e5960f8d997e0695fca20 data\thelongstory\loot_tables\blocks\dronium_block.json
 0346655a8dcc26e7dac1423d0245101a4d1af205 data\thelongstory\loot_tables\blocks\egroric_sapling.json
 ff4912f9cc2be5de3ed6d5d1c847d019ca2da817 data\thelongstory\loot_tables\blocks\egroric_log.json
 b73d272d0d2827de5e57338cce4d9262871130b3 data\thelongstory\loot_tables\blocks\egroric_leaves.json
