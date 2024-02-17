@@ -149,6 +149,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.TORN_BUSH);
 
 
+
+        addDrop(ModBlocks.TORN_FLOWER);
         addDrop(ModBlocks.PINK_PHYGELUS);
         addDrop(ModBlocks.YELLOW_PHYGELUS);
         addDrop(ModBlocks.RED_OSPET);
