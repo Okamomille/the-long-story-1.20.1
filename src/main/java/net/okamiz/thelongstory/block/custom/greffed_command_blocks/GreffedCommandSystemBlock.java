@@ -27,7 +27,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockEntityProvider {
-    public static final IntProperty ON = IntProperty.of("power", 0, 6);
+    public static final IntProperty ON = IntProperty.of("power", 0, 9);
 
     private static final VoxelShape SHAPE = Block.createCuboidShape(0,0,0,16,16, 16);
     public GreffedCommandSystemBlock(Settings settings) {
@@ -86,6 +86,9 @@ public class GreffedCommandSystemBlock extends BlockWithEntity implements BlockE
                     else if (mainHand == ModItems.SOUL_CONTAINER_JUMP_BOOST){world.setBlockState(pos, state.with(ON, 3));}
                     else if (mainHand == ModItems.SOUL_CONTAINER_DOLPHIN_GRACE){world.setBlockState(pos, state.with(ON, 4));}
                     else if (mainHand == ModItems.SOUL_CONTAINER_REGENERATION){world.setBlockState(pos, state.with(ON, 2));}
+                    else if (mainHand == ModItems.SOUL_CONTAINER_HASTE){world.setBlockState(pos, state.with(ON, 7));}
+                    else if (mainHand == ModItems.SOUL_CONTAINER_SLOW_FALLING){world.setBlockState(pos, state.with(ON, 8));}
+                    else if (mainHand == ModItems.SOUL_CONTAINER_SATURATION){world.setBlockState(pos, state.with(ON, 9));}
                         else{
                         this.setDefaultState(this.getDefaultState().with(ON, ((GreffedCommandSystemBlockEntity) blockEntity).getCustomState()));
                         }
