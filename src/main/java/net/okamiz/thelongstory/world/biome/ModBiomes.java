@@ -152,6 +152,7 @@ public class ModBiomes {
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.EGRORIC_PLACED_KEY);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TORN_BUSH_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TORN_FLOWER_PLACED_KEY);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BLUE_OSPET_PLACED_KEY);
         //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
         DefaultBiomeFeatures.addPlainsTallGrass(biomeBuilder);
@@ -172,8 +173,8 @@ public class ModBiomes {
                         .waterColor(4159204)
                         .waterFogColor(329011)
                         .skyColor(7444166)
-                        .grassColor(11826687)
-                        .foliageColor(11826687)
+                        .grassColor(10372548)
+                        .foliageColor(10372548)
                         .fogColor(4940970)
                         .build())
                 .build();

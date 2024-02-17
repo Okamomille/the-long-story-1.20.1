@@ -1266,7 +1266,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.PINK_PHYGELUS),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.PINK_PHYGELUS)).criterion(FabricRecipeProvider.hasItem(Items.PINK_DYE),
                         FabricRecipeProvider.conditionsFromItem(Items.PINK_DYE))
-                .offerTo(exporter, new Identifier("yellow_dye_from_pink_phygelus"));
+                .offerTo(exporter, new Identifier("pink_dye_from_pink_phygelus"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE, 1).input(ModBlocks.TORN_FLOWER)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.TORN_FLOWER),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.TORN_FLOWER)).criterion(FabricRecipeProvider.hasItem(Items.YELLOW_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.YELLOW_DYE))
+                .offerTo(exporter, new Identifier("yellow_dye_from_torn_flower"));
 
 
             new MaterialProcessingRecipeBuilder(Items.COAL, ModItems.RED_COAL, 1)

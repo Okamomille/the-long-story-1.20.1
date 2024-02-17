@@ -107,6 +107,8 @@
   "item.thelongstory.redstone_apple" : "Redstone Apple",
   "item.thelongstory.amethyst_apple" : "Amethyst Apple",
   "item.thelongstory.breedy_flesh" : "Breedy Flesh",
+  "item.thelongstory.tooki_meat" : "Tooki Meat",
+  "item.thelongstory.cooked_tooki_meat" : "Cooked Tooki Meat",
 
 
   "item.thelongstory.trepasseur_spawn_egg" : "Trepasseur Spawn Egg",
@@ -256,6 +258,7 @@
 
 
   "block.thelongstory.torn_bush" : "Torn Bush",
+  "block.thelongstory.torn_flower" : "Torn Flower",
 
   "block.thelongstory.pink_phygelus" : "Pink Phygelus",
   "block.thelongstory.yellow_phygelus" : "Yellow Phygelus",

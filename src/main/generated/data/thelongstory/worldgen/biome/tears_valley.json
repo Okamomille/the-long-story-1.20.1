@@ -3,8 +3,8 @@
   "downfall": 0.8,
   "effects": {
     "fog_color": 4940970,
-    "foliage_color": 11826687,
-    "grass_color": 11826687,
+    "foliage_color": 10372548,
+    "grass_color": 10372548,
     "sky_color": 7444166,
     "water_color": 4159204,
     "water_fog_color": 329011
@@ -40,6 +40,7 @@
     [
       "thelongstory:egroric_placed",
       "thelongstory:torn_bush_placed",
+      "thelongstory:torn_flower_placed",
       "thelongstory:blue_ospet_placed",
       "minecraft:patch_tall_grass_2",
       "minecraft:patch_grass_jungle",

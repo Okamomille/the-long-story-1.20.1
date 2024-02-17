@@ -1,47 +1,47 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_dye": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:pink_dye"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_pink_phygelus": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "thelongstory:pink_phygelus"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:yellow_dye_from_pink_phygelus"
+        "recipe": "minecraft:yellow_dye_from_torn_flower"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_torn_flower": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:torn_flower"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_yellow_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:yellow_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_pink_phygelus",
-      "has_pink_dye",
+      "has_torn_flower",
+      "has_yellow_dye",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:yellow_dye_from_pink_phygelus"
+      "minecraft:yellow_dye_from_torn_flower"
     ]
   },
   "sends_telemetry_event": false

@@ -330,14 +330,16 @@ public class ModBlocks {
     // GRASSES ----
 
     // FLOWERS ----
-
+    public static final Block TORN_FLOWER = registerBlock("torn_flower",
+            new FlowerBlock(StatusEffects.HASTE, 30,
+                    FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID).nonOpaque().noCollision()));
     public static final Block PINK_PHYGELUS = registerBlock("pink_phygelus",
             new FlowerBlock(StatusEffects.REGENERATION, 30,
-                    FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+                    FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID).nonOpaque().noCollision()));
 
     public static final Block YELLOW_PHYGELUS = registerBlock("yellow_phygelus",
             new FlowerBlock(StatusEffects.POISON, 30,
-                    FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+                    FabricBlockSettings.copyOf(Blocks.BLUE_ORCHID).nonOpaque().noCollision()));
 
     public static final Block RED_OSPET = registerBlock("red_ospet",
             new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 40,

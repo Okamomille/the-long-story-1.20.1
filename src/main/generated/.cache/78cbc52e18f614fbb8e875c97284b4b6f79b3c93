@@ -1,6 +1,7 @@
-// 1.20.1	2024-02-16T23:29:11.0320416	The Long Story/Block Loot Tables
+// 1.20.1	2024-02-17T11:01:53.8702549	The Long Story/Block Loot Tables
 bcad02ba01379daadf35620c8f34d4250556bd1d data\thelongstory\loot_tables\blocks\kiwi_trapdoor.json
 8481962a43a31e7c40a4ad2281fd35ffbdcbbd99 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_stairs.json
+03790f38d5f18a2268e44381b3c43ef08f38bf8b data\thelongstory\loot_tables\blocks\torn_flower.json
 6a1038022fdf78ab471eacb57e891d1fa8314e13 data\thelongstory\loot_tables\blocks\stripped_kiwi_wood.json
 1ef3d09cb56b0442bf318ba70de58197b20d5763 data\thelongstory\loot_tables\blocks\oast_slab.json
 253781e1c82615364384d71da078b78288848611 data\thelongstory\loot_tables\blocks\pink_phygelus.json
