@@ -38,6 +38,9 @@ public class ModItems {
 
     public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
 
+    public static final Item DRONIUM_INGOT = registerItem("dronium_ingot", new Item(new FabricItemSettings()));
+    public static final Item DROWNIUM_POWDER = registerItem("dronium_powder", new Item(new FabricItemSettings()));
+
 
 
     // SYSTEMS MATERIALS
@@ -101,6 +104,8 @@ public class ModItems {
     public static final Item AMETHYST_APPLE = registerItem("amethyst_apple", new Item(new FabricItemSettings().food(ModFoodComponents.AMETHYST_APPLE)));
     public static final Item REDSTONE_APPLE = registerItem("redstone_apple", new Item(new FabricItemSettings().food(ModFoodComponents.REDSTONE_APPLE)));
     public static final Item BREEDY_FLESH = registerItem("breedy_flesh", new Item(new FabricItemSettings().food(ModFoodComponents.BREEDY_FLESH)));
+    public static final Item TOOKI_MEAT = registerItem("tooki_meat", new Item(new FabricItemSettings().food(ModFoodComponents.TOOKI_MEAT)));
+    public static final Item COOKED_TOOKI_MEAT = registerItem("cooked_tooki_meat", new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_TOOKI_MEAT)));
 
 
 

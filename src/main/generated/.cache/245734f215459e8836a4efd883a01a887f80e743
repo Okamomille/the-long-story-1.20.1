@@ -1,8 +1,8 @@
-// 1.20.1	2024-02-15T14:36:48.1179668	The Long Story/Tags for minecraft:block
+// 1.20.1	2024-02-16T23:29:11.030042	The Long Story/Tags for minecraft:block
 aee24445ca32a72b4fc7cf72f41bd5a66b1855ee data\minecraft\tags\blocks\walls.json
 e25aedbc91b4b90ffb1d06dacac9e378ced2a4e6 data\minecraft\tags\blocks\mineable\axe.json
-35684a6e093f7b3cb6f94c7e13b7eebb4a340684 data\minecraft\tags\blocks\wooden_stairs.json
 c18656bc68d462ae2993d29a4b165359bad73718 data\minecraft\tags\blocks\mineable\pickaxe.json
+35684a6e093f7b3cb6f94c7e13b7eebb4a340684 data\minecraft\tags\blocks\wooden_stairs.json
 00354dcb59a1105500f6181ff850f588bb45f7d3 data\minecraft\tags\blocks\needs_diamond_tool.json
 6c7afdd79e60e9abdca5aa37e7b9a9ab9702d773 data\minecraft\tags\blocks\needs_iron_tool.json
 46f3420cffb45e0c5306fdd986704b4b26744651 data\minecraft\tags\blocks\logs.json

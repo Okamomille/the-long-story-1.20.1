@@ -1273,6 +1273,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                     .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))
                     .offerTo(exporter);
 
+        new MaterialProcessingRecipeBuilder(ModItems.IMPURE_ZAROSITE_INGOT, ModItems.DRONIUM_INGOT, 1)
+                .criterion(hasItem(ModItems.IMPURE_ZAROSITE_INGOT), conditionsFromItem(ModItems.IMPURE_ZAROSITE_INGOT))
+                .offerTo(exporter);
+
+        new MaterialProcessingRecipeBuilder(ModItems.THESTONE_DUST, ModItems.DROWNIUM_POWDER, 1)
+                .criterion(hasItem(ModItems.THESTONE_DUST), conditionsFromItem(ModItems.THESTONE_DUST))
+                .offerTo(exporter);
 
 
 
