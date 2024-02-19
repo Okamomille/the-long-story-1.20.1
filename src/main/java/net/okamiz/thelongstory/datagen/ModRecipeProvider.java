@@ -918,22 +918,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("XXX")
                 .pattern("NON")
                 .pattern("XXX")
-                .input('X', Items.STONE)
+                .input('X', ModItems.IRON_PLATE)
                 .input('O', Items.REDSTONE)
                 .input('N', Items.COBBLED_DEEPSLATE)
                 .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier("material_processor_craft"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MATERIAL_PROCESSOR, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.AMETHYST_PROCESSOR, 1)
                 .pattern("AXA")
-                .pattern("NON")
+                .pattern("XOX")
                 .pattern("AXA")
-                .input('X', Items.STONE)
+                .input('X', ModItems.IRON_PLATE)
                 .input('O', ModItems.AMETHYST_CORE)
-                .input('N', Items.COBBLED_DEEPSLATE)
                 .input('A', ModItems.DRONIUM_POWDER)
                 .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
-                .offerTo(exporter, new Identifier("material_processor_craft"));
+                .offerTo(exporter, new Identifier("amethyst_processor_craft"));
 
 
 
