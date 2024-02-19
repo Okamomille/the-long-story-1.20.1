@@ -17,6 +17,8 @@
   "item.thelongstory.zarosite_shard" : "Zarosite Shard",
 
   "item.thelongstory.green_shard" : "Green Shard",
+  "item.thelongstory.pure_amethyst_shard" : "Pure Amethyst Shard",
+
   "item.thelongstory.dronium_ingot" : "Dronium Ingot",
   "item.thelongstory.dronium_powder" : "Dronium Powder",
 
@@ -42,6 +44,9 @@
   "item.thelongstory.soul_container_dolphin_grace" : "Swimming Essence Container",
   "item.thelongstory.soul_container_night_vision" : "Vision Essence Container",
   "item.thelongstory.soul_container_resistance" : "Resistance Essence Container",
+  "item.thelongstory.soul_container_haste" : "Mining Essence Container",
+  "item.thelongstory.soul_container_slow_falling" : "Lightweight Essence Container",
+  "item.thelongstory.soul_container_saturation" : "Saturation Essence Container",
 
 
   "item.thelongstory.wooden_plate" : "Wooden Plate",
@@ -49,6 +54,8 @@
   "item.thelongstory.diamond_plate" : "Diamond Plate",
   "item.thelongstory.emerald_plate" : "Emerald Plate",
   "item.thelongstory.netherite_plate" : "Netherite Plate",
+
+  "item.thelongstory.pure_amethyst_stick" : "Pure Amethyst Stick",
 
 
   "item.thelongstory.thestone_helmet" : "Thestone Helmet",
@@ -108,6 +115,9 @@
   "item.thelongstory.dronium_axe" : "Dronium Axe",
   "item.thelongstory.dronium_shovel" : "Dronium Shovel",
   "item.thelongstory.dronium_hoe" : "Dronium Hoe",
+
+  "item.thelongstory.pure_amethyst_pickaxe" : "Pure Amethyst Pickaxe",
+  "item.thelongstory.pure_amethyst_sword" : "Pure Amethyst Sword",
 
 
 
@@ -180,7 +190,7 @@
   "block.thelongstory.broken_simulation_teleporter" : "Broken Simulation Teleporter",
   "block.thelongstory.greffed_command_system" : "Greffed Command System",
   "block.thelongstory.simulation_teleporter" : "Simulation Teleporter",
-  "block.thelongstory.material_processor" : "Material Processor [WIP]",
+  "block.thelongstory.material_processor" : "Material Processor",
   "block.thelongstory.red_coal_generator" : "Red Coal Generator [WIP]",
 
 

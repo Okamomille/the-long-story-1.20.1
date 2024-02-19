@@ -29,6 +29,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ZAROSITE_SHARD);
 
                         entries.add(ModItems.GREEN_SHARD);
+                        entries.add(ModItems.PURE_AMETHYST_SHARD);
+
                         entries.add(ModItems.DRONIUM_INGOT);
                         entries.add(ModItems.DRONIUM_POWDER);
 
@@ -185,6 +187,7 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPURE_ZAROSITE_SWORD);
                         entries.add(ModItems.ZAROSITE_SWORD);
                         entries.add(ModItems.DRONIUM_SWORD);
+                        entries.add(ModItems.PURE_AMETHYST_SWORD);
 
 
                         //PICKAXES
@@ -193,6 +196,7 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPURE_ZAROSITE_PICKAXE);
                         entries.add(ModItems.ZAROSITE_PICKAXE);
                         entries.add(ModItems.DRONIUM_PICKAXE);
+                        entries.add(ModItems.PURE_AMETHYST_PICKAXE);
 
                         //AXES
                         entries.add(ModItems.THESTONE_AXE);
@@ -276,6 +280,8 @@ public class ModItemGroups {
                         entries.add(ModItems.DIAMOND_PLATE);
                         entries.add(ModItems.EMERALD_PLATE);
                         entries.add(ModItems.NETHERITE_PLATE);
+
+                        entries.add(ModItems.PURE_AMETHYST_STICK);
 
                         entries.add(ModItems.DIMENSION_PATTERN);
                         entries.add(ModItems.COMMAND_SYSTEM);

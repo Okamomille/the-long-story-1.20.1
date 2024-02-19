@@ -37,6 +37,7 @@ public class ModItems {
 
 
     public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
+    public static final Item PURE_AMETHYST_SHARD = registerItem("pure_amethyst_shard", new ModGlintItem(new FabricItemSettings()));
 
     public static final Item DRONIUM_INGOT = registerItem("dronium_ingot", new Item(new FabricItemSettings()));
     public static final Item DRONIUM_POWDER = registerItem("dronium_powder", new Item(new FabricItemSettings()));
@@ -50,6 +51,8 @@ public class ModItems {
     public static final Item DIAMOND_PLATE = registerItem("diamond_plate", new Item(new FabricItemSettings()));
     public static final Item EMERALD_PLATE = registerItem("emerald_plate", new Item(new FabricItemSettings()));
     public static final Item NETHERITE_PLATE = registerItem("netherite_plate", new Item(new FabricItemSettings()));
+
+    public static final Item PURE_AMETHYST_STICK = registerItem("pure_amethyst_stick", new ModGlintItem(new FabricItemSettings()));
 
 
     public static final Item COMMAND_SYSTEM = registerItem("command_system", new Item(new FabricItemSettings()));
@@ -200,6 +203,12 @@ public class ModItems {
             new HoeItem(ModToolMaterial.DRONIUM, -3, -1.0f, new FabricItemSettings().maxCount(1)));
     public static final Item DRONIUM_SWORD = registerItem("dronium_sword",
             new SwordItem(ModToolMaterial.DRONIUM, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+
+
+    public static final Item PURE_AMETHYST_SWORD = registerItem("pure_amethyst_sword",
+            new PureAmethystSwordItem(ModToolMaterial.PURE_AMETHYST, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+    public static final Item PURE_AMETHYST_PICKAXE = registerItem("pure_amethyst_pickaxe",
+            new PureAmethystPickaxeItem(ModToolMaterial.PURE_AMETHYST, 1, -2.8f, new FabricItemSettings().maxCount(1)));
 
 
     //ARMOR ITEMS -----------------

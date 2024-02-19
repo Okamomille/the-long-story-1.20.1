@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "thelongstory:netherite_plate"
+    },
+    "O": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "NON",
+    "XXX"
+  ],
+  "result": {
+    "item": "thelongstory:material_processor"
+  },
+  "show_notification": true
+}
