@@ -701,6 +701,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_SWORD)));
 
 
+
+        // PURE AMETHYST
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PURE_AMETHYST_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModItems.PURE_AMETHYST_SHARD)
+                .input('O', ModItems.PURE_AMETHYST_STICK)
+                .criterion(hasItem(ModItems.PURE_AMETHYST_SHARD),conditionsFromItem(ModItems.PURE_AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PURE_AMETHYST_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PURE_AMETHYST_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.PURE_AMETHYST_SHARD)
+                .input('O', ModItems.PURE_AMETHYST_STICK)
+                .criterion(hasItem(ModItems.PURE_AMETHYST_SHARD),conditionsFromItem(ModItems.PURE_AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PURE_AMETHYST_PICKAXE)));
+
+
         // -------------------
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_STONE, 4)
@@ -892,7 +914,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MATERIAL_PROCESSOR, 1)
+                .pattern("XXX")
+                .pattern("NON")
+                .pattern("XXX")
+                .input('X', Items.STONE)
+                .input('O', Items.REDSTONE)
+                .input('N', ModItems.NETHERITE_PLATE)
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("material_processor_craft"));
 
 
 

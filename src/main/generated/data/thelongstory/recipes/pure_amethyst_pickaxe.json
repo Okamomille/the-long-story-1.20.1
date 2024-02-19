@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "thelongstory:pure_amethyst_stick"
+    },
+    "X": {
+      "item": "thelongstory:pure_amethyst_shard"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " O ",
+    " O "
+  ],
+  "result": {
+    "item": "thelongstory:pure_amethyst_pickaxe"
+  },
+  "show_notification": true
+}

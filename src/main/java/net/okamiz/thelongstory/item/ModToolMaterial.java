@@ -1,7 +1,6 @@
 package net.okamiz.thelongstory.item;
 
 import net.fabricmc.yarn.constants.MiningLevels;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -13,6 +12,7 @@ public enum ModToolMaterial implements ToolMaterial {
     GREEN_SHARD(2, 131, 10f, 3.7f, 22, () -> Ingredient.ofItems(ModItems.GREEN_SHARD)),
     IMPURE_ZAROSITE(MiningLevels.DIAMOND, 1461, 8.5F, 3.2F, 11, () -> Ingredient.ofItems(ModItems.IMPURE_ZAROSITE_INGOT)),
     ZAROSITE(MiningLevels.NETHERITE, 2130, 9.5F, 3.7F, 13, () -> Ingredient.ofItems(ModItems.ZAROSITE_GEMSTONE)),
+    PURE_AMETHYST(MiningLevels.DIAMOND, 3000, 45f, 5f, 25, () -> Ingredient.ofItems(ModItems.PURE_AMETHYST_SHARD)),
     DRONIUM(MiningLevels.NETHERITE, 2230, 10F, 4F, 18, () -> Ingredient.ofItems(ModItems.DRONIUM_INGOT));
 
 

@@ -202,6 +202,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ZAROSITE_SHARD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GREEN_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURE_AMETHYST_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURE_AMETHYST_STICK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.EMERALD_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_APPLE, Models.GENERATED);
@@ -283,6 +285,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DRONIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DRONIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DRONIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.PURE_AMETHYST_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PURE_AMETHYST_SWORD, Models.HANDHELD);
 
 
         
