@@ -76,7 +76,7 @@ public class AmethystProcessorBlockEntity extends BlockEntity implements Extende
         };
     }
 
-    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(32000, 200, 200) {
+    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(32000, 800, 200) {
         @Override
         protected void onFinalCommit() {
             markDirty();
@@ -205,10 +205,10 @@ public class AmethystProcessorBlockEntity extends BlockEntity implements Extende
 
     private void extractEnergy() {
 
-        if(isRecipe(INPUT_SLOT_1, Items.AMETHYST_SHARD) && isRecipe(INPUT_SLOT_2, ModItems.THESTONE_INGOT) && isRecipe(INPUT_SLOT_3, Items.AMETHYST_SHARD)){
-            maxProgress = 200;
+        if(isRecipe(INPUT_SLOT_1, Items.AMETHYST_SHARD) && isRecipe(INPUT_SLOT_2, ModItems.THESTONE_DUST) && isRecipe(INPUT_SLOT_3, Items.AMETHYST_SHARD)){
+            maxProgress = 700;
             try(Transaction transaction = Transaction.openOuter()) {
-                this.energyStorage.extract(6L, transaction);
+                this.energyStorage.extract(2L, transaction);
                 transaction.commit();
             }
         }
@@ -232,13 +232,13 @@ public class AmethystProcessorBlockEntity extends BlockEntity implements Extende
 
     private void addEnergy() {
         try(Transaction transaction = Transaction.openOuter()) {
-            this.energyStorage.insert(64, transaction);
+            this.energyStorage.insert(800, transaction);
             transaction.commit();
         }
     }
 
     private boolean hasEnergyItemInEnergySlot(int energyItemSlot) {
-        return this.getStack(energyItemSlot).getItem() == Items.REDSTONE;
+        return this.getStack(energyItemSlot).getItem() == ModItems.DRONIUM_POWDER;
     }
 
     private void craftItem() {
@@ -266,7 +266,7 @@ public class AmethystProcessorBlockEntity extends BlockEntity implements Extende
 
         return this.getStack(INPUT_SLOT_3).getItem() == Items.AMETHYST_SHARD &&
                 this.getStack(INPUT_SLOT_1).getItem() == Items.AMETHYST_SHARD &&
-                this.getStack(INPUT_SLOT_2).getItem() == ModItems.THESTONE_INGOT &&
+                this.getStack(INPUT_SLOT_2).getItem() == ModItems.THESTONE_DUST &&
 
                 canInsertAmountIntoOutputSlot(1) &&
                 canInsertItemIntoOutputSlot(new ItemStack(ModItems.PURE_AMETHYST_SHARD)) &&
