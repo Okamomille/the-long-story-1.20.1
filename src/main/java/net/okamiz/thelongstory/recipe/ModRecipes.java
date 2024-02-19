@@ -9,8 +9,10 @@ public class ModRecipes {
     public static void registerRecipes() {
         Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(TheLongStory.MOD_ID, MaterialProcessingRecipe.Serializer.ID),
                 MaterialProcessingRecipe.Serializer.INSTANCE);
+
         Registry.register(Registries.RECIPE_TYPE, new Identifier(TheLongStory.MOD_ID, MaterialProcessingRecipe.Type.ID),
                 MaterialProcessingRecipe.Type.INSTANCE);
+
 
     }
 }

@@ -920,7 +920,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("XXX")
                 .input('X', Items.STONE)
                 .input('O', Items.REDSTONE)
-                .input('N', ModItems.NETHERITE_PLATE)
+                .input('N', Items.COBBLED_DEEPSLATE)
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier("material_processor_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MATERIAL_PROCESSOR, 1)
+                .pattern("AXA")
+                .pattern("NON")
+                .pattern("AXA")
+                .input('X', Items.STONE)
+                .input('O', ModItems.AMETHYST_CORE)
+                .input('N', Items.COBBLED_DEEPSLATE)
+                .input('A', ModItems.DRONIUM_POWDER)
                 .criterion(hasItem(Items.STICK),conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier("material_processor_craft"));
 
@@ -1039,6 +1050,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('H', Items.NETHER_WART)
                 .criterion(hasItem(ModItems.POTION_RECEPTACLE),conditionsFromItem(ModItems.POTION_RECEPTACLE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.POTION_CORE)));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.PURE_AMETHYST_STICK, 1)
+                .pattern("OX")
+                .input('X', Items.STICK)
+                .input('O', ModItems.PURE_AMETHYST_SHARD)
+                .criterion(hasItem(ModItems.PURE_AMETHYST_SHARD),conditionsFromItem(ModItems.PURE_AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("pure_amethyst_stick_craft"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.PURE_AMETHYST_STICK, 1)
+                .pattern("XO")
+                .input('X', Items.STICK)
+                .input('O', ModItems.PURE_AMETHYST_SHARD)
+                .criterion(hasItem(ModItems.PURE_AMETHYST_SHARD),conditionsFromItem(ModItems.PURE_AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("pure_amethyst_stick_craft_reverse"));
 
 
         // -------- GREFFED SYSTEMS
@@ -1425,7 +1450,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         new MaterialProcessingRecipeBuilder(ModItems.THESTONE_DUST, ModItems.DRONIUM_POWDER, 1)
                 .criterion(hasItem(ModItems.THESTONE_DUST), conditionsFromItem(ModItems.THESTONE_DUST))
                 .offerTo(exporter);
-
 
 
     }

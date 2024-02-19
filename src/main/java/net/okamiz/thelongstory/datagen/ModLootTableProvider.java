@@ -31,6 +31,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM);
         addDrop(ModBlocks.BROKEN_SIMULATION_TELEPORTER);
         addDrop(ModBlocks.MATERIAL_PROCESSOR);
+        addDrop(ModBlocks.AMETHYST_PROCESSOR);
         addDrop(ModBlocks.RED_COAL_GENERATOR);
         addDrop(ModBlocks.DRONIUM_BLOCK);
 

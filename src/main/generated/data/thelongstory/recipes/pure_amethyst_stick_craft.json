@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:pure_amethyst_shard"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "OX"
+  ],
+  "result": {
+    "item": "thelongstory:pure_amethyst_stick"
+  },
+  "show_notification": true
+}

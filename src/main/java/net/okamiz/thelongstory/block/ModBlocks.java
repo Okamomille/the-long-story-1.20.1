@@ -396,6 +396,9 @@ public class ModBlocks {
     public static final Block RED_COAL_GENERATOR = registerBlock("red_coal_generator",
             new RedCoalGeneratorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
+    public static final Block AMETHYST_PROCESSOR = registerBlock("amethyst_processor",
+            new AmethystProcessorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
 
 
     // ----------------

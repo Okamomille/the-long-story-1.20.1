@@ -15,6 +15,10 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, new Identifier(TheLongStory.MOD_ID, "red_coal_generator_screen_handler"),
                     new ExtendedScreenHandlerType<>(RedCoalGeneratorScreenHandler::new));
 
+    public static final ScreenHandlerType<AmethystProcessorScreenHandler> AMETHYST_PROCESSOR_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, new Identifier(TheLongStory.MOD_ID, "amethyst_processor_screen_handler"),
+                    new ExtendedScreenHandlerType<>(AmethystProcessorScreenHandler::new));
+
 
     public static void registerScreenHandlers() {
         TheLongStory.LOGGER.info("Registering Screen Handlers for " + TheLongStory.MOD_ID);
