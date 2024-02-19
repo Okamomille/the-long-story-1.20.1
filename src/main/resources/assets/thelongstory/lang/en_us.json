@@ -56,6 +56,7 @@
   "item.thelongstory.netherite_plate" : "Netherite Plate",
 
   "item.thelongstory.pure_amethyst_stick" : "Pure Amethyst Stick",
+  "item.thelongstory.amethyst_core" : "Amethyst Core",
 
 
   "item.thelongstory.thestone_helmet" : "Thestone Helmet",
@@ -340,9 +341,11 @@
 
 
 
-  "death.attack.crystallized": "%1$s has been crystallized",
   "death.attack.infected": "%1$s died from the infection",
   "death.attack.infected.player": "%1$s has been deadly infected by %2$s",
+
+  "death.attack.crystalized": "%1$s has been crystallized",
+  "death.attack.crystalized.player": "%1$s has been crystallized by %2$s",
 
   "effect.thelongstory.infected": "Infected",
   "effect.thelongstory.crystallized": "Crystallized",

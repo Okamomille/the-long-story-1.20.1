@@ -2,23 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "N": {
-      "item": "minecraft:cobbled_deepslate"
+    "A": {
+      "item": "thelongstory:dronium_powder"
     },
     "O": {
-      "item": "minecraft:redstone"
+      "item": "thelongstory:amethyst_core"
     },
     "X": {
       "item": "thelongstory:iron_plate"
     }
   },
   "pattern": [
-    "XXX",
-    "NON",
-    "XXX"
+    "AXA",
+    "XOX",
+    "AXA"
   ],
   "result": {
-    "item": "thelongstory:material_processor"
+    "item": "thelongstory:amethyst_processor"
   },
   "show_notification": true
 }

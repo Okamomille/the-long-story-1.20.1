@@ -265,6 +265,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.SIMULATION_TELEPORTER);
                         entries.add(ModBlocks.MATERIAL_PROCESSOR);
+                        entries.add(ModBlocks.AMETHYST_PROCESSOR);
                         //entries.add(ModBlocks.RED_COAL_GENERATOR);
 
 
@@ -282,6 +283,7 @@ public class ModItemGroups {
                         entries.add(ModItems.NETHERITE_PLATE);
 
                         entries.add(ModItems.PURE_AMETHYST_STICK);
+                        entries.add(ModItems.AMETHYST_CORE);
 
                         entries.add(ModItems.DIMENSION_PATTERN);
                         entries.add(ModItems.COMMAND_SYSTEM);
