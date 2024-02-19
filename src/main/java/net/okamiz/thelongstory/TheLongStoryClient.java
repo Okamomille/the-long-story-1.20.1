@@ -8,6 +8,7 @@ import net.okamiz.thelongstory.datagen.RenderCutout;
 import net.okamiz.thelongstory.particles.ModParticles;
 import net.okamiz.thelongstory.particles.TSLParticles.EgroricLeavesParticle;
 import net.okamiz.thelongstory.particles.TSLParticles.KiwiLeavesParticle;
+import net.okamiz.thelongstory.screen.AmethystProcessorScreen;
 import net.okamiz.thelongstory.screen.ModScreenHandlers;
 import net.okamiz.thelongstory.screen.MaterialProcessorScreen;
 import net.okamiz.thelongstory.screen.RedCoalGeneratorScreen;
@@ -31,5 +32,6 @@ public class TheLongStoryClient implements ClientModInitializer {
 
         HandledScreens.register(ModScreenHandlers.MATERIAL_PROCESSOR_SCREEN_HANDLER, MaterialProcessorScreen::new);
         HandledScreens.register(ModScreenHandlers.RED_COAL_GENERATOR_SCREEN_HANDLER, RedCoalGeneratorScreen::new);
+        HandledScreens.register(ModScreenHandlers.AMETHYST_PROCESSOR_SCREEN_HANDLER, AmethystProcessorScreen::new);
     }
 }

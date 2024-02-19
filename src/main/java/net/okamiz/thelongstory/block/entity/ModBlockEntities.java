@@ -7,6 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.TheLongStory;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.block.entity.custom.AmethystProcessorBlockEntity;
 import net.okamiz.thelongstory.block.entity.custom.GreffedCommandSystemBlockEntity;
 import net.okamiz.thelongstory.block.entity.custom.MaterialProcessorBlockEntity;
 import net.okamiz.thelongstory.block.entity.custom.RedCoalGeneratorBlockEntity;
@@ -27,6 +28,11 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(TheLongStory.MOD_ID, "red_coal_generator_be"),
                     FabricBlockEntityTypeBuilder.create(RedCoalGeneratorBlockEntity::new,
                             ModBlocks.RED_COAL_GENERATOR).build());
+
+    public static final BlockEntityType<AmethystProcessorBlockEntity> AMETHYST_PROCESSOR_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(TheLongStory.MOD_ID, "amethyst_processor_be"),
+                    FabricBlockEntityTypeBuilder.create(AmethystProcessorBlockEntity::new,
+                            ModBlocks.AMETHYST_PROCESSOR).build());
 
     public static void registerBlockEntities() {
         TheLongStory.LOGGER.info("Registering BlockEntities for " + TheLongStory.MOD_ID);

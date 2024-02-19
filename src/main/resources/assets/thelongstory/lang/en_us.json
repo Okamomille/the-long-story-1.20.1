@@ -191,6 +191,7 @@
   "block.thelongstory.greffed_command_system" : "Greffed Command System",
   "block.thelongstory.simulation_teleporter" : "Simulation Teleporter",
   "block.thelongstory.material_processor" : "Material Processor",
+  "block.thelongstory.amethyst_processor" : "Amethyst Processor",
   "block.thelongstory.red_coal_generator" : "Red Coal Generator [WIP]",
 
 
