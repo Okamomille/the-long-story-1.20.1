@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "thelongstory:amethyst_core"
+    },
+    "O": {
+      "item": "thelongstory:empty_core"
+    },
+    "X": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XAX"
+  ],
+  "result": {
+    "count": 2,
+    "item": "thelongstory:amethyst_core"
+  },
+  "show_notification": true
+}

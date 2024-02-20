@@ -913,6 +913,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.EMPTY_CORE, 1)
+                .pattern("XAX")
+                .pattern("AOA")
+                .pattern("XAX")
+                .input('O', Items.DIAMOND)
+                .input('X', Items.IRON_INGOT)
+                .input('A', ModItems.THESTONE_DUST)
+                .criterion(hasItem(Items.DIAMOND),conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter, new Identifier("empty_core_craft"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.AMETHYST_CORE, 2)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XAX")
+                .input('X', Items.AMETHYST_SHARD)
+                .input('O', ModItems.EMPTY_CORE)
+                .input('A', ModItems.AMETHYST_CORE)
+                .criterion(hasItem(Items.AMETHYST_SHARD),conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("amethyst_core_craft"));
+
+
+
+
+
+
+
+
+
+
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MATERIAL_PROCESSOR, 1)
                 .pattern("XXX")

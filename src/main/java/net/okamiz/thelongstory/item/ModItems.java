@@ -54,6 +54,7 @@ public class ModItems {
 
     public static final Item PURE_AMETHYST_STICK = registerItem("pure_amethyst_stick", new ModGlintItem(new FabricItemSettings()));
     public static final Item AMETHYST_CORE = registerItem("amethyst_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item EMPTY_CORE = registerItem("empty_core", new Item(new FabricItemSettings()));
 
 
     public static final Item COMMAND_SYSTEM = registerItem("command_system", new Item(new FabricItemSettings()));
