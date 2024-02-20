@@ -28,5 +28,8 @@ public class EntityRendererGen {
 
         EntityRendererRegistry.register(ModEntities.BREEDY, BreedyRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.BREEDY, BreedyModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.AMETHYST_GOLEM, AmethystGolemRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.AMETHYST_GOLEM, AmethystGolemModel::getTexturedModelData);
     }
 }
