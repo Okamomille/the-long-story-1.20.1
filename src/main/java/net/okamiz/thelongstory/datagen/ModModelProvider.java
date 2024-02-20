@@ -247,6 +247,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.POTION_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.POTION_RECEPTACLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMPTY_CORE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.WOODEN_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_PLATE, Models.GENERATED);

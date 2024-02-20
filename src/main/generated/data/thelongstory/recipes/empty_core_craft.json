@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "thelongstory:thestone_dust"
+    },
+    "O": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "XAX",
+    "AOA",
+    "XAX"
+  ],
+  "result": {
+    "item": "thelongstory:empty_core"
+  },
+  "show_notification": true
+}
