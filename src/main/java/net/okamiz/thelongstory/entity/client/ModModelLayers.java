@@ -22,4 +22,8 @@ public class ModModelLayers {
 
     public static final EntityModelLayer BREEDY =
             new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "breedy"), "main");
+
+    public static final EntityModelLayer AMETHYST_GOLEM =
+            new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "amethyst_golem"), "main");
+
 }

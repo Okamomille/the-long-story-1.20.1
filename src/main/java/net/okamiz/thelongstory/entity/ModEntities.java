@@ -45,4 +45,9 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, BreedyEntity::new)
                     .dimensions(EntityDimensions.fixed(0.6f,0.9f)).build());
 
+    public static final EntityType<AmethystGolemEntity> AMETHYST_GOLEM = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TheLongStory.MOD_ID, "amethyst_golem"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, AmethystGolemEntity::new)
+                    .dimensions(EntityDimensions.fixed(1.1f,4.5f)).build());
+
 }
