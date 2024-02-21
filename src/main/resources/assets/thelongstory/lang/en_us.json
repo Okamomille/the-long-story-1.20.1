@@ -371,6 +371,13 @@
 
   "sounds.thelongstory.breedy_ambient": "Breedy Singing",
   "sounds.thelongstory.breedy_hurt": "Breedy Hurt",
-  "sounds.thelongstory.breedy_death": "Breedy Death"
+  "sounds.thelongstory.breedy_death": "Breedy Death",
+
+
+
+
+
+
+  "bossbar.thelongstory.amethyst_golem" : "The Crystal Golem"
 
 }
