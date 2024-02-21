@@ -12,7 +12,7 @@ import net.okamiz.thelongstory.entity.custom.AmethystGolemEntity;
 
 public class AmethystGolemAttackGoal extends MeleeAttackGoal {
     private final AmethystGolemEntity entity;
-    private int attackDelay;
+    private int attackDelay = 10;
     private int ticksUntilNextAttack = 15;
     private boolean shouldCountTillNextAttack = false;
 
@@ -32,9 +32,12 @@ public class AmethystGolemAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void attack(LivingEntity pEnemy, double squaredDistance) {
-        double d = this.getSquaredMaxAttackDistance(pEnemy);
-        if (d <= squaredDistance) {
+        if (isEnemyWithinAttackDistance(pEnemy)) {
             shouldCountTillNextAttack = true;
+
+            if(isTimeToStartAttackAnimation()) {
+                entity.setAttacking(true);
+            }
 
             if(isTimeToAttack()) {
                 entity.setAttacking(true);
@@ -50,8 +53,8 @@ public class AmethystGolemAttackGoal extends MeleeAttackGoal {
         }
     }
 
-    private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy, double squaredDistance){
-        return squaredDistance <= this.getSquaredMaxAttackDistance(pEnemy);
+    private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy){
+        return this.entity.distanceTo(pEnemy) <= 3.0f;
     }
 
     protected void resetAttackCooldown() {
@@ -59,7 +62,7 @@ public class AmethystGolemAttackGoal extends MeleeAttackGoal {
     }
 
     protected boolean isTimeToStartAttackAnimation() {
-        return this.ticksUntilNextAttack <= 0;
+        return this.ticksUntilNextAttack <= attackDelay;
     }
 
     protected boolean isTimeToAttack() {

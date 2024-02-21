@@ -1,12 +1,11 @@
 package net.okamiz.thelongstory.entity.custom;
 
-import net.minecraft.entity.AnimationState;
-import net.minecraft.entity.EntityDimensions;
-import net.minecraft.entity.EntityPose;
-import net.minecraft.entity.EntityType;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.boss.BossBar;
+import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
@@ -15,16 +14,18 @@ import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Items;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.entity.ai.AmethystGolemAttackGoal;
 import net.okamiz.thelongstory.entity.ai.TrepasseurAttackGoal;
+import net.okamiz.thelongstory.item.ModItems;
 
 public class AmethystGolemEntity extends HostileEntity {
-
     private PlayerEntity player;
-
     private Boolean setAttacking;
 
     private static final TrackedData<Boolean> ATTACKING =
@@ -37,8 +38,14 @@ public class AmethystGolemEntity extends HostileEntity {
     public int attackAnimationCooldown = 0;
 
 
-    public AmethystGolemEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    private final ServerBossBar bossBar = new ServerBossBar(Text.translatable("bossbar.thelongstory.amethyst_golem"),
+            BossBar.Color.PURPLE, BossBar.Style.NOTCHED_6);
+
+
+
+    public AmethystGolemEntity(EntityType<? extends AmethystGolemEntity> entityType, World world) {
         super(entityType, world);
+
     }
 
 
@@ -77,20 +84,28 @@ public class AmethystGolemEntity extends HostileEntity {
     }
 
 
-
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
         this.targetSelector.add(1, new RevengeGoal(this));
         this.targetSelector.add(2, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, false));
-        this.goalSelector.add(2, new AmethystGolemAttackGoal(this, 1.2D, false));
+        this.goalSelector.add(2, new AmethystGolemAttackGoal(this, 1.2D, true));
 
-        this.goalSelector.add(7, new WanderAroundFarGoal(this, 1D));
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
         this.goalSelector.add(6, new LookAroundGoal(this));
 
 
     }
+
+    @Override
+    protected void dropEquipment(DamageSource source, int lootingMultiplier, boolean allowDrops) {
+        super.dropEquipment(source, lootingMultiplier, allowDrops);
+        ItemEntity itemEntity = this.dropItem(ModItems.AMETHYST_CORE);
+        if (itemEntity != null) {
+            itemEntity.setCovetedItem();
+        }
+    }
+
 
     @Override
     public boolean isUndead() {
@@ -99,10 +114,10 @@ public class AmethystGolemEntity extends HostileEntity {
 
     public static DefaultAttributeContainer.Builder createAmethystGolemAttributes(){
         return HostileEntity.createHostileAttributes()
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 40.0f)
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 50.0f)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 90.0f)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 200f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3D)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 32f)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 22f)
                 .add(EntityAttributes.GENERIC_ARMOR, 2.2f);
     }
 
@@ -142,5 +157,28 @@ public class AmethystGolemEntity extends HostileEntity {
     @Override
     protected SoundEvent getDeathSound() {
         return SoundEvents.ENTITY_HUSK_DEATH;
+    }
+
+
+
+    // BOSS BAR
+
+
+    @Override
+    public void onStartedTrackingBy(ServerPlayerEntity player) {
+        super.onStartedTrackingBy(player);
+        this.bossBar.addPlayer(player);
+    }
+
+    @Override
+    public void onStoppedTrackingBy(ServerPlayerEntity player) {
+        super.onStoppedTrackingBy(player);
+        this.bossBar.removePlayer(player);
+    }
+
+    @Override
+    protected void mobTick() {
+        super.mobTick();
+        this.bossBar.setPercent(this.getHealth() / this.getMaxHealth());
     }
 }
