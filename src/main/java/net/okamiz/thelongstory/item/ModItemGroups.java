@@ -30,6 +30,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.GREEN_SHARD);
                         entries.add(ModItems.PURE_AMETHYST_SHARD);
+                        entries.add(ModItems.FLAMING_SHARD);
 
                         entries.add(ModItems.DRONIUM_INGOT);
                         entries.add(ModItems.DRONIUM_POWDER);
@@ -283,8 +284,10 @@ public class ModItemGroups {
                         entries.add(ModItems.NETHERITE_PLATE);
 
                         entries.add(ModItems.PURE_AMETHYST_STICK);
+                        entries.add(ModItems.FLAMING_STICK);
                         entries.add(ModItems.EMPTY_CORE);
                         entries.add(ModItems.AMETHYST_CORE);
+                        entries.add(ModItems.FLAMING_CORE);
 
                         entries.add(ModItems.DIMENSION_PATTERN);
                         entries.add(ModItems.COMMAND_SYSTEM);

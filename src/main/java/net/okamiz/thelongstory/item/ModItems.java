@@ -38,6 +38,7 @@ public class ModItems {
 
     public static final Item GREEN_SHARD = registerItem("green_shard", new Item(new FabricItemSettings()));
     public static final Item PURE_AMETHYST_SHARD = registerItem("pure_amethyst_shard", new ModGlintItem(new FabricItemSettings()));
+    public static final Item FLAMING_SHARD = registerItem("flaming_shard", new ModGlintItem(new FabricItemSettings()));
 
     public static final Item DRONIUM_INGOT = registerItem("dronium_ingot", new Item(new FabricItemSettings()));
     public static final Item DRONIUM_POWDER = registerItem("dronium_powder", new Item(new FabricItemSettings()));
@@ -53,7 +54,9 @@ public class ModItems {
     public static final Item NETHERITE_PLATE = registerItem("netherite_plate", new Item(new FabricItemSettings()));
 
     public static final Item PURE_AMETHYST_STICK = registerItem("pure_amethyst_stick", new ModGlintItem(new FabricItemSettings()));
-    public static final Item AMETHYST_CORE = registerItem("amethyst_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item FLAMING_STICK = registerItem("flaming_stick", new ModGlintItem(new FabricItemSettings()));
+    public static final Item AMETHYST_CORE = registerItem("amethyst_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item FLAMING_CORE = registerItem("flaming_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.EPIC)));
     public static final Item EMPTY_CORE = registerItem("empty_core", new Item(new FabricItemSettings()));
 
 

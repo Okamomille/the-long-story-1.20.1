@@ -924,6 +924,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("empty_core_craft"));
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.FLAMING_SHARD, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('X', ModItems.PURE_AMETHYST_SHARD)
+                .input('O', Items.BLAZE_POWDER)
+                .criterion(hasItem(ModItems.FLAMING_SHARD),conditionsFromItem(ModItems.FLAMING_SHARD))
+                .offerTo(exporter, new Identifier("flaming_shard_craft"));
+
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.AMETHYST_CORE, 2)
                 .pattern("XXX")
                 .pattern("XOX")
@@ -932,7 +943,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', ModItems.EMPTY_CORE)
                 .input('A', ModItems.AMETHYST_CORE)
                 .criterion(hasItem(Items.AMETHYST_SHARD),conditionsFromItem(Items.AMETHYST_SHARD))
+                .criterion(hasItem(ModItems.EMPTY_CORE),conditionsFromItem(ModItems.EMPTY_CORE))
                 .offerTo(exporter, new Identifier("amethyst_core_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.FLAMING_CORE, 1)
+                .pattern("XXX")
+                .pattern("XOX")
+                .pattern("XXX")
+                .input('X', ModItems.FLAMING_SHARD)
+                .input('O', ModItems.AMETHYST_CORE)
+                .criterion(hasItem(ModItems.FLAMING_SHARD),conditionsFromItem(ModItems.FLAMING_SHARD))
+                .criterion(hasItem(ModItems.AMETHYST_CORE),conditionsFromItem(ModItems.AMETHYST_CORE))
+                .offerTo(exporter, new Identifier("flaming_core_craft"));
 
 
 
@@ -1094,6 +1116,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', ModItems.PURE_AMETHYST_SHARD)
                 .criterion(hasItem(ModItems.PURE_AMETHYST_SHARD),conditionsFromItem(ModItems.PURE_AMETHYST_SHARD))
                 .offerTo(exporter, new Identifier("pure_amethyst_stick_craft_reverse"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.FLAMING_STICK, 1)
+                .pattern("OX")
+                .input('X', Items.STICK)
+                .input('O', ModItems.FLAMING_SHARD)
+                .criterion(hasItem(ModItems.FLAMING_SHARD),conditionsFromItem(ModItems.FLAMING_SHARD))
+                .offerTo(exporter, new Identifier("flaming_stick_craft"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.FLAMING_STICK, 1)
+                .pattern("XO")
+                .input('X', Items.STICK)
+                .input('O', ModItems.FLAMING_SHARD)
+                .criterion(hasItem(ModItems.FLAMING_SHARD),conditionsFromItem(ModItems.FLAMING_SHARD))
+                .offerTo(exporter, new Identifier("flaming_stick_craft_reverse"));
 
 
         // -------- GREFFED SYSTEMS

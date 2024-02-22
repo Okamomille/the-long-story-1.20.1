@@ -1,24 +1,24 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_amethyst_shard": {
+    "has_amethyst_core": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:amethyst_shard"
+              "thelongstory:amethyst_core"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_empty_core": {
+    "has_flaming_shard": {
       "conditions": {
         "items": [
           {
             "items": [
-              "thelongstory:empty_core"
+              "thelongstory:flaming_shard"
             ]
           }
         ]
@@ -27,21 +27,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:amethyst_core_craft"
+        "recipe": "minecraft:flaming_core_craft"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_amethyst_shard",
-      "has_empty_core",
+      "has_flaming_shard",
+      "has_amethyst_core",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:amethyst_core_craft"
+      "minecraft:flaming_core_craft"
     ]
   },
   "sends_telemetry_event": false

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:blaze_powder"
+    },
+    "X": {
+      "item": "thelongstory:pure_amethyst_shard"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XOX",
+    " X "
+  ],
+  "result": {
+    "item": "thelongstory:flaming_shard"
+  },
+  "show_notification": true
+}

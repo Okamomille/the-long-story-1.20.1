@@ -18,6 +18,7 @@
 
   "item.thelongstory.green_shard" : "Green Shard",
   "item.thelongstory.pure_amethyst_shard" : "Pure Amethyst Shard",
+  "item.thelongstory.flaming_shard" : "Flaming Shard",
 
   "item.thelongstory.dronium_ingot" : "Dronium Ingot",
   "item.thelongstory.dronium_powder" : "Dronium Powder",
@@ -56,7 +57,9 @@
   "item.thelongstory.netherite_plate" : "Netherite Plate",
 
   "item.thelongstory.pure_amethyst_stick" : "Pure Amethyst Stick",
+  "item.thelongstory.flaming_stick" : "Flaming Stick",
   "item.thelongstory.amethyst_core" : "Amethyst Core",
+  "item.thelongstory.flaming_core" : "Flaming Core",
   "item.thelongstory.empty_core" : "Empty Core",
 
 
@@ -120,6 +123,7 @@
 
   "item.thelongstory.pure_amethyst_pickaxe" : "Pure Amethyst Pickaxe",
   "item.thelongstory.pure_amethyst_sword" : "Pure Amethyst Sword",
+
 
 
 
