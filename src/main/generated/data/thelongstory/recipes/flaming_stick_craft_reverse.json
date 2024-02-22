@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:flaming_shard"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XO"
+  ],
+  "result": {
+    "item": "thelongstory:flaming_stick"
+  },
+  "show_notification": true
+}

@@ -202,7 +202,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.GREEN_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FLAMING_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_STICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FLAMING_STICK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.EMERALD_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_APPLE, Models.GENERATED);
@@ -247,6 +249,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.POTION_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.POTION_RECEPTACLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FLAMING_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMPTY_CORE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.WOODEN_PLATE, Models.GENERATED);
