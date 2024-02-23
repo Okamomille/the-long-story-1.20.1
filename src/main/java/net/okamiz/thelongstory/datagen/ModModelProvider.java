@@ -326,6 +326,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.DRONIUM_BOOTS));
 
 
+        itemModelGenerator.register(ModItems.AMETHYST_MINION_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
 
         itemModelGenerator.register(ModItems.TREPASSEUR_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));

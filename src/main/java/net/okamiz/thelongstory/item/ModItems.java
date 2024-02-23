@@ -127,6 +127,9 @@ public class ModItems {
     //SPAWN EGGS ITEMS -----------------
 
 
+    public static final Item AMETHYST_MINION_SPAWN_EGG = registerItem("amethyst_minion_spawn_egg",
+            new SpawnEggItem(ModEntities.AMETHYST_MINION, 1667367,13990655, new FabricItemSettings()));
+
     public static final Item TREPASSEUR_SPAWN_EGG = registerItem("trepasseur_spawn_egg",
             new SpawnEggItem(ModEntities.TREPASSEUR, 5944735,5477236, new FabricItemSettings()));
     public static final Item TICKELER_SPAWN_EGG = registerItem("tickeler_spawn_egg",
