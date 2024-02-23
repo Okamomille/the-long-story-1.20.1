@@ -1,4 +1,4 @@
-// 1.20.1	2024-02-22T11:37:09.9903901	The Long Story/Recipes
+// 1.20.1	2024-02-23T16:37:09.1822429	The Long Story/Recipes
 2fa786718bc3875c5eebc7589b417d492edd6652 data\thelongstory\advancements\recipes\misc\iron_apple.json
 ec874904c03616e0049150cd3843922ee4c0ef98 data\thelongstory\advancements\recipes\combat\impure_zarosite_chestplate.json
 1d992e72401495461f7c6ce35873950e1523f447 data\thelongstory\recipes\thestone_shovel.json
@@ -222,6 +222,7 @@ d2340f56e812ed5a690fc12b9552ef165c8c7434 data\thelongstory\advancements\recipes\
 e97ee9523579f95a3324001732f7fb0c926400ee data\thelongstory\recipes\simulation_teleporter.json
 a35ce296d3ca2e953a279b958018597570d6518d data\thelongstory\recipes\oast_fence.json
 322ecf10bb1ed4594627f3a1001cd9d5d041d5e5 data\thelongstory\advancements\recipes\misc\iced_stone_wall_recipe.json
+41bfcb8ada6a22ae1d855a80c97ce5afd7df919e data\thelongstory\advancements\recipes\misc\amethyst_key_craft.json
 5832ec84a372d3372f399e930566378b80085e9c data\thelongstory\recipes\netherite_plate_craft.json
 e8c6df0524ff5097a4e6884b0d76abc55bb490da data\thelongstory\recipes\egroric_trapdoor.json
 11688de098318c0b268adf901e306cd8dedf433c data\thelongstory\advancements\recipes\misc\impure_zarosite_ingot_from_blasting_deepslate_impure_zarosite_ore.json
@@ -368,6 +369,7 @@ ba95179a656f256c5961220a298da66722e79f1b data\thelongstory\recipes\zarosite_ches
 213801ae0fb1a622dd40569df5638858846efbfa data\thelongstory\advancements\recipes\redstone\kiwi_fence_gate.json
 bd0aa437318929e4bfdbe8081ce789aaaa72729c data\thelongstory\recipes\thestone_leggings.json
 10e73ee0372a8a3911167cf6e0dbf30e4b593167 data\thelongstory\recipes\iced_stone_bricks_stairs.json
+b0d2c6c0eabadc759703d566df2ce1f6a649b508 data\thelongstory\recipes\amethyst_key_craft.json
 4bd6566d67af07381298cf7e359274cc7f683507 data\thelongstory\advancements\recipes\redstone\kiwi_trapdoor.json
 700a6e6937d1e5c8f2b4553bb5a779cf919da1c3 data\thelongstory\advancements\recipes\tools\zarosite_hoe.json
 f9c2e8be60cbebcedc2b87137c8233a513eb1066 data\thelongstory\advancements\recipes\misc\yellow_dye_from_torn_flower.json

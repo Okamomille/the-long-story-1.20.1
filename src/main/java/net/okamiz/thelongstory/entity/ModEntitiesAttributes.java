@@ -16,5 +16,6 @@ public class ModEntitiesAttributes {
         FabricDefaultAttributeRegistry.register(ModEntities.COWSMIC, CowsmicEntity.createCowsmicAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.BREEDY, BreedyEntity.createBreedyAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.AMETHYST_GOLEM, AmethystGolemEntity.createAmethystGolemAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.AMETHYST_MINION, AmethystMinionEntity.createAmethystMinionAttributes());
     }
 }

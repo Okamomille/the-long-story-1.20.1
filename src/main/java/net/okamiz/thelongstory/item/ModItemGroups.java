@@ -260,6 +260,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.miscgroup"))
                     .icon(() -> new ItemStack(ModItems.TELEPORTATION_REMOTE)).entries((displayContext, entries) -> {
 
+                        entries.add(ModBlocks.LOCKED_AMETHYST_CORE);
                         entries.add(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM);
                         entries.add(ModBlocks.BROKEN_SIMULATION_TELEPORTER);
 
@@ -314,6 +315,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SOUL_CONTAINER_SLOW_FALLING);
                         entries.add(ModItems.SOUL_CONTAINER_SATURATION);
 
+                        entries.add(ModItems.AMETHYST_MINION_SPAWN_EGG);
                         entries.add(ModItems.TREPASSEUR_SPAWN_EGG);
                         entries.add(ModItems.TICKELER_SPAWN_EGG);
                         entries.add(ModItems.CRAWLER_SPAWN_EGG);

@@ -26,4 +26,7 @@ public class ModModelLayers {
     public static final EntityModelLayer AMETHYST_GOLEM =
             new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "amethyst_golem"), "main");
 
+    public static final EntityModelLayer AMETHYST_MINION =
+            new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "amethyst_minion"), "main");
+
 }
