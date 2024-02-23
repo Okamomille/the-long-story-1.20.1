@@ -63,6 +63,9 @@
   "item.thelongstory.empty_core" : "Empty Core",
 
 
+  "item.thelongstory.amethyst_key" : "Amethyst Key",
+
+
   "item.thelongstory.thestone_helmet" : "Thestone Helmet",
   "item.thelongstory.thestone_chestplate" : "Thestone Chestplate",
   "item.thelongstory.thestone_leggings" : "Thestone Leggings",
@@ -150,6 +153,13 @@
   "block.thelongstory.mold_block" : "Mold Block",
   "block.thelongstory.spider_silk_block" : "Spider Silk Block",
   "block.thelongstory.deepslate_pillar" : "Deepslate Pillar",
+
+
+
+  "block.thelongstory.locked_amethyst_core" : "Locked Amethyst Core",
+
+
+
 
   "block.thelongstory.deep_ice" : "Deep Ice",
   "block.thelongstory.deep_ice_zarosite_ore" : "Deep Ice Zarosite Ore",
@@ -317,6 +327,9 @@
   "tooltip.thelongstory.blue_greffed_command_system" : "§7A homemade command block which is used to see in the dark.",
   "tooltip.thelongstory.gray_greffed_command_system" : "§7A homemade command block which is used to increase resistance.",
 
+  "tooltip.thelongstory.locked_amethyst_core" : "§e> Unbreakable\n\n§7This block is used to summon the Amethyst Golem boss with an Amethyst Key.",
+  "tooltip.thelongstory.amethyst_key" : "§7Can be used on a Locked Amethyst Core block to summon the Amethyst Golem boss.",
+
 
 
   "tooltip.thelongstory.zarosite_sword" : "§7This sword has been created from toxic crystals. When you attack a mob, it will have the crystallized effect and take damages.",
@@ -361,6 +374,7 @@
   "entity.thelongstory.crawler": "a Crawler",
   "entity.thelongstory.tooki": "a Tooki",
   "entity.thelongstory.cowsmic": "a Cowsmic",
+  "entity.thelongstory.amethyst_golem": "the Amethyst Golem.",
 
 
 

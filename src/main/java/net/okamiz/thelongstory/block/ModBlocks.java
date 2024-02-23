@@ -376,6 +376,9 @@ public class ModBlocks {
 
     // ADVANCED BLOCKS ------------------
 
+    public static final Block LOCKED_AMETHYST_CORE = registerBlock("locked_amethyst_core",
+            new LockedAmethystCoreBlock(FabricBlockSettings.copyOf(Blocks.BEDROCK)));
+
 
     public static final Block BROKEN_GREFFED_COMMAND_SYSTEM = registerBlock("broken_greffed_command_system",
             new BrokenBlock(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK)));
