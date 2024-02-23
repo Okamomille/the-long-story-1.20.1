@@ -147,6 +147,7 @@
   "item.thelongstory.tooki_spawn_egg" : "Tooki Spawn Egg",
   "item.thelongstory.cowsmic_spawn_egg" : "Cowsmic Spawn Egg",
   "item.thelongstory.breedy_spawn_egg" : "Breedy Spawn Egg",
+  "item.thelongstory.amethyst_minion_spawn_egg" : "Amethyst Minion Spawn Egg",
 
 
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
@@ -375,6 +376,7 @@
   "entity.thelongstory.tooki": "a Tooki",
   "entity.thelongstory.cowsmic": "a Cowsmic",
   "entity.thelongstory.amethyst_golem": "the Amethyst Golem.",
+  "entity.thelongstory.amethyst_minion": "an Amethyst Golem.",
 
 
 
@@ -391,11 +393,13 @@
   "sounds.thelongstory.breedy_hurt": "Breedy Hurt",
   "sounds.thelongstory.breedy_death": "Breedy Death",
 
+  "sounds.thelongstory.amethyst_golem_ambient": "Amethyst Golem Singing",
+  "sounds.thelongstory.amethyst_golem_hurt": "Amethyst Golem Hurt",
+  "sounds.thelongstory.amethyst_golem_death": "Amethyst Golem Death",
 
 
 
 
-
-  "bossbar.thelongstory.amethyst_golem" : "The Crystal Golem"
+  "bossbar.thelongstory.amethyst_golem" : "The Amethyst Golem"
 
 }
