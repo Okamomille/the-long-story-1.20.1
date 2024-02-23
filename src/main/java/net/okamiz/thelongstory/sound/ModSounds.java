@@ -21,6 +21,11 @@ public class ModSounds {
     public static final SoundEvent BREEDY_HURT = registerSoundEvent("breedy_hurt");
     public static final SoundEvent BREEDY_DEATH = registerSoundEvent("breedy_death");
 
+    public static final SoundEvent AMETHYST_GOLEM_AMBIENT = registerSoundEvent("amethyst_golem_ambient");
+    public static final SoundEvent AMETHYST_GOLEM_HURT = registerSoundEvent("amethyst_golem_hurt");
+    public static final SoundEvent AMETHYST_GOLEM_DEATH = registerSoundEvent("amethyst_golem_death");
+
+
 
 
 

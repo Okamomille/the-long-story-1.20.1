@@ -25,6 +25,7 @@ import net.minecraft.world.World;
 import net.okamiz.thelongstory.entity.ai.AmethystGolemAttackGoal;
 import net.okamiz.thelongstory.entity.ai.TrepasseurAttackGoal;
 import net.okamiz.thelongstory.item.ModItems;
+import net.okamiz.thelongstory.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.IntFunction;
@@ -218,9 +219,18 @@ public class AmethystGolemEntity extends SpellcastingIllagerEntity {
 
     @Override
     public SoundEvent getCelebratingSound() {
-        return SoundEvents.ENTITY_WITCH_CELEBRATE;
+        return ModSounds.AMETHYST_GOLEM_AMBIENT;
     }
 
+    @Override
+    public boolean canJoinRaid() {
+        return false;
+    }
+
+    @Override
+    public boolean isPatrolLeader() {
+        return false;
+    }
 
     @Override
     protected float getActiveEyeHeight(EntityPose pose, EntityDimensions dimensions) {
@@ -229,17 +239,17 @@ public class AmethystGolemEntity extends SpellcastingIllagerEntity {
 
     @Override
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.ENTITY_HUSK_AMBIENT;
+        return ModSounds.AMETHYST_GOLEM_AMBIENT;
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource source) {
-        return SoundEvents.ENTITY_HUSK_HURT;
+        return ModSounds.AMETHYST_GOLEM_HURT;
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.ENTITY_HUSK_DEATH;
+        return ModSounds.AMETHYST_GOLEM_DEATH;
     }
 
 

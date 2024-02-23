@@ -58,5 +58,23 @@
     "sounds": [
       "thelongstory:breedy_death"
     ]
+  },
+  "amethyst_golem_ambient": {
+    "subtitle": "sounds.thelongstory.amethyst_golem_ambient",
+    "sounds": [
+      "thelongstory:amethyst_golem_ambient"
+    ]
+  },
+  "amethyst_golem_hurt": {
+    "subtitle": "sounds.thelongstory.amethyst_golem_hurt",
+    "sounds": [
+      "thelongstory:amethyst_golem_hurt"
+    ]
+  },
+  "amethyst_golem_death": {
+    "subtitle": "sounds.thelongstory.amethyst_golem_death",
+    "sounds": [
+      "thelongstory:amethyst_golem_death"
+    ]
   }
 }
