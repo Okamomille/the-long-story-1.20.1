@@ -283,6 +283,8 @@ public class ModItemGroups {
                         entries.add(ModItems.EMERALD_PLATE);
                         entries.add(ModItems.NETHERITE_PLATE);
 
+                        entries.add(ModItems.AMETHYST_KEY);
+
                         entries.add(ModItems.PURE_AMETHYST_STICK);
                         entries.add(ModItems.FLAMING_STICK);
                         entries.add(ModItems.EMPTY_CORE);

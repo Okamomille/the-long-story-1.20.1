@@ -86,6 +86,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROKEN_GREFFED_COMMAND_SYSTEM);
 
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LOCKED_AMETHYST_CORE);
+
+
 
 
 
@@ -205,6 +208,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FLAMING_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.FLAMING_STICK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.AMETHYST_KEY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.EMERALD_APPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AMETHYST_APPLE, Models.GENERATED);

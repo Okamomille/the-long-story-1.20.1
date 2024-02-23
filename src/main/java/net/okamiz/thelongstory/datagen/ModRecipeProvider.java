@@ -961,11 +961,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+// KEYS
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.AMETHYST_KEY, 1)
+                .pattern("  X")
+                .pattern("XX ")
+                .pattern(" X ")
+                .input('X', Items.AMETHYST_SHARD)
+                .criterion(hasItem(Items.AMETHYST_SHARD),conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter, new Identifier("amethyst_key_craft"));
 
 
 
 
-
+// TECH BLOCKS
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.MATERIAL_PROCESSOR, 1)
                 .pattern("XXX")
