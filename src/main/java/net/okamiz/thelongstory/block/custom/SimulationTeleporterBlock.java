@@ -19,6 +19,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.Heightmap;
 import net.minecraft.world.World;
 import net.okamiz.thelongstory.sound.ModSounds;
 import net.okamiz.thelongstory.world.dimension.ModDimensions;
@@ -33,6 +34,7 @@ public class SimulationTeleporterBlock extends Block {
 
     private static void giveEntityEffect(PlayerEntity pe) {
         pe.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 60, 1, false, false));
+        pe.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 600, 255, false, false));
         pe.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 60, 1, false, false));
     }
 
@@ -49,15 +51,18 @@ public class SimulationTeleporterBlock extends Block {
             ServerWorld serverWorld = ((ServerWorld)world).getServer().getWorld(registryKey);
             if (serverWorld == null) {
                 return ActionResult.FAIL;
-
             }
+
+
+            BlockPos blockPos;
+            blockPos = serverWorld.getRandomPosInChunk(pos.getX(), serverWorld.getTopY(),pos.getZ(),10);
 
             if(player instanceof ServerPlayerEntity){
                 player.sendMessage(Text.translatable("message.thelongstory.simulationteleporter.success"), true);
 
                 playSound(world, pos);
-                player.teleport(serverWorld, player.getX(), player.getY(), player.getZ(), PositionFlag.getFlags(1), player.getYaw(), player.getPitch());
-                playSound(world, pos);
+                player.teleport(serverWorld, blockPos.getX(), blockPos.getY(), blockPos.getZ(), PositionFlag.getFlags(1), player.getYaw(), player.getPitch());
+                playSound(world, blockPos);
                 giveEntityEffect(player);
                 return ActionResult.SUCCESS;
             }
