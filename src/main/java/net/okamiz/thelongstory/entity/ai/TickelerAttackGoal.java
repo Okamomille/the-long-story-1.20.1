@@ -29,7 +29,7 @@ public class TickelerAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void attack(LivingEntity pEnemy, double squaredDistance) {
-        if (isEnemyWithinAttackDistance(pEnemy, squaredDistance)) {
+        if (isEnemyWithinAttackDistance(pEnemy)) {
             shouldCountTillNextAttack = true;
 
             if(isTimeToStartAttackAnimation()) {
@@ -37,9 +37,11 @@ public class TickelerAttackGoal extends MeleeAttackGoal {
             }
 
             if(isTimeToAttack()) {
+                entity.setAttacking(true);
                 this.mob.getLookControl().lookAt(pEnemy.getX(), pEnemy.getEyeY(), pEnemy.getZ());
                 performAttack(pEnemy);
             }
+
         } else {
             resetAttackCooldown();
             shouldCountTillNextAttack = false;
@@ -48,8 +50,8 @@ public class TickelerAttackGoal extends MeleeAttackGoal {
         }
     }
 
-    private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy, double squaredDistance){
-        return squaredDistance <= this.getSquaredMaxAttackDistance(pEnemy);
+    private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy){
+        return this.entity.distanceTo(pEnemy) <= 2.0f;
     }
 
 

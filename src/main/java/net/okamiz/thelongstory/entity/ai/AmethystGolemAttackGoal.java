@@ -2,12 +2,9 @@ package net.okamiz.thelongstory.entity.ai;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
-import net.okamiz.thelongstory.effect.ModEffects;
 import net.okamiz.thelongstory.entity.custom.AmethystGolemEntity;
 
 public class AmethystGolemAttackGoal extends MeleeAttackGoal {
@@ -29,6 +26,7 @@ public class AmethystGolemAttackGoal extends MeleeAttackGoal {
         attackDelay = 10;
         ticksUntilNextAttack = 15;
     }
+
 
     @Override
     protected void attack(LivingEntity pEnemy, double squaredDistance) {
