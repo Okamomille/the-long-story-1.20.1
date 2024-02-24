@@ -3,7 +3,6 @@ package net.okamiz.thelongstory.entity.ai;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
@@ -32,7 +31,7 @@ public class TrepasseurAttackGoal extends MeleeAttackGoal {
 
     @Override
     protected void attack(LivingEntity pEnemy, double squaredDistance) {
-        if (isEnemyWithinAttackDistance(pEnemy, squaredDistance)) {
+        if (isEnemyWithinAttackDistance(pEnemy)) {
             shouldCountTillNextAttack = true;
 
             if(isTimeToStartAttackAnimation()) {
@@ -40,9 +39,11 @@ public class TrepasseurAttackGoal extends MeleeAttackGoal {
             }
 
             if(isTimeToAttack()) {
+                entity.setAttacking(true);
                 this.mob.getLookControl().lookAt(pEnemy.getX(), pEnemy.getEyeY(), pEnemy.getZ());
                 performAttack(pEnemy);
             }
+
         } else {
             resetAttackCooldown();
             shouldCountTillNextAttack = false;
@@ -51,8 +52,8 @@ public class TrepasseurAttackGoal extends MeleeAttackGoal {
         }
     }
 
-    private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy, double squaredDistance){
-        return squaredDistance <= this.getSquaredMaxAttackDistance(pEnemy);
+    private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy){
+        return this.entity.distanceTo(pEnemy) <= 2.0f;
     }
 
     protected void resetAttackCooldown() {
