@@ -4,20 +4,35 @@ package net.okamiz.thelongstory.item.custom;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.packet.s2c.play.PositionFlag;
+import net.minecraft.particle.ParticleEffect;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.event.GameEvent;
+import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.entity.ModEntities;
+import net.okamiz.thelongstory.entity.custom.AmethystGolemEntity;
+import net.okamiz.thelongstory.item.ModItems;
 import net.okamiz.thelongstory.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
@@ -25,7 +40,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class TeleportationRemoteItem extends Item {
-
+    private LivingEntity storedEntity;
     public TeleportationRemoteItem(FabricItemSettings fabricItemSettings) {
         super(fabricItemSettings);
     }
@@ -38,7 +53,7 @@ public class TeleportationRemoteItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
 
-        if (world instanceof ServerWorld && player.canUsePortals()) {
+        if (world instanceof ServerWorld && player.canUsePortals() && !player.isSneaking()) {
             RegistryKey<World> registryKey = World.OVERWORLD;
             ServerWorld serverWorld = ((ServerWorld)world).getServer().getWorld(registryKey);
             if (serverWorld == null) {
@@ -59,6 +74,7 @@ public class TeleportationRemoteItem extends Item {
                 world.playSound(null, player.getBlockPos(), ModSounds.TELEPORTATION, SoundCategory.PLAYERS, 1f, 1f);
                 giveEntityEffect(player);
                 player.getItemCooldownManager().set(this, 1200);
+
 
             }else{
                 player.sendMessage(Text.translatable("message.thelongstory.overworldteleporter.fail"), true);

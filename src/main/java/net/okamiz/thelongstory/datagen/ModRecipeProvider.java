@@ -1200,6 +1200,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.NETHERITE_PLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TELEPORTATION_REMOTE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.MOB_CAPSULE, 1)
+                .pattern(" A ")
+                .pattern("XBX")
+                .pattern(" A ")
+                .input('X', ModItems.DIAMOND_PLATE)
+                .input('B', ModItems.TELEPORTATION_MODULE)
+                .input('A', Items.LAPIS_LAZULI)
+                .criterion(hasItem(Items.LAPIS_LAZULI),conditionsFromItem(ModItems.DIAMOND_PLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MOB_CAPSULE)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIMENSION_PATTERN, 1)
                 .pattern(" C ")
                 .pattern("BXA")
