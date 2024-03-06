@@ -234,6 +234,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.BROKEN_TELEPORTATION_REMOTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TELEPORTATION_REMOTE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MOB_CAPSULE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_REGENERATION, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_CONTAINER_FIRE_RESISTANCE, Models.GENERATED);

@@ -35,6 +35,7 @@
   "item.thelongstory.command_system" : "Command System",
   "item.thelongstory.power_module" : "Power Module",
   "item.thelongstory.teleportation_module" : "Teleportation Module",
+  "item.thelongstory.mob_capsule" : "Mob Capsule",
 
   "item.thelongstory.potion_receptacle" : "Potion Receptacle",
   "item.thelongstory.potion_core" : "Potion Core",
@@ -343,6 +344,8 @@
 
 
   "tooltip.thelongstory.broken" : "§7It's broken! You'll need to fix it if you want to use it.",
+
+  "tooltip.thelongstory.mob_capsule" : "§7Right Click on a mob to capture it. Right click on a block to release it.",
 
 
 

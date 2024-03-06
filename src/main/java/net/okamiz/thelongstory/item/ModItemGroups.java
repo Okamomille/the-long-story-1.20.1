@@ -302,6 +302,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.BROKEN_TELEPORTATION_REMOTE);
                         entries.add(ModItems.TELEPORTATION_REMOTE);
+                        entries.add(ModItems.MOB_CAPSULE);
 
                         entries.add(ModItems.POWER_STAR);
                         entries.add(ModItems.SOUL_CONTAINER);

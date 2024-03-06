@@ -109,6 +109,9 @@ public class ModItems {
     public static final Item SOUL_CONTAINER = registerItem("soul_container",
             new SoulContainerItem(new FabricItemSettings().maxCount(1)));
 
+    public static final Item MOB_CAPSULE = registerItem("mob_capsule",
+            new MobCapsuleItem(new FabricItemSettings().maxCount(1)));
+
     //FOOD ITEMS -----------------
 
     public static final Item EMERALD_APPLE = registerItem("emerald_apple", new Item(new FabricItemSettings().food(ModFoodComponents.EMERALD_APPLE)));
