@@ -334,6 +334,9 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.foodgroup"))
                     .icon(() -> new ItemStack(ModItems.REDSTONE_APPLE)).entries((displayContext, entries) -> {
 
+                        entries.add(ModItems.VITALY_SEEDS);
+                        entries.add(ModItems.VITALY_FRUIT);
+
                         entries.add(ModItems.EMERALD_APPLE);
                         entries.add(ModItems.IRON_APPLE);
                         entries.add(ModItems.DIAMOND_APPLE);

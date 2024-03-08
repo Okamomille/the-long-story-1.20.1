@@ -7,13 +7,16 @@ import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.block.crops.VitalyCropBlock;
 import net.okamiz.thelongstory.item.ModItems;
 
 
@@ -144,6 +147,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.KIWI_SLAB, slabDrops(ModBlocks.KIWI_SLAB));
         addDrop(ModBlocks.KIWI_DOOR, doorDrops(ModBlocks.KIWI_DOOR));
         addDrop(ModBlocks.KIWI_TRAPDOOR);
+
+
+
+
+
+
+
+
+        BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.VITALY_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(VitalyCropBlock.AGE, 6));
+        this.addDrop(ModBlocks.VITALY_CROP, this.cropDrops(ModBlocks.VITALY_CROP, ModItems.VITALY_FRUIT, ModItems.VITALY_SEEDS, builder2));
+
 
 
 

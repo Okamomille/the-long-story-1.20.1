@@ -47,5 +47,7 @@ public class RenderCutout {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_GREEN_OSPET, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YELLOW_OSPET, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_YELLOW_OSPET, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VITALY_CROP, RenderLayer.getCutout());
     }
 }

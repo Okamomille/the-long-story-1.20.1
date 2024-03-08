@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "thelongstory:block/vitaly_stage3"
+  }
+}
