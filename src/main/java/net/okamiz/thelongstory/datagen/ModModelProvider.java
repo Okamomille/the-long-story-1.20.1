@@ -6,6 +6,7 @@ import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.block.ModBlocks;
+import net.okamiz.thelongstory.block.crops.VitalyCropBlock;
 import net.okamiz.thelongstory.item.ModItems;
 
 import java.util.Optional;
@@ -177,6 +178,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GREEN_OSPET, ModBlocks.POTTED_GREEN_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.YELLOW_OSPET, ModBlocks.POTTED_YELLOW_OSPET, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+
         //registerGreffedCommandSystem(blockStateModelGenerator);
     }
 
@@ -298,6 +300,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.PURE_AMETHYST_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_SWORD, Models.HANDHELD);
+
+
+
+        itemModelGenerator.register(ModItems.VITALY_SEEDS, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VITALY_FRUIT, Models.HANDHELD);
 
 
         

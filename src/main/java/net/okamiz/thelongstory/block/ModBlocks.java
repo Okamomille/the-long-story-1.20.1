@@ -12,6 +12,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.block.crops.VitalyCropBlock;
 import net.okamiz.thelongstory.block.custom.*;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
 import net.okamiz.thelongstory.world.tree.custom.Egroric.EgroricSaplingGenerator;
@@ -407,6 +408,14 @@ public class ModBlocks {
     // ----------------
 
 
+    public static final Block VITALY_CROP = registerBlockWithoutBlockItem("vitaly_crop",
+            new VitalyCropBlock(FabricBlockSettings.copyOf(Blocks.BEETROOTS)));
+
+
+
+
+
+
 
 
     // --------------
@@ -416,8 +425,9 @@ public class ModBlocks {
 
 
 
-
-
+    private static Block registerBlockWithoutBlockItem(String name, Block block){
+        return Registry.register(Registries.BLOCK, new Identifier(TheLongStory.MOD_ID, name), block);
+    }
 
 
 

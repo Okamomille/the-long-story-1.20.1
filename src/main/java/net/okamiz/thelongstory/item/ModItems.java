@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.block.ModBlocks;
 import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.item.custom.*;
 
@@ -112,7 +113,31 @@ public class ModItems {
     public static final Item MOB_CAPSULE = registerItem("mob_capsule",
             new MobCapsuleItem(new FabricItemSettings().maxCount(1)));
 
+
+
+
+
+
+
+
+    //SEEDS --------------------------------
+
+
+    public static final Item VITALY_SEEDS = registerItem("vitaly_seeds",
+            new AliasedBlockItem(ModBlocks.VITALY_CROP, new FabricItemSettings()));
+
+
+
+
+
+
+
+
+
+
     //FOOD ITEMS -----------------
+
+    public static final Item VITALY_FRUIT = registerItem("vitaly_fruit", new Item(new FabricItemSettings().food(ModFoodComponents.VITALY_FRUIT)));
 
     public static final Item EMERALD_APPLE = registerItem("emerald_apple", new Item(new FabricItemSettings().food(ModFoodComponents.EMERALD_APPLE)));
     public static final Item IRON_APPLE = registerItem("iron_apple", new Item(new FabricItemSettings().food(ModFoodComponents.IRON_APPLE)));

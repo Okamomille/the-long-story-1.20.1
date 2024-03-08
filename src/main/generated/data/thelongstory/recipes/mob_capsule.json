@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "B": {
+      "item": "thelongstory:teleportation_module"
+    },
+    "X": {
+      "item": "thelongstory:diamond_plate"
+    }
+  },
+  "pattern": [
+    " A ",
+    "XBX",
+    " A "
+  ],
+  "result": {
+    "item": "thelongstory:mob_capsule"
+  },
+  "show_notification": true
+}
