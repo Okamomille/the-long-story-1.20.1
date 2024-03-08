@@ -5,6 +5,10 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.boss.WitherEntity;
+import net.minecraft.entity.boss.dragon.EnderDragonEntity;
+import net.minecraft.entity.mob.WardenEntity;
+import net.minecraft.entity.passive.GolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -18,6 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.entity.custom.AmethystGolemEntity;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -40,6 +45,10 @@ public class MobCapsuleItem extends Item {
 
             if (entity instanceof PlayerEntity) {
                 user.sendMessage(Text.literal("Entity Not Compatible"), false);
+            }
+            if (entity instanceof WitherEntity || entity instanceof WardenEntity || entity instanceof GolemEntity || entity instanceof EnderDragonEntity
+                    || entity instanceof AmethystGolemEntity) {
+                user.sendMessage(Text.literal("Entity is too big"), false);
             }
 
             else {
