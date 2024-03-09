@@ -38,4 +38,6 @@ public class ModFoodComponents extends FoodComponents {
     public static final FoodComponent COOKED_TOOKI_MEAT = new FoodComponent.Builder().hunger(6).saturationModifier(2f).build();
 
     public static final FoodComponent VITALY_FRUIT = new FoodComponent.Builder().hunger(4).saturationModifier(1f).build();
+    public static final FoodComponent TORN_CARROT = new FoodComponent.Builder().hunger(4).saturationModifier(0.6f).build();
+    public static final FoodComponent SWEET_PEAR = new FoodComponent.Builder().hunger(5).saturationModifier(0.8f).build();
 }

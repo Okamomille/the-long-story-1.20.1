@@ -59,5 +59,21 @@ public class ModCustomTrades {
                             18,3,0.05f));
                 });
 
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 4),
+                            new ItemStack(ModItems.TORN_CARROT, 8),
+                            9,4,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ModItems.SWEET_PEAR_SEEDS, 4),
+                            9,22,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ModItems.VITALY_SEEDS, 4),
+                            9,2,0.08f));
+                });
+
     }
 }

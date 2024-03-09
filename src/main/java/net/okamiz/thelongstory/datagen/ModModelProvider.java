@@ -305,7 +305,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.VITALY_SEEDS, Models.HANDHELD);
         itemModelGenerator.register(ModItems.VITALY_FRUIT, Models.HANDHELD);
-
+        itemModelGenerator.register(ModItems.TORN_CARROT, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SWEET_PEAR_SEEDS, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SWEET_PEAR, Models.HANDHELD);
 
         
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_HELMET));
