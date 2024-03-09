@@ -25,6 +25,9 @@ public class ModLootTableModifiers {
     private static final Identifier TICKELER_ID =
             new Identifier("thelongstory", "entities/tickeler");
 
+    private static final Identifier GRASS_ID =
+            new Identifier("minecraft", "blocks/grass");
+
     public static void modifyLootTables(){
         LootTableEvents.MODIFY.register(((resourceManager, lootManager, id, tableBuilder, source) -> {
 
@@ -90,7 +93,24 @@ public class ModLootTableModifiers {
             }
 
 
+            if(GRASS_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.10f)) // 1f = 100% of the time
+                        .with(ItemEntry.builder(ModItems.SWEET_PEAR_SEEDS))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build()); // Number of Items
 
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if(GRASS_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.10f)) // 1f = 100% of the time
+                        .with(ItemEntry.builder(ModItems.VITALY_SEEDS))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f,1.0f)).build()); // Number of Items
+
+                tableBuilder.pool(poolBuilder.build());
+            }
 
 
 

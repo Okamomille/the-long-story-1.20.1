@@ -12,6 +12,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.block.crops.SweatPearCropBlock;
+import net.okamiz.thelongstory.block.crops.TornCarrotCropBlock;
 import net.okamiz.thelongstory.block.crops.VitalyCropBlock;
 import net.okamiz.thelongstory.block.custom.*;
 import net.okamiz.thelongstory.block.custom.greffed_command_blocks.*;
@@ -410,7 +412,10 @@ public class ModBlocks {
 
     public static final Block VITALY_CROP = registerBlockWithoutBlockItem("vitaly_crop",
             new VitalyCropBlock(FabricBlockSettings.copyOf(Blocks.BEETROOTS)));
-
+    public static final Block TORN_CARROT_CROP = registerBlockWithoutBlockItem("torn_carrot_crop",
+            new TornCarrotCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
+    public static final Block SWEET_PEAR_CROP = registerBlockWithoutBlockItem("sweet_pear_crop",
+            new SweatPearCropBlock(FabricBlockSettings.copyOf(Blocks.CARROTS)));
 
 
 

@@ -159,8 +159,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 .properties(StatePredicate.Builder.create().exactMatch(VitalyCropBlock.AGE, 6));
         this.addDrop(ModBlocks.VITALY_CROP, this.cropDrops(ModBlocks.VITALY_CROP, ModItems.VITALY_FRUIT, ModItems.VITALY_SEEDS, builder2));
 
+        BlockStatePropertyLootCondition.Builder carrotBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.TORN_CARROT_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(VitalyCropBlock.AGE, 6));
+        this.addDrop(ModBlocks.TORN_CARROT_CROP, this.cropDrops(ModBlocks.TORN_CARROT_CROP, ModItems.TORN_CARROT, ModItems.TORN_CARROT, carrotBuilder));
 
-
+        BlockStatePropertyLootCondition.Builder sweetPearBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.SWEET_PEAR_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(VitalyCropBlock.AGE, 6));
+        this.addDrop(ModBlocks.SWEET_PEAR_CROP, this.cropDrops(ModBlocks.SWEET_PEAR_CROP, ModItems.SWEET_PEAR, ModItems.SWEET_PEAR_SEEDS, sweetPearBuilder));
 
 
         addDropWithSilkTouch(ModBlocks.TORN_BUSH);

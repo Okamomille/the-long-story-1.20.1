@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "thelongstory:block/sweet_pear_stage0"
+    },
+    "age=1": {
+      "model": "thelongstory:block/sweet_pear_stage0"
+    },
+    "age=2": {
+      "model": "thelongstory:block/sweet_pear_stage1"
+    },
+    "age=3": {
+      "model": "thelongstory:block/sweet_pear_stage1"
+    },
+    "age=4": {
+      "model": "thelongstory:block/sweet_pear_stage2"
+    },
+    "age=5": {
+      "model": "thelongstory:block/sweet_pear_stage2"
+    },
+    "age=6": {
+      "model": "thelongstory:block/sweet_pear_stage3"
+    }
+  }
+}

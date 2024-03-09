@@ -125,9 +125,11 @@ public class ModItems {
 
     public static final Item VITALY_SEEDS = registerItem("vitaly_seeds",
             new AliasedBlockItem(ModBlocks.VITALY_CROP, new FabricItemSettings()));
+    public static final Item TORN_CARROT = registerItem("torn_carrot",
+            new AliasedBlockItem(ModBlocks.TORN_CARROT_CROP, new FabricItemSettings().food(ModFoodComponents.TORN_CARROT)));
 
-
-
+    public static final Item SWEET_PEAR_SEEDS = registerItem("sweet_pear_seeds",
+            new AliasedBlockItem(ModBlocks.SWEET_PEAR_CROP, new FabricItemSettings()));
 
 
 
@@ -138,6 +140,7 @@ public class ModItems {
     //FOOD ITEMS -----------------
 
     public static final Item VITALY_FRUIT = registerItem("vitaly_fruit", new Item(new FabricItemSettings().food(ModFoodComponents.VITALY_FRUIT)));
+    public static final Item SWEET_PEAR = registerItem("sweet_pear", new Item(new FabricItemSettings().food(ModFoodComponents.SWEET_PEAR)));
 
     public static final Item EMERALD_APPLE = registerItem("emerald_apple", new Item(new FabricItemSettings().food(ModFoodComponents.EMERALD_APPLE)));
     public static final Item IRON_APPLE = registerItem("iron_apple", new Item(new FabricItemSettings().food(ModFoodComponents.IRON_APPLE)));
