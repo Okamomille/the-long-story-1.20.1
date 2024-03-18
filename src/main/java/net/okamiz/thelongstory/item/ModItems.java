@@ -45,6 +45,11 @@ public class ModItems {
     public static final Item DRONIUM_POWDER = registerItem("dronium_powder", new Item(new FabricItemSettings()));
 
 
+    public static final Item RAW_PANDAZITE = registerItem("raw_pandazite", new Item(new FabricItemSettings()));
+    public static final Item PANDAZITE_INGOT = registerItem("pandazite_ingot", new Item(new FabricItemSettings()));
+    public static final Item PANDAZITE_NUGGET = registerItem("pandazite_nugget", new Item(new FabricItemSettings()));
+
+
 
     // SYSTEMS MATERIALS
 
@@ -54,8 +59,11 @@ public class ModItems {
     public static final Item EMERALD_PLATE = registerItem("emerald_plate", new Item(new FabricItemSettings()));
     public static final Item NETHERITE_PLATE = registerItem("netherite_plate", new Item(new FabricItemSettings()));
 
+    public static final Item CARBON_STICK = registerItem("carbon_stick", new Item(new FabricItemSettings()));
     public static final Item PURE_AMETHYST_STICK = registerItem("pure_amethyst_stick", new ModGlintItem(new FabricItemSettings()));
     public static final Item FLAMING_STICK = registerItem("flaming_stick", new ModGlintItem(new FabricItemSettings()));
+
+
     public static final Item AMETHYST_KEY = registerItem("amethyst_key", new AmethystKeyItem(new FabricItemSettings().rarity(Rarity.RARE).maxCount(1)));
     public static final Item AMETHYST_CORE = registerItem("amethyst_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item FLAMING_CORE = registerItem("flaming_core", new ModGlintItem(new FabricItemSettings().rarity(Rarity.EPIC)));
@@ -251,6 +259,19 @@ public class ModItems {
             new PureAmethystPickaxeItem(ModToolMaterial.PURE_AMETHYST, 1, -2.8f, new FabricItemSettings().maxCount(1)));
 
 
+    public static final Item PANDAZITE_PICKAXE = registerItem("pandazite_pickaxe",
+            new PickaxeItem(ModToolMaterial.PANDAZITE, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item PANDAZITE_AXE = registerItem("pandazite_axe",
+            new AxeItem(ModToolMaterial.PANDAZITE, 6.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item PANDAZITE_SHOVEL = registerItem("pandazite_shovel",
+            new ShovelItem(ModToolMaterial.PANDAZITE, 1.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item PANDAZITE_HOE = registerItem("pandazite_hoe",
+            new HoeItem(ModToolMaterial.PANDAZITE, -3, -1.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item PANDAZITE_SWORD = registerItem("pandazite_sword",
+            new SwordItem(ModToolMaterial.PANDAZITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+
+
+
     //ARMOR ITEMS -----------------
 
     public static final Item THESTONE_HELMET = registerItem("thestone_helmet",
@@ -299,9 +320,6 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.DRONIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item DRONIUM_BOOTS = registerItem("dronium_boots",
             new ArmorItem(ModArmorMaterials.DRONIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
-
-
-
 
 
 

@@ -133,6 +133,16 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));
     public static final Block IMPURE_ZAROSITE_BLOCK = registerBlock("impure_zarosite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
+
+    public static final Block PANDAZITE_ORE = registerBlock("pandazite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
+    public static final Block DEEPSLATE_PANDAZITE_ORE = registerBlock("deepslate_pandazite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));
+    public static final Block PANDAZITE_BLOCK = registerBlock("pandazite_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
+
     public static final Block DEEP_ICE_ZAROSITE_ORE = registerBlock("deep_ice_zarosite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.DEEP_ICE), UniformIntProvider.create(2, 4)));
 

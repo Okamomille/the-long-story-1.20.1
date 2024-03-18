@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:coal"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XBX",
+    " X "
+  ],
+  "result": {
+    "item": "thelongstory:carbon_stick"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "thelongstory:carbon_stick"
+    },
+    "X": {
+      "item": "thelongstory:pandazite_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " O ",
+    " O "
+  ],
+  "result": {
+    "item": "thelongstory:pandazite_pickaxe"
+  },
+  "show_notification": true
+}

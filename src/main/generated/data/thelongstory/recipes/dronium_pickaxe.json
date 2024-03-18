@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "O": {
-      "item": "minecraft:stick"
+      "item": "thelongstory:carbon_stick"
     },
     "X": {
       "item": "thelongstory:dronium_ingot"

@@ -14,6 +14,11 @@ import net.okamiz.thelongstory.entity.ModEntities;
 import net.okamiz.thelongstory.world.ModPlacedFeatures;
 
 public class ModBiomes {
+
+
+
+
+
     public static final RegistryKey<Biome> SNOW_FOREST = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(TheLongStory.MOD_ID, "snow_forest"));
 

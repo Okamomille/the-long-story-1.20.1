@@ -21,6 +21,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> THESTONE_ORE_PLACED_KEY = registerKey("thestone_ore_placed");
     public static final RegistryKey<PlacedFeature> IMPURE_ZAROSITE_ORE_PLACED_KEY = registerKey("impure_zarosite_ore_placed");
+    public static final RegistryKey<PlacedFeature> PANDAZITE_ORE_PLACED_KEY = registerKey("pandazite_ore_placed");
     public static final RegistryKey<PlacedFeature> DEEP_ICE_ZAROSITE_ORE_PLACED_KEY = registerKey("deep_ice_zarosite_ore_placed");
 
 
@@ -52,7 +53,7 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, THESTONE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.THESTONE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(4, // Veins per Chunk
+                ModOrePlacement.modifiersWithCount(5, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(30))));
 
         register(context, IMPURE_ZAROSITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.IMPURE_ZAROSITE_ORE_KEY),
@@ -62,6 +63,10 @@ public class ModPlacedFeatures {
         register(context, DEEP_ICE_ZAROSITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEEP_ICE_ZAROSITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(4, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(8))));
+
+        register(context, PANDAZITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PANDAZITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(4, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.getTop())));
 
 
         register(context, TORN_BUSH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TORN_BUSH_KEY),

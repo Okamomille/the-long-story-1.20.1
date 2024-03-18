@@ -20,7 +20,10 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> THESTONE_SMELTABLES = List.of(ModBlocks.THESTONE_ORE,ModBlocks.DEEPSLATE_THESTONE_ORE);
-    private static final List<ItemConvertible> IMPURE_ZAROSITE_SMELTABLES = List.of(ModBlocks.IMPURE_ZAROSITE_ORE,ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
+    private static final List<ItemConvertible> IMPURE_ZAROSITE_SMELTABLES = List.of(ModBlocks.IMPURE_ZAROSITE_ORE,ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE,
+            ModItems.RAW_IMPURE_ZAROSITE);
+    private static final List<ItemConvertible> PANDAZITE_SMELTABLES = List.of(ModBlocks.PANDAZITE_ORE,ModBlocks.DEEPSLATE_PANDAZITE_ORE,
+            ModItems.RAW_PANDAZITE);
     private static final List<ItemConvertible> ZAROSITE_SMELTABLES = List.of(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
     private static final List<ItemConvertible> ICED_STONE = List.of(ModBlocks.ICED_STONE);
     private static final List<ItemConvertible> ICED_COBBLESTONE = List.of(ModBlocks.ICED_COBBLESTONE);
@@ -37,17 +40,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, THESTONE_SMELTABLES, RecipeCategory.MISC, ModItems.THESTONE_DUST,
                 0.7f,200,"thestone_dust");
         offerBlasting(exporter, THESTONE_SMELTABLES, RecipeCategory.MISC, ModItems.THESTONE_DUST,
-                0.7f,200,"thestone_dust");
+                0.7f,100,"thestone_dust");
 
         offerSmelting(exporter, IMPURE_ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT,
                 0.7f,200,"impure_zarosite_ingot");
         offerBlasting(exporter, IMPURE_ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT,
-                0.7f,200,"impure_zarosite_ingot");
+                0.7f,100,"impure_zarosite_ingot");
+
+        offerSmelting(exporter, PANDAZITE_SMELTABLES, RecipeCategory.MISC, ModItems.PANDAZITE_INGOT,
+                0.7f,200,"pandazite_ingot");
+        offerBlasting(exporter, PANDAZITE_SMELTABLES, RecipeCategory.MISC, ModItems.PANDAZITE_INGOT,
+                0.7f,100,"pandazite_ingot");
 
         offerSmelting(exporter, ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE,
                 0.7f,200,"zarosite_gemstone");
         offerBlasting(exporter, ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE,
-                0.7f,200,"zarosite_gemstone");
+                0.7f,100,"zarosite_gemstone");
 
 
         offerSmelting(exporter, ICED_STONE, RecipeCategory.MISC, Blocks.STONE,
@@ -65,6 +73,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT, RecipeCategory.MISC,
                 ModBlocks.IMPURE_ZAROSITE_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.PANDAZITE_NUGGET, RecipeCategory.MISC,
+                ModItems.PANDAZITE_INGOT);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE, RecipeCategory.MISC,
                 ModBlocks.ZAROSITE_BLOCK);
@@ -102,6 +113,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.DRONIUM_INGOT)).criterion(FabricRecipeProvider.hasItem(ModItems.DRONIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(ModItems.DRONIUM_POWDER))
                 .offerTo(exporter, new Identifier("dronium_powder_from_ingot"));
+
+
+
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PANDAZITE_INGOT, 9).input(ModBlocks.PANDAZITE_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.PANDAZITE_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PANDAZITE_BLOCK)).criterion(FabricRecipeProvider.hasItem(ModItems.PANDAZITE_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.PANDAZITE_INGOT))
+                .offerTo(exporter, new Identifier("pandazite_ingot_from_block"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.PANDAZITE_BLOCK).input(ModItems.PANDAZITE_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.PANDAZITE_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.PANDAZITE_INGOT)).criterion(FabricRecipeProvider.hasItem(ModBlocks.PANDAZITE_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.PANDAZITE_BLOCK)).offerTo(exporter);
 
 
 
@@ -569,6 +594,74 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("impure_zarosite_bow_reverse"));
 
 
+        // PANDAZITE
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PANDAZITE_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.PANDAZITE_INGOT)
+                .input('O', ModItems.CARBON_STICK)
+                .criterion(hasItem(ModItems.PANDAZITE_INGOT),conditionsFromItem(ModItems.PANDAZITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PANDAZITE_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PANDAZITE_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModItems.PANDAZITE_INGOT)
+                .input('O', ModItems.CARBON_STICK)
+                .criterion(hasItem(ModItems.PANDAZITE_INGOT),conditionsFromItem(ModItems.PANDAZITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PANDAZITE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PANDAZITE_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModItems.PANDAZITE_INGOT)
+                .input('O', ModItems.CARBON_STICK)
+                .criterion(hasItem(ModItems.PANDAZITE_INGOT),conditionsFromItem(ModItems.PANDAZITE_INGOT))
+                .offerTo(exporter, new Identifier("pandazite_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PANDAZITE_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.PANDAZITE_INGOT)
+                .input('O', ModItems.CARBON_STICK)
+                .criterion(hasItem(ModItems.PANDAZITE_INGOT),conditionsFromItem(ModItems.PANDAZITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PANDAZITE_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PANDAZITE_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.PANDAZITE_INGOT)
+                .input('O', ModItems.CARBON_STICK)
+                .criterion(hasItem(ModItems.PANDAZITE_INGOT),conditionsFromItem(ModItems.PANDAZITE_INGOT))
+                .offerTo(exporter, new Identifier("pandazite_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PANDAZITE_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.PANDAZITE_INGOT)
+                .input('O', ModItems.CARBON_STICK)
+                .criterion(hasItem(ModItems.PANDAZITE_INGOT),conditionsFromItem(ModItems.PANDAZITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PANDAZITE_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.PANDAZITE_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModItems.PANDAZITE_INGOT)
+                .input('O', ModItems.CARBON_STICK)
+                .criterion(hasItem(ModItems.PANDAZITE_INGOT),conditionsFromItem(ModItems.PANDAZITE_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PANDAZITE_SWORD)));
+
+
+
+
         // ZAROSITE
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_PICKAXE, 1)
@@ -642,7 +735,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" O ")
                 .pattern(" O ")
                 .input('X', ModItems.DRONIUM_INGOT)
-                .input('O', Items.STICK)
+                .input('O', ModItems.CARBON_STICK)
                 .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_PICKAXE)));
 
@@ -651,7 +744,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" OX")
                 .pattern(" O ")
                 .input('X', ModItems.DRONIUM_INGOT)
-                .input('O', Items.STICK)
+                .input('O', ModItems.CARBON_STICK)
                 .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_AXE)));
 
@@ -660,7 +753,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("XO ")
                 .pattern(" O ")
                 .input('X', ModItems.DRONIUM_INGOT)
-                .input('O', Items.STICK)
+                .input('O', ModItems.CARBON_STICK)
                 .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
                 .offerTo(exporter, new Identifier("dronium_axe_left"));
 
@@ -669,7 +762,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" O ")
                 .pattern(" O ")
                 .input('X', ModItems.DRONIUM_INGOT)
-                .input('O', Items.STICK)
+                .input('O', ModItems.CARBON_STICK)
                 .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_HOE)));
 
@@ -678,7 +771,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" O ")
                 .pattern(" O ")
                 .input('X', ModItems.DRONIUM_INGOT)
-                .input('O', Items.STICK)
+                .input('O', ModItems.CARBON_STICK)
                 .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
                 .offerTo(exporter, new Identifier("dronium_hoe_left"));
 
@@ -687,7 +780,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" O ")
                 .pattern(" O ")
                 .input('X', ModItems.DRONIUM_INGOT)
-                .input('O', Items.STICK)
+                .input('O', ModItems.CARBON_STICK)
                 .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_SHOVEL)));
 
@@ -696,7 +789,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" X ")
                 .pattern(" O ")
                 .input('X', ModItems.DRONIUM_INGOT)
-                .input('O', Items.STICK)
+                .input('O', ModItems.CARBON_STICK)
                 .criterion(hasItem(ModItems.DRONIUM_INGOT),conditionsFromItem(ModItems.DRONIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRONIUM_SWORD)));
 
@@ -1219,6 +1312,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('C', Items.NETHERRACK)
                 .criterion(hasItem(Items.GRASS_BLOCK),conditionsFromItem(ModItems.DIMENSION_PATTERN))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.DIMENSION_PATTERN)));
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.CARBON_STICK, 1)
+                .pattern(" X ")
+                .pattern("XBX")
+                .pattern(" X ")
+                .input('X', Items.COAL)
+                .input('B', Items.STICK)
+                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.COAL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CARBON_STICK)));
+
+
+
 
 
         // ----------------

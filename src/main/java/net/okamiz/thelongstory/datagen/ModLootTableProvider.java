@@ -37,6 +37,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.AMETHYST_PROCESSOR);
         addDrop(ModBlocks.RED_COAL_GENERATOR);
         addDrop(ModBlocks.DRONIUM_BLOCK);
+        addDrop(ModBlocks.PANDAZITE_BLOCK);
 
 
         addDrop(ModBlocks.MOLD_BLOCK);
@@ -188,8 +189,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.THESTONE_ORE, copperLikeOreDrops(ModBlocks.THESTONE_ORE, ModItems.THESTONE_DUST));
         addDrop(ModBlocks.DEEPSLATE_THESTONE_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_THESTONE_ORE, ModItems.THESTONE_DUST));
 
-        oreDrops(ModBlocks.IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE);
-        oreDrops(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE);
+        addDrop(ModBlocks.IMPURE_ZAROSITE_ORE, oreDrops(ModBlocks.IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE));
+        addDrop(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE, oreDrops(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE));
+
+        addDrop(ModBlocks.PANDAZITE_ORE, oreDrops(ModBlocks.PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
+        addDrop(ModBlocks.DEEPSLATE_PANDAZITE_ORE, oreDrops(ModBlocks.DEEPSLATE_PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
 
         addDrop(ModBlocks.DEEP_ICE_ZAROSITE_ORE, copperLikeOreDrops(ModBlocks.DEEP_ICE_ZAROSITE_ORE, ModItems.ZAROSITE_SHARD));
     }
@@ -203,5 +207,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                                 .create(1.0f,5.0f))))
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
+
 
 }

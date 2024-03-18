@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "thelongstory:block/deepslate_pandazite_ore"
+  }
+}

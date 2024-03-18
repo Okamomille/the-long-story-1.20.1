@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "pandazite_ingot",
+  "ingredient": {
+    "item": "thelongstory:raw_pandazite"
+  },
+  "result": "thelongstory:pandazite_ingot"
+}

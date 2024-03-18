@@ -6,7 +6,6 @@ import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.okamiz.thelongstory.block.ModBlocks;
-import net.okamiz.thelongstory.block.crops.VitalyCropBlock;
 import net.okamiz.thelongstory.item.ModItems;
 
 import java.util.Optional;
@@ -24,6 +23,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPURE_ZAROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPURE_ZAROSITE_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PANDAZITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PANDAZITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PANDAZITE_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZAROSITE_BLOCK);
@@ -202,12 +205,18 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RAW_IMPURE_ZAROSITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.RAW_PANDAZITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PANDAZITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PANDAZITE_NUGGET, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.ZAROSITE_GEMSTONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ZAROSITE_SHARD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GREEN_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.FLAMING_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CARBON_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.FLAMING_STICK, Models.GENERATED);
 
@@ -285,6 +294,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IMPURE_ZAROSITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.PANDAZITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PANDAZITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PANDAZITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PANDAZITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PANDAZITE_HOE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.ZAROSITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZAROSITE_PICKAXE, Models.HANDHELD);
