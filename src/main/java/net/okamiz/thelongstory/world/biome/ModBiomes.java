@@ -198,6 +198,7 @@ public class ModBiomes {
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.KIWI_PLACED_KEY);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.YELLOW_PHYGELUS_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.SURFACE_STRUCTURES, ModPlacedFeatures.NOTE_BLOCK_PATCH_PLACED);
         //biomeBuilder.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, );
         DefaultBiomeFeatures.addForestGrass(biomeBuilder);
         //DefaultBiomeFeatures.addLargeFerns(biomeBuilder);

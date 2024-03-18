@@ -38,6 +38,16 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> BLUE_OSPET_PLACED_KEY = registerKey("blue_ospet_placed");
 
 
+
+
+
+
+    public static final RegistryKey<PlacedFeature> NOTE_BLOCK_PATCH_PLACED = registerKey("note_block_patch_placed");
+
+
+
+
+
     public static void boostrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
@@ -68,6 +78,12 @@ public class ModPlacedFeatures {
 
         register(context, BLUE_OSPET_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_OSPET_KEY),
                 ModPlantsPlacement.modifiersWithCount(1));
+
+
+
+        register(context, NOTE_BLOCK_PATCH_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NOTE_BLOCK_PATCH_KEY),
+                ModPlantsPlacement.modifiersWithCount(1));
+
  
 
 
