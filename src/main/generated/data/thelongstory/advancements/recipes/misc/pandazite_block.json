@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pandazite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:pandazite_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pandazite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:pandazite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "thelongstory:pandazite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pandazite_ingot",
+      "has_pandazite_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "thelongstory:pandazite_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

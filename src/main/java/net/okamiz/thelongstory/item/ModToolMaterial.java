@@ -13,7 +13,8 @@ public enum ModToolMaterial implements ToolMaterial {
     IMPURE_ZAROSITE(MiningLevels.DIAMOND, 1461, 8.5F, 3.2F, 11, () -> Ingredient.ofItems(ModItems.IMPURE_ZAROSITE_INGOT)),
     ZAROSITE(MiningLevels.NETHERITE, 2130, 9.5F, 3.7F, 13, () -> Ingredient.ofItems(ModItems.ZAROSITE_GEMSTONE)),
     PURE_AMETHYST(MiningLevels.DIAMOND, 3000, 45f, 5f, 25, () -> Ingredient.ofItems(ModItems.PURE_AMETHYST_SHARD)),
-    DRONIUM(MiningLevels.NETHERITE, 2230, 10F, 4F, 18, () -> Ingredient.ofItems(ModItems.DRONIUM_INGOT));
+    DRONIUM(MiningLevels.NETHERITE, 2230, 10F, 4F, 18, () -> Ingredient.ofItems(ModItems.DRONIUM_INGOT)),
+    PANDAZITE(MiningLevels.DIAMOND, 1461, 8.5F, 3.2F, 11, () -> Ingredient.ofItems(ModItems.PANDAZITE_INGOT));
 
 
     private final int miningLevel;

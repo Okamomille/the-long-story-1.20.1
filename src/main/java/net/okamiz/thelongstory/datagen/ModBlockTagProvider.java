@@ -70,6 +70,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
                 .add(ModBlocks.IMPURE_ZAROSITE_ORE)
 
+                .add(ModBlocks.PANDAZITE_BLOCK)
+                .add(ModBlocks.DEEPSLATE_PANDAZITE_ORE)
+                .add(ModBlocks.PANDAZITE_ORE)
+
                 .add(ModBlocks.ZAROSITE_BLOCK)
                 .add(ModBlocks.DEEP_ICE_ZAROSITE_ORE)
 
@@ -129,6 +133,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ZAROSITE_BLOCK)
                 .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
                 .add(ModBlocks.IMPURE_ZAROSITE_ORE)
+
+                .add(ModBlocks.PANDAZITE_BLOCK)
+                .add(ModBlocks.DEEPSLATE_PANDAZITE_ORE)
+                .add(ModBlocks.PANDAZITE_ORE)
 
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
                 .add(ModBlocks.THESTONE_ORE);

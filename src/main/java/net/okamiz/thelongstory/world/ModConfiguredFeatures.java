@@ -36,6 +36,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> THESTONE_ORE_KEY = registryKey("thestone_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> IMPURE_ZAROSITE_ORE_KEY = registryKey("impure_zarosite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DEEP_ICE_ZAROSITE_ORE_KEY = registryKey("deep_ice_zarosite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PANDAZITE_ORE_KEY = registryKey("pandazite_ore");
 
 
     public static final RegistryKey<ConfiguredFeature<?,?>> EGRORIC_KEY = registryKey("egroric");
@@ -76,8 +77,17 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(deepIceReplacables, ModBlocks.DEEP_ICE_ZAROSITE_ORE.getDefaultState()));
 
 
+        List<OreFeatureConfig.Target> simulationPandaziteOre =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.PANDAZITE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_PANDAZITE_ORE.getDefaultState()));
+
+
+
+
         register(context, THESTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldThestoneOres, 4));
         register(context, IMPURE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldImpureZarositeOres, 4));
+
+        register(context, PANDAZITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationPandaziteOre, 4));
 
         register(context, DEEP_ICE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationZarositeOre, 4));
 

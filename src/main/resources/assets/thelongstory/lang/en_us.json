@@ -21,6 +21,10 @@
   "item.thelongstory.thestone_ingot" : "Thestone Ingot",
   "item.thelongstory.thestone_nugget" : "Thestone Nugget",
 
+  "item.thelongstory.raw_pandazite" : "Raw Pandazite",
+  "item.thelongstory.pandazite_ingot" : "Pandazite Ingot",
+  "item.thelongstory.pandazite_nugget" : "Pandazite Nugget",
+
   "item.thelongstory.raw_impure_zarosite" : "Raw Impure Zarosite",
   "item.thelongstory.impure_zarosite_ingot" : "Impure Zarosite Ingot",
 
@@ -68,6 +72,7 @@
   "item.thelongstory.emerald_plate" : "Emerald Plate",
   "item.thelongstory.netherite_plate" : "Netherite Plate",
 
+  "item.thelongstory.carbon_stick" : "Carbon Stick",
   "item.thelongstory.pure_amethyst_stick" : "Pure Amethyst Stick",
   "item.thelongstory.flaming_stick" : "Flaming Stick",
   "item.thelongstory.amethyst_core" : "Amethyst Core",
@@ -123,6 +128,12 @@
   "item.thelongstory.impure_zarosite_shovel" : "Impure Zarosite Shovel",
   "item.thelongstory.impure_zarosite_hoe" : "Impure Zarosite Hoe",
   "item.thelongstory.impure_zarosite_bow" : "Impure Zarosite Bow",
+
+  "item.thelongstory.pandazite_sword" : "Pandazite Sword",
+  "item.thelongstory.pandazite_pickaxe" : "Pandazite Pickaxe",
+  "item.thelongstory.pandazite_axe" : "Pandazite Axe",
+  "item.thelongstory.pandazite_shovel" : "Pandazite Shovel",
+  "item.thelongstory.pandazite_hoe" : "Pandazite Hoe",
 
   "item.thelongstory.zarosite_sword" : "Zarosite Sword",
   "item.thelongstory.zarosite_pickaxe" : "Zarosite Pickaxe",
@@ -226,6 +237,7 @@
 
   "block.thelongstory.red_coal_block" : "Block of Red Coal",
   "block.thelongstory.impure_zarosite_block" : "Block of Impure Zarosite",
+  "block.thelongstory.pandazite_block" : "Block of Pandazite",
   "block.thelongstory.zarosite_block" : "Block of Zarosite",
   "block.thelongstory.dronium_block" : "Block of Dronium",
 
@@ -234,6 +246,9 @@
 
   "block.thelongstory.impure_zarosite_ore" : "Impure Zarosite Ore",
   "block.thelongstory.deepslate_impure_zarosite_ore" : "Deepslate Impure Zarosite Ore",
+
+  "block.thelongstory.pandazite_ore" : "Pandazite Ore",
+  "block.thelongstory.deepslate_pandazite_ore" : "Deepslate Pandazite Ore",
 
   "block.thelongstory.deep Ice_zarosite_ore" : "Deep Ice Zarosite Ore",
 
