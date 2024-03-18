@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-09T14:40:56.0936225	The Long Story/Block Loot Tables
+// 1.20.1	2024-03-18T15:14:57.3331222	The Long Story/Block Loot Tables
 bcad02ba01379daadf35620c8f34d4250556bd1d data\thelongstory\loot_tables\blocks\kiwi_trapdoor.json
 8481962a43a31e7c40a4ad2281fd35ffbdcbbd99 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_stairs.json
 03790f38d5f18a2268e44381b3c43ef08f38bf8b data\thelongstory\loot_tables\blocks\torn_flower.json
@@ -23,8 +23,8 @@ ac34ac7bd52732f787e7262e18853ef34015ba25 data\thelongstory\loot_tables\blocks\se
 ff4912f9cc2be5de3ed6d5d1c847d019ca2da817 data\thelongstory\loot_tables\blocks\egroric_log.json
 b73d272d0d2827de5e57338cce4d9262871130b3 data\thelongstory\loot_tables\blocks\egroric_leaves.json
 2cf088123ee7b7e3140653ae7f875883876b2246 data\thelongstory\loot_tables\blocks\iced_cracked_stone_bricks_slab.json
-4487fa5a757c8953fb5b33a4b8b807fc037a6dfc data\thelongstory\loot_tables\blocks\broken_simulation_teleporter.json
 da7216c0b5bdc8a0cafe381ef39892bfeb8e02d1 data\thelongstory\loot_tables\blocks\lab_tiles_wall.json
+4487fa5a757c8953fb5b33a4b8b807fc037a6dfc data\thelongstory\loot_tables\blocks\broken_simulation_teleporter.json
 1979adc046c7d483b03849e5432a4d29e7e03a61 data\thelongstory\loot_tables\blocks\iced_cracked_stone_bricks.json
 76bfc89c9fc991deb252b068d6d2a06d3e98f26a data\thelongstory\loot_tables\blocks\iced_stone_wall.json
 120b6c5be0b49f98da3a788132db3f0a4ac352cb data\thelongstory\loot_tables\blocks\kiwi_wood.json
@@ -110,8 +110,8 @@ e5930098e7c7de30d60a44772d9dbc9eeca90798 data\thelongstory\loot_tables\blocks\po
 051342ccb7aaaf0920a9e35f4f1590e627a3eba4 data\thelongstory\loot_tables\blocks\red_ospet.json
 39a106b01940bd22493dc70b73eb668c3df9de52 data\thelongstory\loot_tables\blocks\iced_stone_slab.json
 354013ec654aa4326ad52156a3f7b02bd72e8e99 data\thelongstory\loot_tables\blocks\lab_tiles_slab.json
-45eb1fe800d662d23d3ff32a8007e67ae8f1db66 data\thelongstory\loot_tables\blocks\iced_chiseled_stone_bricks_slab.json
 de6e8b4f15819348bd00fce89fd6e6660e3376f0 data\thelongstory\loot_tables\blocks\oast_leaves.json
+45eb1fe800d662d23d3ff32a8007e67ae8f1db66 data\thelongstory\loot_tables\blocks\iced_chiseled_stone_bricks_slab.json
 227ea0f96d448a9aa68e6da5314fd9c5dd52792b data\thelongstory\loot_tables\blocks\amethyst_processor.json
 ed654b217563940a3b6a834cc9fa782a0e7c5fad data\thelongstory\loot_tables\blocks\vitaly_crop.json
 78b6039fa6e2bd9db53e19a5aaf1821d513ec6f0 data\thelongstory\loot_tables\blocks\impure_zarosite_block.json

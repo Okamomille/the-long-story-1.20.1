@@ -14,7 +14,9 @@
     [],
     [],
     [],
-    [],
+    [
+      "thelongstory:note_block_patch_placed"
+    ],
     [],
     [
       "minecraft:ore_coal_upper",

@@ -1,5 +1,6 @@
 package net.okamiz.thelongstory.world;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -52,6 +53,11 @@ public class ModConfiguredFeatures {
 
 
 
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> NOTE_BLOCK_PATCH_KEY = registryKey("note_block_patch_key");
+
+
+
     public static void boostrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -90,6 +96,13 @@ public class ModConfiguredFeatures {
 
         register(context, BLUE_OSPET_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(5,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_OSPET)))));
+
+
+
+        register(context, NOTE_BLOCK_PATCH_KEY, Feature.BLOCK_PILE, new BlockPileFeatureConfig(BlockStateProvider.of(Blocks.NOTE_BLOCK)));
+
+
+
 
 
         register(context, EGRORIC_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
