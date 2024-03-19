@@ -173,6 +173,8 @@
   "item.thelongstory.amethyst_minion_spawn_egg" : "Amethyst Minion Spawn Egg",
 
 
+  "block.thelongstory.torch_sand" : "Torch Sand",
+  "block.thelongstory.torch_pink_sand" : "Torch Pink Sand",
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
   "block.thelongstory.mold_block" : "Mold Block",
   "block.thelongstory.spider_silk_block" : "Spider Silk Block",

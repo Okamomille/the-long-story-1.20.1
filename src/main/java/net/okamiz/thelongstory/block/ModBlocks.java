@@ -25,6 +25,19 @@ import net.okamiz.thelongstory.world.tree.custom.Sephin.SephinSaplingGenerator;
 public class ModBlocks {
 
 
+
+    public static final Block TORCH_SAND = registerBlock("torch_sand",
+            new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND)));
+    public static final Block TORCH_PINK_SAND = registerBlock("torch_pink_sand",
+            new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND)));
+
+
+
+
+
+
+
+
     public static final Block CRUSHED_BONES_BLOCK = registerBlock("crushed_bones_block",
             new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND)));
     public static final Block MOLD_BLOCK = registerBlock("mold_block",
