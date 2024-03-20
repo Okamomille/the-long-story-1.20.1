@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-20T10:46:26.5931785	The Long Story/Recipes
+// 1.20.1	2024-03-20T11:20:27.7300588	The Long Story/Recipes
 ec874904c03616e0049150cd3843922ee4c0ef98 data\thelongstory\advancements\recipes\combat\impure_zarosite_chestplate.json
 2fa786718bc3875c5eebc7589b417d492edd6652 data\thelongstory\advancements\recipes\misc\iron_apple.json
 1d992e72401495461f7c6ce35873950e1523f447 data\thelongstory\recipes\thestone_shovel.json
@@ -434,8 +434,8 @@ a49802487e0996fb2e8e7dcba036f728b533c833 data\thelongstory\advancements\recipes\
 555eadd839d6e69113072f7265e89faa770bfc65 data\thelongstory\advancements\recipes\combat\green_shard_chestplate.json
 dd71a788414cbea71922e9853eb309fb01b4ff06 data\thelongstory\recipes\impure_zarosite_bow.json
 011a04d004373543f563c7b290c9f1a72a9a9fd1 data\thelongstory\recipes\sephin_fence_gate.json
-523dde58e2e0458f3a3c52cffe39c37cebcf1f6e data\thelongstory\recipes\impure_zarosite_ingot_from_smelting_deepslate_impure_zarosite_ore.json
 5a2f090389523e76911a4eee0d605fc5486019ad data\thelongstory\advancements\recipes\tools\impure_zarosite_bow.json
+523dde58e2e0458f3a3c52cffe39c37cebcf1f6e data\thelongstory\recipes\impure_zarosite_ingot_from_smelting_deepslate_impure_zarosite_ore.json
 f8fb8e3e62b095ea4df21a1f78ffb8776ae8c285 data\thelongstory\advancements\recipes\tools\zarosite_axe.json
 46a55d3c2dbb7ff6cbc6438cdb2fcdef44c6567c data\thelongstory\advancements\recipes\building_blocks\kiwi_planks_from_stripped_wood.json
 1fac2f9ebb337ef101232c948be01271d812d206 data\thelongstory\recipes\teleportation_remote.json
