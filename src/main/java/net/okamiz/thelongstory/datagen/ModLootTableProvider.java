@@ -175,6 +175,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
 
 
+        addDrop(ModBlocks.FADED_CACTUS);
         addDrop(ModBlocks.TORN_FLOWER);
         addDrop(ModBlocks.PINK_PHYGELUS);
         addDrop(ModBlocks.YELLOW_PHYGELUS);
@@ -196,6 +197,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.PANDAZITE_ORE, oreDrops(ModBlocks.PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
         addDrop(ModBlocks.DEEPSLATE_PANDAZITE_ORE, oreDrops(ModBlocks.DEEPSLATE_PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
+
+        addDrop(ModBlocks.ODMENTIUM_ORE, oreDrops(ModBlocks.ODMENTIUM_ORE, ModItems.RAW_ODMENTIUM));
+        addDrop(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE, oreDrops(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE, ModItems.RAW_ODMENTIUM));
 
         addDrop(ModBlocks.DEEP_ICE_ZAROSITE_ORE, copperLikeOreDrops(ModBlocks.DEEP_ICE_ZAROSITE_ORE, ModItems.ZAROSITE_SHARD));
     }

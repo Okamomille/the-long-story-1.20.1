@@ -5,6 +5,8 @@
     "thelongstory:material_processor",
     "thelongstory:red_coal_generator",
     "thelongstory:impure_glitched_block",
-    "thelongstory:pure_glitched_block"
+    "thelongstory:pure_glitched_block",
+    "thelongstory:odmentium_ore",
+    "thelongstory:red_sandstone_odmentium_ore"
   ]
 }

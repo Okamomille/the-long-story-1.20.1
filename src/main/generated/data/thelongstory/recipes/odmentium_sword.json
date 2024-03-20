@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "thelongstory:odmentium_ingot"
+    }
+  },
+  "pattern": [
+    " X ",
+    " X ",
+    " O "
+  ],
+  "result": {
+    "item": "thelongstory:odmentium_sword"
+  },
+  "show_notification": true
+}

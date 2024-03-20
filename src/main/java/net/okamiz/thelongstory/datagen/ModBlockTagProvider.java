@@ -2,6 +2,7 @@ package net.okamiz.thelongstory.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -31,6 +32,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.TORCH_STONE_REPLACABLES)
                 .add(ModBlocks.TORCH_STONE);
+
+        getOrCreateTagBuilder(ModTags.Blocks.RED_SANDSTONE_REPLACABLES)
+                .add(Blocks.RED_SANDSTONE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
@@ -78,6 +82,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_PANDAZITE_ORE)
                 .add(ModBlocks.PANDAZITE_ORE)
 
+                .add(ModBlocks.ODMENTIUM_ORE)
+                .add(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE)
+
                 .add(ModBlocks.ZAROSITE_BLOCK)
                 .add(ModBlocks.DEEP_ICE_ZAROSITE_ORE)
 
@@ -92,7 +99,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_COAL_GENERATOR)
         ;
 
-
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(ModBlocks.TORCH_PINK_SAND)
+                .add(ModBlocks.TORCH_SAND)
+                .add(ModBlocks.CRUSHED_BONES_BLOCK)
+        ;
 
 
 
@@ -130,6 +141,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_COAL_GENERATOR)
                 .add(ModBlocks.IMPURE_GLITCHED_BLOCK)
                 .add(ModBlocks.PURE_GLITCHED_BLOCK)
+
+                .add(ModBlocks.ODMENTIUM_ORE)
+                .add(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE)
                 ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)

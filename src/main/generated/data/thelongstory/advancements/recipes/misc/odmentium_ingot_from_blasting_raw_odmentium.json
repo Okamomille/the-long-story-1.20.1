@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_odmentium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:raw_odmentium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:odmentium_ingot_from_blasting_raw_odmentium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_odmentium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:odmentium_ingot_from_blasting_raw_odmentium"
+    ]
+  },
+  "sends_telemetry_event": false
+}

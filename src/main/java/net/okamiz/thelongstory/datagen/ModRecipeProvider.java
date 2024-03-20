@@ -24,6 +24,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             ModItems.RAW_IMPURE_ZAROSITE);
     private static final List<ItemConvertible> PANDAZITE_SMELTABLES = List.of(ModBlocks.PANDAZITE_ORE,ModBlocks.DEEPSLATE_PANDAZITE_ORE,
             ModItems.RAW_PANDAZITE);
+
+    private static final List<ItemConvertible> ODMENTIUM_SMELTABLES = List.of(ModBlocks.ODMENTIUM_ORE,ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE,
+            ModItems.RAW_ODMENTIUM);
     private static final List<ItemConvertible> ZAROSITE_SMELTABLES = List.of(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
     private static final List<ItemConvertible> ICED_STONE = List.of(ModBlocks.ICED_STONE);
     private static final List<ItemConvertible> ICED_COBBLESTONE = List.of(ModBlocks.ICED_COBBLESTONE);
@@ -51,6 +54,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f,200,"pandazite_ingot");
         offerBlasting(exporter, PANDAZITE_SMELTABLES, RecipeCategory.MISC, ModItems.PANDAZITE_INGOT,
                 0.7f,100,"pandazite_ingot");
+
+        offerSmelting(exporter, ODMENTIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ODMENTIUM_INGOT,
+                0.7f,200,"odmentium_ingot");
+        offerBlasting(exporter, ODMENTIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ODMENTIUM_INGOT,
+                0.7f,100,"odmentium_ingot");
 
         offerSmelting(exporter, ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE,
                 0.7f,200,"zarosite_gemstone");
@@ -659,7 +667,70 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PANDAZITE_INGOT),conditionsFromItem(ModItems.PANDAZITE_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PANDAZITE_SWORD)));
 
+// ODMENTIUM
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ODMENTIUM_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ODMENTIUM_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ODMENTIUM_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier("odmentium_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ODMENTIUM_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ODMENTIUM_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier("odmentium_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ODMENTIUM_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ODMENTIUM_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('O', Items.STICK)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_SWORD)));
 
 
         // ZAROSITE

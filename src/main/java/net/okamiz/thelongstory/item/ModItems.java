@@ -49,6 +49,9 @@ public class ModItems {
     public static final Item PANDAZITE_INGOT = registerItem("pandazite_ingot", new Item(new FabricItemSettings()));
     public static final Item PANDAZITE_NUGGET = registerItem("pandazite_nugget", new Item(new FabricItemSettings()));
 
+    public static final Item RAW_ODMENTIUM = registerItem("raw_odmentium", new Item(new FabricItemSettings()));
+    public static final Item ODMENTIUM_INGOT = registerItem("odmentium_ingot", new Item(new FabricItemSettings()));
+
 
 
     // SYSTEMS MATERIALS
@@ -269,6 +272,19 @@ public class ModItems {
             new HoeItem(ModToolMaterial.PANDAZITE, -3, -1.0f, new FabricItemSettings().maxCount(1)));
     public static final Item PANDAZITE_SWORD = registerItem("pandazite_sword",
             new SwordItem(ModToolMaterial.PANDAZITE, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+
+
+
+    public static final Item ODMENTIUM_PICKAXE = registerItem("odmentium_pickaxe",
+            new PickaxeItem(ModToolMaterial.ODMENTIUM, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item ODMENTIUM_AXE = registerItem("odmentium_axe",
+            new AxeItem(ModToolMaterial.ODMENTIUM, 6.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item ODMENTIUM_SHOVEL = registerItem("odmentium_shovel",
+            new ShovelItem(ModToolMaterial.ODMENTIUM, 1.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item ODMENTIUM_HOE = registerItem("odmentium_hoe",
+            new HoeItem(ModToolMaterial.ODMENTIUM, -3, -1.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item ODMENTIUM_SWORD = registerItem("odmentium_sword",
+            new SwordItem(ModToolMaterial.ODMENTIUM, 3, -2.3f, new FabricItemSettings().maxCount(1)));
 
 
 
