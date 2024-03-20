@@ -12,6 +12,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.okamiz.thelongstory.TheLongStory;
+import net.okamiz.thelongstory.block.crops.FadedCactusBlock;
 import net.okamiz.thelongstory.block.crops.SweatPearCropBlock;
 import net.okamiz.thelongstory.block.crops.TornCarrotCropBlock;
 import net.okamiz.thelongstory.block.crops.VitalyCropBlock;
@@ -32,7 +33,8 @@ public class ModBlocks {
             new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND)));
 
 
-
+    public static final Block FADED_CACTUS = registerBlock("faded_cactus",
+            new FadedCactusBlock(FabricBlockSettings.copyOf(Blocks.CACTUS)));
 
 
 

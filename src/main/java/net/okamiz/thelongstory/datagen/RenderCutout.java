@@ -34,6 +34,7 @@ public class RenderCutout {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KIWI_SAPLING, RenderLayer.getCutout());
 
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FADED_CACTUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TORN_BUSH, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TORN_FLOWER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_PHYGELUS, RenderLayer.getCutout());

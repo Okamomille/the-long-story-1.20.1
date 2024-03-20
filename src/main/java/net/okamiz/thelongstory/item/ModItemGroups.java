@@ -173,6 +173,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.KIWI_FENCE_GATE);
 
 
+                        entries.add(ModBlocks.FADED_CACTUS);
                         entries.add(ModBlocks.TORN_BUSH);
                         entries.add(ModBlocks.TORN_FLOWER);
                         entries.add(ModBlocks.PINK_PHYGELUS);
