@@ -65,12 +65,14 @@ public class ModConfiguredFeatures {
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest deepIceReplacables = new TagMatchRuleTest(ModTags.Blocks.DEEP_ICE_REPLACABLES);
         RuleTest torchStoneReplacables = new TagMatchRuleTest(ModTags.Blocks.TORCH_STONE_REPLACABLES);
-        RuleTest RedSandstoneReplacables = new TagMatchRuleTest(ModTags.Blocks.RED_SANDSTONE_REPLACABLES);
+        RuleTest redSandstoneReplacables = new TagMatchRuleTest(ModTags.Blocks.RED_SANDSTONE_REPLACABLES);
 
 
         List<OreFeatureConfig.Target> overworldThestoneOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.THESTONE_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_THESTONE_ORE.getDefaultState()));
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_THESTONE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(redSandstoneReplacables, ModBlocks.RED_SANDSTONE_THESTONE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(torchStoneReplacables, ModBlocks.TORCH_STONE_THESTONE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldImpureZarositeOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.IMPURE_ZAROSITE_ORE.getDefaultState()),
@@ -82,11 +84,13 @@ public class ModConfiguredFeatures {
 
         List<OreFeatureConfig.Target> simulationPandaziteOre =
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.PANDAZITE_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_PANDAZITE_ORE.getDefaultState()));
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_PANDAZITE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(torchStoneReplacables, ModBlocks.TORCH_STONE_PANDAZITE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(redSandstoneReplacables, ModBlocks.RED_SANDSTONE_PANDAZITE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> simulationOdmentiumOre =
                 List.of(OreFeatureConfig.createTarget(torchStoneReplacables, ModBlocks.ODMENTIUM_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(RedSandstoneReplacables, ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE.getDefaultState()));
+                        OreFeatureConfig.createTarget(redSandstoneReplacables, ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE.getDefaultState()));
 
 
 

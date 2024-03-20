@@ -144,7 +144,10 @@ public class ModBlocks {
 
 
 
-
+    public static final Block TORCH_STONE_THESTONE_ORE = registerBlock("torch_stone_thestone_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(1, 5)));
+    public static final Block RED_SANDSTONE_THESTONE_ORE = registerBlock("red_sandstone_thestone_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(1, 5)));
     public static final Block THESTONE_ORE = registerBlock("thestone_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(1, 5)));
 
@@ -169,6 +172,10 @@ public class ModBlocks {
 
 
     public static final Block PANDAZITE_ORE = registerBlock("pandazite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
+    public static final Block TORCH_STONE_PANDAZITE_ORE = registerBlock("torch_stone_pandazite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
+    public static final Block RED_SANDSTONE_PANDAZITE_ORE = registerBlock("red_sandstone_pandazite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
     public static final Block DEEPSLATE_PANDAZITE_ORE = registerBlock("deepslate_pandazite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));

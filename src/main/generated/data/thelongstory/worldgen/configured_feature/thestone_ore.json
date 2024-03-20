@@ -21,6 +21,24 @@
           "predicate_type": "minecraft:tag_match",
           "tag": "minecraft:deepslate_ore_replaceables"
         }
+      },
+      {
+        "state": {
+          "Name": "thelongstory:red_sandstone_thestone_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "thelongstory:red_sandstone_replacables"
+        }
+      },
+      {
+        "state": {
+          "Name": "thelongstory:torch_stone_thestone_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "thelongstory:torch_stone_replacables"
+        }
       }
     ]
   }

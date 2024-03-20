@@ -21,11 +21,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
-        getOrCreateTagBuilder(ModTags.Blocks.RADAR_DETECTABLE_BLOCKS)
-                .add(ModBlocks.THESTONE_ORE)
-                .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
-        .add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE)
-                .add(ModBlocks.IMPURE_ZAROSITE_ORE);
 
         getOrCreateTagBuilder(ModTags.Blocks.DEEP_ICE_REPLACABLES)
                 .add(ModBlocks.DEEP_ICE);
@@ -39,6 +34,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
                 .add(ModBlocks.THESTONE_ORE)
+                .add(ModBlocks.TORCH_STONE_THESTONE_ORE)
+                .add(ModBlocks.RED_SANDSTONE_THESTONE_ORE)
                 .add(ModBlocks.DRONIUM_BLOCK)
 
 
@@ -81,6 +78,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PANDAZITE_BLOCK)
                 .add(ModBlocks.DEEPSLATE_PANDAZITE_ORE)
                 .add(ModBlocks.PANDAZITE_ORE)
+                .add(ModBlocks.TORCH_STONE_PANDAZITE_ORE)
+                .add(ModBlocks.RED_SANDSTONE_PANDAZITE_ORE)
 
                 .add(ModBlocks.ODMENTIUM_ORE)
                 .add(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE)
@@ -155,9 +154,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PANDAZITE_BLOCK)
                 .add(ModBlocks.DEEPSLATE_PANDAZITE_ORE)
                 .add(ModBlocks.PANDAZITE_ORE)
+                .add(ModBlocks.TORCH_STONE_PANDAZITE_ORE)
+                .add(ModBlocks.RED_SANDSTONE_PANDAZITE_ORE)
 
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
-                .add(ModBlocks.THESTONE_ORE);
+                .add(ModBlocks.THESTONE_ORE)
+                .add(ModBlocks.TORCH_STONE_THESTONE_ORE)
+                .add(ModBlocks.RED_SANDSTONE_THESTONE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.DEEP_ICE_ZAROSITE_ORE)

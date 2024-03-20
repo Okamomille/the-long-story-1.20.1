@@ -19,11 +19,12 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-    private static final List<ItemConvertible> THESTONE_SMELTABLES = List.of(ModBlocks.THESTONE_ORE,ModBlocks.DEEPSLATE_THESTONE_ORE);
+    private static final List<ItemConvertible> THESTONE_SMELTABLES = List.of(ModBlocks.THESTONE_ORE,ModBlocks.DEEPSLATE_THESTONE_ORE,
+            ModBlocks.RED_SANDSTONE_THESTONE_ORE,ModBlocks.TORCH_STONE_THESTONE_ORE);
     private static final List<ItemConvertible> IMPURE_ZAROSITE_SMELTABLES = List.of(ModBlocks.IMPURE_ZAROSITE_ORE,ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE,
             ModItems.RAW_IMPURE_ZAROSITE);
     private static final List<ItemConvertible> PANDAZITE_SMELTABLES = List.of(ModBlocks.PANDAZITE_ORE,ModBlocks.DEEPSLATE_PANDAZITE_ORE,
-            ModItems.RAW_PANDAZITE);
+            ModItems.RAW_PANDAZITE, ModBlocks.TORCH_STONE_PANDAZITE_ORE,ModBlocks.RED_SANDSTONE_PANDAZITE_ORE);
 
     private static final List<ItemConvertible> ODMENTIUM_SMELTABLES = List.of(ModBlocks.ODMENTIUM_ORE,ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE,
             ModItems.RAW_ODMENTIUM);

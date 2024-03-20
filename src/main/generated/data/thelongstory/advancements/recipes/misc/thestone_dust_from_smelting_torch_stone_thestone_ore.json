@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:thestone_dust_from_smelting_torch_stone_thestone_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_torch_stone_thestone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:torch_stone_thestone_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_torch_stone_thestone_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:thestone_dust_from_smelting_torch_stone_thestone_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}
