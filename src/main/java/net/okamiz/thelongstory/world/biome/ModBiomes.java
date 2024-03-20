@@ -31,7 +31,11 @@ public class ModBiomes {
     public static final RegistryKey<Biome> FOREST_OF_MELODY = RegistryKey.of(RegistryKeys.BIOME,
             new Identifier(TheLongStory.MOD_ID, "forest_of_melody"));
 
+    public static final RegistryKey<Biome> TORCH_DESERT = RegistryKey.of(RegistryKeys.BIOME,
+            new Identifier(TheLongStory.MOD_ID, "torch_desert"));
 
+    public static final RegistryKey<Biome> TORCH_PINK_DESERT = RegistryKey.of(RegistryKeys.BIOME,
+            new Identifier(TheLongStory.MOD_ID, "torch_pink_desert"));
 
 
 
@@ -40,6 +44,8 @@ public class ModBiomes {
         context.register(GOLDEN_LANDS, goldenLands(context));
         context.register(TEARS_VALLEY, tearsValley(context));
         context.register(FOREST_OF_MELODY, forestOfMelody(context));
+        context.register(TORCH_DESERT, torchDesert(context));
+        context.register(TORCH_PINK_DESERT, torchPinkDesert(context));
     }
 
     /*
@@ -224,6 +230,70 @@ public class ModBiomes {
                         .skyColor(OverworldBiomeCreator.getSkyColor(0.7f))
                         .grassColor(11983713)
                         .foliageColor(11983713)
+                        .fogColor(12638463)
+                        .build())
+                .build();
+    }
+
+    public static Biome torchDesert(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+
+        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
+
+        DefaultBiomeFeatures.addDesertDeadBushes(biomeBuilder);
+        DefaultBiomeFeatures.addDesertFeatures(biomeBuilder);
+        DefaultBiomeFeatures.addDesertVegetation(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(false)
+                .downfall(0f)
+                .temperature(0.9f)
+                .generationSettings(biomeBuilder.build())
+                .spawnSettings(spawnBuilder.build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(5167808)
+                        .waterFogColor(958596)
+                        .skyColor(OverworldBiomeCreator.getSkyColor(0.9f))
+                        .grassColor(5738240)
+                        .foliageColor(5738240)
+                        .fogColor(12638463)
+                        .build())
+                .build();
+    }
+
+    public static Biome torchPinkDesert(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+
+        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
+
+        DefaultBiomeFeatures.addDesertDeadBushes(biomeBuilder);
+        DefaultBiomeFeatures.addDesertFeatures(biomeBuilder);
+        DefaultBiomeFeatures.addDesertVegetation(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(false)
+                .downfall(0f)
+                .temperature(0.9f)
+                .generationSettings(biomeBuilder.build())
+                .spawnSettings(spawnBuilder.build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(5167808)
+                        .waterFogColor(958596)
+                        .skyColor(OverworldBiomeCreator.getSkyColor(0.9f))
+                        .grassColor(5738240)
+                        .foliageColor(5738240)
                         .fogColor(12638463)
                         .build())
                 .build();
