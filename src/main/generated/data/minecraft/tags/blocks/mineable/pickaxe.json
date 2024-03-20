@@ -3,6 +3,8 @@
   "values": [
     "thelongstory:deepslate_thestone_ore",
     "thelongstory:thestone_ore",
+    "thelongstory:torch_stone_thestone_ore",
+    "thelongstory:red_sandstone_thestone_ore",
     "thelongstory:dronium_block",
     "thelongstory:torch_stone",
     "thelongstory:deep_ice",
@@ -40,6 +42,8 @@
     "thelongstory:pandazite_block",
     "thelongstory:deepslate_pandazite_ore",
     "thelongstory:pandazite_ore",
+    "thelongstory:torch_stone_pandazite_ore",
+    "thelongstory:red_sandstone_pandazite_ore",
     "thelongstory:odmentium_ore",
     "thelongstory:red_sandstone_odmentium_ore",
     "thelongstory:zarosite_block",

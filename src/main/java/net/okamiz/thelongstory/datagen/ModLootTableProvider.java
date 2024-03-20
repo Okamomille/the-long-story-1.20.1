@@ -191,12 +191,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.THESTONE_ORE, copperLikeOreDrops(ModBlocks.THESTONE_ORE, ModItems.THESTONE_DUST));
         addDrop(ModBlocks.DEEPSLATE_THESTONE_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_THESTONE_ORE, ModItems.THESTONE_DUST));
+        addDrop(ModBlocks.RED_SANDSTONE_THESTONE_ORE, copperLikeOreDrops(ModBlocks.RED_SANDSTONE_THESTONE_ORE, ModItems.THESTONE_DUST));
+        addDrop(ModBlocks.TORCH_STONE_THESTONE_ORE, copperLikeOreDrops(ModBlocks.TORCH_STONE_THESTONE_ORE, ModItems.THESTONE_DUST));
 
         addDrop(ModBlocks.IMPURE_ZAROSITE_ORE, oreDrops(ModBlocks.IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE));
         addDrop(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE, oreDrops(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE, ModItems.RAW_IMPURE_ZAROSITE));
 
         addDrop(ModBlocks.PANDAZITE_ORE, oreDrops(ModBlocks.PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
         addDrop(ModBlocks.DEEPSLATE_PANDAZITE_ORE, oreDrops(ModBlocks.DEEPSLATE_PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
+        addDrop(ModBlocks.TORCH_STONE_PANDAZITE_ORE, oreDrops(ModBlocks.TORCH_STONE_PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
+        addDrop(ModBlocks.RED_SANDSTONE_PANDAZITE_ORE, oreDrops(ModBlocks.RED_SANDSTONE_PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
 
         addDrop(ModBlocks.ODMENTIUM_ORE, oreDrops(ModBlocks.ODMENTIUM_ORE, ModItems.RAW_ODMENTIUM));
         addDrop(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE, oreDrops(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE, ModItems.RAW_ODMENTIUM));

@@ -44,6 +44,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
+                        entries.add(ModBlocks.TORCH_STONE_THESTONE_ORE);
+                        entries.add(ModBlocks.RED_SANDSTONE_THESTONE_ORE);
 
                         entries.add(ModBlocks.IMPURE_ZAROSITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
@@ -51,6 +53,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.PANDAZITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_PANDAZITE_ORE);
+                        entries.add(ModBlocks.TORCH_STONE_PANDAZITE_ORE);
+                        entries.add(ModBlocks.RED_SANDSTONE_PANDAZITE_ORE);
                         entries.add(ModBlocks.PANDAZITE_BLOCK);
 
                         entries.add(ModBlocks.ODMENTIUM_ORE);

@@ -17,6 +17,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_SANDSTONE_THESTONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TORCH_STONE_THESTONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.THESTONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_THESTONE_ORE);
 
@@ -24,6 +26,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_IMPURE_ZAROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPURE_ZAROSITE_BLOCK);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TORCH_STONE_PANDAZITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_SANDSTONE_PANDAZITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PANDAZITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PANDAZITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PANDAZITE_BLOCK);
