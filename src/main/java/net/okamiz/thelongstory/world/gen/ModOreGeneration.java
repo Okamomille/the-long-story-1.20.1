@@ -28,5 +28,11 @@ public class ModOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.FOREST_OF_MELODY),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.PANDAZITE_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.TORCH_DESERT),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ODMENTIUM_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.TORCH_PINK_DESERT),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.ODMENTIUM_ORE_PLACED_KEY);
     }
 }

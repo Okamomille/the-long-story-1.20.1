@@ -29,6 +29,9 @@ public class ModItemGroups {
                         entries.add(ModItems.PANDAZITE_INGOT);
                         entries.add(ModItems.PANDAZITE_NUGGET);
 
+                        entries.add(ModItems.RAW_ODMENTIUM);
+                        entries.add(ModItems.ODMENTIUM_INGOT);
+
                         entries.add(ModItems.ZAROSITE_GEMSTONE);
                         entries.add(ModItems.ZAROSITE_SHARD);
 
@@ -49,6 +52,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PANDAZITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_PANDAZITE_ORE);
                         entries.add(ModBlocks.PANDAZITE_BLOCK);
+
+                        entries.add(ModBlocks.ODMENTIUM_ORE);
+                        entries.add(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE);
 
                         entries.add(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
                         entries.add(ModBlocks.ZAROSITE_BLOCK);
@@ -198,6 +204,7 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_SWORD);
                         entries.add(ModItems.GREEN_SHARD_SWORD);
                         entries.add(ModItems.IMPURE_ZAROSITE_SWORD);
+                        entries.add(ModItems.ODMENTIUM_SWORD);
                         entries.add(ModItems.PANDAZITE_SWORD);
                         entries.add(ModItems.ZAROSITE_SWORD);
                         entries.add(ModItems.DRONIUM_SWORD);
@@ -208,6 +215,7 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_PICKAXE);
                         entries.add(ModItems.GREEN_SHARD_PICKAXE);
                         entries.add(ModItems.IMPURE_ZAROSITE_PICKAXE);
+                        entries.add(ModItems.ODMENTIUM_PICKAXE);
                         entries.add(ModItems.PANDAZITE_PICKAXE);
                         entries.add(ModItems.ZAROSITE_PICKAXE);
                         entries.add(ModItems.DRONIUM_PICKAXE);
@@ -217,6 +225,7 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_AXE);
                         entries.add(ModItems.GREEN_SHARD_AXE);
                         entries.add(ModItems.IMPURE_ZAROSITE_AXE);
+                        entries.add(ModItems.ODMENTIUM_AXE);
                         entries.add(ModItems.PANDAZITE_AXE);
                         entries.add(ModItems.ZAROSITE_AXE);
                         entries.add(ModItems.DRONIUM_AXE);
@@ -225,6 +234,7 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_SHOVEL);
                         entries.add(ModItems.GREEN_SHARD_SHOVEL);
                         entries.add(ModItems.IMPURE_ZAROSITE_SHOVEL);
+                        entries.add(ModItems.ODMENTIUM_SHOVEL);
                         entries.add(ModItems.PANDAZITE_SHOVEL);
                         entries.add(ModItems.ZAROSITE_SHOVEL);
                         entries.add(ModItems.DRONIUM_SHOVEL);
@@ -233,6 +243,7 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_HOE);
                         entries.add(ModItems.GREEN_SHARD_HOE);
                         entries.add(ModItems.IMPURE_ZAROSITE_HOE);
+                        entries.add(ModItems.ODMENTIUM_HOE);
                         entries.add(ModItems.PANDAZITE_HOE);
                         entries.add(ModItems.ZAROSITE_HOE);
                         entries.add(ModItems.DRONIUM_HOE);

@@ -22,6 +22,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> THESTONE_ORE_PLACED_KEY = registerKey("thestone_ore_placed");
     public static final RegistryKey<PlacedFeature> IMPURE_ZAROSITE_ORE_PLACED_KEY = registerKey("impure_zarosite_ore_placed");
     public static final RegistryKey<PlacedFeature> PANDAZITE_ORE_PLACED_KEY = registerKey("pandazite_ore_placed");
+    public static final RegistryKey<PlacedFeature> ODMENTIUM_ORE_PLACED_KEY = registerKey("odmentium_ore_placed");
     public static final RegistryKey<PlacedFeature> DEEP_ICE_ZAROSITE_ORE_PLACED_KEY = registerKey("deep_ice_zarosite_ore_placed");
 
 
@@ -66,6 +67,10 @@ public class ModPlacedFeatures {
 
         register(context, PANDAZITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PANDAZITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(4, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.getTop())));
+
+        register(context, ODMENTIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ODMENTIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(6, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.getTop())));
 
 

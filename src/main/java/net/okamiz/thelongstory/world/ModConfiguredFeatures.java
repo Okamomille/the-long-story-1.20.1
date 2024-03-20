@@ -37,6 +37,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> IMPURE_ZAROSITE_ORE_KEY = registryKey("impure_zarosite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DEEP_ICE_ZAROSITE_ORE_KEY = registryKey("deep_ice_zarosite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PANDAZITE_ORE_KEY = registryKey("pandazite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ODMENTIUM_ORE_KEY = registryKey("odmentium_ore");
 
 
     public static final RegistryKey<ConfiguredFeature<?,?>> EGRORIC_KEY = registryKey("egroric");
@@ -63,6 +64,8 @@ public class ModConfiguredFeatures {
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest deepIceReplacables = new TagMatchRuleTest(ModTags.Blocks.DEEP_ICE_REPLACABLES);
+        RuleTest torchStoneReplacables = new TagMatchRuleTest(ModTags.Blocks.TORCH_STONE_REPLACABLES);
+        RuleTest RedSandstoneReplacables = new TagMatchRuleTest(ModTags.Blocks.RED_SANDSTONE_REPLACABLES);
 
 
         List<OreFeatureConfig.Target> overworldThestoneOres =
@@ -81,13 +84,20 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.PANDAZITE_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.DEEPSLATE_PANDAZITE_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> simulationOdmentiumOre =
+                List.of(OreFeatureConfig.createTarget(torchStoneReplacables, ModBlocks.ODMENTIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(RedSandstoneReplacables, ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE.getDefaultState()));
 
 
 
-        register(context, THESTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldThestoneOres, 4));
+
+        register(context, THESTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldThestoneOres, 5));
         register(context, IMPURE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldImpureZarositeOres, 4));
 
         register(context, PANDAZITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationPandaziteOre, 4));
+
+
+        register(context, ODMENTIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationOdmentiumOre, 6));
 
         register(context, DEEP_ICE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationZarositeOre, 4));
 

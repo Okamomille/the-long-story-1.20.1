@@ -26,6 +26,14 @@ import net.okamiz.thelongstory.world.tree.custom.Sephin.SephinSaplingGenerator;
 public class ModBlocks {
 
 
+
+
+
+
+
+
+
+
     public static final Block TORCH_STONE = registerBlock("torch_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block TORCH_SAND = registerBlock("torch_sand",
@@ -149,6 +157,15 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));
     public static final Block IMPURE_ZAROSITE_BLOCK = registerBlock("impure_zarosite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
+
+    public static final Block ODMENTIUM_ORE = registerBlock("odmentium_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f)));
+
+    public static final Block RED_SANDSTONE_ODMENTIUM_ORE = registerBlock("red_sandstone_odmentium_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.RED_SANDSTONE).strength(3.0f,3.0f)));
+
+
 
 
     public static final Block PANDAZITE_ORE = registerBlock("pandazite_ore",

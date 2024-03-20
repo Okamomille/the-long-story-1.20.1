@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "odmentium_ingot",
+  "ingredient": {
+    "item": "thelongstory:raw_odmentium"
+  },
+  "result": "thelongstory:odmentium_ingot"
+}

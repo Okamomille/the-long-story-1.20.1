@@ -25,6 +25,9 @@
   "item.thelongstory.pandazite_ingot" : "Pandazite Ingot",
   "item.thelongstory.pandazite_nugget" : "Pandazite Nugget",
 
+  "item.thelongstory.raw_odmentium" : "Raw Odmentium",
+  "item.thelongstory.odmentium_ingot" : "Odmentium Ingot",
+
   "item.thelongstory.raw_impure_zarosite" : "Raw Impure Zarosite",
   "item.thelongstory.impure_zarosite_ingot" : "Impure Zarosite Ingot",
 
@@ -134,6 +137,13 @@
   "item.thelongstory.pandazite_axe" : "Pandazite Axe",
   "item.thelongstory.pandazite_shovel" : "Pandazite Shovel",
   "item.thelongstory.pandazite_hoe" : "Pandazite Hoe",
+
+  "item.thelongstory.odmentium_sword" : "Odmentium Sword",
+  "item.thelongstory.odmentium_pickaxe" : "Odmentium Pickaxe",
+  "item.thelongstory.odmentium_axe" : "Odmentium Axe",
+  "item.thelongstory.odmentium_shovel" : "Odmentium Shovel",
+  "item.thelongstory.odmentium_hoe" : "Odmentium Hoe",
+
 
   "item.thelongstory.zarosite_sword" : "Zarosite Sword",
   "item.thelongstory.zarosite_pickaxe" : "Zarosite Pickaxe",
@@ -252,6 +262,9 @@
 
   "block.thelongstory.pandazite_ore" : "Pandazite Ore",
   "block.thelongstory.deepslate_pandazite_ore" : "Deepslate Pandazite Ore",
+
+  "block.thelongstory.odmentium_ore" : "Odmentium Ore",
+  "block.thelongstory.red_sandstone_odmentium_ore" : "Red Sandstone Odmentium Ore",
 
   "block.thelongstory.deep Ice_zarosite_ore" : "Deep Ice Zarosite Ore",
 
