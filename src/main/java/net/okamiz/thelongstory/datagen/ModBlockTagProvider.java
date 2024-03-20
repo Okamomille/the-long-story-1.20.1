@@ -236,6 +236,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_KIWI_LOG)
                 .add(ModBlocks.STRIPPED_KIWI_WOOD)
         ;
+
+        getOrCreateTagBuilder(BlockTags.SAND)
+                .add(ModBlocks.TORCH_SAND)
+                .add(ModBlocks.TORCH_PINK_SAND)
+        ;
+
+
+
     }
+
+
+
 
 }
