@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "thelongstory:mold_block"
+          "name": "thelongstory:torch_stone"
         }
       ],
       "rolls": 1.0

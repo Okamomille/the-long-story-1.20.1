@@ -14,6 +14,8 @@ public class ModTags {
 
         public static final TagKey<Block> DEEP_ICE_REPLACABLES =
                 createTag("deep_ice_replacable");
+        public static final TagKey<Block> TORCH_STONE_REPLACABLES =
+                createTag("torch_stone_replacables");
         public static final TagKey<Block> RADAR_DETECTABLE_BLOCKS =
                 createTag("radar_detectable_blocks");
 

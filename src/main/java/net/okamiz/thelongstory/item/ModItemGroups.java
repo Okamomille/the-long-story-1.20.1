@@ -54,6 +54,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ZAROSITE_BLOCK);
                         entries.add(ModBlocks.DRONIUM_BLOCK);
 
+                        entries.add(ModBlocks.TORCH_STONE);
                         entries.add(ModBlocks.TORCH_SAND);
                         entries.add(ModBlocks.TORCH_PINK_SAND);
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);

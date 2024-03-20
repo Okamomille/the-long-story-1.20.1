@@ -29,6 +29,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.DEEP_ICE_REPLACABLES)
                 .add(ModBlocks.DEEP_ICE);
 
+        getOrCreateTagBuilder(ModTags.Blocks.TORCH_STONE_REPLACABLES)
+                .add(ModBlocks.TORCH_STONE);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DEEPSLATE_THESTONE_ORE)
                 .add(ModBlocks.THESTONE_ORE)
@@ -36,6 +39,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
 
+                .add(ModBlocks.TORCH_STONE)
                 .add(ModBlocks.DEEP_ICE)
                 .add(ModBlocks.ICED_COBBLESTONE)
                 .add(ModBlocks.ICED_COBBLESTONE_SLAB)
@@ -241,6 +245,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TORCH_SAND)
                 .add(ModBlocks.TORCH_PINK_SAND)
         ;
+
+
 
 
 

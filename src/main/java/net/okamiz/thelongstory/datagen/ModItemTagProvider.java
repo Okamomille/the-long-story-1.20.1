@@ -55,6 +55,23 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.KIWI_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_KIWI_LOG.asItem())
                 .add(ModBlocks.STRIPPED_KIWI_WOOD.asItem());
+
+
+        getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(ModBlocks.TORCH_STONE.asItem())
+        ;
+        getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
+                .add(ModBlocks.TORCH_STONE.asItem())
+        ;
+
+        getOrCreateTagBuilder(ItemTags.SAND)
+                .add(ModBlocks.TORCH_SAND.asItem())
+                .add(ModBlocks.TORCH_PINK_SAND.asItem())
+        ;
+
+
+
+
     }
 
 
