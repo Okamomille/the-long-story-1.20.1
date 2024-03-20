@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-20T10:36:48.7595999	The Long Story/Block Loot Tables
+// 1.20.1	2024-03-20T10:46:26.5991784	The Long Story/Block Loot Tables
 bcad02ba01379daadf35620c8f34d4250556bd1d data\thelongstory\loot_tables\blocks\kiwi_trapdoor.json
 8481962a43a31e7c40a4ad2281fd35ffbdcbbd99 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_stairs.json
 03790f38d5f18a2268e44381b3c43ef08f38bf8b data\thelongstory\loot_tables\blocks\torn_flower.json
@@ -40,8 +40,8 @@ da7216c0b5bdc8a0cafe381ef39892bfeb8e02d1 data\thelongstory\loot_tables\blocks\la
 4020cc537c6d3f9a1693a173068f183beb97feea data\thelongstory\loot_tables\blocks\oast_pressure_plate.json
 b08ec201178d9108d1bfecfcec1a95bfab764965 data\thelongstory\loot_tables\blocks\potted_red_ospet.json
 931d151e4acdd304ddb6ed3602b4f87a6e40974b data\thelongstory\loot_tables\blocks\oast_wood.json
-e88fe418201b98a186df2cda7d6e95486f5e626f data\thelongstory\loot_tables\blocks\oast_button.json
 844cb822a69f01f2d6e15f9436350365d0acdafb data\thelongstory\loot_tables\blocks\torn_carrot_crop.json
+e88fe418201b98a186df2cda7d6e95486f5e626f data\thelongstory\loot_tables\blocks\oast_button.json
 2d7e3e35d059613dd24aa47092ce082a04b8c488 data\thelongstory\loot_tables\blocks\sephin_wood.json
 1f27746ae1441b76c78d6371e6a640432f1fb53d data\thelongstory\loot_tables\blocks\kiwi_slab.json
 20bde55381cb9c7ff13387a93221ab4471099bd6 data\thelongstory\loot_tables\blocks\sephin_leaves.json
@@ -106,8 +106,8 @@ bbf37f7953e0b74dd86a9fb52ec70bc2bd4cf54c data\thelongstory\loot_tables\blocks\po
 1cca6dccf3135a03a55710174dd1974e9333a464 data\thelongstory\loot_tables\blocks\kiwi_door.json
 d10902fc92b2238ef6aae066b1b96aedc2cfcb5a data\thelongstory\loot_tables\blocks\oast_sapling.json
 8adf480e2529cde4e4cbc3cd3be5bef2b578cd04 data\thelongstory\loot_tables\blocks\iced_stone_stairs.json
-3b7a4e276937b53d6dad86401187df3ed837d2df data\thelongstory\loot_tables\blocks\greffed_command_system.json
 35b1af03a4dde767ff12b23bcfaf6fc3945223ca data\thelongstory\loot_tables\blocks\iced_stone_bricks_stairs.json
+3b7a4e276937b53d6dad86401187df3ed837d2df data\thelongstory\loot_tables\blocks\greffed_command_system.json
 619e5fee32ae4d75ee97b3fd14f183c12326dc76 data\thelongstory\loot_tables\blocks\oast_stairs.json
 27bc2e31b7fd7bf0ea059d78d601c728266f64f0 data\thelongstory\loot_tables\blocks\kiwi_leaves.json
 c193ee0f9d7c4685ca015fc58fea9369a44dcc04 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_slab.json
