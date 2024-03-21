@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "thelongstory:block/torch_stone_bricks"
+  }
+}

@@ -1014,6 +1014,81 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier("iced_chiseled_stone_bricks_wall_recipe"));
 
 
+
+
+        createStairsRecipe(ModBlocks.TORCH_STONE_STAIRS, Ingredient.ofItems(ModBlocks.TORCH_STONE))
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TORCH_STONE_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.TORCH_STONE_SLAB, Ingredient.ofItems(ModBlocks.TORCH_STONE))
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TORCH_STONE_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.TORCH_STONE_WALL, 4)
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.TORCH_STONE)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier("torch_stone_wall_recipe"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.TORCH_STONE_BRICKS, 4)
+                .pattern("OO")
+                .pattern("OO")
+                .input('O', ModBlocks.TORCH_STONE)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier("torch_stone_bricks_recipe"));
+
+        createStairsRecipe(ModBlocks.TORCH_STONE_BRICKS_STAIRS, Ingredient.ofItems(ModBlocks.TORCH_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.TORCH_STONE_BRICKS),conditionsFromItem(ModBlocks.TORCH_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TORCH_STONE_BRICKS_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.TORCH_STONE_BRICKS_SLAB, Ingredient.ofItems(ModBlocks.TORCH_STONE_BRICKS))
+                .criterion(hasItem(ModBlocks.TORCH_STONE_BRICKS),conditionsFromItem(ModBlocks.TORCH_STONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TORCH_STONE_BRICKS_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.TORCH_STONE_BRICKS_WALL, 4)
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.TORCH_STONE_BRICKS)
+                .criterion(hasItem(ModBlocks.TORCH_STONE_BRICKS),conditionsFromItem(ModBlocks.TORCH_STONE_BRICKS))
+                .offerTo(exporter, new Identifier("torch_stone_bricks_wall_recipe"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.TORCH_BRICKS, 4)
+                .pattern("OO")
+                .pattern("OO")
+                .input('O', ModBlocks.TORCH_STONE_BRICKS)
+                .criterion(hasItem(ModBlocks.TORCH_STONE_BRICKS),conditionsFromItem(ModBlocks.TORCH_STONE_BRICKS))
+                .offerTo(exporter, new Identifier("torch_bricks_recipe"));
+
+        createStairsRecipe(ModBlocks.TORCH_BRICKS_STAIRS, Ingredient.ofItems(ModBlocks.TORCH_BRICKS))
+                .criterion(hasItem(ModBlocks.TORCH_BRICKS),conditionsFromItem(ModBlocks.TORCH_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TORCH_BRICKS_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.TORCH_BRICKS_SLAB, Ingredient.ofItems(ModBlocks.TORCH_BRICKS))
+                .criterion(hasItem(ModBlocks.TORCH_BRICKS),conditionsFromItem(ModBlocks.TORCH_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TORCH_BRICKS_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.TORCH_BRICKS_WALL, 4)
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.TORCH_BRICKS)
+                .criterion(hasItem(ModBlocks.TORCH_BRICKS),conditionsFromItem(ModBlocks.TORCH_BRICKS))
+                .offerTo(exporter, new Identifier("torch_bricks_wall_recipe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.TORCH_STONE_PILLAR, 3)
+                .pattern("O")
+                .pattern("O")
+                .pattern("O")
+                .input('O', ModBlocks.TORCH_STONE)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier("torch_pillar_recipe"));
+
+
+
+
+
         // APPLES
 
 

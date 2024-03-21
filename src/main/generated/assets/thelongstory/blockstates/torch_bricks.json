@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "thelongstory:block/torch_bricks"
+    }
+  }
+}
