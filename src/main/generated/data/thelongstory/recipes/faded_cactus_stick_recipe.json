@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:faded_cactus_planks"
+    }
+  },
+  "pattern": [
+    "O",
+    "O"
+  ],
+  "result": {
+    "count": 4,
+    "item": "thelongstory:faded_cactus_stick"
+  },
+  "show_notification": true
+}

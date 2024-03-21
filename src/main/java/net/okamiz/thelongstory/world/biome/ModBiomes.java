@@ -242,7 +242,7 @@ public class ModBiomes {
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.FADED_CACTUS_PLACED_KEY);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
@@ -274,6 +274,7 @@ public class ModBiomes {
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.FADED_CACTUS_PLACED_KEY);
 
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);

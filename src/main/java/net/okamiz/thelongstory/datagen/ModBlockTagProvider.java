@@ -216,6 +216,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.OAST_SLAB)
                 .add(ModBlocks.SEPHIN_SLAB)
                 .add(ModBlocks.KIWI_SLAB)
+                .add(ModBlocks.FADED_CACTUS_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.SLABS)
@@ -253,6 +254,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(ModBlocks.EGRORIC_STAIRS)
+                .add(ModBlocks.FADED_CACTUS_STAIRS)
                 .add(ModBlocks.OAST_STAIRS)
                 .add(ModBlocks.SEPHIN_STAIRS)
                 .add(ModBlocks.KIWI_STAIRS)

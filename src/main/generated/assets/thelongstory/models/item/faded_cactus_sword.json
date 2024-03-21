@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "thelongstory:item/faded_cactus_sword"
+  }
+}

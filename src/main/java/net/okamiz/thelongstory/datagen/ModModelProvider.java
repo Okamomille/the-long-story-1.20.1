@@ -57,6 +57,9 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
+        BlockStateModelGenerator.BlockTexturePool fadedCactusPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FADED_CACTUS_PLANKS);
+        fadedCactusPool.stairs(ModBlocks.FADED_CACTUS_STAIRS);
+        fadedCactusPool.slab(ModBlocks.FADED_CACTUS_SLAB);
 
         BlockStateModelGenerator.BlockTexturePool torchBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TORCH_STONE);
         torchBricksPool.stairs(ModBlocks.TORCH_STONE_STAIRS);
@@ -249,6 +252,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GREEN_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.FLAMING_SHARD, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.FADED_CACTUS_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.CARBON_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.FLAMING_STICK, Models.GENERATED);
@@ -339,6 +344,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ODMENTIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ODMENTIUM_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ODMENTIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.FADED_CACTUS_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FADED_CACTUS_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FADED_CACTUS_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FADED_CACTUS_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FADED_CACTUS_HOE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.ZAROSITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ZAROSITE_PICKAXE, Models.HANDHELD);

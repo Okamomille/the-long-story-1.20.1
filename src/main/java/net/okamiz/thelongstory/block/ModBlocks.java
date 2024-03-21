@@ -25,7 +25,12 @@ import net.okamiz.thelongstory.world.tree.custom.Sephin.SephinSaplingGenerator;
 
 public class ModBlocks {
 
-
+    public static final Block FADED_CACTUS_PLANKS = registerBlock("faded_cactus_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block FADED_CACTUS_STAIRS = registerBlock("faded_cactus_stairs",
+            new StairsBlock(ModBlocks.FADED_CACTUS_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.FADED_CACTUS_PLANKS)));
+    public static final Block FADED_CACTUS_SLAB = registerBlock("faded_cactus_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.FADED_CACTUS_PLANKS)));
 
 
     public static final Block TORCH_STONE_PILLAR = registerBlock("torch_stone_pillar",

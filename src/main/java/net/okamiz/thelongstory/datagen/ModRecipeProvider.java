@@ -734,6 +734,74 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_SWORD)));
 
 
+
+        // FADED_CACTUS
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.FADED_CACTUS_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FADED_CACTUS_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.FADED_CACTUS_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModBlocks.FADED_CACTUS_PLANKS)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FADED_CACTUS_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.FADED_CACTUS_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModBlocks.FADED_CACTUS_PLANKS)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier("faded_cactus_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.FADED_CACTUS_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModBlocks.FADED_CACTUS_PLANKS)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FADED_CACTUS_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.FADED_CACTUS_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModBlocks.FADED_CACTUS_PLANKS)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier("faded_cactus_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.FADED_CACTUS_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModBlocks.FADED_CACTUS_PLANKS)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FADED_CACTUS_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.FADED_CACTUS_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModBlocks.FADED_CACTUS_PLANKS)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FADED_CACTUS_SWORD)));
+        
+
+
         // ZAROSITE
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,ModItems.ZAROSITE_PICKAXE, 1)
@@ -936,6 +1004,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', ModBlocks.ICED_COBBLESTONE)
                 .criterion(hasItem(ModBlocks.ICED_COBBLESTONE),conditionsFromItem(ModBlocks.ICED_COBBLESTONE))
                 .offerTo(exporter, new Identifier("iced_cobblestone_wall_recipe"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.FADED_CACTUS_STICK, 4)
+                .pattern("O")
+                .pattern("O")
+                .input('O', ModBlocks.FADED_CACTUS_PLANKS)
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier("faded_cactus_stick_recipe"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.FADED_CACTUS_PLANKS, 2)
+                .pattern("OO")
+                .pattern("OO")
+                .input('O', ModBlocks.FADED_CACTUS)
+                .criterion(hasItem(ModBlocks.FADED_CACTUS),conditionsFromItem(ModBlocks.FADED_CACTUS))
+                .offerTo(exporter, new Identifier("faded_cactus_planks_recipe"));
+
+        createStairsRecipe(ModBlocks.FADED_CACTUS_STAIRS, Ingredient.ofItems(ModBlocks.FADED_CACTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FADED_CACTUS_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.FADED_CACTUS_SLAB, Ingredient.ofItems(ModBlocks.FADED_CACTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FADED_CACTUS_SLAB)));
 
 
 

@@ -132,6 +132,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CORRUPTED_LAB_TILES_WALL);
 
 
+                        entries.add(ModBlocks.FADED_CACTUS_PLANKS);
+                        entries.add(ModBlocks.FADED_CACTUS_STAIRS);
+                        entries.add(ModBlocks.FADED_CACTUS_SLAB);
+
 
                         //EGRORIC
                         entries.add(ModBlocks.EGRORIC_SAPLING);
@@ -223,10 +227,11 @@ public class ModItemGroups {
 
 
                         //SWORDS
+                        entries.add(ModItems.FADED_CACTUS_SWORD);
                         entries.add(ModItems.THESTONE_SWORD);
+                        entries.add(ModItems.ODMENTIUM_SWORD);
                         entries.add(ModItems.GREEN_SHARD_SWORD);
                         entries.add(ModItems.IMPURE_ZAROSITE_SWORD);
-                        entries.add(ModItems.ODMENTIUM_SWORD);
                         entries.add(ModItems.PANDAZITE_SWORD);
                         entries.add(ModItems.ZAROSITE_SWORD);
                         entries.add(ModItems.DRONIUM_SWORD);
@@ -234,38 +239,42 @@ public class ModItemGroups {
 
 
                         //PICKAXES
+                        entries.add(ModItems.FADED_CACTUS_PICKAXE);
                         entries.add(ModItems.THESTONE_PICKAXE);
+                        entries.add(ModItems.ODMENTIUM_PICKAXE);
                         entries.add(ModItems.GREEN_SHARD_PICKAXE);
                         entries.add(ModItems.IMPURE_ZAROSITE_PICKAXE);
-                        entries.add(ModItems.ODMENTIUM_PICKAXE);
                         entries.add(ModItems.PANDAZITE_PICKAXE);
                         entries.add(ModItems.ZAROSITE_PICKAXE);
                         entries.add(ModItems.DRONIUM_PICKAXE);
                         entries.add(ModItems.PURE_AMETHYST_PICKAXE);
 
                         //AXES
+                        entries.add(ModItems.FADED_CACTUS_AXE);
                         entries.add(ModItems.THESTONE_AXE);
+                        entries.add(ModItems.ODMENTIUM_AXE);
                         entries.add(ModItems.GREEN_SHARD_AXE);
                         entries.add(ModItems.IMPURE_ZAROSITE_AXE);
-                        entries.add(ModItems.ODMENTIUM_AXE);
                         entries.add(ModItems.PANDAZITE_AXE);
                         entries.add(ModItems.ZAROSITE_AXE);
                         entries.add(ModItems.DRONIUM_AXE);
 
                         //SHOVELS
+                        entries.add(ModItems.FADED_CACTUS_SHOVEL);
                         entries.add(ModItems.THESTONE_SHOVEL);
+                        entries.add(ModItems.ODMENTIUM_SHOVEL);
                         entries.add(ModItems.GREEN_SHARD_SHOVEL);
                         entries.add(ModItems.IMPURE_ZAROSITE_SHOVEL);
-                        entries.add(ModItems.ODMENTIUM_SHOVEL);
                         entries.add(ModItems.PANDAZITE_SHOVEL);
                         entries.add(ModItems.ZAROSITE_SHOVEL);
                         entries.add(ModItems.DRONIUM_SHOVEL);
 
                         //HOES
+                        entries.add(ModItems.FADED_CACTUS_HOE);
                         entries.add(ModItems.THESTONE_HOE);
+                        entries.add(ModItems.ODMENTIUM_HOE);
                         entries.add(ModItems.GREEN_SHARD_HOE);
                         entries.add(ModItems.IMPURE_ZAROSITE_HOE);
-                        entries.add(ModItems.ODMENTIUM_HOE);
                         entries.add(ModItems.PANDAZITE_HOE);
                         entries.add(ModItems.ZAROSITE_HOE);
                         entries.add(ModItems.DRONIUM_HOE);
@@ -336,6 +345,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.AMETHYST_KEY);
 
+                        entries.add(ModItems.FADED_CACTUS_STICK);
                         entries.add(ModItems.CARBON_STICK);
                         entries.add(ModItems.PURE_AMETHYST_STICK);
                         entries.add(ModItems.FLAMING_STICK);

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "thelongstory:faded_cactus_stick"
+    },
+    "X": {
+      "item": "thelongstory:faded_cactus_planks"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "XO ",
+    " O "
+  ],
+  "result": {
+    "item": "thelongstory:faded_cactus_axe"
+  },
+  "show_notification": true
+}

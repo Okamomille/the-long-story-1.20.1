@@ -101,6 +101,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CORRUPTED_LAB_TILES_WALL);
 
 
+        addDrop(ModBlocks.FADED_CACTUS_PLANKS);
+        addDrop(ModBlocks.FADED_CACTUS_STAIRS);
+        addDrop(ModBlocks.FADED_CACTUS_SLAB);
+
+
         //EGRORIC LOOTS ------------------------------------
         addDrop(ModBlocks.EGRORIC_LEAVES, leavesDrops(ModBlocks.EGRORIC_LEAVES, ModBlocks.EGRORIC_SAPLING, 0.025f));
         addDrop(ModBlocks.EGRORIC_SAPLING);

@@ -33,7 +33,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.EGRORIC_PLANKS.asItem())
                 .add(ModBlocks.OAST_PLANKS.asItem())
                 .add(ModBlocks.SEPHIN_PLANKS.asItem())
-                .add(ModBlocks.KIWI_PLANKS.asItem());
+                .add(ModBlocks.KIWI_PLANKS.asItem())
+                .add(ModBlocks.FADED_CACTUS_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.EGRORIC_LOG.asItem())
@@ -68,8 +69,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.TORCH_SAND.asItem())
                 .add(ModBlocks.TORCH_PINK_SAND.asItem())
         ;
-
-
 
 
     }
