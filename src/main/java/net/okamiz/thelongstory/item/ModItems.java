@@ -63,6 +63,7 @@ public class ModItems {
     public static final Item NETHERITE_PLATE = registerItem("netherite_plate", new Item(new FabricItemSettings()));
 
     public static final Item CARBON_STICK = registerItem("carbon_stick", new Item(new FabricItemSettings()));
+    public static final Item FADED_CACTUS_STICK = registerItem("faded_cactus_stick", new Item(new FabricItemSettings()));
     public static final Item PURE_AMETHYST_STICK = registerItem("pure_amethyst_stick", new ModGlintItem(new FabricItemSettings()));
     public static final Item FLAMING_STICK = registerItem("flaming_stick", new ModGlintItem(new FabricItemSettings()));
 
@@ -285,6 +286,17 @@ public class ModItems {
             new HoeItem(ModToolMaterial.ODMENTIUM, -3, -1.0f, new FabricItemSettings().maxCount(1)));
     public static final Item ODMENTIUM_SWORD = registerItem("odmentium_sword",
             new SwordItem(ModToolMaterial.ODMENTIUM, 3, -2.3f, new FabricItemSettings().maxCount(1)));
+
+    public static final Item FADED_CACTUS_PICKAXE = registerItem("faded_cactus_pickaxe",
+            new PickaxeItem(ModToolMaterial.FADED_CACTUS, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item FADED_CACTUS_AXE = registerItem("faded_cactus_axe",
+            new AxeItem(ModToolMaterial.FADED_CACTUS, 6.0f, -3.2f, new FabricItemSettings().maxCount(1)));
+    public static final Item FADED_CACTUS_SHOVEL = registerItem("faded_cactus_shovel",
+            new ShovelItem(ModToolMaterial.FADED_CACTUS, 1.5f, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item FADED_CACTUS_HOE = registerItem("faded_cactus_hoe",
+            new HoeItem(ModToolMaterial.FADED_CACTUS, 0, -3.0f, new FabricItemSettings().maxCount(1)));
+    public static final Item FADED_CACTUS_SWORD = registerItem("faded_cactus_sword",
+            new SwordItem(ModToolMaterial.FADED_CACTUS, 3, -2.4f, new FabricItemSettings().maxCount(1)));
 
 
 

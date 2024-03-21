@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "thelongstory:block/faded_cactus_planks",
+    "side": "thelongstory:block/faded_cactus_planks",
+    "top": "thelongstory:block/faded_cactus_planks"
+  }
+}

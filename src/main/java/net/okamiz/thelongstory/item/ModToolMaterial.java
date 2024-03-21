@@ -3,6 +3,8 @@ package net.okamiz.thelongstory.item;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.ItemTags;
+import net.okamiz.thelongstory.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -15,7 +17,8 @@ public enum ModToolMaterial implements ToolMaterial {
     PURE_AMETHYST(MiningLevels.DIAMOND, 3000, 45f, 5f, 25, () -> Ingredient.ofItems(ModItems.PURE_AMETHYST_SHARD)),
     DRONIUM(MiningLevels.NETHERITE, 2230, 10F, 4F, 18, () -> Ingredient.ofItems(ModItems.DRONIUM_INGOT)),
     PANDAZITE(MiningLevels.DIAMOND, 1461, 8.5F, 3.2F, 11, () -> Ingredient.ofItems(ModItems.PANDAZITE_INGOT)),
-    ODMENTIUM(MiningLevels.DIAMOND, 1100, 6.5F, 2.3F, 15, () -> Ingredient.ofItems(ModItems.ODMENTIUM_INGOT));
+    ODMENTIUM(MiningLevels.DIAMOND, 1100, 6.5F, 2.3F, 15, () -> Ingredient.ofItems(ModItems.ODMENTIUM_INGOT)),
+    FADED_CACTUS(MiningLevels.WOOD, 59, 2.0f, 0.0f, 15, () -> Ingredient.ofItems(ModBlocks.FADED_CACTUS_PLANKS));
 
 
     private final int miningLevel;

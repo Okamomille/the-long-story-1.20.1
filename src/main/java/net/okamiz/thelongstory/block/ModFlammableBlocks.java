@@ -9,6 +9,8 @@ public class ModFlammableBlocks {
 
         TheLongStory.LOGGER.info("Registering Flammables Blocks for " + TheLongStory.MOD_ID);
 
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FADED_CACTUS_PLANKS,30,75);
+
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.EGRORIC_PLANKS,5,20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.EGRORIC_LEAVES,30,60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.EGRORIC_LOG,5,5);

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelongstory:block/faded_cactus_slab"
+    },
+    "type=double": {
+      "model": "thelongstory:block/faded_cactus_planks"
+    },
+    "type=top": {
+      "model": "thelongstory:block/faded_cactus_slab_top"
+    }
+  }
+}
