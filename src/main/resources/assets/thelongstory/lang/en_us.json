@@ -183,7 +183,6 @@
   "item.thelongstory.amethyst_minion_spawn_egg" : "Amethyst Minion Spawn Egg",
 
 
-  "block.thelongstory.torch_stone" : "Torch Stone",
   "block.thelongstory.torch_sand" : "Torch Sand",
   "block.thelongstory.torch_pink_sand" : "Torch Pink Sand",
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",
@@ -201,6 +200,24 @@
   "block.thelongstory.deep_ice" : "Deep Ice",
   "block.thelongstory.deep_ice_zarosite_ore" : "Deep Ice Zarosite Ore",
   "block.thelongstory.frosted_ice" : "Frosted Ice",
+
+
+
+  "block.thelongstory.torch_stone_pillar" : "Torch Stone Pillar",
+  "block.thelongstory.torch_stone" : "Torch Stone",
+  "block.thelongstory.torch_stone_slab" : "Torch Stone Slab",
+  "block.thelongstory.torch_stone_stairs" : "Torch Stone Stairs",
+  "block.thelongstory.torch_stone_wall" : "Torch Stone Wall",
+
+  "block.thelongstory.torch_stone_bricks" : "Torch Stone Bricks",
+  "block.thelongstory.torch_stone_bricks_slab" : "Torch Stone Bricks Slab",
+  "block.thelongstory.torch_stone_bricks_stairs" : "Torch Stone Bricks Stairs",
+  "block.thelongstory.torch_stone_bricks_wall" : "Torch Stone Bricks Wall",
+
+  "block.thelongstory.torch_bricks" : "Torch Bricks",
+  "block.thelongstory.torch_bricks_slab" : "Torch Bricks Slab",
+  "block.thelongstory.torch_bricks_stairs" : "Torch Bricks Stairs",
+  "block.thelongstory.torch_bricks_wall" : "Torch Bricks Wall",
 
 
   "block.thelongstory.iced_stone" : "Iced Stone",

@@ -48,13 +48,33 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIMULATION_TELEPORTER);
 
-
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TORCH_STONE);
+        blockStateModelGenerator.registerLog(ModBlocks.TORCH_STONE_PILLAR).log(ModBlocks.TORCH_STONE_PILLAR).wood(ModBlocks.TORCH_STONE_PILLAR_ALL);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TORCH_SAND);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TORCH_PINK_SAND);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROSTED_ICE);
+
+
+
+
+        BlockStateModelGenerator.BlockTexturePool torchBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TORCH_STONE);
+        torchBricksPool.stairs(ModBlocks.TORCH_STONE_STAIRS);
+        torchBricksPool.slab(ModBlocks.TORCH_STONE_SLAB);
+        torchBricksPool.wall(ModBlocks.TORCH_STONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool torchStoneBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TORCH_STONE_BRICKS);
+        torchStoneBricksPool.stairs(ModBlocks.TORCH_STONE_BRICKS_STAIRS);
+        torchStoneBricksPool.slab(ModBlocks.TORCH_STONE_BRICKS_SLAB);
+        torchStoneBricksPool.wall(ModBlocks.TORCH_STONE_BRICKS_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool torchStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TORCH_BRICKS);
+        torchStonePool.stairs(ModBlocks.TORCH_BRICKS_STAIRS);
+        torchStonePool.slab(ModBlocks.TORCH_BRICKS_SLAB);
+        torchStonePool.wall(ModBlocks.TORCH_BRICKS_WALL);
+
+
+
 
         BlockStateModelGenerator.BlockTexturePool icedStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ICED_STONE);
         icedStonePool.stairs(ModBlocks.ICED_STONE_STAIRS);

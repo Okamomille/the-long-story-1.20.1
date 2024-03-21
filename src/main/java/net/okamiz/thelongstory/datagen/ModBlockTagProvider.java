@@ -39,8 +39,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DRONIUM_BLOCK)
 
 
-
                 .add(ModBlocks.TORCH_STONE)
+                .add(ModBlocks.TORCH_STONE_SLAB)
+                .add(ModBlocks.TORCH_STONE_STAIRS)
+                .add(ModBlocks.TORCH_STONE_WALL)
+
+                .add(ModBlocks.TORCH_STONE_BRICKS)
+                .add(ModBlocks.TORCH_STONE_BRICKS_SLAB)
+                .add(ModBlocks.TORCH_STONE_BRICKS_STAIRS)
+                .add(ModBlocks.TORCH_STONE_BRICKS_WALL)
+
+                .add(ModBlocks.TORCH_BRICKS)
+                .add(ModBlocks.TORCH_BRICKS_SLAB)
+                .add(ModBlocks.TORCH_BRICKS_STAIRS)
+                .add(ModBlocks.TORCH_BRICKS_WALL)
+
+
                 .add(ModBlocks.DEEP_ICE)
                 .add(ModBlocks.ICED_COBBLESTONE)
                 .add(ModBlocks.ICED_COBBLESTONE_SLAB)
@@ -210,6 +224,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB)
                 .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB)
                 .add(ModBlocks.ICED_STONE_BRICKS_SLAB)
+                .add(ModBlocks.TORCH_STONE_SLAB)
+                .add(ModBlocks.TORCH_BRICKS_SLAB)
+                .add(ModBlocks.TORCH_STONE_BRICKS_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -218,6 +235,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS)
                 .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS)
                 .add(ModBlocks.ICED_STONE_BRICKS_STAIRS)
+                .add(ModBlocks.TORCH_STONE_STAIRS)
+                .add(ModBlocks.TORCH_BRICKS_STAIRS)
+                .add(ModBlocks.TORCH_STONE_BRICKS_STAIRS)
         ;
 
         getOrCreateTagBuilder(BlockTags.WALLS)
@@ -226,6 +246,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ICED_CRACKED_STONE_BRICKS_WALL)
                 .add(ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL)
                 .add(ModBlocks.ICED_STONE_BRICKS_WALL)
+                .add(ModBlocks.TORCH_STONE_WALL)
+                .add(ModBlocks.TORCH_BRICKS_WALL)
+                .add(ModBlocks.TORCH_STONE_BRICKS_WALL)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "thelongstory:block/torch_stone_bricks",
+    "side": "thelongstory:block/torch_stone_bricks",
+    "top": "thelongstory:block/torch_stone_bricks"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:torch_stone"
+    }
+  },
+  "pattern": [
+    "O",
+    "O",
+    "O"
+  ],
+  "result": {
+    "count": 3,
+    "item": "thelongstory:torch_stone_pillar"
+  },
+  "show_notification": true
+}

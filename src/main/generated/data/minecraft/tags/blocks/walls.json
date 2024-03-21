@@ -5,6 +5,9 @@
     "thelongstory:iced_cobblestone_wall",
     "thelongstory:iced_cracked_stone_bricks_wall",
     "thelongstory:iced_chiseled_stone_bricks_wall",
-    "thelongstory:iced_stone_bricks_wall"
+    "thelongstory:iced_stone_bricks_wall",
+    "thelongstory:torch_stone_wall",
+    "thelongstory:torch_bricks_wall",
+    "thelongstory:torch_stone_bricks_wall"
   ]
 }

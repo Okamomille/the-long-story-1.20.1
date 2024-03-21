@@ -64,9 +64,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ZAROSITE_BLOCK);
                         entries.add(ModBlocks.DRONIUM_BLOCK);
 
-                        entries.add(ModBlocks.TORCH_STONE);
-                        entries.add(ModBlocks.TORCH_SAND);
-                        entries.add(ModBlocks.TORCH_PINK_SAND);
+
                         entries.add(ModBlocks.CRUSHED_BONES_BLOCK);
                         entries.add(ModBlocks.MOLD_BLOCK);
                         entries.add(ModBlocks.SPIDER_SILK_BLOCK);
@@ -77,6 +75,26 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.DEEP_ICE);
                         entries.add(ModBlocks.FROSTED_ICE);
+                        entries.add(ModBlocks.TORCH_SAND);
+                        entries.add(ModBlocks.TORCH_PINK_SAND);
+
+                        entries.add(ModBlocks.TORCH_STONE_PILLAR);
+                        entries.add(ModBlocks.TORCH_STONE);
+                        entries.add(ModBlocks.TORCH_STONE_STAIRS);
+                        entries.add(ModBlocks.TORCH_STONE_SLAB);
+                        entries.add(ModBlocks.TORCH_STONE_WALL);
+
+                        entries.add(ModBlocks.TORCH_STONE_BRICKS);
+                        entries.add(ModBlocks.TORCH_STONE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.TORCH_STONE_BRICKS_SLAB);
+                        entries.add(ModBlocks.TORCH_STONE_BRICKS_WALL);
+
+                        entries.add(ModBlocks.TORCH_BRICKS);
+                        entries.add(ModBlocks.TORCH_BRICKS_STAIRS);
+                        entries.add(ModBlocks.TORCH_BRICKS_SLAB);
+                        entries.add(ModBlocks.TORCH_BRICKS_WALL);
+
+
 
                         entries.add(ModBlocks.ICED_STONE);
                         entries.add(ModBlocks.ICED_STONE_STAIRS);

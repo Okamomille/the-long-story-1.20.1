@@ -28,14 +28,39 @@ public class ModBlocks {
 
 
 
+    public static final Block TORCH_STONE_PILLAR = registerBlock("torch_stone_pillar",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block TORCH_STONE_PILLAR_ALL = registerBlock("torch_stone_pillar_all",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block TORCH_BRICKS = registerBlock("torch_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block TORCH_BRICKS_STAIRS = registerBlock("torch_bricks_stairs",
+            new StairsBlock(ModBlocks.TORCH_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.TORCH_BRICKS)));
+    public static final Block TORCH_BRICKS_SLAB = registerBlock("torch_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.TORCH_BRICKS)));
+    public static final Block TORCH_BRICKS_WALL = registerBlock("torch_bricks_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.TORCH_BRICKS)));
 
-
-
-
+    public static final Block TORCH_STONE_BRICKS = registerBlock("torch_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block TORCH_STONE_BRICKS_STAIRS = registerBlock("torch_stone_bricks_stairs",
+            new StairsBlock(ModBlocks.TORCH_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.TORCH_STONE_BRICKS)));
+    public static final Block TORCH_STONE_BRICKS_SLAB = registerBlock("torch_stone_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.TORCH_STONE_BRICKS)));
+    public static final Block TORCH_STONE_BRICKS_WALL = registerBlock("torch_stone_bricks_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.TORCH_STONE_BRICKS)));
 
 
     public static final Block TORCH_STONE = registerBlock("torch_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block TORCH_STONE_STAIRS = registerBlock("torch_stone_stairs",
+            new StairsBlock(ModBlocks.TORCH_STONE.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.TORCH_STONE)));
+    public static final Block TORCH_STONE_SLAB = registerBlock("torch_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.TORCH_STONE)));
+    public static final Block TORCH_STONE_WALL = registerBlock("torch_stone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.TORCH_STONE)));
+
+
     public static final Block TORCH_SAND = registerBlock("torch_sand",
             new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND)));
     public static final Block TORCH_PINK_SAND = registerBlock("torch_pink_sand",

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelongstory:block/torch_stone_slab"
+    },
+    "type=double": {
+      "model": "thelongstory:block/torch_stone"
+    },
+    "type=top": {
+      "model": "thelongstory:block/torch_stone_slab_top"
+    }
+  }
+}

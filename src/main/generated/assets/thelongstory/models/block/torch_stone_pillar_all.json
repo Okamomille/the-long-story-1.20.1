@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thelongstory:block/torch_stone_pillar",
+    "side": "thelongstory:block/torch_stone_pillar"
+  }
+}

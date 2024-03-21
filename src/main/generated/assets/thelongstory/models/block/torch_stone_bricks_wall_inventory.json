@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "thelongstory:block/torch_stone_bricks"
+  }
+}

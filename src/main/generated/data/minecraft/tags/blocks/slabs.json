@@ -5,6 +5,9 @@
     "thelongstory:iced_cobblestone_slab",
     "thelongstory:iced_cracked_stone_bricks_slab",
     "thelongstory:iced_chiseled_stone_bricks_slab",
-    "thelongstory:iced_stone_bricks_slab"
+    "thelongstory:iced_stone_bricks_slab",
+    "thelongstory:torch_stone_slab",
+    "thelongstory:torch_bricks_slab",
+    "thelongstory:torch_stone_bricks_slab"
   ]
 }
