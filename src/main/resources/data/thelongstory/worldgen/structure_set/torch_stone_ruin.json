@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "thelongstory:torch_stone_ruin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 143557619,
+    "spacing": 16,
+    "separation": 8
+  }
+}
