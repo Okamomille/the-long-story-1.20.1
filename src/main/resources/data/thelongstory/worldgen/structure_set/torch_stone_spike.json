@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "thelongstory:torch_stone_spike",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 14357619,
+    "spacing": 4,
+    "separation": 1
+  }
+}
