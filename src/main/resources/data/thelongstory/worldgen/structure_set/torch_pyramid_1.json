@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "thelongstory:torch_stone_rock",
+      "structure": "thelongstory:torch_pyramid_1",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
-    "salt": 846524,
-    "spacing": 3,
-    "separation": 1
+    "salt": 324678,
+    "spacing": 32,
+    "separation": 8
   }
 }
