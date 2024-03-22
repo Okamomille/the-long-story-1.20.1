@@ -300,6 +300,8 @@
   "block.thelongstory.faded_cactus_planks" : "Faded Cactus Planks",
   "block.thelongstory.faded_cactus_stairs" : "Faded Cactus Stairs",
   "block.thelongstory.faded_cactus_slab" : "Faded Cactus Slab",
+  "block.thelongstory.faded_cactus_door" : "Faded Cactus Door",
+  "block.thelongstory.faded_cactus_trapdoor" : "Faded Cactus Trapdoor",
 
   "block.thelongstory.egroric_sapling" : "Egroric Sapling",
   "block.thelongstory.egroric_log" : "Egroric Log",

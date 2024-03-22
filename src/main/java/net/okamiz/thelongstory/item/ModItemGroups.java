@@ -135,6 +135,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FADED_CACTUS_PLANKS);
                         entries.add(ModBlocks.FADED_CACTUS_STAIRS);
                         entries.add(ModBlocks.FADED_CACTUS_SLAB);
+                        entries.add(ModBlocks.FADED_CACTUS_DOOR);
+                        entries.add(ModBlocks.FADED_CACTUS_TRAPDOOR);
 
 
                         //EGRORIC

@@ -32,6 +32,11 @@ public class ModBlocks {
     public static final Block FADED_CACTUS_SLAB = registerBlock("faded_cactus_slab",
             new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.FADED_CACTUS_PLANKS)));
 
+    public static final Block FADED_CACTUS_DOOR = registerBlock("faded_cactus_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.BAMBOO_DOOR),BlockSetType.BAMBOO));
+    public static final Block FADED_CACTUS_TRAPDOOR = registerBlock("faded_cactus_trapdoor",
+            new ModTrapdoorBlock(FabricBlockSettings.copyOf(Blocks.BAMBOO_TRAPDOOR),BlockSetType.BAMBOO));
+
 
     public static final Block TORCH_STONE_PILLAR = registerBlock("torch_stone_pillar",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE)));

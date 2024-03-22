@@ -6,16 +6,16 @@
       "item": "thelongstory:faded_cactus_stick"
     },
     "X": {
-      "item": "thelongstory:faded_cactus_planks"
+      "item": "thelongstory:torch_stone"
     }
   },
   "pattern": [
-    "XXX",
-    " O ",
+    " XX",
+    " OX",
     " O "
   ],
   "result": {
-    "item": "thelongstory:faded_cactus_pickaxe"
+    "item": "minecraft:stone_axe"
   },
   "show_notification": true
 }
