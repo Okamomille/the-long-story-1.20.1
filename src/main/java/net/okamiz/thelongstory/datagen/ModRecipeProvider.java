@@ -741,7 +741,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("XXX")
                 .pattern(" O ")
                 .pattern(" O ")
-                .input('X', ModItems.ODMENTIUM_INGOT)
+                .input('X', ModBlocks.FADED_CACTUS_PLANKS)
                 .input('O', ModItems.FADED_CACTUS_STICK)
                 .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FADED_CACTUS_PICKAXE)));
@@ -799,7 +799,72 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', ModItems.FADED_CACTUS_STICK)
                 .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FADED_CACTUS_SWORD)));
-        
+
+
+        // TORCH_STONE
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,Items.STONE_PICKAXE, 1)
+                .pattern("XXX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModBlocks.TORCH_STONE)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,Items.STONE_AXE, 1)
+                .pattern(" XX")
+                .pattern(" OX")
+                .pattern(" O ")
+                .input('X', ModBlocks.TORCH_STONE)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,Items.STONE_AXE, 1)
+                .pattern("XX ")
+                .pattern("XO ")
+                .pattern(" O ")
+                .input('X', ModBlocks.TORCH_STONE)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier("stone_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,Items.STONE_HOE, 1)
+                .pattern(" XX")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModBlocks.TORCH_STONE)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,Items.STONE_HOE, 1)
+                .pattern("XX ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModBlocks.TORCH_STONE)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier("stone_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,Items.STONE_SHOVEL, 1)
+                .pattern(" X ")
+                .pattern(" O ")
+                .pattern(" O ")
+                .input('X', ModBlocks.TORCH_STONE)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS,Items.STONE_SWORD, 1)
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" O ")
+                .input('X', ModBlocks.TORCH_STONE)
+                .input('O', ModItems.FADED_CACTUS_STICK)
+                .criterion(hasItem(ModBlocks.TORCH_STONE),conditionsFromItem(ModBlocks.TORCH_STONE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_SWORD)));
 
 
         // ZAROSITE
@@ -1029,7 +1094,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FADED_CACTUS_SLAB)));
 
+        createDoorRecipe(ModBlocks.FADED_CACTUS_DOOR, Ingredient.ofItems(ModBlocks.FADED_CACTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FADED_CACTUS_DOOR)));
 
+        createTrapdoorRecipe(ModBlocks.FADED_CACTUS_TRAPDOOR, Ingredient.ofItems(ModBlocks.FADED_CACTUS_PLANKS))
+                .criterion(hasItem(ModBlocks.FADED_CACTUS_PLANKS),conditionsFromItem(ModBlocks.FADED_CACTUS_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FADED_CACTUS_TRAPDOOR)));
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.ICED_STONE_BRICKS, 4)

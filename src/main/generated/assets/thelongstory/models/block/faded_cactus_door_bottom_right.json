@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "thelongstory:block/faded_cactus_door_bottom",
+    "top": "thelongstory:block/faded_cactus_door_top"
+  }
+}

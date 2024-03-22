@@ -200,12 +200,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(ModBlocks.EGRORIC_DOOR)
+                .add(ModBlocks.FADED_CACTUS_DOOR)
                 .add(ModBlocks.OAST_DOOR)
-                .add(ModBlocks.OAST_DOOR)
+                .add(ModBlocks.SEPHIN_DOOR)
+                .add(ModBlocks.KIWI_DOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.EGRORIC_TRAPDOOR)
+                .add(ModBlocks.FADED_CACTUS_TRAPDOOR)
                 .add(ModBlocks.OAST_TRAPDOOR)
                 .add(ModBlocks.SEPHIN_TRAPDOOR)
                 .add(ModBlocks.KIWI_TRAPDOOR)
