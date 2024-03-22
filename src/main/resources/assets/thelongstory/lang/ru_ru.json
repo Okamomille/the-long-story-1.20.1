@@ -1,0 +1,474 @@
+{
+  "item.thelongstory.bone_fragments" : "Фрагменты костей",
+  "item.thelongstory.crushed_bones" : "Растёртые кости",
+  "item.thelongstory.infested_flesh" : "Заражённая плоть",
+  "item.thelongstory.blood_bottle" : "Бутылочка крови",
+  "item.thelongstory.spider_silk" : "Паучий шёлк",
+
+
+
+  "item.thelongstory.vitaly_seeds" : "Семена жизнянника",
+  "item.thelongstory.vitaly_fruit" : "Плод жизнянника",
+
+  "item.thelongstory.torn_carrot" : "Рваная морковь",
+  "item.thelongstory.sweet_pear_seeds" : "Семена груши 'Потнем'",
+  "item.thelongstory.sweet_pear" : "Груша 'Потнем'",
+
+
+
+
+  "item.thelongstory.thestone_dust" : "Камнятиевая пыль",
+  "item.thelongstory.thestone_ingot" : "Камнятиевый слиток",
+  "item.thelongstory.thestone_nugget" : "Кусочек камнятия",
+
+  "item.thelongstory.raw_pandazite" : "Рудный пандазит",
+  "item.thelongstory.pandazite_ingot" : "Пандазитный слиток",
+  "item.thelongstory.pandazite_nugget" : "Кусочек пандазита",
+
+  "item.thelongstory.raw_impure_zarosite" : "Рудный нечистый цзарозит",
+  "item.thelongstory.impure_zarosite_ingot" : "Нечистый цзарозитный слиток",
+
+  "item.thelongstory.zarosite_gemstone" : "Цзарозитный самоцвет",
+  "item.thelongstory.zarosite_shard" : "Осколок цзарозита",
+
+  "item.thelongstory.green_shard" : "Зелёный осколок",
+  "item.thelongstory.pure_amethyst_shard" : "Чистый осколок аметиста",
+  "item.thelongstory.flaming_shard" : "Пламенный осколок",
+
+  "item.thelongstory.dronium_ingot" : "Дрониевый слиток",
+  "item.thelongstory.dronium_powder" : "Дрониевая пыль",
+
+
+
+  "item.thelongstory.teleportation_remote" : "Пульт телепортации",
+  "item.thelongstory.broken_teleportation_remote" : "Сломанный пульт телепортации",
+  "item.thelongstory.power_star" : "Звезда энергии",
+  "item.thelongstory.red_coal" : "Красный уголь",
+
+
+  "item.thelongstory.dimension_pattern" : "Шаблон измерений",
+  "item.thelongstory.command_system" : "Командая система",
+  "item.thelongstory.power_module" : "Модуль энергии",
+  "item.thelongstory.teleportation_module" : "Модуль телепортации",
+  "item.thelongstory.mob_capsule" : "Капсула существа",
+
+  "item.thelongstory.potion_receptacle" : "Зельевой сосуд",
+  "item.thelongstory.potion_core" : "Зельевое ядро",
+  "item.thelongstory.soul_container" : "Контейнер души",
+  "item.thelongstory.soul_container_regeneration" : "Контейнер эссенции регенерации",
+  "item.thelongstory.soul_container_fire_resistance" : "Контейнер эссенции огнестойкости",
+  "item.thelongstory.soul_container_jump_boost" : "Контейнер эссенции прыгучести",
+  "item.thelongstory.soul_container_dolphin_grace" : "Контейнер эссенции грации дельфина",
+  "item.thelongstory.soul_container_night_vision" : "Контейнер эссенции ночного зрения",
+  "item.thelongstory.soul_container_resistance" : "Контейнер эссенции сопротивления",
+  "item.thelongstory.soul_container_haste" : "Контейнер эссенции спешки",
+  "item.thelongstory.soul_container_slow_falling" : "Контейнер эссенции плавного падения",
+  "item.thelongstory.soul_container_saturation" : "Контейнер эссенции насыщения",
+
+
+  "item.thelongstory.wooden_plate" : "Деревянная ластина",
+  "item.thelongstory.iron_plate" : "Железная пластина",
+  "item.thelongstory.diamond_plate" : "Железная пластина",
+  "item.thelongstory.emerald_plate" : "Изумрудная пластина",
+  "item.thelongstory.netherite_plate" : "Незеритовая пластина",
+
+  "item.thelongstory.carbon_stick" : "Углеродная палочка",
+  "item.thelongstory.pure_amethyst_stick" : "Чистая аметистовая палочка",
+  "item.thelongstory.flaming_stick" : "Пламенная палочка",
+  "item.thelongstory.amethyst_core" : "Аметистовое ядро",
+  "item.thelongstory.flaming_core" : "Пламенное ядро",
+  "item.thelongstory.empty_core" : "Пустое ядро",
+
+
+  "item.thelongstory.amethyst_key" : "Аметистовый ключ",
+
+
+  "item.thelongstory.thestone_helmet" : "Камнятиевый шлем",
+  "item.thelongstory.thestone_chestplate" : "Камнятиевый нагрудник",
+  "item.thelongstory.thestone_leggings" : "Камнятиевые поножи",
+  "item.thelongstory.thestone_boots" : "Камнятиевые ботинки",
+
+  "item.thelongstory.green_shard_helmet" : "Шлем из зелёных осколков",
+  "item.thelongstory.green_shard_chestplate" : "Нагрудник из зелёных осколков",
+  "item.thelongstory.green_shard_leggings" : "Поножи из зелёных осколков",
+  "item.thelongstory.green_shard_boots" : "Ботинки из зелёных осколков",
+
+  "item.thelongstory.impure_zarosite_helmet" : "Нечистый цзарозитовый шлем",
+  "item.thelongstory.impure_zarosite_chestplate" : "Нечистый цзарозитовый нагрудник",
+  "item.thelongstory.impure_zarosite_leggings" : "Нечистые цзарозитовые поножи",
+  "item.thelongstory.impure_zarosite_boots" : "Нечистые цзарозитовые ботинки",
+
+  "item.thelongstory.zarosite_helmet" : "Цзарозитовый шлем",
+  "item.thelongstory.zarosite_chestplate" : "Цзарозитовый нагрудник",
+  "item.thelongstory.zarosite_leggings" : "Цзарозитовые поножи",
+  "item.thelongstory.zarosite_boots" : "Цзарозитовые ботинки",
+
+  "item.thelongstory.dronium_helmet" : "Дрониевый шлем",
+  "item.thelongstory.dronium_chestplate" : "Дрониевый нагрудник",
+  "item.thelongstory.dronium_leggings" : "Дрониевые поножи",
+  "item.thelongstory.dronium_boots" : "Дрониевые ботинки",
+
+
+
+  "item.thelongstory.thestone_sword" : "Камнятиевый меч",
+  "item.thelongstory.thestone_pickaxe" : "Камнятиевая кирка",
+  "item.thelongstory.thestone_axe" : "Камнятиевый топор",
+  "item.thelongstory.thestone_shovel" : "Камнятиевая лопата",
+  "item.thelongstory.thestone_hoe" : "Камнятиевая мотыга",
+
+  "item.thelongstory.green_shard_sword" : "Меч из зелёных осколков",
+  "item.thelongstory.green_shard_pickaxe" : "Кирка из зелёных осколков",
+  "item.thelongstory.green_shard_axe" : "Топор из зелёных осколков",
+  "item.thelongstory.green_shard_shovel" : "Лопата из зелёных осколков",
+  "item.thelongstory.green_shard_hoe" : "Мотыга из зелёных осколков",
+
+  "item.thelongstory.impure_zarosite_sword" : "Нечистый цзарозитовый меч",
+  "item.thelongstory.impure_zarosite_pickaxe" : "Нечистая цзарозитовая кирка",
+  "item.thelongstory.impure_zarosite_axe" : "Нечистый цзарозитовый топор",
+  "item.thelongstory.impure_zarosite_shovel" : "Нечистый цзарозитовая лопата",
+  "item.thelongstory.impure_zarosite_hoe" : "Нечистый цзарозитовая мотыга",
+  "item.thelongstory.impure_zarosite_bow" : "Нечистый цзарозитовый лук",
+
+  "item.thelongstory.pandazite_sword" : "Пандазитовый меч",
+  "item.thelongstory.pandazite_pickaxe" : "Пандазитовая кирка",
+  "item.thelongstory.pandazite_axe" : "Пандазитовый топор",
+  "item.thelongstory.pandazite_shovel" : "Пандазитовая лопата",
+  "item.thelongstory.pandazite_hoe" : "Пандазитовая мотыга",
+
+  "item.thelongstory.zarosite_sword" : "Цзарозитовый меч",
+  "item.thelongstory.zarosite_pickaxe" : "Цзарозитовая кирка",
+  "item.thelongstory.zarosite_axe" : "Цзарозитовый топор",
+  "item.thelongstory.zarosite_shovel" : "Цзарозитовая лопата",
+  "item.thelongstory.zarosite_hoe" : "Цзарозитовая мотыга",
+
+  "item.thelongstory.dronium_sword" : "Дрониевый меч",
+  "item.thelongstory.dronium_pickaxe" : "Дрониевая кирка",
+  "item.thelongstory.dronium_axe" : "Дрониевый топор",
+  "item.thelongstory.dronium_shovel" : "Дрониевая лопата",
+  "item.thelongstory.dronium_hoe" : "Дрониевая мотыга",
+
+  "item.thelongstory.pure_amethyst_pickaxe" : "Чистая аметистовая кирка",
+  "item.thelongstory.pure_amethyst_sword" : "Чистый аметистовый меч",
+
+
+
+
+  "item.thelongstory.emerald_apple" : "Изумрудное яблоко",
+  "item.thelongstory.iron_apple" : "Железное яблоко",
+  "item.thelongstory.diamond_apple" : "Алмазное яблоко",
+  "item.thelongstory.lapis_apple" : "Лазуритовое яблоко",
+  "item.thelongstory.redstone_apple" : "Редстоуновое яблоко",
+  "item.thelongstory.amethyst_apple" : "Аметистовое яблоко",
+  "item.thelongstory.breedy_flesh" : "Плоть певтицы",
+  "item.thelongstory.tooki_meat" : "Мясо туки",
+  "item.thelongstory.cooked_tooki_meat" : "Тушёный туки",
+
+
+  "item.thelongstory.trepasseur_spawn_egg" : "Яйцо призыва Страждущего",
+  "item.thelongstory.tickeler_spawn_egg" : "Яйцо призыва Следующего",
+  "item.thelongstory.crawler_spawn_egg" : "Яйцо призыва Ползущего",
+  "item.thelongstory.tooki_spawn_egg" : "Яйцо призыва Туки",
+  "item.thelongstory.cowsmic_spawn_egg" : "Яйцо призыва Коросмоса",
+  "item.thelongstory.breedy_spawn_egg" : "Яйцо призыва Певтицы",
+  "item.thelongstory.amethyst_minion_spawn_egg" : "Яйцо призыва Аметистового миньона",
+
+
+  "block.thelongstory.crushed_bones_block" : "Блок дроблёных костей",
+  "block.thelongstory.mold_block" : "Блок плесени",
+  "block.thelongstory.spider_silk_block" : "Блок паучьего шёлка",
+  "block.thelongstory.deepslate_pillar" : "Глубинносланцевая колонна",
+
+
+
+  "block.thelongstory.locked_amethyst_core" : "Запертое Аметистовое Ядро",
+
+
+
+
+  "block.thelongstory.deep_ice" : "Глубинный лёд",
+  "block.thelongstory.deep_ice_zarosite_ore" : "Цзарозитоносный глубинный лёд",
+  "block.thelongstory.frosted_ice" : "Хрупкий лёд",
+
+
+  "block.thelongstory.iced_stone" : "Морозный камень",
+  "block.thelongstory.iced_stone_slab" : "Морозная каменная плита",
+  "block.thelongstory.iced_stone_stairs" : "Морозные каменные ступеньки",
+  "block.thelongstory.iced_stone_wall" : "Морозная каменная ограда",
+
+  "block.thelongstory.iced_cobblestone" : "Морозный булыжник",
+  "block.thelongstory.iced_cobblestone_slab" : "Морозная булыжная плита",
+  "block.thelongstory.iced_cobblestone_stairs" : "Морозные булыжные ступеньки",
+  "block.thelongstory.iced_cobblestone_wall" : "Морозная булыжная ограда",
+
+  "block.thelongstory.iced_stone_bricks" : "Морозные каменные кирпичи",
+  "block.thelongstory.iced_stone_bricks_slab" : "Плита из морозного каменного кирпича",
+  "block.thelongstory.iced_stone_bricks_stairs" : "Ступеньки из морозного каменного кирпича",
+  "block.thelongstory.iced_stone_bricks_wall" : "Ограда из морозного каменного кирпича",
+
+  "block.thelongstory.iced_cracked_stone_bricks" : "Потрескавшиеся морозные каменные кирпичи",
+  "block.thelongstory.iced_cracked_stone_bricks_slab" : "Потрескавшаяся плита из морозного каменного кирпича",
+  "block.thelongstory.iced_cracked_stone_bricks_stairs" : "Потрескавшиеся ступеньки из морозного каменного кирпича",
+  "block.thelongstory.iced_cracked_stone_bricks_wall" : "Потрескавшаяся ограда из морозного каменного кирпича",
+
+  "block.thelongstory.iced_chiseled_stone_bricks" : "Резные морозные каменные кирпичи",
+  "block.thelongstory.iced_chiseled_stone_bricks_slab" : "Плита из резных морозных каменных кирпичей",
+  "block.thelongstory.iced_chiseled_stone_bricks_stairs" : "Ступеньки из резных морозных каменных кирпичей",
+  "block.thelongstory.iced_chiseled_stone_bricks_wall" : "Ограда из резных морозных каменных кирпичей",
+
+  "block.thelongstory.corrupted_lab_tiles" : "Искажённый лабораторный блок",
+  "block.thelongstory.corrupted_lab_tiles_slab" : "Искажённая лабораторная плита",
+  "block.thelongstory.corrupted_lab_tiles_stairs" : "Искажённые лабораторные ступеньки",
+  "block.thelongstory.corrupted_lab_tiles_wall" : "Искажённая лабораторная ограда",
+
+  "block.thelongstory.lab_tiles" : "Лабораторный блок",
+  "block.thelongstory.lab_tiles_slab" : "Лабораторная плита",
+  "block.thelongstory.lab_tiles_stairs" : "Лабораторные ступеньки",
+  "block.thelongstory.lab_tiles_wall" : "Лабораторная ограда",
+
+
+  "block.thelongstory.broken_greffed_command_system" : "Сломанная колхозная командная система",
+  "block.thelongstory.broken_simulation_teleporter" : "Сломанный телепортер в симуляцию",
+  "block.thelongstory.greffed_command_system" : "Колхозная командная система",
+  "block.thelongstory.simulation_teleporter" : "Телепортер в симуляцию",
+  "block.thelongstory.material_processor" : "Процессор материалов",
+  "block.thelongstory.amethyst_processor" : "Процессор аметиста",
+  "block.thelongstory.red_coal_generator" : "Генератор красного угля [WIP]",
+
+
+  "block.thelongstory.red_coal_block" : "Красный угольный блок",
+  "block.thelongstory.impure_zarosite_block" : "Нечистый цзарозитовый блок",
+  "block.thelongstory.pandazite_block" : "Пандазитовый блок",
+  "block.thelongstory.zarosite_block" : "Цзарозитовый блок",
+  "block.thelongstory.dronium_block" : "Дрониевый блок",
+
+  "block.thelongstory.thestone_ore" : "Камнятиевая руда",
+  "block.thelongstory.deepslate_thestone_ore" : "Камнятиеносный глубинный сланец",
+
+  "block.thelongstory.impure_zarosite_ore" : "Нечистая цзарозитовая руда",
+  "block.thelongstory.deepslate_impure_zarosite_ore" : "Нечистый цзарозитоносный глубинный сланец",
+
+  "block.thelongstory.pandazite_ore" : "Пандазитовая руда",
+  "block.thelongstory.deepslate_pandazite_ore" : "Пандазитоносный глубинный сланец",
+
+  "block.thelongstory.deep Ice_zarosite_ore" : "привет всем кто копается в файлах, эта строка не делает ровным счётом ничего. Я люблю свою маму",
+
+
+  "block.thelongstory.egroric_sapling" : "Саженец эгрория",
+  "block.thelongstory.egroric_log" : "Бревно эгрория",
+  "block.thelongstory.egroric_wood" : "Эгрорий",
+  "block.thelongstory.stripped_egroric_log" : "Обтёсанное бревно эгрория",
+  "block.thelongstory.stripped_egroric_wood" : "Обтёсанный эгрорий",
+  "block.thelongstory.egroric_leaves" : "Листья эгрория",
+  "block.thelongstory.egroric_planks" : "Эгрориевые доски",
+  "block.thelongstory.egroric_stairs" : "Эгрориевые ступеньки",
+  "block.thelongstory.egroric_slab" : "Эгрориевая плита",
+  "block.thelongstory.egroric_fence" : "Эгрориевый забор",
+  "block.thelongstory.egroric_fence_gate" : "Эгрориевая калитка",
+  "block.thelongstory.egroric_door" : "Эгрориевая дверь",
+  "block.thelongstory.egroric_trapdoor" : "Эгрориевый люк",
+  "block.thelongstory.egroric_button" : "Эгрориевая кнопка",
+  "block.thelongstory.egroric_pressure_plate" : "Эгрориевая нажимная плита",
+
+
+
+  "block.thelongstory.oast_sapling" : "Саженец зольника",
+  "block.thelongstory.oast_log" : "Зольниковое бревно",
+  "block.thelongstory.oast_wood" : "Зольник",
+  "block.thelongstory.stripped_oast_log" : "Обтёсанное зольниковое бревно",
+  "block.thelongstory.stripped_oast_wood" : "Обтёсанный зольник",
+  "block.thelongstory.oast_leaves" : "Зольниковые листья",
+  "block.thelongstory.oast_planks" : "Зольниковые доски",
+  "block.thelongstory.oast_stairs" : "Зольниковые ступеньки",
+  "block.thelongstory.oast_slab" : "Зольниковая плита",
+  "block.thelongstory.oast_fence" : "Зольниковый забор",
+  "block.thelongstory.oast_door" : "Зольниковая дверь",
+  "block.thelongstory.oast_trapdoor" : "Зольниковый люк",
+  "block.thelongstory.oast_fence_gate" : "Зольниковая калитка",
+  "block.thelongstory.oast_button" : "Зольниковая кнопка",
+  "block.thelongstory.oast_pressure_plate" : "Зольниковая нажимная плита",
+
+  "block.thelongstory.sephin_sapling" : "Саженец сафина",
+  "block.thelongstory.sephin_log" : "Сафиновое бревно",
+  "block.thelongstory.sephin_wood" : "Сафин",
+  "block.thelongstory.stripped_sephin_log" : "Обтёсанное сафиновое бревно",
+  "block.thelongstory.stripped_sephin_wood" : "Обтёсанный сафин",
+  "block.thelongstory.sephin_leaves" : "Сафиновые листья",
+  "block.thelongstory.sephin_planks" : "Сафиновые доски",
+  "block.thelongstory.sephin_stairs" : "Сафиновые ступеньки",
+  "block.thelongstory.sephin_slab" : "Сафиновая плита",
+  "block.thelongstory.sephin_fence" : "Сафиновый забор",
+  "block.thelongstory.sephin_door" : "Сафиновая дверь",
+  "block.thelongstory.sephin_trapdoor" : "Сафиновый люк",
+  "block.thelongstory.sephin_fence_gate" : "Сафиновая калитка",
+  "block.thelongstory.sephin_button" : "Сафиновая кнопка",
+  "block.thelongstory.sephin_pressure_plate" : "Сафиновая нажимная плита",
+
+  "block.thelongstory.kiwi_sapling" : "Саженец киви",
+  "block.thelongstory.kiwi_log" : "Бревно киви",
+  "block.thelongstory.kiwi_wood" : "Киви",
+  "block.thelongstory.stripped_kiwi_log" : "Обтёсанное бревно киви",
+  "block.thelongstory.stripped_kiwi_wood" : "Обтёсанное киви",
+  "block.thelongstory.kiwi_leaves" : "Листья киви",
+  "block.thelongstory.kiwi_planks" : "Доски из киви",
+  "block.thelongstory.kiwi_stairs" : "Ступеньки из киви",
+  "block.thelongstory.kiwi_slab" : "Плита из киви",
+  "block.thelongstory.kiwi_fence" : "Забор из киви",
+  "block.thelongstory.kiwi_door" : "Дверь из киви",
+  "block.thelongstory.kiwi_trapdoor" : "Люк из киви",
+  "block.thelongstory.kiwi_fence_gate" : "Калитка из киви",
+  "block.thelongstory.kiwi_button" : "Кнопка из киви",
+  "block.thelongstory.kiwi_pressure_plate" : "Нажимная плита из киви",
+
+  "block.thelongstory.impure_glitched_block" : "Нечистый глючный блок",
+  "block.thelongstory.pure_glitched_block" : "Чистый глючный блок",
+
+
+
+  "block.thelongstory.torn_bush" : "Рваный куст",
+  "block.thelongstory.torn_flower" : "Рваный цветок",
+
+  "block.thelongstory.pink_phygelus" : "Розовый фюгелий",
+  "block.thelongstory.yellow_phygelus" : "Жёлтый фюгелий",
+
+  "block.thelongstory.red_ospet" : "Красный оспертин",
+  "block.thelongstory.blue_ospet" : "Синий оспертин",
+  "block.thelongstory.green_ospet" : "Зелёный оспертин",
+  "block.thelongstory.yellow_ospet" : "Жёлтый оспертин",
+
+
+
+  "itemgroup.modgroup" : "TLS Основное",
+  "itemgroup.foodgroup" : "TLS Еда",
+  "itemgroup.toolsgroup" : "TLS Инструменты и оружие",
+  "itemgroup.miscgroup" : "TLS Прочее",
+
+
+
+  "tooltip.thelongstory.radar" : "§7Радар для поиска руд под землёй! (Тестовый предмет)",
+  "tooltip.thelongstory.effect_armor" : "§7Имеет специальный эффект при ношении полного набора брони.",
+
+
+  "tooltip.thelongstory.pink_greffed_command_system" : "§7Самодельный командный блок, позволяющий лечиться.",
+  "tooltip.thelongstory.lime_greffed_command_system" : "§7Самодельный командный блок, позволяющий выше прыгать.",
+  "tooltip.thelongstory.orange_greffed_command_system" : "§7Самодельный командный блок, позволяющий сопротивляться огню.",
+  "tooltip.thelongstory.cyan_greffed_command_system" : "§7Самодельный командный блок, позволяющий быстрее плавать.",
+  "tooltip.thelongstory.blue_greffed_command_system" : "§7Самодельный командный блок, позволяющий видеть в темноте.",
+  "tooltip.thelongstory.gray_greffed_command_system" : "§7Самодельный командный блок, позволяющий получать меньше урона.",
+
+  "tooltip.thelongstory.locked_amethyst_core" : "§e> Неразрушаемый\n\n§7Этот блок используется для призыва босса - Аметистового Голема с помощью Аметистового ключа.",
+  "tooltip.thelongstory.amethyst_key" : "§7Может быть использован на Замкнутом Аметистовом Ядре для призыва босса - Аметистового Голема.",
+
+
+
+  "tooltip.thelongstory.zarosite_sword" : "§7Меч, созданный из токсичных кристаллов. При попадании по врагу кристаллизует их, периодически нанося урон.",
+  "tooltip.thelongstory.power_star" : "§7Это - мощная звезда, требуемая для более глубокого погружения в науку жизни.",
+  "tooltip.thelongstory.soul_container" : "§7Этот контейнер может поймать душу и использовать её эссенцию. \nНажмите §n§l§c[ПКМ]§r§7 по мобу у которого §n§l§cменее 15 здоровья, §r§7чтобы поймать его.",
+  "tooltip.thelongstory.soul_container_full" : "§o§7Получается с помощью Контейнера души.",
+  "tooltip.thelongstory.teleportation_remote" : "§7Нажмите §n§l§c[ПКМ]§r§7 чтобы вернуться на свою точку возрождения. Вам понадобится поспать в верхнем мире. Не работает с Якорем возрождения.\n\n§e> Перезарядка 1 минута.",
+  "tooltip.thelongstory.greffed_command_system" : "§7Используется для хранения контейнеров эссенции и наложения соответсвующего эффекта на игрока.\nНажмите §n§l§c[ПКМ]§r§7 по блоку с контейнером эссенции чтобы активировать его, и затем нажмите ещё раз чтобы использовать.\n\n§e> Перезаряжается 3 минуты.",
+  "tooltip.thelongstory.simulation_teleporter": "§7Нажмите по телепортеру чтобы попасть в Симуляцию. Чтобы вернуться в верхний мир вам понадобится Пульт телепортации.",
+
+
+  "tooltip.thelongstory.broken" : "§7Сломалось! Его надо починить перед использованием.",
+
+  "tooltip.thelongstory.mob_capsule" : "§7Нажмите §n§l§c[ПКМ]§r§7 пустой капсулой по мобу чтобы поймать его, и нажмите §n§l§c[ПКМ]§r§7 заполненной капсулой по блоку чтобы его выпустить.",
+
+
+
+
+  "tooltip.thelongstory.press_shift_info" : "§7Нажмите §n§l§c[SHIFT]§r§7 чтобы узнать подробнее.",
+
+  "display.thelongstory.greffed_command_system" : "",
+
+
+  "message.thelongstory.simulationteleporter.success" : "§6Перемещаемся в Симуляцию...",
+  "message.thelongstory.simulationteleporter.fail" : "§cТелепортация провалена.",
+
+  "message.thelongstory.overworldteleporter.success" : "§6Перемещаемся в верхний мир...",
+  "message.thelongstory.overworldteleporter.fail" : "§cТелепортация провалена.",
+
+
+
+  "death.attack.infected": "%1$s умер от инфекции",
+  "death.attack.infected.player": "%1$s был смертельно заражён %2$s",
+
+  "death.attack.crystalized": "%1$s был кристаллизован",
+  "death.attack.crystalized.player": "%1$s был кристаллизован %2$s",
+
+  "effect.thelongstory.infected": "Инфецирован",
+  "effect.thelongstory.crystallized": "Кристаллизован",
+  "effect.thelongstory.sea_charm": "Океаническая манёвренность",
+
+  "entity.thelongstory.trepasseur": "Страждущий",
+  "entity.thelongstory.tickeler": "Преследующий",
+  "entity.thelongstory.crawler": "Ползущий",
+  "entity.thelongstory.tooki": "Туки",
+  "entity.thelongstory.cowsmic": "Коросмос",
+  "entity.thelongstory.amethyst_golem": "Аметистовый голем",
+  "entity.thelongstory.amethyst_minion": "Аметистовый миньон",
+
+
+
+
+  "sounds.thelongstory.greffed_command_system_activate": "Колхозная командная система активируется.",
+  "sounds.thelongstory.greffed_command_system_fail": "Колхозная командная система ожидает",
+  "sounds.thelongstory.greffed_command_system_give_effect": "Колхозная командная система выдаёт эффект",
+  "sounds.thelongstory.teleportation": "Игрок телепортируется",
+  "sounds.thelongstory.tooki_idle": "Туки пищит",
+  "sounds.thelongstory.tooki_hurt": "Туки ранен",
+  "sounds.thelongstory.tooki_death": "Туки умирает",
+
+  "sounds.thelongstory.breedy_ambient": "Певтица поёт",
+  "sounds.thelongstory.breedy_hurt": "Певтица ранена",
+  "sounds.thelongstory.breedy_death": "Певтица умирает",
+
+  "sounds.thelongstory.amethyst_golem_ambient": "Аметистовый голем напевает",
+  "sounds.thelongstory.amethyst_golem_hurt": "Аметистовый голем ранен",
+  "sounds.thelongstory.amethyst_golem_death": "Аметистовый голем умирает",
+
+
+
+
+  "bossbar.thelongstory.amethyst_golem" : "Аметистовый голем",
+  "item.thelongstory.raw_odmentium": "Raw Odmentium",
+  "item.thelongstory.odmentium_ingot": "Odmentium Ingot",
+  "item.thelongstory.faded_cactus_stick": "Faded Cactus Stick",
+  "item.thelongstory.odmentium_sword": "Odmentium Sword",
+  "item.thelongstory.odmentium_pickaxe": "Odmentium Pickaxe",
+  "item.thelongstory.odmentium_axe": "Odmentium Axe",
+  "item.thelongstory.odmentium_shovel": "Odmentium Shovel",
+  "item.thelongstory.odmentium_hoe": "Odmentium Hoe",
+  "item.thelongstory.faded_cactus_sword": "Faded Cactus Sword",
+  "item.thelongstory.faded_cactus_pickaxe": "Faded Cactus Pickaxe",
+  "item.thelongstory.faded_cactus_axe": "Faded Cactus Axe",
+  "item.thelongstory.faded_cactus_shovel": "Faded Cactus Shovel",
+  "item.thelongstory.faded_cactus_hoe": "Faded Cactus Hoe",
+  "block.thelongstory.torch_sand": "Torch Sand",
+  "block.thelongstory.torch_pink_sand": "Torch Pink Sand",
+  "block.thelongstory.torch_stone_pillar": "Torch Stone Pillar",
+  "block.thelongstory.torch_stone": "Torch Stone",
+  "block.thelongstory.torch_stone_slab": "Torch Stone Slab",
+  "block.thelongstory.torch_stone_stairs": "Torch Stone Stairs",
+  "block.thelongstory.torch_stone_wall": "Torch Stone Wall",
+  "block.thelongstory.torch_stone_bricks": "Torch Stone Bricks",
+  "block.thelongstory.torch_stone_bricks_slab": "Torch Stone Bricks Slab",
+  "block.thelongstory.torch_stone_bricks_stairs": "Torch Stone Bricks Stairs",
+  "block.thelongstory.torch_stone_bricks_wall": "Torch Stone Bricks Wall",
+  "block.thelongstory.torch_bricks": "Torch Bricks",
+  "block.thelongstory.torch_bricks_slab": "Torch Bricks Slab",
+  "block.thelongstory.torch_bricks_stairs": "Torch Bricks Stairs",
+  "block.thelongstory.torch_bricks_wall": "Torch Bricks Wall",
+  "block.thelongstory.torch_stone_thestone_ore": "Torch Stone Thestone Ore",
+  "block.thelongstory.red_sandstone_thestone_ore": "Red Sandstone Thestone Ore",
+  "block.thelongstory.torch_pandazite_ore": "Torch Pandazite Ore",
+  "block.thelongstory.red_sandstone_pandazite_ore": "Red Sandstone Pandazite Ore",
+  "block.thelongstory.odmentium_ore": "Odmentium Ore",
+  "block.thelongstory.red_sandstone_odmentium_ore": "Red Sandstone Odmentium Ore",
+  "block.thelongstory.faded_cactus_planks": "Faded Cactus Planks",
+  "block.thelongstory.faded_cactus_stairs": "Faded Cactus Stairs",
+  "block.thelongstory.faded_cactus_slab": "Faded Cactus Slab",
+  "block.thelongstory.faded_cactus_door": "Faded Cactus Door",
+  "block.thelongstory.faded_cactus_trapdoor": "Faded Cactus Trapdoor",
+  "block.thelongstory.faded_cactus": "Faded Cactus"
+
+}
