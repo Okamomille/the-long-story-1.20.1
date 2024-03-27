@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ender_eye": {
+    "has_iron_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "thelongstory:carbon_plate"
+              "minecraft:iron_ingot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:teleportation_module"
+        "recipe": "minecraft:carbon_ingot_craft"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_ender_eye",
+      "has_iron_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:teleportation_module"
+      "minecraft:carbon_ingot_craft"
     ]
   },
   "sends_telemetry_event": false

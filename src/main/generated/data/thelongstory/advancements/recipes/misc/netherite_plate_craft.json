@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_emerald_plate": {
+    "has_carbon_plate": {
       "conditions": {
         "items": [
           {
             "items": [
-              "thelongstory:emerald_plate"
+              "thelongstory:carbon_plate"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_emerald_plate",
+      "has_carbon_plate",
       "has_the_recipe"
     ]
   ],

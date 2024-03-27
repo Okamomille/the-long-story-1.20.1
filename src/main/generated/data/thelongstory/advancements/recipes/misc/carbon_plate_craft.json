@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_ender_eye": {
+    "has_emerald_plate": {
       "conditions": {
         "items": [
           {
             "items": [
-              "thelongstory:carbon_plate"
+              "thelongstory:emerald_plate"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:teleportation_module"
+        "recipe": "minecraft:carbon_plate_craft"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_ender_eye",
+      "has_emerald_plate",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:teleportation_module"
+      "minecraft:carbon_plate_craft"
     ]
   },
   "sends_telemetry_event": false

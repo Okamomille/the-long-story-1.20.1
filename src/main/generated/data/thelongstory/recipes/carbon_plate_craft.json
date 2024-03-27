@@ -3,17 +3,19 @@
   "category": "misc",
   "key": {
     "O": {
-      "item": "thelongstory:carbon_plate"
+      "item": "thelongstory:emerald_plate"
     },
     "X": {
-      "item": "minecraft:netherite_ingot"
+      "item": "thelongstory:carbon_ingot"
     }
   },
   "pattern": [
-    "OX"
+    " X ",
+    "XOX",
+    " X "
   ],
   "result": {
-    "item": "thelongstory:netherite_plate"
+    "item": "thelongstory:carbon_plate"
   },
   "show_notification": true
 }

@@ -41,6 +41,8 @@
   "item.thelongstory.dronium_ingot" : "Dronium Ingot",
   "item.thelongstory.dronium_powder" : "Dronium Powder",
 
+  "item.thelongstory.carbon_ingot" : "Carbon Ingot",
+
 
 
   "item.thelongstory.teleportation_remote" : "Teleportation Remote",
@@ -73,6 +75,7 @@
   "item.thelongstory.iron_plate" : "Iron Plate",
   "item.thelongstory.diamond_plate" : "Diamond Plate",
   "item.thelongstory.emerald_plate" : "Emerald Plate",
+  "item.thelongstory.carbon_plate" : "Carbon Plate",
   "item.thelongstory.netherite_plate" : "Netherite Plate",
 
   "item.thelongstory.faded_cactus_stick" : "Faded Cactus Stick",

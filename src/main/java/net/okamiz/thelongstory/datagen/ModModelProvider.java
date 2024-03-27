@@ -245,6 +245,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PANDAZITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PANDAZITE_NUGGET, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.CARBON_INGOT, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.RAW_ODMENTIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ODMENTIUM_INGOT, Models.GENERATED);
 
@@ -313,6 +315,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.IRON_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMERALD_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CARBON_PLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHERITE_PLATE, Models.GENERATED);
 
 
