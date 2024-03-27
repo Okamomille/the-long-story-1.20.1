@@ -1403,7 +1403,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.CARBON_INGOT, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('X', Items.COAL)
+                .input('O', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier("carbon_ingot_craft"));
 
 
 
@@ -1444,11 +1451,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.DIAMOND_PLATE),conditionsFromItem(ModItems.DIAMOND_PLATE))
                 .offerTo(exporter, new Identifier("emerald_plate_craft"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.CARBON_PLATE, 1)
+                .pattern(" X ")
+                .pattern("XOX")
+                .pattern(" X ")
+                .input('X', ModItems.CARBON_INGOT)
+                .input('O', ModItems.EMERALD_PLATE)
+                .criterion(hasItem(ModItems.EMERALD_PLATE),conditionsFromItem(ModItems.EMERALD_PLATE))
+                .offerTo(exporter, new Identifier("carbon_plate_craft"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.NETHERITE_PLATE, 1)
                 .pattern("OX")
                 .input('X', Items.NETHERITE_INGOT)
-                .input('O', ModItems.EMERALD_PLATE)
-                .criterion(hasItem(ModItems.EMERALD_PLATE),conditionsFromItem(ModItems.EMERALD_PLATE))
+                .input('O', ModItems.CARBON_PLATE)
+                .criterion(hasItem(ModItems.CARBON_PLATE),conditionsFromItem(ModItems.CARBON_PLATE))
                 .offerTo(exporter, new Identifier("netherite_plate_craft"));
 
 
@@ -1563,7 +1579,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', ModItems.COMMAND_SYSTEM)
                 .input('X', ModItems.POWER_MODULE)
                 .input('A', ModItems.TELEPORTATION_MODULE)
-                .input('B', ModItems.NETHERITE_PLATE)
+                .input('B', ModItems.CARBON_PLATE)
                 .input('C', ModItems.DIMENSION_PATTERN)
                 .criterion(hasItem(ModItems.COMMAND_SYSTEM),conditionsFromItem(ModItems.COMMAND_SYSTEM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SIMULATION_TELEPORTER)));
@@ -1586,11 +1602,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("XAX")
                 .pattern("CBC")
                 .pattern("XAX")
-                .input('X', ModItems.NETHERITE_PLATE)
+                .input('X', ModItems.CARBON_PLATE)
                 .input('C', ModItems.POWER_MODULE)
                 .input('B', ModItems.THESTONE_INGOT)
                 .input('A', Items.ENDER_EYE)
-                .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.NETHERITE_PLATE))
+                .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.CARBON_PLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TELEPORTATION_MODULE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.TELEPORTATION_REMOTE, 1)
@@ -1600,7 +1616,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModItems.IRON_PLATE)
                 .input('B', ModItems.THESTONE_INGOT)
                 .input('A', ModItems.TELEPORTATION_MODULE)
-                .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.NETHERITE_PLATE))
+                .criterion(hasItem(Items.ENDER_EYE),conditionsFromItem(ModItems.CARBON_PLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TELEPORTATION_REMOTE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.MOB_CAPSULE, 1)

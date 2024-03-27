@@ -32,6 +32,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_ODMENTIUM);
                         entries.add(ModItems.ODMENTIUM_INGOT);
 
+                        entries.add(ModItems.CARBON_INGOT);
+
                         entries.add(ModItems.ZAROSITE_GEMSTONE);
                         entries.add(ModItems.ZAROSITE_SHARD);
 
@@ -343,6 +345,7 @@ public class ModItemGroups {
                         entries.add(ModItems.IRON_PLATE);
                         entries.add(ModItems.DIAMOND_PLATE);
                         entries.add(ModItems.EMERALD_PLATE);
+                        entries.add(ModItems.CARBON_PLATE);
                         entries.add(ModItems.NETHERITE_PLATE);
 
                         entries.add(ModItems.AMETHYST_KEY);

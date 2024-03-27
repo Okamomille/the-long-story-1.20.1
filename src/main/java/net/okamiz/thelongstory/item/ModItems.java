@@ -44,6 +44,7 @@ public class ModItems {
     public static final Item DRONIUM_INGOT = registerItem("dronium_ingot", new Item(new FabricItemSettings()));
     public static final Item DRONIUM_POWDER = registerItem("dronium_powder", new Item(new FabricItemSettings()));
 
+    public static final Item CARBON_INGOT = registerItem("carbon_ingot", new Item(new FabricItemSettings()));
 
     public static final Item RAW_PANDAZITE = registerItem("raw_pandazite", new Item(new FabricItemSettings()));
     public static final Item PANDAZITE_INGOT = registerItem("pandazite_ingot", new Item(new FabricItemSettings()));
@@ -60,6 +61,7 @@ public class ModItems {
     public static final Item IRON_PLATE = registerItem("iron_plate", new Item(new FabricItemSettings()));
     public static final Item DIAMOND_PLATE = registerItem("diamond_plate", new Item(new FabricItemSettings()));
     public static final Item EMERALD_PLATE = registerItem("emerald_plate", new Item(new FabricItemSettings()));
+    public static final Item CARBON_PLATE = registerItem("carbon_plate", new Item(new FabricItemSettings()));
     public static final Item NETHERITE_PLATE = registerItem("netherite_plate", new Item(new FabricItemSettings()));
 
     public static final Item CARBON_STICK = registerItem("carbon_stick", new Item(new FabricItemSettings()));
