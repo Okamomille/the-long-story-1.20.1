@@ -42,6 +42,9 @@ public class ModOreGeneration {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.SNOW_FOREST),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DEEP_ICE_ZAROSITE_ORE_PLACED_KEY);
 
+        // FLUORITE GENERATION -----------------------------------------------------------------------
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.SNOW_FOREST),
+                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DEEP_ICE_FLUORITE_ORE_PLACED_KEY);
 
 
         // PANDAZITE GENERATION -----------------------------------------------------------------------

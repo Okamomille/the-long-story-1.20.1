@@ -215,8 +215,8 @@
 
 
 
-
-  "block.thelongstory.fluorite_block_pillar" : "Fluorite Block Pillar",
+  "block.thelongstory.deep_ice_fluorite_ore" : "Fluorite Ore",
+  "block.thelongstory.fluorite_pillar" : "Fluorite Pillar",
   "block.thelongstory.fluorite_block" : "Fluorite Block",
   "block.thelongstory.fluorite_block_slab" : "Fluorite Block Slab",
   "block.thelongstory.fluorite_block_stairs" : "Fluorite Block Stairs",

@@ -52,33 +52,33 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.FLUORITE_BRICKS);
         addDrop(ModBlocks.FLUORITE_BRICKS_STAIRS);
-        addDrop(ModBlocks.FLUORITE_BRICKS_SLAB);
+        addDrop(ModBlocks.FLUORITE_BRICKS_SLAB, slabDrops(ModBlocks.FLUORITE_BRICKS_SLAB));
         addDrop(ModBlocks.FLUORITE_BRICKS_WALL);
 
         addDrop(ModBlocks.FLUORITE_BLOCK);
         addDrop(ModBlocks.FLUORITE_BLOCK_STAIRS);
-        addDrop(ModBlocks.FLUORITE_BLOCK_SLAB);
+        addDrop(ModBlocks.FLUORITE_BLOCK_SLAB, slabDrops(ModBlocks.FLUORITE_BLOCK_SLAB));
         addDrop(ModBlocks.FLUORITE_BLOCK_WALL);
 
         addDrop(ModBlocks.CHISELED_FLUORITE_BLOCK);
         addDrop(ModBlocks.CHISELED_FLUORITE_BLOCK_STAIRS);
-        addDrop(ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB);
+        addDrop(ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB, slabDrops(ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB));
         addDrop(ModBlocks.CHISELED_FLUORITE_BLOCK_WALL);
 
 
         addDrop(ModBlocks.TORCH_BRICKS);
         addDrop(ModBlocks.TORCH_BRICKS_STAIRS);
-        addDrop(ModBlocks.TORCH_BRICKS_SLAB);
+        addDrop(ModBlocks.TORCH_BRICKS_SLAB, slabDrops(ModBlocks.TORCH_BRICKS_SLAB));
         addDrop(ModBlocks.TORCH_BRICKS_WALL);
 
         addDrop(ModBlocks.TORCH_STONE_BRICKS);
         addDrop(ModBlocks.TORCH_STONE_BRICKS_STAIRS);
-        addDrop(ModBlocks.TORCH_STONE_BRICKS_SLAB);
+        addDrop(ModBlocks.TORCH_STONE_BRICKS_SLAB, slabDrops(ModBlocks.TORCH_STONE_BRICKS_SLAB));
         addDrop(ModBlocks.TORCH_STONE_BRICKS_WALL);
 
         addDrop(ModBlocks.TORCH_STONE);
         addDrop(ModBlocks.TORCH_STONE_STAIRS);
-        addDrop(ModBlocks.TORCH_STONE_SLAB);
+        addDrop(ModBlocks.TORCH_STONE_SLAB, slabDrops(ModBlocks.TORCH_STONE_SLAB));
         addDrop(ModBlocks.TORCH_STONE_WALL);
 
         addDrop(ModBlocks.TORCH_STONE_PILLAR);
@@ -86,34 +86,34 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ICED_COBBLESTONE);
         addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS);
         addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS_STAIRS);
-        addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB);
+        addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB, slabDrops(ModBlocks.ICED_CHISELED_STONE_BRICKS_SLAB));
         addDrop(ModBlocks.ICED_CHISELED_STONE_BRICKS_WALL);
 
         addDrop(ModBlocks.ICED_STONE);
         addDrop(ModBlocks.ICED_STONE_STAIRS);
-        addDrop(ModBlocks.ICED_STONE_SLAB);
+        addDrop(ModBlocks.ICED_STONE_SLAB, slabDrops(ModBlocks.ICED_STONE_SLAB));
         addDrop(ModBlocks.ICED_STONE_WALL);
 
         addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS);
         addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS_STAIRS);
-        addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB);
+        addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB, slabDrops(ModBlocks.ICED_CRACKED_STONE_BRICKS_SLAB));
         addDrop(ModBlocks.ICED_CRACKED_STONE_BRICKS_WALL);
 
         addDrop(ModBlocks.ICED_STONE_BRICKS);
         addDrop(ModBlocks.ICED_STONE_BRICKS_STAIRS);
-        addDrop(ModBlocks.ICED_STONE_BRICKS_SLAB);
+        addDrop(ModBlocks.ICED_STONE_BRICKS_SLAB, slabDrops(ModBlocks.ICED_STONE_BRICKS_SLAB));
         addDrop(ModBlocks.ICED_STONE_BRICKS_WALL);
         addDrop(ModBlocks.IMPURE_ZAROSITE_BLOCK);
         addDrop(ModBlocks.ZAROSITE_BLOCK);
 
         addDrop(ModBlocks.LAB_TILES);
         addDrop(ModBlocks.LAB_TILES_STAIRS);
-        addDrop(ModBlocks.LAB_TILES_SLAB);
+        addDrop(ModBlocks.LAB_TILES_SLAB, slabDrops(ModBlocks.LAB_TILES_SLAB));
         addDrop(ModBlocks.LAB_TILES_WALL);
 
         addDrop(ModBlocks.CORRUPTED_LAB_TILES);
         addDrop(ModBlocks.CORRUPTED_LAB_TILES_STAIRS);
-        addDrop(ModBlocks.CORRUPTED_LAB_TILES_SLAB);
+        addDrop(ModBlocks.CORRUPTED_LAB_TILES_SLAB, slabDrops(ModBlocks.CORRUPTED_LAB_TILES_SLAB));
         addDrop(ModBlocks.CORRUPTED_LAB_TILES_WALL);
 
 
@@ -242,6 +242,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_PANDAZITE_ORE, oreDrops(ModBlocks.DEEPSLATE_PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
         addDrop(ModBlocks.TORCH_STONE_PANDAZITE_ORE, oreDrops(ModBlocks.TORCH_STONE_PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
         addDrop(ModBlocks.RED_SANDSTONE_PANDAZITE_ORE, oreDrops(ModBlocks.RED_SANDSTONE_PANDAZITE_ORE, ModItems.RAW_PANDAZITE));
+        addDrop(ModBlocks.DEEP_ICE_FLUORITE_ORE, fluoriteOreDrops(ModBlocks.DEEP_ICE_FLUORITE_ORE, ModItems.FLUORITE));
 
         addDrop(ModBlocks.ODMENTIUM_ORE, oreDrops(ModBlocks.ODMENTIUM_ORE, ModItems.RAW_ODMENTIUM));
         addDrop(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE, oreDrops(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE, ModItems.RAW_ODMENTIUM));
@@ -256,6 +257,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                 .apply(SetCountLootFunction
                                         .builder(UniformLootNumberProvider
                                                 .create(1.0f,5.0f))))
+                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+    }
+
+    public LootTable.Builder fluoriteOreDrops(Block drop, Item item){
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(item)
+                                .apply(SetCountLootFunction
+                                        .builder(UniformLootNumberProvider
+                                                .create(1.0f,4.0f))))
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
 

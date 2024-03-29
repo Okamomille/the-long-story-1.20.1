@@ -29,6 +29,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> ODMENTIUM_SMELTABLES = List.of(ModBlocks.ODMENTIUM_ORE,ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE,
             ModItems.RAW_ODMENTIUM);
     private static final List<ItemConvertible> ZAROSITE_SMELTABLES = List.of(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
+    private static final List<ItemConvertible> FLUORITE_SMELTABLES = List.of(ModBlocks.DEEP_ICE_FLUORITE_ORE);
     private static final List<ItemConvertible> ICED_STONE = List.of(ModBlocks.ICED_STONE);
     private static final List<ItemConvertible> ICED_COBBLESTONE = List.of(ModBlocks.ICED_COBBLESTONE);
     private static final List<ItemConvertible> ICED_CRACKED_STONE_BRICKS = List.of(ModBlocks.ICED_CRACKED_STONE_BRICKS);
@@ -64,6 +65,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE,
                 0.7f,200,"zarosite_gemstone");
         offerBlasting(exporter, ZAROSITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZAROSITE_GEMSTONE,
+                0.7f,100,"zarosite_gemstone");
+
+        offerSmelting(exporter, FLUORITE_SMELTABLES, RecipeCategory.MISC, ModItems.FLUORITE,
+                0.7f,200,"zarosite_gemstone");
+        offerBlasting(exporter, FLUORITE_SMELTABLES, RecipeCategory.MISC, ModItems.FLUORITE,
                 0.7f,100,"zarosite_gemstone");
 
 
