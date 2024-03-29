@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "thelongstory:amethyst_dp",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1460257443,
+    "frequency": 0.2,
+    "spread_type": "triangular",
+    "spacing": 40,
+    "separation": 10
+  }
+}
