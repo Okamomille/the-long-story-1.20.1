@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "thelongstory:gilded_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 315487948521,
+    "spacing": 30,
+    "separation": 8
+  }
+}

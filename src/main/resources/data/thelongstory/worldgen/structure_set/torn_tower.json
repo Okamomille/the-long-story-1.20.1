@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "thelongstory:torn_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 55448821,
+    "spacing": 30,
+    "separation": 8
+  }
+}
