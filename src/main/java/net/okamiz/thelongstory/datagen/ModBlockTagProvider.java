@@ -25,6 +25,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.DEEP_ICE_REPLACABLES)
                 .add(ModBlocks.DEEP_ICE);
 
+        getOrCreateTagBuilder(ModTags.Blocks.ICE_REPLACABLES)
+                .add(Blocks.PACKED_ICE);
+
         getOrCreateTagBuilder(ModTags.Blocks.TORCH_STONE_REPLACABLES)
                 .add(ModBlocks.TORCH_STONE);
 
@@ -37,6 +40,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TORCH_STONE_THESTONE_ORE)
                 .add(ModBlocks.RED_SANDSTONE_THESTONE_ORE)
                 .add(ModBlocks.DRONIUM_BLOCK)
+
+                .add(ModBlocks.FLUORITE_BLOCK)
+                .add(ModBlocks.FLUORITE_BLOCK_SLAB)
+                .add(ModBlocks.FLUORITE_BLOCK_STAIRS)
+                .add(ModBlocks.FLUORITE_BLOCK_WALL)
+
+                .add(ModBlocks.CHISELED_FLUORITE_BLOCK)
+                .add(ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB)
+                .add(ModBlocks.CHISELED_FLUORITE_BLOCK_STAIRS)
+                .add(ModBlocks.CHISELED_FLUORITE_BLOCK_WALL)
+
+                .add(ModBlocks.FLUORITE_BRICKS)
+                .add(ModBlocks.FLUORITE_BRICKS_SLAB)
+                .add(ModBlocks.FLUORITE_BRICKS_STAIRS)
+                .add(ModBlocks.FLUORITE_BRICKS_WALL)
+                .add(ModBlocks.DEEP_ICE_FLUORITE_ORE)
+
 
 
                 .add(ModBlocks.TORCH_STONE)
@@ -157,6 +177,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.ODMENTIUM_ORE)
                 .add(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE)
+                .add(ModBlocks.DEEP_ICE_FLUORITE_ORE)
                 ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)

@@ -66,6 +66,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
                         entries.add(ModBlocks.ZAROSITE_BLOCK);
+                        entries.add(ModBlocks.DEEP_ICE_FLUORITE_ORE);
                         entries.add(ModBlocks.DRONIUM_BLOCK);
 
 

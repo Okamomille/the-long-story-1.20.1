@@ -36,6 +36,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> THESTONE_ORE_KEY = registryKey("thestone_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> IMPURE_ZAROSITE_ORE_KEY = registryKey("impure_zarosite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DEEP_ICE_ZAROSITE_ORE_KEY = registryKey("deep_ice_zarosite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEEP_ICE_FLUORITE_ORE_KEY = registryKey("deep_ice_fluorite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PANDAZITE_ORE_KEY = registryKey("pandazite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ODMENTIUM_ORE_KEY = registryKey("odmentium_ore");
 
@@ -65,6 +66,7 @@ public class ModConfiguredFeatures {
         RuleTest stoneReplacables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplacables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest deepIceReplacables = new TagMatchRuleTest(ModTags.Blocks.DEEP_ICE_REPLACABLES);
+        RuleTest iceReplacables = new TagMatchRuleTest(ModTags.Blocks.ICE_REPLACABLES);
         RuleTest torchStoneReplacables = new TagMatchRuleTest(ModTags.Blocks.TORCH_STONE_REPLACABLES);
         RuleTest redSandstoneReplacables = new TagMatchRuleTest(ModTags.Blocks.RED_SANDSTONE_REPLACABLES);
 
@@ -81,6 +83,10 @@ public class ModConfiguredFeatures {
 
         List<OreFeatureConfig.Target> simulationZarositeOre =
                 List.of(OreFeatureConfig.createTarget(deepIceReplacables, ModBlocks.DEEP_ICE_ZAROSITE_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> simulationFluoriteOre =
+                List.of(OreFeatureConfig.createTarget(deepIceReplacables, ModBlocks.DEEP_ICE_FLUORITE_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(iceReplacables, ModBlocks.DEEP_ICE_FLUORITE_ORE.getDefaultState()));
 
 
         List<OreFeatureConfig.Target> simulationPandaziteOre =
@@ -105,6 +111,8 @@ public class ModConfiguredFeatures {
         register(context, ODMENTIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationOdmentiumOre, 6));
 
         register(context, DEEP_ICE_ZAROSITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationZarositeOre, 4));
+
+        register(context, DEEP_ICE_FLUORITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(simulationFluoriteOre, 8));
 
 
 

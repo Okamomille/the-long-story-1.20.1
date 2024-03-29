@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "zarosite_gemstone",
+  "ingredient": {
+    "item": "thelongstory:deep_ice_fluorite_ore"
+  },
+  "result": "thelongstory:fluorite"
+}

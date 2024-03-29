@@ -257,6 +257,8 @@ public class ModBlocks {
     public static final Block PANDAZITE_BLOCK = registerBlock("pandazite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
 
+    public static final Block DEEP_ICE_FLUORITE_ORE = registerBlock("deep_ice_fluorite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
 
     public static final Block DEEP_ICE_ZAROSITE_ORE = registerBlock("deep_ice_zarosite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(ModBlocks.DEEP_ICE), UniformIntProvider.create(2, 4)));
