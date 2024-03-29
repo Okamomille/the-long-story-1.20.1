@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "thelongstory:chiseled_fluorite_block"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "OOO"
+  ],
+  "result": {
+    "count": 4,
+    "item": "thelongstory:chiseled_fluorite_block_wall"
+  },
+  "show_notification": true
+}

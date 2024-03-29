@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:stonecutting",
+  "category": "building",
+  "ingredient": [
+    {
+      "item": "thelongstory:fluorite_block"
+    },
+    {
+      "item": "thelongstory:chiseled_fluorite_block"
+    },
+    {
+      "item": "thelongstory:fluorite_bricks"
+    }
+  ],
+  "result": "thelongstory:fluorite_pillar",
+  "count": 1
+}

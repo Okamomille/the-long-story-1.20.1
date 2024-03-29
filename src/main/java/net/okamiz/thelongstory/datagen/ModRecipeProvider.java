@@ -1252,6 +1252,55 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+
+        createStairsRecipe(ModBlocks.FLUORITE_BLOCK_STAIRS, Ingredient.ofItems(ModBlocks.FLUORITE_BLOCK))
+                .criterion(hasItem(ModBlocks.FLUORITE_BLOCK),conditionsFromItem(ModBlocks.FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLUORITE_BLOCK_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.FLUORITE_BLOCK_SLAB, Ingredient.ofItems(ModBlocks.FLUORITE_BLOCK))
+                .criterion(hasItem(ModBlocks.FLUORITE_BLOCK),conditionsFromItem(ModBlocks.FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLUORITE_BLOCK_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.FLUORITE_BLOCK_WALL, 4)
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.FLUORITE_BLOCK)
+                .criterion(hasItem(ModBlocks.FLUORITE_BLOCK),conditionsFromItem(ModBlocks.FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier("fluorite_block_wall_recipe"));
+
+        createStairsRecipe(ModBlocks.CHISELED_FLUORITE_BLOCK_STAIRS, Ingredient.ofItems(ModBlocks.CHISELED_FLUORITE_BLOCK))
+                .criterion(hasItem(ModBlocks.CHISELED_FLUORITE_BLOCK),conditionsFromItem(ModBlocks.CHISELED_FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CHISELED_FLUORITE_BLOCK_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB, Ingredient.ofItems(ModBlocks.CHISELED_FLUORITE_BLOCK))
+                .criterion(hasItem(ModBlocks.CHISELED_FLUORITE_BLOCK),conditionsFromItem(ModBlocks.CHISELED_FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CHISELED_FLUORITE_BLOCK_WALL, 4)
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.CHISELED_FLUORITE_BLOCK)
+                .criterion(hasItem(ModBlocks.CHISELED_FLUORITE_BLOCK),conditionsFromItem(ModBlocks.CHISELED_FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier("chiseled_fluorite_block_wall_recipe"));
+
+        createStairsRecipe(ModBlocks.FLUORITE_BRICKS_STAIRS, Ingredient.ofItems(ModBlocks.FLUORITE_BRICKS))
+                .criterion(hasItem(ModBlocks.FLUORITE_BRICKS),conditionsFromItem(ModBlocks.FLUORITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLUORITE_BRICKS_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS,ModBlocks.FLUORITE_BRICKS_SLAB, Ingredient.ofItems(ModBlocks.FLUORITE_BRICKS))
+                .criterion(hasItem(ModBlocks.FLUORITE_BRICKS),conditionsFromItem(ModBlocks.FLUORITE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FLUORITE_BRICKS_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.FLUORITE_BRICKS_WALL, 4)
+                .pattern("OOO")
+                .pattern("OOO")
+                .input('O', ModBlocks.FLUORITE_BRICKS)
+                .criterion(hasItem(ModBlocks.FLUORITE_BRICKS),conditionsFromItem(ModBlocks.FLUORITE_BRICKS))
+                .offerTo(exporter, new Identifier("fluorite_bricks_wall_recipe"));
+
+
+
+
         // APPLES
 
 

@@ -44,6 +44,8 @@ public class ModItemGroups {
                         entries.add(ModItems.DRONIUM_INGOT);
                         entries.add(ModItems.DRONIUM_POWDER);
 
+                        entries.add(ModItems.FLUORITE);
+
                         entries.add(ModBlocks.THESTONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_THESTONE_ORE);
                         entries.add(ModBlocks.TORCH_STONE_THESTONE_ORE);
@@ -79,6 +81,24 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FROSTED_ICE);
                         entries.add(ModBlocks.TORCH_SAND);
                         entries.add(ModBlocks.TORCH_PINK_SAND);
+
+                        entries.add(ModBlocks.FLUORITE_PILLAR);
+                        entries.add(ModBlocks.FLUORITE_BLOCK);
+                        entries.add(ModBlocks.FLUORITE_BLOCK_STAIRS);
+                        entries.add(ModBlocks.FLUORITE_BLOCK_SLAB);
+                        entries.add(ModBlocks.FLUORITE_BLOCK_WALL);
+
+                        entries.add(ModBlocks.CHISELED_FLUORITE_BLOCK);
+                        entries.add(ModBlocks.CHISELED_FLUORITE_BLOCK_STAIRS);
+                        entries.add(ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB);
+                        entries.add(ModBlocks.CHISELED_FLUORITE_BLOCK_WALL);
+
+                        entries.add(ModBlocks.FLUORITE_BRICKS);
+                        entries.add(ModBlocks.FLUORITE_BRICKS_STAIRS);
+                        entries.add(ModBlocks.FLUORITE_BRICKS_SLAB);
+                        entries.add(ModBlocks.FLUORITE_BRICKS_WALL);
+
+
 
                         entries.add(ModBlocks.TORCH_STONE_PILLAR);
                         entries.add(ModBlocks.TORCH_STONE);

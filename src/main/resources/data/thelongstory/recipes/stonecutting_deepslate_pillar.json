@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:stonecutting",
+  "category": "building",
+  "ingredient": [
+    {
+      "item": "minecraft:deepslate"
+    },
+    {
+      "item": "minecraft:cobbled_deepslate"
+    },
+    {
+      "item": "minecraft:chiseled_deepslate"
+    },
+    {
+      "item": "minecraft:deepslate_tiles"
+    }
+  ],
+  "result": "thelongstory:deepslate_pillar",
+  "count": 1
+}

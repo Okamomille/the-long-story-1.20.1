@@ -8,6 +8,9 @@
     "thelongstory:iced_stone_bricks_wall",
     "thelongstory:torch_stone_wall",
     "thelongstory:torch_bricks_wall",
-    "thelongstory:torch_stone_bricks_wall"
+    "thelongstory:torch_stone_bricks_wall",
+    "thelongstory:fluorite_block_wall",
+    "thelongstory:fluorite_bricks_wall",
+    "thelongstory:chiseled_fluorite_block_wall"
   ]
 }

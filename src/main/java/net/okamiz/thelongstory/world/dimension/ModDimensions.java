@@ -31,8 +31,8 @@ public class ModDimensions {
                 false, // ultraWarm
                 true, // natural
                 16.0, // coordinateScale
-                true, // bedWorks
-                false, // respawnAnchorWorks
+                false, // bedWorks
+                true, // respawnAnchorWorks
                 -64, // minY
                 384, // height
                 384, // logicalHeight

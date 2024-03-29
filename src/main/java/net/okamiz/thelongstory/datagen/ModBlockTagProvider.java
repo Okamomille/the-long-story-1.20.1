@@ -231,6 +231,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TORCH_STONE_SLAB)
                 .add(ModBlocks.TORCH_BRICKS_SLAB)
                 .add(ModBlocks.TORCH_STONE_BRICKS_SLAB)
+                .add(ModBlocks.FLUORITE_BLOCK_SLAB)
+                .add(ModBlocks.FLUORITE_BRICKS_SLAB)
+                .add(ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -242,6 +245,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TORCH_STONE_STAIRS)
                 .add(ModBlocks.TORCH_BRICKS_STAIRS)
                 .add(ModBlocks.TORCH_STONE_BRICKS_STAIRS)
+                .add(ModBlocks.FLUORITE_BLOCK_STAIRS)
+                .add(ModBlocks.FLUORITE_BRICKS_STAIRS)
+                .add(ModBlocks.CHISELED_FLUORITE_BLOCK_STAIRS)
         ;
 
         getOrCreateTagBuilder(BlockTags.WALLS)
@@ -253,6 +259,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TORCH_STONE_WALL)
                 .add(ModBlocks.TORCH_BRICKS_WALL)
                 .add(ModBlocks.TORCH_STONE_BRICKS_WALL)
+                .add(ModBlocks.FLUORITE_BLOCK_WALL)
+                .add(ModBlocks.FLUORITE_BRICKS_WALL)
+                .add(ModBlocks.CHISELED_FLUORITE_BLOCK_WALL)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)

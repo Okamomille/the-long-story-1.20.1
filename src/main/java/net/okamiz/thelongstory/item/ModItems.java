@@ -53,6 +53,8 @@ public class ModItems {
     public static final Item RAW_ODMENTIUM = registerItem("raw_odmentium", new Item(new FabricItemSettings()));
     public static final Item ODMENTIUM_INGOT = registerItem("odmentium_ingot", new Item(new FabricItemSettings()));
 
+    public static final Item FLUORITE = registerItem("fluorite", new Item(new FabricItemSettings()));
+
 
 
     // SYSTEMS MATERIALS
