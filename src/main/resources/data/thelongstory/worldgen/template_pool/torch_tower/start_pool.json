@@ -1,0 +1,31 @@
+{
+
+
+  "name": "thelongstory:torch_tower/start_pool",
+
+
+  "fallback": "minecraft:empty",
+
+
+  "elements": [
+    {
+
+
+      "weight": 2,
+      "element": {
+
+
+        "location": "thelongstory:towers/torch_tower",
+
+
+        "processors": "minecraft:empty",
+
+
+        "projection": "rigid",
+
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
