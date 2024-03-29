@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "thelongstory:block/chiseled_fluorite_block",
+    "side": "thelongstory:block/chiseled_fluorite_block",
+    "top": "thelongstory:block/chiseled_fluorite_block"
+  }
+}

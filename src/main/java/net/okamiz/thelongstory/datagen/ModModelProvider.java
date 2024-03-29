@@ -45,6 +45,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.IMPURE_GLITCHED_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURE_GLITCHED_BLOCK);
         blockStateModelGenerator.registerLog(ModBlocks.DEEPSLATE_PILLAR).log(ModBlocks.DEEPSLATE_PILLAR).wood(ModBlocks.DEEPSLATE_PILLAR_ALL);
+        blockStateModelGenerator.registerLog(ModBlocks.FLUORITE_PILLAR).log(ModBlocks.FLUORITE_PILLAR).wood(ModBlocks.FLUORITE_PILLAR_ALL);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIMULATION_TELEPORTER);
 
@@ -54,6 +55,23 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUSHED_BONES_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROSTED_ICE);
+
+
+        BlockStateModelGenerator.BlockTexturePool chiseledFluoriteBlockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHISELED_FLUORITE_BLOCK);
+        chiseledFluoriteBlockPool.stairs(ModBlocks.CHISELED_FLUORITE_BLOCK_STAIRS);
+        chiseledFluoriteBlockPool.slab(ModBlocks.CHISELED_FLUORITE_BLOCK_SLAB);
+        chiseledFluoriteBlockPool.wall(ModBlocks.CHISELED_FLUORITE_BLOCK_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool fluoriteBlockPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FLUORITE_BLOCK);
+        fluoriteBlockPool.stairs(ModBlocks.FLUORITE_BLOCK_STAIRS);
+        fluoriteBlockPool.slab(ModBlocks.FLUORITE_BLOCK_SLAB);
+        fluoriteBlockPool.wall(ModBlocks.FLUORITE_BLOCK_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool fluoriteBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FLUORITE_BRICKS);
+        fluoriteBricksPool.stairs(ModBlocks.FLUORITE_BRICKS_STAIRS);
+        fluoriteBricksPool.slab(ModBlocks.FLUORITE_BRICKS_SLAB);
+        fluoriteBricksPool.wall(ModBlocks.FLUORITE_BRICKS_WALL);
+
 
 
 
@@ -252,6 +270,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.ZAROSITE_GEMSTONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ZAROSITE_SHARD, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.FLUORITE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GREEN_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURE_AMETHYST_SHARD, Models.GENERATED);

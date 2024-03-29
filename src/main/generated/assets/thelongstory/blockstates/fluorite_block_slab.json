@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thelongstory:block/fluorite_block_slab"
+    },
+    "type=double": {
+      "model": "thelongstory:block/fluorite_block"
+    },
+    "type=top": {
+      "model": "thelongstory:block/fluorite_block_slab_top"
+    }
+  }
+}

@@ -42,6 +42,7 @@
   "item.thelongstory.dronium_powder" : "Dronium Powder",
 
   "item.thelongstory.carbon_ingot" : "Carbon Ingot",
+  "item.thelongstory.fluorite" : "Fluorite",
 
 
 
@@ -210,6 +211,28 @@
   "block.thelongstory.deep_ice" : "Deep Ice",
   "block.thelongstory.deep_ice_zarosite_ore" : "Deep Ice Zarosite Ore",
   "block.thelongstory.frosted_ice" : "Frosted Ice",
+
+
+
+
+
+  "block.thelongstory.fluorite_block_pillar" : "Fluorite Block Pillar",
+  "block.thelongstory.fluorite_block" : "Fluorite Block",
+  "block.thelongstory.fluorite_block_slab" : "Fluorite Block Slab",
+  "block.thelongstory.fluorite_block_stairs" : "Fluorite Block Stairs",
+  "block.thelongstory.fluorite_block_wall" : "Fluorite Block Wall",
+
+  "block.thelongstory.fluorite_bricks" : "Fluorite Bricks",
+  "block.thelongstory.fluorite_bricks_slab" : "Fluorite Bricks Slab",
+  "block.thelongstory.fluorite_bricks_stairs" : "Fluorite Bricks Stairs",
+  "block.thelongstory.fluorite_bricks_wall" : "Fluorite Bricks Wall",
+
+  "block.thelongstory.chiseled_fluorite_block" : "Chiseled Fluorite Block",
+  "block.thelongstory.chiseled_fluorite_block_slab" : "Chiseled Fluorite Block Slab",
+  "block.thelongstory.chiseled_fluorite_block_stairs" : "Chiseled Fluorite Block Stairs",
+  "block.thelongstory.chiseled_fluorite_block_wall" : "Chiseled Fluorite Block Wall",
+
+
 
 
 

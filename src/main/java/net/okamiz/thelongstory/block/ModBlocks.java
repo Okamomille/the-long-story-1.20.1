@@ -38,6 +38,46 @@ public class ModBlocks {
             new ModTrapdoorBlock(FabricBlockSettings.copyOf(Blocks.BAMBOO_TRAPDOOR),BlockSetType.BAMBOO));
 
 
+
+
+    public static final Block FLUORITE_PILLAR = registerBlock("fluorite_pillar",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block FLUORITE_PILLAR_ALL = registerBlock("fluorite_pillar_all",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+
+
+
+    public static final Block FLUORITE_BRICKS = registerBlock("fluorite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block FLUORITE_BRICKS_STAIRS = registerBlock("fluorite_bricks_stairs",
+            new StairsBlock(ModBlocks.FLUORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.FLUORITE_BRICKS)));
+    public static final Block FLUORITE_BRICKS_SLAB = registerBlock("fluorite_bricks_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.FLUORITE_BRICKS)));
+    public static final Block FLUORITE_BRICKS_WALL = registerBlock("fluorite_bricks_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.FLUORITE_BRICKS)));
+
+    public static final Block FLUORITE_BLOCK = registerBlock("fluorite_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block FLUORITE_BLOCK_STAIRS = registerBlock("fluorite_block_stairs",
+            new StairsBlock(ModBlocks.FLUORITE_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.FLUORITE_BLOCK)));
+    public static final Block FLUORITE_BLOCK_SLAB = registerBlock("fluorite_block_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.FLUORITE_BLOCK)));
+    public static final Block FLUORITE_BLOCK_WALL = registerBlock("fluorite_block_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.FLUORITE_BLOCK)));
+
+    public static final Block CHISELED_FLUORITE_BLOCK = registerBlock("chiseled_fluorite_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block CHISELED_FLUORITE_BLOCK_STAIRS = registerBlock("chiseled_fluorite_block_stairs",
+            new StairsBlock(ModBlocks.CHISELED_FLUORITE_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(ModBlocks.CHISELED_FLUORITE_BLOCK)));
+    public static final Block CHISELED_FLUORITE_BLOCK_SLAB = registerBlock("chiseled_fluorite_block_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(ModBlocks.CHISELED_FLUORITE_BLOCK)));
+    public static final Block CHISELED_FLUORITE_BLOCK_WALL = registerBlock("chiseled_fluorite_block_wall",
+            new WallBlock(FabricBlockSettings.copyOf(ModBlocks.CHISELED_FLUORITE_BLOCK)));
+
+
+
+
+
     public static final Block TORCH_STONE_PILLAR = registerBlock("torch_stone_pillar",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block TORCH_STONE_PILLAR_ALL = registerBlock("torch_stone_pillar_all",

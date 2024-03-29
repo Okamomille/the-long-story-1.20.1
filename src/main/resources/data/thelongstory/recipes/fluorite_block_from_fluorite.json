@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "thelongstory:fluorite"
+    }
+  },
+  "result": {
+    "item": "thelongstory:fluorite_block",
+    "count": 1
+  }
+}

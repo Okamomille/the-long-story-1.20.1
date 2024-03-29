@@ -8,6 +8,9 @@
     "thelongstory:iced_stone_bricks_stairs",
     "thelongstory:torch_stone_stairs",
     "thelongstory:torch_bricks_stairs",
-    "thelongstory:torch_stone_bricks_stairs"
+    "thelongstory:torch_stone_bricks_stairs",
+    "thelongstory:fluorite_block_stairs",
+    "thelongstory:fluorite_bricks_stairs",
+    "thelongstory:chiseled_fluorite_block_stairs"
   ]
 }
