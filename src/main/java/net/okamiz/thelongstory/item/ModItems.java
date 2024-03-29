@@ -152,7 +152,6 @@ public class ModItems {
 
 
 
-
     //FOOD ITEMS -----------------
 
     public static final Item VITALY_FRUIT = registerItem("vitaly_fruit", new Item(new FabricItemSettings().food(ModFoodComponents.VITALY_FRUIT)));
