@@ -2,18 +2,14 @@
 
   "structures": [
     {
-      "structure": "thelongstory:dark_dungeon",
+      "structure": "thelongstory:overgrown_dp",
       "weight": 1
     }
   ],
   "placement": {
 
     "salt": 14458588,
-
-
     "spacing": 20,
-
-
     "separation": 12,
 
 
