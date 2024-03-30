@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "thelongstory:snow_forest",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "start_pool": "thelongstory:frozen_dp/start_pool",
+  "size": 7,
+  "start_height": {
+    "type": "minecraft:constant",
+    "value": {
+      "absolute": -2
+    }
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

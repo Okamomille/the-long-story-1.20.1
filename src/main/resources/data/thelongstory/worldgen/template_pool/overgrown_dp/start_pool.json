@@ -1,0 +1,31 @@
+{
+
+
+  "name": "thelongstory:overgrown_dp/start_pool",
+
+
+  "fallback": "minecraft:empty",
+
+
+  "elements": [
+    {
+
+
+      "weight": 2,
+      "element": {
+
+
+        "location": "thelongstory:dungeon_pillars/overgrown_dp",
+
+
+        "processors": "minecraft:empty",
+
+
+        "projection": "rigid",
+
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
