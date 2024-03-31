@@ -2,19 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "minecraft:stick"
-    },
     "X": {
-      "item": "minecraft:coal"
+      "item": "thelongstory:carbon_ingot"
     }
   },
   "pattern": [
-    " X ",
-    "XBX",
-    " X "
+    "X",
+    "X"
   ],
   "result": {
+    "count": 4,
     "item": "thelongstory:carbon_stick"
   },
   "show_notification": true
