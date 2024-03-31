@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stick": {
+    "has_carbon_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:coal"
+              "thelongstory:carbon_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_stick",
+      "has_carbon_ingot",
       "has_the_recipe"
     ]
   ],

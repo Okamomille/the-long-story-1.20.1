@@ -1696,13 +1696,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.CARBON_STICK, 1)
-                .pattern(" X ")
-                .pattern("XBX")
-                .pattern(" X ")
-                .input('X', Items.COAL)
-                .input('B', Items.STICK)
-                .criterion(hasItem(Items.STICK),conditionsFromItem(Items.COAL))
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.CARBON_STICK, 4)
+                .pattern("X")
+                .pattern("X")
+                .input('X', ModItems.CARBON_INGOT)
+                .criterion(hasItem(ModItems.CARBON_INGOT),conditionsFromItem(ModItems.CARBON_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CARBON_STICK)));
 
 

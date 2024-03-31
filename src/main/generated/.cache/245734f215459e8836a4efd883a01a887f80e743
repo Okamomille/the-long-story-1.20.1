@@ -1,14 +1,14 @@
-// 1.20.1	2024-03-29T16:19:18.8620354	The Long Story/Tags for minecraft:block
+// 1.20.1	2024-03-31T14:56:36.0524094	The Long Story/Tags for minecraft:block
 c91125b1959919d2a9b818fb7414875e52ad5258 data\minecraft\tags\blocks\walls.json
 e25aedbc91b4b90ffb1d06dacac9e378ced2a4e6 data\minecraft\tags\blocks\mineable\axe.json
-6829435014c0662fc1471b468169bc6b5539f1c8 data\minecraft\tags\blocks\wooden_stairs.json
 a0f6a5e2622ead2a377ebc5fdd8c9f0ea5cf587c data\minecraft\tags\blocks\mineable\pickaxe.json
+6829435014c0662fc1471b468169bc6b5539f1c8 data\minecraft\tags\blocks\wooden_stairs.json
 f8b995c09cb2c523881314ffc156f609011a34f7 data\thelongstory\tags\blocks\red_sandstone_replacables.json
 00354dcb59a1105500f6181ff850f588bb45f7d3 data\minecraft\tags\blocks\needs_diamond_tool.json
 1b28dcb283ff93b86e6a8ea0bc888484e9d960f0 data\minecraft\tags\blocks\needs_iron_tool.json
 46f3420cffb45e0c5306fdd986704b4b26744651 data\minecraft\tags\blocks\logs.json
-c8ec28f1b17f4e98c30660e8c46d481affff3b48 data\minecraft\tags\blocks\wooden_trapdoors.json
 5961608a3fe97474eacead44f6b04d7357a4239f data\thelongstory\tags\blocks\deep_ice_replacable.json
+c8ec28f1b17f4e98c30660e8c46d481affff3b48 data\minecraft\tags\blocks\wooden_trapdoors.json
 6d7c032923638d614f89fad664a775a75529bee1 data\minecraft\tags\blocks\wooden_doors.json
 5277e090dc56ec2118be47567d42c96abdeaec56 data\minecraft\tags\blocks\stairs.json
 1218c3c20345e019c53ccf697948bbd881b0f4e2 data\minecraft\tags\blocks\slabs.json
