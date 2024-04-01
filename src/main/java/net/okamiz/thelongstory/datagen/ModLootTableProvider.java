@@ -50,6 +50,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PURE_GLITCHED_BLOCK);
 
 
+        addDrop(ModBlocks.CARBON_BLOCK);
+        addDrop(ModBlocks.CHISELED_CARBON_BLOCK);
+        addDrop(ModBlocks.CARBON_BRICKS);
+        addDrop(ModBlocks.CARBON_TILES);
+
+
+        addDrop(ModBlocks.FLUORITE_PILLAR);
         addDrop(ModBlocks.FLUORITE_BRICKS);
         addDrop(ModBlocks.FLUORITE_BRICKS_STAIRS);
         addDrop(ModBlocks.FLUORITE_BRICKS_SLAB, slabDrops(ModBlocks.FLUORITE_BRICKS_SLAB));

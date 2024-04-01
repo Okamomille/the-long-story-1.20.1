@@ -48,7 +48,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.DEEPSLATE_PILLAR).log(ModBlocks.DEEPSLATE_PILLAR).wood(ModBlocks.DEEPSLATE_PILLAR_ALL);
         blockStateModelGenerator.registerLog(ModBlocks.FLUORITE_PILLAR).log(ModBlocks.FLUORITE_PILLAR).wood(ModBlocks.FLUORITE_PILLAR_ALL);
 
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SIMULATION_TELEPORTER);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CARBON_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CARBON_TILES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CARBON_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_CARBON_BLOCK);
 
         blockStateModelGenerator.registerLog(ModBlocks.TORCH_STONE_PILLAR).log(ModBlocks.TORCH_STONE_PILLAR).wood(ModBlocks.TORCH_STONE_PILLAR_ALL);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TORCH_SAND);

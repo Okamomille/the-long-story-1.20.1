@@ -214,6 +214,10 @@
 
 
 
+  "block.thelongstory.carbon_block" : "Carbon Block",
+  "block.thelongstory.chiseled_carbon_block" : "Chiseled Carbon Block",
+  "block.thelongstory.carbon_bricks" : "Carbon Bricks",
+  "block.thelongstory.carbon_tiles" : "Carbon Tiles",
 
   "block.thelongstory.deep_ice_fluorite_ore" : "Fluorite Ore",
   "block.thelongstory.fluorite_pillar" : "Fluorite Pillar",

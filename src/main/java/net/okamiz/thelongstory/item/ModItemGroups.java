@@ -83,6 +83,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TORCH_SAND);
                         entries.add(ModBlocks.TORCH_PINK_SAND);
 
+                        entries.add(ModBlocks.CARBON_BLOCK);
+                        entries.add(ModBlocks.CHISELED_CARBON_BLOCK);
+                        entries.add(ModBlocks.CARBON_BRICKS);
+                        entries.add(ModBlocks.CARBON_TILES);
+
+
                         entries.add(ModBlocks.FLUORITE_PILLAR);
                         entries.add(ModBlocks.FLUORITE_BLOCK);
                         entries.add(ModBlocks.FLUORITE_BLOCK_STAIRS);

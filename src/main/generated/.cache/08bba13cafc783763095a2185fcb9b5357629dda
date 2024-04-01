@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-31T14:56:36.0492673	The Long Story/Recipes
+// 1.20.1	2024-04-01T13:28:55.929029	The Long Story/Recipes
 4de4b40e30a417131714507663ca09ffbba84c1f data\thelongstory\advancements\recipes\misc\thestone_dust_from_smelting_red_sandstone_thestone_ore.json
 ec874904c03616e0049150cd3843922ee4c0ef98 data\thelongstory\advancements\recipes\combat\impure_zarosite_chestplate.json
 2fa786718bc3875c5eebc7589b417d492edd6652 data\thelongstory\advancements\recipes\misc\iron_apple.json
@@ -137,8 +137,8 @@ ec40f1db674f5b3eb6c766bff68904cbdda7987c data\thelongstory\advancements\recipes\
 2826585e00245009d79dcb8afe9cbaa3b4a7a5f6 data\thelongstory\advancements\recipes\redstone\egroric_button.json
 5a121263fb720a38ea185d417ba90af993638cf3 data\thelongstory\recipes\oast_planks_from_log.json
 83a0a01494a72db247415f08182cb7170bab85df data\thelongstory\recipes\odmentium_ingot_from_smelting_raw_odmentium.json
-e39d3b181764a8a8e4a52e512529cfadd114b097 data\thelongstory\recipes\fluorite_block_slab.json
 d451e6ff6254aa132344b70335662d65d5a60943 data\thelongstory\advancements\recipes\misc\torch_pillar_recipe.json
+e39d3b181764a8a8e4a52e512529cfadd114b097 data\thelongstory\recipes\fluorite_block_slab.json
 946d9e4436098e5289860870c2269094f378e254 data\thelongstory\advancements\recipes\tools\green_shard_pickaxe.json
 745a63395ebac23720c4f202f8adf6d6ffca456d data\thelongstory\advancements\recipes\tools\impure_zarosite_pickaxe.json
 c68586d8bcb21c7fc402a3a583a0249b21d5b085 data\thelongstory\advancements\recipes\tools\stone_hoe_left.json
