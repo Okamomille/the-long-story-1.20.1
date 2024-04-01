@@ -40,13 +40,24 @@ public class ModBlocks {
 
 
 
+
+// ADDING CARBON
+
+    public static final Block CARBON_BLOCK = registerBlock("carbon_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+    public static final Block CHISELED_CARBON_BLOCK = registerBlock("chiseled_carbon_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+    public static final Block CARBON_BRICKS = registerBlock("carbon_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+    public static final Block CARBON_TILES = registerBlock("carbon_tiles",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+
+
+
     public static final Block FLUORITE_PILLAR = registerBlock("fluorite_pillar",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block FLUORITE_PILLAR_ALL = registerBlock("fluorite_pillar_all",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
-
-
-
     public static final Block FLUORITE_BRICKS = registerBlock("fluorite_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block FLUORITE_BRICKS_STAIRS = registerBlock("fluorite_bricks_stairs",
