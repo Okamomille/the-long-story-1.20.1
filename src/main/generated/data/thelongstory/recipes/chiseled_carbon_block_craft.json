@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "thelongstory:carbon_block"
+    }
+  },
+  "pattern": [
+    " X ",
+    "X X",
+    " X "
+  ],
+  "result": {
+    "count": 4,
+    "item": "thelongstory:chiseled_carbon_block"
+  },
+  "show_notification": true
+}

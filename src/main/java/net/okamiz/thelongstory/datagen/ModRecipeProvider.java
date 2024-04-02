@@ -85,6 +85,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f,200,"zarosite_gemstone");
 
 
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.CARBON_INGOT, RecipeCategory.MISC,
+                ModBlocks.CARBON_BLOCK);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.IMPURE_ZAROSITE_INGOT, RecipeCategory.MISC,
                 ModBlocks.IMPURE_ZAROSITE_BLOCK);
@@ -1466,6 +1468,52 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('O', Items.IRON_INGOT)
                 .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter, new Identifier("carbon_ingot_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CHISELED_CARBON_BLOCK, 4)
+                .pattern(" X ")
+                .pattern("X X")
+                .pattern(" X ")
+                .input('X', ModBlocks.CARBON_BLOCK)
+                .criterion(hasItem(ModBlocks.CARBON_BLOCK),conditionsFromItem(ModBlocks.CARBON_BLOCK))
+                .offerTo(exporter, new Identifier("chiseled_carbon_block_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CARBON_BRICKS, 4)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', ModBlocks.CARBON_BLOCK)
+                .criterion(hasItem(ModBlocks.CARBON_BLOCK),conditionsFromItem(ModBlocks.CARBON_BLOCK))
+                .offerTo(exporter, new Identifier("carbon_bricks_craft"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CARBON_TILES, 1)
+                .input(ModBlocks.CARBON_BLOCK)
+                .criterion(hasItem(ModBlocks.CARBON_BLOCK),conditionsFromItem(ModBlocks.CARBON_BLOCK))
+                .offerTo(exporter, new Identifier("carbon_tiles_craft"));
+
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.CHISELED_FLUORITE_BLOCK, 4)
+                .pattern(" X ")
+                .pattern("X X")
+                .pattern(" X ")
+                .input('X', ModBlocks.FLUORITE_BLOCK)
+                .criterion(hasItem(ModBlocks.FLUORITE_BLOCK),conditionsFromItem(ModBlocks.FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier("chiseled_fluorite_block_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.FLUORITE_BRICKS, 4)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', ModBlocks.FLUORITE_BLOCK)
+                .criterion(hasItem(ModBlocks.FLUORITE_BLOCK),conditionsFromItem(ModBlocks.FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier("fluorite_bricks_craft"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModBlocks.FLUORITE_PILLAR, 6)
+                .pattern("X X")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModBlocks.FLUORITE_BLOCK)
+                .criterion(hasItem(ModBlocks.FLUORITE_BLOCK),conditionsFromItem(ModBlocks.FLUORITE_BLOCK))
+                .offerTo(exporter, new Identifier("fluorite_pillar_craft"));
 
 
 
