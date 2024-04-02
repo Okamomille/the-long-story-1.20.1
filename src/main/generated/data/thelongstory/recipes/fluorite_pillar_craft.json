@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "thelongstory:fluorite_block"
+    }
+  },
+  "pattern": [
+    "X X",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "count": 6,
+    "item": "thelongstory:fluorite_pillar"
+  },
+  "show_notification": true
+}
