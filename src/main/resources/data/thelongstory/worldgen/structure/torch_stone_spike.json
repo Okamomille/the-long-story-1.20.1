@@ -4,7 +4,7 @@
     "thelongstory:torch_desert",
     "thelongstory:torch_pink_desert"
   ],
-  "step": "surface_structures",
+  "step": "raw_generation",
   "spawn_overrides": {},
   "start_pool": "thelongstory:torch_stone_spike/start_pool",
   "size": 6,

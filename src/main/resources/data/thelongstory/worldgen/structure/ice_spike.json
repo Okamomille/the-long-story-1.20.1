@@ -3,7 +3,7 @@
   "biomes":
     "thelongstory:snow_forest",
 
-  "step": "surface_structures",
+  "step": "raw_generation",
   "spawn_overrides": {},
   "start_pool": "thelongstory:ice_spike/start_pool",
   "size": 6,
