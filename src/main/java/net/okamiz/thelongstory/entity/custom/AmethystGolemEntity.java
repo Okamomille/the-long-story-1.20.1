@@ -190,7 +190,7 @@ public class AmethystGolemEntity extends SpellcastingIllagerEntity {
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 90.0f)
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 200f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3D)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 25f)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 15f)
                 .add(EntityAttributes.GENERIC_ARMOR, 2.2f)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 100f);
     }
