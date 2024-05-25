@@ -194,6 +194,10 @@
   "item.thelongstory.amethyst_minion_spawn_egg" : "Amethyst Minion Spawn Egg",
 
 
+  "block.thelongstory.stoned_magma_block" : "Stoned Magma Block",
+  "block.thelongstory.cold_stoned_magma_block" : "Cold Stoned Magma Block",
+
+
   "block.thelongstory.torch_sand" : "Torch Sand",
   "block.thelongstory.torch_pink_sand" : "Torch Pink Sand",
   "block.thelongstory.crushed_bones_block" : "Crushed Bones Block",

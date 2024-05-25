@@ -105,7 +105,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FLUORITE_BRICKS_SLAB);
                         entries.add(ModBlocks.FLUORITE_BRICKS_WALL);
 
-
+                        entries.add(ModBlocks.STONED_MAGMA_BLOCK);
+                        entries.add(ModBlocks.COLD_STONED_MAGMA_BLOCK);
 
                         entries.add(ModBlocks.TORCH_STONE_PILLAR);
                         entries.add(ModBlocks.TORCH_STONE);

@@ -40,6 +40,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PANDAZITE_BLOCK);
 
 
+        addDrop(ModBlocks.COLD_STONED_MAGMA_BLOCK);
+        addDrop(ModBlocks.STONED_MAGMA_BLOCK);
+
+
         addDrop(ModBlocks.TORCH_STONE);
         addDrop(ModBlocks.TORCH_SAND);
         addDrop(ModBlocks.TORCH_PINK_SAND);

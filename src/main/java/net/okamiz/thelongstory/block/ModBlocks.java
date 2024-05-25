@@ -39,6 +39,11 @@ public class ModBlocks {
 
 
 
+    public static final Block STONED_MAGMA_BLOCK = registerBlock("stoned_magma_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block COLD_STONED_MAGMA_BLOCK = registerBlock("cold_stoned_magma_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)));
+
 
 
 // ADDING CARBON
@@ -259,12 +264,12 @@ public class ModBlocks {
 
     public static final Block PANDAZITE_ORE = registerBlock("pandazite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
+    public static final Block DEEPSLATE_PANDAZITE_ORE = registerBlock("deepslate_pandazite_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));
     public static final Block TORCH_STONE_PANDAZITE_ORE = registerBlock("torch_stone_pandazite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
     public static final Block RED_SANDSTONE_PANDAZITE_ORE = registerBlock("red_sandstone_pandazite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f), UniformIntProvider.create(2, 4)));
-    public static final Block DEEPSLATE_PANDAZITE_ORE = registerBlock("deepslate_pandazite_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.5f,3.0f), UniformIntProvider.create(3, 7)));
     public static final Block PANDAZITE_BLOCK = registerBlock("pandazite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
 
