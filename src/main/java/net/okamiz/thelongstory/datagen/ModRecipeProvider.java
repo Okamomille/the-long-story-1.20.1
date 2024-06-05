@@ -2049,6 +2049,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(Items.PINK_DYE))
                 .offerTo(exporter, new Identifier("pink_dye_from_pink_phygelus"));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.PINK_DYE, 4).input(ModBlocks.BULBO_FLOWER)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.BULBO_FLOWER),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.BULBO_FLOWER)).criterion(FabricRecipeProvider.hasItem(Items.PINK_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.PINK_DYE))
+                .offerTo(exporter, new Identifier("pink_dye_from_bulbo_flower"));
+
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE, 1).input(ModBlocks.TORN_FLOWER)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.TORN_FLOWER),

@@ -223,14 +223,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.SWEET_PEAR_CROP, this.cropDrops(ModBlocks.SWEET_PEAR_CROP, ModItems.SWEET_PEAR, ModItems.SWEET_PEAR_SEEDS, sweetPearBuilder));
 
 
-        addDropWithSilkTouch(ModBlocks.TORN_BUSH);
+
 
 
 
         addDrop(ModBlocks.FADED_CACTUS);
+
         addDrop(ModBlocks.TORN_FLOWER);
+        addDropWithSilkTouch(ModBlocks.TORN_BUSH);
+
+
         addDrop(ModBlocks.PINK_PHYGELUS);
         addDrop(ModBlocks.YELLOW_PHYGELUS);
+
         addDrop(ModBlocks.RED_OSPET);
         addDrop(ModBlocks.BLUE_OSPET);
         addDrop(ModBlocks.GREEN_OSPET);

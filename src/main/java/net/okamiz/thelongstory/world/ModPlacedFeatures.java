@@ -35,6 +35,7 @@ public class ModPlacedFeatures {
 
 
     public static final RegistryKey<PlacedFeature> FADED_CACTUS_PLACED_KEY = registerKey("faded_cactus_placed");
+    public static final RegistryKey<PlacedFeature> BULBO_FLOWER_PLACED_KEY = registerKey("bulbo_flower_placed");
     public static final RegistryKey<PlacedFeature> TORN_BUSH_PLACED_KEY = registerKey("torn_bush_placed");
     public static final RegistryKey<PlacedFeature> TORN_FLOWER_PLACED_KEY = registerKey("torn_flower_placed");
     public static final RegistryKey<PlacedFeature> PINK_PHYGELUS_PLACED_KEY = registerKey("pink_phygelus_placed");
@@ -81,6 +82,9 @@ public class ModPlacedFeatures {
 
 
         register(context, FADED_CACTUS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FADED_CACTUS_KEY),
+                ModPlantsPlacement.modifiersWithCount(1));
+
+        register(context, BULBO_FLOWER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BULBO_FLOWER_KEY),
                 ModPlantsPlacement.modifiersWithCount(1));
 
         register(context, TORN_BUSH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TORN_BUSH_KEY),

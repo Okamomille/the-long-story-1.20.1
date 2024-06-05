@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "thelongstory:block/bulbo_flower_bottom"
+    },
+    "half=upper": {
+      "model": "thelongstory:block/bulbo_flower_top"
+    }
+  }
+}

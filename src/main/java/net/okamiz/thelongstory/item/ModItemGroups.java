@@ -239,10 +239,15 @@ public class ModItemGroups {
 
 
                         entries.add(ModBlocks.FADED_CACTUS);
+
                         entries.add(ModBlocks.TORN_BUSH);
                         entries.add(ModBlocks.TORN_FLOWER);
+
+                        entries.add(ModBlocks.BULBO_FLOWER);
+
                         entries.add(ModBlocks.PINK_PHYGELUS);
                         entries.add(ModBlocks.YELLOW_PHYGELUS);
+
                         entries.add(ModBlocks.RED_OSPET);
                         entries.add(ModBlocks.BLUE_OSPET);
                         entries.add(ModBlocks.GREEN_OSPET);

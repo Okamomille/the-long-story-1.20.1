@@ -49,6 +49,7 @@ public class ModConfiguredFeatures {
 
 
     public static final RegistryKey<ConfiguredFeature<?,?>> FADED_CACTUS_KEY = registryKey("faded_cactus_key");
+    public static final RegistryKey<ConfiguredFeature<?,?>> BULBO_FLOWER_KEY = registryKey("bulbo_flower_key");
     public static final RegistryKey<ConfiguredFeature<?,?>> TORN_BUSH_KEY = registryKey("torn_bush_key");
     public static final RegistryKey<ConfiguredFeature<?,?>> TORN_FLOWER_KEY = registryKey("torn_flower_key");
     public static final RegistryKey<ConfiguredFeature<?,?>> PINK_PHYGELUS_KEY = registryKey("pink_phygelus_key");
@@ -118,6 +119,9 @@ public class ModConfiguredFeatures {
 
         register(context, FADED_CACTUS_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(5,
                 PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.FADED_CACTUS)))));
+
+        register(context, BULBO_FLOWER_KEY, Feature.FLOWER, ConfiguredFeatures.createRandomPatchFeatureConfig(5,
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BULBO_FLOWER)))));
 
 
 

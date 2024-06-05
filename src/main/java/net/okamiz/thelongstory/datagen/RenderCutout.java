@@ -52,5 +52,8 @@ public class RenderCutout {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VITALY_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TORN_CARROT_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SWEET_PEAR_CROP, RenderLayer.getCutout());
+
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BULBO_FLOWER, RenderLayer.getCutout());
     }
 }

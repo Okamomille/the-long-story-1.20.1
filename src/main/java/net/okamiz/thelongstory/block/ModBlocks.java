@@ -3,6 +3,7 @@ package net.okamiz.thelongstory.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -551,6 +552,14 @@ public class ModBlocks {
 
 
     // ----------------
+
+
+
+    public static final Block BULBO_FLOWER = registerBlock("bulbo_flower",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.LILAC)));
+
+
+
 
 
     public static final Block VITALY_CROP = registerBlockWithoutBlockItem("vitaly_crop",

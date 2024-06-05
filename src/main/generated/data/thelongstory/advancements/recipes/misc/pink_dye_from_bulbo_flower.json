@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bulbo_flower": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:bulbo_flower"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_pink_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pink_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pink_dye_from_bulbo_flower"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_bulbo_flower",
+      "has_pink_dye",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pink_dye_from_bulbo_flower"
+    ]
+  },
+  "sends_telemetry_event": false
+}
