@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_thestone_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Find and mine Thestone Ore."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "thelongstory:thestone_dust"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Shiny!"
+    }
+  },
+  "requirements": [
+    [
+      "has_thestone_dust"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

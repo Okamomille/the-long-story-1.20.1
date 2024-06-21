@@ -1,0 +1,40 @@
+{
+  "parent": "thelongstory:obtained_thestone_sword",
+  "criteria": {
+    "has_thestone_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Obtain a Thestone Pickaxe."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "thelongstory:thestone_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "The Rainbow Pickaxe!"
+    }
+  },
+  "requirements": [
+    [
+      "has_thestone_pickaxe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

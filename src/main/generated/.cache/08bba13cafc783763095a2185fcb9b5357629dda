@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-05T10:57:49.7942965	The Long Story/Recipes
+// 1.20.1	2024-06-12T14:36:50.1599975	The Long Story/Recipes
 4de4b40e30a417131714507663ca09ffbba84c1f data\thelongstory\advancements\recipes\misc\thestone_dust_from_smelting_red_sandstone_thestone_ore.json
 ec874904c03616e0049150cd3843922ee4c0ef98 data\thelongstory\advancements\recipes\combat\impure_zarosite_chestplate.json
 2fa786718bc3875c5eebc7589b417d492edd6652 data\thelongstory\advancements\recipes\misc\iron_apple.json
@@ -326,8 +326,8 @@ d2340f56e812ed5a690fc12b9552ef165c8c7434 data\thelongstory\advancements\recipes\
 668801d01eb96a3eb05f05d4b854b2270fc09da7 data\thelongstory\recipes\simulation_teleporter.json
 4627154dc2ea6cf813ad5f2083d566cd755d7376 data\thelongstory\recipes\thestone_dust_from_smelting_torch_stone_thestone_ore.json
 a35ce296d3ca2e953a279b958018597570d6518d data\thelongstory\recipes\oast_fence.json
-d44394964bf878a77497d63f14d4c7cc80fef866 data\thelongstory\advancements\recipes\misc\pandazite_ingot_from_blasting_raw_pandazite.json
 68d4bcad9aaf4ae0bf4168e75b39bf7a432040c1 data\thelongstory\advancements\recipes\misc\odmentium_ingot_from_blasting_odmentium_ore.json
+d44394964bf878a77497d63f14d4c7cc80fef866 data\thelongstory\advancements\recipes\misc\pandazite_ingot_from_blasting_raw_pandazite.json
 322ecf10bb1ed4594627f3a1001cd9d5d041d5e5 data\thelongstory\advancements\recipes\misc\iced_stone_wall_recipe.json
 41bfcb8ada6a22ae1d855a80c97ce5afd7df919e data\thelongstory\advancements\recipes\misc\amethyst_key_craft.json
 dfbf812e9a52a1823eddddb17df73866006d8e06 data\thelongstory\recipes\netherite_plate_craft.json

@@ -1,0 +1,40 @@
+{
+  "parent": "thelongstory:obtained_thestone_pickaxe",
+  "criteria": {
+    "has_thestone_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_axe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Obtain a Thestone Axe."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "thelongstory:thestone_axe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "You Seems to Like Rainbows.."
+    }
+  },
+  "requirements": [
+    [
+      "has_thestone_axe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

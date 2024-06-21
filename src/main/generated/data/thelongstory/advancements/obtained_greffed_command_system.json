@@ -1,0 +1,39 @@
+{
+  "parent": "thelongstory:obtained_soul_container",
+  "criteria": {
+    "has_greffed_command_system": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:greffed_command_system"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Craft a Greffed Command System to apply yourself effects."
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "thelongstory:greffed_command_system"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "A Command Block in Survival?!"
+    }
+  },
+  "requirements": [
+    [
+      "has_greffed_command_system"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

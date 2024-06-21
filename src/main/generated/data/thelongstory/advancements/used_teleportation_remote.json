@@ -1,0 +1,45 @@
+{
+  "parent": "thelongstory:obtained_thestone_dust",
+  "criteria": {
+    "has_used_teleportation_remote": {
+      "conditions": {
+        "item": {
+          "items": [
+            "thelongstory:teleportation_remote"
+          ]
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ]
+      },
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Uses a Teleportation Remote to teleport yourself to your home."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "thelongstory:teleportation_remote",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Get Back Home"
+    }
+  },
+  "requirements": [
+    [
+      "has_used_teleportation_remote"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

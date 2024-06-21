@@ -1,0 +1,40 @@
+{
+  "parent": "thelongstory:obtained_thestone_axe",
+  "criteria": {
+    "has_thestone_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Obtain a Thestone Shovel."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "thelongstory:thestone_shovel",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Make Paths With The Light."
+    }
+  },
+  "requirements": [
+    [
+      "has_thestone_shovel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

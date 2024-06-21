@@ -1,0 +1,39 @@
+{
+  "parent": "thelongstory:obtained_thestone_dust",
+  "criteria": {
+    "has_thestone_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Obtain a Thestone Ingot."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "thelongstory:thestone_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Is This Magic?"
+    }
+  },
+  "requirements": [
+    [
+      "has_thestone_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,85 @@
+{
+  "parent": "thelongstory:obtained_thestone_ingot",
+  "criteria": {
+    "has_thestone_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_thestone_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_thestone_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_thestone_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Obtain a full Thestone armor."
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "thelongstory:thestone_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "The Luckiest Armor of The Game."
+    }
+  },
+  "requirements": [
+    [
+      "has_thestone_helmet"
+    ],
+    [
+      "has_thestone_chestplate"
+    ],
+    [
+      "has_thestone_leggings"
+    ],
+    [
+      "has_thestone_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

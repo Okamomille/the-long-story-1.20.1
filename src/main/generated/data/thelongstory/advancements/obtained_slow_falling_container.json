@@ -1,0 +1,39 @@
+{
+  "parent": "thelongstory:obtained_night_vision_container",
+  "criteria": {
+    "has_slow_falling_container": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:soul_container_slow_falling"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Use a Soul Container on a Chicken."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "thelongstory:soul_container_slow_falling"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "The Power of Slow Falling."
+    }
+  },
+  "requirements": [
+    [
+      "has_slow_falling_container"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

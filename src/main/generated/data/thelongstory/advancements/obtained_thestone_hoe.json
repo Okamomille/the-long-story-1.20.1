@@ -1,0 +1,40 @@
+{
+  "parent": "thelongstory:obtained_thestone_shovel",
+  "criteria": {
+    "has_thestone_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Obtain a Thestone Hoe."
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "thelongstory:thestone_hoe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "A True Dedication."
+    }
+  },
+  "requirements": [
+    [
+      "has_thestone_hoe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

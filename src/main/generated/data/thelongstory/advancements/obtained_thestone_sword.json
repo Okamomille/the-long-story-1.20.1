@@ -1,0 +1,40 @@
+{
+  "parent": "thelongstory:obtained_thestone_ingot",
+  "criteria": {
+    "has_thestone_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:thestone_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Obtain a Thestone Sword."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "thelongstory:thestone_sword",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Fight With The Light!"
+    }
+  },
+  "requirements": [
+    [
+      "has_thestone_sword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

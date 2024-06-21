@@ -1,0 +1,39 @@
+{
+  "parent": "thelongstory:obtained_regeneration_container",
+  "criteria": {
+    "has_fire_resistance_container": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:soul_container_fire_resistance"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "thelongstory:textures/block/carbon_tiles.png",
+    "description": {
+      "text": "Use a Soul Container on a Blaze."
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "thelongstory:soul_container_fire_resistance"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "The Power of Fire Resistance."
+    }
+  },
+  "requirements": [
+    [
+      "has_fire_resistance_container"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
