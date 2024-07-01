@@ -318,6 +318,16 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.THESTONE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
+    public static final Item ODMENTIUM_HELMET = registerItem("odmentium_helmet",
+            new ArmorItem(ModArmorMaterials.ODMENTIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ODMENTIUM_CHESTPLATE = registerItem("odmentium_chestplate",
+            new ArmorItem(ModArmorMaterials.ODMENTIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ODMENTIUM_LEGGINGS = registerItem("odmentium_leggings",
+            new ArmorItem(ModArmorMaterials.ODMENTIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ODMENTIUM_BOOTS = registerItem("odmentium_boots",
+            new ArmorItem(ModArmorMaterials.ODMENTIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+
     public static final Item GREEN_SHARD_HELMET = registerItem("green_shard_helmet",
             new ArmorItem(ModArmorMaterials.GREEN_SHARD, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item GREEN_SHARD_CHESTPLATE = registerItem("green_shard_chestplate",

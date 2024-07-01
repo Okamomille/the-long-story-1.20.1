@@ -11,9 +11,12 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     THESTONE("thestone", 25, new int[]{3,6,8,3}, 12,
-            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0f,0.0f, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT)),
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.5f,0.0f, () -> Ingredient.ofItems(ModItems.THESTONE_INGOT)),
+
+    ODMENTIUM("odmentium", 15, new int[]{3,5,6,2}, 8,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f,0.0f, () -> Ingredient.ofItems(ModItems.ODMENTIUM_INGOT)),
     GREEN_SHARD("green_shard", 7, new int[]{2,5,6,4}, 22,
-    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.0f,0.0f, () -> Ingredient.ofItems(ModItems.GREEN_SHARD)),
+    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 1.0f,0.0f, () -> Ingredient.ofItems(ModItems.GREEN_SHARD)),
 
     IMPURE_ZAROSITE("impure_zarosite", 32, new int[]{3,6,8,3}, 11,
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.2f,0.1f, () -> Ingredient.ofItems(ModItems.IMPURE_ZAROSITE_INGOT)),
@@ -22,7 +25,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.5f,0.2f, () -> Ingredient.ofItems(ModItems.ZAROSITE_GEMSTONE)),
 
     DRONIUM("dronium", 40, new int[]{3,6,8,3}, 13,
-    SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 2.5f,0.2f, () -> Ingredient.ofItems(ModItems.DRONIUM_INGOT))
+    SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5f,0.2f, () -> Ingredient.ofItems(ModItems.DRONIUM_INGOT))
     ;
 
     private final String name;

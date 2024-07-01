@@ -417,6 +417,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.THESTONE_BOOTS));
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ODMENTIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ODMENTIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ODMENTIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ODMENTIUM_BOOTS));
+
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GREEN_SHARD_LEGGINGS));

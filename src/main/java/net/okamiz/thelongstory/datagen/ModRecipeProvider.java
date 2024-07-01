@@ -280,6 +280,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.ODMENTIUM_BOOTS, 1)
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.ODMENTIUM_LEGGINGS, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.ODMENTIUM_CHESTPLATE, 1)
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.ODMENTIUM_HELMET, 1)
+                .pattern("XXX")
+                .pattern("X X")
+                .input('X', ModItems.ODMENTIUM_INGOT)
+                .criterion(hasItem(ModItems.ODMENTIUM_INGOT),conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ODMENTIUM_HELMET)));
+
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT,ModItems.GREEN_SHARD_BOOTS, 1)
                 .pattern("X X")
                 .pattern("X X")

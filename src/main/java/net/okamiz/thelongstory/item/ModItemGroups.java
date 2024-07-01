@@ -326,6 +326,11 @@ public class ModItemGroups {
                         entries.add(ModItems.THESTONE_LEGGINGS);
                         entries.add(ModItems.THESTONE_BOOTS);
 
+                        entries.add(ModItems.ODMENTIUM_HELMET);
+                        entries.add(ModItems.ODMENTIUM_CHESTPLATE);
+                        entries.add(ModItems.ODMENTIUM_LEGGINGS);
+                        entries.add(ModItems.ODMENTIUM_BOOTS);
+
                         entries.add(ModItems.GREEN_SHARD_HELMET);
                         entries.add(ModItems.GREEN_SHARD_CHESTPLATE);
                         entries.add(ModItems.GREEN_SHARD_LEGGINGS);
