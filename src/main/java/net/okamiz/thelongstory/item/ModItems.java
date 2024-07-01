@@ -189,6 +189,9 @@ public class ModItems {
     public static final Item BREEDY_SPAWN_EGG = registerItem("breedy_spawn_egg",
             new SpawnEggItem(ModEntities.BREEDY, 16768071,16491304, new FabricItemSettings()));
 
+    public static final Item BUMBO_SPAWN_EGG = registerItem("bumbo_spawn_egg",
+            new SpawnEggItem(ModEntities.BUMBO, 15430767,12665918, new FabricItemSettings()));
+
 
 
 

@@ -422,6 +422,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOOKI_SPAWN_EGG);
                         entries.add(ModItems.COWSMIC_SPAWN_EGG);
                         entries.add(ModItems.BREEDY_SPAWN_EGG);
+                        entries.add(ModItems.BUMBO_SPAWN_EGG);
 
 
                     }).build());

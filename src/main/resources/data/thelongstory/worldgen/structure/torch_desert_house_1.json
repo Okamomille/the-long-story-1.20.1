@@ -11,7 +11,7 @@
   "start_height": {
     "type": "minecraft:constant",
     "value": {
-      "absolute": 0
+      "absolute": 1
     }
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",

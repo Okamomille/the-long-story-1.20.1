@@ -109,6 +109,7 @@ public class ModBiomes {
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.ALLAY, 6, 1, 4));
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.BREEDY, 6, 1, 4));
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.COWSMIC, 8, 2, 4));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.BUMBO, 10, 2, 3));
 
         GenerationSettings.LookupBackedBuilder biomeBuilder =
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
@@ -239,6 +240,8 @@ public class ModBiomes {
     public static Biome torchDesert(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
 
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.BUMBO, 10, 2, 3));
+
         GenerationSettings.LookupBackedBuilder biomeBuilder =
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
@@ -270,6 +273,8 @@ public class ModBiomes {
 
     public static Biome torchPinkDesert(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.BUMBO, 10, 2, 3));
 
         GenerationSettings.LookupBackedBuilder biomeBuilder =
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),

@@ -41,7 +41,7 @@ public class ModBlocks {
 
 
     public static final Block STONED_MAGMA_BLOCK = registerBlock("stoned_magma_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).sounds(BlockSoundGroup.DEEPSLATE)));
+            new MagmaBlock(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block COLD_STONED_MAGMA_BLOCK = registerBlock("cold_stoned_magma_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE)));
 

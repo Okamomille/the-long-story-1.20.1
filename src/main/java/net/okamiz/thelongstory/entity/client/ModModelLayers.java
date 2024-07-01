@@ -17,6 +17,9 @@ public class ModModelLayers {
     public static final EntityModelLayer TOOKI =
             new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "tooki"), "main");
 
+    public static final EntityModelLayer BUMBO =
+            new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "bumbo"), "main");
+
     public static final EntityModelLayer COWSMIC =
             new EntityModelLayer(new Identifier(TheLongStory.MOD_ID, "cowsmic"), "main");
 

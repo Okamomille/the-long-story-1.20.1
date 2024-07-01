@@ -41,6 +41,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_SANDSTONE_THESTONE_ORE)
                 .add(ModBlocks.DRONIUM_BLOCK)
 
+                .add(ModBlocks.STONED_MAGMA_BLOCK)
+                .add(ModBlocks.COLD_STONED_MAGMA_BLOCK)
+
+
+
                 .add(ModBlocks.FLUORITE_BLOCK)
                 .add(ModBlocks.FLUORITE_BLOCK_SLAB)
                 .add(ModBlocks.FLUORITE_BLOCK_STAIRS)

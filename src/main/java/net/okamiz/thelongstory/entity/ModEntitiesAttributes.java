@@ -13,6 +13,7 @@ public class ModEntitiesAttributes {
         FabricDefaultAttributeRegistry.register(ModEntities.TICKELER, TickelerEntity.createTickelerAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.CRAWLER, CrawlerEntity.createCrawlerAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.TOOKI, TookiEntity.createTookiAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.BUMBO, BumboEntity.createBumboAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.COWSMIC, CowsmicEntity.createCowsmicAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.BREEDY, BreedyEntity.createBreedyAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.AMETHYST_GOLEM, AmethystGolemEntity.createAmethystGolemAttributes());
