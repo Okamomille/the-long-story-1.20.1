@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_odmentium_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:odmentium_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_odmentium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thelongstory:odmentium_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:odmentium_ingot_from_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_odmentium_block",
+      "has_odmentium_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:odmentium_ingot_from_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

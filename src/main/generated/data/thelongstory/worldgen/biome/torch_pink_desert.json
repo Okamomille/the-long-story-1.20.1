@@ -52,7 +52,14 @@
   "spawners": {
     "ambient": [],
     "axolotls": [],
-    "creature": [],
+    "creature": [
+      {
+        "type": "thelongstory:bumbo",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 10
+      }
+    ],
     "misc": [],
     "monster": [],
     "underground_water_creature": [],

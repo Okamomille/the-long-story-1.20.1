@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-01T11:52:02.8853199	The Long Story/Block Loot Tables
+// 1.20.1	2024-07-01T19:33:17.1671617	The Long Story/Block Loot Tables
 a765aa636b50ff4dde7c9bbe337b34d029374379 data\thelongstory\loot_tables\blocks\torch_stone_thestone_ore.json
 bcad02ba01379daadf35620c8f34d4250556bd1d data\thelongstory\loot_tables\blocks\kiwi_trapdoor.json
 8481962a43a31e7c40a4ad2281fd35ffbdcbbd99 data\thelongstory\loot_tables\blocks\corrupted_lab_tiles_stairs.json
@@ -83,6 +83,7 @@ c5ec6b147a6ab54122e45dfa71143ad8184c644e data\thelongstory\loot_tables\blocks\si
 52c4cba5222db8a1795e6af9cc9bf8d42e388aef data\thelongstory\loot_tables\blocks\corrupted_lab_tiles.json
 7adfd583df7f87129e2468bee55b3713a027f203 data\thelongstory\loot_tables\blocks\torch_bricks_wall.json
 b085c127f15fdebb537caaf296d2c3ac4acfaf07 data\thelongstory\loot_tables\blocks\fluorite_bricks_stairs.json
+f348a0cbf81ffd05d50dfa2810ecb24764b990f9 data\thelongstory\loot_tables\blocks\odmentium_block.json
 7d413d78af3b1d16181051b77afe9b4d831a45b3 data\thelongstory\loot_tables\blocks\stripped_sephin_log.json
 06fc5a8a8ac99c73a37cd3a11ea8c7574cb7bf92 data\thelongstory\loot_tables\blocks\iced_chiseled_stone_bricks_stairs.json
 f7f358e3e3f9076e515888bea4772fb64465e899 data\thelongstory\loot_tables\blocks\torch_bricks_stairs.json

@@ -145,6 +145,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.PANDAZITE_INGOT)).criterion(FabricRecipeProvider.hasItem(ModBlocks.PANDAZITE_BLOCK),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.PANDAZITE_BLOCK)).offerTo(exporter);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ODMENTIUM_INGOT, 9).input(ModBlocks.ODMENTIUM_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ODMENTIUM_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ODMENTIUM_BLOCK)).criterion(FabricRecipeProvider.hasItem(ModItems.ODMENTIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.ODMENTIUM_INGOT))
+                .offerTo(exporter, new Identifier("odmentium_ingot_from_block"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ODMENTIUM_BLOCK).input(ModItems.ODMENTIUM_INGOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.ODMENTIUM_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.ODMENTIUM_INGOT)).criterion(FabricRecipeProvider.hasItem(ModBlocks.ODMENTIUM_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ODMENTIUM_BLOCK)).offerTo(exporter);
+
 
 
 

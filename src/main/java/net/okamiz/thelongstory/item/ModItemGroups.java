@@ -63,6 +63,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.ODMENTIUM_ORE);
                         entries.add(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE);
+                        entries.add(ModBlocks.ODMENTIUM_BLOCK);
 
                         entries.add(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
                         entries.add(ModBlocks.ZAROSITE_BLOCK);

@@ -34,6 +34,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ODMENTIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_SANDSTONE_ODMENTIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ODMENTIUM_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE_ZAROSITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEP_ICE_FLUORITE_ORE);

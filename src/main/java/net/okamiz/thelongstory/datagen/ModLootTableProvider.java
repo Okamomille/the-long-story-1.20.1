@@ -38,6 +38,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RED_COAL_GENERATOR);
         addDrop(ModBlocks.DRONIUM_BLOCK);
         addDrop(ModBlocks.PANDAZITE_BLOCK);
+        addDrop(ModBlocks.ODMENTIUM_BLOCK);
 
 
         addDrop(ModBlocks.COLD_STONED_MAGMA_BLOCK);

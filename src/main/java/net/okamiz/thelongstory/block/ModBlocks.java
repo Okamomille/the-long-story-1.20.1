@@ -256,9 +256,10 @@ public class ModBlocks {
 
     public static final Block ODMENTIUM_ORE = registerBlock("odmentium_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(3.0f,3.0f)));
-
     public static final Block RED_SANDSTONE_ODMENTIUM_ORE = registerBlock("red_sandstone_odmentium_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.RED_SANDSTONE).strength(3.0f,3.0f)));
+    public static final Block ODMENTIUM_BLOCK = registerBlock("odmentium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
 
 
